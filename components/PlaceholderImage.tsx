@@ -1,14 +1,27 @@
-import React from 'react';
+import React from "react";
+import { Image as ImageIcon } from "lucide-react";
 
-interface Props {
+interface PlaceholderImageProps {
   text: string;
   className?: string;
+  ariaLabel?: string;
 }
 
-export default function PlaceholderImage({ text, className = '' }: Props) {
+export default function PlaceholderImage({
+  text,
+  className = "",
+  ariaLabel,
+}: PlaceholderImageProps) {
   return (
-    <div className={`flex items-center justify-center bg-gray-200 text-gray-500 font-medium ${className}`}>
-      <span className="text-sm md:text-base text-center px-4">{text}</span>
+    <div
+      role="img"
+      aria-label={ariaLabel || text}
+      className={`flex flex-col items-center justify-center bg-gray-100 text-gray-400 select-none ${className}`}
+    >
+      <ImageIcon className="w-8 h-8 opacity-40 mb-2 flex-shrink-0" aria-hidden="true" />
+      <span className="text-xs md:text-sm text-center px-4 font-medium text-gray-500 max-w-xs">
+        {text}
+      </span>
     </div>
   );
 }

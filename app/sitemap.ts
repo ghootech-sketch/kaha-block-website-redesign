@@ -1,9 +1,10 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://kahablock.com';
-  const locales = ['id', 'en'];
-  const routes = ['', '/about', '/products', '/projects', '/contact'];
+  const baseUrl = "https://kahablock.com";
+  const locales = ["id", "en"] as const;
+  const routes = ["", "/about", "/products", "/projects", "/contact"] as const;
+  const lastModified = new Date("2025-01-15T00:00:00.000Z");
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -11,9 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     routes.forEach((route) => {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: route === '' ? 1 : 0.8,
+        lastModified,
+        changeFrequency: "monthly",
+        priority: route === "" ? 1.0 : 0.8,
       });
     });
   });

@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,11 +21,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm font-sans">
+    <nav aria-label="Main Navigation" className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href={`/${lang}`} className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded">
+            <Link
+              href={`/${lang}`}
+              aria-label="KAHA BLOCK - Beranda"
+              className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+            >
               <span className="font-heading font-black text-2xl text-[#0B2447] tracking-tight uppercase">
                 KAHA <span className="text-[#D90429]">BLOCK</span>
               </span>
@@ -59,9 +62,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 href={dict.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={lang === "en" ? "Contact WhatsApp Kaha Block" : "Hubungi WhatsApp Kaha Block"}
                 className="inline-flex items-center justify-center bg-[#D90429] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#0B2447] hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               >
-                <Phone className="w-4 h-4 mr-2" />
+                <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 WhatsApp
               </a>
             </div>
@@ -75,9 +79,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
               className="inline-flex items-center justify-center p-2 rounded-md text-[#0B2447] hover:text-[#D90429] hover:bg-gray-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
-              aria-label="Toggle menu"
+              aria-label={isOpen ? (lang === "en" ? "Close menu" : "Tutup menu") : (lang === "en" ? "Open menu" : "Buka menu")}
             >
-              {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
+              {isOpen ? <X className="block h-6 w-6" aria-hidden="true" /> : <Menu className="block h-6 w-6" aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -112,7 +116,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 onClick={() => setIsOpen(false)}
                 className="w-full flex items-center justify-center bg-[#D90429] text-white px-5 py-3 rounded-full text-base font-bold hover:bg-[#0B2447] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               >
-                <Phone className="w-5 h-5 mr-2" />
+                <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
                 {dict.contact.whatsapp}
               </a>
             </div>

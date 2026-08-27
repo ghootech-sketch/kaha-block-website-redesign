@@ -1,11 +1,22 @@
+export const supportedLocales = ['id', 'en'] as const;
+export type Locale = (typeof supportedLocales)[number];
+
+export function isValidLocale(lang: string): lang is Locale {
+  return supportedLocales.includes(lang as Locale);
+}
+
 export const dictionaries = {
   id: {
+    common: {
+      skipToContent: "Lewati ke konten",
+      photoComingSoon: "Foto segera diperbarui",
+    },
     nav: {
       home: "Beranda",
       about: "Tentang Kami",
       products: "Produk",
       projects: "Proyek",
-      contact: "Kontak"
+      contact: "Kontak",
     },
     home: {
       title: "KAHA BLOCK",
@@ -13,6 +24,7 @@ export const dictionaries = {
       heroHeadline: "Kuat, Presisi, dan Tahan Lama",
       heroSubheadline: "Paving Block Full Otomatis Hidrolik dengan Mutu K-250, K-300, dan K-400. Solusi tepat untuk infrastruktur yang kokoh.",
       cta: "Hubungi WhatsApp",
+      heroImageAlt: "Dokumentasi fasilitas pabrik dan produk paving block Kaha Block",
       companyBrief: "Beroperasi sejak 2015 dengan fasilitas pabrik seluas 1000 m², PT Kaha Sukses Mandiri (Kaha Block) memproduksi paving block menggunakan teknologi mesin hidrolik otomatis penuh.",
       whyChooseUs: "Mengapa Memilih Kaha Block?",
       integrity: "Integritas & Kualitas",
@@ -24,7 +36,7 @@ export const dictionaries = {
       qc: "Teknologi Canggih",
       qcDesc: "Diproduksi dengan mesin hidrolik otomatis penuh di pabrik seluas 1000 m².",
       bestPrice: "Sistem Pembayaran Aman",
-      bestPriceDesc: "Tersedia CBD/COD untuk pembelian tertentu, dengan standar DP 50%."
+      bestPriceDesc: "Tersedia CBD/COD untuk pembelian tertentu, dengan standar DP 50%.",
     },
     about: {
       title: "Tentang Kami",
@@ -35,77 +47,95 @@ export const dictionaries = {
       vision: "Visi Kami",
       visionDesc: "Menjadi produsen paving block pilihan utama yang diakui atas kualitas, integritas, dan inovasinya di Indonesia.",
       mission: "Misi Kami",
-      missionDesc: "Memberikan layanan pemasangan yang komprehensif, pengiriman yang tepat waktu, dan mempertahankan standar produksi tertinggi dengan mesin hidrolik mutakhir."
+      missionDesc: "Memberikan layanan pemasangan yang komprehensif, pengiriman yang tepat waktu, dan mempertahankan standar produksi tertinggi dengan mesin hidrolik mutakhir.",
+      facilityImageAlt: "Dokumentasi fasilitas pabrik PT Kaha Sukses Mandiri seluas 1000 m² di Tangerang",
     },
     products: {
       title: "Produk Unggulan",
-      specs: "Pilihan Mutu : K-250, K-300, K-400",
+      specs: "Pilihan Mutu: K-250, K-300, K-400",
       availability: "Pre-order disarankan minimal satu bulan untuk volume besar. Tersedia penawaran khusus.",
+      orderCta: "Pesan via WhatsApp",
+      consultCta: "Konsultasi Jasa Pemasangan",
+      imageAltPrefix: "Dokumentasi produk",
       items: {
         truepave: {
           name: "Paving Truepave (Bata)",
           size: "Ukuran: 21 × 10,5 cm",
           height: "Pilihan Tinggi: 6, 8, 10 cm",
           coverage: "Daya Tutup: 45 pcs/m²",
-          application: "Aplikasi: Jalan raya, pelataran parkir, dan kawasan industri."
+          application: "Aplikasi: Jalan raya, pelataran parkir, dan kawasan industri.",
         },
         half: {
           name: "Paving Half (Setengah)",
           size: "Ukuran: 10,5 × 10,5 cm",
           height: "Pilihan Tinggi: 6, 8 cm",
           coverage: "Daya Tutup: 90 pcs/m²",
-          application: "Aplikasi: Pengunci pola, pembatas warna, pedestrian."
+          application: "Aplikasi: Pengunci pola, pembatas warna, pedestrian.",
         },
         hexagonal: {
           name: "Paving Hexagonal & Ubin",
           size: "Karakter: Bentuk geometris, kokoh, teratur",
           height: "Pilihan Tinggi: 6, 8 cm",
           coverage: "Tersedia varian Hexagon dan Ubin",
-          application: "Aplikasi: Area komersial dan ruang publik."
+          application: "Aplikasi: Area komersial dan ruang publik.",
         },
         topiUskup: {
           name: "Topi Uskup",
           size: "Ukuran: 30 × 6 × 21 cm",
           height: "Pilihan Tinggi: 6, 8 cm",
           coverage: "Daya Tutup: 3,3 pcs/m",
-          application: "Fungsi: Pengunci tepi susunan agar rapat dan stabil."
+          application: "Fungsi: Pengunci tepi susunan agar rapat dan stabil.",
         },
         kanstein: {
           name: "Kanstein Jepit",
           size: "Ukuran: 10 × 20 × 40 cm",
           height: "Kelas: High Grade Heavy Duty",
           coverage: "Daya Tutup: 2,5 pcs/m²",
-          application: "Fungsi: Menjaga tepi bahu jalan dan trotoar tetap rapi."
-        }
+          application: "Fungsi: Menjaga tepi bahu jalan dan trotoar tetap rapi.",
+        },
       },
       installation: "Layanan Jasa Pemasangan Lengkap",
-      installationDesc: "Kaha Block menerima pemasangan paving dari lahan mentah/nol hingga selesai terpasang dengan rapi. Tim kami siap menangani dari tahap perataan tanah, penggelaran abu batu, hingga finishing pemadatan."
+      installationDesc: "Kaha Block menerima pemasangan paving dari lahan mentah/nol hingga selesai terpasang dengan rapi. Tim kami siap menangani dari tahap perataan tanah, penggelaran abu batu, hingga finishing pemadatan.",
     },
     projects: {
       title: "Galeri Dokumentasi",
       clients: "Mitra & Area Layanan",
-      description: "Berikut adalah dokumentasi hasil aplikasi di lapangan dan proses distribusi Kaha Block."
+      description: "Berikut adalah dokumentasi hasil aplikasi di lapangan dan proses distribusi Kaha Block.",
+      itemCaption: "Dokumentasi Aplikasi Lapangan",
+      imageAlt: "Dokumentasi proyek Kaha Block",
     },
     contact: {
       title: "Konsultasi & Pemesanan",
       description: "Hubungi Kaha Block untuk konsultasi proyek Anda, ketersediaan produk, serta layanan jasa pemasangan. Kami melayani area Jabodetabek dan luar kota.",
+      factoryLocation: "Lokasi Pabrik",
       address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
+      emailLabel: "Email",
       email: "sanliong68@gmail.com",
+      phoneLabel: "Telepon & WhatsApp",
       phone: "0811-9753-030",
+      fastResponseTitle: "Respon Cepat",
+      fastResponseDesc: "Konsultasi langsung dengan representatif kami melalui WhatsApp untuk mendapatkan penawaran terbaik.",
       whatsapp: "Chat via WhatsApp",
-      whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block."
+      whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
     },
     footer: {
-      rights: "PT Kaha Sukses Mandiri. Hak Cipta Dilindungi."
-    }
+      menuTitle: "Menu",
+      socialTitle: "Media Sosial",
+      facebookText: "Facebook: Richard Kahablock",
+      rights: "PT Kaha Sukses Mandiri. Hak Cipta Dilindungi.",
+    },
   },
   en: {
+    common: {
+      skipToContent: "Skip to content",
+      photoComingSoon: "Photo coming soon",
+    },
     nav: {
       home: "Home",
       about: "About Us",
       products: "Products",
       projects: "Projects",
-      contact: "Contact"
+      contact: "Contact",
     },
     home: {
       title: "KAHA BLOCK",
@@ -113,6 +143,7 @@ export const dictionaries = {
       heroHeadline: "Strong, Precise, and Durable",
       heroSubheadline: "Fully Automatic Hydraulic Paving Blocks in K-250, K-300, and K-400 Quality. The perfect solution for sturdy infrastructure.",
       cta: "Contact WhatsApp",
+      heroImageAlt: "Kaha Block factory facility and paving block product documentation",
       companyBrief: "Operating since 2015 with a 1000 m² factory facility, PT Kaha Sukses Mandiri (Kaha Block) manufactures paving blocks using fully automatic hydraulic machine technology.",
       whyChooseUs: "Why Choose Kaha Block?",
       integrity: "Integrity & Quality",
@@ -124,7 +155,7 @@ export const dictionaries = {
       qc: "Advanced Technology",
       qcDesc: "Manufactured with fully automatic hydraulic machines in a 1000 m² factory.",
       bestPrice: "Secure Payment System",
-      bestPriceDesc: "CBD/COD available for specific purchases, with a standard 50% DP."
+      bestPriceDesc: "CBD/COD available for specific purchases, with a standard 50% DP.",
     },
     about: {
       title: "About Us",
@@ -135,70 +166,82 @@ export const dictionaries = {
       vision: "Our Vision",
       visionDesc: "To be the preferred paving block manufacturer recognized for its quality, integrity, and innovation in Indonesia.",
       mission: "Our Mission",
-      missionDesc: "To provide comprehensive installation services, timely deliveries, and maintain the highest production standards using cutting-edge hydraulic machinery."
+      missionDesc: "To provide comprehensive installation services, timely deliveries, and maintain the highest production standards using cutting-edge hydraulic machinery.",
+      facilityImageAlt: "PT Kaha Sukses Mandiri 1000 m² factory facility documentation in Tangerang",
     },
     products: {
       title: "Our Products",
       specs: "Available Grades: K-250, K-300, K-400",
       availability: "Pre-order is recommended at least one month in advance for large volumes. Special offers available.",
+      orderCta: "Order via WhatsApp",
+      consultCta: "Installation Consultation",
+      imageAltPrefix: "Product documentation",
       items: {
         truepave: {
           name: "Truepave (Brick) Paving",
           size: "Size: 21 × 10.5 cm",
           height: "Height Options: 6, 8, 10 cm",
           coverage: "Coverage: 45 pcs/m²",
-          application: "Application: Highways, parking lots, and industrial areas."
+          application: "Application: Highways, parking lots, and industrial areas.",
         },
         half: {
           name: "Half Paving",
           size: "Size: 10.5 × 10.5 cm",
           height: "Height Options: 6, 8 cm",
           coverage: "Coverage: 90 pcs/m²",
-          application: "Application: Pattern lockers, color borders, pedestrians."
+          application: "Application: Pattern lockers, color borders, pedestrians.",
         },
         hexagonal: {
           name: "Hexagonal & Tile Paving",
           size: "Character: Geometric shape, sturdy, regular",
           height: "Height Options: 6, 8 cm",
           coverage: "Available in Hexagon and Tile variants",
-          application: "Application: Commercial areas and public spaces."
+          application: "Application: Commercial areas and public spaces.",
         },
         topiUskup: {
           name: "Bishop Hat (Topi Uskup)",
           size: "Size: 30 × 6 × 21 cm",
           height: "Height Options: 6, 8 cm",
           coverage: "Coverage: 3.3 pcs/m",
-          application: "Function: Edge locker to keep the arrangement tight and stable."
+          application: "Function: Edge locker to keep the arrangement tight and stable.",
         },
         kanstein: {
           name: "Kanstein Jepit",
           size: "Size: 10 × 20 × 40 cm",
           height: "Class: High Grade Heavy Duty",
           coverage: "Coverage: 2.5 pcs/m²",
-          application: "Function: Keeps the edges of road shoulders and sidewalks neat."
-        }
+          application: "Function: Keeps the edges of road shoulders and sidewalks neat.",
+        },
       },
       installation: "Comprehensive Installation Services",
-      installationDesc: "Kaha Block accepts paving installation from raw land to neat completion. Our team is ready to handle everything from land leveling, stone dust spreading, to final compaction."
+      installationDesc: "Kaha Block accepts paving installation from raw land to neat completion. Our team is ready to handle everything from land leveling, stone dust spreading, to final compaction.",
     },
     projects: {
       title: "Documentation Gallery",
       clients: "Partners & Service Areas",
-      description: "Below is the documentation of field applications and Kaha Block distribution processes."
+      description: "Below is the documentation of field applications and Kaha Block distribution processes.",
+      itemCaption: "Field Application Documentation",
+      imageAlt: "Kaha Block project documentation",
     },
     contact: {
       title: "Consultation & Ordering",
       description: "Contact Kaha Block to consult your project needs, product availability, and installation services. We serve the Greater Jakarta (Jabodetabek) area and beyond.",
+      factoryLocation: "Factory Location",
       address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
+      emailLabel: "Email",
       email: "sanliong68@gmail.com",
+      phoneLabel: "Phone & WhatsApp",
       phone: "0811-9753-030",
+      fastResponseTitle: "Fast Response",
+      fastResponseDesc: "Consult directly with our representative via WhatsApp to get the best offer.",
       whatsapp: "Chat via WhatsApp",
-      whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block."
+      whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
     },
     footer: {
-      rights: "PT Kaha Sukses Mandiri. All Rights Reserved."
-    }
-  }
+      menuTitle: "Menu",
+      socialTitle: "Social Media",
+      facebookText: "Facebook: Richard Kahablock",
+      rights: "PT Kaha Sukses Mandiri. All Rights Reserved.",
+    },
+  },
 };
-
-export type Locale = keyof typeof dictionaries;

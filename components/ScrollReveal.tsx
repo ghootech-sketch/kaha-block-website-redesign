@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
-import { ReactNode } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -16,31 +15,62 @@ export default function ScrollReveal({
   delay = 0,
   direction = "up",
 }: ScrollRevealProps) {
-  const getVariants = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const domRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (isReduced) {
+      setIsVisible(true);
+      return;
+    }
+
+    const currentElem = domRef.current;
+    if (!currentElem) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    observer.observe(currentElem);
+
+    return () => {
+      if (currentElem) observer.unobserve(currentElem);
+    };
+  }, []);
+
+  const getDirectionClasses = () => {
     switch (direction) {
       case "up":
-        return { hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } };
+        return isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8";
       case "down":
-        return { hidden: { opacity: 0, y: -50 }, visible: { opacity: 1, y: 0 } };
+        return isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8";
       case "left":
-        return { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } };
+        return isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8";
       case "right":
-        return { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } };
+        return isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8";
       case "none":
-        return { hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } };
+        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95";
     }
   };
 
   return (
-    <motion.div
-      className={className}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
-      variants={getVariants()}
+    <div
+      ref={domRef}
+      style={{
+        transitionDelay: `${delay}s`,
+      }}
+      className={`transition-all duration-700 ease-out motion-reduce:transform-none motion-reduce:transition-none motion-reduce:opacity-100 ${getDirectionClasses()} ${className}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
