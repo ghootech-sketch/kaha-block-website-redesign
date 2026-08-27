@@ -1,6 +1,16 @@
 import { dictionaries, Locale } from "@/lib/dictionary";
-import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import PlaceholderImage from "@/components/PlaceholderImage";
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = dictionaries[lang as Locale].products;
+  return {
+    title: dict.title,
+    description: dict.specs,
+  };
+}
 
 export default async function Products({
   params,
@@ -10,54 +20,77 @@ export default async function Products({
   const { lang } = await params;
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].products;
-
-  const productList = [
-    { name: dict.items.bata, image: "https://picsum.photos/seed/kaha-bata/400/400" },
-    { name: dict.items.cacing, image: "https://picsum.photos/seed/kaha-cacing/400/400" },
-    { name: dict.items.ubin, image: "https://picsum.photos/seed/kaha-ubin/400/400" },
-    { name: dict.items.hexagon, image: "https://picsum.photos/seed/kaha-hexagon/400/400" },
-    { name: dict.items.topiUskup, image: "https://picsum.photos/seed/kaha-topiuskup/400/400" },
-    { name: dict.items.grassBlock, image: "https://picsum.photos/seed/kaha-grassblock/400/400" },
-  ];
+  
+  const productKeys = Object.keys(dict.items) as Array<keyof typeof dict.items>;
 
   return (
-    <div className="bg-gray-50 min-h-screen py-20">
+    <div className="bg-gray-50 min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight">
+        <ScrollReveal className="text-center mb-20">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#0B2447] tracking-tight font-heading">
             {dict.title}
           </h1>
-          <div className="w-24 h-1 bg-[#D90429] mx-auto mt-6 rounded-full" />
+          <div className="w-24 h-1.5 bg-[#D90429] mx-auto mt-8 rounded-full" />
+          <p className="mt-6 text-xl text-[#0B2447]/70 max-w-2xl mx-auto font-sans">
+            {dict.specs}
+          </p>
+          <p className="mt-2 text-md text-[#D90429] font-semibold max-w-2xl mx-auto font-sans">
+            {dict.availability}
+          </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productList.map((product, index) => (
-            <ScrollReveal key={index} delay={index * 0.1} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:border-[#FFC300]/50 transition-all group">
-              <div className="relative h-64 w-full">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-[#0B2447] mb-2">{product.name}</h3>
-                <p className="text-sm font-semibold text-[#D90429] mb-1">{dict.specs}</p>
-                <p className="text-sm text-[#0B2447]/60 font-medium">{dict.availability}</p>
-              </div>
-            </ScrollReveal>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {productKeys.map((key, index) => {
+             const product = dict.items[key];
+             return (
+              <ScrollReveal key={index} delay={index * 0.1} className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col">
+                <div className="relative h-72 w-full bg-gray-100">
+                   <PlaceholderImage text={`TODO: Photo of ${product.name}`} className="w-full h-full" />
+                </div>
+                <div className="p-8 flex-grow flex flex-col justify-between">
+                  <div>
+                     <h3 className="text-2xl font-bold text-[#0B2447] mb-4 font-heading">{product.name}</h3>
+                     <ul className="space-y-2 text-[#0B2447]/80 font-sans text-sm mb-6">
+                        <li><strong>{product.size.split(':')[0]}:</strong> {product.size.split(':')[1]}</li>
+                        <li><strong>{product.height.split(':')[0]}:</strong> {product.height.split(':')[1]}</li>
+                        <li><strong>{product.coverage.split(':')[0]}:</strong> {product.coverage.split(':')[1]}</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <p className="text-sm text-[#0B2447] font-medium p-4 bg-gray-50 rounded-xl mb-6">
+                        {product.application}
+                     </p>
+                     <a 
+                        href={dictionaries[currentLang].contact.whatsappUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block text-center w-full bg-[#0B2447] text-white py-3 rounded-full font-bold text-sm hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                     >
+                        WhatsApp
+                     </a>
+                  </div>
+                </div>
+              </ScrollReveal>
+            );
+          })}
         </div>
 
-        <ScrollReveal delay={0.2} direction="up" className="mt-20 bg-[#0B2447] text-white rounded-3xl p-10 md:p-16 text-center shadow-lg relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#FFC300] rounded-bl-full opacity-20 transform translate-x-8 -translate-y-8"></div>
+        <ScrollReveal delay={0.2} direction="up" className="mt-24 bg-[#0B2447] text-white rounded-[2.5rem] p-12 md:p-20 text-center shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFC300] rounded-bl-full opacity-10 transform translate-x-12 -translate-y-12"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#D90429] rounded-tr-full opacity-20 transform -translate-x-12 translate-y-12"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold mb-6">{dict.installation}</h2>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 font-heading">{dict.installation}</h2>
+            <p className="text-lg md:text-xl opacity-90 max-w-4xl mx-auto leading-relaxed font-sans mb-10">
               {dict.installationDesc}
             </p>
+            <a 
+               href={dictionaries[currentLang].contact.whatsappUrl} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="inline-block bg-[#D90429] text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#FFC300] hover:text-[#0B2447] transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+            >
+               Konsultasi Jasa Pemasangan
+            </a>
           </div>
         </ScrollReveal>
       </div>

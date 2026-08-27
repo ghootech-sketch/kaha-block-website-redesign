@@ -17,12 +17,12 @@ export default async function LangLayout({
   const currentLang = lang as Locale;
   
   return (
-    <div className="min-h-screen flex flex-col bg-white font-sans text-[#0B2447]">
+    <>
       <Navbar lang={currentLang} />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         {children}
       </main>
       <Footer lang={currentLang} />
-    </div>
+    </>
   );
 }

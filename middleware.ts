@@ -1,26 +1,35 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
+const locales = ['id', 'en'];
+const defaultLocale = 'id';
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
+  // Skip public files and api routes
   if (
     pathname.startsWith('/_next') ||
-    pathname.startsWith('/api') ||
-    pathname.includes('.')
+    pathname.includes('/api/') ||
+    pathname.match(/\.(.*)$/)
   ) {
-    return;
+    return NextResponse.next();
   }
 
-  const pathnameHasLocale = pathname.startsWith('/en') || pathname.startsWith('/id');
-  if (pathnameHasLocale) return;
+  // Check if there is any supported locale in the pathname
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
 
-  request.nextUrl.pathname = `/id${pathname}`;
+  if (pathnameHasLocale) return NextResponse.next();
+
+  // Redirect if there is no locale
+  request.nextUrl.pathname = `/${defaultLocale}${pathname === '/' ? '' : pathname}`;
   return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {
   matcher: [
-    '/((?!_next|api|favicon.ico|images|assets|.*\\..*).*)',
+    '/((?!_next/static|_next/image|favicon.ico|images/).*)',
   ],
 };

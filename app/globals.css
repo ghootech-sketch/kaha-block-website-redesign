@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #0B2447;
+  --color-accent: #D90429;
+  --color-highlight: #FFC300;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
