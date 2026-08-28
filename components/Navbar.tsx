@@ -28,13 +28,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Brand Identity */}
-          <div className="flex items-center min-w-0 pr-2">
+          <div className="flex items-center min-w-0 pr-1 sm:pr-2">
             <Link
               href={`/${lang}`}
               aria-label="KAHA BLOCK - Beranda"
-              className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+              className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-2 min-h-[44px]"
             >
-              <span className="font-heading font-black text-xl sm:text-2xl text-[#0B2447] tracking-tight uppercase whitespace-nowrap">
+              <span className="font-heading font-black text-lg sm:text-2xl text-[#0B2447] tracking-tight uppercase whitespace-nowrap">
                 KAHA <span className="text-[#D90429]">BLOCK</span>
               </span>
             </Link>
@@ -50,7 +50,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     key={link.href}
                     href={link.href}
                     aria-current={isActive ? "page" : undefined}
-                    className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded ${
+                    className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded min-h-[44px] ${
                       isActive
                         ? "border-[#D90429] text-[#D90429]"
                         : "border-transparent text-[#0B2447] hover:border-[#FFC300] hover:text-[#0B2447]"
@@ -72,7 +72,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     ? "Contact WhatsApp Kaha Block"
                     : "Hubungi WhatsApp Kaha Block"
                 }
-                className="inline-flex items-center justify-center bg-[#D90429] text-white px-4 lg:px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#0B2447] hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                className="inline-flex items-center justify-center bg-[#D90429] text-white px-4 lg:px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#0B2447] hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-h-[44px]"
               >
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 WhatsApp
@@ -80,13 +80,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </div>
           </div>
 
-          {/* Mobile Actions (Language Switcher + Hamburger) */}
-          <div className="flex items-center md:hidden space-x-1.5 sm:space-x-3 flex-shrink-0">
+          {/* Mobile Actions (Language Switcher + Hamburger with 44px min touch targets) */}
+          <div className="flex items-center md:hidden space-x-1.5 sm:space-x-2 flex-shrink-0">
             <LanguageSwitcher currentLang={lang} />
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center w-10 h-10 p-2 rounded-lg text-[#0B2447] hover:text-[#D90429] hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+              className="inline-flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] p-2 rounded-xl text-[#0B2447] hover:text-[#D90429] hover:bg-gray-100 active:bg-gray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
               aria-label={
@@ -112,7 +112,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className="md:hidden border-t border-gray-100 bg-white shadow-lg"
+          className="md:hidden border-t border-gray-100 bg-white shadow-lg animate-in fade-in slide-in-from-top-2 duration-200"
           id="mobile-menu"
         >
           <div className="px-4 pt-3 pb-5 space-y-1">
@@ -124,7 +124,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   aria-current={isActive ? "page" : undefined}
-                  className={`block px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
+                  className={`flex items-center min-h-[44px] px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
                     isActive
                       ? "bg-red-50 text-[#D90429] border-l-4 border-[#D90429]"
                       : "text-[#0B2447] hover:bg-gray-50 hover:text-[#D90429]"
@@ -142,7 +142,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full flex items-center justify-center bg-[#D90429] text-white px-5 py-3.5 rounded-full text-base font-bold hover:bg-[#0B2447] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                className="w-full min-h-[48px] flex items-center justify-center bg-[#D90429] text-white px-5 py-3.5 rounded-full text-base font-bold hover:bg-[#0B2447] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               >
                 <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                 {dict.contact.whatsapp}
@@ -154,4 +154,3 @@ export default function Navbar({ lang }: { lang: Locale }) {
     </nav>
   );
 }
-

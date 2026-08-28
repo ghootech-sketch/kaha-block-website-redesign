@@ -39,7 +39,7 @@ export default async function About({
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
               {dict.title}
             </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 rounded-full" />
+            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 mb-4 sm:mb-6 rounded-full" />
           </ScrollReveal>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 md:mb-20">
@@ -50,19 +50,18 @@ export default async function About({
               <p>{dict.description3}</p>
             </ScrollReveal>
 
-            {/* Target Asset: /public/images/company/factory.jpg - Responsive visual container */}
-            <ScrollReveal direction="left" delay={0.2} className="relative h-64 sm:h-80 md:h-[400px] lg:h-[480px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-gray-100">
+            <ScrollReveal direction="left" delay={0.15} className="relative h-64 sm:h-80 md:h-[400px] lg:h-[480px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border border-gray-100">
               <PlaceholderImage text={dict.facilityImageAlt} className="w-full h-full" />
             </ScrollReveal>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 max-w-5xl mx-auto">
-            <ScrollReveal delay={0.3} className="bg-gray-50 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border-l-4 sm:border-l-8 border-[#0B2447] shadow-xs">
+            <ScrollReveal delay={0.2} className="bg-gray-50 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border-l-4 sm:border-l-8 border-[#0B2447] shadow-xs">
               <h3 className="text-xl sm:text-2xl font-bold text-[#0B2447] font-heading mb-3">{dict.vision}</h3>
               <p className="text-base sm:text-lg text-[#0B2447]/80 font-sans leading-relaxed">{dict.visionDesc}</p>
             </ScrollReveal>
             
-            <ScrollReveal delay={0.4} className="bg-gray-50 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border-l-4 sm:border-l-8 border-[#D90429] shadow-xs">
+            <ScrollReveal delay={0.25} className="bg-gray-50 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border-l-4 sm:border-l-8 border-[#D90429] shadow-xs">
               <h3 className="text-xl sm:text-2xl font-bold text-[#0B2447] font-heading mb-3">{dict.mission}</h3>
               <p className="text-base sm:text-lg text-[#0B2447]/80 font-sans leading-relaxed">{dict.missionDesc}</p>
             </ScrollReveal>

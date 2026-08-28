@@ -3,7 +3,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Globe, Instagram, Facebook } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -40,21 +40,21 @@ export default async function Contact({
               {dict.title}
             </h1>
             <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 mb-4 sm:mb-6 rounded-full" />
-            <p className="text-base sm:text-lg text-[#0B2447]/70 max-w-2xl mx-auto font-sans leading-relaxed">
+            <p className="text-base sm:text-lg text-[#0B2447]/80 max-w-2xl mx-auto font-sans leading-relaxed">
               {dict.description}
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
-            {/* Contact Details Card */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
+            {/* Contact Details Card (7 cols on desktop) */}
             <ScrollReveal
               direction="right"
-              className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-sm border border-gray-200/80 space-y-6 sm:space-y-8 flex flex-col justify-center"
+              className="lg:col-span-7 bg-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xs border border-gray-200/80 space-y-6 sm:space-y-7 flex flex-col justify-center"
             >
               {/* Address */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
-                <div className="bg-[#FFC300]/20 p-2.5 sm:p-3 rounded-xl text-[#D90429] flex-shrink-0 mt-0.5">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
+                <div className="bg-[#FFC300]/20 p-3 rounded-xl text-[#0B2447] flex-shrink-0 mt-0.5">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#D90429]" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
@@ -66,28 +66,10 @@ export default async function Contact({
                 </div>
               </div>
 
-              {/* Email */}
+              {/* Main Phone & WhatsApp */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
-                <div className="bg-[#FFC300]/20 p-2.5 sm:p-3 rounded-xl text-[#D90429] flex-shrink-0 mt-0.5">
-                  <Mail className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
-                    {dict.emailLabel}
-                  </h2>
-                  <a
-                    href={`mailto:${dict.email}`}
-                    className="text-[#D90429] hover:underline font-bold text-sm sm:text-base md:text-lg break-words block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
-                  >
-                    {dict.email}
-                  </a>
-                </div>
-              </div>
-
-              {/* Phone */}
-              <div className="flex items-start space-x-3.5 sm:space-x-4">
-                <div className="bg-[#FFC300]/20 p-2.5 sm:p-3 rounded-xl text-[#D90429] flex-shrink-0 mt-0.5">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6" aria-hidden="true" />
+                <div className="bg-[#FFC300]/20 p-3 rounded-xl text-[#0B2447] flex-shrink-0 mt-0.5">
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-[#D90429]" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
@@ -95,19 +77,78 @@ export default async function Contact({
                   </h2>
                   <a
                     href={`tel:${dict.phone.replace(/\D/g, "")}`}
-                    className="text-[#0B2447]/80 hover:text-[#D90429] font-bold text-base sm:text-lg transition-colors break-words block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+                    className="text-[#0B2447] hover:text-[#D90429] font-bold text-base sm:text-lg transition-colors break-words inline-block py-1 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
                   >
                     {dict.phone}
                   </a>
+
+                  {/* Additional phone numbers */}
+                  <div className="mt-2 pt-2 border-t border-gray-100">
+                    <span className="text-xs text-slate-500 font-medium block mb-1">
+                      {dict.additionalPhonesLabel}:
+                    </span>
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs sm:text-sm font-semibold text-slate-700">
+                      {dict.additionalPhones.map((phoneNum) => (
+                        <a
+                          key={phoneNum}
+                          href={`tel:${phoneNum.replace(/\D/g, "")}`}
+                          className="hover:text-[#D90429] transition-colors py-1 min-h-[36px] inline-flex items-center"
+                        >
+                          {phoneNum}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start space-x-3.5 sm:space-x-4">
+                <div className="bg-[#FFC300]/20 p-3 rounded-xl text-[#0B2447] flex-shrink-0 mt-0.5">
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-[#D90429]" aria-hidden="true" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
+                    {dict.emailLabel}
+                  </h2>
+                  <a
+                    href={`mailto:${dict.email}`}
+                    className="text-[#D90429] hover:underline font-bold text-sm sm:text-base md:text-lg break-words inline-block py-1 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+                  >
+                    {dict.email}
+                  </a>
+                </div>
+              </div>
+
+              {/* Social Media & Websites */}
+              <div className="flex items-start space-x-3.5 sm:space-x-4 pt-2 border-t border-gray-100">
+                <div className="bg-[#FFC300]/20 p-3 rounded-xl text-[#0B2447] flex-shrink-0 mt-0.5">
+                  <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B2447]" aria-hidden="true" />
+                </div>
+                <div className="min-w-0 flex-1 space-y-2 text-xs sm:text-sm">
+                  <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
+                    {dict.socialMediaLabel}
+                  </h2>
+                  <div className="flex items-center space-x-2 text-slate-700">
+                    <Instagram className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
+                    <span>{dict.instagramText}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-slate-700">
+                    <Facebook className="w-4 h-4 text-[#0B2447]" aria-hidden="true" />
+                    <span>{dict.facebookText}</span>
+                  </div>
+                  <div className="text-slate-500 font-mono text-xs pt-1">
+                    {dict.websiteText}
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* WhatsApp Fast Response Card */}
+            {/* WhatsApp Fast Response Card (5 cols on desktop) */}
             <ScrollReveal
               direction="left"
-              delay={0.15}
-              className="flex flex-col justify-center h-full"
+              delay={0.1}
+              className="lg:col-span-5 flex flex-col justify-center h-full"
             >
               <div className="bg-[#0B2447] text-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xl relative overflow-hidden h-full flex flex-col justify-center items-center text-center">
                 <div
@@ -131,7 +172,7 @@ export default async function Contact({
                     href={dict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center bg-[#D90429] text-white px-6 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-[#FFC300] hover:text-[#0B2447] transition-all shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+                    className="w-full inline-flex items-center justify-center min-h-[48px] bg-[#D90429] hover:bg-[#FFC300] hover:text-[#0B2447] text-white px-6 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
                   >
                     <MessageCircle className="w-5 h-5 mr-2.5" aria-hidden="true" />
                     {dict.whatsapp}

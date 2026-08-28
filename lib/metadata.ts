@@ -35,12 +35,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Tentang Kami | KAHA BLOCK",
       description:
-        "Mulai beroperasi sejak tahun 2015, PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block hidrolik otomatis dengan pabrik seluas 1000 m² di Tangerang.",
+        "Mulai beroperasi sejak tahun 2015, PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block hidrolik otomatis dengan pabrik seluas 9.080 m² di Tangerang.",
     },
     en: {
       title: "About Us | KAHA BLOCK",
       description:
-        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) produces automatic hydraulic paving blocks at our 1000 m² factory in Tangerang.",
+        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) produces automatic hydraulic paving blocks at our 9,080 m² factory in Tangerang.",
     },
   },
   products: {

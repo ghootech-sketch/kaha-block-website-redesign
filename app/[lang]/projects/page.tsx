@@ -30,10 +30,6 @@ export default async function Projects({
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].projects;
 
-  // 6 project documentation items
-  // Target Assets: /public/images/projects/project-1.jpg to project-6.jpg
-  const galleryItems = [1, 2, 3, 4, 5, 6];
-
   return (
     <>
       <JsonLd page="projects" lang={currentLang} />
@@ -50,21 +46,25 @@ export default async function Projects({
           </ScrollReveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
-            {galleryItems.map((num, idx) => (
+            {dict.items.map((item, idx) => (
               <ScrollReveal
-                key={num}
-                delay={idx * 0.08}
+                key={item.id}
+                delay={idx * 0.05}
                 direction="none"
-                className="relative h-60 sm:h-72 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-gray-200/80 flex flex-col"
+                className="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-200/80 flex flex-col h-full group"
               >
-                {/* Target Asset: /public/images/projects/project-{num}.jpg */}
-                <PlaceholderImage
-                  text={`${dict.itemCaption} ${num}`}
-                  className="w-full h-full flex-grow group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-xs p-3.5 sm:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-white text-xs sm:text-sm font-medium text-center">
-                    {dict.itemCaption} {num}
+                {/* Visual Area */}
+                <div className="relative h-52 sm:h-60 w-full overflow-hidden bg-slate-100">
+                  <PlaceholderImage
+                    text={item.caption}
+                    className="w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Caption Bar - Always visible on mobile, tablet, and desktop */}
+                <div className="p-4 sm:p-5 flex-grow flex items-center justify-center text-center bg-slate-50/70 border-t border-gray-100">
+                  <p className="text-sm sm:text-base font-semibold text-[#0B2447] font-sans">
+                    {item.caption}
                   </p>
                 </div>
               </ScrollReveal>

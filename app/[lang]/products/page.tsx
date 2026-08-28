@@ -33,13 +33,6 @@ export default async function Products({
   
   const productKeys = Object.keys(dict.items) as Array<keyof typeof dict.items>;
 
-  // Mapping target assets for development reference
-  // truepave -> /public/images/products/truepave.jpg
-  // half -> /public/images/products/half.jpg
-  // hexagonal -> /public/images/products/hexagonal-ubin.jpg
-  // topiUskup -> /public/images/products/topi-uskup.jpg
-  // kanstein -> /public/images/products/kanstein-jepit.jpg
-
   return (
     <>
       <JsonLd page="products" lang={currentLang} />
@@ -50,7 +43,7 @@ export default async function Products({
               {dict.title}
             </h1>
             <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 mb-4 sm:mb-6 rounded-full" />
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-[#0B2447]/70 max-w-2xl mx-auto font-sans">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-[#0B2447]/80 max-w-2xl mx-auto font-sans">
               {dict.specs}
             </p>
             <p className="mt-2 text-sm sm:text-base text-[#D90429] font-bold max-w-2xl mx-auto font-sans">
@@ -58,25 +51,32 @@ export default async function Products({
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+          {/* Balanced 5-Card Layout: 6 cols on lg (3 cols top row, 2 cols bottom row centered) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
             {productKeys.map((key, index) => {
               const product = dict.items[key];
+              const colSpanClass = index < 3 ? "lg:col-span-2" : "lg:col-span-3";
+
               return (
                 <ScrollReveal
-                  key={index}
-                  delay={index * 0.08}
-                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col"
+                  key={key}
+                  delay={index * 0.05}
+                  className={`${colSpanClass} bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col h-full`}
                 >
-                  {/* Target Asset: /public/images/products/{key}.jpg */}
-                  <div className="relative h-56 sm:h-64 md:h-72 w-full bg-gray-100">
+                  <div className="relative h-56 sm:h-64 w-full bg-gray-100">
                     <PlaceholderImage
-                      text={`${dict.imageAltPrefix}: ${product.name}`}
+                      text={product.name}
                       className="w-full h-full"
                     />
+                    <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                      {product.badge}
+                    </div>
                   </div>
                   <div className="p-6 sm:p-7 flex-grow flex flex-col justify-between">
                     <div>
-                      <h2 className="text-xl sm:text-2xl font-bold text-[#0B2447] mb-3 font-heading">{product.name}</h2>
+                      <h2 className="text-xl sm:text-2xl font-bold text-[#0B2447] mb-3 font-heading">
+                        {product.name}
+                      </h2>
                       <ul className="space-y-2 text-[#0B2447]/80 font-sans text-xs sm:text-sm mb-5">
                         <li><strong>{product.size.split(":")[0]}:</strong> {product.size.split(":")[1]}</li>
                         <li><strong>{product.height.split(":")[0]}:</strong> {product.height.split(":")[1]}</li>
@@ -91,7 +91,7 @@ export default async function Products({
                         href={dictionaries[currentLang].contact.whatsappUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full bg-[#0B2447] text-white py-3 rounded-full font-bold text-sm hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                        className="flex items-center justify-center w-full min-h-[44px] bg-[#0B2447] text-white py-3 rounded-full font-bold text-sm hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
                       >
                         <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                         {dict.orderCta}
@@ -115,7 +115,7 @@ export default async function Products({
                 href={dictionaries[currentLang].contact.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-[#D90429] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-[#FFC300] hover:text-[#0B2447] transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+                className="inline-block bg-[#D90429] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-[#FFC300] hover:text-[#0B2447] transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
                 {dict.consultCta}
               </a>
