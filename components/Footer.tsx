@@ -7,11 +7,11 @@ export default function Footer({ lang }: { lang: Locale }) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer aria-label="Site Footer" className="bg-[#0B2447] text-white py-16 border-t-[6px] border-[#D90429]">
+    <footer aria-label="Site Footer" className="bg-[#0B2447] text-white py-12 sm:py-14 md:py-16 border-t-[6px] border-[#D90429]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold font-heading tracking-tight text-[#FFC300]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="text-xl sm:text-2xl font-bold font-heading tracking-tight text-[#FFC300]">
               {dict.home.title}
             </h2>
             <p className="text-gray-300 leading-relaxed font-sans text-sm">
@@ -20,8 +20,8 @@ export default function Footer({ lang }: { lang: Locale }) {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-6 font-heading">{dict.footer.menuTitle}</h3>
-            <ul className="space-y-4 font-sans">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 font-heading">{dict.footer.menuTitle}</h3>
+            <ul className="space-y-3 sm:space-y-4 font-sans text-sm sm:text-base">
               {[
                 { href: `/${lang}`, label: dict.nav.home },
                 { href: `/${lang}/about`, label: dict.nav.about },
@@ -42,17 +42,17 @@ export default function Footer({ lang }: { lang: Locale }) {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-6 font-heading">{dict.contact.title}</h3>
-            <ul className="space-y-4 font-sans text-sm">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 font-heading">{dict.contact.title}</h3>
+            <ul className="space-y-3.5 sm:space-y-4 font-sans text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#FFC300] mr-3 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span className="text-gray-300">{dict.contact.address}</span>
+                <span className="text-gray-300 min-w-0 flex-1 break-words">{dict.contact.address}</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={`tel:${dict.contact.phone.replace(/\D/g, "")}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words"
                 >
                   {dict.contact.phone}
                 </a>
@@ -61,7 +61,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 <Mail className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={`mailto:${dict.contact.email}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words"
                 >
                   {dict.contact.email}
                 </a>
@@ -70,33 +70,33 @@ export default function Footer({ lang }: { lang: Locale }) {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-6 font-heading">{dict.footer.socialTitle}</h3>
-            <div className="space-y-4">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6 font-heading">{dict.footer.socialTitle}</h3>
+            <div className="space-y-3.5 sm:space-y-4">
               <div className="flex items-center space-x-3">
                 <a
                   href="https://instagram.com/kahablock"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram Kaha Block @kahablock"
-                  className="bg-[#1a365d] p-3 rounded-full hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                  className="bg-[#1a365d] p-2.5 sm:p-3 rounded-full hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
                 >
-                  <Instagram className="w-5 h-5 text-white" aria-hidden="true" />
+                  <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-white" aria-hidden="true" />
                 </a>
                 <span className="text-gray-300 text-sm font-sans">@kahablock</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 text-sm font-sans">
-                <div className="bg-[#1a365d] p-3 rounded-full">
-                  <Facebook className="w-5 h-5 text-white" aria-hidden="true" />
+                <div className="bg-[#1a365d] p-2.5 sm:p-3 rounded-full">
+                  <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-white" aria-hidden="true" />
                 </div>
                 <span>{dict.footer.facebookText}</span>
               </div>
             </div>
-            <div className="mt-6">
+            <div className="mt-5 sm:mt-6">
               <a
                 href={dict.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#25D366] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                className="inline-block bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
               >
                 {dict.contact.whatsapp}
               </a>
@@ -104,7 +104,7 @@ export default function Footer({ lang }: { lang: Locale }) {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-400 font-sans">
+        <div className="border-t border-gray-700 mt-10 sm:mt-12 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-400 font-sans">
           <p>&copy; {currentYear} {dict.footer.rights}</p>
         </div>
       </div>

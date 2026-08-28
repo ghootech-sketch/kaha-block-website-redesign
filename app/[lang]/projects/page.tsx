@@ -37,33 +37,33 @@ export default async function Projects({
   return (
     <>
       <JsonLd page="projects" lang={currentLang} />
-      <div className="bg-white min-h-screen py-24">
+      <div className="bg-white min-h-screen py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center mb-20">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#0B2447] tracking-tight font-heading">
+          <ScrollReveal className="text-center mb-10 md:mb-14 lg:mb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
               {dict.title}
             </h1>
-            <div className="w-24 h-1.5 bg-[#D90429] mx-auto mt-8 rounded-full" />
-            <p className="mt-8 text-xl text-[#0B2447]/80 max-w-2xl mx-auto font-sans leading-relaxed">
+            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 mb-4 sm:mb-6 rounded-full" />
+            <p className="text-base sm:text-lg text-[#0B2447]/80 max-w-2xl mx-auto font-sans leading-relaxed">
               {dict.description}
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
             {galleryItems.map((num, idx) => (
               <ScrollReveal
                 key={num}
-                delay={idx * 0.1}
+                delay={idx * 0.08}
                 direction="none"
-                className="relative h-72 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group border border-gray-100 flex flex-col"
+                className="relative h-60 sm:h-72 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 group border border-gray-200/80 flex flex-col"
               >
                 {/* Target Asset: /public/images/projects/project-{num}.jpg */}
                 <PlaceholderImage
                   text={`${dict.itemCaption} ${num}`}
                   className="w-full h-full flex-grow group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-white text-sm font-medium text-center">
+                <div className="absolute bottom-0 left-0 right-0 bg-black/70 backdrop-blur-xs p-3.5 sm:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-xs sm:text-sm font-medium text-center">
                     {dict.itemCaption} {num}
                   </p>
                 </div>
