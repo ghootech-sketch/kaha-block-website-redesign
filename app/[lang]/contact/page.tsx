@@ -129,16 +129,57 @@ export default async function Contact({
                   <h2 className="text-base sm:text-lg font-bold text-[#0B2447] mb-1 font-heading">
                     {dict.socialMediaLabel}
                   </h2>
-                  <div className="flex items-center space-x-2 text-slate-700">
-                    <Instagram className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
-                    <span>{dict.instagramText}</span>
+                  <div className="flex items-start space-x-2 text-slate-700">
+                    <Instagram className="w-4 h-4 text-[#D90429] flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <div className="flex flex-wrap items-center gap-x-1.5 break-words">
+                      <a
+                        href="https://www.instagram.com/kahablock/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram Kaha Block @kahablock"
+                        className="text-[#0B2447] hover:text-[#D90429] hover:underline font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                      >
+                        @kahablock
+                      </a>
+                      <span className="text-slate-400">&amp;</span>
+                      <a
+                        href="https://www.instagram.com/kaha.sukses.mandiri/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram PT Kaha Sukses Mandiri @kaha.sukses.mandiri"
+                        className="text-[#0B2447] hover:text-[#D90429] hover:underline font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                      >
+                        @kaha.sukses.mandiri
+                      </a>
+                    </div>
                   </div>
                   <div className="flex items-center space-x-2 text-slate-700">
-                    <Facebook className="w-4 h-4 text-[#0B2447]" aria-hidden="true" />
+                    <Facebook className="w-4 h-4 text-[#0B2447] flex-shrink-0" aria-hidden="true" />
                     <span>{dict.facebookText}</span>
                   </div>
-                  <div className="text-slate-500 font-mono text-xs pt-1">
-                    {dict.websiteText}
+                  <div className="flex items-start space-x-2 text-slate-700 pt-1">
+                    <Globe className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <div className="flex flex-wrap items-center gap-x-2 text-xs font-mono break-all">
+                      <a
+                        href="https://kahablock.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Website Kaha Block kahablock.com"
+                        className="text-slate-600 hover:text-[#D90429] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                      >
+                        kahablock.com
+                      </a>
+                      <span className="text-slate-400">•</span>
+                      <a
+                        href="https://kahasuksesmandiri.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Website PT Kaha Sukses Mandiri kahasuksesmandiri.com"
+                        className="text-slate-600 hover:text-[#D90429] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                      >
+                        kahasuksesmandiri.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -217,9 +217,7 @@ export default async function Home({
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="stats-heading" className="sr-only">
-              {currentLang === "en"
-                ? "Company Capability Overview"
-                : "Ringkasan Kapabilitas Perusahaan"}
+              {homeDict.trustStats.heading}
             </h2>
 
             <ScrollReveal>

@@ -78,15 +78,35 @@ export default function Footer({ lang }: { lang: Locale }) {
             <div className="space-y-3.5 sm:space-y-4">
               <div className="flex items-center space-x-3">
                 <a
-                  href="https://instagram.com/kahablock"
+                  href="https://www.instagram.com/kahablock/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram Kaha Block @kahablock"
-                  className="bg-[#1a365d] p-2.5 sm:p-3 rounded-full hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-w-[44px] min-h-[44px] flex items-center justify-center"
+                  className="bg-[#1a365d] p-2.5 sm:p-3 rounded-full hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-w-[44px] min-h-[44px] flex items-center justify-center flex-shrink-0"
                 >
                   <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-white" aria-hidden="true" />
                 </a>
-                <span className="text-gray-300 text-sm font-sans">{dict.footer.instagramText}</span>
+                <div className="flex flex-wrap items-center gap-x-1.5 text-gray-300 text-sm font-sans">
+                  <a
+                    href="https://www.instagram.com/kahablock/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram Kaha Block @kahablock"
+                    className="hover:text-[#FFC300] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                  >
+                    @kahablock
+                  </a>
+                  <span className="text-gray-400">&amp;</span>
+                  <a
+                    href="https://www.instagram.com/kaha.sukses.mandiri/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram PT Kaha Sukses Mandiri @kaha.sukses.mandiri"
+                    className="hover:text-[#FFC300] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
+                  >
+                    @kaha.sukses.mandiri
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 text-sm font-sans">
                 <div className="bg-[#1a365d] p-2.5 sm:p-3 rounded-full min-w-[44px] min-h-[44px] flex items-center justify-center">

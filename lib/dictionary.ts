@@ -52,6 +52,7 @@ export const dictionaries = {
         gradeLabel: "Mutu",
       },
       trustStats: {
+        heading: "Ringkasan Kapabilitas Perusahaan",
         sinceValue: "2015",
         sinceTitle: "Beroperasi Sejak 2015",
         sinceDesc: "Pengalaman bertahun-tahun memproduksi paving block berkualitas untuk perumahan, komersial, dan industri.",
@@ -303,6 +304,7 @@ export const dictionaries = {
         gradeLabel: "Grade",
       },
       trustStats: {
+        heading: "Company Capability Overview",
         sinceValue: "2015",
         sinceTitle: "Operating Since 2015",
         sinceDesc: "Years of experience manufacturing quality concrete paving blocks for residential, commercial, and industrial projects.",
