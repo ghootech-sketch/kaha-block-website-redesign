@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { dictionaries, Locale } from "@/lib/dictionary";
@@ -12,6 +12,16 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
+
   const links = [
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
@@ -22,7 +32,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   return (
     <nav
-      aria-label="Main Navigation"
+      aria-label={lang === "en" ? "Main Navigation" : "Navigasi Utama"}
       className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs font-sans"
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
@@ -31,7 +41,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           <div className="flex items-center min-w-0 pr-1 sm:pr-2">
             <Link
               href={`/${lang}`}
-              aria-label="KAHA BLOCK - Beranda"
+              aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
               className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-2 min-h-[44px]"
             >
               <span className="font-heading font-black text-lg sm:text-2xl text-[#0B2447] tracking-tight uppercase whitespace-nowrap">

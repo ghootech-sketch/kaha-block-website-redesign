@@ -75,133 +75,135 @@ export default async function Home({
           />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-              {/* Left Content Column (7 cols on desktop) */}
-              <ScrollReveal direction="right" className="lg:col-span-7 flex flex-col justify-center text-left">
-                {/* Eyebrow badge */}
-                <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#0B2447]/5 border border-[#0B2447]/10 w-fit mb-4 sm:mb-5">
-                  <span className="w-2 h-2 rounded-full bg-[#D90429] animate-pulse" />
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2447] font-heading">
-                    {homeDict.hero.eyebrow}
-                  </span>
-                </div>
-
-                {/* H1 Heading */}
-                <h1
-                  id="hero-title"
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-[#0B2447] tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6"
-                >
-                  {homeDict.hero.h1}
-                </h1>
-
-                {/* Clear Narrative Description */}
-                <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed mb-8 max-w-2xl">
-                  {homeDict.hero.description}
-                </p>
-
-                {/* Primary & Secondary Action Buttons */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-8">
-                  <a
-                    id="hero-primary-cta"
-                    href={dict.contact.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
-                  >
-                    <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
-                    {homeDict.hero.ctaPrimary}
-                  </a>
-
-                  <Link
-                    id="hero-secondary-cta"
-                    href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-[#0B2447] border-2 border-[#0B2447]/15 hover:border-[#0B2447] px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2447]"
-                  >
-                    {homeDict.hero.ctaSecondary}
-                    <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
-                  </Link>
-                </div>
-
-                {/* Trust Line & Key Verification Badges */}
-                <div className="pt-6 border-t border-gray-200/80 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-500 font-sans">
-                  <div className="flex items-center space-x-1.5">
-                    <ShieldCheck className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
-                    <span className="font-semibold text-slate-700">
-                      {homeDict.hero.trustNote}
+            <ScrollReveal>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                {/* Left Content Column (7 cols on desktop) */}
+                <div className="lg:col-span-7 flex flex-col justify-center text-left">
+                  {/* Eyebrow badge */}
+                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#0B2447]/5 border border-[#0B2447]/10 w-fit mb-4 sm:mb-5">
+                    <span className="w-2 h-2 rounded-full bg-[#D90429] animate-pulse" />
+                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2447] font-heading">
+                      {homeDict.hero.eyebrow}
                     </span>
                   </div>
-                  <span className="text-gray-300 hidden sm:inline" aria-hidden="true">•</span>
-                  <div className="flex items-center space-x-1.5">
-                    <Factory className="w-4 h-4 text-[#0B2447]" aria-hidden="true" />
-                    <span>{homeDict.hero.plantBadge}</span>
-                  </div>
-                </div>
-              </ScrollReveal>
 
-              {/* Right Visual Column (5 cols on desktop) */}
-              <ScrollReveal direction="left" delay={0.1} className="lg:col-span-5 relative">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/3] sm:aspect-[16/11]">
-                  {/* Geometric Hydraulic Showcase Artwork */}
-                  <div className="w-full h-full p-6 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-[#0B2447] to-slate-900">
-                    {/* Top spec badges */}
-                    <div className="flex items-center justify-between text-white/90">
-                      <div className="flex items-center space-x-2">
-                        <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
-                        <span className="text-xs font-mono font-bold tracking-wider uppercase">
-                          {homeDict.hero.specsHeader}
-                        </span>
-                      </div>
-                      <span className="px-2.5 py-1 bg-white/10 rounded-full text-[11px] font-mono text-white">
-                        {homeDict.hero.gradeLabel} K-250 • K-300 • K-400
+                  {/* H1 Heading */}
+                  <h1
+                    id="hero-title"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-[#0B2447] tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6"
+                  >
+                    {homeDict.hero.h1}
+                  </h1>
+
+                  {/* Clear Narrative Description */}
+                  <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed mb-8 max-w-2xl">
+                    {homeDict.hero.description}
+                  </p>
+
+                  {/* Primary & Secondary Action Buttons */}
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-8">
+                    <a
+                      id="hero-primary-cta"
+                      href={dict.contact.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                    >
+                      <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
+                      {homeDict.hero.ctaPrimary}
+                    </a>
+
+                    <Link
+                      id="hero-secondary-cta"
+                      href={`/${currentLang}/products`}
+                      className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-[#0B2447] border-2 border-[#0B2447]/15 hover:border-[#0B2447] px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2447]"
+                    >
+                      {homeDict.hero.ctaSecondary}
+                      <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                    </Link>
+                  </div>
+
+                  {/* Trust Line & Key Verification Badges */}
+                  <div className="pt-6 border-t border-gray-200/80 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-500 font-sans">
+                    <div className="flex items-center space-x-1.5">
+                      <ShieldCheck className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
+                      <span className="font-semibold text-slate-700">
+                        {homeDict.hero.trustNote}
                       </span>
                     </div>
-
-                    {/* Industrial Paver Grid Illustration */}
-                    <div className="grid grid-cols-3 gap-2 my-auto max-w-[280px] mx-auto opacity-95">
-                      <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                        TRUEPAVE
-                      </div>
-                      <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                        HALF
-                      </div>
-                      <div className="h-10 bg-[#FFC300] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-[#0B2447] font-bold">
-                        HEXAGON
-                      </div>
-                      <div className="h-10 bg-[#D90429] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-white font-bold">
-                        KANSTEIN
-                      </div>
-                      <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                        UBIN
-                      </div>
-                      <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                        USKUP
-                      </div>
-                    </div>
-
-                    {/* Bottom Status Ribbon */}
-                    <div className="flex items-center justify-between text-xs text-slate-300 pt-3 border-t border-white/10">
-                      <span className="font-mono">{homeDict.hero.visualBadge}</span>
-                      <span className="text-[#FFC300] font-bold">Est. 2015</span>
+                    <span className="text-gray-300 hidden sm:inline" aria-hidden="true">•</span>
+                    <div className="flex items-center space-x-1.5">
+                      <Factory className="w-4 h-4 text-[#0B2447]" aria-hidden="true" />
+                      <span>{homeDict.hero.plantBadge}</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Floating Highlight Card */}
-                <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white rounded-xl shadow-xl p-4 border border-gray-100 items-center space-x-3 max-w-[240px]">
-                  <div className="w-10 h-10 rounded-lg bg-[#FFC300]/20 text-[#0B2447] flex items-center justify-center flex-shrink-0">
-                    <Award className="w-5 h-5" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <div className="text-xs font-bold text-[#0B2447] font-heading">
-                      {homeDict.hero.plantBadge}
+                {/* Right Visual Column (5 cols on desktop) */}
+                <div className="lg:col-span-5 relative">
+                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/3] sm:aspect-[16/11]">
+                    {/* Geometric Hydraulic Showcase Artwork */}
+                    <div className="w-full h-full p-6 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-[#0B2447] to-slate-900">
+                      {/* Top spec badges */}
+                      <div className="flex items-center justify-between text-white/90">
+                        <div className="flex items-center space-x-2">
+                          <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+                          <span className="text-xs font-mono font-bold tracking-wider uppercase">
+                            {homeDict.hero.specsHeader}
+                          </span>
+                        </div>
+                        <span className="px-2.5 py-1 bg-white/10 rounded-full text-[11px] font-mono text-white">
+                          {homeDict.hero.gradeLabel} K-250 • K-300 • K-400
+                        </span>
+                      </div>
+
+                      {/* Industrial Paver Grid Illustration */}
+                      <div className="grid grid-cols-3 gap-2 my-auto max-w-[280px] mx-auto opacity-95">
+                        <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
+                          TRUEPAVE
+                        </div>
+                        <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
+                          HALF
+                        </div>
+                        <div className="h-10 bg-[#FFC300] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-[#0B2447] font-bold">
+                          HEXAGON
+                        </div>
+                        <div className="h-10 bg-[#D90429] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-white font-bold">
+                          KANSTEIN
+                        </div>
+                        <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
+                          UBIN
+                        </div>
+                        <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
+                          USKUP
+                        </div>
+                      </div>
+
+                      {/* Bottom Status Ribbon */}
+                      <div className="flex items-center justify-between text-xs text-slate-300 pt-3 border-t border-white/10">
+                        <span className="font-mono">{homeDict.hero.visualBadge}</span>
+                        <span className="text-[#FFC300] font-bold">Est. 2015</span>
+                      </div>
                     </div>
-                    <div className="text-[11px] text-slate-500 font-sans">
-                      {homeDict.hero.visualBadge}
+                  </div>
+
+                  {/* Floating Highlight Card */}
+                  <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white rounded-xl shadow-xl p-4 border border-gray-100 items-center space-x-3 max-w-[240px]">
+                    <div className="w-10 h-10 rounded-lg bg-[#FFC300]/20 text-[#0B2447] flex items-center justify-center flex-shrink-0">
+                      <Award className="w-5 h-5" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#0B2447] font-heading">
+                        {homeDict.hero.plantBadge}
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-sans">
+                        {homeDict.hero.visualBadge}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </ScrollReveal>
-            </div>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -289,24 +291,24 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
-                {homeDict.featuredProducts.eyebrow}
-              </span>
-              <h2
-                id="featured-heading"
-                className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
-              >
-                {homeDict.featuredProducts.title}
-              </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-base sm:text-lg text-slate-600 font-sans">
-                {homeDict.featuredProducts.subtitle}
-              </p>
-            </ScrollReveal>
-
-            {/* Balanced 5 Product Grid: 3 cards top row, 2 cards bottom row centered */}
             <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                  {homeDict.featuredProducts.eyebrow}
+                </span>
+                <h2
+                  id="featured-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.featuredProducts.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.featuredProducts.subtitle}
+                </p>
+              </div>
+
+              {/* Balanced 5 Product Grid: 3 cards top row, 2 cards bottom row centered */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
                 {featuredKeys.map((key, index) => {
                   const product = dict.products.items[key];
@@ -361,19 +363,19 @@ export default async function Home({
                   );
                 })}
               </div>
-            </ScrollReveal>
 
-            {/* Catalog CTA */}
-            <div className="mt-10 sm:mt-12 text-center">
-              <Link
-                id="view-all-products-btn"
-                href={`/${currentLang}/products`}
-                className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
-              >
-                {homeDict.featuredProducts.viewAll}
-                <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
-              </Link>
-            </div>
+              {/* Catalog CTA */}
+              <div className="mt-10 sm:mt-12 text-center">
+                <Link
+                  id="view-all-products-btn"
+                  href={`/${currentLang}/products`}
+                  className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                >
+                  {homeDict.featuredProducts.viewAll}
+                  <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -386,23 +388,23 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
-                {homeDict.installation.eyebrow}
-              </span>
-              <h2
-                id="installation-heading"
-                className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
-              >
-                {homeDict.installation.title}
-              </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-base sm:text-lg text-slate-600 font-sans">
-                {homeDict.installation.subtitle}
-              </p>
-            </ScrollReveal>
-
             <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                  {homeDict.installation.eyebrow}
+                </span>
+                <h2
+                  id="installation-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.installation.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.installation.subtitle}
+                </p>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 {/* Point 1: Integrated Package */}
                 <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-all">
@@ -546,23 +548,23 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50 border-t border-gray-200/80"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
-                {homeDict.ordering.eyebrow}
-              </span>
-              <h2
-                id="ordering-heading"
-                className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
-              >
-                {homeDict.ordering.title}
-              </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-base sm:text-lg text-slate-600 font-sans">
-                {homeDict.ordering.subtitle}
-              </p>
-            </ScrollReveal>
-
             <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                  {homeDict.ordering.eyebrow}
+                </span>
+                <h2
+                  id="ordering-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.ordering.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.ordering.subtitle}
+                </p>
+              </div>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Step 1 */}
                 <div className="bg-white border border-gray-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0B2447]/30 hover:shadow-md transition-all duration-300">
@@ -629,24 +631,24 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
-                {homeDict.gallery.eyebrow}
-              </span>
-              <h2
-                id="gallery-heading"
-                className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
-              >
-                {homeDict.gallery.title}
-              </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-base sm:text-lg text-slate-600 font-sans">
-                {homeDict.gallery.subtitle}
-              </p>
-            </ScrollReveal>
-
-            {/* 3 Documentation Cards */}
             <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                  {homeDict.gallery.eyebrow}
+                </span>
+                <h2
+                  id="gallery-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.gallery.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.gallery.subtitle}
+                </p>
+              </div>
+
+              {/* 3 Documentation Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Card 1: Produk */}
                 <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full">
@@ -761,19 +763,19 @@ export default async function Home({
                   </div>
                 </div>
               </div>
-            </ScrollReveal>
 
-            {/* Gallery Page CTA */}
-            <div className="mt-10 sm:mt-12 text-center">
-              <Link
-                id="view-gallery-btn"
-                href={`/${currentLang}/projects`}
-                className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
-              >
-                {homeDict.gallery.cta}
-                <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
-              </Link>
-            </div>
+              {/* Gallery Page CTA */}
+              <div className="mt-10 sm:mt-12 text-center">
+                <Link
+                  id="view-gallery-btn"
+                  href={`/${currentLang}/projects`}
+                  className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                >
+                  {homeDict.gallery.cta}
+                  <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -786,23 +788,23 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50 border-t border-gray-200/80"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
-                {homeDict.benefits.eyebrow}
-              </span>
-              <h2
-                id="benefits-heading"
-                className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
-              >
-                {homeDict.benefits.title}
-              </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-base sm:text-lg text-slate-600 font-sans">
-                {homeDict.benefits.subtitle}
-              </p>
-            </ScrollReveal>
-
             <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                  {homeDict.benefits.eyebrow}
+                </span>
+                <h2
+                  id="benefits-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.benefits.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.benefits.subtitle}
+                </p>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Feature 1 */}
                 <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200/80 flex flex-col h-full hover:border-[#FFC300] hover:shadow-md transition-all">
