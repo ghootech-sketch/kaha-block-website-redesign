@@ -1,5 +1,6 @@
 import { dictionaries, Locale } from "@/lib/dictionary";
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone, Instagram, Facebook } from "lucide-react";
 
 export default function Footer({ lang }: { lang: Locale }) {
@@ -12,9 +13,21 @@ export default function Footer({ lang }: { lang: Locale }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           {/* Brand & Brief */}
           <div className="space-y-4 sm:space-y-6">
-            <h2 className="text-xl sm:text-2xl font-bold font-heading tracking-tight text-[#FFC300]">
-              {dict.home.title}
-            </h2>
+            <Link
+              href={`/${lang}`}
+              aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
+              className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded"
+            >
+              <div className="relative w-[180px] md:w-[220px] h-[50px] md:h-[60px]">
+                <Image
+                  src="/footer-logo.png"
+                  alt="Kaha Block - PT Kaha Sukses Mandiri"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 768px) 180px, 220px"
+                />
+              </div>
+            </Link>
             <p className="text-gray-300 leading-relaxed font-sans text-sm">
               {dict.home.companyBrief}
             </p>

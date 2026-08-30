@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Locale } from "./dictionary";
 
 const BASE_URL = "https://kahablock.com";
-const OG_IMAGE_URL = `${BASE_URL}/og-image.png`;
+const OG_IMAGE_URL = `${BASE_URL}/image-og.png`;
 
 interface PageMetaConfig {
   path: "" | "/about" | "/products" | "/projects" | "/contact";
@@ -117,7 +117,8 @@ export function constructPageMetadata(
           url: OG_IMAGE_URL,
           width: 1200,
           height: 630,
-          alt: "KAHA BLOCK - Pabrik Paving Block Berkualitas",
+          alt: "Kaha Block - Paving Block Berkualitas",
+          type: "image/png",
         },
       ],
     },

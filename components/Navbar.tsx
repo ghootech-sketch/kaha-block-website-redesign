@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { dictionaries, Locale } from "@/lib/dictionary";
 import { Menu, X, Phone } from "lucide-react";
@@ -44,9 +45,16 @@ export default function Navbar({ lang }: { lang: Locale }) {
               aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
               className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-2 min-h-[44px]"
             >
-              <span className="font-heading font-black text-lg sm:text-2xl text-[#0B2447] tracking-tight uppercase whitespace-nowrap">
-                KAHA <span className="text-[#D90429]">BLOCK</span>
-              </span>
+              <div className="relative h-[36px] sm:h-[40px] md:h-[44px] lg:h-[48px] w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px]">
+                <Image
+                  src="/navbar-logo.png"
+                  alt="Kaha Block - PT Kaha Sukses Mandiri"
+                  fill
+                  className="object-contain object-left"
+                  priority
+                  sizes="(max-width: 640px) 140px, (max-width: 768px) 160px, (max-width: 1024px) 180px, 200px"
+                />
+              </div>
             </Link>
           </div>
 
