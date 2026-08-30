@@ -77,15 +77,23 @@ export default async function Products({
                         {product.name}
                       </h2>
                       <ul className="space-y-2 text-[#0B2447]/80 font-sans text-xs sm:text-sm mb-5">
-                        <li><strong>{product.size.split(":")[0]}:</strong> {product.size.split(":")[1]}</li>
-                        <li><strong>{product.height.split(":")[0]}:</strong> {product.height.split(":")[1]}</li>
-                        <li><strong>{product.coverage.split(":")[0]}:</strong> {product.coverage.split(":")[1]}</li>
+                        {product.specs?.map((spec, i) => {
+                          const parts = spec.split(":");
+                          return (
+                            <li key={i}>
+                              {parts.length > 1 ? (
+                                <>
+                                  <strong>{parts[0]}:</strong> {parts.slice(1).join(":")}
+                                </>
+                              ) : (
+                                spec
+                              )}
+                            </li>
+                          );
+                        })}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs sm:text-sm text-[#0B2447] font-medium p-3.5 sm:p-4 bg-gray-50 rounded-xl mb-5 border border-gray-100">
-                        {product.application}
-                      </p>
                       <a 
                         href={dictionaries[currentLang].contact.whatsappUrl} 
                         target="_blank" 

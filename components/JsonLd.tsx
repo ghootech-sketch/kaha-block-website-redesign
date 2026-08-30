@@ -17,10 +17,19 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
     "name": "PT Kaha Sukses Mandiri (Kaha Block)",
     "url": baseUrl,
     "telephone": "+628119753030",
+    "email": "sanliong68@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "addressRegion": "Jabodetabek",
+      "streetAddress": "Jl. Raya Cibadak No. 7, Suradita",
+      "addressLocality": "Cisauk",
+      "addressRegion": "Tangerang",
+      "postalCode": "15343",
       "addressCountry": "ID",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -6.358589787390475,
+      "longitude": 106.64021975454531
     },
     "sameAs": [
       "https://instagram.com/kahablock",

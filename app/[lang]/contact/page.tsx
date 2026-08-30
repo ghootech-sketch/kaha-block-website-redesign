@@ -45,11 +45,11 @@ export default async function Contact({
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
-            {/* Contact Details Card (7 cols on desktop) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
+            {/* Contact Details Card (Left) */}
             <ScrollReveal
               direction="right"
-              className="lg:col-span-7 bg-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xs border border-gray-200/80 space-y-6 sm:space-y-7 flex flex-col justify-center"
+              className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xs border border-gray-200/80 space-y-6 sm:space-y-7 flex flex-col justify-center"
             >
               {/* Address */}
               <div className="flex items-start space-x-3.5 sm:space-x-4">
@@ -120,7 +120,7 @@ export default async function Contact({
                 </div>
               </div>
 
-              {/* Social Media & Websites */}
+              {/* Social Media */}
               <div className="flex items-start space-x-3.5 sm:space-x-4 pt-2 border-t border-gray-100">
                 <div className="bg-[#FFC300]/20 p-3 rounded-xl text-[#0B2447] flex-shrink-0 mt-0.5">
                   <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B2447]" aria-hidden="true" />
@@ -141,85 +141,48 @@ export default async function Contact({
                       >
                         @kahablock
                       </a>
-                      <span className="text-slate-400">&amp;</span>
-                      <a
-                        href="https://www.instagram.com/kaha.sukses.mandiri/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram PT Kaha Sukses Mandiri @kaha.sukses.mandiri"
-                        className="text-[#0B2447] hover:text-[#D90429] hover:underline font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
-                      >
-                        @kaha.sukses.mandiri
-                      </a>
                     </div>
                   </div>
                   <div className="flex items-center space-x-2 text-slate-700">
                     <Facebook className="w-4 h-4 text-[#0B2447] flex-shrink-0" aria-hidden="true" />
-                    <span>{dict.facebookText}</span>
-                  </div>
-                  <div className="flex items-start space-x-2 text-slate-700 pt-1">
-                    <Globe className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                    <div className="flex flex-wrap items-center gap-x-2 text-xs font-mono break-all">
-                      <a
-                        href="https://kahablock.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Website Kaha Block kahablock.com"
-                        className="text-slate-600 hover:text-[#D90429] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
-                      >
-                        kahablock.com
-                      </a>
-                      <span className="text-slate-400">•</span>
-                      <a
-                        href="https://kahasuksesmandiri.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Website PT Kaha Sukses Mandiri kahasuksesmandiri.com"
-                        className="text-slate-600 hover:text-[#D90429] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
-                      >
-                        kahasuksesmandiri.com
-                      </a>
-                    </div>
+                    <span className="font-semibold text-[#0B2447]">{dict.facebookText}</span>
                   </div>
                 </div>
               </div>
-            </ScrollReveal>
 
-            {/* WhatsApp Fast Response Card (5 cols on desktop) */}
-            <ScrollReveal
-              direction="left"
-              delay={0.1}
-              className="lg:col-span-5 flex flex-col justify-center h-full"
-            >
-              <div className="bg-[#0B2447] text-white p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl shadow-xl relative overflow-hidden h-full flex flex-col justify-center items-center text-center">
-                <div
-                  className="absolute top-0 right-0 w-32 h-32 bg-[#FFC300] rounded-bl-full opacity-20 transform translate-x-4 -translate-y-4 pointer-events-none"
-                  aria-hidden="true"
-                />
-                <div className="relative z-10 w-full max-w-sm flex flex-col items-center">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-4 sm:mb-6">
-                    <MessageCircle
-                      className="w-8 h-8 sm:w-9 sm:h-9 text-[#FFC300]"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-3 text-white">
-                    {dict.fastResponseTitle}
-                  </h2>
-                  <p className="opacity-90 font-sans text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed text-slate-200">
-                    {dict.fastResponseDesc}
-                  </p>
+              {/* WhatsApp Dominant CTA */}
+              <div className="pt-4">
                   <a
                     href={dict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center min-h-[48px] bg-[#D90429] hover:bg-[#FFC300] hover:text-[#0B2447] text-white px-6 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+                    className="w-full inline-flex items-center justify-center min-h-[48px] bg-[#D90429] hover:bg-[#b50322] text-white px-6 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#FFC300]"
                   >
                     <MessageCircle className="w-5 h-5 mr-2.5" aria-hidden="true" />
                     {dict.whatsapp}
                   </a>
-                </div>
               </div>
+            </ScrollReveal>
+
+            {/* Google Maps Card (Right) */}
+            <ScrollReveal
+              direction="left"
+              delay={0.1}
+              className="flex flex-col h-full bg-white rounded-2xl sm:rounded-3xl shadow-xs border border-gray-200/80 overflow-hidden"
+            >
+               <div className="w-full h-64 sm:h-full min-h-[300px]">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14168.049405624779!2d106.63471018868615!3d-6.355152862804557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46a78ce6c8f%3A0xe549bd8084ff1047!2sPT%20Kaha%20Sukses%20Mandiri!5e0!3m2!1sid!2sid!4v1740880199341!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={false} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="PT Kaha Sukses Mandiri Google Maps"
+                    className="w-full h-full"
+                  />
+               </div>
             </ScrollReveal>
           </div>
         </div>

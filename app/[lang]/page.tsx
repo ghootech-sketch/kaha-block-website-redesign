@@ -153,7 +153,7 @@ export default async function Home({
                           </span>
                         </div>
                         <span className="px-2.5 py-1 bg-white/10 rounded-full text-[11px] font-mono text-white">
-                          {homeDict.hero.gradeLabel} K-250 • K-300 • K-400
+                          {currentLang === 'en' ? 'Truepave K-300 to K-350' : 'Truepave K-300 sampai K-350'}
                         </span>
                       </div>
 
@@ -258,7 +258,7 @@ export default async function Home({
                   </div>
                 </div>
 
-                {/* Stat 3: Quality Options K-250, K-300, K-400 */}
+                {/* Stat 3: Quality Options */}
                 <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#FFC300]/50 hover:shadow-md transition-all">
                   <div>
                     <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#FFC300]/20 text-[#0B2447] mb-4">
@@ -337,13 +337,10 @@ export default async function Home({
                             {product.name}
                           </h3>
                           <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 font-sans mb-4">
-                            <li>{product.size}</li>
-                            <li>{product.height}</li>
-                            <li>{product.coverage}</li>
+                            {product.specs?.slice(0, 3).map((spec, i) => (
+                              <li key={i}>{spec}</li>
+                            ))}
                           </ul>
-                          <p className="text-xs text-slate-700 bg-slate-50 p-3 rounded-lg border border-slate-100 font-sans">
-                            {product.application}
-                          </p>
                         </div>
                       </div>
 
@@ -738,13 +735,13 @@ export default async function Home({
                     </div>
                     <div className="h-14 bg-slate-900/80 rounded-lg border border-white/15 p-2 flex items-center justify-around my-2">
                       <div className="text-center">
-                        <span className="text-[10px] text-slate-400 block">Industri</span>
-                        <span className="text-xs font-bold text-white">K-400 (8/10 cm)</span>
+                        <span className="text-[10px] text-slate-400 block">{currentLang === 'en' ? 'Locations' : 'Lokasi'}</span>
+                        <span className="text-xs font-bold text-white">{currentLang === 'en' ? 'Roads & Parking' : 'Jalan & Parkir'}</span>
                       </div>
                       <div className="h-6 w-px bg-white/20" />
                       <div className="text-center">
-                        <span className="text-[10px] text-slate-400 block">Hunian</span>
-                        <span className="text-xs font-bold text-[#FFC300]">K-250 / K-300</span>
+                        <span className="text-[10px] text-slate-400 block">{currentLang === 'en' ? 'Heavy Load' : 'Beban Berat'}</span>
+                        <span className="text-xs font-bold text-[#FFC300]">{currentLang === 'en' ? 'Industrial Areas' : 'Area Industri'}</span>
                       </div>
                     </div>
                     <div className="text-[11px] font-mono text-slate-300">

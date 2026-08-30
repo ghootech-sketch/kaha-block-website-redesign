@@ -22,12 +22,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "KAHA BLOCK - Pabrik Paving Block Berkualitas di Indonesia",
       description:
-        "Pabrik Paving Block Full Otomatis Hidrolik K-250, K-300, dan K-400 dengan Kualitas Terbaik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek dan sekitarnya.",
+        "Pabrik Paving Block Full Otomatis Hidrolik dengan Kualitas Terbaik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek dan sekitarnya.",
     },
     en: {
       title: "KAHA BLOCK - Premium Paving Block Factory in Indonesia",
       description:
-        "Fully Automatic Hydraulic Paving Blocks in K-250, K-300, and K-400 Quality. Solid infrastructure solutions across Greater Jakarta and beyond.",
+        "Fully Automatic Hydraulic Paving Blocks. Solid infrastructure solutions across Greater Jakarta and beyond.",
     },
   },
   about: {
@@ -48,12 +48,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Produk Paving Block & Conblock | KAHA BLOCK",
       description:
-        "Pilihan paving block: Truepave, Half, Hexagonal & Ubin, Topi Uskup, dan Kanstein Jepit mutu K-250, K-300, K-400 produksi PT Kaha Sukses Mandiri.",
+        "Pilihan paving block: Truepave, Half, Hexagonal & Ubin, Uskup, dan Kanstein produksi PT Kaha Sukses Mandiri.",
     },
     en: {
       title: "Paving Block Products | KAHA BLOCK",
       description:
-        "Quality paving block products: Truepave, Half, Hexagonal & Tile, Bishop Hat, and Kanstein Jepit in K-250, K-300, K-400 grades by PT Kaha Sukses Mandiri.",
+        "Quality paving block products: Truepave, Half, Hexagonal & Tile, Uskup, and Kanstein by PT Kaha Sukses Mandiri.",
     },
   },
   projects: {
