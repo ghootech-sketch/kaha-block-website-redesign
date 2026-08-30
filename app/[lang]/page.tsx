@@ -62,27 +62,41 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative bg-gradient-to-b from-slate-50 to-white pt-10 sm:pt-14 md:pt-18 lg:pt-22 pb-14 sm:pb-18 md:pb-22 border-b border-gray-100 overflow-hidden"
+          className="relative isolate overflow-hidden bg-[#0B2447] pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-[#0B2447] min-h-[620px] flex items-center"
         >
-          {/* Subtle background decorative shapes */}
-          <div
-            className="absolute top-0 right-1/4 w-96 h-96 bg-[#0B2447]/5 rounded-full blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-0 left-10 w-72 h-72 bg-[#D90429]/5 rounded-full blur-2xl pointer-events-none"
-            aria-hidden="true"
+          {/* Background Image */}
+          <Image
+            src="/images/hero/kaha-block-hero-paving.webp"
+            alt={
+              currentLang === "id"
+                ? "Hasil pemasangan paving block Kaha Block"
+                : "Kaha Block paving installation result"
+            }
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[60%_center] sm:object-center -z-20"
           />
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Gradients */}
+          {/* Mobile gradient: more uniform darkening to ensure readability on small screens */}
+          <div className="absolute inset-0 bg-[#0B2447]/70 sm:hidden -z-10" />
+          
+          {/* Desktop/Tablet horizontal gradient: heavy on the left, fading to the right */}
+          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(11,36,71,0.96)_0%,rgba(11,36,71,0.86)_38%,rgba(11,36,71,0.38)_68%,rgba(11,36,71,0.08)_100%)] -z-10" />
+
+          {/* Vertical overlay for extra text contrast on bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B2447]/40 via-transparent to-[#0B2447]/15 -z-10" />
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                 {/* Left Content Column (7 cols on desktop) */}
                 <div className="lg:col-span-7 flex flex-col justify-center text-left">
                   {/* Eyebrow badge */}
-                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#0B2447]/5 border border-[#0B2447]/10 w-fit mb-4 sm:mb-5">
-                    <span className="w-2 h-2 rounded-full bg-[#D90429] animate-pulse" />
-                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2447] font-heading">
+                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 w-fit mb-4 sm:mb-5 backdrop-blur-sm">
+                    <span className="w-2 h-2 rounded-full bg-[#FFC300] animate-pulse" />
+                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white font-heading">
                       {homeDict.hero.eyebrow}
                     </span>
                   </div>
@@ -90,13 +104,13 @@ export default async function Home({
                   {/* H1 Heading */}
                   <h1
                     id="hero-title"
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-[#0B2447] tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-white tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
                   >
                     {homeDict.hero.h1}
                   </h1>
 
                   {/* Clear Narrative Description */}
-                  <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed mb-8 max-w-2xl">
+                  <p className="text-base sm:text-lg text-white/90 font-sans leading-relaxed mb-8 max-w-[600px]">
                     {homeDict.hero.description}
                   </p>
 
@@ -107,7 +121,7 @@ export default async function Home({
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                      className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-h-[44px]"
                     >
                       <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                       {homeDict.hero.ctaPrimary}
@@ -116,7 +130,7 @@ export default async function Home({
                     <Link
                       id="hero-secondary-cta"
                       href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-[#0B2447] border-2 border-[#0B2447]/15 hover:border-[#0B2447] px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2447]"
+                      className="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white border-2 border-white/30 hover:border-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[44px]"
                     >
                       {homeDict.hero.ctaSecondary}
                       <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -124,81 +138,17 @@ export default async function Home({
                   </div>
 
                   {/* Trust Line & Key Verification Badges */}
-                  <div className="pt-6 border-t border-gray-200/80 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-500 font-sans">
+                  <div className="pt-6 border-t border-white/20 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-200 font-sans">
                     <div className="flex items-center space-x-1.5">
-                      <ShieldCheck className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
-                      <span className="font-semibold text-slate-700">
+                      <ShieldCheck className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+                      <span className="font-semibold text-white">
                         {homeDict.hero.trustNote}
                       </span>
                     </div>
-                    <span className="text-gray-300 hidden sm:inline" aria-hidden="true">•</span>
+                    <span className="text-white/30 hidden sm:inline" aria-hidden="true">•</span>
                     <div className="flex items-center space-x-1.5">
-                      <Factory className="w-4 h-4 text-[#0B2447]" aria-hidden="true" />
+                      <Factory className="w-4 h-4 text-white/80" aria-hidden="true" />
                       <span>{homeDict.hero.plantBadge}</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Visual Column (5 cols on desktop) */}
-                <div className="lg:col-span-5 relative">
-                  <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 aspect-[4/3] sm:aspect-[16/11]">
-                    {/* Geometric Hydraulic Showcase Artwork */}
-                    <div className="w-full h-full p-6 flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-[#0B2447] to-slate-900">
-                      {/* Top spec badges */}
-                      <div className="flex items-center justify-between text-white/90">
-                        <div className="flex items-center space-x-2">
-                          <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
-                          <span className="text-xs font-mono font-bold tracking-wider uppercase">
-                            {homeDict.hero.specsHeader}
-                          </span>
-                        </div>
-                        <span className="px-2.5 py-1 bg-white/10 rounded-full text-[11px] font-mono text-white">
-                          {currentLang === 'en' ? 'Truepave K-300 to K-350' : 'Truepave K-300 sampai K-350'}
-                        </span>
-                      </div>
-
-                      {/* Industrial Paver Grid Illustration */}
-                      <div className="grid grid-cols-3 gap-2 my-auto max-w-[280px] mx-auto opacity-95">
-                        <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                          TRUEPAVE
-                        </div>
-                        <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                          HALF
-                        </div>
-                        <div className="h-10 bg-[#FFC300] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-[#0B2447] font-bold">
-                          HEXAGON
-                        </div>
-                        <div className="h-10 bg-[#D90429] rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-white font-bold">
-                          KANSTEIN
-                        </div>
-                        <div className="h-10 bg-slate-300/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                          UBIN
-                        </div>
-                        <div className="h-10 bg-slate-400/90 rounded-md border border-white/20 shadow-xs flex items-center justify-center text-[10px] font-mono text-slate-900 font-bold">
-                          USKUP
-                        </div>
-                      </div>
-
-                      {/* Bottom Status Ribbon */}
-                      <div className="flex items-center justify-between text-xs text-slate-300 pt-3 border-t border-white/10">
-                        <span className="font-mono">{homeDict.hero.visualBadge}</span>
-                        <span className="text-[#FFC300] font-bold">Est. 2015</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Floating Highlight Card */}
-                  <div className="hidden sm:flex absolute -bottom-5 -left-5 bg-white rounded-xl shadow-xl p-4 border border-gray-100 items-center space-x-3 max-w-[240px]">
-                    <div className="w-10 h-10 rounded-lg bg-[#FFC300]/20 text-[#0B2447] flex items-center justify-center flex-shrink-0">
-                      <Award className="w-5 h-5" aria-hidden="true" />
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-[#0B2447] font-heading">
-                        {homeDict.hero.plantBadge}
-                      </div>
-                      <div className="text-[11px] text-slate-500 font-sans">
-                        {homeDict.hero.visualBadge}
-                      </div>
                     </div>
                   </div>
                 </div>
