@@ -51,17 +51,16 @@ export default async function Products({
             </p>
           </ScrollReveal>
 
-          {/* Balanced 5-Card Layout: 6 cols on lg (3 cols top row, 2 cols bottom row centered) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-10">
+          {/* 3-Column Grid Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {productKeys.map((key, index) => {
               const product = dict.items[key];
-              const colSpanClass = index < 3 ? "lg:col-span-2" : "lg:col-span-3";
 
               return (
                 <ScrollReveal
                   key={key}
                   delay={index * 0.05}
-                  className={`${colSpanClass} bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col h-full`}
+                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col h-full"
                 >
                   <div className="relative h-56 sm:h-64 w-full bg-gray-100">
                     <PlaceholderImage

@@ -17,13 +17,9 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
     "name": "PT Kaha Sukses Mandiri (Kaha Block)",
     "url": baseUrl,
     "telephone": "+628119753030",
-    "email": "sanliong68@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Jl. Raya Cibadak No. 7, Suradita",
-      "addressLocality": "Cisauk",
-      "addressRegion": "Tangerang",
-      "postalCode": "15343",
+      "addressRegion": "Jabodetabek",
       "addressCountry": "ID",
     },
     "sameAs": [
@@ -79,18 +75,15 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
       "@type": "ItemList",
       "name": isEn ? "Kaha Block Paving Block Products" : "Katalog Produk Paving Block Kaha Block",
       "description": isEn
-        ? "Hydraulic automatic concrete paving blocks in K-250, K-300, and K-400 grades."
-        : "Paving block hidrolik otomatis mutu K-250, K-300, dan K-400.",
+        ? "Precision concrete paving blocks and installation services."
+        : "Produk paving block beton presisi dan jasa pemasangan.",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "item": {
             "@type": "Product",
-            "name": isEn ? "Truepave (Brick) Paving" : "Paving Truepave (Bata)",
-            "description": isEn
-              ? "Size 21x10.5 cm, height options 6, 8, 10 cm, coverage 45 pcs/m2. For roads, parking lots, and industrial areas."
-              : "Ukuran 21x10.5 cm, pilihan tinggi 6, 8, 10 cm, daya tutup 45 pcs/m2. Untuk jalan raya, parkir, dan kawasan industri.",
+            "name": "Truepave",
           },
         },
         {
@@ -98,10 +91,7 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
           "position": 2,
           "item": {
             "@type": "Product",
-            "name": isEn ? "Half Paving" : "Paving Half (Setengah)",
-            "description": isEn
-              ? "Size 10.5x10.5 cm, height options 6, 8 cm, coverage 90 pcs/m2. Pattern locker, color border, pedestrian."
-              : "Ukuran 10.5x10.5 cm, pilihan tinggi 6, 8 cm, daya tutup 90 pcs/m2. Pengunci pola, pembatas warna, pedestrian.",
+            "name": "Half / Tahu",
           },
         },
         {
@@ -109,10 +99,7 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
           "position": 3,
           "item": {
             "@type": "Product",
-            "name": isEn ? "Hexagonal & Tile Paving" : "Paving Hexagonal & Ubin",
-            "description": isEn
-              ? "Height options 6, 8 cm. Geometric shape, sturdy and regular for commercial and public spaces."
-              : "Pilihan tinggi 6, 8 cm. Bentuk geometris, kokoh, dan teratur untuk area komersial dan ruang publik.",
+            "name": "Topi Uskup",
           },
         },
         {
@@ -120,10 +107,7 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
           "position": 4,
           "item": {
             "@type": "Product",
-            "name": isEn ? "Bishop Hat (Topi Uskup)" : "Topi Uskup",
-            "description": isEn
-              ? "Size 30x6x21 cm, height options 6, 8 cm, coverage 3.3 pcs/m. Edge locker to keep arrangements tight and stable."
-              : "Ukuran 30x6x21 cm, pilihan tinggi 6, 8 cm, daya tutup 3.3 pcs/m. Pengunci tepi susunan agar rapat dan stabil.",
+            "name": "Hexa 8 cm",
           },
         },
         {
@@ -131,10 +115,39 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
           "position": 5,
           "item": {
             "@type": "Product",
+            "name": "Ubin 8 cm",
+          },
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
             "name": "Kanstein Jepit",
-            "description": isEn
-              ? "Size 10x20x40 cm, high grade heavy duty, coverage 2.5 pcs/m2. Keeps road shoulders and sidewalks neat."
-              : "Ukuran 10x20x40 cm, high grade heavy duty, daya tutup 2.5 pcs/m2. Menjaga tepi bahu jalan dan trotoar tetap rapi.",
+          },
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "Kanstein S",
+          },
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Product",
+            "name": "Kanstein B1",
+          },
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Product",
+            "name": "Stoper",
           },
         },
       ],
