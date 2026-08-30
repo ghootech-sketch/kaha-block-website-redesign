@@ -318,11 +318,11 @@ export default async function Home({
                   return (
                     <div
                       key={key}
-                      className={`${colSpanClass} bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group`}
+                      className={`${colSpanClass} bg-white rounded-2xl border border-slate-200/60 overflow-hidden shadow-sm hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full`}
                     >
                       <div>
                         {/* Visual Image */}
-                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-slate-100">
+                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-slate-50">
                           <Image
                             src={product.image}
                             alt={`${dict.products.imageAltPrefix} ${product.name}`}
