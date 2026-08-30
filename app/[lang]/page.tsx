@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
-import PlaceholderImage from "@/components/PlaceholderImage";
 import JsonLd from "@/components/JsonLd";
 import {
   ShieldCheck,
@@ -317,14 +316,17 @@ export default async function Home({
                   return (
                     <div
                       key={key}
-                      className={`${colSpanClass} bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full`}
+                      className={`${colSpanClass} bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group`}
                     >
                       <div>
                         {/* Visual Image */}
-                        <div className="relative h-48 sm:h-52 w-full bg-slate-100">
-                          <PlaceholderImage
-                            text={product.name}
-                            className="w-full h-full"
+                        <div className="relative h-48 sm:h-52 w-full bg-slate-100 overflow-hidden">
+                          <Image
+                            src={product.image}
+                            alt={`${dict.products.imageAltPrefix} ${product.name}`}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 16vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                           {/* Mutu Badge from verified company profile */}
                           <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-2.5 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">

@@ -172,6 +172,7 @@ export const dictionaries = {
       items: {
         truepave: {
           name: "Truepave",
+          image: "/images/products/kaha-block-truepave.webp",
           specs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
             "Pilihan Tinggi: 6 cm, 8 cm, 10 cm",
@@ -187,6 +188,7 @@ export const dictionaries = {
         },
         half: {
           name: "Half / Tahu",
+          image: "/images/products/kaha-block-half-tahu.webp",
           specs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
             "Pilihan Tinggi: 6 cm, 8 cm",
@@ -197,6 +199,7 @@ export const dictionaries = {
         },
         hexagonal: {
           name: "Hexa 8 cm",
+          image: "/images/products/kaha-block-hexa-8cm.webp",
           specs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam",
             "Pilihan Tinggi: 8 cm"
@@ -205,6 +208,7 @@ export const dictionaries = {
         },
         ubin: {
           name: "Ubin 8 cm",
+          image: "/images/products/kaha-block-ubin-8cm.webp",
           specs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam",
             "Pilihan Tinggi: 8 cm"
@@ -213,6 +217,7 @@ export const dictionaries = {
         },
         topiUskup: {
           name: "Topi Uskup",
+          image: "/images/products/kaha-block-topi-uskup.webp",
           specs: [
             "Material: Beton",
             "Pilihan Warna: Abu-abu",
@@ -228,21 +233,25 @@ export const dictionaries = {
         },
         kanstein: {
           name: "Kanstein Jepit",
+          image: "/images/products/kaha-block-kanstein-jepit.webp",
           specs: ["Kategori: Produk Support"],
           badge: "Support",
         },
         kansteinS: {
           name: "Kanstein S",
+          image: "/images/products/kaha-block-kanstein-s.webp",
           specs: ["Kategori: Produk Support"],
           badge: "Support",
         },
         kansteinB1: {
           name: "Kanstein B1",
+          image: "/images/products/kaha-block-kanstein-b1.webp",
           specs: ["Kategori: Produk Support"],
           badge: "Support",
         },
         stoper: {
           name: "Stoper",
+          image: "/images/products/kaha-block-stoper.webp",
           specs: ["Kategori: Produk Support"],
           badge: "Support",
         },
@@ -461,6 +470,7 @@ export const dictionaries = {
       items: {
         truepave: {
           name: "Truepave",
+          image: "/images/products/kaha-block-truepave.webp",
           specs: [
             "Color Options: Grey, Red, Black, Yellow",
             "Height Options: 6 cm, 8 cm, 10 cm",
@@ -476,6 +486,7 @@ export const dictionaries = {
         },
         half: {
           name: "Half / Tahu",
+          image: "/images/products/kaha-block-half-tahu.webp",
           specs: [
             "Color Options: Grey, Red, Black, Yellow",
             "Height Options: 6 cm, 8 cm",
@@ -486,6 +497,7 @@ export const dictionaries = {
         },
         hexagonal: {
           name: "Hexa 8 cm",
+          image: "/images/products/kaha-block-hexa-8cm.webp",
           specs: [
             "Color Options: Grey, Red, Black",
             "Height Options: 8 cm"
@@ -494,6 +506,7 @@ export const dictionaries = {
         },
         ubin: {
           name: "Tile 8 cm",
+          image: "/images/products/kaha-block-ubin-8cm.webp",
           specs: [
             "Color Options: Grey, Red, Black",
             "Height Options: 8 cm"
@@ -502,6 +515,7 @@ export const dictionaries = {
         },
         topiUskup: {
           name: "Bishop Hat",
+          image: "/images/products/kaha-block-topi-uskup.webp",
           specs: [
             "Material: Concrete",
             "Color Options: Grey",
@@ -517,21 +531,25 @@ export const dictionaries = {
         },
         kanstein: {
           name: "Kanstein Jepit",
+          image: "/images/products/kaha-block-kanstein-jepit.webp",
           specs: ["Category: Support Product"],
           badge: "Support",
         },
         kansteinS: {
           name: "Kanstein S",
+          image: "/images/products/kaha-block-kanstein-s.webp",
           specs: ["Category: Support Product"],
           badge: "Support",
         },
         kansteinB1: {
           name: "Kanstein B1",
+          image: "/images/products/kaha-block-kanstein-b1.webp",
           specs: ["Category: Support Product"],
           badge: "Support",
         },
         stoper: {
           name: "Stoper",
+          image: "/images/products/kaha-block-stoper.webp",
           specs: ["Category: Support Product"],
           badge: "Support",
         },

@@ -2,7 +2,7 @@ import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import { Phone } from "lucide-react";
 import type { Metadata } from "next";
@@ -62,10 +62,13 @@ export default async function Products({
                   delay={index * 0.05}
                   className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col h-full"
                 >
-                  <div className="relative h-56 sm:h-64 w-full bg-gray-100">
-                    <PlaceholderImage
-                      text={product.name}
-                      className="w-full h-full"
+                  <div className="relative h-56 sm:h-64 w-full bg-gray-100 overflow-hidden">
+                    <Image
+                      src={product.image}
+                      alt={`${dict.imageAltPrefix} ${product.name}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
                       {product.badge}
