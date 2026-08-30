@@ -62,7 +62,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-[#0B2447] pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-[#0B2447] min-h-[620px] flex items-center"
+          className="relative isolate overflow-hidden bg-[#07111F] pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-[#07111F] min-h-[620px] flex items-center"
         >
           {/* Background Image */}
           <Image
@@ -80,13 +80,13 @@ export default async function Home({
 
           {/* Gradients */}
           {/* Mobile gradient: more uniform darkening to ensure readability on small screens */}
-          <div className="absolute inset-0 bg-[#0B2447]/70 sm:hidden -z-10" />
+          <div className="absolute inset-0 bg-[#07111F]/72 sm:hidden -z-10" />
           
           {/* Desktop/Tablet horizontal gradient: heavy on the left, fading to the right */}
-          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(11,36,71,0.96)_0%,rgba(11,36,71,0.86)_38%,rgba(11,36,71,0.38)_68%,rgba(11,36,71,0.08)_100%)] -z-10" />
+          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(7,17,31,0.94)_0%,rgba(7,17,31,0.80)_40%,rgba(7,17,31,0.34)_70%,rgba(7,17,31,0.08)_100%)] -z-10" />
 
           {/* Vertical overlay for extra text contrast on bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B2447]/40 via-transparent to-[#0B2447]/15 -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/25 via-transparent to-[#07111F]/10 -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal>
@@ -94,8 +94,8 @@ export default async function Home({
                 {/* Left Content Column (7 cols on desktop) */}
                 <div className="lg:col-span-7 flex flex-col justify-center text-left">
                   {/* Eyebrow badge */}
-                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 w-fit mb-4 sm:mb-5 backdrop-blur-sm">
-                    <span className="w-2 h-2 rounded-full bg-[#FFC300] animate-pulse" />
+                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 w-fit mb-4 sm:mb-5 backdrop-blur-sm">
+                    <span className="w-2 h-2 rounded-full bg-[#D4AF37] motion-safe:animate-pulse" />
                     <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white font-heading">
                       {homeDict.hero.eyebrow}
                     </span>
@@ -104,13 +104,13 @@ export default async function Home({
                   {/* H1 Heading */}
                   <h1
                     id="hero-title"
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-white tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-[#F8F6F0] tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
                   >
                     {homeDict.hero.h1}
                   </h1>
 
                   {/* Clear Narrative Description */}
-                  <p className="text-base sm:text-lg text-white/90 font-sans leading-relaxed mb-8 max-w-[600px]">
+                  <p className="text-base sm:text-lg text-slate-200/90 font-sans leading-relaxed mb-8 max-w-[600px]">
                     {homeDict.hero.description}
                   </p>
 
@@ -121,7 +121,7 @@ export default async function Home({
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-[#B80D26] hover:bg-[#981020] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(184,13,38,0.28)] hover:shadow-[0_15px_40px_rgba(184,13,38,0.35)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
                     >
                       <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                       {homeDict.hero.ctaPrimary}
@@ -130,7 +130,7 @@ export default async function Home({
                     <Link
                       id="hero-secondary-cta"
                       href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-transparent hover:bg-white/10 text-white border-2 border-white/30 hover:border-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-white/5 hover:bg-white/10 text-[#F8F6F0] border-2 border-white/25 hover:border-white/45 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base backdrop-blur-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[44px]"
                     >
                       {homeDict.hero.ctaSecondary}
                       <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -138,17 +138,58 @@ export default async function Home({
                   </div>
 
                   {/* Trust Line & Key Verification Badges */}
-                  <div className="pt-6 border-t border-white/20 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-200 font-sans">
+                  <div className="pt-6 border-t border-white/15 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-200 font-sans">
                     <div className="flex items-center space-x-1.5">
-                      <ShieldCheck className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+                      <ShieldCheck className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
                       <span className="font-semibold text-white">
                         {homeDict.hero.trustNote}
                       </span>
                     </div>
                     <span className="text-white/30 hidden sm:inline" aria-hidden="true">•</span>
                     <div className="flex items-center space-x-1.5">
-                      <Factory className="w-4 h-4 text-white/80" aria-hidden="true" />
+                      <Factory className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
                       <span>{homeDict.hero.plantBadge}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Visual Column (5 cols on desktop) */}
+                <div className="hidden lg:flex lg:col-span-5 items-end justify-end">
+                  <div className="w-full max-w-[360px] overflow-hidden rounded-3xl border border-white/15 bg-[#07111F]/72 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
+                    <div className="h-1 w-14 rounded-full bg-[#D4AF37] mb-5" />
+                    <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-5">
+                      {homeDict.trustStats.heading}
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
+                          <ShieldCheck className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
+                        </div>
+                        <div>
+                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.sinceTitle}</p>
+                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.sinceValue}</p>
+                        </div>
+                      </div>
+                      <div className="w-full h-px bg-white/10" />
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
+                          <Factory className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
+                        </div>
+                        <div>
+                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.facilityTitle}</p>
+                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.facilityValue}</p>
+                        </div>
+                      </div>
+                      <div className="w-full h-px bg-white/10" />
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
+                          <Layers className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
+                        </div>
+                        <div>
+                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.qualityTitle}</p>
+                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.qualityValue}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -604,7 +645,7 @@ export default async function Home({
                 <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
                   <div className="w-full h-48 relative overflow-hidden bg-slate-100">
                     <Image
-                      src="/images/projects/kaha-block-dokumentasi-01.webp"
+                      src="/images/projects/kaha-block-dokumentasi-25.webp"
                       alt={homeDict.gallery.caption1}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -637,7 +678,7 @@ export default async function Home({
                 <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
                   <div className="w-full h-48 relative overflow-hidden bg-slate-100">
                     <Image
-                      src="/images/projects/kaha-block-dokumentasi-02.webp"
+                      src="/images/projects/kaha-block-dokumentasi-24.webp"
                       alt={homeDict.gallery.caption2}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
