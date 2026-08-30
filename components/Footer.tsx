@@ -109,16 +109,6 @@ export default function Footer({ lang }: { lang: Locale }) {
                   >
                     @kahablock
                   </a>
-                  <span className="text-gray-400">&amp;</span>
-                  <a
-                    href="https://www.instagram.com/kaha.sukses.mandiri/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram PT Kaha Sukses Mandiri @kaha.sukses.mandiri"
-                    className="hover:text-[#FFC300] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-0.5"
-                  >
-                    @kaha.sukses.mandiri
-                  </a>
                 </div>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 text-sm font-sans">

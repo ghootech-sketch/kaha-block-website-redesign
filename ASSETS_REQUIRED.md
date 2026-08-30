@@ -11,7 +11,7 @@ File ini mendokumentasikan daftar aset visual resmi milik PT Kaha Sukses Mandiri
 | Path Target | Deskripsi Asset | Format Disarankan | Status |
 | :--- | :--- | :--- | :--- |
 | `/public/images/company/logo.png` | Logo resmi PT Kaha Sukses Mandiri (Kaha Block) dengan background transparan | PNG / SVG (Resolusi tinggi) | Menunggu file asli |
-| `/public/images/company/factory.jpg` | Foto fasilitas pabrik Tangerang seluas 1000 m² & mesin hidrolik otomatis | JPG / WebP (1920x1080) | Menunggu file asli |
+| `/public/images/company/factory.jpg` | Foto fasilitas pabrik seluas 9.080 m² & mesin hidrolik otomatis | JPG / WebP (1920x1080) | Menunggu file asli |
 
 ---
 
@@ -19,11 +19,15 @@ File ini mendokumentasikan daftar aset visual resmi milik PT Kaha Sukses Mandiri
 
 | Path Target | Deskripsi Produk | Dimensi/Spesifikasi | Status |
 | :--- | :--- | :--- | :--- |
-| `/public/images/products/truepave.jpg` | Paving Truepave (Bata) | 21 × 10,5 cm (Tinggi: 6/8/10 cm) | Menunggu foto produk |
-| `/public/images/products/half.jpg` | Paving Half (Setengah) | 10,5 × 10,5 cm (Tinggi: 6/8 cm) | Menunggu foto produk |
-| `/public/images/products/hexagonal-ubin.jpg` | Paving Hexagonal & Ubin | Bentuk geometris (Tinggi: 6/8 cm) | Menunggu foto produk |
-| `/public/images/products/topi-uskup.jpg` | Topi Uskup (Bishop Hat) | 30 × 6 × 21 cm (Tinggi: 6/8 cm) | Menunggu foto produk |
-| `/public/images/products/kanstein-jepit.jpg` | Kanstein Jepit Heavy Duty | 10 × 20 × 40 cm | Menunggu foto produk |
+| `/public/images/products/truepave.jpg` | Paving Truepave (Bata) | Tebal 6, 8, dan 10 cm | Menunggu foto produk |
+| `/public/images/products/half-tahu.jpg` | Paving Half (Tahu) | Tebal 6 dan 8 cm | Menunggu foto produk |
+| `/public/images/products/hexa-8cm.jpg` | Paving Hexa | Tebal 8 cm | Menunggu foto produk |
+| `/public/images/products/ubin-8cm.jpg` | Paving Ubin | Tebal 8 cm | Menunggu foto produk |
+| `/public/images/products/topi-uskup.jpg` | Topi Uskup | Panjang 30 cm, Lebar 21 cm, Tebal 6 dan 8 cm | Menunggu foto produk |
+| `/public/images/products/kanstein-jepit.jpg` | Kanstein Jepit | (Spesifikasi menunggu konfirmasi) | Menunggu foto produk |
+| `/public/images/products/kanstein-s.jpg` | Kanstein S | (Spesifikasi menunggu konfirmasi) | Menunggu foto produk |
+| `/public/images/products/kanstein-b1.jpg` | Kanstein B1 | (Spesifikasi menunggu konfirmasi) | Menunggu foto produk |
+| `/public/images/products/stoper.jpg` | Stoper | (Spesifikasi menunggu konfirmasi) | Menunggu foto produk |
 
 ---
 

@@ -170,16 +170,24 @@ export default async function Contact({
               delay={0.1}
               className="flex flex-col h-full bg-white rounded-2xl sm:rounded-3xl shadow-xs border border-gray-200/80 overflow-hidden"
             >
+               <div className="p-6 border-b border-gray-100 bg-gray-50/50">
+                  <h3 className="text-lg font-bold text-[#0B2447] mb-1">
+                    Paving Block Kaha
+                  </h3>
+                  <p className="text-sm text-slate-500 font-medium">
+                    {dict.factoryLocation}
+                  </p>
+               </div>
                <div className="w-full h-64 sm:h-full min-h-[300px]">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14168.049405624779!2d106.63471018868615!3d-6.355152862804557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46a78ce6c8f%3A0xe549bd8084ff1047!2sPT%20Kaha%20Sukses%20Mandiri!5e0!3m2!1sid!2sid!4v1740880199341!5m2!1sid!2sid" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2738484247357!2d106.64021975454531!3d-6.358589787390475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46e589e68b5%3A0xfbfdcc6d2b296521!2sPaving%20Block%20Kaha!5e0!3m2!1sid!2sid!4v1788076236518!5m2!1sid!2sid" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
-                    allowFullScreen={false} 
+                    allowFullScreen 
                     loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="PT Kaha Sukses Mandiri Google Maps"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    title={currentLang === "en" ? "Paving Block Kaha Factory Location" : "Lokasi Pabrik Paving Block Kaha"}
                     className="w-full h-full"
                   />
                </div>
