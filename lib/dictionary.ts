@@ -255,6 +255,11 @@ export const dictionaries = {
       clients: "Mitra & Area Layanan",
       description: "Berikut adalah dokumentasi hasil aplikasi di lapangan dan proses distribusi Kaha Block.",
       imageAlt: "Dokumentasi proyek Kaha Block",
+      loadMore: "Muat lebih banyak",
+      showLess: "Tampilkan lebih sedikit",
+      closeLightbox: "Tutup",
+      nextImage: "Selanjutnya",
+      prevImage: "Sebelumnya",
       items: [
         { id: 1, caption: "Dokumentasi Pilihan Pekerjaan KSM" },
         { id: 2, caption: "Dokumentasi Area Pemasangan" },
@@ -539,6 +544,11 @@ export const dictionaries = {
       clients: "Partners & Service Areas",
       description: "Below is the documentation of field applications and Kaha Block distribution processes.",
       imageAlt: "Kaha Block project documentation",
+      loadMore: "Load more",
+      showLess: "Show less",
+      closeLightbox: "Close",
+      nextImage: "Next",
+      prevImage: "Previous",
       items: [
         { id: 1, caption: "Featured KSM Project Documentation" },
         { id: 2, caption: "Installation Area Documentation" },

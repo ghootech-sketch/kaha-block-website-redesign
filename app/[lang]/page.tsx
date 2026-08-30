@@ -2,6 +2,7 @@ import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import JsonLd from "@/components/JsonLd";
@@ -646,28 +647,25 @@ export default async function Home({
               {/* 3 Documentation Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Card 1: Produk */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full">
-                  <div className="w-full h-48 bg-[#0B2447] p-4 flex flex-col justify-between relative overflow-hidden">
-                    <div className="flex items-center justify-between text-white/80">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">
+                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
+                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                    <Image
+                      src="/images/projects/kaha-block-dokumentasi-01.webp"
+                      alt={homeDict.gallery.caption1}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
+                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
+                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
                         {homeDict.gallery.doc1Label}
                       </span>
-                      <span className="px-2 py-0.5 bg-white/10 rounded text-[10px] text-white">
+                      <span className="px-2 py-0.5 bg-white/20 backdrop-blur-md rounded text-[10px] text-white shadow-sm border border-white/10">
                         {homeDict.gallery.doc1Badge}
                       </span>
                     </div>
-                    {/* Visual pattern representation */}
-                    <div className="grid grid-cols-4 gap-1.5 opacity-90 my-2">
-                      <div className="h-7 bg-slate-400/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-slate-300/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-slate-400/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-[#FFC300]/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-slate-300/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-slate-400/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-[#D90429]/80 rounded-xs border border-white/20" />
-                      <div className="h-7 bg-slate-400/80 rounded-xs border border-white/20" />
-                    </div>
-                    <div className="text-[11px] font-mono text-slate-300">
+                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
                       {homeDict.gallery.doc1Footer}
                     </div>
                   </div>
@@ -682,33 +680,25 @@ export default async function Home({
                 </div>
 
                 {/* Card 2: Pemasangan */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full">
-                  <div className="w-full h-48 bg-slate-800 p-4 flex flex-col justify-between relative overflow-hidden">
-                    <div className="flex items-center justify-between text-white/80">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">
+                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
+                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                    <Image
+                      src="/images/projects/kaha-block-dokumentasi-02.webp"
+                      alt={homeDict.gallery.caption2}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
+                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
+                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
                         {homeDict.gallery.doc2Label}
                       </span>
-                      <span className="px-2 py-0.5 bg-emerald-500/20 text-emerald-300 rounded text-[10px]">
+                      <span className="px-2 py-0.5 bg-emerald-500/80 backdrop-blur-md text-white rounded text-[10px] shadow-sm border border-emerald-400/20">
                         {homeDict.gallery.doc2Badge}
                       </span>
                     </div>
-                    <div className="flex items-center justify-center space-x-2 my-3">
-                      <div className="px-3 py-2 bg-slate-900/80 rounded-lg border border-white/15 text-center">
-                        <span className="text-[10px] block text-slate-400 font-mono">01</span>
-                        <span className="text-xs font-bold text-white">Area</span>
-                      </div>
-                      <span className="text-slate-500 font-bold">→</span>
-                      <div className="px-3 py-2 bg-slate-900/80 rounded-lg border border-white/15 text-center">
-                        <span className="text-[10px] block text-slate-400 font-mono">02</span>
-                        <span className="text-xs font-bold text-white">Pasang</span>
-                      </div>
-                      <span className="text-slate-500 font-bold">→</span>
-                      <div className="px-3 py-2 bg-[#D90429]/40 rounded-lg border border-[#D90429]/50 text-center">
-                        <span className="text-[10px] block text-red-200 font-mono">03</span>
-                        <span className="text-xs font-bold text-white">Selesai</span>
-                      </div>
-                    </div>
-                    <div className="text-[11px] font-mono text-slate-300">
+                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
                       {homeDict.gallery.doc2Footer}
                     </div>
                   </div>
@@ -723,28 +713,25 @@ export default async function Home({
                 </div>
 
                 {/* Card 3: Aplikasi Lapangan */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full">
-                  <div className="w-full h-48 bg-[#0B2447] p-4 flex flex-col justify-between relative overflow-hidden">
-                    <div className="flex items-center justify-between text-white/80">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">
+                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
+                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                    <Image
+                      src="/images/projects/kaha-block-dokumentasi-03.webp"
+                      alt={homeDict.gallery.caption3}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
+                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
+                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
                         {homeDict.gallery.doc3Label}
                       </span>
-                      <span className="px-2 py-0.5 bg-[#FFC300]/20 text-[#FFC300] rounded text-[10px]">
+                      <span className="px-2 py-0.5 bg-[#FFC300]/90 backdrop-blur-md text-[#0B2447] font-bold rounded text-[10px] shadow-sm">
                         {homeDict.gallery.doc3Badge}
                       </span>
                     </div>
-                    <div className="h-14 bg-slate-900/80 rounded-lg border border-white/15 p-2 flex items-center justify-around my-2">
-                      <div className="text-center">
-                        <span className="text-[10px] text-slate-400 block">{currentLang === 'en' ? 'Locations' : 'Lokasi'}</span>
-                        <span className="text-xs font-bold text-white">{currentLang === 'en' ? 'Roads & Parking' : 'Jalan & Parkir'}</span>
-                      </div>
-                      <div className="h-6 w-px bg-white/20" />
-                      <div className="text-center">
-                        <span className="text-[10px] text-slate-400 block">{currentLang === 'en' ? 'Heavy Load' : 'Beban Berat'}</span>
-                        <span className="text-xs font-bold text-[#FFC300]">{currentLang === 'en' ? 'Industrial Areas' : 'Area Industri'}</span>
-                      </div>
-                    </div>
-                    <div className="text-[11px] font-mono text-slate-300">
+                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
                       {homeDict.gallery.doc3Footer}
                     </div>
                   </div>

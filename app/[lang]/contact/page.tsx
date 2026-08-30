@@ -186,7 +186,7 @@ export default async function Contact({
                     style={{ border: 0 }} 
                     allowFullScreen 
                     loading="lazy" 
-                    referrerPolicy="strict-origin-when-cross-origin"
+                    referrerPolicy="no-referrer-when-downgrade"
                     title={currentLang === "en" ? "Paving Block Kaha Factory Location" : "Lokasi Pabrik Paving Block Kaha"}
                     className="w-full h-full"
                   />
