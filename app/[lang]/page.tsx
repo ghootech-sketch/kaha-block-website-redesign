@@ -311,7 +311,9 @@ export default async function Home({
                 {featuredKeys.map((key, index) => {
                   const product = dict.products.items[key];
                   const colSpanClass =
-                    index < 3 ? "lg:col-span-2" : "lg:col-span-3";
+                    index === 3
+                      ? "lg:col-span-2 lg:col-start-2"
+                      : "lg:col-span-2";
 
                   return (
                     <div
@@ -320,13 +322,13 @@ export default async function Home({
                     >
                       <div>
                         {/* Visual Image */}
-                        <div className="relative h-48 sm:h-52 w-full bg-slate-100 overflow-hidden">
+                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-slate-100">
                           <Image
                             src={product.image}
                             alt={`${dict.products.imageAltPrefix} ${product.name}`}
                             fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 16vw"
-                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                            className="object-cover object-center"
                           />
                           {/* Mutu Badge from verified company profile */}
                           <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-2.5 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
