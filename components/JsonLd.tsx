@@ -2,7 +2,7 @@ import React from "react";
 import { Locale } from "@/lib/dictionary";
 
 interface JsonLdProps {
-  page?: "home" | "about" | "products" | "projects" | "contact";
+  page?: "home" | "about" | "products" | "projects" | "contact" | "blog";
   lang?: Locale;
 }
 
@@ -51,6 +51,7 @@ export default function JsonLd({ page = "home", lang = "id" }: JsonLdProps) {
       about: { id: "Tentang Kami", en: "About Us" },
       products: { id: "Produk", en: "Products" },
       projects: { id: "Proyek", en: "Projects" },
+      blog: { id: "Blog", en: "Blog" },
       contact: { id: "Kontak", en: "Contact" },
     };
 

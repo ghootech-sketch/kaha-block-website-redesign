@@ -5,7 +5,7 @@ const BASE_URL = "https://kahablock.com";
 const OG_IMAGE_URL = `${BASE_URL}/image-og.png`;
 
 interface PageMetaConfig {
-  path: "" | "/about" | "/products" | "/projects" | "/contact";
+  path: "" | "/about" | "/products" | "/projects" | "/contact" | "/blog";
   id: {
     title: string;
     description: string;
@@ -22,12 +22,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "KAHA BLOCK - Pabrik Paving Block Berkualitas di Indonesia",
       description:
-        "Pabrik Paving Block Full Otomatis Hidrolik dengan Kualitas Terbaik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek dan sekitarnya.",
+        "Pabrik paving block dengan mesin full otomatis hidrolik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek dan sekitarnya.",
     },
     en: {
       title: "KAHA BLOCK - Premium Paving Block Factory in Indonesia",
       description:
-        "Fully Automatic Hydraulic Paving Blocks. Solid infrastructure solutions across Greater Jakarta and beyond.",
+        "Paving block manufacturing with fully automatic hydraulic machinery. Solid infrastructure solutions across Greater Jakarta and beyond.",
     },
   },
   about: {
@@ -35,12 +35,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Tentang Kami | KAHA BLOCK",
       description:
-        "Mulai beroperasi sejak tahun 2015, PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block hidrolik otomatis dengan pabrik seluas 9.080 m² di Tangerang.",
+        "Mulai beroperasi sejak tahun 2015, PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block dengan mesin full otomatis hidrolik dan pabrik seluas 9.080 m² di Tangerang.",
     },
     en: {
       title: "About Us | KAHA BLOCK",
       description:
-        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) produces automatic hydraulic paving blocks at our 9,080 m² factory in Tangerang.",
+        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) manufactures paving blocks using fully automatic hydraulic machinery at our 9,080 m² factory in Tangerang.",
     },
   },
   products: {
@@ -82,10 +82,23 @@ const PAGE_META: Record<string, PageMetaConfig> = {
         "Contact PT Kaha Sukses Mandiri (Kaha Block) in Cisauk Tangerang for project consultation, paving block availability, and installation services.",
     },
   },
+  blog: {
+    path: "/blog",
+    id: {
+      title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
+      description:
+        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-300–K-350, dan cara merawat paving block dari PT Kaha Sukses Mandiri.",
+    },
+    en: {
+      title: "Blog & Paving Block Guide Center | KAHA BLOCK",
+      description:
+        "Technical guides, area planning tips, thickness comparisons, K-300 to K-350 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
+    },
+  },
 };
 
 export function constructPageMetadata(
-  pageKey: "home" | "about" | "products" | "projects" | "contact",
+  pageKey: "home" | "about" | "products" | "projects" | "contact" | "blog",
   lang: Locale
 ): Metadata {
   const config = PAGE_META[pageKey];
@@ -126,6 +139,65 @@ export function constructPageMetadata(
       card: "summary_large_image",
       title: langMeta.title,
       description: langMeta.description,
+      images: [OG_IMAGE_URL],
+    },
+  };
+}
+
+export function constructBlogPostMetadata({
+  slug,
+  lang,
+  title,
+  description,
+  publishedAt,
+  updatedAt,
+}: {
+  slug: string;
+  lang: Locale;
+  title: string;
+  description: string;
+  publishedAt: string;
+  updatedAt: string;
+}): Metadata {
+  const canonicalUrl = `${BASE_URL}/${lang}/blog/${slug}`;
+  const idUrl = `${BASE_URL}/id/blog/${slug}`;
+  const enUrl = `${BASE_URL}/en/blog/${slug}`;
+
+  return {
+    title: `${title} | KAHA BLOCK`,
+    description,
+    metadataBase: new URL(BASE_URL),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        "id-ID": idUrl,
+        en: enUrl,
+      },
+    },
+    openGraph: {
+      title: `${title} | KAHA BLOCK`,
+      description,
+      url: canonicalUrl,
+      siteName: "KAHA BLOCK",
+      locale: lang === "id" ? "id_ID" : "en_US",
+      type: "article",
+      publishedTime: publishedAt,
+      modifiedTime: updatedAt,
+      authors: ["PT Kaha Sukses Mandiri"],
+      images: [
+        {
+          url: OG_IMAGE_URL,
+          width: 1200,
+          height: 630,
+          alt: title,
+          type: "image/png",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | KAHA BLOCK`,
+      description,
       images: [OG_IMAGE_URL],
     },
   };

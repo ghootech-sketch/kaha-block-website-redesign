@@ -15,6 +15,11 @@ import {
   Award,
   Factory,
   CreditCard,
+  Home as HomeIcon,
+  Building2,
+  Warehouse,
+  Landmark,
+  ChevronDown,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -153,45 +158,50 @@ export default async function Home({
                   </div>
                 </div>
 
-                {/* Right Visual Column (5 cols on desktop) */}
-                <div className="hidden lg:flex lg:col-span-5 items-end justify-end">
-                  <div className="w-full max-w-[360px] overflow-hidden rounded-3xl border border-white/15 bg-[#07111F]/72 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
-                    <div className="h-1 w-14 rounded-full bg-[#D4AF37] mb-5" />
-                    <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-5">
-                      {homeDict.trustStats.heading}
-                    </h3>
-                    <div className="space-y-4">
-                      <div className="flex items-center">
-                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
-                          <ShieldCheck className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.sinceTitle}</p>
-                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.sinceValue}</p>
-                        </div>
-                      </div>
-                      <div className="w-full h-px bg-white/10" />
-                      <div className="flex items-center">
-                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
-                          <Factory className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.facilityTitle}</p>
-                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.facilityValue}</p>
-                        </div>
-                      </div>
-                      <div className="w-full h-px bg-white/10" />
-                      <div className="flex items-center">
-                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center mr-3 flex-shrink-0">
-                          <Layers className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="text-[11px] text-slate-300 font-medium">{homeDict.trustStats.qualityTitle}</p>
-                          <p className="text-sm text-[#F8F6F0] font-bold">{homeDict.trustStats.qualityValue}</p>
-                        </div>
-                      </div>
+                {/* Right Visual Column: Premium Product Range Navigator (5 cols on desktop) */}
+                <div className="hidden lg:flex lg:col-span-5 items-center justify-end">
+                  <aside
+                    aria-labelledby="hero-product-nav-heading"
+                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-white/15 bg-[#07111F]/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
+                  >
+                    <div className="h-1 w-12 rounded-full bg-[#D4AF37] mb-4" />
+                    
+                    <p className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider mb-1 font-heading">
+                      {homeDict.hero.productNavigator.eyebrow}
+                    </p>
+
+                    <h2
+                      id="hero-product-nav-heading"
+                      className="text-lg font-bold text-[#F8F6F0] font-heading tracking-tight mb-2.5"
+                    >
+                      {homeDict.hero.productNavigator.title}
+                    </h2>
+
+                    <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-slate-200 mb-4">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" aria-hidden="true" />
+                      <span>{homeDict.hero.productNavigator.highlightBadge}</span>
                     </div>
-                  </div>
+
+                    <ul className="grid grid-cols-2 gap-2 mb-4">
+                      {homeDict.hero.productNavigator.products.map((item, idx) => (
+                        <li
+                          key={idx}
+                          className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.06] border border-white/10 text-xs font-medium text-slate-200"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]/80 shrink-0" aria-hidden="true" />
+                          <span className="truncate">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Link
+                      href={`/${currentLang}/products`}
+                      className="flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-xs font-bold text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+                    >
+                      <span>{homeDict.hero.productNavigator.cta}</span>
+                      <ArrowRight className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
+                    </Link>
+                  </aside>
                 </div>
               </div>
             </ScrollReveal>
@@ -333,7 +343,7 @@ export default async function Home({
                             {product.name}
                           </h3>
                           <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 font-sans mb-4">
-                            {product.specs?.slice(0, 3).map((spec, i) => (
+                            {product.quickSpecs?.slice(0, 3).map((spec, i) => (
                               <li key={i}>{spec}</li>
                             ))}
                           </ul>
@@ -365,6 +375,82 @@ export default async function Home({
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
                 </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* =========================================================================
+            SECTION 3.5: SOLUSI BERDASARKAN KEBUTUHAN AREA (4 Categories)
+           ========================================================================= */}
+        <section
+          id="solutions-by-area-section"
+          aria-labelledby="solutions-heading"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-b border-gray-100"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+                  {homeDict.solutionsByArea.eyebrow}
+                </span>
+                <h2
+                  id="solutions-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.solutionsByArea.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.solutionsByArea.subtitle}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-10">
+                {homeDict.solutionsByArea.items.map((item) => {
+                  let AreaIcon = HomeIcon;
+                  if (item.id === "commercial") AreaIcon = Building2;
+                  if (item.id === "industrial") AreaIcon = Warehouse;
+                  if (item.id === "public") AreaIcon = Landmark;
+
+                  return (
+                    <div
+                      key={item.id}
+                      className="bg-[#FAF9F6] border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-[border-color,box-shadow,transform] duration-300"
+                    >
+                      <div>
+                        <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-[#0B2447] flex items-center justify-center mb-5">
+                          <AreaIcon className="w-6 h-6" aria-hidden="true" />
+                        </div>
+                        <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2.5">
+                          {item.title}
+                        </h3>
+                        <p className="text-sm text-slate-600 font-sans leading-relaxed mb-6">
+                          {item.desc}
+                        </p>
+                      </div>
+
+                      <div>
+                        <Link
+                          href={item.href}
+                          className="inline-flex items-center text-xs sm:text-sm font-bold text-[#0B2447] hover:text-[#D90429] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded-sm py-1"
+                        >
+                          <span>{item.linkText}</span>
+                          <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                        </Link>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="bg-slate-50 border border-slate-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
+                <p className="text-xs sm:text-sm text-slate-700 font-sans">
+                  <span className="font-semibold text-[#0B2447]">
+                    {currentLang === "id" ? "Catatan:" : "Note:"}{" "}
+                  </span>
+                  {homeDict.solutionsByArea.consultNote}
+                </p>
               </div>
             </ScrollReveal>
           </div>
@@ -834,6 +920,54 @@ export default async function Home({
                     {homeDict.benefits.item4Desc}
                   </p>
                 </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* =========================================================================
+            SECTION 7.5: FAQ HOMEPAGE (6 Questions)
+           ========================================================================= */}
+        <section
+          id="faq-section"
+          aria-labelledby="faq-heading"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-t border-gray-100"
+        >
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+                  {homeDict.faq.eyebrow}
+                </span>
+                <h2
+                  id="faq-heading"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                >
+                  {homeDict.faq.title}
+                </h2>
+                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  {homeDict.faq.subtitle}
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {homeDict.faq.items.map((item, index) => (
+                  <details
+                    key={index}
+                    className="group bg-[#FAF9F6] rounded-2xl border border-gray-200/80 open:border-[#0B2447]/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
+                  >
+                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-[#0B2447] hover:text-[#D90429] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded-2xl">
+                      <span className="pr-4">{item.q}</span>
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0B2447] group-hover:border-[#D90429] group-open:rotate-180 transition-transform duration-200">
+                        <ChevronDown className="w-4 h-4" aria-hidden="true" />
+                      </span>
+                    </summary>
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-gray-200/40">
+                      {item.a}
+                    </div>
+                  </details>
+                ))}
               </div>
             </ScrollReveal>
           </div>

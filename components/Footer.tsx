@@ -42,6 +42,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 { href: `/${lang}/about`, label: dict.nav.about },
                 { href: `/${lang}/products`, label: dict.nav.products },
                 { href: `/${lang}/projects`, label: dict.nav.projects },
+                { href: `/${lang}/blog`, label: dict.nav.blog },
                 { href: `/${lang}/contact`, label: dict.nav.contact },
               ].map((link) => (
                 <li key={link.href}>
@@ -67,19 +68,19 @@ export default function Footer({ lang }: { lang: Locale }) {
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`tel:${dict.contact.phone.replace(/\D/g, "")}`}
+                  href={`tel:${dict.contact.quickActions.whatsappNumber.replace(/\D/g, "")}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
-                  {dict.contact.phone}
+                  {dict.contact.quickActions.whatsappNumber}
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`mailto:${dict.contact.email}`}
+                  href={`mailto:${dict.contact.quickActions.emailAddress}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
-                  {dict.contact.email}
+                  {dict.contact.quickActions.emailAddress}
                 </a>
               </li>
             </ul>

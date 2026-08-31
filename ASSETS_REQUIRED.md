@@ -11,7 +11,7 @@ File ini mendokumentasikan daftar aset visual resmi milik PT Kaha Sukses Mandiri
 | Path Target | Deskripsi Asset | Format Disarankan | Status |
 | :--- | :--- | :--- | :--- |
 | `/public/images/company/logo.png` | Logo resmi PT Kaha Sukses Mandiri (Kaha Block) dengan background transparan | PNG / SVG (Resolusi tinggi) | Menunggu file asli |
-| `/public/images/company/factory.jpg` | Foto fasilitas pabrik seluas 9.080 m² & mesin hidrolik otomatis | JPG / WebP (1920x1080) | Menunggu file asli |
+| `/public/images/company/factory.jpg` | Foto fasilitas pabrik seluas 9.080 m² & mesin full otomatis hidrolik | JPG / WebP (1920x1080) | Menunggu file asli |
 
 ---
 
