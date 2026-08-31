@@ -91,7 +91,7 @@ export default async function About({
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#D90429] rounded-full filter blur-3xl opacity-15 pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <ScrollReveal>
+            <ScrollReveal immediate>
               <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-slate-200 border border-white/15 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4">
                 {dict.overview.eyebrow}
               </span>

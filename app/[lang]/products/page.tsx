@@ -55,7 +55,7 @@ export default async function Products({
          ========================================================================= */}
       <section className="bg-[#FAF9F6] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+          <ScrollReveal immediate className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
               {dict.title}
             </h1>

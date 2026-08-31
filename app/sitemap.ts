@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://kahablock.com";
   const locales = ["id", "en"] as const;
   const coreRoutes = ["", "/about", "/products", "/projects", "/blog", "/contact"] as const;
-  const lastModified = new Date("2025-01-20T00:00:00.000Z");
+  const coreLastModified = new Date("2026-08-31T00:00:00.000Z");
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -14,9 +14,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     coreRoutes.forEach((route) => {
       sitemapEntries.push({
         url: `${baseUrl}/${locale}${route}`,
-        lastModified,
+        lastModified: coreLastModified,
         changeFrequency: "monthly",
         priority: route === "" ? 1.0 : route === "/products" || route === "/blog" ? 0.9 : 0.8,
+        alternates: {
+          languages: {
+            "id-ID": `${baseUrl}/id${route}`,
+            en: `${baseUrl}/en${route}`,
+            "x-default": `${baseUrl}/id${route}`,
+          },
+        },
       });
     });
   });
@@ -25,9 +32,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   allArticlesId.forEach((article) => {
     sitemapEntries.push({
       url: `${baseUrl}/id/blog/${article.slug}`,
-      lastModified: new Date(article.updatedAt),
+      lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
       changeFrequency: "monthly",
       priority: 0.7,
+      alternates: {
+        languages: {
+          "id-ID": `${baseUrl}/id/blog/${article.slug}`,
+          en: `${baseUrl}/en/blog/${article.slug}`,
+          "x-default": `${baseUrl}/id/blog/${article.slug}`,
+        },
+      },
     });
   });
 
@@ -35,9 +49,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   allArticlesEn.forEach((article) => {
     sitemapEntries.push({
       url: `${baseUrl}/en/blog/${article.slug}`,
-      lastModified: new Date(article.updatedAt),
+      lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
       changeFrequency: "monthly",
       priority: 0.7,
+      alternates: {
+        languages: {
+          "id-ID": `${baseUrl}/id/blog/${article.slug}`,
+          en: `${baseUrl}/en/blog/${article.slug}`,
+          "x-default": `${baseUrl}/id/blog/${article.slug}`,
+        },
+      },
     });
   });
 

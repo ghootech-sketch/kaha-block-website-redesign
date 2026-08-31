@@ -47,7 +47,7 @@ export const dictionaries = {
       consultationCta: {
         eyebrow: "Butuh Rekomendasi untuk Proyek Anda?",
         title: "Konsultasikan Kebutuhan Paving Block Bersama Tim Kaha Block",
-        desc: "Dapatkan estimasi kebutuhan volume, rekomendasi ketebalan dan mutu beton K-300 hingga K-350, serta informasi paket pengadaan dan pemasangan.",
+        desc: "Dapatkan estimasi kebutuhan volume, rekomendasi ketebalan dan mutu beton K-250, K-300, hingga K-400, serta informasi paket pengadaan dan pemasangan.",
         buttonText: "Konsultasi via WhatsApp",
         secondaryButton: "Lihat Katalog Produk",
       },
@@ -88,7 +88,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "PRODUK UNGGULAN",
           title: "Pilihan Produk Kaha Block",
-          highlightBadge: "Truepave • K-300–K-350",
+          highlightBadge: "Truepave • K-300–K-400",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -274,7 +274,7 @@ export const dictionaries = {
         eyebrow: "Profil Perusahaan",
         heading: "PT Kaha Sukses Mandiri (Kaha Block)",
         p1: "PT Kaha Sukses Mandiri melalui brand Kaha Block merupakan produsen dan pemasok paving block yang beroperasi sejak 2015. Berlokasi di Cisauk, Tangerang, Kaha Block melayani kebutuhan pengadaan paving block untuk hunian, area komersial, kawasan industri, dan berbagai kebutuhan proyek di Jabodetabek maupun luar kota.",
-        p2: "Fasilitas produksi seluas 9.080 m² mendukung proses produksi menggunakan bahan baku pilihan dan mesin full otomatis hidrolik. Kaha Block menyediakan berbagai bentuk paving block dan produk pendukung dengan pilihan mutu K-300 hingga K-350 sesuai jenis produk dan kebutuhan proyek.",
+        p2: "Fasilitas produksi seluas 9.080 m² mendukung proses produksi menggunakan bahan baku pilihan dan mesin full otomatis hidrolik. Kaha Block menyediakan berbagai bentuk paving block dan produk pendukung dengan pilihan mutu K-250, K-300, hingga K-400 sesuai jenis produk dan kebutuhan proyek.",
         p3: "Selain pengadaan produk, Kaha Block menyediakan layanan pemasangan. Tim membantu pelanggan mulai dari konsultasi kebutuhan, penentuan jenis produk dan volume, konfirmasi penawaran dan jadwal, hingga pengiriman atau pelaksanaan pemasangan.",
         p4: "Dalam setiap kerja sama, Kaha Block mengutamakan konsistensi kualitas, ketepatan pengiriman, komunikasi yang jelas, serta hubungan usaha yang jujur dan berkelanjutan.",
       },
@@ -286,7 +286,7 @@ export const dictionaries = {
           { label: "Operasional", value: "Beroperasi sejak 2015", desc: "Pengalaman bertahun-tahun melayani pengadaan paving block berkualitas." },
           { label: "Fasilitas Produksi", value: "9.080 m²", desc: "Area pabrik terpadu dengan mesin full otomatis hidrolik." },
           { label: "Lokasi Pabrik", value: "Cisauk, Tangerang", desc: "Strategis untuk rantai pasok Jabodetabek dan luar kota." },
-          { label: "Mutu Produk", value: "K-300 hingga K-350", desc: "Pilihan kuat tekan beton sesuai jenis produk dan kebutuhan proyek." },
+          { label: "Mutu Produk", value: "K-250, K-300, & K-400", desc: "Pilihan kuat tekan beton sesuai jenis produk dan kebutuhan proyek." },
           { label: "Jangkauan", value: "Jabodetabek & Luar Kota", desc: "Pengiriman Jabodetabek gratis + penurunan barang, serta luar kota." },
           { label: "Layanan", value: "Pengadaan & Jasa Pemasangan", desc: "Solusi terintegrasi suplai material presisi hingga pengerjaan di lapangan." },
         ],
@@ -305,7 +305,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Menjaga mutu beton K-300 hingga K-350 di setiap cetakan.",
+            text: "Menjaga mutu beton K-250, K-300, dan K-400 di setiap cetakan.",
           },
           {
             number: "03",
@@ -320,7 +320,7 @@ export const dictionaries = {
         items: [
           {
             title: "Konsistensi Kualitas",
-            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu K-300 hingga K-350.",
+            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu K-250, K-300, hingga K-400.",
           },
           {
             title: "Ketepatan Pengiriman",
@@ -387,11 +387,11 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-300 – K-350",
+          badge: "K-300 – K-400",
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
             "Pilihan Tebal: 6 cm, 8 cm, 10 cm",
-            "Kuat Tekan: K-300 sampai K-350",
+            "Kuat Tekan: K-300 sampai K-400",
           ],
           detailSpecs: [
             "Material: Semen curah Holcim Dynamix dan semen zak SCG",
@@ -878,7 +878,7 @@ export const dictionaries = {
       consultationCta: {
         eyebrow: "Need Recommendations for Your Project?",
         title: "Consult Your Paving Block Requirements with Kaha Block",
-        desc: "Get volume estimation, thickness and K-300 to K-350 grade recommendations, as well as supply and installation package details.",
+        desc: "Get volume estimation, thickness and K-250, K-300, or K-400 grade recommendations, as well as supply and installation package details.",
         buttonText: "Consult via WhatsApp",
         secondaryButton: "Browse Product Catalog",
       },
@@ -919,7 +919,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "FEATURED RANGE",
           title: "Kaha Block Product Range",
-          highlightBadge: "Truepave • K-300–K-350",
+          highlightBadge: "Truepave • K-300–K-400",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -1105,7 +1105,7 @@ export const dictionaries = {
         eyebrow: "Company Profile",
         heading: "PT Kaha Sukses Mandiri (Kaha Block)",
         p1: "PT Kaha Sukses Mandiri, through the Kaha Block brand, is a paving block manufacturer and supplier operating since 2015. Based in Cisauk, Tangerang, Kaha Block serves residential, commercial, industrial, and project requirements throughout Greater Jakarta and other regions.",
-        p2: "Its 9,080 m² production facility supports manufacturing with selected raw materials and fully automatic hydraulic machinery. Kaha Block supplies various paving block shapes and supporting products with K-300 to K-350 strength options according to product type and project requirements.",
+        p2: "Its 9,080 m² production facility supports manufacturing with selected raw materials and fully automatic hydraulic machinery. Kaha Block supplies various paving block shapes and supporting products with K-250, K-300, to K-400 strength options according to product type and project requirements.",
         p3: "In addition to product supply, Kaha Block provides installation services. The team supports customers from initial consultation and product-volume planning through quotation confirmation, scheduling, delivery, and installation.",
         p4: "Across every partnership, Kaha Block prioritizes consistent quality, dependable delivery, clear communication, and honest, sustainable business relationships.",
       },
@@ -1117,7 +1117,7 @@ export const dictionaries = {
           { label: "Operation", value: "Operating since 2015", desc: "Years of experience supplying quality concrete paving blocks." },
           { label: "Production Facility", value: "9,080 m²", desc: "Integrated factory facility equipped with fully automatic hydraulic machinery." },
           { label: "Plant Location", value: "Cisauk, Tangerang", desc: "Strategically located for Greater Jakarta and regional supply chains." },
-          { label: "Product Strength", value: "K-300 to K-350", desc: "Concrete compressive strength options tailored to product type and project needs." },
+          { label: "Product Strength", value: "K-250, K-300, & K-400", desc: "Concrete compressive strength options tailored to product type and project needs." },
           { label: "Coverage", value: "Greater Jakarta & Regional", desc: "Free delivery and unloading across Greater Jakarta, plus regional delivery." },
           { label: "Services", value: "Supply & Installation", desc: "Integrated solutions from precision material supply to on-site installation." },
         ],
@@ -1136,7 +1136,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Maintain K-300 to K-350 concrete strength across every production batch.",
+            text: "Maintain K-250, K-300, and K-400 concrete strength across every production batch.",
           },
           {
             number: "03",
@@ -1151,7 +1151,7 @@ export const dictionaries = {
         items: [
           {
             title: "Consistent Quality",
-            desc: "Every paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to ensure optimal density and compliance with K-300 to K-350 strength standards.",
+            desc: "Every paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to ensure optimal density and compliance with K-250, K-300, to K-400 strength standards.",
           },
           {
             title: "Dependable Delivery",
@@ -1218,11 +1218,11 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-300 to K-350",
+          badge: "K-300 to K-400",
           quickSpecs: [
             "Color Options: Grey, Red, Black, Yellow",
             "Height Options: 6 cm, 8 cm, 10 cm",
-            "Compressive Strength: K-300 to K-350",
+            "Compressive Strength: K-300 to K-400",
           ],
           detailSpecs: [
             "Material: Holcim Dynamix bulk cement and SCG bag cement",

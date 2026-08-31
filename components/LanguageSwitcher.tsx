@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Locale } from "@/lib/dictionary";
 
 export default function LanguageSwitcher({
@@ -11,21 +12,18 @@ export default function LanguageSwitcher({
   className?: string;
 }) {
   const pathname = usePathname();
-  const router = useRouter();
 
-  const switchLanguage = (lang: Locale) => {
-    if (currentLang === lang) return;
+  const getTargetUrl = (targetLang: Locale) => {
+    if (currentLang === targetLang) return pathname || `/${targetLang}`;
 
-    let newPath = pathname || "/";
-    if (newPath === `/${currentLang}`) {
-      newPath = `/${lang}`;
-    } else if (newPath.startsWith(`/${currentLang}/`)) {
-      newPath = newPath.replace(`/${currentLang}/`, `/${lang}/`);
+    const currentPath = pathname || "/";
+    if (currentPath === `/${currentLang}`) {
+      return `/${targetLang}`;
+    } else if (currentPath.startsWith(`/${currentLang}/`)) {
+      return currentPath.replace(`/${currentLang}/`, `/${targetLang}/`);
     } else {
-      newPath = `/${lang}${newPath}`;
+      return `/${targetLang}${currentPath}`;
     }
-
-    router.push(newPath);
   };
 
   return (
@@ -34,10 +32,9 @@ export default function LanguageSwitcher({
       role="group"
       aria-label="Language selection"
     >
-      <button
-        type="button"
-        onClick={() => switchLanguage("id")}
-        aria-pressed={currentLang === "id"}
+      <Link
+        href={getTargetUrl("id")}
+        aria-current={currentLang === "id" ? "true" : undefined}
         aria-label="Switch to Indonesian language"
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "id"
@@ -46,14 +43,13 @@ export default function LanguageSwitcher({
         }`}
       >
         ID
-      </button>
+      </Link>
       <span className="text-gray-400 text-xs select-none px-0.5" aria-hidden="true">
         /
       </span>
-      <button
-        type="button"
-        onClick={() => switchLanguage("en")}
-        aria-pressed={currentLang === "en"}
+      <Link
+        href={getTargetUrl("en")}
+        aria-current={currentLang === "en" ? "true" : undefined}
         aria-label="Switch to English language"
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "en"
@@ -62,7 +58,7 @@ export default function LanguageSwitcher({
         }`}
       >
         EN
-      </button>
+      </Link>
     </div>
   );
 }

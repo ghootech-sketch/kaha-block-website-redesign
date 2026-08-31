@@ -7,10 +7,10 @@ export const article2Id: BlogPost = {
   excerpt: "Ulasan mendalam mengenai perbedaan teknis, kapasitas daya dukung beban, serta peruntukan spesifik paving block ketebalan 6 cm, 8 cm, dan 10 cm untuk efisiensi dan ketahanan infrastruktur.",
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "8 menit baca",
-  seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm | Kaha Block",
+  seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami perbedaan daya dukung, kapasitas beban kendaraan, dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga kawasan industri.",
   intro: [
     "Salah satu keputusan paling krusial saat merencanakan proyek perkerasan jalan atau pelataran outdoor adalah menentukan ketebalan paving block yang akan digunakan. Di pasaran konstruksi Indonesia, tiga ukuran ketebalan yang paling lazim digunakan adalah 6 cm, 8 cm, dan 10 cm.",
@@ -31,7 +31,7 @@ export const article2Id: BlogPost = {
       heading: "2. Paving Block Ketebalan 6 cm: Karakteristik dan Aplikasi",
       paragraphs: [
         "Paving block dengan ketebalan 6 cm merupakan standar paling populer untuk proyek skala hunian pribadi, perumahan kelompok, dan area pedestrian.",
-        "Dengan bobot yang relatif lebih ringan dibanding varian yang lebih tebal, paving 6 cm sangat efisien dalam proses transportasi logistik dan mempermudah tukang saat proses pemasangan manual di halaman rumah.",
+        "Dengan bobot yang relatif lebih ringan dibanding varian yang lebih tebal, varian 6 cm seperti [Paving Truepave 6 cm](/id/products#product-truepave) atau [Paving Hexagonal 6 cm](/id/products#product-hexa) sangat efisien dalam proses transportasi logistik dan mempermudah tukang saat proses pemasangan manual di halaman rumah.",
       ],
       subsections: [
         {
@@ -55,7 +55,7 @@ export const article2Id: BlogPost = {
       heading: "3. Paving Block Ketebalan 8 cm: Standar Proyek dan Komersial",
       paragraphs: [
         "Paving block 8 cm adalah standar emas (gold standard) untuk jalan lingkungan, perumahan skala menengah ke atas, kawasan ruko komersial, dan area publik yang sering dilalui kendaraan bertonase sedang.",
-        "Ketebalan 8 cm memberikan keseimbangan optimal antara kekuatan geser tinggi, stabilitas interlocking lateral, dan efisiensi biaya material.",
+        "Ketebalan 8 cm pada model [Truepave 8 cm](/id/products#product-truepave) maupun [Hexagonal 8 cm](/id/products#product-hexa) memberikan keseimbangan optimal antara kekuatan geser tinggi, stabilitas interlocking lateral, dan efisiensi biaya material.",
       ],
       subsections: [
         {
@@ -78,7 +78,7 @@ export const article2Id: BlogPost = {
       id: "paving-10cm",
       heading: "4. Paving Block Ketebalan 10 cm: Solusi Heavy-Duty Industri",
       paragraphs: [
-        "Paving block dengan ketebalan 10 cm dirancang khusus untuk kondisi ekstrem di mana perkerasan jalan harus menahan beban statis masif dan beban dinamis roda ganda berulang-ulang tanpa mengalami deformasi permanen.",
+        "Paving block dengan ketebalan 10 cm dirancang khusus untuk kondisi ekstrem di mana perkerasan jalan harus menahan beban statis masif dan beban dinamis roda ganda berulang-ulang tanpa mengalami deformasi permanen. Pembahasan aplikasi industri ini dapat dipelajari di [Paving Block Area Parkir & Industri Berat](/id/blog/paving-block-parkir-pergudangan-kawasan-industri).",
       ],
       subsections: [
         {
@@ -131,7 +131,7 @@ export const article2Id: BlogPost = {
         items: [
           "Menggunakan paving 6 cm pada jalan akses perumahan yang sering dilewati truk material atau truk tangki air, sehingga terjadi patah sudut balok.",
           "Mengurangi ketebalan pondasi agregat demi menghemat biaya saat memakai paving 8 cm, yang berujung pada jalan bergelombang.",
-          "Tidak memasang kanstein pengunci yang cukup dalam saat menggunakan paving 8 cm atau 10 cm, menyebabkan blok samping bergeser lepas.",
+          "Tidak memasang [Kanstein Beton](/id/products#product-kanstin-jepit) pengunci yang cukup dalam saat menggunakan paving 8 cm atau 10 cm, menyebabkan blok samping bergeser lepas.",
           "Mengabaikan jenis pola susunan: memaksakan pola lurus pada area manuver putar kendaraan berat ketimbang pola herringbone yang saling mengunci.",
         ],
       },
@@ -140,8 +140,8 @@ export const article2Id: BlogPost = {
       id: "jaminan-mutu-kaha",
       heading: "7. Kualitas Presisi Produksi Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri memproduksi varian paving block 6 cm dan 8 cm mutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang.",
-        "Dengan kontrol bahan baku yang ketat dan tekanan hidrolik tinggi yang konsisten, balok paving yang dihasilkan memiliki keseragaman ketebalan yang sangat presisi, meminimalisir deviasi elevasi saat dipasang berdampingan di lapangan.",
+        "PT Kaha Sukses Mandiri memproduksi varian paving block 6 cm dan 8 cm mutu K-250, K-300, hingga K-400 menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang. Rincian spesifikasi produk dapat dilihat di [Katalog Produk Kaha Block](/id/products).",
+        "Dengan kontrol bahan baku yang ketat dan tekanan hidrolik tinggi yang konsisten, balok paving yang dihasilkan memiliki keseragaman ketebalan yang sangat presisi, meminimalisir deviasi elevasi saat dipasang berdampingan di lapangan. Untuk konsultasi volume dan pemesanan, kunjungi [Halaman Kontak Kaha Block](/id/contact).",
       ],
     },
   ],
@@ -178,188 +178,183 @@ export const article2Id: BlogPost = {
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
     "mutu-beton-k300-k350-paving-block",
-    "paving-block-parkir-pergudangan-kawasan-industri",
+    "cara-menghitung-kebutuhan-paving-block-per-m2",
   ],
 };
 
 export const article2En: BlogPost = {
   slug: "perbedaan-ketebalan-paving-block-6cm-8cm-10cm",
   locale: "en",
-  title: "Understanding 6 cm, 8 cm, and 10 cm Paving Block Thicknesses",
-  excerpt: "An in-depth technical analysis of load-bearing capacities, stress distribution mechanics, and recommended applications for 6 cm, 8 cm, and 10 cm concrete paving blocks.",
+  title: "Understanding Differences in Paving Block Thickness: 6 cm, 8 cm, and 10 cm",
+  excerpt: "An in-depth technical analysis comparing load capacities, vehicular tonnage tolerance, and application guidelines for 6 cm, 8 cm, and 10 cm concrete paving blocks.",
   category: "Specifications & Grades",
   categorySlug: "spec",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "8 min read",
-  seoTitle: "6 cm vs 8 cm vs 10 cm Paving Block Thickness | Kaha Block",
-  seoDescription: "Explore the structural differences, load-bearing capacities, and ideal applications of 6 cm, 8 cm, and 10 cm concrete pavers from residential carports to industrial hubs.",
+  seoTitle: "6 cm vs 8 cm vs 10 cm Paving Block Thickness Guide",
+  seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
   intro: [
-    "One of the most critical engineering decisions when planning an exterior pavement project is specifying the proper concrete paver thickness. In the Indonesian construction sector, the three standardized thickness categories are 6 cm, 8 cm, and 10 cm.",
-    "While individual pavers may look identical in top surface dimensions and color finishes, a variation of just two to four centimeters drastically alters the paver's sectional modulus, vertical load dispersion angle, and long-term resistance to heavy axle stress.",
-    "Selecting the wrong thickness leads to two costly mistakes: budget inefficiency due to over-specifying pedestrian walkways, or premature structural failures such as surface rutting, block cracking, and edge dislodgement under heavy vehicular traffic.",
+    "One of the most critical structural decisions during any paving project planning phase is selecting the appropriate block thickness. In Indonesia's construction industry, the three standard thicknesses specified for segmental pavements are 6 cm, 8 cm, and 10 cm.",
+    "While they may share identical top surfaces, geometric patterns, and color pigments, small variations in thickness drastically alter the pavement's shear resistance, load dispersion angle, and lifespan under wheel traffic.",
+    "Selecting the incorrect thickness risks either premature structural failure—such as paver cracking, rutting, and subbase depression—or project budget inefficiency caused by over-specifying in low-load pedestrian areas.",
   ],
   sections: [
     {
-      id: "load-dispersion-mechanics",
-      heading: "1. Mechanics of Load Dispersion in Segmental Pavements",
+      id: "load-mechanics-and-thickness",
+      heading: "1. Mechanics of Load Transfer in Segmental Pavements",
       paragraphs: [
-        "Segmental concrete block pavements operate as flexible interlocking structural systems. Unlike monolithic cast-in-place concrete slabs that resist loads through rigid bending across a continuous span, interlocking pavers transfer concentrated tire loads to surrounding units via shear friction along the sand-filled joint boundaries.",
-        "Paver thickness dictates the total vertical contact area between adjacent blocks. Thicker pavers provide greater vertical joint surface area, allowing joint sand to generate higher friction under wheel rotation. As a result, vertical stresses are distributed over a wider footprint into the bedding sand and aggregate base courses, substantially reducing subgrade soil pressure.",
+        "Interlocking concrete pavements operate on flexible pavement principles. Unlike cast-in-place monolithic concrete slabs that resist loads through rigid flexural action, interlocking blocks distribute point loads laterally via shear friction across the sand-filled joints.",
+        "Block thickness directly establishes the depth of vertical contact between adjacent units. Thicker blocks provide a broader joint friction area, allowing wheel stresses to disperse into the bedding sand and subbase at a wider angle, drastically lowering the pressure transmitted to the subgrade.",
       ],
     },
     {
       id: "six-cm-pavers",
-      heading: "2. 6 cm Paving Blocks: Specifications and Recommended Uses",
+      heading: "2. 6 cm Concrete Pavers: Applications and Properties",
       paragraphs: [
-        "The 6 cm thickness variant is the industry benchmark for light-duty residential construction, landscaped urban walkways, and community recreation zones.",
-        "Due to their moderate unit weight, 6 cm pavers maximize logistical payload per transport truck and allow efficient manual handling and fast installation on residential job sites.",
+        "The 6 cm paver is the standard choice for private residential applications, garden landscaping, and municipal pedestrian sidewalks.",
+        "Being lighter than thicker models, variants like the [6 cm Truepave Paver](/en/products#product-truepave) or [6 cm Hexagonal Paver](/en/products#product-hexa) reduce transportation freight costs and enable fast manual handling for installers.",
       ],
       subsections: [
         {
-          id: "six-cm-load-capacity",
+          id: "load-capacity-6cm",
           heading: "Load Capacity of 6 cm Pavers",
           paragraphs: [
-            "Engineered for light to medium vehicular traffic with typical axle loads below 2 to 3 tons. Highly resilient against daily passenger cars, family SUVs, vans, and two-wheeled motor vehicles.",
+            "Designed for light to medium vehicular and pedestrian traffic with axle loads typically under 2 to 3 tons. Highly resilient against standard family sedans, MPVs, SUVs, and motorcycles.",
           ],
         },
         {
-          id: "six-cm-applications",
-          heading: "Ideal Application Areas",
+          id: "recommended-applications-6cm",
+          heading: "Ideal Application Zones",
           paragraphs: [
-            "Private residential carports, garden pathways, home perimeter walkways, residential terraces, pedestrian promenades, jogging tracks, and park plazas restricted from heavy truck access.",
+            "Residential carports, private home driveways, garden pathways, perimeter sidewalks, jogging tracks, and recreational park plazas with zero commercial freight traffic.",
           ],
         },
       ],
     },
     {
       id: "eight-cm-pavers",
-      heading: "3. 8 cm Paving Blocks: Commercial and Roadway Standard",
+      heading: "3. 8 cm Concrete Pavers: The Commercial and Infrastructure Standard",
       paragraphs: [
-        "The 8 cm paver is universally regarded as the gold standard for civil infrastructure, residential cluster access boulevards, commercial retail plazas, and public transportation facilities.",
-        "An 8 cm thickness strikes the optimal balance between superior shear strength, robust lateral interlocking grip under turning vehicles, and cost-effective material investment.",
+        "The 8 cm paver represents the industry gold standard for neighborhood collector roads, commercial complexes, and public parking lots accommodating medium-to-heavy traffic.",
+        "An 8 cm thickness—such as our [8 cm Truepave](/en/products#product-truepave) or [8 cm Hexagonal Pavers](/en/products#product-hexa)—delivers the optimal balance between high shear capacity, lateral interlock stability, and cost-effective material efficiency.",
       ],
       subsections: [
         {
-          id: "eight-cm-load-capacity",
+          id: "load-capacity-8cm",
           heading: "Load Capacity of 8 cm Pavers",
           paragraphs: [
-            "Engineered to withstand sustained medium to heavy traffic, including delivery trucks, municipal refuse collection vehicles, transit buses, fire engines, and supply tankers.",
+            "Engineered for medium to heavy traffic streams, including delivery trucks, municipal refuse vehicles, transit buses, fire engines, and commercial vans.",
           ],
         },
         {
-          id: "eight-cm-applications",
-          heading: "Ideal Application Areas",
+          id: "recommended-applications-8cm",
+          heading: "Ideal Application Zones",
           paragraphs: [
-            "Primary residential estate spine roads, shopping mall parking fields, commercial shophouse frontages, hotel drop-off lobbies, gas station aprons, and civic facility access lanes.",
+            "Residential subdivision boulevards, shopping mall parking lots, commercial shophouse plazas, hotel drop-off porte-cochères, gas stations, and municipal public transit facilities.",
           ],
         },
       ],
     },
     {
       id: "ten-cm-pavers",
-      heading: "4. 10 cm Paving Blocks: Heavy-Duty Industrial Solution",
+      heading: "4. 10 cm Concrete Pavers: Heavy-Duty Industrial Solutions",
       paragraphs: [
-        "Ten-centimeter (10 cm) paving blocks are heavy-duty industrial units manufactured for high-stress environments where pavements must sustain massive static container stacking and repetitive dynamic multi-axle freight without permanent deformation.",
+        "The 10 cm paver is engineered for demanding industrial environments where surfaces endure extreme static point loads and continuous heavy axle passes. Read our full analysis on [Heavy-Duty Paving for Industrial Logistics](/en/blog/paving-block-parkir-pergudangan-kawasan-industri).",
       ],
       subsections: [
         {
-          id: "ten-cm-load-capacity",
+          id: "load-capacity-10cm",
           heading: "Load Capacity of 10 cm Pavers",
           paragraphs: [
-            "Designed for severe industrial loading with single and tandem axle loads exceeding 10 to 20+ tons, including articulated semi-trailers, container chassis, reach stackers, and industrial heavy forklifts.",
+            "Designed for heavy-duty freight operations with axle loads exceeding 10–20 tons, including container transport trucks, semi-trailers, cargo reach stackers, and industrial heavy equipment.",
           ],
         },
         {
-          id: "ten-cm-applications",
-          heading: "Ideal Application Areas",
+          id: "recommended-applications-10cm",
+          heading: "Ideal Application Zones",
           paragraphs: [
-            "Industrial logistics parks, sea port terminals, container stacking depots, heavy freight distribution hubs, and heavy equipment maintenance yards.",
+            "Industrial logistics estates, sea freight terminals, container yards, heavy warehouse loading docks, and heavy machinery depots.",
           ],
         },
       ],
     },
     {
-      id: "technical-comparison-table",
+      id: "technical-comparison-matrix",
       heading: "5. Comprehensive Technical Comparison Matrix",
       paragraphs: [
-        "The following matrix summarizes the comparative operational and design parameters across all three thicknesses:",
+        "The matrix below summarizes the functional and mechanical properties across the three standard paver thicknesses:",
       ],
       table: {
-        caption: "Technical Comparison of 6 cm, 8 cm, and 10 cm Paving Blocks",
+        caption: "Technical Comparison of 6 cm, 8 cm, and 10 cm Concrete Pavers",
         headers: ["Parameter", "6 cm Thickness", "8 cm Thickness", "10 cm Thickness"],
         rows: [
-          ["Load Classification", "Light to Medium Duty", "Medium to Heavy Duty", "Heavy Industrial Duty"],
-          ["Target Vehicles", "Motorcycles, Sedans, SUVs, Vans", "Delivery Trucks, Waste Trucks, Buses", "Articulated Trucks, Container Trailers, Forklifts"],
-          ["Primary Application", "Residential carports, sidewalks, gardens", "Estate access roads, retail parking, gas stations", "Industrial manufacturing, logistics hubs, ports"],
-          ["Required Base Course", "10 - 15 cm compacted aggregate", "15 - 25 cm compacted aggregate", "25 - 35 cm Class A aggregate + subbase"],
-          ["Recommended Laying Pattern", "Stretcher Bond / Basket Weave / Hexa", "Herringbone 45° or 90°", "Herringbone 90° Strictly Mandatory"],
+          ["Load Classification", "Light - Medium", "Medium - Heavy", "Heavy Duty Industrial"],
+          ["Target Vehicles", "Motorcycles, Cars, Family SUVs", "Delivery Trucks, Refuse Trucks, Buses", "Container Trucks, Trailers, Forklifts"],
+          ["Primary Application", "Driveways, gardens, pedestrian", "Subdivision roads, plazas, commercial lots", "Industrial zones, logistics parks, ports"],
+          ["Base Course Thickness", "10 - 15 cm compacted stone base", "15 - 25 cm compacted aggregate", "25 - 35 cm heavy class A aggregate base"],
+          ["Recommended Pattern", "Stretcher / Herringbone / Hexa", "45° / 90° Herringbone Layout", "90° Herringbone Required"],
         ],
-      },
-      callout: {
-        type: "info",
-        title: "Engineering Recommendation Note",
-        text: "Final selection should be tailored to area conditions, load requirements, product type, and consultation results with project engineers.",
       },
     },
     {
-      id: "common-specification-pitfalls",
-      heading: "6. Common Pitfalls to Avoid During Specification",
+      id: "common-specification-mistakes",
+      heading: "6. Common Mistakes in Paver Thickness Selection",
       paragraphs: [
-        "Field inspections frequently reveal several preventable errors during pavement design and procurement:",
+        "Through extensive on-site experience, the Kaha Block technical team frequently encounters several recurring design errors:",
       ],
       list: {
-        title: "Common Mistakes in Thickness Specification:",
+        title: "Key Errors to Avoid:",
         items: [
-          "Installing 6 cm pavers on residential access roads that frequently accommodate concrete mixer trucks or heavy building material deliveries, causing edge spalling.",
-          "Reducing the aggregate base thickness to offset paver costs when upgrading to 8 cm pavers, leading to subgrade failure and surface rutting.",
-          "Failing to install deep concrete edge curbs (Kanstein) on 8 cm or 10 cm installations, causing perimeter units to drift outward.",
-          "Using linear stack bonds in turning areas rather than 45°/90° herringbone interlocking arrangements.",
+          "Installing 6 cm pavers on residential access roads that receive regular heavy material delivery or water tanker trucks, leading to corner chipping.",
+          "Reducing base aggregate depth to cut costs when installing 8 cm pavers, resulting in surface waviness over time.",
+          "Failing to install deep [Concrete Edge Curbs (Kanstein)](/en/products#product-kanstin-jepit) along unconfined edges, allowing outer blocks to shift laterally.",
+          "Using linear running bond patterns in tight vehicle turning zones instead of multidirectional herringbone arrangements.",
         ],
       },
     },
     {
-      id: "kaha-block-precision",
-      heading: "7. Manufacturing Consistency by Kaha Block",
+      id: "kaha-manufacturing-standards",
+      heading: "7. High-Precision Production at Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures 6 cm and 8 cm paving blocks with K-300 to K-350 concrete strength using fully automatic hydraulic equipment at our plant in Cisauk, Tangerang.",
-        "Strict aggregate grading and consistent hydraulic compression ensure millimetric dimensional accuracy, eliminating elevation unevenness when pavers are laid side-by-side on site.",
+        "PT Kaha Sukses Mandiri produces high-grade 6 cm and 8 cm concrete pavers with K-250, K-300, and K-400 compressive ratings using fully automated hydraulic machinery at our Cisauk, Tangerang facility. Check full specifications in our [Product Catalog](/en/products).",
+        "Rigorous quality control and synchronized hydraulic vibration guarantee consistent block density and millimetric height accuracy, ensuring seamless alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
       ],
     },
   ],
   summary: {
-    title: "Summary of Thickness Guidelines",
+    title: "Key Takeaways",
     points: [
       "6 cm pavers are ideal for residential carports, garden pathways, and light passenger vehicle driveways.",
-      "8 cm pavers are the standard for residential estate roads, commercial plazas, and mixed-traffic commercial zones.",
-      "10 cm pavers are reserved for industrial parks, heavy freight loading bays, and container terminals.",
-      "Always support paver thickness with properly compacted aggregate base courses and rigid perimeter curb restraints.",
+      "8 cm pavers are the standard for residential subdivision collector roads, commercial plazas, and retail parking zones.",
+      "10 cm pavers are built for heavy industrial freight corridors, logistics warehouses, and container terminals.",
+      "Always combine block thickness with adequate subbase compaction and solid concrete curb restraints.",
     ],
   },
   faq: {
-    title: "Frequently Asked Questions on Paving Block Thickness",
+    title: "Frequently Asked Questions About Paver Thickness",
     items: [
       {
-        question: "Can I use 8 cm paving blocks for a luxury home driveway?",
-        answer: "Yes, absolutely. While 6 cm is adequate for typical cars, installing 8 cm pavers provides an extra margin of structural safety if heavy delivery trucks or maintenance equipment occasionally enter the driveway.",
+        question: "Can 8 cm pavers be used for luxury residential carports?",
+        answer: "Yes. While 6 cm is sufficient for normal passenger cars, 8 cm provides an added structural safety margin for occasional heavy deliveries and long-term resilience.",
       },
       {
-        question: "What is the typical thickness tolerance in hydraulic machine-made pavers?",
-        answer: "Fully automatic hydraulic machinery produces pavers with tight dimensional tolerances (under 2-3 mm variance), ensuring smooth laying without excessive sand adjustments.",
+        question: "What is the height deviation tolerance of hydraulic machine pavers?",
+        answer: "Fully automated hydraulic machines produce blocks with tight dimensional tolerances (under 2-3 mm deviation), ensuring smooth, level finished surfaces.",
       },
       {
-        question: "Does an 8 cm paver require a thicker layer of bedding sand?",
-        answer: "No. The bedding sand layer should consistently remain between 3 and 5 cm. To handle heavier loads, the aggregate base course (crushed stone layer) beneath the sand is what must be increased in thickness.",
+        question: "Do 8 cm pavers require a thicker sand bedding layer?",
+        answer: "No. Sand bedding thickness should always remain 3–5 cm. To support heavier loads, increase the thickness of the compacted crushed aggregate base course beneath the sand layer.",
       },
       {
-        question: "How can I request thickness samples from Kaha Block?",
-        answer: "You can reach out directly to the PT Kaha Sukses Mandiri sales team via WhatsApp to discuss project specifications and arrange product samples.",
+        question: "How can I request paver samples from Kaha Block?",
+        answer: "Contact PT Kaha Sukses Mandiri via our official WhatsApp to discuss project requirements and arrange product sample inspections.",
       },
     ],
   },
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
     "mutu-beton-k300-k350-paving-block",
-    "paving-block-parkir-pergudangan-kawasan-industri",
+    "cara-menghitung-kebutuhan-paving-block-per-m2",
   ],
 };

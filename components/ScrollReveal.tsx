@@ -8,6 +8,7 @@ interface ScrollRevealProps {
   delay?: number;
   direction?: "up" | "down" | "left" | "right" | "none";
   id?: string;
+  immediate?: boolean;
 }
 
 export default function ScrollReveal({
@@ -16,11 +17,17 @@ export default function ScrollReveal({
   delay = 0,
   direction = "up",
   id,
+  immediate = false,
 }: ScrollRevealProps) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(immediate);
   const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (immediate) {
+      setIsVisible(true);
+      return;
+    }
+
     const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (isReduced) {
       setIsVisible(true);
@@ -39,7 +46,7 @@ export default function ScrollReveal({
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
     observer.observe(currentElem);
@@ -47,9 +54,13 @@ export default function ScrollReveal({
     return () => {
       if (currentElem) observer.unobserve(currentElem);
     };
-  }, []);
+  }, [immediate]);
 
   const getDirectionClasses = () => {
+    if (immediate) {
+      return "opacity-100 translate-y-0";
+    }
+
     switch (direction) {
       case "up":
         return isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8";

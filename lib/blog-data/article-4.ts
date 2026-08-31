@@ -7,10 +7,10 @@ export const article4Id: BlogPost = {
   excerpt: "Panduan praktis langkah demi langkah menghitung luas area, estimasi kebutuhan balok paving, persentase cadangan (waste factor), kebutuhan kanstein tepi, serta volume material pondasi pasir dan batu pecah.",
   category: "Panduan & Perencanaan",
   categorySlug: "guide",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "9 menit baca",
-  seoTitle: "Cara Menghitung Kebutuhan Paving Block & Material | Kaha Block",
+  seoTitle: "Cara Menghitung Kebutuhan Paving Block & Material",
   seoDescription: "Pelajari cara menghitung luas area, volume kebutuhan paving block per m², faktor cadangan potongan (waste), kanstein pembatas, dan pasir alas secara akurat.",
   intro: [
     "Perencanaan volume material yang akurat dan terstruktur adalah kunci utama keberhasilan proyek perkerasan paving block, baik untuk renovasi carport rumah tinggal, pembangunan jalan lingkungan perumahan, maupun pelataran area komersial bertonase tinggi.",
@@ -116,7 +116,7 @@ export const article4Id: BlogPost = {
       list: {
         title: "Tahapan Rencana Manajemen Kerja:",
         items: [
-          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-300 atau K-350).",
+          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-250, K-300, atau K-400).",
           "Tahap 2: Pilih bentuk geometri paving (Truepave, Hexa, atau Ubin) dan pola susunan yang diinginkan (herringbone, basket weave, atau susun bata).",
           "Tahap 3: Ukur luas bersih di lapangan, bagi bidang tidak beraturan, dan kalikan dengan faktor cadangan (waste allowance 3%–10%).",
           "Tahap 4: Hitung volume kebutuhan agregat base course, pasir bedding, pasir pengisi nat, dan jumlah unit kanstein pembatas.",
@@ -178,10 +178,10 @@ export const article4En: BlogPost = {
   excerpt: "A step-by-step practical guide to measuring square meterage, factoring cutting waste allowances, estimating perimeter curb lengths, and calculating foundation subbase and bedding sand volumes.",
   category: "Guides & Planning",
   categorySlug: "guide",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "9 min read",
-  seoTitle: "How to Calculate Paving Block & Subbase Volumes | Kaha Block",
+  seoTitle: "How to Calculate Paving Block & Subbase Volumes",
   seoDescription: "Step-by-step guide to calculating pavement area, estimating paver unit quantities, factoring cutting allowances, and determining subbase aggregate and sand volumes.",
   intro: [
     "Accurate and structured material estimation is fundamental to the operational, technical, and financial success of any segmental concrete paving project—ranging from private residential carports and estate cluster boulevards to expansive commercial logistics distribution facilities.",
@@ -287,7 +287,7 @@ export const article4En: BlogPost = {
       list: {
         title: "Project Management Execution Stages:",
         items: [
-          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-300 or K-350).",
+          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-250, K-300, or K-400).",
           "Stage 2: Select paver geometry (Truepave, Hexa, or Tile) and determine the laying pattern (herringbone, basket weave, or stretcher bond).",
           "Stage 3: Measure net surface area accurately, divide irregular boundaries, and add the appropriate cutting waste factor (3%–10%).",
           "Stage 4: Quantify aggregate base volumes, bedding sand cubic meterage, jointing sand, and precast concrete curb quantities.",
@@ -299,7 +299,7 @@ export const article4En: BlogPost = {
       id: "kaha-block-technical-support",
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
-        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-300 to K-350 concrete strength.",
+        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-250, K-300, and K-400 concrete strength.",
         "Our experienced technical team is ready to assist you with accurate material takeoffs, product recommendations, and turnkey supply-and-install options across Greater Jakarta and outer regional project destinations.",
       ],
     },

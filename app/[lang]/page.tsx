@@ -94,7 +94,7 @@ export default async function Home({
           <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/25 via-transparent to-[#07111F]/10 -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <ScrollReveal>
+            <ScrollReveal immediate>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                 {/* Left Content Column (7 cols on desktop) */}
                 <div className="lg:col-span-7 flex flex-col justify-center text-left">

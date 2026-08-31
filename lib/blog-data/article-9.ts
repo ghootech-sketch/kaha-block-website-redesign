@@ -7,10 +7,10 @@ export const article9Id: BlogPost = {
   excerpt: "Peran strategis perkerasan paving block dalam tata kelola air perkotaan ramah lingkungan (Low Impact Development): mekanisme peresapan air melalui celah nat, pengurangan debit limpasan banjir, dan konservasi air tanah alami.",
   category: "Keberlanjutan & Drainase",
   categorySlug: "sustainability",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "10 menit baca",
-  seoTitle: "Paving Block Ramah Lingkungan & Resapan Air Hujan | Kaha Block",
+  seoTitle: "Paving Block Ramah Lingkungan & Resapan Air Hujan",
   seoDescription: "Peran perkerasan paving block dalam manajemen air hujan perkotaan, mitigasi banjir, konservasi air tanah alami, dan pengurangan efek pulau panas urban.",
   intro: [
     "Pesatnya laju urbanisasi dan pembangunan infrastruktur kawasan perkotaan di berbagai wilayah metropolitan Indonesia sering kali diiringi oleh meningkatnya tutupan permukaan lahan kedap air (impervious surfaces) akibat betonisasi masif dan pengaspalan jalan yang menutup rapat pori-pori tanah alami.",
@@ -47,7 +47,7 @@ export const article9Id: BlogPost = {
           id: "infiltrasi-melalui-nat",
           heading: "Infiltrasi Gravitasi Melalui Celah Pasir Silika",
           paragraphs: [
-            "Meskipun balok beton paving itu sendiri memiliki kepadatan mutu K-300 hingga K-350 yang sangat padat dan kokoh, air hujan yang jatuh di atas permukaan miring dialirkan secara gravitasi menuju ribuan garis nat yang terisi pasir silika berpori.",
+            "Meskipun balok beton paving itu sendiri memiliki kepadatan mutu K-250, K-300, hingga K-400 yang sangat padat dan kokoh, air hujan yang jatuh di atas permukaan miring dialirkan secara gravitasi menuju ribuan garis nat yang terisi pasir silika berpori.",
             "Air kemudian meresap turun menembus lapisan pasir alas (bedding sand tebal 3–5 cm) dan lapisan pondasi batu agregat (base course) yang porous, sebelum akhirnya diserap secara bertahap oleh lapisan tanah dasar (subgrade) di bawahnya.",
           ],
         },
@@ -104,7 +104,7 @@ export const article9Id: BlogPost = {
       id: "peran-kaha-block-keberlanjutan",
       heading: "6. Komitmen Mutu dan Keberlanjutan PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
+        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-250, K-300, hingga K-400 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
         "Proses produksi dengan kontrol takaran material yang presisi dan pemadatan hidrolik bertekanan tinggi menghasilkan produk dengan tingkat kepadatan optimal, ketahanan abrasi tinggi, serta minim sisa limbah produksi (zero manufacturing waste).",
         "Kaha Block berkomitmen mendukung pembangunan infrastruktur perumahan, komersial, dan industri yang berwawasan lingkungan di wilayah Jabodetabek dan sekitarnya melalui penyediaan material perkerasan ramah lingkungan yang kokoh dan berestetika tinggi.",
       ],
@@ -117,7 +117,7 @@ export const article9Id: BlogPost = {
       "Lapisan pasir dan agregat di bawah paving berfungsi sebagai filter mekanis alami penyaring partikel sedimen.",
       "Integrasi kemiringan paving dengan sumur resapan dan rain garden mendukung konsep tata kelola air perkotaan berkelanjutan (SuDS).",
       "Paving beton memiliki nilai indeks reflektansi termal yang lebih ramah lingkungan dibandingkan aspal hitam yang menyerap panas berlebih.",
-      "Kaha Block memproduksi paving block presisi K-300–K-350 mesin full otomatis hidrolik yang ramah lingkungan dan 100% dapat digunakan kembali.",
+      "Kaha Block memproduksi paving block presisi K-250–K-400 mesin full otomatis hidrolik yang ramah lingkungan dan 100% dapat digunakan kembali.",
     ],
   },
   faq: {
@@ -155,10 +155,10 @@ export const article9En: BlogPost = {
   excerpt: "The strategic civil engineering role of segmental paving in sustainable urban drainage (Low Impact Development): groundwater infiltration mechanisms, stormwater peak runoff attenuation, and urban heat island mitigation.",
   category: "Sustainability & Drainage",
   categorySlug: "sustainability",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "10 min read",
-  seoTitle: "Eco-Friendly Concrete Pavers & Stormwater Runoff Control | Kaha Block",
+  seoTitle: "Eco-Friendly Concrete Pavers & Stormwater Runoff Control",
   seoDescription: "Explore how permeable concrete block pavements mitigate urban flooding, recharge groundwater aquifers, and combat urban heat island effects.",
   intro: [
     "Rapid urbanization and expanding infrastructure development across metropolitan regions throughout Indonesia often accelerate the proliferation of impervious ground surfaces due to continuous asphalt paving and monolithic concrete slab construction.",
@@ -195,7 +195,7 @@ export const article9En: BlogPost = {
           id: "gravity-joint-infiltration",
           heading: "Gravity Infiltration Through Silica Sand Joints",
           paragraphs: [
-            "Even though individual K-300 to K-350 grade concrete units possess dense, high-strength compressive matrices, rainwater landing on the graded surface is directed into thousands of permeable silica-sand joint lines.",
+            "Even though individual K-250, K-300, and K-400 grade concrete units possess dense, high-strength compressive matrices, rainwater landing on the graded surface is directed into thousands of permeable silica-sand joint lines.",
             "Water filters downward through the uncompacted bedding sand layer and open-void crushed aggregate subbase course, before percolating gradually into the natural subgrade soil.",
           ],
         },
@@ -252,7 +252,7 @@ export const article9En: BlogPost = {
       id: "kaha-sustainability-commitment",
       heading: "6. PT Kaha Sukses Mandiri Commitment to Environmental Quality",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures durable K-300 to K-350 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
+        "PT Kaha Sukses Mandiri manufactures durable K-250, K-300, and K-400 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
         "Precision batching systems and high-pressure hydraulic compaction ensure optimal material density, superior abrasion resistance, and near-zero manufacturing waste.",
         "Kaha Block is dedicated to supporting environmentally conscious residential, commercial, and industrial developments throughout Greater Jakarta with durable, aesthetically refined, and sustainable segmental paving solutions.",
       ],
@@ -265,7 +265,7 @@ export const article9En: BlogPost = {
       "The underlying sand and aggregate base matrix acts as a natural physical filter trapping particulate pollutants.",
       "Pairing paved cross-slopes with rain gardens and infiltration swales creates an integrated Sustainable Urban Drainage System (SuDS).",
       "Concrete pavers exhibit higher Solar Reflectance Index (SRI) values than dark asphalt, helping mitigate urban heat island effects.",
-      "Kaha Block manufactures precision hydraulic K-300–K-350 pavers that provide 100% non-destructive reusability for circular infrastructure.",
+      "Kaha Block manufactures precision hydraulic K-250–K-400 pavers that provide 100% non-destructive reusability for circular infrastructure.",
     ],
   },
   faq: {

@@ -46,7 +46,7 @@ export default async function Projects({
          ========================================================================= */}
       <section className="bg-[#FAF9F6] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center max-w-4xl mx-auto">
+          <ScrollReveal immediate className="text-center max-w-4xl mx-auto">
             <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2.5 block font-heading">
               {dict.editorialIntro?.eyebrow || dict.title}
             </span>

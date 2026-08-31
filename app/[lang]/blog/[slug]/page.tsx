@@ -8,6 +8,8 @@ import {
 } from "@/lib/blog-data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import FormattedText from "@/components/FormattedText";
 import {
   Calendar,
   Clock,
@@ -23,6 +25,7 @@ import {
   Phone,
   HelpCircle,
   ListOrdered,
+  FileCheck,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -88,71 +91,20 @@ export default async function BlogPostPage({
   const nextPost = currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
   const relatedPosts = getRelatedBlogPosts(slug, currentLang, 3);
 
-  // Structured Data Schema for BlogPosting
-  const blogPostingSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.seoDescription,
-    "datePublished": post.publishedAt,
-    "dateModified": post.updatedAt,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://kahablock.com/${currentLang}/blog/${post.slug}`,
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "PT Kaha Sukses Mandiri",
-      "url": "https://kahablock.com",
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "PT Kaha Sukses Mandiri (Kaha Block)",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://kahablock.com/icon.png",
-      },
-    },
-    "articleSection": post.category,
-  };
+  const formattedPublishedDate = new Date(post.publishedAt).toLocaleDateString(
+    isEn ? "en-US" : "id-ID",
+    { year: "numeric", month: "long", day: "numeric" }
+  );
 
-  // BreadcrumbList schema
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": isEn ? "Home" : "Beranda",
-        "item": `https://kahablock.com/${currentLang}`,
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": isEn ? "Blog & Insights" : "Blog & Wawasan",
-        "item": `https://kahablock.com/${currentLang}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": post.title,
-        "item": `https://kahablock.com/${currentLang}/blog/${post.slug}`,
-      },
-    ],
-  };
+  const formattedUpdatedDate = new Date(post.updatedAt).toLocaleDateString(
+    isEn ? "en-US" : "id-ID",
+    { year: "numeric", month: "long", day: "numeric" }
+  );
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-amber-500/30 selection:text-amber-200">
-      {/* Schema Injection */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      {/* Unified JSON-LD Graph Injection */}
+      <JsonLd page="blogPost" lang={currentLang} post={post} />
 
       {/* Article Header & Breadcrumbs */}
       <header className="relative pt-32 pb-16 border-b border-slate-800 bg-gradient-to-b from-slate-900/60 via-slate-950 to-slate-950">
@@ -174,7 +126,7 @@ export default async function BlogPostPage({
               href={`/${currentLang}/blog`}
               className="hover:text-amber-400 transition-colors"
             >
-              {isEn ? "Blog" : "Blog"}
+              {isEn ? "Insights & Articles" : "Artikel & Wawasan"}
             </Link>
             <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
             <span className="text-amber-400 truncate max-w-xs sm:max-w-sm">
@@ -194,12 +146,19 @@ export default async function BlogPostPage({
             <div className="flex items-center gap-1.5 text-xs text-slate-400">
               <Calendar className="w-3.5 h-3.5 text-slate-500" />
               <span>
-                {new Date(post.publishedAt).toLocaleDateString(
-                  isEn ? "en-US" : "id-ID",
-                  { year: "numeric", month: "long", day: "numeric" }
-                )}
+                {isEn ? "Published: " : "Diterbitkan: "}
+                {formattedPublishedDate}
               </span>
             </div>
+            {post.updatedAt && (
+              <div className="flex items-center gap-1.5 text-xs text-slate-400">
+                <span className="text-slate-600">•</span>
+                <span>
+                  {isEn ? "Updated: " : "Diperbarui: "}
+                  {formattedUpdatedDate}
+                </span>
+              </div>
+            )}
           </div>
 
           {/* H1 Title */}
@@ -209,7 +168,7 @@ export default async function BlogPostPage({
 
           {/* Excerpt */}
           <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-6 border-l-2 border-amber-500/50 pl-4">
-            {post.excerpt}
+            <FormattedText text={post.excerpt} />
           </p>
 
           {/* Author / Publisher Byline */}
@@ -219,12 +178,10 @@ export default async function BlogPostPage({
             </div>
             <div>
               <p className="text-slate-200 font-semibold">
-                PT Kaha Sukses Mandiri (Kaha Block)
+                {isEn ? "Kaha Block Technical Team" : "Tim Teknis Kaha Block"}
               </p>
               <p className="text-slate-400">
-                {isEn
-                  ? "Paving Block Manufacturer • Cisauk, Tangerang"
-                  : "Produsen Paving Block • Cisauk, Tangerang"}
+                PT Kaha Sukses Mandiri • Cisauk, Tangerang
               </p>
             </div>
           </div>
@@ -233,6 +190,24 @@ export default async function BlogPostPage({
 
       {/* Main Article Container */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Content Creation Process & Editorial Disclosure */}
+        <aside
+          aria-label="Editorial note"
+          className="mb-10 rounded-xl bg-slate-900/60 border border-slate-800 p-4 sm:p-5 text-xs sm:text-sm text-slate-300 flex items-start gap-3.5"
+        >
+          <FileCheck className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+          <div className="space-y-1">
+            <p className="font-semibold text-slate-100">
+              {isEn ? "Editorial & Practical Disclosure" : "Catatan Penyusunan Konten"}
+            </p>
+            <p className="text-slate-400 leading-relaxed">
+              {isEn
+                ? "This article is prepared by the Kaha Block team based on hands-on practical experience in hydraulic concrete paving block manufacturing, material supply, and on-site installations across residential, commercial, and industrial projects since 2015."
+                : "Artikel ini disusun oleh tim Kaha Block berdasarkan pengalaman praktis pabrikasi, pengadaan material, dan pengerjaan pemasangan paving block di berbagai proyek hunian, komersial, dan industri sejak 2015."}
+            </p>
+          </div>
+        </aside>
+
         {/* Table of Contents (Daftar Isi) */}
         {post.sections.length > 0 && (
           <div className="rounded-xl bg-slate-900/90 border border-slate-800 p-6 mb-12 shadow-sm">
@@ -240,7 +215,7 @@ export default async function BlogPostPage({
               <ListOrdered className="w-4 h-4" />
               <span>{dict.tableOfContents}</span>
             </div>
-            <nav>
+            <nav aria-label="Table of contents">
               <ul className="space-y-2 text-sm text-slate-300">
                 {post.sections.map((section, idx) => (
                   <li key={section.id}>
@@ -263,7 +238,9 @@ export default async function BlogPostPage({
         {/* Intro Paragraphs */}
         <div className="space-y-5 text-slate-300 text-base sm:text-lg leading-relaxed mb-12">
           {post.intro.map((p, i) => (
-            <p key={i}>{p}</p>
+            <p key={i}>
+              <FormattedText text={p} />
+            </p>
           ))}
         </div>
 
@@ -279,7 +256,9 @@ export default async function BlogPostPage({
               {/* Section Paragraphs */}
               <div className="space-y-4 text-slate-300 text-base leading-relaxed mb-6">
                 {section.paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <p key={i}>
+                    <FormattedText text={p} />
+                  </p>
                 ))}
               </div>
 
@@ -296,7 +275,9 @@ export default async function BlogPostPage({
                     {section.list.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                        <span>{item}</span>
+                        <span>
+                          <FormattedText text={item} />
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -331,7 +312,7 @@ export default async function BlogPostPage({
                                 cIdx === 0 ? "font-semibold text-white" : ""
                               }`}
                             >
-                              {cell}
+                              <FormattedText text={cell} />
                             </td>
                           ))}
                         </tr>
@@ -366,7 +347,7 @@ export default async function BlogPostPage({
                       </h4>
                     )}
                     <p className="text-xs sm:text-sm leading-relaxed text-slate-300">
-                      {section.callout.text}
+                      <FormattedText text={section.callout.text} />
                     </p>
                   </div>
                 </div>
@@ -382,7 +363,9 @@ export default async function BlogPostPage({
                       </h3>
                       <div className="space-y-3 text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         {sub.paragraphs.map((sp, sIdx) => (
-                          <p key={sIdx}>{sp}</p>
+                          <p key={sIdx}>
+                            <FormattedText text={sp} />
+                          </p>
                         ))}
                       </div>
 
@@ -397,7 +380,9 @@ export default async function BlogPostPage({
                             {sub.list.items.map((item, i) => (
                               <li key={i} className="flex items-start gap-2">
                                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
-                                <span>{item}</span>
+                                <span>
+                                  <FormattedText text={item} />
+                                </span>
                               </li>
                             ))}
                           </ul>
@@ -421,7 +406,9 @@ export default async function BlogPostPage({
             {post.summary.points.map((pt, i) => (
               <li key={i} className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <span className="leading-relaxed">{pt}</span>
+                <span className="leading-relaxed">
+                  <FormattedText text={pt} />
+                </span>
               </li>
             ))}
           </ul>
@@ -448,7 +435,7 @@ export default async function BlogPostPage({
                     <span>{item.question}</span>
                   </h3>
                   <p className="text-sm text-slate-300 leading-relaxed pl-6">
-                    {item.answer}
+                    <FormattedText text={item.answer} />
                   </p>
                 </div>
               ))}
@@ -541,16 +528,16 @@ export default async function BlogPostPage({
                   ? "Need Engineering Guidance for Your Project?"
                   : "Butuh Konsultasi Teknis untuk Proyek Anda?"}
               </h3>
-              <p className="text-sm text-slate-300 max-w-xl">
+              <p className="text-sm text-slate-300 max-w-xl leading-relaxed">
                 {isEn
                   ? "Connect with PT Kaha Sukses Mandiri to discuss paving specifications, load calculations, and verified quotations."
-                  : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-300 hingga K-350 mesin full otomatis hidrolik."}
+                  : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, hingga K-400 mesin full otomatis hidrolik."}
               </p>
             </div>
             <div className="flex flex-wrap gap-3 shrink-0">
               <Link
                 href={`/${currentLang}/products`}
-                className="px-5 py-2.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-sm hover:bg-amber-400 transition-colors shadow-md"
+                className="px-5 py-2.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-sm hover:bg-amber-400 transition-colors shadow-md min-h-[44px] flex items-center justify-center"
               >
                 {isEn ? "View Products" : "Lihat Produk"}
               </Link>
@@ -558,7 +545,7 @@ export default async function BlogPostPage({
                 href="https://wa.me/628119753030"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-lg bg-slate-800 text-white font-bold text-sm hover:bg-slate-700 transition-colors border border-slate-700 flex items-center gap-2"
+                className="px-5 py-2.5 rounded-lg bg-slate-800 text-white font-bold text-sm hover:bg-slate-700 transition-colors border border-slate-700 flex items-center gap-2 min-h-[44px] justify-center"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
                 <span>WhatsApp</span>

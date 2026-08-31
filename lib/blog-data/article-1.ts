@@ -7,10 +7,10 @@ export const article1Id: BlogPost = {
   excerpt: "Panduan lengkap memilih paving block berdasarkan peruntukan area, perkiraan tonase beban kendaraan, ketebalan, serta pola pemasangan yang tepat untuk hunian maupun proyek komersial.",
   category: "Panduan & Perencanaan",
   categorySlug: "guide",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "7 menit baca",
-  seoTitle: "Panduan Memilih Paving Block Hunian & Proyek | Kaha Block",
+  seoTitle: "Panduan Memilih Paving Block Hunian & Proyek",
   seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport rumah, jalan lingkungan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
   featured: true,
   intro: [
@@ -78,28 +78,28 @@ export const article1Id: BlogPost = {
           id: "bentuk-bata-truepave",
           heading: "Bentuk Bata Persegi Panjang (Truepave)",
           paragraphs: [
-            "Model Truepave adalah bentuk paling populer dan fleksibel di dunia konstruksi. Bentuk persegi panjang standar (seperti ukuran 10,5 x 21 cm) dapat disusun dalam pola anyaman tulang ikan (herringbone 45° atau 90°). Pola tulang ikan memberikan kekuatan interlocking paling tinggi terhadap gaya pengereman dan akselerasi kendaraan.",
+            "Model [Paving Truepave (Bata)](/id/products#product-truepave) adalah bentuk paling populer dan fleksibel di dunia konstruksi. Bentuk persegi panjang standar (seperti ukuran 10,5 x 21 cm) dapat disusun dalam pola anyaman tulang ikan (herringbone 45° atau 90°). Pola tulang ikan memberikan kekuatan interlocking paling tinggi terhadap gaya pengereman dan akselerasi kendaraan.",
           ],
         },
         {
           id: "bentuk-segi-enam-hexa",
           heading: "Bentuk Segi Enam (Hexagonal / Hexa)",
           paragraphs: [
-            "Bentuk Hexa memiliki enam sisi pengunci yang memberikan distribusi beban simetris ke segala arah. Model ini sangat cocok untuk jalan lingkungan perumahan dan pelataran luas karena menghasilkan tampilan estetis geometris yang rapi sekaligus kokoh.",
+            "Bentuk [Paving Hexagonal (Segi Enam)](/id/products#product-hexa) memiliki enam sisi pengunci yang memberikan distribusi beban simetris ke segala arah. Model ini sangat cocok untuk jalan lingkungan perumahan dan pelataran luas karena menghasilkan tampilan estetis geometris yang rapi sekaligus kokoh.",
           ],
         },
         {
           id: "bentuk-ubin-persegi",
           heading: "Bentuk Ubin (Square / Kotak)",
           paragraphs: [
-            "Paving model ubin atau kotak menghasilkan kesan modern, lapang, dan minimalis. Model ini sangat digemari pada pedestrian perkotaan, pelataran plaza gedung pertemuan, dan teras hunian kontemporer.",
+            "Paving model [Ubin Persegi](/id/products#product-ubin) menghasilkan kesan modern, lapang, dan minimalis. Model ini sangat digemari pada pedestrian perkotaan, pelataran plaza gedung pertemuan, dan teras hunian kontemporer.",
           ],
         },
         {
           id: "produk-pendukung-uskup-kanstein",
           heading: "Produk Pembatas: Topi Uskup dan Kanstein",
           paragraphs: [
-            "Pemasangan paving block pada pola herringbone memerlukan penutup tepi khusus bernama Topi Uskup agar susunan samping terkunci rapi tanpa perlu pemotongan manual yang boros bahan. Selain itu, pemasangan Kanstein (kerb beton) di sepanjang batas luar perkerasan bersifat wajib untuk mencegah pergeseran lateral susunan paving.",
+            "Pemasangan paving block pada pola herringbone memerlukan penutup tepi khusus bernama [Topi Uskup](/id/products#product-topi-uskup) agar susunan samping terkunci rapi tanpa perlu pemotongan manual yang boros bahan. Selain itu, pemasangan [Kanstein Beton](/id/products#product-kanstin-jepit) di sepanjang batas luar perkerasan bersifat wajib untuk mencegah pergeseran lateral susunan paving.",
           ],
         },
       ],
@@ -108,8 +108,8 @@ export const article1Id: BlogPost = {
       id: "mutu-beton-dan-proses-produksi",
       heading: "4. Memperhatikan Mutu Beton dan Standar Produksi",
       paragraphs: [
-        "Mutu beton menunjukkan kuat tekan karakteristik per satuan luas yang mampu ditahan oleh material sebelum mengalami keruntuhan. Di Indonesia, klasifikasi mutu beton umumnya dinyatakan dalam angka K (karakteristik kubus 15x15 cm dalam kg/cm²).",
-        "Paving block berkualitas tinggi untuk infrastruktur perumahan dan komersial umumnya diproduksi pada rentang mutu K-300 hingga K-350. Mutu ini dihasilkan melalui formulasi bahan baku pilihan—seperti pasir silika, abu batu, semen portland berkualitas tinggi, dan agregat halus—yang dicetak menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
+        "Mutu beton menunjukkan kuat tekan karakteristik per satuan luas yang mampu ditahan oleh material sebelum mengalami keruntuhan. Di Indonesia, klasifikasi mutu beton umumnya dinyatakan dalam angka K (karakteristik kubus 15x15 cm dalam kg/cm²). Pembahasan lengkap mengenai perbandingan mutu dapat dibaca pada artikel [Mengenal Mutu Beton K-250, K-300, dan K-400](/id/blog/mutu-beton-k300-k350-paving-block).",
+        "Paving block berkualitas tinggi untuk infrastruktur perumahan dan komersial umumnya diproduksi pada rentang mutu K-250, K-300, hingga K-400. Mutu ini dihasilkan melalui formulasi bahan baku pilihan—seperti pasir silika, abu batu, semen portland berkualitas tinggi, dan agregat halus—yang dicetak menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
         "Kelebihan utama paving block hasil cetak mesin otomatis hidrolik adalah:",
       ],
       list: {
@@ -126,7 +126,7 @@ export const article1Id: BlogPost = {
       id: "peranan-drainase-dan-pondasi",
       heading: "5. Pentingnya Persiapan Pondasi dan Sistem Drainase",
       paragraphs: [
-        "Sebagus apa pun mutu paving block yang dibeli, ketahanan jalan paving 70% ditentukan oleh kualitas lapisan pondasi di bawahnya. Perkerasan paving block adalah struktur modular fleksibel yang mengikuti stabilitas tanah dasar.",
+        "Sebagus apa pun mutu paving block yang dibeli, ketahanan jalan paving 70% ditentukan oleh kualitas lapisan pondasi di bawahnya. Perkerasan paving block adalah struktur modular fleksibel yang mengikuti stabilitas tanah dasar. Pelajari panduan lengkapnya di [Tahapan Persiapan Lahan Sebelum Pemasangan Paving Block](/id/blog/persiapan-sebelum-pemasangan-paving-block).",
       ],
       subsections: [
         {
@@ -139,55 +139,55 @@ export const article1Id: BlogPost = {
         },
         {
           id: "kemiringan-aliran-air",
-          heading: "Kemiringan Aliran Air (Cross Fall)",
+          heading: "Kemiringan Permukaan (Cross-Fall Slope)",
           paragraphs: [
-            "Pastikan elevasi permukaan dibuat miring sekitar 1,5% hingga 2% mengarah ke saluran drainase atau kanstein lubang air. Genangan air di atas permukaan paving yang berlangsung lama dapat meresap ke pasir bedding dan memicu amblas lokal.",
+            "Permukaan paving wajib dibuat memiliki kemiringan minimal 1,5% hingga 2% ke arah saluran pembuangan atau parit tepi. Air yang menggenang di atas permukaan paving dalam waktu lama dapat meresap berlebih dan melunakkan lapisan pasir alas di bawahnya.",
           ],
         },
       ],
       callout: {
         type: "tip",
-        title: "Tips Praktisi Kaha Block",
-        text: "Gunakan pasir pengisi celah nat (joint sand) yang bersih dan kering, lalu lakukan pemadatan akhir menggunakan plate compactor dengan alas karet agar permukaan paving terkunci sempurna tanpa merusak sudut-sudut balok.",
+        title: "Tips Praktis Pemasangan Kaha Block",
+        text: "Pastikan pasir pengisi nat menggunakan pasir silika halus yang kering sempurna saat ditaburkan, lalu lakukan pemadatan akhir dengan plate compactor berlapisan karet (rubber pad) agar permukaan paving terkunci kuat tanpa merusak tepi balok beton.",
       },
     },
     {
-      id: "rekomendasi-kaha-block",
-      heading: "6. Solusi Pengadaan dan Pemasangan Terpadu",
+      id: "layanan-pengadaan-kaha-block",
+      heading: "6. Solusi Terintegrasi Bersama Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, menyediakan berbagai varian paving block mutu K-300 hingga K-350 untuk wilayah Jabodetabek dan sekitarnya.",
-        "Selain memproduksi Truepave, Hexa, Ubin, Topi Uskup, dan aneka kanstein dengan mesin full otomatis hidrolik, Kaha Block juga menyediakan paket jasa pemasangan profesional oleh tenaga ahli berpengalaman untuk memastikan hasil akhir yang rapi, padat, dan bergaransi fungsional.",
+        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di atas fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, memproduksi beragam pilihan paving block mutu K-250, K-300, hingga K-400 menggunakan mesin full otomatis hidrolik modern.",
+        "Selain memproduksi [katalog produk paving lengkap](/id/products) yang mencakup Truepave, Hexagonal, Ubin, Topi Uskup, dan Kanstein, Kaha Block juga melayani paket pengadaan material sekaligus jasa pemasangan profesional untuk memastikan perkerasan proyek Anda kokoh dan presisi. Lihat hasil pengerjaan kami di [Galeri Proyek Kaha Block](/id/projects).",
       ],
     },
   ],
   summary: {
-    title: "Ringkasan Panduan Pemilihan",
+    title: "Rangkuman Panduan Memilih Paving Block",
     points: [
-      "Kenali klasifikasi beban: 6 cm untuk beban ringan hunian/pedestrian, 8 cm untuk jalan lingkungan dan area komersial, 10 cm untuk beban berat industri.",
-      "Pilih model sesuai fungsi: Truepave dengan pola tulang ikan memberikan interlocking tertinggi untuk area manuver kendaraan.",
-      "Gunakan mutu beton K-300 hingga K-350 hasil cetak mesin otomatis hidrolik untuk memastikan kepadatan dan presisi dimensi.",
-      "Pastikan lapisan pondasi subgrade dan base course dipadatkan secara merata sebelum penghamparan pasir alas.",
-      "Gunakan kanstein pengunci di seluruh tepi luar dan atur kemiringan drainase minimal 1,5%–2%.",
+      "Pilih ketebalan sesuai peruntukan: 6 cm untuk carport/pedestrian hunian, 8 cm untuk jalan lingkungan dan area komersial, 10 cm untuk kawasan industri berat.",
+      "Gunakan pola anyaman tulang ikan (herringbone) pada model Truepave untuk area lalu lintas kendaraan guna memaksimalkan efek interlocking.",
+      "Prioritaskan paving hasil cetak mesin full otomatis hidrolik dengan mutu K-250, K-300, hingga K-400 untuk jaminan presisi dan kepadatan.",
+      "Jangan abaikan pemadatan tanah dasar dan ketebalan lapisan base course sebelum memasang pasir alas.",
+      "Pasang kanstein pengunci di seluruh perimeter tepi dan pastikan kemiringan drainase permukaan 1,5%–2%.",
     ],
   },
   faq: {
-    title: "Tanya Jawab Seputar Pemilihan Paving Block",
+    title: "Pertanyaan Populer Seputar Pemilihan Paving Block",
     items: [
       {
-        question: "Apakah paving block 6 cm aman dilewati mobil pribadi di rumah?",
-        answer: "Ya, paving block ketebalan 6 cm dengan mutu beton K-300 sangat ideal dan aman untuk carport serta halaman hunian pribadi yang hanya dilewati kendaraan penumpang roda empat dan sepeda motor.",
+        question: "Apakah paving tebal 6 cm aman untuk carport mobil keluarga?",
+        answer: "Ya, paving block tebal 6 cm dengan mutu beton K-300 sangat aman dan ideal untuk carport rumah tinggal dengan beban kendaraan pribadi seperti mobil MPV, SUV, dan sedan harian.",
       },
       {
-        question: "Mengapa pola tulang ikan (herringbone) lebih disarankan untuk jalan kendaraan?",
-        answer: "Pola tulang ikan menyebarkan gaya dorong horizontal (saat pengereman dan akselerasi) ke seluruh penjuru blok di sekitarnya, sehingga balok tidak mudah bergeser atau bergelombang dibandingkan pola lurus biasa.",
+        question: "Mengapa pola tulang ikan (herringbone) sangat disarankan untuk area kendaraan?",
+        answer: "Pola herringbone mengunci balok dari berbagai arah secara menyilang, sehingga gaya dorong dan geser akibat pengereman roda kendaraan dapat disalurkan merata tanpa menggeser posisi balok.",
       },
       {
         question: "Apa fungsi utama kanstein pada perkerasan paving block?",
-        answer: "Kanstein berfungsi sebagai dinding penahan samping (edge restraint) yang mencegah balok paving terdorong ke arah luar akibat tekanan beban kendaraan di atasnya.",
+        answer: "Kanstein berfungsi sebagai pembatas kaku di tepi perkerasan untuk menahan susunan paving block agar tidak bergeser atau meregang ke arah samping saat menerima beban roda kendaraan.",
       },
       {
-        question: "Apakah Kaha Block menyediakan jasa pemasangan selain pengiriman produk?",
-        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan terpadu mulai dari penyediaan material paving block bermutu hingga jasa pemasangan profesional di lapangan untuk area Jabodetabek dan proyek luar kota.",
+        question: "Apakah Kaha Block melayani jasa pemasangan selain pengadaan material?",
+        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material paving block sekaligus jasa pemasangan oleh tenaga ahli berpengalaman untuk wilayah Jabodetabek dan sekitarnya.",
       },
     ],
   },
@@ -205,10 +205,10 @@ export const article1En: BlogPost = {
   excerpt: "A comprehensive guide to selecting paving blocks based on area application, traffic tonnage, block thickness, interlocking shapes, and proper laying patterns for homes and commercial developments.",
   category: "Guides & Planning",
   categorySlug: "guide",
-  publishedAt: "2025-01-20",
-  updatedAt: "2025-01-20",
+  publishedAt: "2026-08-31",
+  updatedAt: "2026-08-31",
   readingTime: "7 min read",
-  seoTitle: "How to Choose Paving Blocks for Homes & Projects | Kaha Block",
+  seoTitle: "How to Choose Paving Blocks for Homes & Projects",
   seoDescription: "Learn how to select the right paving blocks for residential carports, neighborhood access roads, and commercial complexes with precision thickness and strength ratings.",
   featured: true,
   intro: [
@@ -229,39 +229,39 @@ export const article1En: BlogPost = {
           id: "light-duty-category",
           heading: "Light-Duty Category (Pedestrian & Garden Pathways)",
           paragraphs: [
-            "Encompasses residential garden paths, walking sidewalks, home terraces, and recreational public spaces. Traffic is strictly non-vehicular, making walking comfort, surface smoothness, and harmonious color arrangements the primary design considerations.",
+            "Includes garden walking paths, pedestrian walkways, home terraces, and recreational spaces. Loads are purely human foot traffic and lightweight outdoor fixtures, prioritizing foot comfort, surface smoothness, and visual pattern harmony.",
           ],
         },
         {
           id: "medium-duty-category",
           heading: "Medium-Duty Category (Carports & Residential Streets)",
           paragraphs: [
-            "Includes open carports, residential estate cluster streets, retail shop front parking, and office access lanes. Pavements in this class require adequate shear resistance to handle braking, vehicle acceleration, and passenger vehicle parking.",
+            "Covers open carports, cluster access roads, and small commercial parking slots. These zones require sufficient shear resistance against sudden braking forces and the static weight of four-wheel vehicles.",
           ],
         },
         {
           id: "heavy-duty-category",
-          heading: "Heavy-Duty Category (Commercial, Industrial & Logistics)",
+          heading: "Heavy-Duty Category (Commercial, Industrial & Freight Zones)",
           paragraphs: [
-            "Covers loading bays, factory yards, bus terminals, and heavy distribution corridors. This category requires high compressive strength blocks and an interlocking geometry that distributes concentrated wheel loads efficiently.",
+            "Includes loading docks, factory yards, bus terminals, and logistics routes. These demanding areas require high-strength modular pavers and maximum multidirectional interlocking performance.",
           ],
         },
       ],
     },
     {
       id: "thickness-guidelines",
-      heading: "2. Selecting the Right Paving Block Thickness",
+      heading: "2. Selecting the Optimal Paver Thickness",
       paragraphs: [
-        "Block thickness directly influences how effectively applied wheel loads are dissipated across the underlying base courses. Increased thickness enhances section modulus and lateral interlocking grip between adjacent units.",
-        "Final selection should be tailored to area conditions, load requirements, product type, and consultation results with experienced pavement professionals.",
+        "Block thickness correlates directly with the pavement's ability to distribute surface wheel loads across the underlying foundation. Thicker pavers deliver higher moment of inertia and greater lateral shear resistance.",
+        "Final thickness selection should align with expected vehicle types, site subgrade conditions, and recommendations from technical paving specialists. Detailed comparison is available in our [6 cm, 8 cm, and 10 cm Thickness Guide](/en/blog/perbedaan-ketebalan-paving-block-6cm-8cm-10cm).",
       ],
       table: {
-        caption: "Recommended Paving Block Thickness by Application Area",
-        headers: ["Thickness", "Load Characteristics", "Typical Recommended Applications"],
+        caption: "Recommended Concrete Paver Thickness by Operational Application",
+        headers: ["Thickness", "Load Characteristics", "Recommended Application Examples"],
         rows: [
-          ["6 cm", "Light to Medium Load (Passenger Cars, Motorcycles, Foot Traffic)", "Residential driveways, home carports, pedestrian walkways, jogging tracks, landscaping."],
-          ["8 cm", "Medium to Heavy Load (Delivery Trucks, Buses, Constant Traffic)", "Residential main roads, retail plazas, hotel drop-offs, commercial parking lots."],
-          ["10 cm", "Extra Heavy Duty (Container Trucks, Articulated Vehicles, Freight)", "Industrial parks, logistics hubs, heavy factory yards, port container depots."],
+          ["6 cm", "Light to Medium Load (Passenger Cars, Motorcycles, Foot Traffic)", "Residential driveways, private carports, garden pathways, park walkways."],
+          ["8 cm", "Medium to Heavy Load (Light Trucks, Commercial Vans, Steady Traffic)", "Residential main boulevards, shophouse plazas, hotel drop-offs, commercial lots."],
+          ["10 cm", "Extra Heavy Load (Container Trucks, Articulated Vehicles, Heavy Freight)", "Industrial estates, heavy logistics hubs, port container yards, loading terminals."],
         ],
       },
     },
@@ -276,28 +276,28 @@ export const article1En: BlogPost = {
           id: "rectangular-truepave",
           heading: "Rectangular Block (Truepave)",
           paragraphs: [
-            "The rectangular Truepave model (standard 10.5 x 21 cm) remains the industry benchmark for versatile civil paving. When laid in a 45° or 90° herringbone pattern, Truepave creates maximum multidirectional interlocking resistance against vehicular braking and turning forces.",
+            "The rectangular [Truepave Model (Brick Shape)](/en/products#product-truepave) (standard 10.5 x 21 cm) remains the industry benchmark for versatile civil paving. When laid in a 45° or 90° herringbone pattern, Truepave creates maximum multidirectional interlocking resistance against vehicular braking and turning forces.",
           ],
         },
         {
           id: "hexagonal-shape",
           heading: "Hexagonal Block (Hexa)",
           paragraphs: [
-            "Featuring six interlocking boundary faces, the Hexa paver offers symmetrical stress distribution across all directions. It is widely specified for residential boulevards and expansive parking plazas where clean geometric lines and structural reliability are required.",
+            "Featuring six interlocking boundary faces, the [Hexagonal Paving Block](/en/products#product-hexa) offers symmetrical stress distribution across all directions. It is widely specified for residential boulevards and expansive parking plazas where clean geometric lines and structural reliability are required.",
           ],
         },
         {
           id: "square-tile-shape",
           heading: "Square Paver (Tile / Ubin)",
           paragraphs: [
-            "Square pavers produce a clean, contemporary, and architectural aesthetic. They are particularly popular for pedestrian esplanades, public plazas, and modern architectural courtyards.",
+            "The [Square Tile Paver](/en/products#product-ubin) produces a clean, contemporary, and architectural aesthetic. They are particularly popular for pedestrian esplanades, public plazas, and modern architectural courtyards.",
           ],
         },
         {
           id: "edge-restraints-and-curbs",
           heading: "Edge Components: Topi Uskup and Concrete Curbs (Kanstein)",
           paragraphs: [
-            "When laying herringbone patterns, specialized edge pavers known as Topi Uskup (Bishop Hat shape) eliminate excessive manual cutting along perimeters. Furthermore, installing solid concrete curbs (Kanstein) along all unconfined edges is strictly mandatory to prevent lateral shifting of the pavement system.",
+            "When laying herringbone patterns, specialized edge pavers known as [Topi Uskup (Bishop Hat)](/en/products#product-topi-uskup) eliminate excessive manual cutting along perimeters. Furthermore, installing solid [Concrete Curbs (Kanstein)](/en/products#product-kanstin-jepit) along all unconfined edges is strictly mandatory to prevent lateral shifting of the pavement system.",
           ],
         },
       ],
@@ -306,8 +306,8 @@ export const article1En: BlogPost = {
       id: "concrete-quality-and-production",
       heading: "4. Assessing Concrete Compressive Strength and Manufacturing Quality",
       paragraphs: [
-        "Concrete quality is measured by characteristic compressive strength (commonly designated as K-rating in Indonesian standards, representing kg/cm² on a 15x15 cm cube).",
-        "High-performance paving blocks for residential and infrastructure projects typically range from K-300 to K-350 concrete grades. Achieving this standard requires carefully graded raw materials—including silica sand, stone dust, premium Portland cement, and clean aggregates—compacted under high hydraulic pressure in fully automated machinery.",
+        "Concrete quality is measured by characteristic compressive strength (commonly designated as K-rating in Indonesian standards, representing kg/cm² on a 15x15 cm cube). Learn more in our guide on [Understanding Concrete Strength (K-250, K-300, K-400)](/en/blog/mutu-beton-k300-k350-paving-block).",
+        "High-performance paving blocks for residential and infrastructure projects typically range from K-250, K-300, to K-400 concrete grades. Achieving this standard requires carefully graded raw materials—including silica sand, stone dust, premium Portland cement, and clean aggregates—compacted under high hydraulic pressure in fully automated machinery.",
         "Key advantages of fully automated hydraulic machine production include:",
       ],
       list: {
@@ -324,7 +324,7 @@ export const article1En: BlogPost = {
       id: "subbase-and-drainage",
       heading: "5. Subbase Preparation and Drainage Engineering",
       paragraphs: [
-        "Regardless of the paver's inherent compressive strength, approximately 70% of long-term pavement performance relies on the quality of the foundation layers beneath. Segmental paving is a flexible system that conforms to the stability of the subgrade.",
+        "Regardless of the paver's inherent compressive strength, approximately 70% of long-term pavement performance relies on the quality of the foundation layers beneath. Segmental paving is a flexible system that conforms to the stability of the subgrade. Follow our detailed [Site Preparation Guide Before Paving Installation](/en/blog/persiapan-sebelum-pemasangan-paving-block).",
       ],
       subsections: [
         {
@@ -353,8 +353,8 @@ export const article1En: BlogPost = {
       id: "integrated-supply-and-install",
       heading: "6. Integrated Supply and Installation Solutions",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, supplies high-precision K-300 to K-350 paving blocks across Greater Jakarta and surrounding regions.",
-        "In addition to manufacturing Truepave, Hexa, Square pavers, Topi Uskup (Bishop Hat shape), and diverse curb units with fully automated hydraulic machines, Kaha Block provides complete professional installation services to guarantee structural stability, sharp aesthetics, and dependable longevity.",
+        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, supplies high-precision K-250, K-300, and K-400 paving blocks across Greater Jakarta and surrounding regions.",
+        "In addition to manufacturing our complete [product catalog](/en/products)—including Truepave, Hexa, Square pavers, Bishop Hat (Topi Uskup), and diverse curb units—Kaha Block provides professional turnkey installation services. View completed project applications in our [Project Gallery](/en/projects), or reach out via our [contact page](/en/contact) for direct consultations.",
       ],
     },
   ],
@@ -363,7 +363,7 @@ export const article1En: BlogPost = {
     points: [
       "Match thickness to traffic: 6 cm for residential carports and walkways, 8 cm for access roads and commercial parking, 10 cm for industrial freight zones.",
       "Choose the right pattern: Truepave in a herringbone layout offers the highest multidirectional interlocking under vehicular braking forces.",
-      "Specify K-300 to K-350 compressive strength produced with automated hydraulic machinery for consistent density and dimensional accuracy.",
+      "Specify K-250, K-300, or K-400 compressive strength produced with automated hydraulic machinery for consistent density and dimensional accuracy.",
       "Ensure thorough subgrade and base course compaction prior to placing bedding sand.",
       "Install robust concrete edge restraints (Kanstein) and maintain at least 1.5%–2% surface drainage slope.",
     ],

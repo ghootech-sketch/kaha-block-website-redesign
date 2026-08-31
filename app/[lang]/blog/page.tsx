@@ -83,7 +83,7 @@ export default async function BlogIndexPage({
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <ScrollReveal direction="down">
+          <ScrollReveal immediate direction="down">
             <nav
               aria-label="Breadcrumb"
               className="flex items-center gap-2 text-xs font-medium text-slate-400 mb-8"
@@ -104,7 +104,7 @@ export default async function BlogIndexPage({
 
           {/* Hero Content */}
           <div className="max-w-3xl">
-            <ScrollReveal direction="up" delay={0.1}>
+            <ScrollReveal immediate direction="up">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>{dict.eyebrow}</span>
@@ -308,8 +308,8 @@ export default async function BlogIndexPage({
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
                     {isEn
-                      ? "Consult on product choices, technical site preparation, and receive verified quotations for K-300 to K-350 paving blocks produced with fully automated hydraulic machinery."
-                      : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-300 hingga K-350 mesin full otomatis hidrolik untuk proyek Anda."}
+                      ? "Consult on product choices, technical site preparation, and receive verified quotations for K-250, K-300, and K-400 paving blocks produced with fully automated hydraulic machinery."
+                      : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-250, K-300, hingga K-400 mesin full otomatis hidrolik untuk proyek Anda."}
                   </p>
                 </div>
 

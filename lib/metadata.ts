@@ -87,12 +87,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
       description:
-        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-300–K-350, dan cara merawat paving block dari PT Kaha Sukses Mandiri.",
+        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-250, K-300, dan K-400, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
     },
     en: {
       title: "Blog & Paving Block Guide Center | KAHA BLOCK",
       description:
-        "Technical guides, area planning tips, thickness comparisons, K-300 to K-350 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
+        "Technical guides, area planning tips, thickness comparisons, K-250, K-300, and K-400 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
     },
   },
 };
@@ -116,6 +116,7 @@ export function constructPageMetadata(
       languages: {
         "id-ID": idUrl,
         en: enUrl,
+        "x-default": idUrl,
       },
     },
     openGraph: {
@@ -159,12 +160,18 @@ export function constructBlogPostMetadata({
   publishedAt: string;
   updatedAt: string;
 }): Metadata {
+  // Strip any existing brand suffixes from title to prevent double-branding
+  const cleanTitle = title
+    .replace(/\s*(\|\s*|-+\s*)(KAHA BLOCK|Kaha Block|kaha block)\s*$/i, "")
+    .trim();
+  const finalTitle = `${cleanTitle} | KAHA BLOCK`;
+
   const canonicalUrl = `${BASE_URL}/${lang}/blog/${slug}`;
   const idUrl = `${BASE_URL}/id/blog/${slug}`;
   const enUrl = `${BASE_URL}/en/blog/${slug}`;
 
   return {
-    title: `${title} | KAHA BLOCK`,
+    title: finalTitle,
     description,
     metadataBase: new URL(BASE_URL),
     alternates: {
@@ -172,10 +179,11 @@ export function constructBlogPostMetadata({
       languages: {
         "id-ID": idUrl,
         en: enUrl,
+        "x-default": idUrl,
       },
     },
     openGraph: {
-      title: `${title} | KAHA BLOCK`,
+      title: finalTitle,
       description,
       url: canonicalUrl,
       siteName: "KAHA BLOCK",
@@ -189,14 +197,14 @@ export function constructBlogPostMetadata({
           url: OG_IMAGE_URL,
           width: 1200,
           height: 630,
-          alt: title,
+          alt: cleanTitle,
           type: "image/png",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | KAHA BLOCK`,
+      title: finalTitle,
       description,
       images: [OG_IMAGE_URL],
     },

@@ -1,4 +1,5 @@
 import { dictionaries, Locale } from "@/lib/dictionary";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, MapPin, Phone, Instagram, Facebook } from "lucide-react";
@@ -21,7 +22,7 @@ export default function Footer({ lang }: { lang: Locale }) {
               <div className="relative w-[180px] md:w-[220px] h-[50px] md:h-[60px]">
                 <Image
                   src="/footer-logo.png"
-                  alt="Kaha Block - PT Kaha Sukses Mandiri"
+                  alt={`${BUSINESS_FACTS.brandName} - ${BUSINESS_FACTS.legalName}`}
                   fill
                   className="object-contain object-left"
                   sizes="(max-width: 768px) 180px, 220px"
@@ -63,24 +64,24 @@ export default function Footer({ lang }: { lang: Locale }) {
             <ul className="space-y-3.5 sm:space-y-4 font-sans text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-[#FFC300] mr-3 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span className="text-gray-300 min-w-0 flex-1 break-words">{dict.contact.address}</span>
+                <span className="text-gray-300 min-w-0 flex-1 break-words">{BUSINESS_FACTS.address.formatted}</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`tel:${dict.contact.quickActions.whatsappNumber.replace(/\D/g, "")}`}
+                  href={`tel:${BUSINESS_FACTS.contact.primaryPhoneE164.replace(/\D/g, "")}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
-                  {dict.contact.quickActions.whatsappNumber}
+                  {BUSINESS_FACTS.contact.primaryPhoneDisplay}
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-[#FFC300] mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`mailto:${dict.contact.quickActions.emailAddress}`}
+                  href={`mailto:${BUSINESS_FACTS.contact.email}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
-                  {dict.contact.quickActions.emailAddress}
+                  {BUSINESS_FACTS.contact.email}
                 </a>
               </li>
             </ul>
@@ -92,7 +93,7 @@ export default function Footer({ lang }: { lang: Locale }) {
             <div className="space-y-3.5 sm:space-y-4">
               <div className="flex items-center space-x-3">
                 <a
-                  href="https://www.instagram.com/kahablock/"
+                  href={BUSINESS_FACTS.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram Kaha Block @kahablock"
@@ -102,7 +103,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 </a>
                 <div className="flex flex-wrap items-center gap-x-1.5 text-gray-300 text-sm font-sans">
                   <a
-                    href="https://www.instagram.com/kahablock/"
+                    href={BUSINESS_FACTS.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram Kaha Block @kahablock"
@@ -121,7 +122,7 @@ export default function Footer({ lang }: { lang: Locale }) {
             </div>
             <div className="mt-5 sm:mt-6">
               <a
-                href={dict.contact.whatsappUrl}
+                href={BUSINESS_FACTS.contact.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
