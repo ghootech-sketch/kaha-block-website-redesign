@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { legacyRedirects } from './lib/redirects';
 
 const locales = ['id', 'en'];
 const defaultLocale = 'id';
@@ -18,13 +19,35 @@ export function middleware(request: NextRequest) {
   // Skip public files and api routes
   if (
     pathname.startsWith('/_next') ||
+    pathname.startsWith('/images') ||
     pathname.includes('/api/') ||
     pathname.match(/\.(.*)$/)
   ) {
     return applyVercelRobotsHeader(request, NextResponse.next());
   }
 
-  // Check if there is any supported locale in the pathname
+  // 1. Check legacy WordPress redirects (handles both trailing slash and non-trailing slash in 1 hop)
+  const normalizedPath = pathname.length > 1 && pathname.endsWith('/')
+    ? pathname.replace(/\/+$/, '')
+    : pathname;
+
+  if (normalizedPath in legacyRedirects) {
+    const destinationPath = legacyRedirects[normalizedPath];
+    const destinationUrl = new URL(destinationPath, request.url);
+    destinationUrl.search = request.nextUrl.search;
+    const redirectResponse = NextResponse.redirect(destinationUrl, 308);
+    return applyVercelRobotsHeader(request, redirectResponse);
+  }
+
+  // 2. Handle root path redirect to default locale (/ -> /id)
+  if (pathname === '/') {
+    const destinationUrl = new URL(`/${defaultLocale}`, request.url);
+    destinationUrl.search = request.nextUrl.search;
+    const redirectResponse = NextResponse.redirect(destinationUrl, 308);
+    return applyVercelRobotsHeader(request, redirectResponse);
+  }
+
+  // 3. Check if there is any supported locale in the pathname
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
@@ -33,9 +56,10 @@ export function middleware(request: NextRequest) {
     return applyVercelRobotsHeader(request, NextResponse.next());
   }
 
-  // Redirect if there is no locale
-  request.nextUrl.pathname = `/${defaultLocale}${pathname === '/' ? '' : pathname}`;
-  const redirectResponse = NextResponse.redirect(request.nextUrl);
+  // 4. Redirect non-locale path to default locale path (e.g. /products -> /id/products)
+  const destinationUrl = new URL(`/${defaultLocale}${pathname}`, request.url);
+  destinationUrl.search = request.nextUrl.search;
+  const redirectResponse = NextResponse.redirect(destinationUrl, 308);
   return applyVercelRobotsHeader(request, redirectResponse);
 }
 

@@ -283,69 +283,165 @@ export function generateStructuredDataGraph({
     const productsList = [
       {
         "@type": "Product",
-        name: isEn ? "Truepave Paving Block (Rectangle)" : "Paving Block Truepave (Bata)",
+        "@id": `${canonicalUrl}#product-truepave`,
+        name: isEn ? "Truepave" : "Truepave",
         description: isEn
-          ? "Standard rectangular paving block (10.5 x 21 cm) available in 6 cm, 8 cm, and 10 cm thickness, strength K-300 to K-400."
-          : "Paving block model bata persegi panjang (10,5 x 21 cm) ketebalan 6 cm, 8 cm, dan 10 cm mutu beton K-300 hingga K-400.",
-        brand: { "@id": `${baseUrl}/#organization` },
+          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-300 to K-400. Applications: Roads, parking, and industrial areas."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-300 sampai K-400. Aplikasi: Jalan, parkir, dan area industri.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
         category: "Concrete Paving Blocks",
         image: `${baseUrl}/images/products/kaha-block-truepave.webp`,
         url: `${canonicalUrl}#product-truepave`,
       },
       {
         "@type": "Product",
-        name: isEn ? "Hexagonal Paving Block" : "Paving Block Hexagonal (Segi Enam)",
+        "@id": `${canonicalUrl}#product-half-tahu`,
+        name: isEn ? "Half / Tahu" : "Half / Tahu",
         description: isEn
-          ? "Interlocking hexagonal paving block (20 x 20 cm) in 6 cm and 8 cm thickness, strength K-300 to K-400."
-          : "Paving block segi enam (20 x 20 cm) dengan enam sisi pengunci tebal 6 cm dan 8 cm mutu K-300 hingga K-400.",
-        brand: { "@id": `${baseUrl}/#organization` },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-hexa-8cm.webp`,
-        url: `${canonicalUrl}#product-hexa`,
-      },
-      {
-        "@type": "Product",
-        name: isEn ? "Half-Truepave Paving Block" : "Paving Block Half / Setengah Bata",
-        description: isEn
-          ? "Half-block complement (10.5 x 10.5 cm) for clean pattern finishing without on-site cutting."
-          : "Paving setengah bata (10,5 x 10,5 cm) pelengkap pola susun Truepave untuk kerapian tepian.",
-        brand: { "@id": `${baseUrl}/#organization` },
+          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Function: Paving pattern lock & color boundary."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Fungsi: Pengunci pola paving & pembatas warna.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
         category: "Concrete Paving Blocks",
         image: `${baseUrl}/images/products/kaha-block-half-tahu.webp`,
         url: `${canonicalUrl}#product-half-tahu`,
       },
       {
         "@type": "Product",
-        name: isEn ? "Square Paver (Ubin)" : "Paving Block Ubin (Square)",
+        "@id": `${canonicalUrl}#product-hexa`,
+        name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
-          ? "Square paving block (20 x 20 cm) for modern residential pathways and plaza pedestrian areas."
-          : "Paving block model kotak ubin (20 x 20 cm) untuk pedestrian, plaza, dan teras hunian modern.",
-        brand: { "@id": `${baseUrl}/#organization` },
+          ? "Color Options: Grey, Red, Black. Height Options: 8 cm. Application: Decorative areas and pedestrians."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam. Pilihan Tebal: 8 cm. Aplikasi: Area dekoratif dan pedestrian.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
+        category: "Concrete Paving Blocks",
+        image: `${baseUrl}/images/products/kaha-block-hexa-8cm.webp`,
+        url: `${canonicalUrl}#product-hexa`,
+      },
+      {
+        "@type": "Product",
+        "@id": `${canonicalUrl}#product-ubin`,
+        name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
+        description: isEn
+          ? "Color Options: Grey, Red, Black. Height Options: 8 cm."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam. Pilihan Tebal: 8 cm.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
         category: "Concrete Paving Blocks",
         image: `${baseUrl}/images/products/kaha-block-ubin-8cm.webp`,
         url: `${canonicalUrl}#product-ubin`,
       },
       {
         "@type": "Product",
-        name: isEn ? "Bishop Hat (Topi Uskup)" : "Paving Topi Uskup",
+        "@id": `${canonicalUrl}#product-topi-uskup`,
+        name: isEn ? "Bishop Hat" : "Topi Uskup",
         description: isEn
-          ? "Special angular edge-locking block designed for herringbone layout borders."
-          : "Paving pengunci tepi sudut pola anyaman tulang ikan (herringbone) Truepave.",
-        brand: { "@id": `${baseUrl}/#organization` },
+          ? "Size: 30 × 21 cm. Height Options: 6 cm and 8 cm. Compressive Strength: K-300. Material: Concrete. Color Options: Grey. Weight: 6 cm: approx. 5.5 kg | 8 cm: approx. 7.4 kg. Function: Locks edges and corners."
+          : "Ukuran: 30 × 21 cm. Pilihan Tebal: 6 cm dan 8 cm. Kuat Tekan: K-300. Material: Beton. Pilihan Warna: Abu-abu. Berat: 6 cm: sekitar 5,5 kg | 8 cm: sekitar 7,4 kg. Fungsi: Mengunci sisi dan sudut paving.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
         category: "Concrete Paving Blocks",
         image: `${baseUrl}/images/products/kaha-block-topi-uskup.webp`,
         url: `${canonicalUrl}#product-topi-uskup`,
       },
       {
         "@type": "Product",
-        name: isEn ? "Concrete Curb Stone (Kanstein)" : "Kanstein Beton (Curb Stone)",
+        "@id": `${canonicalUrl}#product-kanstin-jepit`,
+        name: isEn ? "Kanstein Jepit" : "Kanstein Jepit",
         description: isEn
-          ? "Concrete border curb stones (Jepit, B1, S-type) for lateral pavement confinement and road borders."
-          : "Kanstein pembatas jalan dan trotoar (Kanstein Jepit, B1, Tipe S) pengunci perkerasan.",
-        brand: { "@id": `${baseUrl}/#organization` },
+          ? "Category: Paving border/lock curb. Function: Locks and secures paving edges."
+          : "Kategori: Produk pembatas/pengunci paving. Fungsi: Membantu mengunci tepi pemasangan paving.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
         category: "Concrete Curb Stones",
         image: `${baseUrl}/images/products/kaha-block-kanstein-jepit.webp`,
         url: `${canonicalUrl}#product-kanstin-jepit`,
+      },
+      {
+        "@type": "Product",
+        "@id": `${canonicalUrl}#product-kanstin-s`,
+        name: isEn ? "Kanstein S" : "Kanstein S",
+        description: isEn
+          ? "Category: S-type road curb product. Function: Water gutter & sidewalk border."
+          : "Kategori: Produk pembatas jalan tipe S. Fungsi: Saluran air tepi & pembatas trotoar.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
+        category: "Concrete Curb Stones",
+        image: `${baseUrl}/images/products/kaha-block-kanstein-s.webp`,
+        url: `${canonicalUrl}#product-kanstin-s`,
+      },
+      {
+        "@type": "Product",
+        "@id": `${canonicalUrl}#product-kanstin-b1`,
+        name: isEn ? "Kanstein B1" : "Kanstein B1",
+        description: isEn
+          ? "Category: Road curb / border product. Function: Road shoulder & pedestrian border."
+          : "Kategori: Produk pembatas jalan / kanstein. Fungsi: Pembatas bahu jalan & area pedestrian.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
+        category: "Concrete Curb Stones",
+        image: `${baseUrl}/images/products/kaha-block-kanstein-b1.webp`,
+        url: `${canonicalUrl}#product-kanstin-b1`,
+      },
+      {
+        "@type": "Product",
+        "@id": `${canonicalUrl}#product-stoper`,
+        name: isEn ? "Stoper" : "Stoper",
+        description: isEn
+          ? "Category: Wheel stop / border product. Function: Vehicle parking boundary lock."
+          : "Kategori: Produk pembatas / penghenti roda. Fungsi: Pengaman batas parkir kendaraan.",
+        brand: {
+          "@type": "Brand",
+          name: "Kaha Block",
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
+        category: "Concrete Curb Stones",
+        image: `${baseUrl}/images/products/kaha-block-stoper.webp`,
+        url: `${canonicalUrl}#product-stoper`,
       },
     ];
 
