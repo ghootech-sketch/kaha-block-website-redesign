@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
-import { Phone, ChevronDown, CheckCircle2, MessageSquare, Layers } from "lucide-react";
+import { Phone, ChevronDown, CheckCircle2, MessageSquare, Layers, HelpCircle, ArrowDown } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -18,6 +18,18 @@ export async function generateMetadata({
   }
   return constructPageMetadata("products", lang as Locale);
 }
+
+const PRODUCT_ANCHOR_MAP: Record<string, string> = {
+  truepave: "product-truepave",
+  half: "product-half-tahu",
+  hexagonal: "product-hexa",
+  ubin: "product-ubin",
+  topiUskup: "product-topi-uskup",
+  kanstein: "product-kanstin-jepit",
+  kansteinB1: "product-kanstin-b1",
+  kansteinS: "product-kanstin-s",
+  stoper: "product-stoper",
+};
 
 export default async function Products({
   params,
@@ -37,32 +49,96 @@ export default async function Products({
   return (
     <>
       <JsonLd page="products" lang={currentLang} />
-      <div className="bg-gray-50 min-h-screen py-12 sm:py-16 md:py-20 lg:py-24">
+
+      {/* =========================================================================
+          1. PRODUCTS HERO & PRODUCT NAVIGATOR (Warm White Canvas)
+         ========================================================================= */}
+      <section className="bg-[#FAF9F6] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center mb-10 md:mb-14 lg:mb-16">
+          <ScrollReveal className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
               {dict.title}
             </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-6 mb-4 sm:mb-6 rounded-full" />
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-[#0B2447]/80 max-w-2xl mx-auto font-sans">
+            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-5 mb-4 sm:mb-5 rounded-full" />
+            <p className="text-base sm:text-lg text-[#0B2447]/80 font-sans leading-relaxed">
               {dict.specs}
             </p>
-            <p className="mt-2 text-sm sm:text-base text-[#D90429] font-bold max-w-2xl mx-auto font-sans">
+            <p className="mt-2 text-sm sm:text-base text-[#D90429] font-bold font-sans">
               {dict.availability}
             </p>
           </ScrollReveal>
 
-          {/* 3-Column Grid Layout */}
+          {/* Product Navigator Panel */}
+          {dict.navigator && (
+            <ScrollReveal delay={0.1} className="max-w-4xl mx-auto bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs">
+              <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
+                <div className="flex items-center space-x-2 text-[#0B2447]">
+                  <ArrowDown className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider font-heading">
+                    {dict.navigator.title}
+                  </span>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                {/* Category 1: Paving Block */}
+                <div className="bg-slate-50/80 rounded-xl p-3.5 sm:p-4 border border-slate-200/70">
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-2.5 font-heading">
+                    {dict.navigator.pavingBlockCategory}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {dict.navigator.pavingItems.map((item) => (
+                      <a
+                        key={item.targetId}
+                        href={`#${item.targetId}`}
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0B2447] hover:border-[#D90429] hover:text-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429]"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Category 2: Supporting Products */}
+                <div className="bg-slate-50/80 rounded-xl p-3.5 sm:p-4 border border-slate-200/70">
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-2.5 font-heading">
+                    {dict.navigator.supportingCategory}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {dict.navigator.supportingItems.map((item) => (
+                      <a
+                        key={item.targetId}
+                        href={`#${item.targetId}`}
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0B2447] hover:border-[#D90429] hover:text-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429]"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          )}
+        </div>
+      </section>
+
+      {/* =========================================================================
+          2. PRODUCT GRID SECTION (Slate Background)
+         ========================================================================= */}
+      <section className="bg-slate-50 py-12 sm:py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {productKeys.map((key, index) => {
               const product = dict.items[key];
               const hasDetails = 'detailSpecs' in product && Array.isArray(product.detailSpecs) && product.detailSpecs.length > 0;
+              const anchorId = PRODUCT_ANCHOR_MAP[key] || `product-${key}`;
 
               return (
                 <ScrollReveal
                   key={key}
-                  delay={index * 0.04}
-                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-lg transition-all duration-300 group flex flex-col h-full"
+                  delay={index * 0.03}
+                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-lg transition-all duration-300 group flex flex-col h-full scroll-mt-28"
+                  id={anchorId}
                 >
                   {/* 3:2 Product Image Container */}
                   <div className="relative aspect-[3/2] w-full bg-gray-100 overflow-hidden">
@@ -168,88 +244,134 @@ export default async function Products({
               {dict.disclaimer}
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* =========================================================================
-              SECTION: HAL YANG PERLU DIPASTIKAN SEBELUM MEMESAN (6 Points)
-             ========================================================================= */}
-          {dict.beforeOrder && (
-            <ScrollReveal className="mt-16 sm:mt-20 md:mt-24 bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 shadow-xs">
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
-                  {dict.beforeOrder.eyebrow}
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
-                  {dict.beforeOrder.title}
-                </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-sm sm:text-base text-slate-600 font-sans">
-                  {dict.beforeOrder.subtitle}
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {dict.beforeOrder.items.map((item) => (
-                  <div
-                    key={item.number}
-                    className="bg-[#FAF9F6] border border-gray-200/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-[#0B2447]/30 transition-colors"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="w-8 h-8 rounded-lg bg-[#0B2447] text-[#FFC300] font-mono text-xs font-bold flex items-center justify-center">
-                          {item.number}
-                        </span>
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
-                      </div>
-                      <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </ScrollReveal>
-          )}
-
-          {/* =========================================================================
-              SECTION: BUTUH BANTUAN MEMILIH PRODUK & LAYANAN PEMASANGAN
-             ========================================================================= */}
-          <ScrollReveal delay={0.2} direction="up" className="mt-12 sm:mt-16 bg-[#0B2447] text-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFC300] rounded-bl-full opacity-10 transform translate-x-12 -translate-y-12 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#D90429] rounded-tr-full opacity-20 transform -translate-x-12 translate-y-12 pointer-events-none" />
-            
-            <div className="relative z-10 max-w-3xl mx-auto">
-              <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
-                <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
-                  {dict.installation}
-                </span>
-              </div>
-
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5 font-heading">
-                {dict.needHelp?.title || dict.installation}
+      {/* =========================================================================
+          3. BUYING CONSIDERATION SECTION (Warm Neutral Editorial Section)
+         ========================================================================= */}
+      {dict.beforeOrder && (
+        <section className="bg-[#FAF9F6] border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+                {dict.beforeOrder.eyebrow}
+              </span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+                {dict.beforeOrder.title}
               </h2>
-              <p className="text-base sm:text-lg opacity-90 leading-relaxed font-sans mb-8">
-                {dict.needHelp?.desc || dict.installationDesc}
+              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
+                {dict.beforeOrder.subtitle}
               </p>
+            </ScrollReveal>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a 
-                  href={contactDict.whatsappUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {dict.beforeOrder.items.map((item, idx) => (
+                <ScrollReveal
+                  key={item.number}
+                  delay={idx * 0.04}
+                  className="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0B2447]/40 hover:shadow-sm transition-all"
                 >
-                  <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
-                  {dict.needHelp?.cta || dict.consultCta}
-                </a>
+                  <div>
+                    <div className="flex items-center justify-between mb-3.5">
+                      <span className="w-8 h-8 rounded-lg bg-[#0B2447] text-[#FFC300] font-mono text-xs font-bold flex items-center justify-center">
+                        {item.number}
+                      </span>
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
+          4. PRODUCT FAQ (White Accordion Section)
+         ========================================================================= */}
+      {dict.faq && (
+        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 mb-3">
+                <HelpCircle className="w-3.5 h-3.5 text-[#D90429]" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0B2447] font-heading">
+                  {dict.faq.eyebrow}
+                </span>
               </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+                {dict.faq.title}
+              </h2>
+              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <p className="text-sm sm:text-base text-slate-600 font-sans">
+                {dict.faq.subtitle}
+              </p>
+            </ScrollReveal>
+
+            <div className="space-y-4">
+              {dict.faq.items.map((item, idx) => (
+                <ScrollReveal key={idx} delay={idx * 0.03}>
+                  <details className="group rounded-2xl bg-[#FAF9F6] border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-[#0B2447]/30">
+                    <summary className="font-bold text-base sm:text-lg text-[#0B2447] cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429] rounded select-none">
+                      <span className="pr-4 font-heading">{item.q}</span>
+                      <ChevronDown className="w-5 h-5 text-slate-500 shrink-0 group-open:rotate-180 transition-transform duration-200" aria-hidden="true" />
+                    </summary>
+                    <div className="mt-3.5 pt-3.5 border-t border-slate-200/80 text-xs sm:text-sm text-slate-700 font-sans leading-relaxed">
+                      <p>{item.a}</p>
+                    </div>
+                  </details>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
+          5. FINAL CONSULTATION CTA (Deep Navy Background)
+         ========================================================================= */}
+      <section className="bg-[#0B2447] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFC300] rounded-bl-full opacity-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D90429] rounded-tr-full opacity-15 pointer-events-none" />
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal direction="up">
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
+              <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
+                {dict.finalCta?.eyebrow || dict.installation}
+              </span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5 font-heading">
+              {dict.finalCta?.heading || dict.needHelp?.title}
+            </h2>
+            <p className="text-base sm:text-lg opacity-90 leading-relaxed font-sans max-w-2xl mx-auto mb-8 sm:mb-10">
+              {dict.finalCta?.description || dict.needHelp?.desc}
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a 
+                href={contactDict.whatsappUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+              >
+                <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
+                {dict.finalCta?.button || dict.needHelp?.cta}
+              </a>
             </div>
           </ScrollReveal>
         </div>
-      </div>
+      </section>
     </>
   );
 }

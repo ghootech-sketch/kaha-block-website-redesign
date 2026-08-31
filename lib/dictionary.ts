@@ -494,10 +494,28 @@ export const dictionaries = {
       },
       installation: "Layanan Jasa Pemasangan Lengkap",
       installationDesc: "Kaha Block melayani pengadaan sekaligus jasa pemasangan paving. Tahapan pekerjaan disesuaikan dengan kondisi area dan kebutuhan proyek.",
+      navigator: {
+        title: "Temukan Produk Berdasarkan Kategori",
+        pavingBlockCategory: "Paving Block",
+        supportingCategory: "Produk Pendukung",
+        pavingItems: [
+          { name: "Truepave", targetId: "product-truepave" },
+          { name: "Half / Tahu", targetId: "product-half-tahu" },
+          { name: "Hexa 8 cm", targetId: "product-hexa" },
+          { name: "Ubin 8 cm", targetId: "product-ubin" },
+          { name: "Topi Uskup", targetId: "product-topi-uskup" },
+        ],
+        supportingItems: [
+          { name: "Kanstin Jepit", targetId: "product-kanstin-jepit" },
+          { name: "Kanstin B1", targetId: "product-kanstin-b1" },
+          { name: "Kanstin S", targetId: "product-kanstin-s" },
+          { name: "Stoper", targetId: "product-stoper" },
+        ],
+      },
       beforeOrder: {
         eyebrow: "Panduan Pemesanan",
-        title: "Hal yang Perlu Dipastikan Sebelum Memesan",
-        subtitle: "Agar proses pengadaan dan estimasi kebutuhan berjalan akurat, pastikan beberapa rincian berikut sebelum memesan:",
+        title: "Persiapkan Informasi Sebelum Memesan",
+        subtitle: "Informasi yang lebih lengkap membantu tim memahami kebutuhan proyek dan menyiapkan pilihan produk yang lebih relevan.",
         items: [
           {
             number: "01",
@@ -526,10 +544,47 @@ export const dictionaries = {
           },
           {
             number: "06",
-            title: "Pengiriman atau Jasa Pemasangan",
+            title: "Pengiriman atau Pemasangan",
             desc: "Tentukan apakah Anda hanya membutuhkan suplai material saja atau termasuk paket layanan pemasangan lengkap.",
           },
         ],
+      },
+      faq: {
+        eyebrow: "Tanya Jawab Produk",
+        title: "Pertanyaan Seputar Produk & Spesifikasi",
+        subtitle: "Jawaban atas pertanyaan umum seputar pemilihan produk, mutu, ukuran, dan pemesanan.",
+        items: [
+          {
+            q: "Bagaimana menentukan produk yang sesuai dengan kebutuhan area?",
+            a: "Pemilihan produk disesuaikan dengan jenis lalu lintas beban dan fungsi lahan. Untuk area pejalan kaki atau taman, ketebalan 6 cm umumnya mencukupi. Untuk jalan lingkungan, area parkir, atau lintasan kendaraan sedang hingga berat, disarankan ketebalan 8 cm atau 10 cm dengan mutu beton K-300 ke atas. Tim kami siap membantu meninjau kebutuhan spesifik area Anda.",
+          },
+          {
+            q: "Apakah tersedia pilihan warna dan ketebalan?",
+            a: "Ya, sebagian besar produk paving seperti Truepave dan Half tersedia dalam warna Abu-abu, Merah, Hitam, dan Kuning dengan opsi tebal 6 cm dan 8 cm (atau 10 cm untuk Truepave). Silakan konfirmasi ketersediaan pilihan warna dan ketebalan spesifik saat berkonsultasi.",
+          },
+          {
+            q: "Apakah seluruh produk mempunyai ukuran yang sama?",
+            a: "Tidak, setiap jenis produk memiliki dimensi dan karakteristik berbeda. Truepave memiliki dimensi presisi standar, Topi Uskup berukuran 30 × 21 cm untuk pengunci tepi, sedangkan model kanstein dan stoper memiliki profil khusus. Rincian ukuran dapat dikonfirmasi sebelum pemesanan.",
+          },
+          {
+            q: "Apakah Kaha Block melayani kebutuhan volume proyek?",
+            a: "Ya, pabrik Kaha Block siap melayani pengadaan material paving block dalam skala volume proyek perumahan, komersial, maupun infrastruktur dengan penjadwalan pasokan yang terkoordinasi.",
+          },
+          {
+            q: "Apakah tersedia jasa pengiriman dan pemasangan?",
+            a: "Ya, kami melayani suplai material saja maupun paket lengkap suplai beserta jasa pemasangan oleh tenaga berpengalaman untuk wilayah Jabodetabek dan sekitarnya sesuai kesepakatan.",
+          },
+          {
+            q: "Informasi apa yang diperlukan untuk meminta penawaran?",
+            a: "Untuk menyusun penawaran resmi, sampaikan model produk yang diinginkan, pilihan ketebalan dan warna, perkiraan luas area (m²), lokasi proyek, serta kebutuhan pengiriman atau jasa pemasangan.",
+          },
+        ],
+      },
+      finalCta: {
+        eyebrow: "Konsultasi Produk",
+        heading: "Belum Menentukan Produk yang Sesuai?",
+        description: "Sampaikan kondisi area, perkiraan luas, pilihan warna, dan kebutuhan pemasangan. Tim Kaha Block akan membantu meninjau kebutuhan Anda.",
+        button: "Konsultasikan Kebutuhan",
       },
       needHelp: {
         title: "Butuh Bantuan Memilih Produk?",
@@ -547,6 +602,58 @@ export const dictionaries = {
       closeLightbox: "Tutup",
       nextImage: "Selanjutnya",
       prevImage: "Sebelumnya",
+      completeGalleryHeading: "Seluruh Dokumentasi",
+      featured: {
+        eyebrow: "Dokumentasi Unggulan",
+        title: "Sorotan Pekerjaan & Penerapan Lapangan",
+        subtitle: "Tinjauan visual dari pemilihan material, pelaksanaan di lapangan, hingga hasil akhir terpasang.",
+        item1: {
+          label: "Dokumentasi Produk",
+          caption: "Pilihan bentuk dan tampilan paving block Kaha Block.",
+          badge: "Katalog Produk",
+          image: "/images/projects/kaha-block-dokumentasi-25.webp",
+        },
+        item2: {
+          label: "Proses Pemasangan",
+          caption: "Dokumentasi area selama pelaksanaan pekerjaan pemasangan.",
+          badge: "Pekerjaan Lapangan",
+          image: "/images/projects/kaha-block-dokumentasi-24.webp",
+        },
+        item3: {
+          label: "Hasil Aplikasi di Lapangan",
+          caption: "Hasil paving block setelah diterapkan pada area proyek.",
+          badge: "Hasil Terpasang",
+          image: "/images/projects/kaha-block-dokumentasi-03.webp",
+        },
+      },
+      scope: {
+        eyebrow: "Cakupan Dokumentasi",
+        title: "Dokumentasi yang Kami Tampilkan",
+        subtitle: "Transparansi pekerjaan visual mulai dari material produk hingga penerapan akhir di lokasi.",
+        items: [
+          {
+            number: "01",
+            title: "Produk",
+            desc: "Menampilkan bentuk, warna, permukaan, dan karakter visual produk yang tersedia.",
+          },
+          {
+            number: "02",
+            title: "Proses",
+            desc: "Menampilkan kondisi area dan tahapan pekerjaan selama proses pemasangan.",
+          },
+          {
+            number: "03",
+            title: "Hasil Aplikasi",
+            desc: "Menampilkan penerapan paving block pada beragam kebutuhan area.",
+          },
+        ],
+      },
+      projectCta: {
+        eyebrow: "Kebutuhan Proyek",
+        heading: "Punya Area yang Ingin Dipasang Paving Block?",
+        description: "Kirimkan informasi lokasi, perkiraan luas area, dan kebutuhan pekerjaan untuk memulai konsultasi.",
+        button: "Diskusikan Proyek Anda",
+      },
       editorialIntro: {
         eyebrow: "Dokumentasi Lapangan",
         title: "Galeri Dokumentasi & Pekerjaan",
@@ -613,6 +720,38 @@ export const dictionaries = {
         instagramDesc: "Dokumentasi produk dan proyek terpasang",
         instagramAction: "Buka Profil",
       },
+      prepChecklist: {
+        eyebrow: "Panduan Konsultasi",
+        title: "Siapkan Informasi Kebutuhan Anda",
+        subtitle: "Tidak harus lengkap. Informasi awal berikut membantu percakapan konsultasi menjadi lebih terarah.",
+        items: [
+          {
+            number: "01",
+            title: "Lokasi area",
+            desc: "Kota atau area proyek untuk estimasi logistik pengiriman.",
+          },
+          {
+            number: "02",
+            title: "Perkiraan luas atau volume",
+            desc: "Luas perkiraan (m²) atau jumlah kebutuhan material.",
+          },
+          {
+            number: "03",
+            title: "Jenis produk yang diminati",
+            desc: "Pilihan tipe paving, kanstein, ketebalan, dan warna.",
+          },
+          {
+            number: "04",
+            title: "Pengiriman atau pemasangan",
+            desc: "Kebutuhan suplai saja atau paket suplai dan pemasangan.",
+          },
+          {
+            number: "05",
+            title: "Target waktu kebutuhan",
+            desc: "Rencana linimasa dan jadwal pelaksanaan proyek Anda.",
+          },
+        ],
+      },
       factoryLocationEyebrow: "Lokasi Pabrik",
       factoryLocationHeading: "Paving Block Kaha",
       address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
@@ -628,6 +767,39 @@ export const dictionaries = {
         facebookLabel: "Facebook",
         facebookValue: "Richard KahaBlock id",
         facebookDesc: "Kanal informasi dan dokumentasi media",
+      },
+      processFlow: {
+        eyebrow: "Tahapan Layanan",
+        title: "Setelah Anda Menghubungi Kami",
+        subtitle: "Alur pendampingan terstruktur dari kontak awal hingga serah terima material atau pekerjaan pemasangan.",
+        steps: [
+          {
+            number: "01",
+            title: "Kebutuhan Awal",
+            desc: "Tim menerima informasi awal mengenai area dan kebutuhan produk.",
+          },
+          {
+            number: "02",
+            title: "Peninjauan Kebutuhan",
+            desc: "Jenis produk, volume, pengiriman, dan kebutuhan pemasangan dibahas lebih lanjut.",
+          },
+          {
+            number: "03",
+            title: "Penawaran dan Jadwal",
+            desc: "Penawaran serta rencana waktu dikonfirmasi bersama.",
+          },
+          {
+            number: "04",
+            title: "Pengiriman atau Pemasangan",
+            desc: "Produk dikirim atau pekerjaan pemasangan dilaksanakan sesuai kesepakatan.",
+          },
+        ],
+      },
+      finalCta: {
+        eyebrow: "Mulai Konsultasi",
+        heading: "Siap Mendiskusikan Kebutuhan Proyek Anda?",
+        description: "Hubungi Kaha Block untuk membahas produk, volume, pengiriman, dan kebutuhan pemasangan.",
+        button: "Hubungi via WhatsApp",
       },
       whatsapp: "WhatsApp Kaha Block",
       whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
@@ -1153,10 +1325,28 @@ export const dictionaries = {
       },
       installation: "Comprehensive Installation Services",
       installationDesc: "Kaha Block provides paving supply and installation services. The work stages are adjusted to site conditions and project requirements.",
+      navigator: {
+        title: "Explore Products by Category",
+        pavingBlockCategory: "Paving Block",
+        supportingCategory: "Supporting Products",
+        pavingItems: [
+          { name: "Truepave", targetId: "product-truepave" },
+          { name: "Half / Tahu", targetId: "product-half-tahu" },
+          { name: "Hexa 8 cm", targetId: "product-hexa" },
+          { name: "Tile 8 cm", targetId: "product-ubin" },
+          { name: "Bishop Hat", targetId: "product-topi-uskup" },
+        ],
+        supportingItems: [
+          { name: "Kanstein Jepit", targetId: "product-kanstin-jepit" },
+          { name: "Kanstein B1", targetId: "product-kanstin-b1" },
+          { name: "Kanstein S", targetId: "product-kanstin-s" },
+          { name: "Stoper", targetId: "product-stoper" },
+        ],
+      },
       beforeOrder: {
         eyebrow: "Ordering Guide",
-        title: "Things to Confirm Before Ordering",
-        subtitle: "To ensure accurate procurement and volume estimation, please confirm the following details before placing your order:",
+        title: "Prepare Your Requirements Before Ordering",
+        subtitle: "Clearer project information helps the team understand your requirements and prepare more relevant product options.",
         items: [
           {
             number: "01",
@@ -1190,6 +1380,43 @@ export const dictionaries = {
           },
         ],
       },
+      faq: {
+        eyebrow: "Product FAQ",
+        title: "Frequently Asked Product Questions",
+        subtitle: "Answers to common questions regarding product selection, quality, dimensions, and ordering.",
+        items: [
+          {
+            q: "How do I determine the right product for site requirements?",
+            a: "Product selection depends on anticipated traffic load and site function. For pedestrian walkways or gardens, 6 cm thickness is generally suitable. For residential roads, parking lots, or medium-to-heavy vehicle traffic, 8 cm or 10 cm thickness with K-300 compressive strength or higher is recommended. Our team is ready to review your site requirements.",
+          },
+          {
+            q: "Are color and thickness options available?",
+            a: "Yes, most paving products such as Truepave and Half are available in Grey, Red, Black, and Yellow with 6 cm and 8 cm thickness options (and 10 cm for Truepave). Please confirm specific color and thickness availability during consultation.",
+          },
+          {
+            q: "Do all products have the same dimensions?",
+            a: "No, each product type has distinct dimensions and characteristics. Truepave has standard precision dimensions, Bishop Hat measures 30 × 21 cm for edge locking, while curb and wheel stop models have specialized profiles. Exact dimension details can be confirmed before ordering.",
+          },
+          {
+            q: "Does Kaha Block serve large-scale project volume needs?",
+            a: "Yes, Kaha Block facility is equipped to serve paving block material procurement for residential, commercial, and infrastructure project volumes with coordinated supply scheduling.",
+          },
+          {
+            q: "Are delivery and installation services available?",
+            a: "Yes, we provide both material-only supply as well as full turnkey supply and installation by experienced crews across Greater Jakarta and surrounding areas as agreed.",
+          },
+          {
+            q: "What information is required to request a quotation?",
+            a: "To prepare an official quotation, please provide the desired product model, thickness and color choice, estimated surface area (m²), project location, and whether delivery or installation services are required.",
+          },
+        ],
+      },
+      finalCta: {
+        eyebrow: "Product Consultation",
+        heading: "Not Sure Which Product Fits Your Needs?",
+        description: "Share your site conditions, estimated area, preferred colors, and installation requirements. The Kaha Block team will help review your needs.",
+        button: "Discuss Your Requirements",
+      },
       needHelp: {
         title: "Need Help Choosing Products?",
         desc: "The Kaha Block team is ready to assist you in matching the right paving model, thickness, and volume estimate with your site conditions and project load requirements.",
@@ -1206,6 +1433,58 @@ export const dictionaries = {
       closeLightbox: "Close",
       nextImage: "Next",
       prevImage: "Previous",
+      completeGalleryHeading: "Complete Documentation",
+      featured: {
+        eyebrow: "Featured Documentation",
+        title: "Field Work & Application Highlights",
+        subtitle: "Visual overview from material selection and field installation through to completed application.",
+        item1: {
+          label: "Product Documentation",
+          caption: "Selection of shapes and visual appearance of Kaha Block paving.",
+          badge: "Product Catalog",
+          image: "/images/projects/kaha-block-dokumentasi-25.webp",
+        },
+        item2: {
+          label: "Installation Process",
+          caption: "Site documentation during paving installation execution.",
+          badge: "Site Execution",
+          image: "/images/projects/kaha-block-dokumentasi-24.webp",
+        },
+        item3: {
+          label: "Field Application Results",
+          caption: "Paving block results after application on the project area.",
+          badge: "Applied Result",
+          image: "/images/projects/kaha-block-dokumentasi-03.webp",
+        },
+      },
+      scope: {
+        eyebrow: "Documentation Scope",
+        title: "What Our Documentation Covers",
+        subtitle: "Visual work transparency from product materials through to final applications on site.",
+        items: [
+          {
+            number: "01",
+            title: "Product",
+            desc: "Showing the shapes, colors, surfaces, and visual characteristics of available products.",
+          },
+          {
+            number: "02",
+            title: "Process",
+            desc: "Showing site conditions and work stages during installation.",
+          },
+          {
+            number: "03",
+            title: "Field Application",
+            desc: "Showing paving block applications across different site requirements.",
+          },
+        ],
+      },
+      projectCta: {
+        eyebrow: "Project Requirements",
+        heading: "Have an Area That Needs Paving Block Installation?",
+        description: "Send your location details, estimated site area, and scope of work to start the consultation.",
+        button: "Discuss Your Project",
+      },
       editorialIntro: {
         eyebrow: "Field Documentation",
         title: "Documentation & Project Gallery",
@@ -1272,6 +1551,38 @@ export const dictionaries = {
         instagramDesc: "Product gallery and project documentation",
         instagramAction: "View Profile",
       },
+      prepChecklist: {
+        eyebrow: "Consultation Guide",
+        title: "Prepare Your Project Information",
+        subtitle: "The information does not need to be complete. These initial details help make the consultation more focused.",
+        items: [
+          {
+            number: "01",
+            title: "Site location",
+            desc: "Project city or area for delivery and logistics estimations.",
+          },
+          {
+            number: "02",
+            title: "Estimated area or volume",
+            desc: "Approximate surface area (m²) or material quantity required.",
+          },
+          {
+            number: "03",
+            title: "Preferred product types",
+            desc: "Preferred paving type, curb, thickness, and color options.",
+          },
+          {
+            number: "04",
+            title: "Delivery or installation service",
+            desc: "Material supply only or turnkey supply and installation.",
+          },
+          {
+            number: "05",
+            title: "Target project timeline",
+            desc: "Target project milestone and execution schedule.",
+          },
+        ],
+      },
       factoryLocationEyebrow: "Factory Location",
       factoryLocationHeading: "Paving Block Kaha",
       address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
@@ -1287,6 +1598,39 @@ export const dictionaries = {
         facebookLabel: "Facebook",
         facebookValue: "Richard KahaBlock id",
         facebookDesc: "Operational updates and product media",
+      },
+      processFlow: {
+        eyebrow: "Service Stages",
+        title: "What Happens After You Contact Us",
+        subtitle: "Structured guidance workflow from initial inquiry through to material dispatch or installation completion.",
+        steps: [
+          {
+            number: "01",
+            title: "Initial Inquiry",
+            desc: "The team receives initial information regarding site and product requirements.",
+          },
+          {
+            number: "02",
+            title: "Requirements Review",
+            desc: "Product types, volume, delivery, and installation requirements are reviewed in detail.",
+          },
+          {
+            number: "03",
+            title: "Quotation & Schedule",
+            desc: "Official quotation and schedule timeline are mutually confirmed.",
+          },
+          {
+            number: "04",
+            title: "Delivery or Installation",
+            desc: "Products are delivered or installation work is executed as agreed.",
+          },
+        ],
+      },
+      finalCta: {
+        eyebrow: "Start Consultation",
+        heading: "Ready to Discuss Your Project Requirements?",
+        description: "Contact Kaha Block to discuss products, volume, delivery, and installation requirements.",
+        button: "Contact via WhatsApp",
       },
       whatsapp: "Chat on WhatsApp",
       whatsappUrl: "https://wa.me/628119753030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",

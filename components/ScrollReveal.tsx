@@ -7,6 +7,7 @@ interface ScrollRevealProps {
   className?: string;
   delay?: number;
   direction?: "up" | "down" | "left" | "right" | "none";
+  id?: string;
 }
 
 export default function ScrollReveal({
@@ -14,6 +15,7 @@ export default function ScrollReveal({
   className = "",
   delay = 0,
   direction = "up",
+  id,
 }: ScrollRevealProps) {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
@@ -64,6 +66,7 @@ export default function ScrollReveal({
 
   return (
     <div
+      id={id}
       ref={domRef}
       style={{
         transitionDelay: `${delay}s`,
