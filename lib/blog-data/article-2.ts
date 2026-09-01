@@ -11,7 +11,7 @@ export const article2Id: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "8 menit baca",
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
-  seoDescription: "Pahami perbedaan daya dukung, kapasitas beban kendaraan, dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga kawasan industri.",
+  seoDescription: "Pahami kapasitas beban kendaraan dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga perkerasan kawasan industri.",
   intro: [
     "Salah satu keputusan paling krusial saat merencanakan proyek perkerasan jalan atau pelataran outdoor adalah menentukan ketebalan paving block yang akan digunakan. Di pasaran konstruksi Indonesia, tiga ukuran ketebalan yang paling lazim digunakan adalah 6 cm, 8 cm, dan 10 cm.",
     "Meskipun sekilas tampak serupa dari segi bentuk atas dan pilihan warna, perbedaan ketebalan beberapa sentimeter tersebut memiliki pengaruh yang sangat signifikan terhadap kapasitas momen lentur, daya tahan terhadap beban gandar roda kendaraan, serta ketahanan jangka panjang sistem perkerasan modular.",
@@ -170,8 +170,8 @@ export const article2Id: BlogPost = {
         answer: "Tidak. Ketebalan lapisan pasir alas (bedding sand) tetap ideal pada kisaran 3–5 cm. Yang perlu dipertebal untuk beban lebih berat adalah lapisan pondasi agregat (base course) di bawah pasir alas.",
       },
       {
-        question: "Bagaimana cara memesan sampel ketebalan paving di Kaha Block?",
-        answer: "Anda dapat menghubungi tim penjualan PT Kaha Sukses Mandiri melalui WhatsApp resmi untuk berkonsultasi mengenai kebutuhan proyek serta penjadwalan sampel produk.",
+        question: "Bagaimana cara berkonsultasi mengenai pilihan ketebalan paving?",
+        answer: "Hubungi tim Kaha Block melalui WhatsApp resmi dengan informasi kebutuhan area, peruntukan, serta estimasi volume proyek.",
       },
     ],
   },
@@ -192,7 +192,7 @@ export const article2En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "8 min read",
-  seoTitle: "6 cm vs 8 cm vs 10 cm Paving Block Thickness Guide",
+  seoTitle: "6, 8, or 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
   intro: [
     "One of the most critical structural decisions during any paving project planning phase is selecting the appropriate block thickness. In Indonesia's construction industry, the three standard thicknesses specified for segmental pavements are 6 cm, 8 cm, and 10 cm.",
@@ -301,7 +301,7 @@ export const article2En: BlogPost = {
       id: "common-specification-mistakes",
       heading: "6. Common Mistakes in Paver Thickness Selection",
       paragraphs: [
-        "Through extensive on-site experience, the Kaha Block technical team frequently encounters several recurring design errors:",
+        "In general civil engineering practice, several recurring pavement design errors are frequently encountered:",
       ],
       list: {
         title: "Key Errors to Avoid:",
@@ -347,8 +347,8 @@ export const article2En: BlogPost = {
         answer: "No. Sand bedding thickness should always remain 3–5 cm. To support heavier loads, increase the thickness of the compacted crushed aggregate base course beneath the sand layer.",
       },
       {
-        question: "How can I request paver samples from Kaha Block?",
-        answer: "Contact PT Kaha Sukses Mandiri via our official WhatsApp to discuss your project requirements.",
+        question: "How can I consult about suitable paving thickness?",
+        answer: "Contact Kaha Block through the official WhatsApp channel with your site requirements, intended use, and estimated project volume.",
       },
     ],
   },

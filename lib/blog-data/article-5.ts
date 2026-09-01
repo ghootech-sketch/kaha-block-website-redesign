@@ -167,8 +167,8 @@ export const article5En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
-  seoTitle: "Site Preparation Guide for Paving Block Installation",
-  seoDescription: "Learn essential site preparation steps before installing concrete pavers: subgrade soil compaction, base course grading, edge curb restraints, and bedding sand screeding.",
+  seoTitle: "Site Preparation for Paving Installation",
+  seoDescription: "Learn essential site preparation steps before installing concrete pavers: subgrade soil compaction, base course grading, edge restraints, and sand screeding.",
   intro: [
     "The fundamental determinant of a smooth, durable, long-lasting, and rut-free segmental concrete pavement is not solely the quality of the individual pavers, but the rigorous engineering of the foundation layers beneath.",
     "The vast majority of pavement failures—such as undulating surfaces following heavy tropical downpours, ponding water, and outward spreading of perimeter blocks—stem directly from rushed subgrade preparation, inadequate compaction, or skipped foundation steps.",

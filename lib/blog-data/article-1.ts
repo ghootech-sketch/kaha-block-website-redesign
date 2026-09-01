@@ -11,7 +11,7 @@ export const article1Id: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "7 menit baca",
   seoTitle: "Panduan Memilih Paving Block Hunian & Proyek",
-  seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport rumah, jalan lingkungan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
+  seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport, jalan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
   featured: true,
   intro: [
     "Memilih perkerasan jalan atau pelataran luar ruangan memerlukan pertimbangan matang antara kekuatan struktural, fungsi drainase, dan estetika visual. Paving block (conblock) menjadi salah satu material favorit di Indonesia karena menawarkan fleksibilitas pemasangan, kemudahan perawatan jangka panjang, dan daya serap air yang baik pada celah nat antar-blok.",
@@ -209,7 +209,7 @@ export const article1En: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "7 min read",
   seoTitle: "How to Choose Paving Blocks for Homes & Projects",
-  seoDescription: "Learn how to select the right paving blocks for residential carports, neighborhood access roads, and commercial complexes with precision thickness and strength ratings.",
+  seoDescription: "Learn how to select the right paving blocks for residential carports, access roads, and commercial complexes with precision thickness and strength ratings.",
   featured: true,
   intro: [
     "Choosing the right outdoor pavement requires balancing structural load capacity, drainage efficiency, and visual appeal. Interlocking concrete paving blocks (conblocks) have long been a premier surfacing solution across Indonesia because they provide modular flexibility, easy long-term maintenance, and effective rainwater infiltration through sand-filled joints.",

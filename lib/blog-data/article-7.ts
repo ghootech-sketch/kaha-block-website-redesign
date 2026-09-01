@@ -11,7 +11,7 @@ export const article7Id: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
   seoTitle: "Tips Merawat Paving Block Bersih & Bebas Lumut",
-  seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: teknik pembersihan rutin, pencucian bertekanan, dan pengisian pasir nat.",
+  seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: pembersihan rutin, cuci bertekanan, dan pengisian pasir nat.",
   intro: [
     "Paving block berkualitas tinggi dengan mutu K-300 hingga K-350 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang luar biasa terhadap cuaca tropis dan beban lalu lintas harian.",
     "Meskipun demikian, sebagai perkerasan modular luar ruangan (outdoor) yang terpapar langsung oleh curah hujan tinggi, kelembapan udara tropis, terik sinar ultraviolet matahari, serta ceceran kotoran organik dan oli kendaraan, perkerasan paving tetap memerlukan perawatan berkala yang terencana.",
@@ -158,7 +158,7 @@ export const article7Id: BlogPost = {
       },
       {
         question: "Apakah Kaha Block melayani konsultasi perbaikan perkerasan paving yang rusak?",
-        answer: "Ya, tim teknis PT Kaha Sukses Mandiri siap memberikan rekomendasi teknis untuk perbaikan dan penyediaan material pengganti proyek Anda.",
+        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material pengganti untuk proyek perbaikan dan perawatan paving block.",
       },
     ],
   },
@@ -172,7 +172,7 @@ export const article7Id: BlogPost = {
 export const article7En: BlogPost = {
   slug: "tips-merawat-paving-block",
   locale: "en",
-  title: "Practical Guide to Maintaining Concrete Pavers: Clean, Durable, and Moss-Free",
+  title: "Concrete Paver Maintenance & Cleaning Guide",
   excerpt: "Proven maintenance techniques for segmental concrete paving: moss and weed eradication, joint sand replenishment (re-sanding), high-pressure washing procedures, and engine oil stain removal.",
   category: "Installation & Care",
   categorySlug: "installation",
@@ -180,7 +180,7 @@ export const article7En: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
   seoTitle: "Concrete Paver Maintenance & Cleaning Guide",
-  seoDescription: "Step-by-step practical guide to maintaining concrete paving blocks: removing moss, weed prevention, joint sand replenishment, and high-pressure washing best practices.",
+  seoDescription: "Practical guide to maintaining concrete paving blocks: removing moss, preventing weeds, joint sand replenishment, and high-pressure washing best practices.",
   intro: [
     "High-performance concrete paving blocks with K-300 and K-350 compressive strength manufactured using fully automated hydraulic machinery demonstrate exceptional inherent durability against tropical weathering and daily vehicular traffic.",
     "However, as an outdoor segmental pavement system continuously subjected to intense monsoon rainfall, high ambient tropical humidity, solar ultraviolet exposure, organic airborne detritus, and vehicle fluid leaks, regular preventive maintenance is essential.",
@@ -327,7 +327,7 @@ export const article7En: BlogPost = {
       },
       {
         question: "Does Kaha Block offer technical advice for repairing existing paved areas?",
-        answer: "Yes, PT Kaha Sukses Mandiri's technical team provides expert consultation and replacement materials for maintenance and restoration projects across Greater Jakarta.",
+        answer: "Yes, PT Kaha Sukses Mandiri supplies replacement paving materials for maintenance and restoration projects across Greater Jakarta and surrounding regions.",
       },
     ],
   },

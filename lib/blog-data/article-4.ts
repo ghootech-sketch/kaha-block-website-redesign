@@ -10,8 +10,8 @@ export const article4Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
-  seoTitle: "Cara Menghitung Kebutuhan Paving Block & Material",
-  seoDescription: "Pelajari cara menghitung luas area, volume kebutuhan paving block per m², faktor cadangan potongan (waste), kanstein pembatas, dan pasir alas secara akurat.",
+  seoTitle: "Cara Menghitung Kebutuhan Paving Block",
+  seoDescription: "Pelajari cara menghitung luas area, volume paving block per m², faktor cadangan potongan (waste), kebutuhan kanstein tepi, dan pasir alas secara akurat.",
   intro: [
     "Perencanaan volume material yang akurat dan terstruktur adalah kunci utama keberhasilan proyek perkerasan paving block, baik untuk renovasi carport rumah tinggal, pembangunan jalan lingkungan perumahan, maupun pelataran area komersial bertonase tinggi.",
     "Kurangnya perhitungan yang cermat di awal proyek sering kali berujung pada dua kendala klasik di lapangan: kekurangan material di tengah pekerjaan yang menyebabkan penundaan jadwal kerja dan risiko perbedaan tonasi warna antar-batch produksi semen, atau kelebihan pembelian material dalam jumlah besar yang memicu pemborosan anggaran belanja proyek.",
@@ -126,10 +126,10 @@ export const article4Id: BlogPost = {
     },
     {
       id: "konsultasi-teknis-kaha",
-      heading: "6. Konsultasi dan Estimasi Bersama Tim Teknis Kaha Block",
+      heading: "6. Konsultasi Kebutuhan Bersama Kaha Block",
       paragraphs: [
         "PT Kaha Sukses Mandiri (Kaha Block) yang memproduksi aneka paving block mesin full otomatis hidrolik di fasilitas seluas 9.080 m² di Cisauk, Tangerang, siap membantu Anda dalam melakukan perhitungan volume material secara profesional.",
-        "Tim teknis Kaha Block dapat memberikan konsultasi spesifikasi, estimasi kebutuhan material, hingga paket penyediaan material dan jasa pemasangan terpadu untuk memastikan proyek perkerasan Anda terbangun dengan kokoh, rapi, dan efisien.",
+        "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan jasa pemasangan di Jabodetabek dan sekitarnya.",
       ],
     },
   ],
@@ -159,8 +159,8 @@ export const article4Id: BlogPost = {
         answer: "Waktu pengiriman disesuaikan dengan ketersediaan stok produk di pabrik dan antrean jadwal armada truk Kaha Block. Untuk proyek bervolume besar, koordinasi jadwal pengiriman bertahap sangat disarankan.",
       },
       {
-        question: "Apakah Kaha Block dapat membantu survei dan perhitungan langsung ke lokasi proyek?",
-        answer: "Ya, untuk proyek dengan luasan tertentu di wilayah Jabodetabek, tim teknis PT Kaha Sukses Mandiri dapat membantu estimasi kebutuhan dan konsultasi langsung di lapangan.",
+        question: "Apakah Kaha Block dapat membantu menghitung kebutuhan paving block?",
+        answer: "Tim PT Kaha Sukses Mandiri dapat membantu memberikan estimasi kebutuhan material berdasarkan data ukuran dan desain area yang Anda berikan.",
       },
     ],
   },
@@ -181,8 +181,8 @@ export const article4En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
-  seoTitle: "How to Calculate Paving Block & Subbase Volumes",
-  seoDescription: "Step-by-step guide to calculating pavement area, estimating paver unit quantities, factoring cutting allowances, and determining subbase aggregate and sand volumes.",
+  seoTitle: "How to Calculate Paving Block Volumes",
+  seoDescription: "Step-by-step guide to calculating pavement area, estimating paver quantities, cutting allowances, and determining subbase aggregate and sand volumes.",
   intro: [
     "Accurate and structured material estimation is fundamental to the operational, technical, and financial success of any segmental concrete paving project—ranging from private residential carports and estate cluster boulevards to expansive commercial logistics distribution facilities.",
     "Underestimating material requirements during the early planning phase leads to disruptive job-site work stoppages, added delivery freight surcharges, and potential color tone variations across separate manufacturing batches. Conversely, excessive over-ordering ties up working capital and clutters active job sites with unreturned pallets.",
@@ -300,7 +300,7 @@ export const article4En: BlogPost = {
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
         "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-300 and K-350 concrete strength.",
-        "Our experienced technical team is ready to assist you with accurate material takeoffs, product recommendations, and turnkey supply-and-install options across Greater Jakarta and outer regional project destinations.",
+        "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta and surrounding regions.",
       ],
     },
   ],
@@ -330,8 +330,8 @@ export const article4En: BlogPost = {
         answer: "Delivery lead times depend on active stock levels and fleet logistics schedules. For large infrastructure projects, early coordination is recommended.",
       },
       {
-        question: "Can Kaha Block assist with on-site area surveys and material takeoffs?",
-        answer: "Yes, PT Kaha Sukses Mandiri provides technical consultations for projects across Greater Jakarta.",
+        question: "Can Kaha Block help estimate paving requirements?",
+        answer: "PT Kaha Sukses Mandiri can help estimate material requirements based on the site measurements and layout data you provide.",
       },
     ],
   },

@@ -286,8 +286,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-truepave`,
         name: isEn ? "Truepave" : "Truepave",
         description: isEn
-          ? "Size: 21 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Coverage: 44 pcs/m². Compressive Strength: K-300 to K-350. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
-          : "Ukuran: 21 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Daya Tutup: 44 pcs/m². Kuat Tekan: K-300 sampai K-350. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
+          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-300 to K-350. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-300 sampai K-350. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -322,8 +322,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-hexa`,
         name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
-          ? "Product family: K-300 to K-350. Thickness Options: 6 cm, 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
-          : "Keluarga produk: K-300 hingga K-350. Pilihan Tebal: 6 cm, 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
+          ? "Product family: K-300 to K-350. Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
+          : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -340,8 +340,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-ubin`,
         name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
         description: isEn
-          ? "Product family: K-300 to K-350. Thickness Options: 6 cm, 8 cm. Color Options: Grey, Red, Black."
-          : "Keluarga produk: K-300 hingga K-350. Pilihan Tebal: 6 cm, 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
+          ? "Product family: K-300 to K-350. Thickness: 8 cm. Color Options: Grey, Red, Black."
+          : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -376,8 +376,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-jepit`,
         name: isEn ? "Kanstein Jepit" : "Kanstein Jepit",
         description: isEn
-          ? "Category: Paving border/lock curb. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Locks and secures paving edges."
-          : "Kategori: Produk pembatas/pengunci paving. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Membantu mengunci tepi pemasangan paving.",
+          ? "Category: Paving border/lock curb. Function: Locks and secures paving edges."
+          : "Kategori: Produk pembatas/pengunci paving. Fungsi: Membantu mengunci tepi pemasangan paving.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -394,8 +394,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-s`,
         name: isEn ? "Kanstein S" : "Kanstein S",
         description: isEn
-          ? "Category: S-type road curb product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Water gutter & sidewalk border."
-          : "Kategori: Produk pembatas jalan tipe S. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Saluran air tepi & pembatas trotoar.",
+          ? "Category: S-type road curb product. Function: Water gutter & sidewalk border."
+          : "Kategori: Produk pembatas jalan tipe S. Fungsi: Saluran air tepi & pembatas trotoar.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -412,8 +412,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-b1`,
         name: isEn ? "Kanstein B1" : "Kanstein B1",
         description: isEn
-          ? "Category: Road curb / border product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Road shoulder & pedestrian border."
-          : "Kategori: Produk pembatas jalan / kanstein. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Pembatas bahu jalan & area pedestrian.",
+          ? "Category: Road curb / border product. Function: Road shoulder & pedestrian border."
+          : "Kategori: Produk pembatas jalan / kanstein. Fungsi: Pembatas bahu jalan & area pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -430,8 +430,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-stoper`,
         name: isEn ? "Stoper" : "Stoper",
         description: isEn
-          ? "Category: Wheel stop / border product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Vehicle parking boundary lock."
-          : "Kategori: Produk pembatas / penghenti roda. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Pengaman batas parkir kendaraan.",
+          ? "Category: Wheel stop / border product. Function: Vehicle parking boundary lock."
+          : "Kategori: Produk pembatas / penghenti roda. Fungsi: Pengaman batas parkir kendaraan.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",

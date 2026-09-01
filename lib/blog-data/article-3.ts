@@ -11,7 +11,7 @@ export const article3Id: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
   seoTitle: "Mengenal Mutu Beton K-300 & K-350 Paving Block",
-  seoDescription: "Pahami apa itu mutu beton K-300 dan K-350 pada paving block, proses produksinya dengan mesin hidrolik otomatis, serta kegunaannya pada jalan dan perumahan.",
+  seoDescription: "Pahami mutu beton K-300 dan K-350 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
   intro: [
     "Dalam spesifikasi teknis proyek konstruksi jalan dan perumahan di Indonesia, istilah mutu beton dengan notasi huruf 'K' (Karakteristik) seperti K-300 atau K-350 adalah standar yang paling sering dicantumkan dalam dokumen Rencana Kerja dan Syarat-syarat (RKS).",
     "Meskipun istilah ini sangat akrab di telinga praktisi teknik sipil dan kontraktor berpengalaman, banyak pemilik properti, konsultan perencana arsitektur, maupun pengembang pemula yang masih membutuhkan penjelasan terperinci: apa sebenarnya arti matematis angka K-300 hingga K-350, bagaimana mutu ini dicapai dalam proses pabrikasi paving block semi-kering, dan mengapa rentang mutu ini menjadi standar untuk perkerasan lalu lintas kendaraan?",
@@ -165,8 +165,8 @@ export const article3En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
-  seoTitle: "K-300 and K-350 Concrete Strength in Paving Blocks Explained",
-  seoDescription: "Learn what K-300 and K-350 concrete ratings mean for paving blocks, how automated hydraulic machines achieve optimal density, and their application in road projects.",
+  seoTitle: "K-300 and K-350 Concrete Paving Block Strength",
+  seoDescription: "Learn what K-300 and K-350 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
   intro: [
     "In Indonesian civil engineering and municipal construction specifications, concrete compressive strength designated with the prefix 'K' (Karakteristik)—such as K-300 or K-350—serves as the benchmark in project tender documents.",
     "While civil engineers and seasoned paving contractors are intimately familiar with these metrics, property owners, landscape architects, and project managers often seek clarity: what do characteristic strength numbers signify, how is this density achieved in zero-slump semi-dry manufacturing, and why is high compressive strength essential for vehicular pavements?",

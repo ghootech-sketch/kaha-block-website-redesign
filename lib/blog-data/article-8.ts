@@ -3,15 +3,15 @@ import { BlogPost } from "../blog-types";
 export const article8Id: BlogPost = {
   slug: "perbandingan-paving-block-aspal-cor-beton",
   locale: "id",
-  title: "Perbandingan Paving Block, Aspal, dan Cor Beton: Kelebihan & Kekurangan",
+  title: "Perbandingan Paving Block, Aspal & Cor Beton",
   excerpt: "Analisis komparatif menyeluruh antara tiga tipe perkerasan jalan: aspek daya tahan, fleksibilitas pemeliharaan bawah tanah, manajemen resapan air hujan, estetika visual, dan biaya siklus hidup jangka panjang.",
   category: "Panduan & Perbandingan",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "10 menit baca",
-  seoTitle: "Perbandingan Paving Block vs Aspal vs Cor Beton",
-  seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, resapan air hujan, dan fleksibilitas.",
+  seoTitle: "Paving Block vs Aspal vs Cor Beton",
+  seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, peresapan air, dan fleksibilitas.",
   intro: [
     "Dalam merencanakan pembangunan infrastruktur jalan lingkungan perumahan, pelataran parkir komersial, akses pergudangan, hingga halaman hunian pribadi, para pengembang dan pemilik properti sering kali dihadapkan pada tiga opsi perkerasan utama: paving block (segmental concrete pavers), aspal (flexible pavement), dan cor beton (rigid pavement).",
     "Masing-masing jenis perkerasan memiliki karakteristik mekanis, metode konstruksi, perilaku termal terhadap radiasi matahari, serta biaya siklus hidup (life-cycle cost) yang berbeda secara fundamental.",
@@ -177,7 +177,7 @@ export const article8Id: BlogPost = {
 export const article8En: BlogPost = {
   slug: "perbandingan-paving-block-aspal-cor-beton",
   locale: "en",
-  title: "Paving Blocks vs. Asphalt vs. Cast-in-Place Concrete: Comparative Analysis",
+  title: "Paving Blocks vs Asphalt vs Concrete Slabs",
   excerpt: "A comprehensive civil engineering comparison across three major pavement types: structural load durability, underground utility maintenance flexibility, rainwater drainage management, visual aesthetics, and lifecycle cost economics.",
   category: "Guides & Comparisons",
   categorySlug: "guide",
@@ -185,7 +185,7 @@ export const article8En: BlogPost = {
   updatedAt: "2026-09-01",
   readingTime: "10 min read",
   seoTitle: "Concrete Pavers vs Asphalt vs Concrete Slabs",
-  seoDescription: "In-depth engineering comparison of concrete paving blocks, hotmix asphalt, and rigid cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
+  seoDescription: "Engineering comparison of concrete paving blocks, hotmix asphalt, and cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
   intro: [
     "When designing road infrastructure for residential masterplans, commercial parking lots, logistics distribution parks, and private property drives, developers and civil engineers evaluate three primary paving solutions: segmental concrete paving blocks, flexible hotmix asphalt, and rigid cast-in-place concrete slabs.",
     "Each surfacing system exhibits distinct mechanical characteristics, installation timeframes, thermal behaviors under solar radiation, and long-term lifecycle expenditure profiles.",

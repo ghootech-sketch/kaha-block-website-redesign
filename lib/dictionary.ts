@@ -437,9 +437,6 @@ export const dictionaries = {
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam",
             "Pilihan Tebal: 8 cm",
-            "Ukuran: 10 × 20 × 40 cm",
-            "Daya Tutup: 2,5 pcs/m²",
-            "Kelas: High Grade / Heavy Duty",
           ],
         },
         topiUskup: {
@@ -466,10 +463,8 @@ export const dictionaries = {
           badge: "Pengunci Tepi",
           quickSpecs: [
             "Kategori: Produk pembatas/pengunci paving",
-            "Ukuran: 10 × 20 × 40 cm",
-            "Daya Tutup: 2,5 pcs/m²",
-            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Membantu mengunci tepi pemasangan paving",
+            "*Spesifikasi detail dan ukuran bervariasi",
           ],
         },
         kansteinS: {
@@ -478,10 +473,8 @@ export const dictionaries = {
           badge: "Drainase & Tepi",
           quickSpecs: [
             "Kategori: Produk pembatas jalan tipe S",
-            "Ukuran: 10 × 20 × 40 cm",
-            "Daya Tutup: 2,5 pcs/m²",
-            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Saluran air tepi & pembatas trotoar",
+            "*Spesifikasi detail dan ukuran bervariasi",
           ],
         },
         kansteinB1: {
@@ -490,10 +483,8 @@ export const dictionaries = {
           badge: "Pembatas Jalan",
           quickSpecs: [
             "Kategori: Produk pembatas jalan / kanstein",
-            "Ukuran: 10 × 20 × 40 cm",
-            "Daya Tutup: 2,5 pcs/m²",
-            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Pembatas bahu jalan & area pedestrian",
+            "*Spesifikasi detail dan ukuran bervariasi",
           ],
         },
         stoper: {
@@ -502,10 +493,8 @@ export const dictionaries = {
           badge: "Batas Parkir",
           quickSpecs: [
             "Kategori: Produk pembatas / penghenti roda",
-            "Ukuran: 10 × 20 × 40 cm",
-            "Daya Tutup: 2,5 pcs/m²",
-            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Pengaman batas parkir kendaraan",
+            "*Spesifikasi detail dan ukuran bervariasi",
           ],
         },
       },
@@ -844,7 +833,7 @@ export const dictionaries = {
           },
           {
             q: "Bagaimana sistem pembayaran yang berlaku?",
-            a: "Pembayaran dilakukan dengan sistem DP 50% untuk penjadwalan produksi/pengiriman. Pelunasan diselesaikan setelah barang terkirim atau setelah pekerjaan pemasangan selesai. CBD (Cash Before Delivery) tersedia untuk pembelian tertentu."
+            a: "Pembayaran dilakukan dengan sistem DP 50% untuk penjadwalan produksi/pengiriman. Pelunasan diselesaikan setelah barang terkirim atau setelah pekerjaan pemasangan selesai. CBD tersedia untuk pembelian tertentu."
           },
           {
             q: "Bagaimana cara mendapatkan penawaran?",
@@ -1294,9 +1283,6 @@ export const dictionaries = {
           quickSpecs: [
             "Color Options: Grey, Red, Black",
             "Height Options: 8 cm",
-            "Size: 10 × 20 × 40 cm",
-            "Coverage: 2.5 pcs/m²",
-            "Class: High Grade / Heavy Duty",
           ],
         },
         topiUskup: {
@@ -1323,10 +1309,8 @@ export const dictionaries = {
           badge: "Edge Lock",
           quickSpecs: [
             "Category: Paving border/lock curb",
-            "Size: 10 × 20 × 40 cm",
-            "Coverage: 2.5 pcs/m²",
-            "Class: High Grade / Heavy Duty",
             "Function: Locks and secures paving edges",
+            "*Detailed specifications and sizes vary",
           ],
         },
         kansteinS: {
@@ -1335,10 +1319,8 @@ export const dictionaries = {
           badge: "Drainage & Curb",
           quickSpecs: [
             "Category: S-type road curb product",
-            "Size: 10 × 20 × 40 cm",
-            "Coverage: 2.5 pcs/m²",
-            "Class: High Grade / Heavy Duty",
             "Function: Water gutter & sidewalk border",
+            "*Detailed specifications and sizes vary",
           ],
         },
         kansteinB1: {
@@ -1347,10 +1329,8 @@ export const dictionaries = {
           badge: "Road Curb",
           quickSpecs: [
             "Category: Road curb / border product",
-            "Size: 10 × 20 × 40 cm",
-            "Coverage: 2.5 pcs/m²",
-            "Class: High Grade / Heavy Duty",
             "Function: Road shoulder & pedestrian border",
+            "*Detailed specifications and sizes vary",
           ],
         },
         stoper: {
@@ -1359,10 +1339,8 @@ export const dictionaries = {
           badge: "Wheel Stop",
           quickSpecs: [
             "Category: Wheel stop / border product",
-            "Size: 10 × 20 × 40 cm",
-            "Coverage: 2.5 pcs/m²",
-            "Class: High Grade / Heavy Duty",
             "Function: Vehicle parking boundary lock",
+            "*Detailed specifications and sizes vary",
           ],
         },
       },
@@ -1701,7 +1679,7 @@ export const dictionaries = {
           },
           {
             q: "What are the payment terms?",
-            a: "Payment is processed with a 50% down payment to secure production and delivery schedules. The balance is settled upon delivery or upon completion of installation. CBD (Cash Before Delivery) is available for certain purchases."
+            a: "Payment is processed with a 50% down payment to secure production and delivery schedules. The balance is settled upon delivery or upon completion of installation. CBD is available for certain purchases."
           },
           {
             q: "How can I receive an official quotation?",

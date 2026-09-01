@@ -3,14 +3,14 @@ import { BlogPost } from "../blog-types";
 export const article9Id: BlogPost = {
   slug: "paving-block-ramah-lingkungan-resapan-air",
   locale: "id",
-  title: "Paving Block Ramah Lingkungan: Solusi Resapan Air dan Pencegahan Banjir",
+  title: "Paving Block Ramah Lingkungan & Resapan Air",
   excerpt: "Peran strategis perkerasan paving block dalam tata kelola air perkotaan ramah lingkungan (Low Impact Development): mekanisme peresapan air melalui celah nat, pengurangan debit limpasan banjir, dan konservasi air tanah alami.",
   category: "Keberlanjutan & Drainase",
   categorySlug: "sustainability",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "10 menit baca",
-  seoTitle: "Paving Block Ramah Lingkungan & Resapan Air Hujan",
+  seoTitle: "Paving Block Ramah Lingkungan & Resapan Air",
   seoDescription: "Peran perkerasan paving block dalam manajemen air hujan perkotaan, mitigasi banjir, konservasi air tanah alami, dan pengurangan efek pulau panas urban.",
   intro: [
     "Pesatnya laju urbanisasi dan pembangunan infrastruktur kawasan perkotaan di berbagai wilayah metropolitan Indonesia sering kali diiringi oleh meningkatnya tutupan permukaan lahan kedap air (impervious surfaces) akibat betonisasi masif dan pengaspalan jalan yang menutup rapat pori-pori tanah alami.",
@@ -102,11 +102,11 @@ export const article9Id: BlogPost = {
     },
     {
       id: "peran-kaha-block-keberlanjutan",
-      heading: "6. Komitmen Mutu dan Keberlanjutan PT Kaha Sukses Mandiri",
+      heading: "6. Produksi Paving Block PT Kaha Sukses Mandiri",
       paragraphs: [
         "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
-        "Proses produksi dengan kontrol takaran material yang presisi dan pemadatan hidrolik bertekanan tinggi menghasilkan produk dengan tingkat kepadatan optimal, ketahanan abrasi tinggi, serta minim sisa limbah produksi (zero manufacturing waste).",
-        "Kaha Block berkomitmen mendukung pembangunan infrastruktur perumahan, komersial, dan industri yang berwawasan lingkungan di wilayah Jabodetabek dan sekitarnya melalui penyediaan material perkerasan ramah lingkungan yang kokoh dan berestetika tinggi.",
+        "Penggunaan material seperti Semen Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, dan pasir Bangka menghasilkan matriks beton padat yang mendukung kebutuhan beban area proyek.",
+        "Kaha Block siap melayani kebutuhan material paving block untuk pembangunan infrastruktur perumahan, komersial, dan industri di wilayah Jabodetabek dan sekitarnya.",
       ],
     },
   ],
@@ -117,7 +117,7 @@ export const article9Id: BlogPost = {
       "Lapisan pasir dan agregat di bawah paving berfungsi sebagai filter mekanis alami penyaring partikel sedimen.",
       "Integrasi kemiringan paving dengan sumur resapan dan rain garden mendukung konsep tata kelola air perkotaan berkelanjutan (SuDS).",
       "Paving beton memiliki nilai indeks reflektansi termal yang lebih ramah lingkungan dibandingkan aspal hitam yang menyerap panas berlebih.",
-      "Kaha Block memproduksi paving block presisi K-300–K-350 mesin full otomatis hidrolik yang ramah lingkungan dan dapat digunakan kembali.",
+      "Sistem paving block modular umumnya dapat dibongkar dan dipasang kembali, sehingga dapat mengurangi limbah bongkaran.",
     ],
   },
   faq: {
@@ -136,8 +136,8 @@ export const article9Id: BlogPost = {
         answer: "Karena paving block merupakan sistem modular yang dapat dibongkar dan dipasang kembali tanpa menghasilkan puing beton runtuhan berlebihan saat ada perbaikan pipa bawah tanah.",
       },
       {
-        question: "Apakah Kaha Block melayani konsultasi desain tata letak perkerasan untuk proyek hijau?",
-        answer: "Ya, tim teknis PT Kaha Sukses Mandiri siap membantu memberikan saran pemilihan tipe pola dan konfigurasi perkerasan paving yang selaras dengan rancangan lanskap hijau proyek Anda.",
+        question: "Bagaimana merencanakan drainase untuk pemasangan paving block?",
+        answer: "Konfigurasi perkerasan paving dan drainase harus direncanakan sesuai dengan kondisi kemiringan lahan dan persyaratan teknis proyek masing-masing.",
       },
     ],
   },
@@ -151,14 +151,14 @@ export const article9Id: BlogPost = {
 export const article9En: BlogPost = {
   slug: "paving-block-ramah-lingkungan-resapan-air",
   locale: "en",
-  title: "Eco-Friendly Concrete Pavers: Stormwater Management and Flood Mitigation",
+  title: "Eco-Friendly Paving & Stormwater Management",
   excerpt: "The strategic civil engineering role of segmental paving in sustainable urban drainage (Low Impact Development): groundwater infiltration mechanisms, stormwater peak runoff attenuation, and urban heat island mitigation.",
   category: "Sustainability & Drainage",
   categorySlug: "sustainability",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "10 min read",
-  seoTitle: "Eco-Friendly Concrete Pavers & Stormwater Runoff Control",
+  seoTitle: "Eco-Friendly Pavers & Stormwater Control",
   seoDescription: "Explore how permeable concrete block pavements mitigate urban flooding, recharge groundwater aquifers, and combat urban heat island effects.",
   intro: [
     "Rapid urbanization and expanding infrastructure development across metropolitan regions throughout Indonesia often accelerate the proliferation of impervious ground surfaces due to continuous asphalt paving and monolithic concrete slab construction.",
@@ -250,11 +250,11 @@ export const article9En: BlogPost = {
     },
     {
       id: "kaha-sustainability-commitment",
-      heading: "6. PT Kaha Sukses Mandiri Commitment to Environmental Quality",
+      heading: "6. PT Kaha Sukses Mandiri Segmental Paving Production",
       paragraphs: [
         "PT Kaha Sukses Mandiri manufactures durable K-300 and K-350 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
-        "Precision batching systems and high-pressure hydraulic compaction ensure optimal material density, superior abrasion resistance, and near-zero manufacturing waste.",
-        "Kaha Block is dedicated to supporting environmentally conscious residential, commercial, and industrial developments throughout Greater Jakarta with durable, aesthetically refined, and sustainable segmental paving solutions.",
+        "Using Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand, the resulting high-density matrix supports various infrastructure requirements.",
+        "Kaha Block is ready to supply segmental paving solutions for residential, commercial, and industrial developments throughout Greater Jakarta and surrounding regions.",
       ],
     },
   ],
@@ -265,7 +265,7 @@ export const article9En: BlogPost = {
       "The underlying sand and aggregate base matrix acts as a natural physical filter trapping particulate pollutants.",
       "Pairing paved cross-slopes with rain gardens and infiltration swales creates an integrated Sustainable Urban Drainage System (SuDS).",
       "Concrete pavers exhibit higher Solar Reflectance Index (SRI) values than dark asphalt, helping mitigate urban heat island effects.",
-      "Kaha Block manufactures precision hydraulic K-300–K-350 pavers that provide non-destructive reusability for circular infrastructure.",
+      "Segmental paving systems can be lifted and reinstalled when access to underground utilities is required, which can reduce demolition compared with monolithic pavement systems.",
     ],
   },
   faq: {
@@ -284,8 +284,8 @@ export const article9En: BlogPost = {
         answer: "Because segmental pavers are reusable: when underground pipes need repairs, blocks are lifted and re-installed without producing jackhammered concrete rubble or requiring significant new raw materials.",
       },
       {
-        question: "Does Kaha Block provide technical consultation for eco-friendly paving layouts?",
-        answer: "Yes, PT Kaha Sukses Mandiri's team offers guidance on paver selection and configurations for sustainable developments.",
+        question: "How should drainage be planned for paving block installations?",
+        answer: "Project drainage and landscape configuration should be planned according to site conditions and applicable engineering requirements.",
       },
     ],
   },
