@@ -44,17 +44,17 @@ export default async function Projects({
       {/* =========================================================================
           1. EDITORIAL INTRO HERO (Warm White Background)
          ========================================================================= */}
-      <section className="bg-[#FAF9F6] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
+      <section className="bg-[#F7F5F0] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal immediate className="text-center max-w-4xl mx-auto">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2.5 block font-heading">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2.5 block font-heading">
               {dict.editorialIntro?.eyebrow || dict.title}
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2042] tracking-tight font-heading">
               {dict.editorialIntro?.title || dict.title}
             </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-5 mb-4 sm:mt-6 rounded-full" />
-            <p className="text-base sm:text-lg text-[#0B2447]/80 max-w-3xl mx-auto font-sans leading-relaxed mb-6 sm:mb-8">
+            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#7A1C1C] mx-auto mt-4 sm:mt-5 mb-4 sm:mt-6 rounded-full" />
+            <p className="text-base sm:text-lg text-[#0F2042]/80 max-w-3xl mx-auto font-sans leading-relaxed mb-6 sm:mb-8">
               {dict.editorialIntro?.description || dict.description}
             </p>
 
@@ -64,9 +64,9 @@ export default async function Projects({
                 {dict.editorialIntro.scopeItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-[#0B2447] shadow-2xs"
+                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-[#0F2042] shadow-2xs"
                   >
-                    <CheckCircle2 className="w-3.5 h-3.5 mr-1.5 text-[#D90429]" aria-hidden="true" />
+                    <CheckCircle2 className="w-3.5 h-3.5 mr-1.5 text-[#7A1C1C]" aria-hidden="true" />
                     {item}
                   </span>
                 ))}
@@ -106,19 +106,19 @@ export default async function Projects({
           3. DOCUMENTATION SCOPE SECTION (Warm Neutral Background)
          ========================================================================= */}
       {dict.scope && (
-        <section className="bg-[#FAF9F6] border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
+        <section className="bg-[#F7F5F0] border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 mb-3.5">
-                <Eye className="w-3.5 h-3.5 text-[#D90429]" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0B2447] font-heading">
+                <Eye className="w-3.5 h-3.5 text-[#7A1C1C]" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0F2042] font-heading">
                   {dict.scope.eyebrow}
                 </span>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0F2042]">
                 {dict.scope.title}
               </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
                 {dict.scope.subtitle}
               </p>
@@ -129,13 +129,13 @@ export default async function Projects({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.05}
-                  className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-xs transition-all"
+                  className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-xs transition-all"
                 >
                   <div>
-                    <span className="w-9 h-9 rounded-xl bg-[#0B2447] text-[#FFC300] font-mono text-xs font-bold flex items-center justify-center mb-4">
+                    <span className="w-9 h-9 rounded-xl bg-[#0F2042] text-[#D4AF37] font-mono text-xs font-bold flex items-center justify-center mb-4">
                       {item.number}
                     </span>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-[#0B2447] mb-2.5">
+                    <h3 className="text-lg sm:text-xl font-bold font-heading text-[#0F2042] mb-2.5">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
@@ -156,13 +156,13 @@ export default async function Projects({
         <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block font-heading">
                 {dict.projectSupport.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0F2042]">
                 {dict.projectSupport.title}
               </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.projectSupport.subtitle}
               </p>
@@ -173,13 +173,13 @@ export default async function Projects({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-[#FAF9F6] border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-[#F7F5F0] border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
-                    <span className="w-9 h-9 rounded-xl bg-[#0B2447] text-[#FFC300] font-mono text-xs font-bold flex items-center justify-center mb-4">
+                    <span className="w-9 h-9 rounded-xl bg-[#0F2042] text-[#D4AF37] font-mono text-xs font-bold flex items-center justify-center mb-4">
                       {step.number}
                     </span>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {step.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
@@ -194,7 +194,7 @@ export default async function Projects({
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 border-t border-slate-200/80">
               <Link
                 href={`/${currentLang}/contact`}
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B2447] min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
               >
                 <span>{currentLang === "id" ? "Lihat Kontak & Lokasi Pabrik" : "View Contact & Factory Location"}</span>
                 <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
@@ -205,16 +205,16 @@ export default async function Projects({
       )}
 
       {/* =========================================================================
-          5. FINAL PROJECT CONSULTATION CTA (Deep Navy Background)
+          5. FINAL PROJECT CONSULTATION CTA (Sapphire Navy Background)
          ========================================================================= */}
-      <section className="bg-[#0B2447] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFC300] rounded-bl-full opacity-10 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D90429] rounded-tr-full opacity-15 pointer-events-none" />
+      <section className="bg-[#0F2042] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] rounded-bl-full opacity-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#7A1C1C] rounded-tr-full opacity-15 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
-              <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+              <Layers className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
               <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
                 {dict.projectCta?.eyebrow || "Kebutuhan Proyek"}
               </span>
@@ -232,7 +232,7 @@ export default async function Projects({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
                 {dict.projectCta?.button || "Diskusikan Proyek Anda"}

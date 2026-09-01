@@ -67,7 +67,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-[#07111F] pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-[#07111F] min-h-[620px] flex items-center"
+          className="relative isolate overflow-hidden bg-[#0F2042] pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-[#0F2042] min-h-[620px] flex items-center"
         >
           {/* Background Image */}
           <Image
@@ -85,13 +85,13 @@ export default async function Home({
 
           {/* Gradients */}
           {/* Mobile gradient: more uniform darkening to ensure readability on small screens */}
-          <div className="absolute inset-0 bg-[#07111F]/72 sm:hidden -z-10" />
+          <div className="absolute inset-0 bg-[#0F2042]/72 sm:hidden -z-10" />
           
           {/* Desktop/Tablet horizontal gradient: heavy on the left, fading to the right */}
-          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(7,17,31,0.94)_0%,rgba(7,17,31,0.80)_40%,rgba(7,17,31,0.34)_70%,rgba(7,17,31,0.08)_100%)] -z-10" />
+          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(15,32,66,0.94)_0%,rgba(15,32,66,0.80)_40%,rgba(15,32,66,0.34)_70%,rgba(15,32,66,0.08)_100%)] -z-10" />
 
           {/* Vertical overlay for extra text contrast on bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/25 via-transparent to-[#07111F]/10 -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F2042]/25 via-transparent to-[#0F2042]/10 -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal immediate>
@@ -162,7 +162,7 @@ export default async function Home({
                 <div className="hidden lg:flex lg:col-span-5 items-center justify-end">
                   <aside
                     aria-labelledby="hero-product-nav-heading"
-                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-white/15 bg-[#07111F]/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
+                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-white/15 bg-[#0F2042]/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
                   >
                     <div className="h-1 w-12 rounded-full bg-[#D4AF37] mb-4" />
                     
@@ -319,7 +319,7 @@ export default async function Home({
                   return (
                     <div
                       key={key}
-                      className={`${colSpanClass} bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full hover:border-[#D4AF37]/50`}
+                      className={`${colSpanClass} bg-[#F7F5F0] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full hover:border-[#D4AF37]/50`}
                     >
                       <div>
                         {/* Visual Image */}
@@ -484,7 +484,7 @@ export default async function Home({
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 {/* Point 1: Integrated Package */}
-                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
+                <div className="bg-[#F7F5F0] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-[#0F2042] text-[#D4AF37] flex items-center justify-center mb-5 shadow-xs">
                       <Layers className="w-6 h-6" aria-hidden="true" />
@@ -499,7 +499,7 @@ export default async function Home({
                 </div>
 
                 {/* Point 2: From Raw Land to Neat Completion */}
-                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#7A1C1C]/30 hover:shadow-md transition-all">
+                <div className="bg-[#F7F5F0] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#7A1C1C]/30 hover:shadow-md transition-all">
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-[#7A1C1C] text-white flex items-center justify-center mb-5 shadow-xs">
                       <ShieldCheck className="w-6 h-6" aria-hidden="true" />
@@ -514,7 +514,7 @@ export default async function Home({
                 </div>
 
                 {/* Point 3: Jabodetabek & Regional Coverage */}
-                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
+                <div className="bg-[#F7F5F0] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-[#0F2042] text-white flex items-center justify-center mb-5 shadow-xs">
                       <Truck className="w-6 h-6 text-[#D4AF37]" aria-hidden="true" />
@@ -728,7 +728,7 @@ export default async function Home({
               {/* 3 Documentation Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Card 1: Produk */}
-                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                <div className="bg-[#F7F5F0] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
@@ -761,7 +761,7 @@ export default async function Home({
                 </div>
 
                 {/* Card 2: Pemasangan */}
-                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                <div className="bg-[#F7F5F0] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
@@ -794,7 +794,7 @@ export default async function Home({
                 </div>
 
                 {/* Card 3: Aplikasi Lapangan */}
-                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                <div className="bg-[#F7F5F0] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
@@ -955,7 +955,7 @@ export default async function Home({
                 {homeDict.faq.items.map((item, index) => (
                   <details
                     key={index}
-                    className="group bg-[#FAF9F6] rounded-2xl border border-stone-200/80 open:border-[#0F2042]/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
+                    className="group bg-[#F7F5F0] rounded-2xl border border-stone-200/80 open:border-[#0F2042]/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
                   >
                     <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-[#0F2042] hover:text-[#7A1C1C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-2xl">
                       <span className="pr-4">{item.q}</span>

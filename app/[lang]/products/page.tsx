@@ -53,17 +53,17 @@ export default async function Products({
       {/* =========================================================================
           1. PRODUCTS HERO & PRODUCT NAVIGATOR (Warm White Canvas)
          ========================================================================= */}
-      <section className="bg-[#FAF9F6] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
+      <section className="bg-[#F7F5F0] border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal immediate className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0B2447] tracking-tight font-heading">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F2042] tracking-tight font-heading">
               {dict.title}
             </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#D90429] mx-auto mt-4 sm:mt-5 mb-4 sm:mb-5 rounded-full" />
-            <p className="text-base sm:text-lg text-[#0B2447]/80 font-sans leading-relaxed">
+            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-[#7A1C1C] mx-auto mt-4 sm:mt-5 mb-4 sm:mb-5 rounded-full" />
+            <p className="text-base sm:text-lg text-[#0F2042]/80 font-sans leading-relaxed">
               {dict.specs}
             </p>
-            <p className="mt-2 text-sm sm:text-base text-[#D90429] font-bold font-sans">
+            <p className="mt-2 text-sm sm:text-base text-[#7A1C1C] font-bold font-sans">
               {dict.availability}
             </p>
           </ScrollReveal>
@@ -72,8 +72,8 @@ export default async function Products({
           {dict.navigator && (
             <ScrollReveal delay={0.1} className="max-w-4xl mx-auto bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs">
               <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
-                <div className="flex items-center space-x-2 text-[#0B2447]">
-                  <ArrowDown className="w-4 h-4 text-[#D90429]" aria-hidden="true" />
+                <div className="flex items-center space-x-2 text-[#0F2042]">
+                  <ArrowDown className="w-4 h-4 text-[#7A1C1C]" aria-hidden="true" />
                   <span className="text-xs sm:text-sm font-bold uppercase tracking-wider font-heading">
                     {dict.navigator.title}
                   </span>
@@ -91,7 +91,7 @@ export default async function Products({
                       <a
                         key={item.targetId}
                         href={`#${item.targetId}`}
-                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0B2447] hover:border-[#D90429] hover:text-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429]"
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0F2042] hover:border-[#7A1C1C] hover:text-[#7A1C1C] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A1C1C]"
                       >
                         {item.name}
                       </a>
@@ -109,7 +109,7 @@ export default async function Products({
                       <a
                         key={item.targetId}
                         href={`#${item.targetId}`}
-                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0B2447] hover:border-[#D90429] hover:text-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429]"
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-[#0F2042] hover:border-[#7A1C1C] hover:text-[#7A1C1C] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A1C1C]"
                       >
                         {item.name}
                       </a>
@@ -149,7 +149,7 @@ export default async function Products({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                    <div className="absolute top-3 right-3 bg-[#0F2042]/90 text-[#D4AF37] px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
                       {product.badge}
                     </div>
                   </div>
@@ -157,12 +157,12 @@ export default async function Products({
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex-grow flex flex-col justify-between">
                     <div>
-                      <h2 className="text-xl sm:text-2xl font-bold text-[#0B2447] mb-3.5 font-heading">
+                      <h2 className="text-xl sm:text-2xl font-bold text-[#0F2042] mb-3.5 font-heading">
                         {product.name}
                       </h2>
 
                       {/* Normalized 3-Line Quick Specifications */}
-                      <ul className="space-y-2 text-[#0B2447]/85 font-sans text-xs sm:text-sm mb-4">
+                      <ul className="space-y-2 text-[#0F2042]/85 font-sans text-xs sm:text-sm mb-4">
                         {product.quickSpecs.map((spec, i) => {
                           const parts = spec.split(":");
                           const isPendingConfirm =
@@ -171,11 +171,11 @@ export default async function Products({
 
                           return (
                             <li key={i} className="flex items-start">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#D90429] mt-1.5 mr-2 shrink-0" aria-hidden="true" />
+                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#7A1C1C] mt-1.5 mr-2 shrink-0" aria-hidden="true" />
                               <span className="leading-snug">
                                 {parts.length > 1 ? (
                                   <>
-                                    <strong className="text-[#0B2447] font-semibold">{parts[0]}:</strong>{" "}
+                                    <strong className="text-[#0F2042] font-semibold">{parts[0]}:</strong>{" "}
                                     <span className={isPendingConfirm ? "text-amber-800 font-medium" : ""}>
                                       {parts.slice(1).join(":")}
                                     </span>
@@ -192,7 +192,7 @@ export default async function Products({
                       {/* Collapsible Detail Section (Only if extra verified data exists) */}
                       {hasDetails && product.detailSpecs && (
                         <details className="mb-4 group/detail rounded-xl bg-slate-50 border border-slate-200/80 p-3 text-xs sm:text-sm">
-                          <summary className="font-semibold text-[#0B2447] cursor-pointer hover:text-[#D90429] transition-colors list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429] rounded select-none">
+                          <summary className="font-semibold text-[#0F2042] cursor-pointer hover:text-[#7A1C1C] transition-colors list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A1C1C] rounded select-none">
                             <span>{dict.detailsLabel}</span>
                             <ChevronDown className="w-4 h-4 text-slate-500 group-open/detail:rotate-180 transition-transform duration-200" aria-hidden="true" />
                           </summary>
@@ -200,12 +200,12 @@ export default async function Products({
                             {product.detailSpecs.map((detail, idx) => {
                               const parts = detail.split(":");
                               return (
-                                <li key={idx} className="flex items-start text-xs text-[#0B2447]/80">
+                                <li key={idx} className="flex items-start text-xs text-[#0F2042]/80">
                                   <span className="inline-block w-1 h-1 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0" aria-hidden="true" />
                                   <span className="leading-snug">
                                     {parts.length > 1 ? (
                                       <>
-                                        <strong className="text-[#0B2447] font-semibold">{parts[0]}:</strong>{" "}
+                                        <strong className="text-[#0F2042] font-semibold">{parts[0]}:</strong>{" "}
                                         {parts.slice(1).join(":")}
                                       </>
                                     ) : (
@@ -226,7 +226,7 @@ export default async function Products({
                         href={contactDict.whatsappUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full min-h-[44px] bg-[#0B2447] text-white py-3 px-4 rounded-full font-bold text-sm hover:bg-[#D90429] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                        className="flex items-center justify-center w-full min-h-[44px] bg-[#0F2042] text-white py-3 px-4 rounded-full font-bold text-sm hover:bg-[#7A1C1C] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                       >
                         <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                         {dict.orderCta}
@@ -251,16 +251,16 @@ export default async function Products({
           3. BUYING CONSIDERATION SECTION (Warm Neutral Editorial Section)
          ========================================================================= */}
       {dict.beforeOrder && (
-        <section className="bg-[#FAF9F6] border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
+        <section className="bg-[#F7F5F0] border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block font-heading">
                 {dict.beforeOrder.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0F2042]">
                 {dict.beforeOrder.title}
               </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
                 {dict.beforeOrder.subtitle}
               </p>
@@ -271,16 +271,16 @@ export default async function Products({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0B2447]/40 hover:shadow-sm transition-all"
+                  className="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0F2042]/40 hover:shadow-sm transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
-                      <span className="w-8 h-8 rounded-lg bg-[#0B2447] text-[#FFC300] font-mono text-xs font-bold flex items-center justify-center">
+                      <span className="w-8 h-8 rounded-lg bg-[#0F2042] text-[#D4AF37] font-mono text-xs font-bold flex items-center justify-center">
                         {item.number}
                       </span>
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
@@ -302,15 +302,15 @@ export default async function Products({
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
               <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 mb-3">
-                <HelpCircle className="w-3.5 h-3.5 text-[#D90429]" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0B2447] font-heading">
+                <HelpCircle className="w-3.5 h-3.5 text-[#7A1C1C]" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-wider text-[#0F2042] font-heading">
                   {dict.faq.eyebrow}
                 </span>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0B2447]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0F2042]">
                 {dict.faq.title}
               </h2>
-              <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.faq.subtitle}
               </p>
@@ -319,8 +319,8 @@ export default async function Products({
             <div className="space-y-4">
               {dict.faq.items.map((item, idx) => (
                 <ScrollReveal key={idx} delay={idx * 0.03}>
-                  <details className="group rounded-2xl bg-[#FAF9F6] border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-[#0B2447]/30">
-                    <summary className="font-bold text-base sm:text-lg text-[#0B2447] cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D90429] rounded select-none">
+                  <details className="group rounded-2xl bg-[#F7F5F0] border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-[#0F2042]/30">
+                    <summary className="font-bold text-base sm:text-lg text-[#0F2042] cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7A1C1C] rounded select-none">
                       <span className="pr-4 font-heading">{item.q}</span>
                       <ChevronDown className="w-5 h-5 text-slate-500 shrink-0 group-open:rotate-180 transition-transform duration-200" aria-hidden="true" />
                     </summary>
@@ -336,16 +336,16 @@ export default async function Products({
       )}
 
       {/* =========================================================================
-          5. FINAL CONSULTATION CTA (Deep Navy Background)
+          5. FINAL CONSULTATION CTA (Sapphire Navy Background)
          ========================================================================= */}
-      <section className="bg-[#0B2447] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFC300] rounded-bl-full opacity-10 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D90429] rounded-tr-full opacity-15 pointer-events-none" />
+      <section className="bg-[#0F2042] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] rounded-bl-full opacity-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#7A1C1C] rounded-tr-full opacity-15 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
-              <Layers className="w-4 h-4 text-[#FFC300]" aria-hidden="true" />
+              <Layers className="w-4 h-4 text-[#D4AF37]" aria-hidden="true" />
               <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
                 {dict.finalCta?.eyebrow || dict.installation}
               </span>
@@ -363,7 +363,7 @@ export default async function Products({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
                 {dict.finalCta?.button || dict.needHelp?.cta}

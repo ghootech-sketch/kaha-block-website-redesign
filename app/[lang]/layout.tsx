@@ -40,10 +40,10 @@ export default async function LangLayout({
 
   return (
     <html lang={currentLang} className={`${poppins.variable} ${montserrat.variable}`}>
-      <body suppressHydrationWarning className="min-h-screen flex flex-col bg-white font-sans text-[#0B2447]">
+      <body suppressHydrationWarning className="min-h-screen flex flex-col bg-white font-sans text-[#0F2042]">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-[#0B2447] focus:outline-none focus:ring-2 focus:ring-[#FFC300]"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-[#0F2042] focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"
         >
           {currentLang === "en" ? "Skip to content" : "Lewati ke konten"}
         </a>

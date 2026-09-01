@@ -81,7 +81,7 @@ export default async function About({
   return (
     <>
       <JsonLd page="about" lang={currentLang} />
-      <div className="bg-[#FAF9F6] min-h-screen text-[#0F2042] font-sans">
+      <div className="bg-[#F7F5F0] min-h-screen text-[#0F2042] font-sans">
         
         {/* =========================================================
             1. ABOUT HERO
@@ -384,7 +384,7 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.05}
-                    className="bg-[#FAF9F6] rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs hover:border-[#0F2042]/30 transition-colors flex flex-col justify-between"
+                    className="bg-[#F7F5F0] rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs hover:border-[#0F2042]/30 transition-colors flex flex-col justify-between"
                   >
                     <div>
                       <div className="w-11 h-11 rounded-xl bg-white text-[#0F2042] flex items-center justify-center mb-4 border border-stone-200 shadow-2xs">
@@ -407,7 +407,7 @@ export default async function About({
         {/* =========================================================
             7. FINAL CTA
         ========================================================= */}
-        <section id="about-cta" className="py-12 sm:py-16 md:py-20 bg-[#FAF9F6]">
+        <section id="about-cta" className="py-12 sm:py-16 md:py-20 bg-[#F7F5F0]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="bg-[#0F2042] text-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37] rounded-bl-full opacity-10 pointer-events-none transform translate-x-12 -translate-y-12" />
