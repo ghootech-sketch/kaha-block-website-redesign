@@ -140,7 +140,7 @@ export const article7Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Pemeliharaan:",
         items: [
-          "CMHA Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
+          "CMHA Tech Spec 5: Cleaning, Sealing and Joint Sand Stabilization of Interlocking Concrete Pavement (Concrete Masonry & Hardscapes Association).",
           "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
@@ -325,7 +325,7 @@ export const article7En: BlogPost = {
       list: {
         title: "Technical Standards & Industry References:",
         items: [
-          "CMHA Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
+          "CMHA Tech Spec 5: Cleaning, Sealing and Joint Sand Stabilization of Interlocking Concrete Pavement (Concrete Masonry & Hardscapes Association).",
           "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
