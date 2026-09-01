@@ -32,6 +32,9 @@ export default function Footer({ lang }: { lang: Locale }) {
             <p className="text-gray-300 leading-relaxed font-sans text-sm">
               {dict.home.companyBrief}
             </p>
+            <p className="text-[#FFC300] font-semibold italic text-sm mt-4">
+              &quot;{dict.footer.tagline}&quot;
+            </p>
           </div>
 
           {/* Navigation Menu */}

@@ -53,7 +53,7 @@ export function generateStructuredDataGraph({
       "@type": "PostalAddress",
       streetAddress: BUSINESS_FACTS.address.street,
       addressLocality: BUSINESS_FACTS.address.locality,
-      addressRegion: BUSINESS_FACTS.address.city,
+      addressRegion: BUSINESS_FACTS.address.region,
       postalCode: BUSINESS_FACTS.address.postalCode,
       addressCountry: BUSINESS_FACTS.address.countryCode,
     },
@@ -189,7 +189,7 @@ export function generateStructuredDataGraph({
         : "Kaha Block | Pabrik Paving Block Berkualitas Mesin Hidrolik";
       pageDescription = isEn
         ? "Manufacturer of high-strength hydraulic concrete paving blocks, Truepave, Hexagonal, and curb stones in Tangerang."
-        : "Pabrik produsen paving block presisi mesin hidrolik otomatis mutu K-250, K-300, hingga K-400 di Cisauk, Tangerang.";
+        : "Pabrik produsen paving block presisi mesin hidrolik otomatis mutu K-300 hingga K-350 di Cisauk, Tangerang.";
       break;
     case "about":
       pageType = "AboutPage";
@@ -234,7 +234,7 @@ export function generateStructuredDataGraph({
         : "Artikel & Panduan Teknis Paving Block | Kaha Block";
       pageDescription = isEn
         ? "Technical guides, thickness selection, concrete strength grades, and installation methods from Kaha Block."
-        : "Kumpulan artikel teknis, panduan ketebalan, mutu beton K-250, K-300, dan K-400, serta tips pemasangan paving block presisi.";
+        : "Kumpulan artikel teknis, panduan ketebalan, mutu beton K-300 dan K-350, serta tips pemasangan paving block presisi.";
       break;
     case "blogPost":
       if (post) {
@@ -286,8 +286,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-truepave`,
         name: isEn ? "Truepave" : "Truepave",
         description: isEn
-          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-300 to K-400. Applications: Roads, parking, and industrial areas."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-300 sampai K-400. Aplikasi: Jalan, parkir, dan area industri.",
+          ? "Size: 21 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Coverage: 44 pcs/m². Compressive Strength: K-300 to K-350. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
+          : "Ukuran: 21 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Daya Tutup: 44 pcs/m². Kuat Tekan: K-300 sampai K-350. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -304,8 +304,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-half-tahu`,
         name: isEn ? "Half / Tahu" : "Half / Tahu",
         description: isEn
-          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Function: Paving pattern lock & color boundary."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Fungsi: Pengunci pola paving & pembatas warna.",
+          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Compressive Strength: K-300 & K-350. Function: Paving pattern lock & color boundary."
+          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Kuat Tekan: K-300 & K-350. Fungsi: Pengunci pola paving & pembatas warna.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -322,8 +322,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-hexa`,
         name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
-          ? "Color Options: Grey, Red, Black. Height Options: 8 cm. Application: Decorative areas and pedestrians."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam. Pilihan Tebal: 8 cm. Aplikasi: Area dekoratif dan pedestrian.",
+          ? "Product family: K-300 to K-350. Thickness Options: 6 cm, 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
+          : "Keluarga produk: K-300 hingga K-350. Pilihan Tebal: 6 cm, 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -340,8 +340,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-ubin`,
         name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
         description: isEn
-          ? "Color Options: Grey, Red, Black. Height Options: 8 cm."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam. Pilihan Tebal: 8 cm.",
+          ? "Product family: K-300 to K-350. Thickness Options: 6 cm, 8 cm. Color Options: Grey, Red, Black."
+          : "Keluarga produk: K-300 hingga K-350. Pilihan Tebal: 6 cm, 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -358,8 +358,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-topi-uskup`,
         name: isEn ? "Bishop Hat" : "Topi Uskup",
         description: isEn
-          ? "Size: 30 × 21 cm. Height Options: 6 cm and 8 cm. Compressive Strength: K-300. Material: Concrete. Color Options: Grey. Weight: 6 cm: approx. 5.5 kg | 8 cm: approx. 7.4 kg. Function: Locks edges and corners."
-          : "Ukuran: 30 × 21 cm. Pilihan Tebal: 6 cm dan 8 cm. Kuat Tekan: K-300. Material: Beton. Pilihan Warna: Abu-abu. Berat: 6 cm: sekitar 5,5 kg | 8 cm: sekitar 7,4 kg. Fungsi: Mengunci sisi dan sudut paving.",
+          ? "Size: 30 × 21 cm. Height Options: 6 cm and 8 cm. Compressive Strength: K-300. Coverage: 3.3 pcs/m. Material: Concrete. Color Options: Grey. Weight: 6 cm: ≈ 5.5 kg | 8 cm: ≈ 7.4 kg. Function: Locks edges/corners, prevents shifting, maintains stable arrangement."
+          : "Ukuran: 30 × 21 cm. Pilihan Tebal: 6 cm dan 8 cm. Kuat Tekan: K-300. Daya Tutup: 3,3 pcs/m. Material: Beton. Pilihan Warna: Abu-abu. Berat: 6 cm: ≈ 5,5 kg | 8 cm: ≈ 7,4 kg. Fungsi: Mengunci sisi/sudut paving, mencegah pergeseran, menjaga susunan tetap rapi dan stabil.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -376,8 +376,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-jepit`,
         name: isEn ? "Kanstein Jepit" : "Kanstein Jepit",
         description: isEn
-          ? "Category: Paving border/lock curb. Function: Locks and secures paving edges."
-          : "Kategori: Produk pembatas/pengunci paving. Fungsi: Membantu mengunci tepi pemasangan paving.",
+          ? "Category: Paving border/lock curb. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Locks and secures paving edges."
+          : "Kategori: Produk pembatas/pengunci paving. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Membantu mengunci tepi pemasangan paving.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -394,8 +394,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-s`,
         name: isEn ? "Kanstein S" : "Kanstein S",
         description: isEn
-          ? "Category: S-type road curb product. Function: Water gutter & sidewalk border."
-          : "Kategori: Produk pembatas jalan tipe S. Fungsi: Saluran air tepi & pembatas trotoar.",
+          ? "Category: S-type road curb product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Water gutter & sidewalk border."
+          : "Kategori: Produk pembatas jalan tipe S. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Saluran air tepi & pembatas trotoar.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -412,8 +412,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-kanstin-b1`,
         name: isEn ? "Kanstein B1" : "Kanstein B1",
         description: isEn
-          ? "Category: Road curb / border product. Function: Road shoulder & pedestrian border."
-          : "Kategori: Produk pembatas jalan / kanstein. Fungsi: Pembatas bahu jalan & area pedestrian.",
+          ? "Category: Road curb / border product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Road shoulder & pedestrian border."
+          : "Kategori: Produk pembatas jalan / kanstein. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Pembatas bahu jalan & area pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -430,8 +430,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-stoper`,
         name: isEn ? "Stoper" : "Stoper",
         description: isEn
-          ? "Category: Wheel stop / border product. Function: Vehicle parking boundary lock."
-          : "Kategori: Produk pembatas / penghenti roda. Fungsi: Pengaman batas parkir kendaraan.",
+          ? "Category: Wheel stop / border product. Size: 10 × 20 × 40 cm. Coverage: 2.5 pcs/m². Class: High Grade / Heavy Duty. Function: Vehicle parking boundary lock."
+          : "Kategori: Produk pembatas / penghenti roda. Ukuran: 10 × 20 × 40 cm. Daya Tutup: 2,5 pcs/m². Kelas: High Grade / Heavy Duty. Fungsi: Pengaman batas parkir kendaraan.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",

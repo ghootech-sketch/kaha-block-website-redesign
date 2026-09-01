@@ -87,12 +87,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
       description:
-        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-250, K-300, dan K-400, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
+        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-300 dan K-350, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
     },
     en: {
       title: "Blog & Paving Block Guide Center | KAHA BLOCK",
       description:
-        "Technical guides, area planning tips, thickness comparisons, K-250, K-300, and K-400 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
+        "Technical guides, area planning tips, thickness comparisons, K-300 and K-350 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
     },
   },
 };

@@ -47,7 +47,7 @@ export const dictionaries = {
       consultationCta: {
         eyebrow: "Butuh Rekomendasi untuk Proyek Anda?",
         title: "Konsultasikan Kebutuhan Paving Block Bersama Tim Kaha Block",
-        desc: "Dapatkan estimasi kebutuhan volume, rekomendasi ketebalan dan mutu beton K-250, K-300, hingga K-400, serta informasi paket pengadaan dan pemasangan.",
+        desc: "Dapatkan estimasi kebutuhan volume, rekomendasi ketebalan dan mutu beton K-300 hingga K-350, serta informasi paket pengadaan dan pemasangan.",
         buttonText: "Konsultasi via WhatsApp",
         secondaryButton: "Lihat Katalog Produk",
       },
@@ -80,7 +80,7 @@ export const dictionaries = {
         description: "Kaha Block melayani pengadaan dan pemasangan paving block presisi mesin full otomatis hidrolik untuk ketahanan maksimal.",
         ctaPrimary: "Konsultasi via WhatsApp",
         ctaSecondary: "Lihat Produk",
-        trustNote: "Produksi Modern • Kualitas Terdepan",
+        trustNote: "Presisi • Kuat • Mutu Terjamin • Produksi Modern",
         visualBadge: "Mesin Full Otomatis Hidrolik",
         plantBadge: "Melayani Jabodetabek & Luar Kota",
         specsHeader: "SPESIFIKASI KAHA BLOCK",
@@ -88,7 +88,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "PRODUK UNGGULAN",
           title: "Pilihan Produk Kaha Block",
-          highlightBadge: "Truepave • K-300–K-400",
+          highlightBadge: "Truepave • K-300–K-350",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -274,7 +274,7 @@ export const dictionaries = {
         eyebrow: "Profil Perusahaan",
         heading: "PT Kaha Sukses Mandiri (Kaha Block)",
         p1: "PT Kaha Sukses Mandiri melalui brand Kaha Block merupakan produsen dan pemasok paving block yang beroperasi sejak 2015. Berlokasi di Cisauk, Tangerang, Kaha Block melayani kebutuhan pengadaan paving block untuk hunian, area komersial, kawasan industri, dan berbagai kebutuhan proyek di Jabodetabek maupun luar kota.",
-        p2: "Fasilitas produksi seluas 9.080 m² mendukung proses produksi menggunakan bahan baku pilihan dan mesin full otomatis hidrolik. Kaha Block menyediakan berbagai bentuk paving block dan produk pendukung dengan pilihan mutu K-250, K-300, hingga K-400 sesuai jenis produk dan kebutuhan proyek.",
+        p2: "Fasilitas produksi seluas 9.080 m² mendukung proses produksi menggunakan bahan baku pilihan dan mesin full otomatis hidrolik. Kaha Block menyediakan berbagai bentuk paving block dan produk pendukung dengan pilihan mutu K-300 hingga K-350 sesuai jenis produk dan kebutuhan proyek.",
         p3: "Selain pengadaan produk, Kaha Block menyediakan layanan pemasangan. Tim membantu pelanggan mulai dari konsultasi kebutuhan, penentuan jenis produk dan volume, konfirmasi penawaran dan jadwal, hingga pengiriman atau pelaksanaan pemasangan.",
         p4: "Dalam setiap kerja sama, Kaha Block mengutamakan konsistensi kualitas, ketepatan pengiriman, komunikasi yang jelas, serta hubungan usaha yang jujur dan berkelanjutan.",
       },
@@ -286,7 +286,8 @@ export const dictionaries = {
           { label: "Operasional", value: "Beroperasi sejak 2015", desc: "Pengalaman bertahun-tahun melayani pengadaan paving block berkualitas." },
           { label: "Fasilitas Produksi", value: "9.080 m²", desc: "Area pabrik terpadu dengan mesin full otomatis hidrolik." },
           { label: "Lokasi Pabrik", value: "Cisauk, Tangerang", desc: "Strategis untuk rantai pasok Jabodetabek dan luar kota." },
-          { label: "Mutu Produk", value: "K-250, K-300, & K-400", desc: "Pilihan kuat tekan beton sesuai jenis produk dan kebutuhan proyek." },
+          { label: "Mutu Produk", value: "K-300 & K-350", desc: "Pilihan kuat tekan beton sesuai jenis produk dan kebutuhan proyek." },
+          { label: "Bahan Baku", value: "Semen Holcim & SCG, Abu Batu Bravo, Pasir Bangka", desc: "Semen curah Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, dan pasir Bangka." },
           { label: "Jangkauan", value: "Jabodetabek & Luar Kota", desc: "Pengiriman Jabodetabek gratis + penurunan barang, serta luar kota." },
           { label: "Layanan", value: "Pengadaan & Jasa Pemasangan", desc: "Solusi terintegrasi suplai material presisi hingga pengerjaan di lapangan." },
         ],
@@ -305,7 +306,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Menjaga mutu beton K-250, K-300, dan K-400 di setiap cetakan.",
+            text: "Menjaga mutu beton K-300 hingga K-350 di setiap cetakan.",
           },
           {
             number: "03",
@@ -320,7 +321,7 @@ export const dictionaries = {
         items: [
           {
             title: "Konsistensi Kualitas",
-            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu K-250, K-300, hingga K-400.",
+            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu K-300 hingga K-350.",
           },
           {
             title: "Ketepatan Pengiriman",
@@ -387,11 +388,12 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-300 – K-400",
+          badge: "K-300 – K-350",
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
             "Pilihan Tebal: 6 cm, 8 cm, 10 cm",
-            "Kuat Tekan: K-300 sampai K-400",
+            "Kuat Tekan: K-300 sampai K-350",
+            "Toleransi Ukuran: ± 2 mm & 2 kg",
           ],
           detailSpecs: [
             "Material: Semen curah Holcim Dynamix dan semen zak SCG",
@@ -407,10 +409,14 @@ export const dictionaries = {
           badge: "Fleksibel",
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
+            "Ukuran: 10,5 × 10,5 cm",
             "Pilihan Tebal: 6 cm, 8 cm",
+            "Daya Tutup: 88 pcs/m²",
+            "Kuat Tekan: K-300 & K-350",
             "Fungsi: Pengunci pola paving & pembatas warna",
           ],
           detailSpecs: [
+            "Fungsi: Pengunci pola, pembatas warna, motif/variasi desain",
             "Aplikasi: Pembatas warna, pedestrian, aksen desain pola",
           ],
         },
@@ -431,7 +437,9 @@ export const dictionaries = {
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam",
             "Pilihan Tebal: 8 cm",
-            "Ukuran: Konfirmasi sebelum pemesanan",
+            "Ukuran: 10 × 20 × 40 cm",
+            "Daya Tutup: 2,5 pcs/m²",
+            "Kelas: High Grade / Heavy Duty",
           ],
         },
         topiUskup: {
@@ -442,12 +450,13 @@ export const dictionaries = {
             "Ukuran: 30 × 21 cm",
             "Pilihan Tebal: 6 cm dan 8 cm",
             "Kuat Tekan: K-300",
+            "Daya Tutup: 3,3 pcs/m",
           ],
           detailSpecs: [
             "Material: Beton",
             "Pilihan Warna: Abu-abu",
-            "Berat: 6 cm: sekitar 5,5 kg | 8 cm: sekitar 7,4 kg",
-            "Fungsi: Mengunci sisi dan sudut paving",
+            "Berat: 6 cm: ≈ 5,5 kg | 8 cm: ≈ 7,4 kg",
+            "Fungsi: Mengunci sisi/sudut paving, mencegah pergeseran, menjaga susunan tetap rapi dan stabil",
             "Keunggulan: Mencegah pergeseran paving, menjaga susunan tetap rapi dan stabil",
           ],
         },
@@ -457,7 +466,9 @@ export const dictionaries = {
           badge: "Pengunci Tepi",
           quickSpecs: [
             "Kategori: Produk pembatas/pengunci paving",
-            "Ukuran: Konfirmasi sebelum pemesanan",
+            "Ukuran: 10 × 20 × 40 cm",
+            "Daya Tutup: 2,5 pcs/m²",
+            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Membantu mengunci tepi pemasangan paving",
           ],
         },
@@ -467,7 +478,9 @@ export const dictionaries = {
           badge: "Drainase & Tepi",
           quickSpecs: [
             "Kategori: Produk pembatas jalan tipe S",
-            "Ukuran: Konfirmasi sebelum pemesanan",
+            "Ukuran: 10 × 20 × 40 cm",
+            "Daya Tutup: 2,5 pcs/m²",
+            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Saluran air tepi & pembatas trotoar",
           ],
         },
@@ -477,7 +490,9 @@ export const dictionaries = {
           badge: "Pembatas Jalan",
           quickSpecs: [
             "Kategori: Produk pembatas jalan / kanstein",
-            "Ukuran: Konfirmasi sebelum pemesanan",
+            "Ukuran: 10 × 20 × 40 cm",
+            "Daya Tutup: 2,5 pcs/m²",
+            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Pembatas bahu jalan & area pedestrian",
           ],
         },
@@ -487,7 +502,9 @@ export const dictionaries = {
           badge: "Batas Parkir",
           quickSpecs: [
             "Kategori: Produk pembatas / penghenti roda",
-            "Ukuran: Konfirmasi sebelum pemesanan",
+            "Ukuran: 10 × 20 × 40 cm",
+            "Daya Tutup: 2,5 pcs/m²",
+            "Kelas: High Grade / Heavy Duty",
             "Fungsi: Pengaman batas parkir kendaraan",
           ],
         },
@@ -708,7 +725,7 @@ export const dictionaries = {
       description: "Hubungi tim Kaha Block untuk konsultasi produk, kebutuhan volume, pengiriman, dan jasa pemasangan paving block.",
       quickActions: {
         whatsappLabel: "WhatsApp Utama",
-        whatsappNumber: "0811-9753-030",
+        whatsappNumber: "0811 975 3030",
         whatsappDesc: "Konsultasi produk dan kebutuhan pemesanan",
         whatsappAction: "Chat Sekarang",
         emailLabel: "Email",
@@ -759,13 +776,13 @@ export const dictionaries = {
       mapIframeTitle: "Lokasi Pabrik Kaha Block",
       infoStrip: {
         altContactLabel: "Kontak Alternatif",
-        altContactValue: "0855-8893-030",
+        altContactValue: "0855 889 3030",
         altContactDesc: "Nomor pendamping untuk informasi lebih lanjut",
         coverageLabel: "Jangkauan Layanan",
         coverageValue: "Jabodetabek & Luar Kota",
         coverageDesc: "Pengiriman dan pemasangan dikonfirmasi berdasarkan kebutuhan proyek",
         facebookLabel: "Facebook",
-        facebookValue: "Richard KahaBlock id",
+        facebookValue: "Richard Kahablock id",
         facebookDesc: "Kanal informasi dan dokumentasi media",
       },
       processFlow: {
@@ -775,24 +792,24 @@ export const dictionaries = {
         steps: [
           {
             number: "01",
-            title: "Kebutuhan Awal",
-            desc: "Tim menerima informasi awal mengenai area dan kebutuhan produk.",
+            title: "Konsultasi & Peninjauan",
+            desc: "Diskusi awal mengenai produk, estimasi volume, pengiriman, dan kebutuhan pemasangan lahan."
           },
           {
             number: "02",
-            title: "Peninjauan Kebutuhan",
-            desc: "Jenis produk, volume, pengiriman, dan kebutuhan pemasangan dibahas lebih lanjut.",
+            title: "Penawaran & Persetujuan",
+            desc: "Penerbitan surat penawaran resmi. Untuk volume besar atau spesifikasi tertentu disarankan pre-order minimal 1 bulan."
           },
           {
             number: "03",
-            title: "Penawaran dan Jadwal",
-            desc: "Penawaran serta rencana waktu dikonfirmasi bersama.",
+            title: "Pembayaran & Penjadwalan",
+            desc: "Penjadwalan produksi atau pengiriman dilakukan setelah konfirmasi pembayaran awal (DP 50%) diterima. CBD tersedia untuk pembelian tertentu."
           },
           {
             number: "04",
-            title: "Pengiriman atau Pemasangan",
-            desc: "Produk dikirim atau pekerjaan pemasangan dilaksanakan sesuai kesepakatan.",
-          },
+            title: "Pelaksanaan & Pelunasan",
+            desc: "Pengiriman barang atau pelaksanaan pemasangan (dari lahan awal sampai selesai) dikerjakan, diikuti dengan sisa pelunasan setelah selesai."
+          }
         ],
       },
       finalCta: {
@@ -818,8 +835,16 @@ export const dictionaries = {
             a: "Tentu saja. Tim Kaha Block siap membantu menghitung estimasi kebutuhan volume paving dan merekomendasikan tipe serta ketebalan yang sesuai dengan kondisi area proyek Anda.",
           },
           {
+            q: "Apakah perlu melakukan pre-order?",
+            a: "Untuk volume besar atau tipe/warna tertentu, disarankan melakukan pre-order minimal 1 bulan sebelumnya agar penjadwalan produksi dan pengiriman dapat berjalan lancar."
+          },
+          {
             q: "Apakah tersedia layanan pengiriman dan pemasangan?",
             a: "Ya. Kami melayani pengadaan material saja maupun paket lengkap dengan jasa pemasangan oleh tim pasang berpengalaman.",
+          },
+          {
+            q: "Bagaimana sistem pembayaran yang berlaku?",
+            a: "Pembayaran dilakukan dengan sistem DP 50% untuk penjadwalan produksi/pengiriman. Pelunasan diselesaikan setelah barang terkirim atau setelah pekerjaan pemasangan selesai. CBD (Cash Before Delivery) tersedia untuk pembelian tertentu."
           },
           {
             q: "Bagaimana cara mendapatkan penawaran?",
@@ -835,6 +860,7 @@ export const dictionaries = {
       facebookText: "Richard Kahablock id",
       instagramText: "@kahablock",
       rights: "PT Kaha Sukses Mandiri. Hak Cipta Dilindungi.",
+      tagline: "Kokoh di setiap langkah, terpercaya untuk setiap proyek.",
     },
   },
   en: {
@@ -878,7 +904,7 @@ export const dictionaries = {
       consultationCta: {
         eyebrow: "Need Recommendations for Your Project?",
         title: "Consult Your Paving Block Requirements with Kaha Block",
-        desc: "Get volume estimation, thickness and K-250, K-300, or K-400 grade recommendations, as well as supply and installation package details.",
+        desc: "Get volume estimation, thickness and K-300 or K-350 grade recommendations, as well as supply and installation package details.",
         buttonText: "Consult via WhatsApp",
         secondaryButton: "Browse Product Catalog",
       },
@@ -911,7 +937,7 @@ export const dictionaries = {
         description: "Kaha Block provides paving block supply and installation with precision fully automatic hydraulic machinery for your project's maximum durability.",
         ctaPrimary: "Consult via WhatsApp",
         ctaSecondary: "View Products",
-        trustNote: "Modern Production • Leading Quality",
+        trustNote: "Precision • Strength • Assured Quality • Modern Production",
         visualBadge: "Fully Automatic Hydraulic Machinery",
         plantBadge: "Greater Jakarta & Regional Areas",
         specsHeader: "KAHA BLOCK SPECS",
@@ -919,7 +945,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "FEATURED RANGE",
           title: "Kaha Block Product Range",
-          highlightBadge: "Truepave • K-300–K-400",
+          highlightBadge: "Truepave • K-300–K-350",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -1105,7 +1131,7 @@ export const dictionaries = {
         eyebrow: "Company Profile",
         heading: "PT Kaha Sukses Mandiri (Kaha Block)",
         p1: "PT Kaha Sukses Mandiri, through the Kaha Block brand, is a paving block manufacturer and supplier operating since 2015. Based in Cisauk, Tangerang, Kaha Block serves residential, commercial, industrial, and project requirements throughout Greater Jakarta and other regions.",
-        p2: "Its 9,080 m² production facility supports manufacturing with selected raw materials and fully automatic hydraulic machinery. Kaha Block supplies various paving block shapes and supporting products with K-250, K-300, to K-400 strength options according to product type and project requirements.",
+        p2: "Its 9,080 m² production facility supports manufacturing with selected raw materials and fully automatic hydraulic machinery. Kaha Block supplies various paving block shapes and supporting products with K-300 to K-350 strength options according to product type and project requirements.",
         p3: "In addition to product supply, Kaha Block provides installation services. The team supports customers from initial consultation and product-volume planning through quotation confirmation, scheduling, delivery, and installation.",
         p4: "Across every partnership, Kaha Block prioritizes consistent quality, dependable delivery, clear communication, and honest, sustainable business relationships.",
       },
@@ -1117,7 +1143,8 @@ export const dictionaries = {
           { label: "Operation", value: "Operating since 2015", desc: "Years of experience supplying quality concrete paving blocks." },
           { label: "Production Facility", value: "9,080 m²", desc: "Integrated factory facility equipped with fully automatic hydraulic machinery." },
           { label: "Plant Location", value: "Cisauk, Tangerang", desc: "Strategically located for Greater Jakarta and regional supply chains." },
-          { label: "Product Strength", value: "K-250, K-300, & K-400", desc: "Concrete compressive strength options tailored to product type and project needs." },
+          { label: "Product Strength", value: "K-300 & K-350", desc: "Concrete compressive strength options tailored to product type and project needs." },
+          { label: "Raw Materials", value: "Holcim & SCG Cement, Bravo Stone Dust, Bangka Sand", desc: "Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand." },
           { label: "Coverage", value: "Greater Jakarta & Regional", desc: "Free delivery and unloading across Greater Jakarta, plus regional delivery." },
           { label: "Services", value: "Supply & Installation", desc: "Integrated solutions from precision material supply to on-site installation." },
         ],
@@ -1136,7 +1163,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Maintain K-250, K-300, and K-400 concrete strength across every production batch.",
+            text: "Maintain K-300 to K-350 concrete strength across every production batch.",
           },
           {
             number: "03",
@@ -1151,7 +1178,7 @@ export const dictionaries = {
         items: [
           {
             title: "Consistent Quality",
-            desc: "Every paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to ensure optimal density and compliance with K-250, K-300, to K-400 strength standards.",
+            desc: "Every paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to ensure optimal density and compliance with K-300 to K-350 strength standards.",
           },
           {
             title: "Dependable Delivery",
@@ -1218,11 +1245,12 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-300 to K-400",
+          badge: "K-300 to K-350",
           quickSpecs: [
             "Color Options: Grey, Red, Black, Yellow",
             "Height Options: 6 cm, 8 cm, 10 cm",
-            "Compressive Strength: K-300 to K-400",
+            "Compressive Strength: K-300 to K-350",
+            "Size Tolerance: ± 2 mm & 2 kg",
           ],
           detailSpecs: [
             "Material: Holcim Dynamix bulk cement and SCG bag cement",
@@ -1238,10 +1266,14 @@ export const dictionaries = {
           badge: "Flexible",
           quickSpecs: [
             "Color Options: Grey, Red, Black, Yellow",
+            "Size: 10.5 × 10.5 cm",
             "Height Options: 6 cm, 8 cm",
+            "Coverage: 88 pcs/m²",
+            "Compressive Strength: K-300 & K-350",
             "Function: Paving pattern lock & border accent",
           ],
           detailSpecs: [
+            "Function: Pattern lock, color border, design variation",
             "Application: Color borders, pedestrians, design accents",
           ],
         },
@@ -1262,7 +1294,9 @@ export const dictionaries = {
           quickSpecs: [
             "Color Options: Grey, Red, Black",
             "Height Options: 8 cm",
-            "Size: Confirm before ordering",
+            "Size: 10 × 20 × 40 cm",
+            "Coverage: 2.5 pcs/m²",
+            "Class: High Grade / Heavy Duty",
           ],
         },
         topiUskup: {
@@ -1273,12 +1307,13 @@ export const dictionaries = {
             "Size: 30 × 21 cm",
             "Height Options: 6 cm and 8 cm",
             "Compressive Strength: K-300",
+            "Coverage: 3.3 pcs/m",
           ],
           detailSpecs: [
             "Material: Concrete",
             "Color Options: Grey",
-            "Weight: 6 cm: approx. 5.5 kg | 8 cm: approx. 7.4 kg",
-            "Function: Locks edges and corners",
+            "Weight: 6 cm: ≈ 5.5 kg | 8 cm: ≈ 7.4 kg",
+            "Function: Locks edges/corners, prevents shifting, maintains stable arrangement",
             "Advantage: Prevents paving from shifting, keeps arrangement neat and stable",
           ],
         },
@@ -1288,7 +1323,9 @@ export const dictionaries = {
           badge: "Edge Lock",
           quickSpecs: [
             "Category: Paving border/lock curb",
-            "Size: Confirm before ordering",
+            "Size: 10 × 20 × 40 cm",
+            "Coverage: 2.5 pcs/m²",
+            "Class: High Grade / Heavy Duty",
             "Function: Locks and secures paving edges",
           ],
         },
@@ -1298,7 +1335,9 @@ export const dictionaries = {
           badge: "Drainage & Curb",
           quickSpecs: [
             "Category: S-type road curb product",
-            "Size: Confirm before ordering",
+            "Size: 10 × 20 × 40 cm",
+            "Coverage: 2.5 pcs/m²",
+            "Class: High Grade / Heavy Duty",
             "Function: Water gutter & sidewalk border",
           ],
         },
@@ -1308,7 +1347,9 @@ export const dictionaries = {
           badge: "Road Curb",
           quickSpecs: [
             "Category: Road curb / border product",
-            "Size: Confirm before ordering",
+            "Size: 10 × 20 × 40 cm",
+            "Coverage: 2.5 pcs/m²",
+            "Class: High Grade / Heavy Duty",
             "Function: Road shoulder & pedestrian border",
           ],
         },
@@ -1318,7 +1359,9 @@ export const dictionaries = {
           badge: "Wheel Stop",
           quickSpecs: [
             "Category: Wheel stop / border product",
-            "Size: Confirm before ordering",
+            "Size: 10 × 20 × 40 cm",
+            "Coverage: 2.5 pcs/m²",
+            "Class: High Grade / Heavy Duty",
             "Function: Vehicle parking boundary lock",
           ],
         },
@@ -1400,6 +1443,10 @@ export const dictionaries = {
           {
             q: "Does Kaha Block serve large-scale project volume needs?",
             a: "Yes, Kaha Block facility is equipped to serve paving block material procurement for residential, commercial, and infrastructure project volumes with coordinated supply scheduling.",
+          },
+          {
+            q: "Is pre-ordering required?",
+            a: "For large volumes or specific types/colors, pre-ordering at least 1 month in advance is highly recommended to ensure smooth production and delivery scheduling."
           },
           {
             q: "Are delivery and installation services available?",
@@ -1539,7 +1586,7 @@ export const dictionaries = {
       description: "Contact Kaha Block for product consultation, volume estimations, delivery, and paving block installation services.",
       quickActions: {
         whatsappLabel: "Primary WhatsApp",
-        whatsappNumber: "0811-9753-030",
+        whatsappNumber: "0811 975 3030",
         whatsappDesc: "Product and order consultation",
         whatsappAction: "Start a Chat",
         emailLabel: "Email",
@@ -1590,13 +1637,13 @@ export const dictionaries = {
       mapIframeTitle: "Kaha Block Factory Location",
       infoStrip: {
         altContactLabel: "Alternative Contact",
-        altContactValue: "0855-8893-030",
+        altContactValue: "0855 889 3030",
         altContactDesc: "Additional number for further enquiries",
         coverageLabel: "Service Coverage",
         coverageValue: "Greater Jakarta & Other Regions",
         coverageDesc: "Delivery and installation are confirmed according to project requirements",
         facebookLabel: "Facebook",
-        facebookValue: "Richard KahaBlock id",
+        facebookValue: "Richard Kahablock id",
         facebookDesc: "Operational updates and product media",
       },
       processFlow: {
@@ -1606,24 +1653,24 @@ export const dictionaries = {
         steps: [
           {
             number: "01",
-            title: "Initial Inquiry",
-            desc: "The team receives initial information regarding site and product requirements.",
+            title: "Consultation & Review",
+            desc: "Initial discussion regarding products, volume estimates, delivery, and site installation requirements."
           },
           {
             number: "02",
-            title: "Requirements Review",
-            desc: "Product types, volume, delivery, and installation requirements are reviewed in detail.",
+            title: "Quotation & Approval",
+            desc: "Issuance of official quotation. For large volumes or specific requirements, pre-ordering at least 1 month in advance is recommended."
           },
           {
             number: "03",
-            title: "Quotation & Schedule",
-            desc: "Official quotation and schedule timeline are mutually confirmed.",
+            title: "Payment & Scheduling",
+            desc: "Production or delivery scheduling is secured upon receipt of the initial down payment (50% DP). CBD is available for certain purchases."
           },
           {
             number: "04",
-            title: "Delivery or Installation",
-            desc: "Products are delivered or installation work is executed as agreed.",
-          },
+            title: "Execution & Final Settlement",
+            desc: "Material delivery or installation work (from ground preparation to finish) is executed, followed by balance settlement."
+          }
         ],
       },
       finalCta: {
@@ -1653,6 +1700,10 @@ export const dictionaries = {
             a: "Yes. We offer both material-only supply as well as full turnkey supply and professional installation by skilled crews.",
           },
           {
+            q: "What are the payment terms?",
+            a: "Payment is processed with a 50% down payment to secure production and delivery schedules. The balance is settled upon delivery or upon completion of installation. CBD (Cash Before Delivery) is available for certain purchases."
+          },
+          {
             q: "How can I receive an official quotation?",
             a: "You can reach our team via WhatsApp or Email with your desired products, volume estimates, and site location to receive an official written quotation.",
           },
@@ -1663,9 +1714,10 @@ export const dictionaries = {
       menuTitle: "Menu",
       contactTitle: "Contact & Location",
       socialTitle: "Social Media",
-      facebookText: "Richard KahaBlock id",
+      facebookText: "Richard Kahablock id",
       instagramText: "@kahablock",
       rights: "PT Kaha Sukses Mandiri. All Rights Reserved.",
+      tagline: "Solid at every step, trusted for every project.",
     },
   },
 };

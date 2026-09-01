@@ -8,7 +8,7 @@ export const article8Id: BlogPost = {
   category: "Panduan & Perbandingan",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "10 menit baca",
   seoTitle: "Perbandingan Paving Block vs Aspal vs Cor Beton",
   seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, resapan air hujan, dan fleksibilitas.",
@@ -27,7 +27,7 @@ export const article8Id: BlogPost = {
       list: {
         title: "Kelebihan Utama Paving Block:",
         items: [
-          "Kemudahan Akses Perbaikan Utilitas Bawah Tanah: Jika di kemudian hari perlu dilakukan penggalian pipa air PDAM, kabel optik internet, kabel PLN, atau pipa gas, paving block dapat dibongkar secara selektif per bagian tanpa merusak struktur dan dapat dipasang kembali 100% menggunakan balok yang sama tanpa meninggalkan bekas tambalan.",
+          "Kemudahan Akses Perbaikan Utilitas Bawah Tanah: Jika di kemudian hari perlu dilakukan penggalian pipa air PDAM, kabel optik internet, kabel PLN, atau pipa gas, paving block dapat dibongkar secara selektif per bagian tanpa merusak keseluruhan struktur dan umumnya dapat dipasang kembali menggunakan balok yang sama tanpa meninggalkan bekas tambalan mencolok.",
           "Daya Serap Air Melalui Garis Nat: Celah nat antar-balok memungkinkan sebagian air hujan meresap alami ke dalam tanah dasar, membantu menjaga konservasi air tanah dan mengurangi beban debit limpasan saluran drainase permukaan.",
           "Estetika Visual dan Fleksibilitas Pola Desain: Tersedia dalam aneka bentuk geometris (Truepave bata, Hexagonal, Topi Uskup, Ubin) serta pilihan warna (Abu-abu natural, Merah, Hitam) yang meningkatkan nilai arsitektur lanskap properti.",
           "Tahan Terhadap Tumpahan Oli & Bahan Kimia: Beton paving tidak larut atau melunak saat terpapar tetesan bahan bakar solar atau oli mesin kendaraan.",
@@ -103,9 +103,9 @@ export const article8Id: BlogPost = {
         caption: "Matriks Perbandingan Paving Block vs Aspal vs Cor Beton",
         headers: ["Kriteria Penilaian", "Paving Block", "Aspal Hotmix", "Cor Beton Rigid"],
         rows: [
-          ["Daya Dukung Beban", "Sangat Baik (K-250–K-400 tebal 6-10 cm)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
+          ["Daya Dukung Beban", "Sangat Baik (K-300–K-350 tebal 6-10 cm)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
           ["Kecepatan Siap Pakai", "Bisa langsung dilintasi setelah pemadatan nat", "Bisa dilintasi setelah dingin (beberapa jam)", "Menunggu masa curing 14–28 hari"],
-          ["Perbaikan Utilitas Bawah Tanah", "Sangat Mudah (Bongkar-pasang 100% reusable)", "Sulit (meninggalkan tambalan permanen)", "Sangat Sulit & Mahal (harus di-jackhammer)"],
+          ["Perbaikan Utilitas Bawah Tanah", "Sangat Mudah (Bongkar-pasang reusable)", "Sulit (meninggalkan tambalan permanen)", "Sangat Sulit & Mahal (harus di-jackhammer)"],
           ["Manajemen Resapan Air", "Baik (meresap melalui celah nat)", "Kedap air total (resiko genangan tinggi)", "Kedap air total (perlu got drainase besar)"],
           ["Ketahanan Tumpahan Bahan Bakar/Oli", "Tinggi (kebal pelarut minyak)", "Rendah (bitumen mudah larut & berlubang)", "Tinggi (tahan terhadap pelarut minyak)"],
           ["Variasi Estetika Lanskap", "Sangat Beragam (warna, tekstur, pola)", "Monoton (hitam polos)", "Monoton (abu-abu semen polos)"],
@@ -124,7 +124,7 @@ export const article8Id: BlogPost = {
         items: [
           "Jalan Kompleks Perumahan, Carport, & Area Komersial: Paving block adalah pilihan paling ideal karena keunggulan estetika arsitektur, kenyamanan kecepatan rendah, dan kemudahan penggalian pipa/kabel rumah tangga.",
           "Jalan Tol, Bypass Luar Kota, & Jalur Cepat: Aspal hotmix adalah pilihan standar untuk kenyamanan laju kecepatan tinggi (high-speed ride quality) dengan kebisingan minimal.",
-          "Pelabuhan Peti Kemas & Terminal Truk Kontainer: Paving block heavy-duty 8-10 cm K-400 atau Cor Beton tebal menjadi solusi utama untuk menahan beban statis landing gear trailer.",
+          "Pelabuhan Peti Kemas & Terminal Truk Kontainer: Paving block heavy-duty 8-10 cm bermutu tinggi atau Cor Beton tebal menjadi solusi utama untuk menahan beban statis landing gear trailer.",
         ],
       },
     },
@@ -132,7 +132,7 @@ export const article8Id: BlogPost = {
       id: "keunggulan-kaha-block",
       heading: "6. Keunggulan Paving Presisi dari PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan mutu beton K-250, K-300, hingga K-400 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
+        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan mutu beton K-300 hingga K-350 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
         "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek dan sekitarnya.",
       ],
     },
@@ -143,7 +143,7 @@ export const article8Id: BlogPost = {
       "Paving block menawarkan keseimbangan terbaik antara estetika visual, kemudahan bongkar-pasang utilitas, dan peresapan air.",
       "Aspal unggul dalam kenyamanan laju kecepatan tinggi, namun rentan rusak terhadap genangan air dan tumpahan oli.",
       "Cor beton memiliki kekuatan beban gandar sangat tinggi, namun memerlukan waktu curing lama dan sangat sulit dibongkar jika terjadi kerusakan pipa bawah tanah.",
-      "Paving block Kaha Block mutu K-250–K-400 mesin full otomatis hidrolik menghadirkan daya tahan beton padat dengan fleksibilitas sistem modular.",
+      "Paving block Kaha Block mutu K-300–K-350 mesin full otomatis hidrolik menghadirkan daya tahan beton padat dengan fleksibilitas sistem modular.",
     ],
   },
   faq: {
@@ -155,7 +155,7 @@ export const article8Id: BlogPost = {
       },
       {
         question: "Bisakah paving block menahan beban truk tangki air atau truk pemadam kebakaran?",
-        answer: "Ya, paving block dengan ketebalan 8 cm mutu K-300/K-400 yang dipasang dengan pola herringbone di atas pondasi batu pecah padat mampu menahan beban truk pemadam kebakaran dan kendaraan operasional bertonase berat.",
+        answer: "Ya, paving block dengan ketebalan 8 cm mutu K-300 hingga K-350 yang dipasang dengan pola herringbone di atas pondasi batu pecah padat mampu menahan beban truk pemadam kebakaran dan kendaraan operasional bertonase berat.",
       },
       {
         question: "Mengapa kompleks perumahan modern lebih menyukai paving block daripada aspal?",
@@ -182,7 +182,7 @@ export const article8En: BlogPost = {
   category: "Guides & Comparisons",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "10 min read",
   seoTitle: "Concrete Pavers vs Asphalt vs Concrete Slabs",
   seoDescription: "In-depth engineering comparison of concrete paving blocks, hotmix asphalt, and rigid cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
@@ -201,7 +201,7 @@ export const article8En: BlogPost = {
       list: {
         title: "Key Advantages of Concrete Pavers:",
         items: [
-          "Effortless Underground Utility Access: When subterranean water mains, fiber optic cables, or gas pipelines require maintenance, individual blocks can be lifted selectively without heavy machinery and re-laid 100% with original units, leaving zero trench scars.",
+          "Effortless Underground Utility Access: When subterranean water mains, fiber optic cables, or gas pipelines require maintenance, individual blocks can be lifted selectively without heavy machinery and generally re-laid with original units, leaving minimal trench scars.",
           "Surface Rainwater Infiltration: Sand-filled joints allow partial rainwater infiltration into the subbase, reducing stormwater runoff peaks and mitigating urban localized flooding.",
           "Architectural Aesthetics & Design Versatility: Available in varied geometric shapes (Truepave rectangular, Hexagonal, Bishop-Hat / Topi Uskup, Square Tile) and earthy mineral pigments (Natural Grey, Terracotta Red, Charcoal Black).",
           "Chemical & Hydrocarbon Resistance: Dense hydraulic concrete does not dissolve, soften, or rut when exposed to diesel spills, motor oils, or automotive lubricants.",
@@ -277,9 +277,9 @@ export const article8En: BlogPost = {
         caption: "Comprehensive Comparison: Concrete Pavers vs. Asphalt vs. Rigid Concrete",
         headers: ["Evaluation Parameter", "Segmental Concrete Pavers", "Hotmix Asphalt", "Rigid Cast-in-Place Concrete"],
         rows: [
-          ["Structural Load Capacity", "Very High (K-250–K-400 in 6-10 cm)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
+          ["Structural Load Capacity", "Very High (K-300–K-350 in 6-10 cm)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
           ["Traffic Readiness Time", "Instantaneous after final joint compaction", "Fast (once cooled, a few hours)", "Slow (14–28 days mandatory curing)"],
-          ["Underground Utility Access", "Effortless (100% reusable blocks, no scars)", "Difficult (leaves permanent trench patches)", "Extremely Difficult & Costly (destructive jackhammer)"],
+          ["Underground Utility Access", "Effortless (reusable blocks, minimal scars)", "Difficult (leaves permanent trench patches)", "Extremely Difficult & Costly (destructive jackhammer)"],
           ["Stormwater Permeability", "High (infiltrates through joint voids)", "Impermeable (high runoff velocity)", "Impermeable (requires large drainage gutters)"],
           ["Fuel & Chemical Resistance", "High (immune to oil and diesel softening)", "Low (bitumen dissolves and potholes form)", "High (chemically resistant to oil)"],
           ["Architectural Landscape Value", "Extensive (geometric patterns & mineral colors)", "Monolithic (uniform black plane)", "Monolithic (utilitarian pale grey)"],
@@ -298,7 +298,7 @@ export const article8En: BlogPost = {
         items: [
           "Residential Communities, Commercial Plazas, & Carports: Concrete paving blocks represent the premier choice for visual elegance, traffic-calming safety, and seamless utility serviceability.",
           "Highways, Regional Arterials, & High-Speed Corridors: Hotmix asphalt remains standard for high-speed continuous driving comfort.",
-          "Container Terminals, Heavy Freight Yards, & Loading Aprons: Heavy-duty 8–10 cm K-400 paving blocks or heavy concrete slabs provide superior resistance against stationary point loads and fuel drippings.",
+          "Container Terminals, Heavy Freight Yards, & Loading Aprons: Heavy-duty 8–10 cm high-strength paving blocks or heavy concrete slabs provide superior resistance against stationary point loads and fuel drippings.",
         ],
       },
     },
@@ -306,7 +306,7 @@ export const article8En: BlogPost = {
       id: "kaha-manufacturing-excellence",
       heading: "6. Precision Manufacturing by PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-250, K-300, and K-400 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
+        "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-300 and K-350 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
         "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta and surrounding regions.",
       ],
     },
@@ -329,7 +329,7 @@ export const article8En: BlogPost = {
       },
       {
         question: "Can concrete pavers support emergency fire trucks and water tanker vehicles?",
-        answer: "Yes, 8 cm K-300/K-400 pavers laid in a 45° herringbone pattern over a compacted aggregate base are engineered to support fire engines and municipal heavy service vehicles safely.",
+        answer: "Yes, 8 cm K-300 to K-350 pavers laid in a 45° herringbone pattern over a compacted aggregate base are engineered to support fire engines and municipal heavy service vehicles safely.",
       },
       {
         question: "Why do master-planned residential estates favor concrete pavers over asphalt?",

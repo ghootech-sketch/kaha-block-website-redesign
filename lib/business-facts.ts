@@ -7,7 +7,7 @@ export const BUSINESS_FACTS = {
   brandName: "Kaha Block",
   legalName: "PT Kaha Sukses Mandiri",
   foundingYear: 2015,
-  foundingDate: "2015-01-01",
+  foundingDate: "2015",
   domain: "https://kahablock.com",
 
   // Factory & Office Physical Location
@@ -24,9 +24,9 @@ export const BUSINESS_FACTS = {
 
   // Contact Channels
   contact: {
-    primaryPhoneDisplay: "0811-9753-030",
+    primaryPhoneDisplay: "0811 975 3030",
     primaryPhoneE164: "+628119753030",
-    altPhoneDisplay: "0855-8893-030",
+    altPhoneDisplay: "0855 889 3030",
     altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
     whatsappUrl: "https://wa.me/628119753030",
@@ -45,15 +45,19 @@ export const BUSINESS_FACTS = {
       en: "Fully automated hydraulic block machines",
     },
     concreteGrades: {
-      id: "Pilihan mutu beton K-250, K-300, dan K-400",
-      en: "Concrete strength grades K-250, K-300, and K-400",
+      id: "Pilihan mutu beton K-300 hingga K-350",
+      en: "Concrete strength grades K-300 to K-350",
+    },
+    rawMaterials: {
+      id: "Semen curah Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, pasir Bangka",
+      en: "Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, Bangka sand",
     },
   },
 
   // Verified Online Profiles
   social: {
     instagram: "https://www.instagram.com/kahablock/",
-    facebookProfileText: "Richard KahaBlock id",
+    facebookProfileText: "Richard Kahablock id",
   },
 } as const;
 

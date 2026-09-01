@@ -8,12 +8,12 @@ export const article7Id: BlogPost = {
   category: "Pemasangan & Perawatan",
   categorySlug: "installation",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
   seoTitle: "Tips Merawat Paving Block Bersih & Bebas Lumut",
   seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: teknik pembersihan rutin, pencucian bertekanan, dan pengisian pasir nat.",
   intro: [
-    "Paving block berkualitas tinggi dengan mutu K-250, K-300, hingga K-400 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang luar biasa terhadap cuaca tropis dan beban lalu lintas harian.",
+    "Paving block berkualitas tinggi dengan mutu K-300 hingga K-350 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang luar biasa terhadap cuaca tropis dan beban lalu lintas harian.",
     "Meskipun demikian, sebagai perkerasan modular luar ruangan (outdoor) yang terpapar langsung oleh curah hujan tinggi, kelembapan udara tropis, terik sinar ultraviolet matahari, serta ceceran kotoran organik dan oli kendaraan, perkerasan paving tetap memerlukan perawatan berkala yang terencana.",
     "Melalui panduan pemeliharaan komprehensif ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan teknik-teknik perawatan praktis untuk menjaga kebersihan visual, mencegah timbulnya lumut dan gulma, serta mempertahankan integritas struktural sambungan nat paving block Anda selama bertahun-tahun.",
   ],
@@ -126,8 +126,8 @@ export const article7Id: BlogPost = {
       id: "kualitas-paving-kaha",
       heading: "7. Kualitas Produk Kaha Block Mempermudah Pemeliharaan",
       paragraphs: [
-        "Paving block hasil cetakan mesin full otomatis hidrolik dari PT Kaha Sukses Mandiri (Kaha Block) memiliki kepadatan beton K-250, K-300, hingga K-400 yang sangat tinggi dengan porositas rendah.",
-        "Kepadatan matriks beton yang rapat ini secara alami membatasi peresapan air ke dalam balok, sehingga paving Kaha Block jauh lebih tahan terhadap lumut, mudah dibersihkan, dan mempertahankan warna solidnya dalam jangka panjang.",
+        "Paving block hasil cetakan mesin full otomatis hidrolik dari PT Kaha Sukses Mandiri (Kaha Block) memiliki kepadatan beton K-300 hingga K-350 yang sangat tinggi dengan porositas rendah.",
+        "Kepadatan matriks beton yang rapat ini membatasi peresapan air ke dalam balok, yang membantu mengurangi pertumbuhan lumut, lebih mudah dibersihkan, dan mempertahankan warna solidnya dalam jangka panjang.",
       ],
     },
   ],
@@ -154,7 +154,7 @@ export const article7Id: BlogPost = {
       },
       {
         question: "Berapa lama umur pakai paving block jika dirawat dengan baik?",
-        answer: "Paving block mutu K-250, K-300, hingga K-400 yang dipasang di atas pondasi padat dan dirawat secara teratur dapat bertahan kokoh hingga puluhan tahun dengan perawatan minimal.",
+        answer: "Paving block mutu K-300 hingga K-350 yang dipasang di atas pondasi padat dan dirawat secara teratur dirancang untuk memiliki daya tahan jangka panjang dengan perawatan minimal.",
       },
       {
         question: "Apakah Kaha Block melayani konsultasi perbaikan perkerasan paving yang rusak?",
@@ -177,14 +177,14 @@ export const article7En: BlogPost = {
   category: "Installation & Care",
   categorySlug: "installation",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "9 min read",
   seoTitle: "Concrete Paver Maintenance & Cleaning Guide",
   seoDescription: "Step-by-step practical guide to maintaining concrete paving blocks: removing moss, weed prevention, joint sand replenishment, and high-pressure washing best practices.",
   intro: [
-    "High-performance concrete paving blocks with K-250, K-300, and K-400 compressive strength manufactured using fully automated hydraulic machinery demonstrate exceptional inherent durability against tropical weathering and daily vehicular traffic.",
+    "High-performance concrete paving blocks with K-300 and K-350 compressive strength manufactured using fully automated hydraulic machinery demonstrate exceptional inherent durability against tropical weathering and daily vehicular traffic.",
     "However, as an outdoor segmental pavement system continuously subjected to intense monsoon rainfall, high ambient tropical humidity, solar ultraviolet exposure, organic airborne detritus, and vehicle fluid leaks, regular preventive maintenance is essential.",
-    "In this comprehensive maintenance manual, PT Kaha Sukses Mandiri (Kaha Block) outlines practical methods to preserve visual cleanliness, prevent moss and weed infestation, and maintain the structural interlock of your segmental paving over decades of service.",
+    "In this comprehensive maintenance manual, PT Kaha Sukses Mandiri (Kaha Block) outlines practical methods to preserve visual cleanliness, prevent moss and weed infestation, and maintain the structural interlock of your segmental paving over its long service life.",
   ],
   sections: [
     {
@@ -295,8 +295,8 @@ export const article7En: BlogPost = {
       id: "kaha-block-durability",
       heading: "7. How Kaha Block Hydraulic Quality Simplifies Maintenance",
       paragraphs: [
-        "Paving blocks produced with high-tonnage automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) feature high-density K-250, K-300, and K-400 concrete matrices with very low capillary absorption.",
-        "This structural density limits water ingress, making Kaha Block pavers naturally resistant to moss penetration, easy to clean, and capable of retaining solid mineral color tones over decades of service.",
+        "Paving blocks produced with high-tonnage automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) feature high-density K-300 and K-350 concrete matrices with very low capillary absorption.",
+        "This structural density limits water ingress, which helps reduce moss penetration, makes cleaning easier, and retains color tones over its long service life.",
       ],
     },
   ],
@@ -323,7 +323,7 @@ export const article7En: BlogPost = {
       },
       {
         question: "How long can concrete paving blocks last with proper maintenance?",
-        answer: "K-250, K-300, and K-400 grade paving blocks installed over properly engineered subbases and maintained regularly can deliver a service life spanning several decades.",
+        answer: "K-300 and K-350 grade paving blocks installed over properly engineered subbases and maintained regularly can deliver a service life with long-term durability.",
       },
       {
         question: "Does Kaha Block offer technical advice for repairing existing paved areas?",

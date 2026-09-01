@@ -8,7 +8,7 @@ export const article4Id: BlogPost = {
   category: "Panduan & Perencanaan",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
   seoTitle: "Cara Menghitung Kebutuhan Paving Block & Material",
   seoDescription: "Pelajari cara menghitung luas area, volume kebutuhan paving block per m², faktor cadangan potongan (waste), kanstein pembatas, dan pasir alas secara akurat.",
@@ -116,7 +116,7 @@ export const article4Id: BlogPost = {
       list: {
         title: "Tahapan Rencana Manajemen Kerja:",
         items: [
-          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-250, K-300, atau K-400).",
+          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-300 atau K-350).",
           "Tahap 2: Pilih bentuk geometri paving (Truepave, Hexa, atau Ubin) dan pola susunan yang diinginkan (herringbone, basket weave, atau susun bata).",
           "Tahap 3: Ukur luas bersih di lapangan, bagi bidang tidak beraturan, dan kalikan dengan faktor cadangan (waste allowance 3%–10%).",
           "Tahap 4: Hitung volume kebutuhan agregat base course, pasir bedding, pasir pengisi nat, dan jumlah unit kanstein pembatas.",
@@ -179,7 +179,7 @@ export const article4En: BlogPost = {
   category: "Guides & Planning",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "9 min read",
   seoTitle: "How to Calculate Paving Block & Subbase Volumes",
   seoDescription: "Step-by-step guide to calculating pavement area, estimating paver unit quantities, factoring cutting allowances, and determining subbase aggregate and sand volumes.",
@@ -287,7 +287,7 @@ export const article4En: BlogPost = {
       list: {
         title: "Project Management Execution Stages:",
         items: [
-          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-250, K-300, or K-400).",
+          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-300 or K-350).",
           "Stage 2: Select paver geometry (Truepave, Hexa, or Tile) and determine the laying pattern (herringbone, basket weave, or stretcher bond).",
           "Stage 3: Measure net surface area accurately, divide irregular boundaries, and add the appropriate cutting waste factor (3%–10%).",
           "Stage 4: Quantify aggregate base volumes, bedding sand cubic meterage, jointing sand, and precast concrete curb quantities.",
@@ -299,7 +299,7 @@ export const article4En: BlogPost = {
       id: "kaha-block-technical-support",
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
-        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-250, K-300, and K-400 concrete strength.",
+        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-300 and K-350 concrete strength.",
         "Our experienced technical team is ready to assist you with accurate material takeoffs, product recommendations, and turnkey supply-and-install options across Greater Jakarta and outer regional project destinations.",
       ],
     },
@@ -331,7 +331,7 @@ export const article4En: BlogPost = {
       },
       {
         question: "Can Kaha Block assist with on-site area surveys and material takeoffs?",
-        answer: "Yes, for qualifying projects across Greater Jakarta, PT Kaha Sukses Mandiri can provide technical consultations and on-site volume verification.",
+        answer: "Yes, PT Kaha Sukses Mandiri provides technical consultations for projects across Greater Jakarta.",
       },
     ],
   },

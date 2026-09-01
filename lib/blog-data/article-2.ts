@@ -8,7 +8,7 @@ export const article2Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "8 menit baca",
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami perbedaan daya dukung, kapasitas beban kendaraan, dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga kawasan industri.",
@@ -140,7 +140,7 @@ export const article2Id: BlogPost = {
       id: "jaminan-mutu-kaha",
       heading: "7. Kualitas Presisi Produksi Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri memproduksi varian paving block 6 cm dan 8 cm mutu K-250, K-300, hingga K-400 menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang. Rincian spesifikasi produk dapat dilihat di [Katalog Produk Kaha Block](/id/products).",
+        "PT Kaha Sukses Mandiri memproduksi varian paving block 6 cm dan 8 cm mutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang. Rincian spesifikasi produk dapat dilihat di [Katalog Produk Kaha Block](/id/products).",
         "Dengan kontrol bahan baku yang ketat dan tekanan hidrolik tinggi yang konsisten, balok paving yang dihasilkan memiliki keseragaman ketebalan yang sangat presisi, meminimalisir deviasi elevasi saat dipasang berdampingan di lapangan. Untuk konsultasi volume dan pemesanan, kunjungi [Halaman Kontak Kaha Block](/id/contact).",
       ],
     },
@@ -178,7 +178,7 @@ export const article2Id: BlogPost = {
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
     "mutu-beton-k300-k350-paving-block",
-    "cara-menghitung-kebutuhan-paving-block-per-m2",
+    "cara-merencanakan-kebutuhan-paving-block",
   ],
 };
 
@@ -190,7 +190,7 @@ export const article2En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "8 min read",
   seoTitle: "6 cm vs 8 cm vs 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
@@ -317,7 +317,7 @@ export const article2En: BlogPost = {
       id: "kaha-manufacturing-standards",
       heading: "7. High-Precision Production at Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri produces high-grade 6 cm and 8 cm concrete pavers with K-250, K-300, and K-400 compressive ratings using fully automated hydraulic machinery at our Cisauk, Tangerang facility. Check full specifications in our [Product Catalog](/en/products).",
+        "PT Kaha Sukses Mandiri produces high-grade 6 cm and 8 cm concrete pavers with K-300 and K-350 compressive ratings using fully automated hydraulic machinery at our Cisauk, Tangerang facility. Check full specifications in our [Product Catalog](/en/products).",
         "Rigorous quality control and synchronized hydraulic vibration guarantee consistent block density and millimetric height accuracy, ensuring seamless alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
       ],
     },
@@ -348,13 +348,13 @@ export const article2En: BlogPost = {
       },
       {
         question: "How can I request paver samples from Kaha Block?",
-        answer: "Contact PT Kaha Sukses Mandiri via our official WhatsApp to discuss project requirements and arrange product sample inspections.",
+        answer: "Contact PT Kaha Sukses Mandiri via our official WhatsApp to discuss your project requirements.",
       },
     ],
   },
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
     "mutu-beton-k300-k350-paving-block",
-    "cara-menghitung-kebutuhan-paving-block-per-m2",
+    "cara-merencanakan-kebutuhan-paving-block",
   ],
 };

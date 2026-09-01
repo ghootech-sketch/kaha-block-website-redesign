@@ -8,7 +8,7 @@ export const article9Id: BlogPost = {
   category: "Keberlanjutan & Drainase",
   categorySlug: "sustainability",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "10 menit baca",
   seoTitle: "Paving Block Ramah Lingkungan & Resapan Air Hujan",
   seoDescription: "Peran perkerasan paving block dalam manajemen air hujan perkotaan, mitigasi banjir, konservasi air tanah alami, dan pengurangan efek pulau panas urban.",
@@ -47,7 +47,7 @@ export const article9Id: BlogPost = {
           id: "infiltrasi-melalui-nat",
           heading: "Infiltrasi Gravitasi Melalui Celah Pasir Silika",
           paragraphs: [
-            "Meskipun balok beton paving itu sendiri memiliki kepadatan mutu K-250, K-300, hingga K-400 yang sangat padat dan kokoh, air hujan yang jatuh di atas permukaan miring dialirkan secara gravitasi menuju ribuan garis nat yang terisi pasir silika berpori.",
+            "Meskipun balok beton paving itu sendiri memiliki kepadatan mutu K-300 hingga K-350 yang sangat padat dan kokoh, air hujan yang jatuh di atas permukaan miring dialirkan secara gravitasi menuju ribuan garis nat yang terisi pasir silika berpori.",
             "Air kemudian meresap turun menembus lapisan pasir alas (bedding sand tebal 3–5 cm) dan lapisan pondasi batu agregat (base course) yang porous, sebelum akhirnya diserap secara bertahap oleh lapisan tanah dasar (subgrade) di bawahnya.",
           ],
         },
@@ -88,7 +88,7 @@ export const article9Id: BlogPost = {
           ["Indeks Reflektansi Matahari (SRI)", "Sedang hingga Tinggi (Warna Terang/Natural)", "Sangat Rendah (Menyerap Panas Ekstrem)", "Sedang (Memantulkan Silau Matahari)"],
           ["Pelepasan Panas Malam Hari", "Relatif Cepat (struktur modular melepaskan panas)", "Sangat Lambat (panas terperangkap lama)", "Sedang"],
           ["Kapasitas Peresapan Air Tanah", "Ada (melalui ribuan celah nat berpori)", "Nol (100% kedap air)", "Nol (100% kedap air)"],
-          ["Pemanfaatan Kembali Material", "100% Dapat Digunakan Kembali (Re-usable)", "Perlu Didaur Ulang Pabrik (Re-milling)", "Menjadi Puing Konstruksi Rusak"],
+          ["Pemanfaatan Kembali Material", "Dapat Digunakan Kembali (Re-usable)", "Perlu Didaur Ulang Pabrik (Re-milling)", "Menjadi Puing Konstruksi Rusak"],
         ],
       },
     },
@@ -97,14 +97,14 @@ export const article9Id: BlogPost = {
       heading: "5. Aspek Sirkularitas Material dan Keberlanjutan Konstruksi",
       paragraphs: [
         "Keberlanjutan konstruksi modern tidak hanya diukur dari kinerja operasional harian, tetapi juga dari jejak karbon material dan prinsip ekonomi sirkular (circular economy).",
-        "Paving block beton pracetak diproduksi dengan konsumsi energi yang jauh lebih rendah dibandingkan proses pengaspalan panas yang membutuhkan pemanasan bitumen pada suhu di atas 150°C. Selain itu, masa pakai paving block yang mencapai puluhan tahun serta kemampuannya untuk dibongkar dan dipasang kembali tanpa menghasilkan limbah puing menjadikannya salah satu material konstruksi jalan yang paling ramah lingkungan.",
+        "Paving block beton pracetak diproduksi dengan konsumsi energi yang jauh lebih rendah dibandingkan proses pengaspalan panas yang membutuhkan pemanasan bitumen pada suhu di atas 150°C. Selain itu, masa pakai paving block yang panjang serta kemampuannya untuk dibongkar dan dipasang kembali tanpa menghasilkan limbah puing menjadikannya salah satu material konstruksi jalan yang paling ramah lingkungan.",
       ],
     },
     {
       id: "peran-kaha-block-keberlanjutan",
       heading: "6. Komitmen Mutu dan Keberlanjutan PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-250, K-300, hingga K-400 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
+        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
         "Proses produksi dengan kontrol takaran material yang presisi dan pemadatan hidrolik bertekanan tinggi menghasilkan produk dengan tingkat kepadatan optimal, ketahanan abrasi tinggi, serta minim sisa limbah produksi (zero manufacturing waste).",
         "Kaha Block berkomitmen mendukung pembangunan infrastruktur perumahan, komersial, dan industri yang berwawasan lingkungan di wilayah Jabodetabek dan sekitarnya melalui penyediaan material perkerasan ramah lingkungan yang kokoh dan berestetika tinggi.",
       ],
@@ -117,7 +117,7 @@ export const article9Id: BlogPost = {
       "Lapisan pasir dan agregat di bawah paving berfungsi sebagai filter mekanis alami penyaring partikel sedimen.",
       "Integrasi kemiringan paving dengan sumur resapan dan rain garden mendukung konsep tata kelola air perkotaan berkelanjutan (SuDS).",
       "Paving beton memiliki nilai indeks reflektansi termal yang lebih ramah lingkungan dibandingkan aspal hitam yang menyerap panas berlebih.",
-      "Kaha Block memproduksi paving block presisi K-250–K-400 mesin full otomatis hidrolik yang ramah lingkungan dan 100% dapat digunakan kembali.",
+      "Kaha Block memproduksi paving block presisi K-300–K-350 mesin full otomatis hidrolik yang ramah lingkungan dan dapat digunakan kembali.",
     ],
   },
   faq: {
@@ -133,7 +133,7 @@ export const article9Id: BlogPost = {
       },
       {
         question: "Mengapa paving block dianggap lebih ramah lingkungan dibandingkan cor beton?",
-        answer: "Karena paving block merupakan sistem modular yang 100% dapat dibongkar dan dipasang kembali tanpa menghasilkan puing beton runtuhan saat ada perbaikan pipa bawah tanah.",
+        answer: "Karena paving block merupakan sistem modular yang dapat dibongkar dan dipasang kembali tanpa menghasilkan puing beton runtuhan berlebihan saat ada perbaikan pipa bawah tanah.",
       },
       {
         question: "Apakah Kaha Block melayani konsultasi desain tata letak perkerasan untuk proyek hijau?",
@@ -156,7 +156,7 @@ export const article9En: BlogPost = {
   category: "Sustainability & Drainage",
   categorySlug: "sustainability",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-08-31",
+  updatedAt: "2026-09-01",
   readingTime: "10 min read",
   seoTitle: "Eco-Friendly Concrete Pavers & Stormwater Runoff Control",
   seoDescription: "Explore how permeable concrete block pavements mitigate urban flooding, recharge groundwater aquifers, and combat urban heat island effects.",
@@ -195,7 +195,7 @@ export const article9En: BlogPost = {
           id: "gravity-joint-infiltration",
           heading: "Gravity Infiltration Through Silica Sand Joints",
           paragraphs: [
-            "Even though individual K-250, K-300, and K-400 grade concrete units possess dense, high-strength compressive matrices, rainwater landing on the graded surface is directed into thousands of permeable silica-sand joint lines.",
+            "Even though individual K-300 and K-350 grade concrete units possess dense, high-strength compressive matrices, rainwater landing on the graded surface is directed into thousands of permeable silica-sand joint lines.",
             "Water filters downward through the uncompacted bedding sand layer and open-void crushed aggregate subbase course, before percolating gradually into the natural subgrade soil.",
           ],
         },
@@ -236,7 +236,7 @@ export const article9En: BlogPost = {
           ["Solar Reflectance Index (SRI)", "Moderate to High (Natural & Light Mineral Tones)", "Very Low (Intense Heat Absorption)", "Moderate (High Reflective Glare)"],
           ["Nighttime Thermal Release", "Rapid (Segmental joints dissipate trapped heat)", "Very Slow (Sustained nocturnal heat re-radiation)", "Moderate"],
           ["Subgrade Groundwater Infiltration", "Active (Via permeable silica joint network)", "Zero (100% Impermeable barrier)", "Zero (100% Impermeable barrier)"],
-          ["Material Reusability & Circularity", "100% Non-Destructive Reusable Units", "Requires Heavy Energy Re-milling", "Becomes Crushed Demolition Waste"],
+          ["Material Reusability & Circularity", "Non-Destructive Reusable Units", "Requires Heavy Energy Re-milling", "Becomes Crushed Demolition Waste"],
         ],
       },
     },
@@ -252,7 +252,7 @@ export const article9En: BlogPost = {
       id: "kaha-sustainability-commitment",
       heading: "6. PT Kaha Sukses Mandiri Commitment to Environmental Quality",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures durable K-250, K-300, and K-400 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
+        "PT Kaha Sukses Mandiri manufactures durable K-300 and K-350 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
         "Precision batching systems and high-pressure hydraulic compaction ensure optimal material density, superior abrasion resistance, and near-zero manufacturing waste.",
         "Kaha Block is dedicated to supporting environmentally conscious residential, commercial, and industrial developments throughout Greater Jakarta with durable, aesthetically refined, and sustainable segmental paving solutions.",
       ],
@@ -265,7 +265,7 @@ export const article9En: BlogPost = {
       "The underlying sand and aggregate base matrix acts as a natural physical filter trapping particulate pollutants.",
       "Pairing paved cross-slopes with rain gardens and infiltration swales creates an integrated Sustainable Urban Drainage System (SuDS).",
       "Concrete pavers exhibit higher Solar Reflectance Index (SRI) values than dark asphalt, helping mitigate urban heat island effects.",
-      "Kaha Block manufactures precision hydraulic K-250–K-400 pavers that provide 100% non-destructive reusability for circular infrastructure.",
+      "Kaha Block manufactures precision hydraulic K-300–K-350 pavers that provide non-destructive reusability for circular infrastructure.",
     ],
   },
   faq: {
@@ -281,11 +281,11 @@ export const article9En: BlogPost = {
       },
       {
         question: "Why are segmental pavers considered more environmentally sustainable than cast-in-place concrete slabs?",
-        answer: "Because segmental pavers are 100% reusable: when underground pipes need repairs, blocks are lifted and re-installed without producing jackhammered concrete rubble or requiring new raw materials.",
+        answer: "Because segmental pavers are reusable: when underground pipes need repairs, blocks are lifted and re-installed without producing jackhammered concrete rubble or requiring significant new raw materials.",
       },
       {
         question: "Does Kaha Block provide technical consultation for eco-friendly paving layouts?",
-        answer: "Yes, PT Kaha Sukses Mandiri's engineering team offers comprehensive guidance on paver selection, joint configurations, and drainage integration for sustainable green developments.",
+        answer: "Yes, PT Kaha Sukses Mandiri's team offers guidance on paver selection and configurations for sustainable developments.",
       },
     ],
   },

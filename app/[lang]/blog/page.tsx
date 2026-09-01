@@ -308,8 +308,8 @@ export default async function BlogIndexPage({
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
                     {isEn
-                      ? "Consult on product choices, technical site preparation, and receive verified quotations for K-250, K-300, and K-400 paving blocks produced with fully automated hydraulic machinery."
-                      : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-250, K-300, hingga K-400 mesin full otomatis hidrolik untuk proyek Anda."}
+                      ? "Consult on product choices, technical site preparation, and receive verified quotations for K-300 and K-350 paving blocks produced with fully automated hydraulic machinery."
+                      : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-300 hingga K-350 mesin full otomatis hidrolik untuk proyek Anda."}
                   </p>
                 </div>
 
