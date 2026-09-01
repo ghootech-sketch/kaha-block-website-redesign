@@ -117,10 +117,10 @@ export const article9Id: BlogPost = {
         "Perencanaan perkerasan paving ramah lingkungan dan resapan air berpedoman pada standar tata kelola hidrologi:",
       ],
       list: {
-        title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
+        title: "Daftar Rujukan Standar & Pedoman:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional spesifikasi mutu fisik dan penyerapan air.",
-          "[CMHA Tech Spec 18](https://masonryandhardscapes.org): Construction of Permeable Interlocking Concrete Pavement Systems (panduan konstruksi sistem perkerasan blok beton lolos air / PICP).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "CMHA Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Concrete Masonry & Hardscapes Association).",
           "[US EPA Low Impact Development (LID)](https://www.epa.gov/nps/urban-runoff-low-impact-development): Stormwater Management Guidelines.",
         ],
       },
@@ -283,8 +283,8 @@ export const article9En: BlogPost = {
       list: {
         title: "Technical Standards & Environmental Guidelines:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — Indonesian National Standard specifying physical requirements and water absorption limits.",
-          "[CMHA Tech Spec 18](https://masonryandhardscapes.org): Construction of Permeable Interlocking Concrete Pavement Systems (guidelines for permeable interlocking concrete pavement / PICP systems).",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
+          "CMHA Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Concrete Masonry & Hardscapes Association).",
           "[US EPA Low Impact Development (LID)](https://www.epa.gov/nps/urban-runoff-low-impact-development): Stormwater Management Guidelines.",
         ],
       },

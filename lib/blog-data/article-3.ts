@@ -119,16 +119,16 @@ export const article3Id: BlogPost = {
     },
     {
       id: "standar-dan-pengujian-mutu",
-      heading: "7. Standar Mutu & Pengujian Kuat Tekan Resmi",
+      heading: "7. Standar Mutu & Pengujian Kuat Tekan",
       paragraphs: [
-        "Pengukuran dan pengujian kuat tekan paving block mengacu pada standar nasional dan pedoman teknis konstruksi:",
+        "Spesifikasi umum paving block dan metode pengujian kuat tekan dibahas dalam sejumlah standar teknis yang relevan, antara lain:",
       ],
       list: {
         title: "Rujukan Standar Mutu & Uji Laboratorium:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional Indonesia mengenai klasifikasi mutu, kuat tekan, dan ketahanan aus bata beton lantai.",
-          "[SNI 1974:2011](https://pesta.bsn.go.id): Cara uji kuat tekan beton dengan benda uji silinder yang dicetak (Badan Standardisasi Nasional / BSN).",
-          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar acuan internasional spesifikasi unit paving block solid).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "SNI 1974:2011: Cara uji kuat tekan beton dengan benda uji silinder yang dicetak (Badan Standardisasi Nasional / BSN).",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },
     },
@@ -272,7 +272,7 @@ export const article3En: BlogPost = {
       paragraphs: [
         "Upon demolding from automated machines, paving blocks undergo mandatory hydration curing to develop their peak compressive capacity through calcium silicate hydrate (C-S-H) crystal formation.",
         "In paving block production, the curing process is critical. Paving blocks should ideally be shielded from direct sun exposure and dry winds that can cause premature water evaporation. Periodic water misting helps maintain adequate moisture, ensuring proper hydration until the concrete reaches maturity.",
-        "Quality assurance is validated using calibrated hydraulic compression testing machines, applying axial loads until failure to certify strict compliance with project specifications.",
+        "Compressive strength testing can be conducted using calibrated compression testing machines, applying gradual axial loads until failure to evaluate the strength performance of the concrete specimens.",
       ],
     },
     {
@@ -285,15 +285,15 @@ export const article3En: BlogPost = {
     },
     {
       id: "technical-standards-and-testing",
-      heading: "7. Compressive Testing Standards & Official Norms",
+      heading: "7. Compressive Testing Standards & Technical Norms",
       paragraphs: [
-        "Quality certification and compressive strength verification for precast concrete pavers comply with formal standards:",
+        "General paving-block specifications and compressive-strength testing methods are covered by recognized technical standards such as:",
       ],
       list: {
         title: "Key Laboratory & Testing Norms:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard specifying compressive strength classes, water absorption, and durability.",
-          "[SNI 1974:2011](https://pesta.bsn.go.id): Standard Test Method for Compressive Strength of Cylindrical Concrete Specimens (National Standardization Agency / BSN).",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
+          "SNI 1974:2011: Standard Test Method for Compressive Strength of Cylindrical Concrete Specimens (National Standardization Agency / BSN).",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },

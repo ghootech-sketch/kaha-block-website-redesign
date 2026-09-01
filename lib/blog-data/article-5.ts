@@ -128,9 +128,9 @@ export const article5Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Teknis Pelaksanaan:",
         items: [
-          "[Spesifikasi Umum Bina Marga](https://binamarga.pu.go.id): Divisi 5 Perkerasan Berbutir dan Divisi 6 Struktur Pondasi Jalan (Kementerian PUPR).",
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar mutu dan spesifikasi fisik perkerasan blok beton.",
-          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (panduan persiapan tanah dasar, perataan pasir alas, dan pemadatan perkerasan blok beton).",
+          "Spesifikasi Umum Bina Marga untuk Jalan dan Jembatan — Divisi 5 (Perkerasan Berbutir) dan Divisi 6 (Struktur Pondasi Jalan), Kementerian PUPR.",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "CMHA Tech Spec 2: Construction of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },
@@ -301,9 +301,9 @@ export const article5En: BlogPost = {
       list: {
         title: "Technical Standards & Construction Codes:",
         items: [
-          "[Indonesian Bina Marga General Specifications](https://binamarga.pu.go.id): Division 5 (Granular Pavements) and Division 6 (Road Base Structures) — Ministry of Public Works (PUPR).",
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard for precast concrete paving units.",
-          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (guidelines for subgrade preparation, bedding sand screeding, and compaction protocols).",
+          "Indonesian Bina Marga General Specifications for Roads and Bridges — Division 5 (Granular Pavements) and Division 6 (Road Base Structures), Ministry of Public Works (PUPR).",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
+          "CMHA Tech Spec 2: Construction of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },

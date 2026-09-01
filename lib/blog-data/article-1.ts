@@ -169,9 +169,9 @@ export const article1Id: BlogPost = {
       list: {
         title: "Rujukan Standar & Pedoman Teknis:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional Indonesia yang mengatur persyaratan mutu fisik, kuat tekan, dan ketahanan aus paving block.",
-          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar spesifikasi unit perkerasan blok beton solid).",
-          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavements (panduan perencanaan struktur perkerasan blok beton).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "CMHA Tech Spec 4: Structural Design of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },
@@ -383,9 +383,9 @@ export const article1En: BlogPost = {
       list: {
         title: "Applicable Technical Standards:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard specifying physical quality, compressive strength, and durability requirements.",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
-          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavements (engineering design guideline for concrete block pavements).",
+          "CMHA Tech Spec 4: Structural Design of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },

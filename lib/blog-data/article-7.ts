@@ -13,49 +13,49 @@ export const article7Id: BlogPost = {
   seoTitle: "Tips Merawat Paving Block Bersih & Bebas Lumut",
   seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: pembersihan rutin, cuci bertekanan, dan pengisian pasir nat.",
   intro: [
-    "Jawaban Langsung: Cara efektif merawat paving block agar awet, bersih, dan bebas lumut adalah dengan menyapu sampah organik secara rutin (1–2x seminggu), mencuci lumut menggunakan mesin semprot bertekanan (water pressure 100–130 bar sudut 45°) dengan sabun pH netral tanpa asam HCL, membersihkan tumpahan oli segera dengan bubuk penyerap, serta melakukan pengisian ulang pasir silika pada celah nat (re-sanding) setiap 1–2 tahun sekali untuk menjaga kuncian antar-balok.",
-    "Paving block berkualitas tinggi dengan mutu K-300 hingga K-350 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang luar biasa terhadap cuaca tropis dan beban lalu lintas harian.",
-    "Meskipun demikian, sebagai perkerasan modular luar ruangan (outdoor) yang terpapar langsung oleh curah hujan tinggi, kelembapan udara tropis, terik sinar ultraviolet matahari, serta ceceran kotoran organik dan oli kendaraan, perkerasan paving tetap memerlukan perawatan berkala yang terencana.",
-    "Melalui panduan pemeliharaan komprehensif ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan teknik-teknik perawatan praktis untuk menjaga kebersihan visual, mencegah timbulnya lumut dan gulma, serta mempertahankan integritas struktural sambungan nat paving block Anda selama bertahun-tahun.",
+    "Jawaban Langsung: Permukaan paving sebaiknya dibersihkan secara rutin dari sampah organik, lumut, gulma, dan noda. Pencucian bertekanan dapat dilakukan secara hati-hati dengan menyesuaikan tekanan serta jarak dan sudut semprotan agar pasir nat tidak terangkat berlebihan, serta menghindari pembersih asam keras (HCL). Kondisi pasir nat perlu diperiksa secara berkala dan diisi kembali (re-sanding) bila mulai berkurang guna menjaga kestabilan kuncian antar-balok.",
+    "Paving block berkualitas tinggi dengan mutu K-300 hingga K-350 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang baik terhadap cuaca tropis dan beban lalu lintas harian.",
+    "Meskipun demikian, sebagai perkerasan modular luar ruangan (outdoor) yang terpapar langsung oleh curah hujan, kelembapan udara tropis, sinar matahari, serta potensi kotoran organik dan oli kendaraan, perkerasan paving tetap memerlukan pemeliharaan berkala.",
+    "Melalui panduan pemeliharaan ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan teknik-teknik perawatan praktis untuk menjaga kebersihan visual, mengurangi timbulnya lumut dan gulma, serta mempertahankan integritas sambungan nat paving block Anda.",
   ],
   sections: [
     {
       id: "pembersihan-rutin-kotoran",
       heading: "1. Pembersihan Rutin dari Daun Kering dan Kotoran Organik",
       paragraphs: [
-        "Langkah pemeliharaan paling mendasar namun sering diabaikan adalah menyapu permukaan paving secara teratur menggunakan sapu lidi atau sapu berbulu kaku (stiff-bristle broom) minimal satu hingga dua kali seminggu.",
-        "Guguran daun basah, tanah humus yang terbawa alas kaki, kotoran burung, dan serbuk sari tanaman yang dibiarkan menumpuk di atas celah nat paving akan mengalami pembusukan alami. Proses pembusukan ini menciptakan lapisan mikro-organik yang subur, menjadi media tumbuh ideal bagi spora lumut hijau dan benih rumput liar.",
-        "Dengan membersihkan serasah organik secara teratur sebelum membusuk, Anda memutus mata rantai pertumbuhan mikroorganisme perusak estetika sejak dini.",
+        "Langkah pemeliharaan paling mendasar adalah menyapu permukaan paving secara teratur menggunakan sapu lidi atau sapu berbulu kaku (stiff-bristle broom).",
+        "Guguran daun basah, tanah humus yang terbawa alas kaki, kotoran burung, dan serbuk sari tanaman yang dibiarkan menumpuk di atas celah nat paving dapat mengalami pembusukan alami. Proses pembusukan ini menciptakan lapisan mikro-organik yang dapat menjadi media tumbuh bagi spora lumut dan benih rumput liar.",
+        "Dengan membersihkan serasah organik secara teratur sebelum membusuk, Anda membantu mencegah pertumbuhan mikroorganisme perusak estetika sejak dini.",
       ],
     },
     {
       id: "pencegahan-dan-pembersihan-lumut",
       heading: "2. Menghilangkan dan Mencegah Pertumbuhan Lumut Serta Jamur",
       paragraphs: [
-        "Di iklim tropis dengan musim hujan berkepanjangan, area perkerasan paving yang berada di bawah naungan pohon rindang atau terlindung dari sinar matahari langsung sangat rentan ditumbuhi lumut hijau yang licin dan membahayakan keselamatan pengguna.",
+        "Di iklim tropis dengan musim hujan berkepanjangan, area perkerasan paving yang berada di bawah naungan pohon rindang atau terlindung dari sinar matahari langsung rentan ditumbuhi lumut yang dapat membuat permukaan licin.",
       ],
       subsections: [
         {
           id: "pencucian-air-tekanan-tinggi",
-          heading: "Pencucian Menggunakan Mesin High-Pressure Washer",
+          heading: "Pencucian Menggunakan Mesin Pembersih Bertekanan",
           paragraphs: [
-            "Gunakan mesin semprot air bertekanan tinggi (high-pressure water cleaner) dengan setelan tekanan terukur (antara 100 hingga 130 bar). Semprotkan air dengan sudut kemiringan nozzle sekitar 45 derajat terhadap permukaan paving.",
-            "PENTING: Hindari menyemprotkan air secara tegak lurus (90 derajat) tepat ke dalam celah garis nat, karena tekanan semprotan yang terlalu deras dapat mengikis dan membongkar pasir pengisi nat (joint sand) yang menjadi kuncian stabilitas balok paving.",
+            "Pencucian bertekanan dapat dilakukan secara hati-hati dengan menyesuaikan tekanan air serta jarak nozzle agar efektif membersihkan kotoran tanpa merusak permukaan beton. Arahkan semprotan dengan sudut miring terhadap permukaan paving.",
+            "PENTING: Hindari menyemprotkan air bertekanan tinggi secara tegak lurus langsung ke dalam celah garis nat, karena tekanan semprotan yang terlalu deras dapat mengikis pasir pengisi nat (joint sand) yang menjadi penopang stabilitas balok paving.",
           ],
         },
         {
           id: "cairan-pembersih-ramah-lingkungan",
-          heading: "Penggunaan Larutan Pembersih Ramah Lingkungan",
+          heading: "Penggunaan Larutan Pembersih yang Sesuai",
           paragraphs: [
-            "Untuk lumut atau jamur hitam yang membandel, gunakan larutan cuka putih encer, larutan sabun pencuci piring cair berbahan dasar lembut, atau cairan pembersih khusus lumut beton yang memiliki pH seimbang.",
-            "Siramkan larutan tersebut ke area berlumut, diamkan selama 15–20 menit agar meresap dan mematikan akar spora lumut, lalu gosok menggunakan sikat plastik berbulu kaku dan bilas dengan air bersih hingga tuntas.",
+            "Untuk lumut atau jamur yang membandel, gunakan larutan cuka putih encer, larutan sabun pencuci lembut, atau cairan pembersih khusus permukaan beton yang ber-pH seimbang.",
+            "Siramkan larutan tersebut ke area berlumut, diamkan sejenak agar meresap, lalu gosok menggunakan sikat plastik berbulu kaku dan bilas dengan air bersih hingga tuntas.",
           ],
         },
       ],
       callout: {
         type: "warning",
         title: "Hindari Penggunaan Asam Klorida (HCL / Air Keras)",
-        text: "JANGAN PERNAH membersihkan paving block menggunakan cairan asam klorida (HCL), asam sulfat, atau pembersih porselen kamar mandi yang keras. Zat asam kuat akan bereaksi merusak pasta semen portland pada permukaan beton, mengakibatkan permukaan paving menjadi keropos, kasar, berpori besar, dan warnanya pudar permanen.",
+        text: "JANGAN membersihkan paving block menggunakan cairan asam klorida (HCL), asam sulfat, atau pembersih porselen kamar mandi yang keras. Zat asam kuat akan bereaksi merusak pasta semen pada permukaan beton, mengakibatkan permukaan paving menjadi keropos, kasar, berpori besar, dan memudarkan warnanya.",
       },
     },
     {
@@ -67,9 +67,9 @@ export const article7Id: BlogPost = {
       list: {
         title: "Langkah Efektif Mengendalikan Rumput Liar:",
         items: [
-          "Pencabutan Manual Sejak Dini: Cabut rumput liar saat masih kecil hingga ke akar-akarnya setelah hujan turun, saat kondisi pasir pengisi nat sedang gembur dan lembap.",
-          "Metode Alami Air Panas: Siramkan air mendidih tepat di atas pangkal rumput liar. Air panas akan merusak struktur seluler tanaman hingga ke akarnya tanpa meninggalkan residu kimia beracun bagi hewan peliharaan.",
-          "Garam Dapur Halus: Menaburkan sedikit garam dapur halus di celah nat yang sering ditumbuhi rumput dapat mengubah keasaman tanah lokal sehingga benih rumput enggan bertunas kembali.",
+          "Pencabutan Manual: Cabut rumput liar saat masih kecil hingga ke akarnya, terutama saat kondisi pasir pengisi nat sedang lembap.",
+          "Metode Alami Air Panas: Siramkan air panas tepat di atas pangkal rumput liar untuk mematikan tanaman tanpa meninggalkan residu kimia berbahaya.",
+          "Garam Dapur: Menaburkan sedikit garam dapur di celah nat yang sering ditumbuhi rumput dapat membantu menghambat perkecambahan benih rumput.",
         ],
       },
     },
@@ -77,15 +77,15 @@ export const article7Id: BlogPost = {
       id: "pengisian-ulang-pasir-nat",
       heading: "4. Pengisian Ulang Pasir Pengisi Nat (Re-Sanding)",
       paragraphs: [
-        "Seiring berjalannya waktu, aliran air hujan lebat, terpaan angin kencang, dan aktivitas pencucian bertekanan dapat mengurangi volume pasir di dalam celah nat antar-balok paving.",
-        "Kekosongan celah nat akan melemahkan aksi penguncian mekanis (interlocking action), sehingga balok paving menjadi mudah goyang saat dilintasi roda mobil. Lakukan pengisian ulang pasir nat (re-sanding) setiap 1 hingga 2 tahun sekali:",
+        "Seiring berjalannya waktu, aliran air hujan, terpaan angin, dan aktivitas pembersihan dapat mengurangi volume pasir di dalam celah nat antar-balok paving.",
+        "Kondisi pasir nat perlu diperiksa secara berkala dan diisi kembali bila mulai berkurang guna menjaga kestabilan kuncian antar-balok:",
       ],
       list: {
-        title: "Prosedur Re-Sanding yang Benar:",
+        title: "Prosedur Re-Sanding yang Disarankan:",
         items: [
-          "Gunakan Pasir Silika Kering Murni: Pastikan pasir yang digunakan berbutir halus (gradasi 0,1–1,5 mm) dan dalam kondisi benar-benar kering agar dapat mengalir bebas ke celah sempit.",
-          "Hamparkan dan Sapu Merata: Taburkan pasir silika di atas permukaan paving yang kering, lalu sapu menggunakan sapu ijuk atau sapu sikat secara diagonal melintasi garis nat hingga seluruh celah terisi penuh.",
-          "Biarkan Pasir Mengendap Alami: Biarkan pasir mengendap secara alami, atau gunakan vibrasi ringan untuk memadatkan pasir ke dasar celah nat.",
+          "Gunakan Pasir Silika Kering: Gunakan pasir berbutir halus dan dalam kondisi kering agar dapat masuk ke dalam celah nat sempit.",
+          "Hamparkan dan Sapu Merata: Taburkan pasir silika di atas permukaan paving yang kering, lalu sapu secara diagonal melintasi garis nat hingga celah terisi penuh.",
+          "Biarkan Pasir Mengendap: Biarkan pasir mengendap secara bertahap atau padatkan ringan agar mengisi rongga nat dengan baik.",
         ],
       },
     },
@@ -93,33 +93,33 @@ export const article7Id: BlogPost = {
       id: "membersihkan-noda-oli",
       heading: "5. Menangani Tumpahan Oli Mesin dan Lemak Kendaraan",
       paragraphs: [
-        "Tetesan oli mesin kendaraan atau minyak rem pada area carport rumah dan pelataran parkir harus ditangani secepat mungkin sebelum terserap jauh ke dalam pori-pori beton:",
+        "Tetesan oli mesin atau minyak rem pada area carport dan pelataran parkir sebaiknya ditangani segera sebelum meresap lebih dalam ke pori-pori beton:",
       ],
       table: {
         caption: "Metode Penanganan Noda Berdasarkan Jenis Tumpahan",
         headers: ["Jenis Noda", "Bahan Pembersih", "Langkah Penanganan"],
         rows: [
-          ["Tumpahan Oli Mesin Baru", "Abu batu, bubuk semen, atau pasir silika kering", "Taburkan segera di atas genangan oli untuk menyerap cairan minyak selama 30 menit, lalu sapu dan buang."],
-          ["Noda Oli Kering / Meresap", "Deterjen pencuci piring pekat + air hangat", "Oleskan cairan deterjen pekat, gosok dengan sikat kaku berputar, diamkan 15 menit, lalu bilas air panas."],
+          ["Tumpahan Oli Mesin Baru", "Abu batu, bubuk semen, atau pasir silika kering", "Taburkan segera di atas genangan oli untuk menyerap minyak, diamkan sejenak, lalu sapu dan bersihkan."],
+          ["Noda Oli Kering / Meresap", "Deterjen pembersih lemak + air hangat", "Oleskan deterjen, gosok dengan sikat kaku, diamkan beberapa saat, lalu bilas dengan air bersih."],
           ["Noda Bekas Ban Karet", "Larutan pembersih serbaguna (degreaser ringan)", "Semprotkan cairan pembersih, sikat permukaan dengan gerakan melingkar, lalu bilas hingga bersih."],
-          ["Noda Cat / Semen Kering", "Kape besi atau pahat datar tumpul", "Kikis secara hati-hati sejajar dengan permukaan tanpa merusak lapisan sudut chamfer balok paving."],
+          ["Noda Cat / Semen Kering", "Kape besi atau pahat datar tumpul", "Kikis secara hati-hati sejajar dengan permukaan tanpa merusak tepi balok paving."],
         ],
       },
     },
     {
       id: "jadwal-pemeliharaan-berkala",
-      heading: "6. Tabel Jadwal Pemeliharaan Preventif Paving Block",
+      heading: "6. Panduan Pemeliharaan Berkala Paving Block",
       paragraphs: [
-        "Terapkan jadwal pemeliharaan terstruktur berikut untuk memastikan perkerasan paving Anda selalu prima sepanjang tahun:",
+        "Penerapan perawatan berkala membantu menjaga kebersihan dan kenyamanan perkerasan paving:",
       ],
       table: {
-        caption: "Kalender Pemeliharaan Paving Block",
+        caption: "Panduan Pemeliharaan Berkala Paving Block",
         headers: ["Frekuensi", "Aktivitas Pemeliharaan", "Tujuan Utama"],
         rows: [
-          ["Mingguan (1-2x)", "Menyapu daun kering, debu, dan sampah organik", "Mencegah pembusukan yang menjadi media tumbuh lumut."],
-          ["Bulanan", "Inspeksi visual gulma pada nat & pembersihan noda oli", "Mencegah akar tanaman membesar dan merusak kerapian nat."],
-          ["Per Semester (6 Bulan)", "Pencucian menyeluruh dengan water pressure", "Mengangkat jamur mikroskopis dan kotoran debu yang memadat."],
-          ["Tahunan (1-2 Tahun)", "Pemeriksaan elevasi & pengisian ulang pasir nat (re-sanding)", "Mempertahankan daya tahan interlocking dan kekokohan perkerasan."],
+          ["Rutin / Teratur", "Menyapu daun kering, debu, dan sampah organik", "Mencegah penumpukan bahan organik yang memicu lumut."],
+          ["Berkala", "Inspeksi visual gulma pada nat & pembersihan noda oli", "Mencegah gulma membesar dan mengatasi noda minyak sejak dini."],
+          ["Sesuai Kebutuhan", "Pencucian permukaan dengan air bertekanan terukur", "Mengangkat kotoran dan lumut dengan pengaturan tekanan yang aman."],
+          ["Berkala", "Pemeriksaan kondisi pasir nat & pengisian ulang (re-sanding)", "Mempertahankan kestabilan kuncian antar-balok jika pasir berkurang."],
         ],
       },
     },
@@ -127,8 +127,8 @@ export const article7Id: BlogPost = {
       id: "kualitas-paving-kaha",
       heading: "7. Kualitas Produk Kaha Block Mempermudah Pemeliharaan",
       paragraphs: [
-        "Paving block hasil cetakan mesin full otomatis hidrolik dari PT Kaha Sukses Mandiri (Kaha Block) memiliki kepadatan beton K-300 hingga K-350 yang sangat tinggi dengan porositas rendah.",
-        "Kepadatan matriks beton yang rapat ini membatasi peresapan air ke dalam balok, yang membantu mengurangi pertumbuhan lumut, lebih mudah dibersihkan, dan mempertahankan warna solidnya dalam jangka panjang.",
+        "Paving block hasil cetakan mesin full otomatis hidrolik dari PT Kaha Sukses Mandiri (Kaha Block) diproduksi dengan mutu K-300 hingga K-350 dengan kepadatan beton yang baik.",
+        "Kepadatan matriks beton yang rapat ini membantu membatasi peresapan air ke dalam balok, mempermudah proses pembersihan, dan menjaga tampilan perkerasan.",
       ],
     },
     {
@@ -138,10 +138,10 @@ export const article7Id: BlogPost = {
         "Prosedur pemeliharaan berkala dan stabilitas sambungan nat mengacu pada pedoman standar industri perkerasan beton:",
       ],
       list: {
-        title: "Rujukan Pedoman Pemeliharaan Terverifikasi:",
+        title: "Rujukan Pedoman Pemeliharaan:",
         items: [
-          "[CMHA Tech Spec 5](https://masonryandhardscapes.org): Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (panduan pembersihan lumut, re-sanding nat silika, dan perawatan perkerasan beton modular).",
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar ketahanan aus permukaan dan batas penyerapan air.",
+          "CMHA Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },
@@ -150,11 +150,11 @@ export const article7Id: BlogPost = {
   summary: {
     title: "Ringkasan Tips Perawatan Paving",
     points: [
-      "Sapu permukaan secara rutin untuk menyingkirkan daun basah dan serasah organik sebelum membusuk.",
-      "Gunakan mesin semprot bertekanan dengan sudut 45 derajat untuk membersihkan lumut tanpa membongkar pasir nat.",
-      "HINDARI cairan asam klorida (HCL) yang dapat merusak struktur semen portland pada permukaan beton.",
-      "Lakukan pengisian ulang pasir silika pada nat (re-sanding) setiap 1–2 tahun sekali untuk menjaga stabilitas kuncian antar-balok.",
-      "Tangani noda oli secepat mungkin menggunakan bahan penyerap seperti abu batu atau bubuk semen kering.",
+      "Sapu permukaan secara teratur untuk menyingkirkan daun basah dan sampah organik sebelum membusuk.",
+      "Lakukan pencucian bertekanan secara hati-hati dengan mengatur tekanan dan sudut semprotan agar pasir nat tidak terkikis berlebihan.",
+      "HINDARI cairan asam klorida (HCL) atau pembersih asam keras yang dapat merusak permukaan semen beton.",
+      "Periksa kondisi pasir nat secara berkala dan lakukan re-sanding jika pasir mulai berkurang guna menjaga kestabilan kuncian.",
+      "Tangani noda oli sesegera mungkin menggunakan bahan penyerap seperti abu batu atau pasir kering.",
     ],
   },
   faq: {
@@ -198,42 +198,42 @@ export const article7En: BlogPost = {
   seoTitle: "Concrete Paver Maintenance & Cleaning Guide",
   seoDescription: "Practical guide to maintaining concrete paving blocks: removing moss, preventing weeds, joint sand replenishment, and high-pressure washing best practices.",
   intro: [
-    "Direct Answer: To keep concrete pavers durable, clean, and moss-free: sweep organic debris routinely (1–2x weekly), pressure wash moss at a 45° angle (100–130 bar) using pH-neutral soap (never use harsh muriatic/HCL acid), treat automotive oil spills promptly with mineral absorbents, and perform silica joint sand replenishment (re-sanding) every 1–2 years to maintain mechanical interlocking stability.",
-    "High-performance concrete paving blocks with K-300 and K-350 compressive strength manufactured using fully automated hydraulic machinery demonstrate exceptional inherent durability against tropical weathering and daily vehicular traffic.",
-    "However, as an outdoor segmental pavement system continuously subjected to intense monsoon rainfall, high ambient tropical humidity, solar ultraviolet exposure, organic airborne detritus, and vehicle fluid leaks, regular preventive maintenance is essential.",
-    "In this comprehensive maintenance manual, PT Kaha Sukses Mandiri (Kaha Block) outlines practical methods to preserve visual cleanliness, prevent moss and weed infestation, and maintain the structural interlock of your segmental paving over its long service life.",
+    "Direct Answer: Concrete pavers should be cleaned periodically to remove organic debris, moss, weeds, and stains. Pressure washing should be performed carefully using suitable pressure and spray angles to avoid excessive joint-sand loss, while avoiding harsh acid cleaners (such as muriatic/HCL acid). Joint sand should be inspected periodically and replenished when necessary to maintain mechanical interlocking stability.",
+    "High-performance concrete paving blocks with K-300 and K-350 compressive strength manufactured using automated hydraulic machinery demonstrate dependable durability against tropical weathering and daily vehicular traffic.",
+    "However, as an outdoor segmental pavement system continuously subjected to rainfall, ambient humidity, solar exposure, organic detritus, and vehicle fluid leaks, periodic preventive maintenance is helpful.",
+    "In this maintenance guide, PT Kaha Sukses Mandiri (Kaha Block) outlines practical methods to preserve visual cleanliness, reduce moss and weed growth, and maintain the structural interlock of your segmental paving over its service life.",
   ],
   sections: [
     {
       id: "routine-sweeping",
       heading: "1. Routine Debris Sweeping and Organic Matter Removal",
       paragraphs: [
-        "The fundamental cornerstone of long-term paver maintenance is regular surface sweeping utilizing a stiff-bristled broom at least once or twice per week.",
-        "Wet leaves, soil tracked onto the surface by vehicle tires, bird droppings, and tree pollen left to accumulate in joint recesses will undergo natural organic decomposition. This decomposition creates a fertile micro-soil layer, acting as a germination bed for moss spores and windblown weed seeds.",
-        "Regularly sweeping organic debris before it breaks down prevents moss and vegetative growth at its source.",
+        "A primary aspect of paver maintenance is regular surface sweeping using a stiff-bristled broom.",
+        "Wet leaves, soil tracked onto the surface by vehicle tires, bird droppings, and tree pollen left to accumulate in joint recesses can undergo natural organic decomposition. This decomposition creates a micro-soil layer that can serve as a germination medium for moss spores and windblown weed seeds.",
+        "Regularly sweeping organic debris before it breaks down helps prevent moss and vegetative growth at its source.",
       ],
     },
     {
       id: "moss-and-algae-control",
       heading: "2. Eradicating and Preventing Moss, Algae, and Lichen Growth",
       paragraphs: [
-        "In tropical climates characterized by frequent rainfall, paved areas situated under dense tree canopies or shaded by boundary walls are naturally prone to developing slippery green algae and moss patches.",
+        "In tropical climates characterized by frequent rainfall, paved areas situated under dense tree canopies or shaded by boundary walls can develop slippery moss patches.",
       ],
       subsections: [
         {
           id: "pressure-washing-protocol",
-          heading: "High-Pressure Water Cleaning Protocol",
+          heading: "Pressure Washing Considerations",
           paragraphs: [
-            "Use a commercial high-pressure water washer calibrated between 100 and 130 bar. Maintain a 45-degree angle between the spray fan nozzle and the paver surface.",
-            "IMPORTANT: Avoid aiming high-pressure water jets vertically (90 degrees) directly into the joints, as concentrated pressure will dislodge and wash out the silica jointing sand, compromising interlock stability.",
+            "Use a pressure washer with appropriate pressure and nozzle distance. Maintain a fan spray at a shallow angle across the paver surface rather than pointing directly into joints.",
+            "IMPORTANT: Avoid aiming high-pressure water jets vertically directly into the joints, as concentrated pressure can dislodge and wash out the silica jointing sand, reducing interlock stability.",
           ],
         },
         {
           id: "eco-friendly-cleaning-solutions",
-          heading: "Eco-Friendly and pH-Neutral Cleaning Agents",
+          heading: "Appropriate Cleaning Solutions",
           paragraphs: [
-            "For stubborn black lichen or ingrained moss, apply a diluted white vinegar solution, mild dishwashing soap, or specialized pH-balanced concrete cleaners.",
-            "Allow the solution to soak into the affected area for 15–20 minutes to penetrate root spores, scrub with a stiff nylon deck brush, and rinse thoroughly with clean water.",
+            "For stubborn moss or algae, apply a diluted white vinegar solution, mild soap, or specialized pH-balanced concrete cleaners.",
+            "Allow the solution to soak into the affected area briefly, scrub with a stiff nylon deck brush, and rinse thoroughly with clean water.",
           ],
         },
       ],
@@ -247,14 +247,14 @@ export const article7En: BlogPost = {
       id: "weed-control",
       heading: "3. Weed and Grass Control in Paver Joints",
       paragraphs: [
-        "Airborne seeds easily settle into paver joint recesses if left unchecked.",
+        "Airborne seeds can settle into paver joint recesses if left unchecked.",
       ],
       list: {
         title: "Effective Weed Management Steps:",
         items: [
-          "Early Manual Weeding: Pull weeds while they are small, ideally after rain when the damp joint sand allows the entire root system to be extracted cleanly.",
-          "Boiling Water Thermal Method: Pour boiling water directly over the weed base. Boiling water ruptures plant cell walls down into the root system without chemical residues.",
-          "Granular Table Salt: Lightly dusting fine table salt into recurrent joint cracks alters the localized osmotic balance, discouraging future seed germination.",
+          "Manual Weeding: Pull weeds while they are small, especially when the joint sand is damp so roots can be removed cleanly.",
+          "Boiling Water Thermal Method: Pour hot or boiling water directly over the weed base to help eliminate weeds without chemical residues.",
+          "Granular Salt: Lightly dusting fine table salt into recurrent joint cracks can help discourage future seed germination.",
         ],
       },
     },
@@ -262,15 +262,15 @@ export const article7En: BlogPost = {
       id: "joint-sand-replenishment",
       heading: "4. Periodic Joint Sand Replenishment (Re-Sanding)",
       paragraphs: [
-        "Over time, torrential tropical rain runoff, high-velocity wind, and pressure washing can slowly erode sand from between the paver joints.",
-        "Depleted joint sand compromises the 3D mechanical interlock, allowing blocks to rotate slightly under vehicle braking forces. Perform joint sand replenishment (re-sanding) every 1 to 2 years:",
+        "Over time, rainfall runoff, wind, and washing can gradually erode sand from between the paver joints.",
+        "Joint sand should be inspected periodically and replenished (re-sanded) when levels recede to maintain interlocking stability:",
       ],
       list: {
-        title: "Standard Re-Sanding Procedure:",
+        title: "Recommended Re-Sanding Procedure:",
         items: [
-          "Use Kiln-Dried Silica Sand: Ensure the sand is dry and finely graded (0.1–1.5 mm particle size) so it flows freely into narrow joint gaps.",
-          "Spread and Sweep Diagonally: Scatter the dry sand across the dry pavement surface and sweep it diagonally across the joints with a stiff broom until every void is completely filled.",
-          "Allow Natural Settlement: Allow the sand to consolidate naturally with subsequent light misting, or use a vibratory plate compactor equipped with a protective rubber mat for rapid compaction.",
+          "Use Dry Silica Sand: Ensure the sand is clean, dry, and finely graded so it flows freely into narrow joint gaps.",
+          "Spread and Sweep Diagonally: Scatter the dry sand across the dry pavement surface and sweep it diagonally across the joints with a stiff broom until voids are filled.",
+          "Allow Settlement: Allow the sand to consolidate naturally or use light compaction to ensure complete joint filling.",
         ],
       },
     },
@@ -278,55 +278,55 @@ export const article7En: BlogPost = {
       id: "oil-stain-removal",
       heading: "5. Treating Engine Oil and Automotive Fluid Spills",
       paragraphs: [
-        "Automotive engine oil leaks, brake fluid spills, or greasy food residues in carports and parking bays should be treated promptly before they penetrate deep into the concrete pores:",
+        "Automotive engine oil leaks, brake fluid spills, or greasy residues in carports and parking bays should be treated promptly before they penetrate into the concrete pores:",
       ],
       table: {
         caption: "Stain Removal Protocols by Spill Type",
         headers: ["Stain Classification", "Recommended Absorbent / Cleaner", "Treatment Protocol"],
         rows: [
-          ["Fresh Engine Oil Leaks", "Dry quarry stone dust, cement powder, or silica sand", "Sprinkle immediately over the wet oil pool to absorb liquid for 30 minutes, then sweep and discard."],
-          ["Ingrained / Dried Oil Stains", "Concentrated grease-cutting detergent + warm water", "Apply heavy detergent, scrub vigorously with a stiff nylon brush, let sit for 15 minutes, and rinse with hot water."],
-          ["Tire Scuff Marks", "Mild multipurpose alkaline degreaser", "Spray degreaser, scrub in circular motions, and wash down thoroughly with clean water."],
-          ["Hardened Mortar / Paint Splashes", "Flat steel scraper or masonry chisel", "Carefully scrape flat along the paver face without gouging the chamfered edge arrises."],
+          ["Fresh Engine Oil Leaks", "Dry quarry stone dust, cement powder, or silica sand", "Sprinkle immediately over the wet oil pool to absorb liquid, let sit briefly, then sweep and discard."],
+          ["Ingrained / Dried Oil Stains", "Concentrated grease-cutting detergent + warm water", "Apply detergent, scrub with a stiff nylon brush, let sit briefly, and rinse with clean water."],
+          ["Tire Scuff Marks", "Mild multipurpose alkaline cleaner", "Spray cleaner, scrub in circular motions, and wash down thoroughly with clean water."],
+          ["Hardened Mortar / Paint Splashes", "Flat steel scraper or masonry chisel", "Carefully scrape flat along the paver face without gouging the chamfered edges."],
         ],
       },
     },
     {
       id: "preventive-maintenance-schedule",
-      heading: "6. Preventative Maintenance Schedule Matrix",
+      heading: "6. Preventative Maintenance Guidance",
       paragraphs: [
-        "Follow this structured maintenance calendar to maintain your pavement in peak condition throughout the year:",
+        "Following a structured maintenance routine helps maintain pavement condition throughout the year:",
       ],
       table: {
         caption: "Segmental Concrete Paver Maintenance Schedule",
         headers: ["Frequency", "Scheduled Maintenance Action", "Core Functional Purpose"],
         rows: [
-          ["Weekly (1-2x)", "Broom sweeping of dry leaves, soil, and debris", "Prevents organic matter from decaying into moss germination media."],
-          ["Monthly", "Visual joint inspection, weed pulling & spot oil cleaning", "Stops weed root expansion and eliminates petroleum staining."],
-          ["Bi-Annually (6 Mos.)", "Deep high-pressure water surface washing (45° angle)", "Removes settled road grime, micro-algae, and atmospheric soot."],
-          ["Annually (1-2 Yrs.)", "Surface grade inspection & dry silica re-sanding", "Restores mechanical interlock load transfer between blocks."],
+          ["Routine / As Needed", "Broom sweeping of dry leaves, soil, and debris", "Helps prevent organic matter from decaying into moss media."],
+          ["Periodic", "Visual joint inspection, weed removal & spot oil cleaning", "Addresses weed growth and eliminates surface staining."],
+          ["As Needed", "Surface washing with calibrated pressure and angle", "Removes accumulated grime and surface algae safely."],
+          ["Periodic", "Surface inspection & joint sand replenishment (re-sanding)", "Maintains load transfer between blocks if joint sand recedes."],
         ],
       },
     },
     {
       id: "kaha-block-durability",
-      heading: "7. How Kaha Block Hydraulic Quality Simplifies Maintenance",
+      heading: "7. How Kaha Block Quality Supports Maintenance",
       paragraphs: [
-        "Paving blocks produced with high-tonnage automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) feature high-density K-300 and K-350 concrete matrices with very low capillary absorption.",
-        "This structural density limits water ingress, which helps reduce moss penetration, makes cleaning easier, and retains color tones over its long service life.",
+        "Paving blocks produced with automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) feature solid K-300 and K-350 concrete matrices with good density.",
+        "This structural density limits water ingress, which helps reduce moss penetration, makes cleaning easier, and preserves color tones over its service life.",
       ],
     },
     {
       id: "technical-standards-maintenance",
       heading: "8. Technical Standards & Pavement Maintenance References",
       paragraphs: [
-        "Maintenance procedures and joint stabilization standards follow proven civil engineering guidelines:",
+        "Maintenance procedures and joint stabilization standards follow recognized industry guidelines:",
       ],
       list: {
-        title: "Technical Standards & Industry Maintenance References:",
+        title: "Technical Standards & Industry References:",
         items: [
-          "[CMHA Tech Spec 5](https://masonryandhardscapes.org): Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (comprehensive guidelines on pressure washing, joint stabilization, and chemical cleaning).",
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors (standards for surface wear resistance and water absorption).",
+          "CMHA Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },
@@ -335,11 +335,11 @@ export const article7En: BlogPost = {
   summary: {
     title: "Summary of Paver Maintenance Best Practices",
     points: [
-      "Sweep surfaces regularly to eliminate wet foliage and organic debris before it breaks down into moss media.",
-      "Utilize high-pressure washers at a 45-degree angle to lift moss without dislodging jointing sand.",
-      "NEVER apply corrosive hydrochloric acid (HCL), which chemically destroys Portland cement matrices.",
-      "Perform silica joint sand replenishment (re-sanding) every 1–2 years to preserve mechanical interlocking strength.",
-      "Absorb automotive oil spills immediately using dry stone dust or cement powder before scrubbing with detergent.",
+      "Sweep surfaces regularly to eliminate wet foliage and organic debris before it breaks down.",
+      "Utilize pressure washing with suitable spray angles to clean surfaces without dislodging jointing sand.",
+      "NEVER apply corrosive hydrochloric acid (HCL), which chemically damages Portland cement matrices.",
+      "Inspect and replenish joint sand periodically to preserve mechanical interlocking strength.",
+      "Absorb automotive oil spills promptly using dry stone dust or fine sand before scrubbing.",
     ],
   },
   faq: {

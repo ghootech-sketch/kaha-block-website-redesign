@@ -141,14 +141,14 @@ export const article8Id: BlogPost = {
       id: "standar-perkerasan-komparatif",
       heading: "7. Standar Teknis & Rujukan Pedoman Perkerasan Jalan",
       paragraphs: [
-        "Evaluasi dan perencanaan teknis perkerasan modular, aspal, dan beton kaku merujuk pada standar konstruksi:",
+        "Evaluasi dan perencanaan teknis perkerasan modular, aspal, dan beton semen merujuk pada standar konstruksi:",
       ],
       list: {
-        title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
+        title: "Daftar Rujukan Standar & Pedoman:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — spesifikasi fisik dan mekanis mutu paving block.",
-          "[Pd T-14-2003](https://binamarga.pu.go.id): Perencanaan Tebal Perkerasan Lentur (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
-          "[Pd T-05-2004-B](https://binamarga.pu.go.id): Pelaksanaan Perkerasan Jalan Beton Semen (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "Pd T-14-2003 — Pedoman Perencanaan Perkerasan Jalan Beton Semen (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
+          "Pd T-05-2004-B — Pelaksanaan Perkerasan Jalan Beton Semen (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
         ],
       },
     },
@@ -331,14 +331,14 @@ export const article8En: BlogPost = {
       id: "technical-standards-comparison",
       heading: "7. Technical Standards & Pavement Engineering Design Codes",
       paragraphs: [
-        "Comparative evaluation across modular, flexible, and rigid pavements is governed by verified civil standards:",
+        "Comparative evaluation across modular, flexible, and rigid pavements is governed by civil standards:",
       ],
       list: {
-        title: "Technical Standards & Engineering Design Codes:",
+        title: "Technical Standards & Engineering Guidelines:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — physical and mechanical specifications.",
-          "[Pd T-14-2003](https://binamarga.pu.go.id): Flexible Pavement Thickness Design Guideline (Ministry of Public Works / PUPR).",
-          "[Pd T-05-2004-B](https://binamarga.pu.go.id): Cement Concrete Pavement Construction Guideline (Ministry of Public Works / PUPR).",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
+          "Pd T-14-2003 — Planning Guidelines for Cement Concrete Pavements (Ministry of Public Works / PUPR).",
+          "Pd T-05-2004-B — Construction Guidelines for Cement Concrete Pavements (Ministry of Public Works / PUPR).",
         ],
       },
     },

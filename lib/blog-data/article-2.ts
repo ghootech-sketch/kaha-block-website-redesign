@@ -154,9 +154,9 @@ export const article2Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Ketebalan Paving:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional Indonesia yang mengatur toleransi dimensi, ketebalan, dan mutu fisik paving block.",
-          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar ketebalan minimum dan mutu perkerasan blok beton).",
-          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (panduan teknis konstruksi dan pemilihan ketebalan perkerasan blok beton).",
+          "SNI 03-0691-1996 — Bata beton (paving block), Standar Nasional Indonesia yang mengatur persyaratan produk paving block.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "CMHA Tech Spec 2: Construction of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },
@@ -347,9 +347,9 @@ export const article2En: BlogPost = {
       list: {
         title: "Technical Standards & Planning References:",
         items: [
-          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard specifying thickness tolerances, compressive strength classes, and wear resistance.",
+          "SNI 03-0691-1996 — Indonesian National Standard for concrete paving blocks and their product requirements.",
           "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
-          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (technical guide for traffic design, subbase preparation, and paver thickness).",
+          "CMHA Tech Spec 2: Construction of Interlocking Concrete Pavements (Concrete Masonry & Hardscapes Association).",
         ],
       },
     },
