@@ -126,7 +126,7 @@ export default async function Home({
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-[#B80D26] hover:bg-[#981020] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(184,13,38,0.28)] hover:shadow-[0_15px_40px_rgba(184,13,38,0.35)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(122,28,28,0.28)] hover:shadow-[0_15px_40px_rgba(122,28,28,0.35)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
                     >
                       <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                       {homeDict.hero.ctaPrimary}
@@ -214,7 +214,7 @@ export default async function Home({
         <section
           id="trust-stats-section"
           aria-labelledby="stats-heading"
-          className="py-12 sm:py-16 bg-white border-b border-gray-100"
+          className="py-12 sm:py-16 bg-[#F7F5F0] border-b border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="stats-heading" className="sr-only">
@@ -224,15 +224,15 @@ export default async function Home({
             <ScrollReveal>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Stat 1: Since 2015 */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-all">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
                   <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#0B2447]/5 text-[#0B2447] mb-4">
+                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#0F2042]/5 text-[#0F2042] mb-4">
                       <Sparkles className="w-5 h-5" aria-hidden="true" />
                     </div>
-                    <div className="text-3xl sm:text-4xl font-black font-heading text-[#0B2447] mb-2 tracking-tight">
+                    <div className="text-3xl sm:text-4xl font-black font-heading text-[#0F2042] mb-2 tracking-tight">
                       {homeDict.trustStats.sinceValue}
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.trustStats.sinceTitle}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -242,15 +242,15 @@ export default async function Home({
                 </div>
 
                 {/* Stat 2: Facility Size 9.080 m2 */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#D90429]/30 hover:shadow-md transition-all">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#7A1C1C]/30 hover:shadow-md transition-all">
                   <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#D90429]/10 text-[#D90429] mb-4">
+                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#7A1C1C]/10 text-[#7A1C1C] mb-4">
                       <Factory className="w-5 h-5" aria-hidden="true" />
                     </div>
-                    <div className="text-3xl sm:text-4xl font-black font-heading text-[#D90429] mb-2 tracking-tight">
+                    <div className="text-3xl sm:text-4xl font-black font-heading text-[#7A1C1C] mb-2 tracking-tight">
                       {homeDict.trustStats.facilityValue}
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.trustStats.facilityTitle}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -260,15 +260,15 @@ export default async function Home({
                 </div>
 
                 {/* Stat 3: Quality Options */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#FFC300]/50 hover:shadow-md transition-all">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#D4AF37]/50 hover:shadow-md transition-all">
                   <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#FFC300]/20 text-[#0B2447] mb-4">
+                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#D4AF37]/20 text-[#0F2042] mb-4">
                       <Award className="w-5 h-5" aria-hidden="true" />
                     </div>
-                    <div className="text-2xl sm:text-3xl font-black font-heading text-[#0B2447] mb-2 tracking-tight">
+                    <div className="text-2xl sm:text-3xl font-black font-heading text-[#0F2042] mb-2 tracking-tight">
                       {homeDict.trustStats.qualityValue}
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.trustStats.qualityTitle}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -287,21 +287,21 @@ export default async function Home({
         <section
           id="featured-products-section"
           aria-labelledby="featured-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block">
                   {homeDict.featuredProducts.eyebrow}
                 </span>
                 <h2
                   id="featured-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.featuredProducts.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.featuredProducts.subtitle}
                 </p>
@@ -319,11 +319,11 @@ export default async function Home({
                   return (
                     <div
                       key={key}
-                      className={`${colSpanClass} bg-white rounded-2xl border border-slate-200/60 overflow-hidden shadow-sm hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full`}
+                      className={`${colSpanClass} bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full hover:border-[#D4AF37]/50`}
                     >
                       <div>
                         {/* Visual Image */}
-                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-slate-50">
+                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-stone-100">
                           <Image
                             src={product.image}
                             alt={`${dict.products.imageAltPrefix} ${product.name}`}
@@ -332,14 +332,14 @@ export default async function Home({
                             className="object-cover object-center"
                           />
                           {/* Mutu Badge from verified company profile */}
-                          <div className="absolute top-3 right-3 bg-[#0B2447]/90 text-[#FFC300] px-2.5 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                          <div className="absolute top-3 right-3 bg-[#0F2042]/90 text-[#D4AF37] px-2.5 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
                             {product.badge}
                           </div>
                         </div>
 
                         {/* Content Area */}
                         <div className="p-6">
-                          <h3 className="text-lg sm:text-xl font-bold font-heading text-[#0B2447] mb-2">
+                          <h3 className="text-lg sm:text-xl font-bold font-heading text-[#0F2042] mb-2">
                             {product.name}
                           </h3>
                           <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 font-sans mb-4">
@@ -354,7 +354,7 @@ export default async function Home({
                       <div className="px-6 pb-6 pt-0 mt-auto">
                         <Link
                           href={`/${currentLang}/products`}
-                          className="w-full inline-flex items-center justify-center bg-[#0B2447]/5 hover:bg-[#0B2447] text-[#0B2447] hover:text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                          className="w-full inline-flex items-center justify-center bg-[#0F2042]/5 hover:bg-[#0F2042] text-[#0F2042] hover:text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                         >
                           {homeDict.featuredProducts.viewSpecs}
                           <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
@@ -370,7 +370,7 @@ export default async function Home({
                 <Link
                   id="view-all-products-btn"
                   href={`/${currentLang}/products`}
-                  className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                  className="inline-flex items-center justify-center bg-[#0F2042] hover:bg-[#7A1C1C] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                 >
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -386,21 +386,21 @@ export default async function Home({
         <section
           id="solutions-by-area-section"
           aria-labelledby="solutions-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-b border-gray-100"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F5F0] border-b border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block font-heading">
                   {homeDict.solutionsByArea.eyebrow}
                 </span>
                 <h2
                   id="solutions-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.solutionsByArea.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.solutionsByArea.subtitle}
                 </p>
@@ -416,13 +416,13 @@ export default async function Home({
                   return (
                     <div
                       key={item.id}
-                      className="bg-[#FAF9F6] border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-[border-color,box-shadow,transform] duration-300"
+                      className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-[border-color,box-shadow,transform] duration-300"
                     >
                       <div>
-                        <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-[#0B2447] flex items-center justify-center mb-5">
+                        <div className="w-12 h-12 rounded-xl bg-[#0F2042]/5 text-[#0F2042] flex items-center justify-center mb-5">
                           <AreaIcon className="w-6 h-6" aria-hidden="true" />
                         </div>
-                        <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2.5">
+                        <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2.5">
                           {item.title}
                         </h3>
                         <p className="text-sm text-slate-600 font-sans leading-relaxed mb-6">
@@ -433,7 +433,7 @@ export default async function Home({
                       <div>
                         <Link
                           href={item.href}
-                          className="inline-flex items-center text-xs sm:text-sm font-bold text-[#0B2447] hover:text-[#D90429] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded-sm py-1"
+                          className="inline-flex items-center text-xs sm:text-sm font-bold text-[#0F2042] hover:text-[#7A1C1C] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-sm py-1"
                         >
                           <span>{item.linkText}</span>
                           <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -444,9 +444,9 @@ export default async function Home({
                 })}
               </div>
 
-              <div className="bg-slate-50 border border-slate-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
+              <div className="bg-white border border-stone-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
                 <p className="text-xs sm:text-sm text-slate-700 font-sans">
-                  <span className="font-semibold text-[#0B2447]">
+                  <span className="font-semibold text-[#0F2042]">
                     {currentLang === "id" ? "Catatan:" : "Note:"}{" "}
                   </span>
                   {homeDict.solutionsByArea.consultNote}
@@ -467,16 +467,16 @@ export default async function Home({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block">
                   {homeDict.installation.eyebrow}
                 </span>
                 <h2
                   id="installation-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.installation.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.installation.subtitle}
                 </p>
@@ -484,12 +484,12 @@ export default async function Home({
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 {/* Point 1: Integrated Package */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-all">
+                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#0B2447] text-[#FFC300] flex items-center justify-center mb-5 shadow-xs">
+                    <div className="w-12 h-12 rounded-xl bg-[#0F2042] text-[#D4AF37] flex items-center justify-center mb-5 shadow-xs">
                       <Layers className="w-6 h-6" aria-hidden="true" />
                     </div>
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.installation.point1Title}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -499,12 +499,12 @@ export default async function Home({
                 </div>
 
                 {/* Point 2: From Raw Land to Neat Completion */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-all">
+                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#7A1C1C]/30 hover:shadow-md transition-all">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#D90429] text-white flex items-center justify-center mb-5 shadow-xs">
+                    <div className="w-12 h-12 rounded-xl bg-[#7A1C1C] text-white flex items-center justify-center mb-5 shadow-xs">
                       <ShieldCheck className="w-6 h-6" aria-hidden="true" />
                     </div>
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.installation.point2Title}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -514,12 +514,12 @@ export default async function Home({
                 </div>
 
                 {/* Point 3: Jabodetabek & Regional Coverage */}
-                <div className="bg-slate-50 border border-gray-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0B2447]/30 hover:shadow-md transition-all">
+                <div className="bg-[#FAF9F6] border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-[#0F2042]/30 hover:shadow-md transition-all">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#0B2447] text-white flex items-center justify-center mb-5 shadow-xs">
-                      <Truck className="w-6 h-6 text-[#FFC300]" aria-hidden="true" />
+                    <div className="w-12 h-12 rounded-xl bg-[#0F2042] text-white flex items-center justify-center mb-5 shadow-xs">
+                      <Truck className="w-6 h-6 text-[#D4AF37]" aria-hidden="true" />
                     </div>
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                       {homeDict.installation.point3Title}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -531,10 +531,10 @@ export default async function Home({
             </ScrollReveal>
 
             {/* Workflow Banner (Neutral 4-step execution workflow) */}
-            <ScrollReveal className="bg-gradient-to-r from-[#0B2447] to-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl relative overflow-hidden">
+            <ScrollReveal className="bg-gradient-to-r from-[#0F2042] to-[#0A1630] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl relative overflow-hidden">
               <div className="relative z-10">
                 <div className="max-w-3xl mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-[#FFC300] mb-2">
+                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-[#D4AF37] mb-2">
                     {homeDict.installation.workflowTitle}
                   </h3>
                   <p className="text-sm sm:text-base text-slate-300 font-sans">
@@ -546,7 +546,7 @@ export default async function Home({
                   {/* Step 1 */}
                   <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-mono text-[#FFC300] font-bold block mb-1">01</span>
+                      <span className="text-xs font-mono text-[#D4AF37] font-bold block mb-1">01</span>
                       <h4 className="text-sm font-bold font-heading text-white mb-1.5">
                         {homeDict.installation.step1Title}
                       </h4>
@@ -559,7 +559,7 @@ export default async function Home({
                   {/* Step 2 */}
                   <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-mono text-[#FFC300] font-bold block mb-1">02</span>
+                      <span className="text-xs font-mono text-[#D4AF37] font-bold block mb-1">02</span>
                       <h4 className="text-sm font-bold font-heading text-white mb-1.5">
                         {homeDict.installation.step2Title}
                       </h4>
@@ -572,7 +572,7 @@ export default async function Home({
                   {/* Step 3 */}
                   <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-mono text-[#FFC300] font-bold block mb-1">03</span>
+                      <span className="text-xs font-mono text-[#D4AF37] font-bold block mb-1">03</span>
                       <h4 className="text-sm font-bold font-heading text-white mb-1.5">
                         {homeDict.installation.step3Title}
                       </h4>
@@ -585,7 +585,7 @@ export default async function Home({
                   {/* Step 4 */}
                   <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
                     <div>
-                      <span className="text-xs font-mono text-[#FFC300] font-bold block mb-1">04</span>
+                      <span className="text-xs font-mono text-[#D4AF37] font-bold block mb-1">04</span>
                       <h4 className="text-sm font-bold font-heading text-white mb-1.5">
                         {homeDict.installation.step4Title}
                       </h4>
@@ -605,7 +605,7 @@ export default async function Home({
                     href={dict.contact.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                    className="inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                   >
                     <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                     {homeDict.installation.cta}
@@ -622,21 +622,21 @@ export default async function Home({
         <section
           id="ordering-process-section"
           aria-labelledby="ordering-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50 border-t border-gray-200/80"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F5F0] border-t border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block">
                   {homeDict.ordering.eyebrow}
                 </span>
                 <h2
                   id="ordering-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.ordering.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.ordering.subtitle}
                 </p>
@@ -644,11 +644,11 @@ export default async function Home({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Step 1 */}
-                <div className="bg-white border border-gray-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0B2447]/30 hover:shadow-md transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-[#0B2447] text-[#FFC300] font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0F2042]/30 hover:shadow-md transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full bg-[#0F2042] text-[#D4AF37] font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step1Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.ordering.step1Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -657,11 +657,11 @@ export default async function Home({
                 </div>
 
                 {/* Step 2 */}
-                <div className="bg-white border border-gray-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0B2447]/30 hover:shadow-md transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-[#0B2447] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0F2042]/30 hover:shadow-md transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full bg-[#0F2042] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step2Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.ordering.step2Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -670,11 +670,11 @@ export default async function Home({
                 </div>
 
                 {/* Step 3 */}
-                <div className="bg-white border border-gray-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0B2447]/30 hover:shadow-md transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-[#0B2447] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0F2042]/30 hover:shadow-md transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full bg-[#0F2042] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step3Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.ordering.step3Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -683,11 +683,11 @@ export default async function Home({
                 </div>
 
                 {/* Step 4 */}
-                <div className="bg-white border border-gray-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#0B2447]/30 hover:shadow-md transition-all duration-300">
-                  <div className="w-10 h-10 rounded-full bg-[#D90429] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 h-full flex flex-col hover:border-[#7A1C1C]/30 hover:shadow-md transition-all duration-300">
+                  <div className="w-10 h-10 rounded-full bg-[#7A1C1C] text-white font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step4Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.ordering.step4Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -710,16 +710,16 @@ export default async function Home({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block">
                   {homeDict.gallery.eyebrow}
                 </span>
                 <h2
                   id="gallery-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.gallery.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.gallery.subtitle}
                 </p>
@@ -728,8 +728,8 @@ export default async function Home({
               {/* 3 Documentation Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Card 1: Produk */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
-                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
                       alt={homeDict.gallery.caption1}
@@ -751,7 +751,7 @@ export default async function Home({
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-1.5">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-1.5">
                       {homeDict.gallery.caption1}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -761,8 +761,8 @@ export default async function Home({
                 </div>
 
                 {/* Card 2: Pemasangan */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
-                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
                       alt={homeDict.gallery.caption2}
@@ -775,7 +775,7 @@ export default async function Home({
                       <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
                         {homeDict.gallery.doc2Label}
                       </span>
-                      <span className="px-2 py-0.5 bg-emerald-500/80 backdrop-blur-md text-white rounded text-[10px] shadow-sm border border-emerald-400/20">
+                      <span className="px-2 py-0.5 bg-emerald-600/80 backdrop-blur-md text-white rounded text-[10px] shadow-sm border border-emerald-400/20">
                         {homeDict.gallery.doc2Badge}
                       </span>
                     </div>
@@ -784,7 +784,7 @@ export default async function Home({
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-1.5">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-1.5">
                       {homeDict.gallery.caption2}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -794,8 +794,8 @@ export default async function Home({
                 </div>
 
                 {/* Card 3: Aplikasi Lapangan */}
-                <div className="bg-white rounded-2xl border border-gray-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group">
-                  <div className="w-full h-48 relative overflow-hidden bg-slate-100">
+                <div className="bg-[#FAF9F6] rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-[#D4AF37]/50">
+                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
                       alt={homeDict.gallery.caption3}
@@ -808,7 +808,7 @@ export default async function Home({
                       <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
                         {homeDict.gallery.doc3Label}
                       </span>
-                      <span className="px-2 py-0.5 bg-[#FFC300]/90 backdrop-blur-md text-[#0B2447] font-bold rounded text-[10px] shadow-sm">
+                      <span className="px-2 py-0.5 bg-[#D4AF37]/90 backdrop-blur-md text-[#0F2042] font-bold rounded text-[10px] shadow-sm">
                         {homeDict.gallery.doc3Badge}
                       </span>
                     </div>
@@ -817,7 +817,7 @@ export default async function Home({
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-1.5">
+                    <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-1.5">
                       {homeDict.gallery.caption3}
                     </h3>
                     <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -832,7 +832,7 @@ export default async function Home({
                 <Link
                   id="view-gallery-btn"
                   href={`/${currentLang}/projects`}
-                  className="inline-flex items-center justify-center bg-[#0B2447] hover:bg-[#D90429] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                  className="inline-flex items-center justify-center bg-[#0F2042] hover:bg-[#7A1C1C] text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                 >
                   {homeDict.gallery.cta}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -848,21 +848,21 @@ export default async function Home({
         <section
           id="benefits-payment-section"
           aria-labelledby="benefits-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-50 border-t border-gray-200/80"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-[#F7F5F0] border-t border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block">
                   {homeDict.benefits.eyebrow}
                 </span>
                 <h2
                   id="benefits-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.benefits.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.benefits.subtitle}
                 </p>
@@ -870,11 +870,11 @@ export default async function Home({
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Feature 1 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200/80 flex flex-col h-full hover:border-[#FFC300] hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-[#D90429] flex items-center justify-center mb-5">
+                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 flex flex-col h-full hover:border-[#D4AF37] hover:shadow-md transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-[#0F2042]/5 text-[#7A1C1C] flex items-center justify-center mb-5">
                     <ShieldCheck className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.benefits.item1Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -883,11 +883,11 @@ export default async function Home({
                 </div>
 
                 {/* Feature 2 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200/80 flex flex-col h-full hover:border-[#FFC300] hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-[#0B2447] flex items-center justify-center mb-5">
+                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 flex flex-col h-full hover:border-[#D4AF37] hover:shadow-md transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-[#0F2042]/5 text-[#0F2042] flex items-center justify-center mb-5">
                     <Factory className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.benefits.item2Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -896,11 +896,11 @@ export default async function Home({
                 </div>
 
                 {/* Feature 3 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200/80 flex flex-col h-full hover:border-[#FFC300] hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-emerald-600 flex items-center justify-center mb-5">
+                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 flex flex-col h-full hover:border-[#D4AF37] hover:shadow-md transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-[#0F2042]/5 text-emerald-600 flex items-center justify-center mb-5">
                     <Truck className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.benefits.item3Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -909,11 +909,11 @@ export default async function Home({
                 </div>
 
                 {/* Feature 4 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-gray-200/80 flex flex-col h-full hover:border-[#FFC300] hover:shadow-md transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0B2447]/5 text-[#0B2447] flex items-center justify-center mb-5">
+                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 flex flex-col h-full hover:border-[#D4AF37] hover:shadow-md transition-all">
+                  <div className="w-12 h-12 rounded-xl bg-[#0F2042]/5 text-[#0F2042] flex items-center justify-center mb-5">
                     <CreditCard className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-[#0B2447] mb-2">
+                  <h3 className="text-lg font-bold font-heading text-[#0F2042] mb-2">
                     {homeDict.benefits.item4Title}
                   </h3>
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
@@ -931,21 +931,21 @@ export default async function Home({
         <section
           id="faq-section"
           aria-labelledby="faq-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-t border-gray-100"
+          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-t border-stone-200/60"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#D90429] mb-2 block font-heading">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block font-heading">
                   {homeDict.faq.eyebrow}
                 </span>
                 <h2
                   id="faq-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-[#0B2447]"
+                  className="text-3xl md:text-4xl font-bold font-heading text-[#0F2042]"
                 >
                   {homeDict.faq.title}
                 </h2>
-                <div className="w-16 h-1 bg-[#D90429] mx-auto mt-4 mb-4 rounded-full" />
+                <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
                 <p className="text-base sm:text-lg text-slate-600 font-sans">
                   {homeDict.faq.subtitle}
                 </p>
@@ -955,15 +955,15 @@ export default async function Home({
                 {homeDict.faq.items.map((item, index) => (
                   <details
                     key={index}
-                    className="group bg-[#FAF9F6] rounded-2xl border border-gray-200/80 open:border-[#0B2447]/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
+                    className="group bg-[#FAF9F6] rounded-2xl border border-stone-200/80 open:border-[#0F2042]/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
                   >
-                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-[#0B2447] hover:text-[#D90429] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded-2xl">
+                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-[#0F2042] hover:text-[#7A1C1C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-2xl">
                       <span className="pr-4">{item.q}</span>
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#0B2447] group-hover:border-[#D90429] group-open:rotate-180 transition-transform duration-200">
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-[#0F2042] group-hover:border-[#7A1C1C] group-open:rotate-180 transition-transform duration-200">
                         <ChevronDown className="w-4 h-4" aria-hidden="true" />
                       </span>
                     </summary>
-                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-gray-200/40">
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-stone-200/40">
                       {item.a}
                     </div>
                   </details>
@@ -979,15 +979,15 @@ export default async function Home({
         <section
           id="final-cta-section"
           aria-labelledby="final-cta-heading"
-          className="py-12 sm:py-16 md:py-20 bg-[#0B2447] text-white relative overflow-hidden"
+          className="py-12 sm:py-16 md:py-20 bg-[#0F2042] text-white relative overflow-hidden"
         >
           {/* Subtle accent circles */}
           <div
-            className="absolute top-0 right-0 w-80 h-80 bg-[#FFC300]/10 rounded-full blur-3xl pointer-events-none"
+            className="absolute top-0 right-0 w-80 h-80 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
           <div
-            className="absolute bottom-0 left-0 w-80 h-80 bg-[#D90429]/15 rounded-full blur-3xl pointer-events-none"
+            className="absolute bottom-0 left-0 w-80 h-80 bg-[#7A1C1C]/15 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
 
@@ -1009,7 +1009,7 @@ export default async function Home({
                   href={dict.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-[#D90429] hover:bg-[#b50322] text-white px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-[#7A1C1C] hover:bg-[#631616] text-white px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
                 >
                   <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                   {homeDict.finalCta.ctaPrimary}

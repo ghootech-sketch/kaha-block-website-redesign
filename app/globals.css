@@ -4,9 +4,33 @@
 @theme {
   --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
-  --color-primary: #0B2447;
-  --color-accent: #D90429;
-  --color-highlight: #FFC300;
+
+  /* Brand Palette Tokens */
+  --color-cream: #F7F5F0;
+  --color-cream-light: #FAF9F6;
+  --color-cream-dark: #EFECE6;
+  
+  --color-gold: #D4AF37;
+  --color-gold-hover: #C59F2E;
+  --color-gold-light: #FAF4E1;
+  
+  --color-venetian: #7A1C1C;
+  --color-venetian-hover: #631616;
+  --color-venetian-light: #FDF2F2;
+  
+  --color-sapphire: #0F2042;
+  --color-sapphire-dark: #0A1630;
+  --color-sapphire-light: #1A365D;
+
+  /* Semantic Aliases */
+  --color-primary: #7A1C1C;
+  --color-primary-hover: #631616;
+  --color-secondary: #0F2042;
+  --color-accent: #D4AF37;
+  --color-accent-hover: #C59F2E;
+  --color-highlight: #D4AF37;
+  --color-surface: #F7F5F0;
+  --color-surface-card: #FFFFFF;
 }
 
 body {

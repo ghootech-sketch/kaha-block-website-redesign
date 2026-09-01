@@ -44,7 +44,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             <Link
               href={`/${lang}`}
               aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
-              className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded py-2 min-h-[44px]"
+              className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded py-2 min-h-[44px]"
             >
               <div className="relative h-[36px] sm:h-[40px] md:h-[44px] lg:h-[48px] w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px]">
                 <Image
@@ -69,10 +69,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     key={link.href}
                     href={link.href}
                     aria-current={isActive ? "page" : undefined}
-                    className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] rounded min-h-[44px] ${
+                    className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded min-h-[44px] ${
                       isActive
-                        ? "border-[#D90429] text-[#D90429]"
-                        : "border-transparent text-[#0B2447] hover:border-[#FFC300] hover:text-[#0B2447]"
+                        ? "border-[#7A1C1C] text-[#7A1C1C]"
+                        : "border-transparent text-[#0F2042] hover:border-[#D4AF37] hover:text-[#7A1C1C]"
                     }`}
                   >
                     {link.label}
@@ -91,7 +91,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     ? "Contact WhatsApp Kaha Block"
                     : "Hubungi WhatsApp Kaha Block"
                 }
-                className="inline-flex items-center justify-center bg-[#D90429] text-white px-4 lg:px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#0B2447] hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300] min-h-[44px]"
+                className="inline-flex items-center justify-center bg-[#7A1C1C] text-white px-4 lg:px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#631616] hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
               >
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 WhatsApp
@@ -105,7 +105,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] p-2 rounded-xl text-[#0B2447] hover:text-[#D90429] hover:bg-gray-100 active:bg-gray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+              className="inline-flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] p-2 rounded-xl text-[#0F2042] hover:text-[#7A1C1C] hover:bg-[#F7F5F0] active:bg-[#EFECE6] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
               aria-label={
@@ -145,8 +145,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   aria-current={isActive ? "page" : undefined}
                   className={`flex items-center min-h-[44px] px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
                     isActive
-                      ? "bg-red-50 text-[#D90429] border-l-4 border-[#D90429]"
-                      : "text-[#0B2447] hover:bg-gray-50 hover:text-[#D90429]"
+                      ? "bg-red-50 text-[#7A1C1C] border-l-4 border-[#7A1C1C]"
+                      : "text-[#0F2042] hover:bg-[#F7F5F0] hover:text-[#7A1C1C]"
                   }`}
                 >
                   {link.label}
@@ -161,7 +161,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full min-h-[48px] flex items-center justify-center bg-[#D90429] text-white px-5 py-3.5 rounded-full text-base font-bold hover:bg-[#0B2447] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC300]"
+                className="w-full min-h-[48px] flex items-center justify-center bg-[#7A1C1C] text-white px-5 py-3.5 rounded-full text-base font-bold hover:bg-[#631616] transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
               >
                 <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                 {dict.contact.whatsapp}

@@ -27,10 +27,10 @@ export default function PlaceholderImage({
         className="absolute inset-0 opacity-15 pointer-events-none"
         style={{
           backgroundImage: `
-            linear-gradient(45deg, #FFC300 25%, transparent 25%), 
-            linear-gradient(-45deg, #FFC300 25%, transparent 25%), 
-            linear-gradient(45deg, transparent 75%, #FFC300 75%), 
-            linear-gradient(-45deg, transparent 75%, #FFC300 75%)
+            linear-gradient(45deg, #D4AF37 25%, transparent 25%), 
+            linear-gradient(-45deg, #D4AF37 25%, transparent 25%), 
+            linear-gradient(45deg, transparent 75%, #D4AF37 75%), 
+            linear-gradient(-45deg, transparent 75%, #D4AF37 75%)
           `,
           backgroundSize: '24px 24px',
           backgroundPosition: '0 0, 0 12px, 12px -12px, -12px 0px',
@@ -40,13 +40,13 @@ export default function PlaceholderImage({
 
       {/* Subtle radial gradient */}
       <div
-        className="absolute inset-0 bg-gradient-to-t from-[#0B2447]/90 via-[#0B2447]/60 to-transparent pointer-events-none"
+        className="absolute inset-0 bg-gradient-to-t from-[#0F2042]/90 via-[#0F2042]/60 to-transparent pointer-events-none"
         aria-hidden="true"
       />
 
       {/* Center Icon and Title */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-[85%]">
-        <div className="w-10 h-10 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-[#FFC300] mb-2.5 shadow-sm">
+        <div className="w-10 h-10 rounded-xl bg-white/10 border border-white/15 flex items-center justify-center text-[#D4AF37] mb-2.5 shadow-sm">
           <Layers className="w-5 h-5" aria-hidden="true" />
         </div>
         <p className="text-white font-medium text-xs sm:text-sm tracking-wide font-sans line-clamp-2 drop-shadow-sm">
@@ -54,9 +54,9 @@ export default function PlaceholderImage({
         </p>
       </div>
 
-      {/* Subtle bottom edge stripe in Kaha red */}
+      {/* Subtle bottom edge stripe in Venetian red */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-1 bg-[#D90429]"
+        className="absolute bottom-0 left-0 right-0 h-1 bg-[#7A1C1C]"
         aria-hidden="true"
       />
     </div>
