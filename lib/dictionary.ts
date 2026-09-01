@@ -917,7 +917,7 @@ export const dictionaries = {
       qc: "Modern Production",
       qcDesc: "Stable and consistent fully automatic hydraulic machinery.",
       bestPrice: "Large Volumes Available",
-      bestPriceDesc: "Plentiful stock due to fully automatic hydraulic machinery production capacity.",
+      bestPriceDesc: "Large volume available supported by fully automatic hydraulic machinery production.",
 
       // Structured homepage keys
       hero: {
@@ -1103,7 +1103,7 @@ export const dictionaries = {
         item3Title: "Punctual Delivery & Service",
         item3Desc: "Free delivery and unloading are available within Greater Jakarta. Services are also available for projects outside the region.",
         item4Title: "Large Volumes Available",
-        item4Desc: "Plentiful stock due to fully automatic hydraulic machinery production capacity.",
+        item4Desc: "Large volume available supported by fully automatic hydraulic machinery production.",
       },
       finalCta: {
         title: "Ready to Start Your Paving Block Project?",

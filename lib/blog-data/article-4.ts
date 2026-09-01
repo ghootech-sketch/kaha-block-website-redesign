@@ -22,7 +22,7 @@ export const article4Id: BlogPost = {
       id: "mengukur-luas-area",
       heading: "1. Mengukur Luas Bersih Area Kerja (Luas Efektif)",
       paragraphs: [
-        "Langkah pertama yang mutlak dilakukan adalah melakukan survei dan pengukuran fisik langsung di lapangan menggunakan meteran pita baja panjang atau alat ukur laser digital untuk mendapatkan luas bersih area perkerasan dalam satuan meter persegi (m²).",
+        "Langkah pertama yang mutlak dilakukan adalah melakukan pengukuran fisik langsung di lapangan menggunakan meteran pita baja panjang atau alat ukur laser digital untuk mendapatkan luas bersih area perkerasan dalam satuan meter persegi (m²).",
       ],
       subsections: [
         {
@@ -111,7 +111,7 @@ export const article4Id: BlogPost = {
       id: "langkah-perencanaan-sistematis",
       heading: "5. Alur Praktis Manajemen Perencanaan Proyek",
       paragraphs: [
-        "Agar pekerjaan lapangan berjalan lancar dari awal survei hingga serah terima, terapkan alur kerja 5 tahap berikut:",
+        "Agar pekerjaan lapangan berjalan lancar dari awal pengukuran hingga serah terima, terapkan alur kerja 5 tahap berikut:",
       ],
       list: {
         title: "Tahapan Rencana Manajemen Kerja:",
@@ -193,7 +193,7 @@ export const article4En: BlogPost = {
       id: "measuring-net-area",
       heading: "1. Measuring Net Surface Area (Effective Area)",
       paragraphs: [
-        "Begin by conducting an on-site physical survey using a long steel surveyor's tape or a digital laser distance meter to measure the net finished pavement envelope in square meters (m²).",
+        "Begin by conducting an on-site physical measurement using a long steel measuring tape or a digital laser distance meter to measure the net finished pavement envelope in square meters (m²).",
       ],
       subsections: [
         {

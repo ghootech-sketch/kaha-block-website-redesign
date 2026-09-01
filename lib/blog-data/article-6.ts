@@ -278,7 +278,7 @@ export const article6En: BlogPost = {
       heading: "6. Kaha Block Industrial Pavement Solutions",
       paragraphs: [
         "PT Kaha Sukses Mandiri manufactures industrial-grade concrete paving blocks with K-300 to K-350 compressive strength utilizing fully automated hydraulic vibro-press machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Equipped with high-volume manufacturing capacity and experienced project management teams, Kaha Block provides turnkey supply-and-install solutions for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta and outer regions.",
+        "Equipped with large volume availability and skilled installation personnel, Kaha Block provides turnkey supply-and-install solutions for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta and outer regions.",
       ],
     },
   ],

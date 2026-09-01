@@ -260,7 +260,7 @@ export const article5En: BlogPost = {
           ["Plate Compactor (Vibratory Plate)", "Compacting subgrade, aggregate base, and final joint consolidation."],
           ["Rubber Protective Mat for Plate", "Protects paver chamfers and surfaces from scuffing during final compaction."],
           ["Aluminium Screed Board & Guide Rails", "Precision screeding of uncompacted bedding sand."],
-          ["Surveyor's String Lines & Spirit Level", "Maintains laser-straight joint lines and ensures 1.5–2% drainage fall."],
+          ["Mason's String Lines & Spirit Level", "Maintains laser-straight joint lines and ensures 1.5–2% drainage fall."],
           ["Mechanical Paver Splitter / Wet Saw", "Precision cutting of perimeter units with crisp, clean edges."],
           ["Rubber Mallet", "Tamping individual blocks into initial position on the bedding sand."],
           ["Stiff-Bristled Broom", "Sweeping dry silica jointing sand thoroughly into the paver gaps."],
