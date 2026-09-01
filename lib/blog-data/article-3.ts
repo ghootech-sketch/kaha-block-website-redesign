@@ -13,6 +13,7 @@ export const article3Id: BlogPost = {
   seoTitle: "Mengenal Mutu Beton K-300 & K-350 Paving Block",
   seoDescription: "Pahami mutu beton K-300 dan K-350 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
   intro: [
+    "Jawaban Langsung: Mutu beton K-300 dan K-350 pada paving block menunjukkan kuat tekan karakteristik benda uji kubus sebesar 300 kg/cm² (~24,9 MPa) dan 350 kg/cm² (~29,1 MPa) pada umur 28 hari. Mutu ini dihasilkan melalui metode beton semi-kering (zero-slump) dengan mesin full otomatis hidrolik bertekanan tinggi, memberikan kepadatan matriks beton yang rapat, daya serap air rendah, dan ketahanan abrasi tinggi terhadap roda kendaraan.",
     "Dalam spesifikasi teknis proyek konstruksi jalan dan perumahan di Indonesia, istilah mutu beton dengan notasi huruf 'K' (Karakteristik) seperti K-300 atau K-350 adalah standar yang paling sering dicantumkan dalam dokumen Rencana Kerja dan Syarat-syarat (RKS).",
     "Meskipun istilah ini sangat akrab di telinga praktisi teknik sipil dan kontraktor berpengalaman, banyak pemilik properti, konsultan perencana arsitektur, maupun pengembang pemula yang masih membutuhkan penjelasan terperinci: apa sebenarnya arti matematis angka K-300 hingga K-350, bagaimana mutu ini dicapai dalam proses pabrikasi paving block semi-kering, dan mengapa rentang mutu ini menjadi standar untuk perkerasan lalu lintas kendaraan?",
     "Melalui artikel ini, PT Kaha Sukses Mandiri (Kaha Block) mengupas tuntas seluk-beluk mutu beton pada paving block, mulai dari konsep dasar kuat tekan karakteristik, parameter penentu kepadatan matriks beton di pabrik, prosedur pengujian kuat tekan, hingga aplikasinya pada berbagai skenario perkerasan di lapangan.",
@@ -116,6 +117,21 @@ export const article3Id: BlogPost = {
         "Dengan integrasi mesin full otomatis hidrolik modern, seleksi bahan baku agregat bermutu tinggi, dan pengawasan mutu yang ketat, Kaha Block siap menjadi mitra terpercaya dalam pengadaan material perkerasan berkualitas tinggi. Lihat dokumentasi pengerjaan di [Galeri Proyek Kaha Block](/id/projects) atau hubungi kami di [Halaman Kontak](/id/contact).",
       ],
     },
+    {
+      id: "standar-dan-pengujian-mutu",
+      heading: "7. Standar Mutu & Pengujian Kuat Tekan Resmi",
+      paragraphs: [
+        "Pengukuran dan pengujian kuat tekan paving block mengacu pada standar nasional dan pedoman teknis konstruksi:",
+      ],
+      list: {
+        title: "Rujukan Standar Mutu & Uji Laboratorium:",
+        items: [
+          "SNI 03-0691-1996: Bata Beton untuk Lantai (klasifikasi Mutu A kuat tekan rata-rata 40 MPa / min 35 MPa untuk jalan, Mutu B rata-rata 20 MPa / min 17 MPa untuk pelataran parkir).",
+          "SNI 1974:2011: Cara Uji Kuat Tekan Beton dengan Benda Uji Silinder / Kubus (Badan Standardisasi Nasional).",
+          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (mensyaratkan kuat tekan rata-rata minimum 55 MPa (8.000 psi) dan absorpsi air maksimum 5%).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Mutu Beton Paving Block",
@@ -168,6 +184,7 @@ export const article3En: BlogPost = {
   seoTitle: "K-300 and K-350 Concrete Paving Block Strength",
   seoDescription: "Learn what K-300 and K-350 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
   intro: [
+    "Direct Answer: K-300 and K-350 concrete strength ratings denote characteristic compressive strengths of 300 kg/cm² (~24.9 MPa) and 350 kg/cm² (~29.1 MPa) tested on 15 cm cube specimens at 28 days. Manufactured via zero-slump semi-dry mixes under high-tonnage automated hydraulic vibro-compaction, these grades ensure high matrix density, low water absorption, and exceptional tire abrasion resistance.",
     "In Indonesian civil engineering and municipal construction specifications, concrete compressive strength designated with the prefix 'K' (Karakteristik)—such as K-300 or K-350—serves as the benchmark in project tender documents.",
     "While civil engineers and seasoned paving contractors are intimately familiar with these metrics, property owners, landscape architects, and project managers often seek clarity: what do characteristic strength numbers signify, how is this density achieved in zero-slump semi-dry manufacturing, and why is high compressive strength essential for vehicular pavements?",
     "In this comprehensive analysis, PT Kaha Sukses Mandiri (Kaha Block) explores the structural mechanics of high-strength concrete pavers, detailing mix design ratios, automated hydraulic pressing, compression testing, and on-site engineering applications.",
@@ -265,6 +282,21 @@ export const article3En: BlogPost = {
         "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit)—with K-300 to K-350 compressive strength options.",
         "Through advanced hydraulic technology, rigorous aggregate quality control, and experienced turnkey installation teams, Kaha Block remains the trusted supplier for infrastructure across Greater Jakarta. View completed works in our [Project Gallery](/en/projects) or reach out via our [Contact Page](/en/contact).",
       ],
+    },
+    {
+      id: "technical-standards-and-testing",
+      heading: "7. Compressive Testing Standards & Official Norms",
+      paragraphs: [
+        "Quality certification and compressive strength verification for precast concrete pavers comply with formal standards:",
+      ],
+      list: {
+        title: "Key Laboratory & Testing Norms:",
+        items: [
+          "SNI 03-0691-1996: Concrete Paving Units for Floors (Class A requirement: avg 40 MPa / min 35 MPa for road pavements; Class B requirement: avg 20 MPa / min 17 MPa for parking lots).",
+          "SNI 1974:2011: Method of Test for Compressive Strength of Concrete Specimens (National Standardization Agency / BSN).",
+          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (stipulating minimum average compressive strength of 55 MPa / 8,000 psi and maximum 5% absorption).",
+        ],
+      },
     },
   ],
   summary: {

@@ -13,6 +13,7 @@ export const article2Id: BlogPost = {
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami kapasitas beban kendaraan dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga perkerasan kawasan industri.",
   intro: [
+    "Jawaban Langsung: Perbedaan utama ketebalan paving block terletak pada kapasitas daya dukung beban dan aplikasinya: tebal 6 cm dirancang untuk beban ringan pedestrian dan mobil keluarga (carport/trotoar); tebal 8 cm adalah standar jalan lingkungan perumahan, area parkir komersial, dan truk distribusi sedang; sedangkan tebal 10 cm dirancang khusus untuk area industri heavy-duty, depo kontainer, dan lintasan alat berat.",
     "Salah satu keputusan paling krusial saat merencanakan proyek perkerasan jalan atau pelataran outdoor adalah menentukan ketebalan paving block yang akan digunakan. Di pasaran konstruksi Indonesia, tiga ukuran ketebalan yang paling lazim digunakan adalah 6 cm, 8 cm, dan 10 cm.",
     "Meskipun sekilas tampak serupa dari segi bentuk atas dan pilihan warna, perbedaan ketebalan beberapa sentimeter tersebut memiliki pengaruh yang sangat signifikan terhadap kapasitas momen lentur, daya tahan terhadap beban gandar roda kendaraan, serta ketahanan jangka panjang sistem perkerasan modular.",
     "Memilih ketebalan yang tidak tepat berisiko menimbulkan dua masalah utama: inefisiensi biaya akibat over-spesifikasi pada area pejalan kaki, atau kerusakan struktural dini seperti retak, amblas, dan gelombang pada area lintasan kendaraan berat.",
@@ -144,6 +145,21 @@ export const article2Id: BlogPost = {
         "Dengan kontrol bahan baku yang ketat dan tekanan hidrolik tinggi yang konsisten, balok paving yang dihasilkan memiliki keseragaman ketebalan yang sangat presisi, meminimalisir deviasi elevasi saat dipasang berdampingan di lapangan. Untuk konsultasi volume dan pemesanan, kunjungi [Halaman Kontak Kaha Block](/id/contact).",
       ],
     },
+    {
+      id: "standar-dan-referensi-ketebalan",
+      heading: "8. Standar Teknis & Rujukan Pedoman Ketebalan",
+      paragraphs: [
+        "Penentuan ketebalan perkerasan modular beton mengacu pada standar teknis perkerasan jalan nasional dan internasional:",
+      ],
+      list: {
+        title: "Rujukan Pedoman Ketebalan Paving:",
+        items: [
+          "SNI 03-0691-1996: Standar Bata Beton untuk Lantai (klasifikasi tebal nominal, kuat tekan, dan ketahanan abrasi).",
+          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
+          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (Interlocking Concrete Pavement Institute - panduan teknis ketebalan paver terhadap kelas lalu lintas).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Poin Penting",
@@ -195,6 +211,7 @@ export const article2En: BlogPost = {
   seoTitle: "6, 8, or 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
   intro: [
+    "Direct Answer: Concrete paver thickness directly dictates structural load capacity and traffic suitability: 6 cm pavers are engineered for light pedestrian and passenger car loads (driveways, walkways); 8 cm pavers serve as the standard for residential roads, commercial parking lots, and medium delivery trucks; while 10 cm pavers are designated for heavy-duty industrial logistics, container yards, and reach-stacker traffic.",
     "One of the most critical structural decisions during any paving project planning phase is selecting the appropriate block thickness. In Indonesia's construction industry, the three standard thicknesses specified for segmental pavements are 6 cm, 8 cm, and 10 cm.",
     "While they may share identical top surfaces, geometric patterns, and color pigments, small variations in thickness drastically alter the pavement's shear resistance, load dispersion angle, and lifespan under wheel traffic.",
     "Selecting the incorrect thickness risks either premature structural failure—such as paver cracking, rutting, and subbase depression—or project budget inefficiency caused by over-specifying in low-load pedestrian areas.",
@@ -320,6 +337,21 @@ export const article2En: BlogPost = {
         "PT Kaha Sukses Mandiri produces high-grade 6 cm and 8 cm concrete pavers with K-300 and K-350 compressive ratings using fully automated hydraulic machinery at our Cisauk, Tangerang facility. Check full specifications in our [Product Catalog](/en/products).",
         "Rigorous quality control and synchronized hydraulic vibration guarantee consistent block density and millimetric height accuracy, ensuring seamless alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
       ],
+    },
+    {
+      id: "technical-standards-thickness",
+      heading: "8. Technical Standards & Thickness Guidelines",
+      paragraphs: [
+        "Concrete paver thickness and load classification adhere to recognized civil engineering specifications:",
+      ],
+      list: {
+        title: "Technical Standards & Planning References:",
+        items: [
+          "SNI 03-0691-1996: Indonesian National Standard for Concrete Paving Blocks (thickness tolerances, compressive strength classes, and wear resistance).",
+          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
+          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (Interlocking Concrete Pavement Institute guide for traffic design and paver thickness).",
+        ],
+      },
     },
   ],
   summary: {

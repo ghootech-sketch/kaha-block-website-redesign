@@ -13,6 +13,7 @@ export const article7Id: BlogPost = {
   seoTitle: "Tips Merawat Paving Block Bersih & Bebas Lumut",
   seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: pembersihan rutin, cuci bertekanan, dan pengisian pasir nat.",
   intro: [
+    "Jawaban Langsung: Cara efektif merawat paving block agar awet, bersih, dan bebas lumut adalah dengan menyapu sampah organik secara rutin (1–2x seminggu), mencuci lumut menggunakan mesin semprot bertekanan (water pressure 100–130 bar sudut 45°) dengan sabun pH netral tanpa asam HCL, membersihkan tumpahan oli segera dengan bubuk penyerap, serta melakukan pengisian ulang pasir silika pada celah nat (re-sanding) setiap 1–2 tahun sekali untuk menjaga kuncian antar-balok.",
     "Paving block berkualitas tinggi dengan mutu K-300 hingga K-350 yang diproduksi menggunakan mesin full otomatis hidrolik memiliki daya tahan fisik yang luar biasa terhadap cuaca tropis dan beban lalu lintas harian.",
     "Meskipun demikian, sebagai perkerasan modular luar ruangan (outdoor) yang terpapar langsung oleh curah hujan tinggi, kelembapan udara tropis, terik sinar ultraviolet matahari, serta ceceran kotoran organik dan oli kendaraan, perkerasan paving tetap memerlukan perawatan berkala yang terencana.",
     "Melalui panduan pemeliharaan komprehensif ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan teknik-teknik perawatan praktis untuk menjaga kebersihan visual, mencegah timbulnya lumut dan gulma, serta mempertahankan integritas struktural sambungan nat paving block Anda selama bertahun-tahun.",
@@ -130,6 +131,21 @@ export const article7Id: BlogPost = {
         "Kepadatan matriks beton yang rapat ini membatasi peresapan air ke dalam balok, yang membantu mengurangi pertumbuhan lumut, lebih mudah dibersihkan, dan mempertahankan warna solidnya dalam jangka panjang.",
       ],
     },
+    {
+      id: "standar-perawatan-paving",
+      heading: "8. Standar Teknis & Pedoman Perawatan Perkerasan Modular",
+      paragraphs: [
+        "Prosedur pemeliharaan berkala dan stabilitas sambungan nat mengacu pada pedoman standar industri perkerasan beton:",
+      ],
+      list: {
+        title: "Rujukan Pedoman Pemeliharaan Terverifikasi:",
+        items: [
+          "ICPI Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (panduan pembersihan lumut, re-sanding nat silika, dan pencegahan noda kimia).",
+          "SNI 03-0691-1996: Bata Beton untuk Lantai (ketahanan aus permukaan dan penyerapan air maksimum).",
+          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (ketahanan terhadap pelapukan iklim dan penyerapan air).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Tips Perawatan Paving",
@@ -182,6 +198,7 @@ export const article7En: BlogPost = {
   seoTitle: "Concrete Paver Maintenance & Cleaning Guide",
   seoDescription: "Practical guide to maintaining concrete paving blocks: removing moss, preventing weeds, joint sand replenishment, and high-pressure washing best practices.",
   intro: [
+    "Direct Answer: To keep concrete pavers durable, clean, and moss-free: sweep organic debris routinely (1–2x weekly), pressure wash moss at a 45° angle (100–130 bar) using pH-neutral soap (never use harsh muriatic/HCL acid), treat automotive oil spills promptly with mineral absorbents, and perform silica joint sand replenishment (re-sanding) every 1–2 years to maintain mechanical interlocking stability.",
     "High-performance concrete paving blocks with K-300 and K-350 compressive strength manufactured using fully automated hydraulic machinery demonstrate exceptional inherent durability against tropical weathering and daily vehicular traffic.",
     "However, as an outdoor segmental pavement system continuously subjected to intense monsoon rainfall, high ambient tropical humidity, solar ultraviolet exposure, organic airborne detritus, and vehicle fluid leaks, regular preventive maintenance is essential.",
     "In this comprehensive maintenance manual, PT Kaha Sukses Mandiri (Kaha Block) outlines practical methods to preserve visual cleanliness, prevent moss and weed infestation, and maintain the structural interlock of your segmental paving over its long service life.",
@@ -298,6 +315,21 @@ export const article7En: BlogPost = {
         "Paving blocks produced with high-tonnage automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) feature high-density K-300 and K-350 concrete matrices with very low capillary absorption.",
         "This structural density limits water ingress, which helps reduce moss penetration, makes cleaning easier, and retains color tones over its long service life.",
       ],
+    },
+    {
+      id: "technical-standards-maintenance",
+      heading: "8. Technical Standards & Pavement Maintenance References",
+      paragraphs: [
+        "Maintenance procedures and joint stabilization standards follow proven civil engineering guidelines:",
+      ],
+      list: {
+        title: "Technical Standards & Industry Maintenance References:",
+        items: [
+          "ICPI Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (comprehensive guidelines on pressure washing, joint stabilization, and chemical cleaning).",
+          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (standards for surface wear resistance and water absorption).",
+          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (freeze-thaw durability, absorption limits, and structural integrity).",
+        ],
+      },
     },
   ],
   summary: {

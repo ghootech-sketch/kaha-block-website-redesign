@@ -13,6 +13,7 @@ export const article5Id: BlogPost = {
   seoTitle: "Persiapan Sebelum Pemasangan Paving Block",
   seoDescription: "Ketahui tahapan persiapan lahan sebelum pasang paving block: pemadatan tanah dasar, base course, pemasangan kanstein tepi, dan screeding pasir alas.",
   intro: [
+    "Jawaban Langsung: Tahapan persiapan wajib sebelum memasang paving block mencakup: (1) penggalian tanah sedalam total struktur (base course + pasir alas 3–5 cm + tebal paving), (2) pemadatan tanah dasar secara mekanis, (3) penghamparan dan pemadatan agregat base course, (4) pemasangan kanstein pengunci tepi dengan kuncian adukan beton sebelum pasir dihamparkan, dan (5) perataan pasir alas berbutir tajam setebal 3–5 cm dalam kondisi gembur tanpa diinjak.",
     "Kunci utama dari permukaan jalan atau pelataran paving block yang rata, kokoh, berumur panjang, dan tidak mudah amblas bukanlah semata-mata pada balok paving itu sendiri, melainkan pada ketelitian proses persiapan lahan (subgrade preparation) di bawahnya.",
     "Banyak kasus kegagalan perkerasan paving—seperti permukaan yang bergelombang setelah hujan lebat, genangan air yang tidak mengalir lancar, hingga balok tepi yang bergeser renggang—berakar dari tahapan persiapan pondasi yang terburu-buru, tanah dasar yang kurang padat, atau tidak memenuhi kaidah teknis teknik sipil.",
     "Dalam artikel panduan teknis ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan panduan mendalam mengenai hal-hal penting yang wajib dipersiapkan sebelum balok paving pertama diletakkan di atas pasir alas.",
@@ -118,6 +119,21 @@ export const article5Id: BlogPost = {
         "Tim aplikator Kaha Block terbiasa menangani standar elevasi presisi, pemadatan berlapis, pemasangan kanstein kokoh, hingga pengisian nat silika bersih untuk berbagai proyek di Jabodetabek dan luar kota.",
       ],
     },
+    {
+      id: "standar-dan-pedoman-konstruksi",
+      heading: "8. Standar Teknis & Pedoman Pelaksanaan Lapangan",
+      paragraphs: [
+        "Metode pelaksanaan persiapan tanah dasar, agregat base, dan bedding sand mengacu pada pedoman teknis konstruksi jalan:",
+      ],
+      list: {
+        title: "Rujukan Pedoman Teknis Pelaksanaan:",
+        items: [
+          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
+          "Spesifikasi Umum Bina Marga Divisi 5 & Divisi 6 (Perkerasan Berbutir dan Struktur Pondasi Jalan).",
+          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (panduan persiapan tanah dasar, toleransi elevasi bed sand, dan pemadatan perkerasan blok beton).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Persiapan Pemasangan",
@@ -170,6 +186,7 @@ export const article5En: BlogPost = {
   seoTitle: "Site Preparation for Paving Installation",
   seoDescription: "Learn essential site preparation steps before installing concrete pavers: subgrade soil compaction, base course grading, edge restraints, and sand screeding.",
   intro: [
+    "Direct Answer: Mandatory site preparation before laying concrete pavers involves: (1) subgrade excavation to structural depth (base course + 3–5 cm bedding sand + paver thickness), (2) thorough mechanical subgrade soil compaction, (3) spreading and compacting the crushed stone base course, (4) installing concrete edge restraint curbs (Kanstein) with concrete haunch backing prior to sand screeding, and (5) screeding sharp, coarse uncompacted bedding sand (3–5 cm) without foot traffic.",
     "The fundamental determinant of a smooth, durable, long-lasting, and rut-free segmental concrete pavement is not solely the quality of the individual pavers, but the rigorous engineering of the foundation layers beneath.",
     "The vast majority of pavement failures—such as undulating surfaces following heavy tropical downpours, ponding water, and outward spreading of perimeter blocks—stem directly from rushed subgrade preparation, inadequate compaction, or skipped foundation steps.",
     "In this comprehensive engineering guide, PT Kaha Sukses Mandiri (Kaha Block) details the critical site preparation prerequisites required before placing the first concrete paver onto the bedding sand layer.",
@@ -274,6 +291,21 @@ export const article5En: BlogPost = {
         "To ensure all site preparation and installation phases are executed to the highest engineering standards without logistical hassle, PT Kaha Sukses Mandiri provides complete turnkey supply-and-install packages.",
         "Our skilled field application crews are experienced in executing accurate site grading, layered mechanical compaction, reinforced curb placement, and pristine joint finishing for civil and commercial developments throughout Greater Jakarta and beyond.",
       ],
+    },
+    {
+      id: "technical-standards-construction",
+      heading: "8. Technical Standards & Site Preparation Guidelines",
+      paragraphs: [
+        "Subgrade excavation, granular base course compaction, and bedding sand tolerances comply with civil engineering specifications:",
+      ],
+      list: {
+        title: "Technical Standards & Construction Codes:",
+        items: [
+          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
+          "Indonesian Directorate General of Highways (Bina Marga) Standard Specifications: Division 5 & 6 (Granular Pavement & Road Base Structures).",
+          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (subgrade preparation, bedding sand grading, and compaction protocols).",
+        ],
+      },
     },
   ],
   summary: {

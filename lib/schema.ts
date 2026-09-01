@@ -57,6 +57,12 @@ export function generateStructuredDataGraph({
       postalCode: BUSINESS_FACTS.address.postalCode,
       addressCountry: BUSINESS_FACTS.address.countryCode,
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS_FACTS.geo.latitude,
+      longitude: BUSINESS_FACTS.geo.longitude,
+    },
+    hasMap: BUSINESS_FACTS.maps.googleMapsUrl,
     areaServed: [
       {
         "@type": "AdministrativeArea",

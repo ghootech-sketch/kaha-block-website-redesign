@@ -13,6 +13,7 @@ export const article9Id: BlogPost = {
   seoTitle: "Paving Block Ramah Lingkungan & Resapan Air",
   seoDescription: "Peran perkerasan paving block dalam manajemen air hujan perkotaan, mitigasi banjir, konservasi air tanah alami, dan pengurangan efek pulau panas urban.",
   intro: [
+    "Jawaban Langsung: Paving block berkontribusi nyata sebagai perkerasan ramah lingkungan melalui mekanisme infiltrasi air hujan melewati celah-celah nat (joint voids) berpasir silika alami, yang mengalirkan air ke lapisan pondasi agregat dan tanah dasar untuk mengisi ulang (recharge) air tanah, mereduksi beban puncak debit banjir limpasan drainase perkotaan (SuDS / LID), serta menurunkan suhu mikro lingkungan berkat Indeks Reflektansi Matahari (SRI) yang lebih tinggi dibandingkan aspal hitam.",
     "Pesatnya laju urbanisasi dan pembangunan infrastruktur kawasan perkotaan di berbagai wilayah metropolitan Indonesia sering kali diiringi oleh meningkatnya tutupan permukaan lahan kedap air (impervious surfaces) akibat betonisasi masif dan pengaspalan jalan yang menutup rapat pori-pori tanah alami.",
     "Ketika tanah kehilangan kemampuannya untuk meresapkan air hujan secara gravitasi, volume dan kecepatan debit air limpasan permukaan (surface stormwater runoff) melonjak tajam dalam waktu singkat. Hal ini membebani kapasitas saluran drainase kota, memicu genangan banjir musiman, serta menyebabkan penurunan muka air tanah (groundwater depletion) di kawasan pemukiman penduduk.",
     "Dalam artikel wawasan lingkungan dan teknik sipil ini, PT Kaha Sukses Mandiri (Kaha Block) mengulas bagaimana sistem perkerasan paving block modular hadir sebagai solusi infrastruktur hijau (green infrastructure) yang mendukung konsep Low Impact Development (LID) dan Sustainable Urban Drainage Systems (SuDS) untuk menjaga kelestarian hidrologi tanah perkotaan.",
@@ -109,6 +110,22 @@ export const article9Id: BlogPost = {
         "Kaha Block siap melayani kebutuhan material paving block untuk pembangunan infrastruktur perumahan, komersial, dan industri di wilayah Jabodetabek dan sekitarnya.",
       ],
     },
+    {
+      id: "standar-drainase-berkelanjutan",
+      heading: "7. Standar Teknis & Rujukan Tata Kelola Air Berkelanjutan",
+      paragraphs: [
+        "Perencanaan perkerasan paving ramah lingkungan dan resapan air berpedoman pada standar tata kelola hidrologi:",
+      ],
+      list: {
+        title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
+        items: [
+          "SNI 03-0691-1996: Bata Beton untuk Lantai (persyaratan teknis dan penyerapan air).",
+          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan (Kementerian PUPR).",
+          "ICPI Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Interlocking Concrete Pavement Institute).",
+          "Pedoman Tata Kelola Air Hujan Berkelanjutan / Low Impact Development (LID) Guidelines (US EPA).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Paving Block Ramah Lingkungan",
@@ -161,6 +178,7 @@ export const article9En: BlogPost = {
   seoTitle: "Eco-Friendly Pavers & Stormwater Control",
   seoDescription: "Explore how permeable concrete block pavements mitigate urban flooding, recharge groundwater aquifers, and combat urban heat island effects.",
   intro: [
+    "Direct Answer: Concrete paving blocks provide eco-friendly stormwater management by facilitating natural rainwater infiltration through silica sand-filled joint voids into open-graded aggregate subbases and subgrade aquifers. This process recharges groundwater tables, mitigates urban flash flood runoff surges (aligned with Low Impact Development / SuDS principles), and reduces ambient microclimate heat through higher Solar Reflectance Index (SRI) values compared to dark asphalt.",
     "Rapid urbanization and expanding infrastructure development across metropolitan regions throughout Indonesia often accelerate the proliferation of impervious ground surfaces due to continuous asphalt paving and monolithic concrete slab construction.",
     "When natural ground loses its capacity to infiltrate rainwater, stormwater runoff volumes and peak discharge velocities surge dramatically, overwhelming municipal drainage channels, causing localized flash flooding, and accelerating groundwater aquifer depletion in residential sectors.",
     "In this comprehensive environmental civil engineering article, PT Kaha Sukses Mandiri (Kaha Block) explores how modular segmental concrete paving functions as a cornerstone of green infrastructure, advancing the principles of Low Impact Development (LID) and Sustainable Urban Drainage Systems (SuDS) to preserve natural hydrological cycles across urban landscapes.",
@@ -256,6 +274,22 @@ export const article9En: BlogPost = {
         "Kaha Block uses Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand in its paving block production. The characteristics and proportioning of concrete constituents generally influence the density and engineering performance of precast concrete products.",
         "Kaha Block is ready to supply segmental paving solutions for residential, commercial, and industrial developments throughout Greater Jakarta and surrounding regions.",
       ],
+    },
+    {
+      id: "technical-standards-sustainability",
+      heading: "7. Technical Standards & Sustainable Drainage References",
+      paragraphs: [
+        "Hydrological planning and sustainable concrete block paving specifications follow recognized environmental and civil engineering standards:",
+      ],
+      list: {
+        title: "Technical Standards & Environmental Guidelines:",
+        items: [
+          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (technical specifications and water absorption limits).",
+          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Roads (Ministry of Public Works / PUPR).",
+          "ICPI Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Interlocking Concrete Pavement Institute).",
+          "Low Impact Development (LID) Stormwater Management Guidelines (US EPA).",
+        ],
+      },
     },
   ],
   summary: {

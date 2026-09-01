@@ -22,6 +22,16 @@ export const BUSINESS_FACTS = {
     formatted: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
   },
 
+  // Geographic Coordinates & Map Reference
+  geo: {
+    latitude: -6.358589787390475,
+    longitude: 106.64021975454531,
+  },
+  maps: {
+    googleMapsUrl: "https://maps.google.com/?q=-6.358589787390475,106.64021975454531",
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2738484247357!2d106.64021975454531!3d-6.358589787390475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46e589e68b5%3A0xfbfdcc6d2b296521!2sPaving%20Block%20Kaha!5e0!3m2!1sid!2sid!4v1788076236518!5m2!1sid!2sid",
+  },
+
   // Contact Channels
   contact: {
     primaryPhoneDisplay: "0811 975 3030",

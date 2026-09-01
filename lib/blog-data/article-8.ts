@@ -13,6 +13,7 @@ export const article8Id: BlogPost = {
   seoTitle: "Paving Block vs Aspal vs Cor Beton",
   seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, peresapan air, dan fleksibilitas.",
   intro: [
+    "Jawaban Langsung: Perbandingan antara ketiga perkerasan: Paving block unggul dalam kemudahan perbaikan utilitas bawah tanah (bongkar-pasang tanpa merusak), manajemen resapan air melalui celah nat, dan estetika arsitektur; Aspal hotmix unggul dalam kenyamanan laju kecepatan tinggi (jalan raya/tol) namun rentan berlubang akibat genangan air dan solar; Cor beton rigid memiliki daya dukung beban gandar sangat tinggi namun memerlukan waktu curing 14–28 hari dan sangat sulit diperbaiki jika ada kerusakan pipa di bawahnya.",
     "Dalam merencanakan pembangunan infrastruktur jalan lingkungan perumahan, pelataran parkir komersial, akses pergudangan, hingga halaman hunian pribadi, para pengembang dan pemilik properti sering kali dihadapkan pada tiga opsi perkerasan utama: paving block (segmental concrete pavers), aspal (flexible pavement), dan cor beton (rigid pavement).",
     "Masing-masing jenis perkerasan memiliki karakteristik mekanis, metode konstruksi, perilaku termal terhadap radiasi matahari, serta biaya siklus hidup (life-cycle cost) yang berbeda secara fundamental.",
     "Dalam artikel ulasan komparatif ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan analisis obyektif mengenai kelebihan, kekurangan, dan skenario penerapan ideal dari ketiga jenis perkerasan jalan tersebut guna membantu Anda mengambil keputusan investasi infrastruktur terbaik.",
@@ -136,6 +137,22 @@ export const article8Id: BlogPost = {
         "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek dan sekitarnya.",
       ],
     },
+    {
+      id: "standar-perkerasan-komparatif",
+      heading: "7. Standar Teknis & Rujukan Pedoman Perkerasan Jalan",
+      paragraphs: [
+        "Evaluasi dan perencanaan teknis perkerasan modular, aspal, dan beton kaku merujuk pada standar konstruksi:",
+      ],
+      list: {
+        title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
+        items: [
+          "SNI 03-0691-1996: Bata Beton untuk Lantai (spesifikasi fisik dan mekanis paving block).",
+          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan (Kementerian PUPR).",
+          "Pedoman Pd T-14-2003: Perencanaan Tebal Perkerasan Lentur (Kementerian PUPR / AASHTO Guide for Design of Pavement Structures).",
+          "Pedoman Pd T-05-2004-B: Perencanaan Perkerasan Jalan Beton Semen (Kementerian PUPR).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Perbandingan Perkerasan",
@@ -187,6 +204,7 @@ export const article8En: BlogPost = {
   seoTitle: "Concrete Pavers vs Asphalt vs Concrete Slabs",
   seoDescription: "Engineering comparison of concrete paving blocks, hotmix asphalt, and cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
   intro: [
+    "Direct Answer: Comparing the three pavement types: Concrete paving blocks excel in non-destructive underground utility access, rainwater infiltration through joint voids, and architectural aesthetic flexibility; Hotmix asphalt provides seamless high-speed ride comfort for highways but is vulnerable to water pooling damage and fuel dissolution; Rigid cast concrete slabs offer massive heavy axle load capacity but require a 14–28 day curing downtime and cause expensive destructive excavation during subterranean utility repairs.",
     "When designing road infrastructure for residential masterplans, commercial parking lots, logistics distribution parks, and private property drives, developers and civil engineers evaluate three primary paving solutions: segmental concrete paving blocks, flexible hotmix asphalt, and rigid cast-in-place concrete slabs.",
     "Each surfacing system exhibits distinct mechanical characteristics, installation timeframes, thermal behaviors under solar radiation, and long-term lifecycle expenditure profiles.",
     "In this comprehensive comparative analysis, PT Kaha Sukses Mandiri (Kaha Block) presents an objective evaluation of the structural strengths, operational limitations, and optimal project scenarios for all three pavement types to empower informed capital infrastructure decisions.",
@@ -309,6 +327,22 @@ export const article8En: BlogPost = {
         "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-300 and K-350 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
         "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta and surrounding regions.",
       ],
+    },
+    {
+      id: "technical-standards-comparison",
+      heading: "7. Technical Standards & Pavement Engineering Design Codes",
+      paragraphs: [
+        "Comparative evaluation across modular, flexible, and rigid pavements is governed by verified civil standards:",
+      ],
+      list: {
+        title: "Technical Standards & Engineering Design Codes:",
+        items: [
+          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (physical and mechanical specifications).",
+          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Roads (Ministry of Public Works / PUPR).",
+          "Pd T-14-2003 Guideline: Flexible Pavement Design (Ministry of Public Works / AASHTO Guide for Design of Pavement Structures).",
+          "Pd T-05-2004-B Guideline: Cement Concrete Rigid Pavement Design (Ministry of Public Works / PUPR).",
+        ],
+      },
     },
   ],
   summary: {

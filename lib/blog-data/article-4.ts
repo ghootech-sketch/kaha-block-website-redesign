@@ -13,6 +13,7 @@ export const article4Id: BlogPost = {
   seoTitle: "Cara Menghitung Kebutuhan Paving Block",
   seoDescription: "Pelajari cara menghitung luas area, volume paving block per m², faktor cadangan potongan (waste), kebutuhan kanstein tepi, dan pasir alas secara akurat.",
   intro: [
+    "Jawaban Langsung: Untuk merencanakan kebutuhan paving block, hitung luas bersih area (panjang x lebar dalam m²), lalu tambahkan faktor cadangan potongan (waste factor) sebesar 3%–5% untuk pola susun bata atau 5%–8% untuk pola herringbone diagonal. Selain paving, hitung kebutuhan kanstein pengunci tepi (keliling meter lari), tebal pasir alas 3–5 cm (~0,04 m³ per m²), serta tebal pondasi agregat 10–25 cm disesuaikan beban kendaraan.",
     "Perencanaan volume material yang akurat dan terstruktur adalah kunci utama keberhasilan proyek perkerasan paving block, baik untuk renovasi carport rumah tinggal, pembangunan jalan lingkungan perumahan, maupun pelataran area komersial bertonase tinggi.",
     "Kurangnya perhitungan yang cermat di awal proyek sering kali berujung pada dua kendala klasik di lapangan: kekurangan material di tengah pekerjaan yang menyebabkan penundaan jadwal kerja dan risiko perbedaan tonasi warna antar-batch produksi semen, atau kelebihan pembelian material dalam jumlah besar yang memicu pemborosan anggaran belanja proyek.",
     "Dalam panduan komprehensif ini, PT Kaha Sukses Mandiri (Kaha Block) menyajikan metodologi perhitungan praktis dan sistematis untuk menghitung kebutuhan paving block, kanstein pembatas tepi, pasir alas (bedding sand), serta material pondasi bawah (base course) secara presisi, hemat, dan efisien.",
@@ -132,6 +133,21 @@ export const article4Id: BlogPost = {
         "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan jasa pemasangan di Jabodetabek dan sekitarnya.",
       ],
     },
+    {
+      id: "standar-perencanaan-material",
+      heading: "7. Standar Teknis & Pedoman Perencanaan Material",
+      paragraphs: [
+        "Metodologi perhitungan volume material dan spesifikasi lapisan dasar perkerasan blok beton merujuk pada pedoman resmi:",
+      ],
+      list: {
+        title: "Rujukan Pedoman Teknis Perencanaan:",
+        items: [
+          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
+          "SNI 03-0691-1996: Bata Beton untuk Lantai (dimensi, toleransi ukuran, dan metode pemasangan modular).",
+          "ICPI Tech Spec 4: Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (Interlocking Concrete Pavement Institute).",
+        ],
+      },
+    },
   ],
   summary: {
     title: "Ringkasan Perencanaan Kebutuhan",
@@ -184,6 +200,7 @@ export const article4En: BlogPost = {
   seoTitle: "How to Calculate Paving Block Volumes",
   seoDescription: "Step-by-step guide to calculating pavement area, estimating paver quantities, cutting allowances, and determining subbase aggregate and sand volumes.",
   intro: [
+    "Direct Answer: To plan paving block material quantities, calculate net pavement area (length x width in m²) and add a cutting waste allowance of 3%–5% for linear patterns or 5%–8% for diagonal herringbone patterns. Additionally, quantify perimeter edge curbs (Kanstein in linear meters), bedding sand at 3–5 cm depth (~0.04 m³ per m²), and crushed stone aggregate base at 10–25 cm depth depending on design vehicular loads.",
     "Accurate and structured material estimation is fundamental to the operational, technical, and financial success of any segmental concrete paving project—ranging from private residential carports and estate cluster boulevards to expansive commercial logistics distribution facilities.",
     "Underestimating material requirements during the early planning phase leads to disruptive job-site work stoppages, added delivery freight surcharges, and potential color tone variations across separate manufacturing batches. Conversely, excessive over-ordering ties up working capital and clutters active job sites with unreturned pallets.",
     "In this comprehensive planning manual, PT Kaha Sukses Mandiri (Kaha Block) outlines precise methodologies to calculate net surface areas, perimeter cutting scrap allowances, concrete edge restraint quantities, and compacted granular foundation volumes with engineering precision.",
@@ -302,6 +319,21 @@ export const article4En: BlogPost = {
         "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-300 and K-350 concrete strength.",
         "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta and surrounding regions.",
       ],
+    },
+    {
+      id: "technical-standards-estimation",
+      heading: "7. Technical Standards & Material Estimation Guidelines",
+      paragraphs: [
+        "Material calculation methodologies and pavement bedding specifications follow established civil engineering standards:",
+      ],
+      list: {
+        title: "Technical References & Guidelines:",
+        items: [
+          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
+          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (dimensional tolerances, laying density, and modular sizing).",
+          "ICPI Tech Spec 4: Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (Interlocking Concrete Pavement Institute).",
+        ],
+      },
     },
   ],
   summary: {
