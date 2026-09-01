@@ -146,10 +146,9 @@ export const article8Id: BlogPost = {
       list: {
         title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
         items: [
-          "SNI 03-0691-1996: Bata Beton untuk Lantai (spesifikasi fisik dan mekanis paving block).",
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan (Kementerian PUPR).",
-          "Pedoman Pd T-14-2003: Perencanaan Tebal Perkerasan Lentur (Kementerian PUPR / AASHTO Guide for Design of Pavement Structures).",
-          "Pedoman Pd T-05-2004-B: Perencanaan Perkerasan Jalan Beton Semen (Kementerian PUPR).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — spesifikasi fisik dan mekanis mutu paving block.",
+          "[Pd T-14-2003](https://binamarga.pu.go.id): Perencanaan Tebal Perkerasan Lentur (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
+          "[Pd T-05-2004-B](https://binamarga.pu.go.id): Pelaksanaan Perkerasan Jalan Beton Semen (Departemen Permukiman dan Prasarana Wilayah / Kementerian PUPR).",
         ],
       },
     },
@@ -337,10 +336,9 @@ export const article8En: BlogPost = {
       list: {
         title: "Technical Standards & Engineering Design Codes:",
         items: [
-          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (physical and mechanical specifications).",
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Roads (Ministry of Public Works / PUPR).",
-          "Pd T-14-2003 Guideline: Flexible Pavement Design (Ministry of Public Works / AASHTO Guide for Design of Pavement Structures).",
-          "Pd T-05-2004-B Guideline: Cement Concrete Rigid Pavement Design (Ministry of Public Works / PUPR).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — physical and mechanical specifications.",
+          "[Pd T-14-2003](https://binamarga.pu.go.id): Flexible Pavement Thickness Design Guideline (Ministry of Public Works / PUPR).",
+          "[Pd T-05-2004-B](https://binamarga.pu.go.id): Cement Concrete Pavement Construction Guideline (Ministry of Public Works / PUPR).",
         ],
       },
     },

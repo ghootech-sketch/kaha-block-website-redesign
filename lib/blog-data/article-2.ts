@@ -154,9 +154,9 @@ export const article2Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Ketebalan Paving:",
         items: [
-          "SNI 03-0691-1996: Standar Bata Beton untuk Lantai (klasifikasi tebal nominal, kuat tekan, dan ketahanan abrasi).",
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
-          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (Interlocking Concrete Pavement Institute - panduan teknis ketebalan paver terhadap kelas lalu lintas).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional Indonesia yang mengatur toleransi dimensi, ketebalan, dan mutu fisik paving block.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar ketebalan minimum dan mutu perkerasan blok beton).",
+          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (panduan teknis konstruksi dan pemilihan ketebalan perkerasan blok beton).",
         ],
       },
     },
@@ -347,9 +347,9 @@ export const article2En: BlogPost = {
       list: {
         title: "Technical Standards & Planning References:",
         items: [
-          "SNI 03-0691-1996: Indonesian National Standard for Concrete Paving Blocks (thickness tolerances, compressive strength classes, and wear resistance).",
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
-          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (Interlocking Concrete Pavement Institute guide for traffic design and paver thickness).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard specifying thickness tolerances, compressive strength classes, and wear resistance.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (technical guide for traffic design, subbase preparation, and paver thickness).",
         ],
       },
     },

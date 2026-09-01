@@ -14,7 +14,7 @@ export const article1Id: BlogPost = {
   seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport, jalan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
   featured: true,
   intro: [
-    "Ringkasan Cepat: Untuk memilih paving block yang tepat, sesuaikan ketebalan dan mutu beton dengan beban lalu lintas: gunakan tebal 6 cm (mutu K-300) untuk trotoar pedestrian dan carport mobil pribadi; tebal 8 cm (mutu K-300 hingga K-350) dengan pola interlocking herringbone untuk jalan lingkungan perumahan, ruko komersial, dan sirkulasi truk ringan; serta tebal 10 cm (mutu K-350) untuk area pergudangan dan kawasan industri bertonase berat.",
+    "Jawaban Langsung: Untuk memilih paving block yang tepat, pertimbangkan fungsi peruntukan area dan perkiraan beban lalu lintas: ketebalan 6 cm umumnya digunakan untuk trotoar pejalan kaki dan carport kendaraan pribadi; ketebalan 8 cm dengan mutu K-300 hingga K-350 dan pola interlocking herringbone untuk jalan lingkungan perumahan serta area komersial; serta tebal 10 cm untuk kawasan industri dan logistik bertonase berat. Struktur lapisan pondasi dan spesifikasi akhir disesuaikan dengan kondisi tanah serta perencanaan teknis masing-masing proyek.",
     "Memilih perkerasan jalan atau pelataran luar ruangan memerlukan pertimbangan matang antara kekuatan struktural, fungsi drainase, dan estetika visual. Paving block (conblock) menjadi salah satu material favorit di Indonesia karena menawarkan fleksibilitas pemasangan, kemudahan perawatan jangka panjang, dan daya serap air yang baik pada celah nat antar-blok.",
     "Namun, keberhasilan pengaplikasian paving block sangat bergantung pada kesesuaian antara spesifikasi material yang dipilih dengan jenis beban yang akan melintas di atasnya. Menggunakan paving block yang terlalu tipis untuk area lalu lintas berat dapat memicu retak dini dan amblas, sementara menggunakan spesifikasi berlebih pada pedestrian santai dapat menyebabkan inefisiensi anggaran proyek.",
     "Dalam artikel ini, PT Kaha Sukses Mandiri (Kaha Block) menyusun panduan komprehensif untuk membantu pemilik hunian, arsitek, pengembang properti, dan kontraktor dalam menentukan jenis, ketebalan, serta mutu paving block yang paling proporsional untuk berbagai skala kebutuhan.",
@@ -169,9 +169,9 @@ export const article1Id: BlogPost = {
       list: {
         title: "Rujukan Standar & Pedoman Teknis:",
         items: [
-          "SNI 03-0691-1996: Standar Nasional Indonesia mengenai spesifikasi teknis Bata Beton untuk Lantai (Paving Block), mencakup klasifikasi mutu A hingga D, kuat tekan karakteristik, dan ketahanan aus.",
-          "Pedoman Teknis Pd T-04-2005-B: Pedoman Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman oleh Departemen Pekerjaan Umum (Kementerian PUPR).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (standar acuan internasional untuk kuat tekan minimum dan toleransi dimensi).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional Indonesia yang mengatur persyaratan mutu fisik, kuat tekan, dan ketahanan aus paving block.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar spesifikasi unit perkerasan blok beton solid).",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavements (panduan perencanaan struktur perkerasan blok beton).",
         ],
       },
     },
@@ -228,7 +228,7 @@ export const article1En: BlogPost = {
   seoDescription: "Learn how to select the right paving blocks for residential carports, access roads, and commercial complexes with precision thickness and strength ratings.",
   featured: true,
   intro: [
-    "Quick Summary: To choose the right paving block, match thickness and concrete compressive strength to intended traffic loads: specify 6 cm thickness (K-300 grade) for pedestrian walkways and private carports; 8 cm thickness (K-300 to K-350) with 45° herringbone patterns for residential cluster roads, commercial lots, and medium freight; and 10 cm thickness (K-350) for heavy industrial and logistics yards.",
+    "Direct Answer: To choose the appropriate paving block, match thickness and compressive strength to site requirements: 6 cm thickness is commonly applied for pedestrian walkways and private carports; 8 cm thickness (K-300 to K-350 grade) with herringbone interlocking for residential cluster roads and moderate commercial traffic; and 10 cm for heavy industrial freight areas. Final subbase thickness and specifications should be engineered according to soil conditions and project requirements.",
     "Choosing the right outdoor pavement requires balancing structural load capacity, drainage efficiency, and visual appeal. Interlocking concrete paving blocks (conblocks) have long been a premier surfacing solution across Indonesia because they provide modular flexibility, easy long-term maintenance, and effective rainwater infiltration through sand-filled joints.",
     "However, the structural longevity of any paved surface depends heavily on matching product specifications to the actual traffic loads that will traverse the area. Installing undersized pavers in high-traffic zones leads to premature rutting and edge breakage, while over-engineering pedestrian pathways introduces unnecessary project costs.",
     "In this comprehensive guide, PT Kaha Sukses Mandiri (Kaha Block) shares practical recommendations to help homeowners, architects, property developers, and civil contractors choose the ideal paving block type, thickness, and concrete compressive strength for any project scale.",
@@ -383,9 +383,9 @@ export const article1En: BlogPost = {
       list: {
         title: "Applicable Technical Standards:",
         items: [
-          "SNI 03-0691-1996: Indonesian National Standard for Precast Concrete Paving Units (Bata Beton untuk Lantai), specifying mechanical compressive classes and surface abrasion tolerances.",
-          "Pd T-04-2005-B Guideline: Technical Planning Manual for Concrete Block Pavements in Residential and Municipal Environments by the Indonesian Ministry of Public Works (Kementerian PUPR).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (compressive strength, absorption, and freeze-thaw durability standards).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard specifying physical quality, compressive strength, and durability requirements.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavements (engineering design guideline for concrete block pavements).",
         ],
       },
     },

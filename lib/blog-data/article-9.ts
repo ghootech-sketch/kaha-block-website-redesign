@@ -13,7 +13,7 @@ export const article9Id: BlogPost = {
   seoTitle: "Paving Block Ramah Lingkungan & Resapan Air",
   seoDescription: "Peran perkerasan paving block dalam manajemen air hujan perkotaan, mitigasi banjir, konservasi air tanah alami, dan pengurangan efek pulau panas urban.",
   intro: [
-    "Jawaban Langsung: Paving block berkontribusi nyata sebagai perkerasan ramah lingkungan melalui mekanisme infiltrasi air hujan melewati celah-celah nat (joint voids) berpasir silika alami, yang mengalirkan air ke lapisan pondasi agregat dan tanah dasar untuk mengisi ulang (recharge) air tanah, mereduksi beban puncak debit banjir limpasan drainase perkotaan (SuDS / LID), serta menurunkan suhu mikro lingkungan berkat Indeks Reflektansi Matahari (SRI) yang lebih tinggi dibandingkan aspal hitam.",
+    "Jawaban Langsung: Paving block konvensional berkontribusi terhadap perkerasan ramah lingkungan melalui mekanisme infiltrasi air hujan melalui celah nat berpasir alami ke lapisan agregat dan tanah dasar, membantu konservasi air tanah dan mereduksi limpasan permukaan dibandingkan aspal. Untuk kapasitas resapan air skala besar, prinsip ini dapat dikembangkan lebih lanjut menjadi sistem perkerasan lolos air (Permeable Interlocking Concrete Pavement / PICP) dengan agregat terbuka.",
     "Pesatnya laju urbanisasi dan pembangunan infrastruktur kawasan perkotaan di berbagai wilayah metropolitan Indonesia sering kali diiringi oleh meningkatnya tutupan permukaan lahan kedap air (impervious surfaces) akibat betonisasi masif dan pengaspalan jalan yang menutup rapat pori-pori tanah alami.",
     "Ketika tanah kehilangan kemampuannya untuk meresapkan air hujan secara gravitasi, volume dan kecepatan debit air limpasan permukaan (surface stormwater runoff) melonjak tajam dalam waktu singkat. Hal ini membebani kapasitas saluran drainase kota, memicu genangan banjir musiman, serta menyebabkan penurunan muka air tanah (groundwater depletion) di kawasan pemukiman penduduk.",
     "Dalam artikel wawasan lingkungan dan teknik sipil ini, PT Kaha Sukses Mandiri (Kaha Block) mengulas bagaimana sistem perkerasan paving block modular hadir sebagai solusi infrastruktur hijau (green infrastructure) yang mendukung konsep Low Impact Development (LID) dan Sustainable Urban Drainage Systems (SuDS) untuk menjaga kelestarian hidrologi tanah perkotaan.",
@@ -41,7 +41,7 @@ export const article9Id: BlogPost = {
       id: "mekanisme-resapan-paving",
       heading: "2. Mekanisme Peresapan Air Hujan Melalui Garis Nat Paving Block",
       paragraphs: [
-        "Sistem perkerasan paving block standar memiliki keunggulan hidrologis alami yang fundamental berkat keberadaan rongga-rongga sambungan celah nat (joint voids) di sekeliling setiap baloknya.",
+        "Perkerasan paving block konvensional memiliki keunggulan hidrologis tersendiri dibandingkan aspal atau cor beton masif berkat adanya rongga celah nat (joint voids) antar-balok. Penting untuk membedakan antara perkerasan paving standar dengan sistem khusus Permeable Interlocking Concrete Pavements (PICP) yang menggunakan celah nat lebar dan lapisan pondasi agregat terbuka tanpa pasir halus.",
       ],
       subsections: [
         {
@@ -119,10 +119,9 @@ export const article9Id: BlogPost = {
       list: {
         title: "Daftar Rujukan Standar & Pedoman Terverifikasi:",
         items: [
-          "SNI 03-0691-1996: Bata Beton untuk Lantai (persyaratan teknis dan penyerapan air).",
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan (Kementerian PUPR).",
-          "ICPI Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Interlocking Concrete Pavement Institute).",
-          "Pedoman Tata Kelola Air Hujan Berkelanjutan / Low Impact Development (LID) Guidelines (US EPA).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional spesifikasi mutu fisik dan penyerapan air.",
+          "[CMHA Tech Spec 18](https://masonryandhardscapes.org): Construction of Permeable Interlocking Concrete Pavement Systems (panduan konstruksi sistem perkerasan blok beton lolos air / PICP).",
+          "[US EPA Low Impact Development (LID)](https://www.epa.gov/nps/urban-runoff-low-impact-development): Stormwater Management Guidelines.",
         ],
       },
     },
@@ -178,7 +177,7 @@ export const article9En: BlogPost = {
   seoTitle: "Eco-Friendly Pavers & Stormwater Control",
   seoDescription: "Explore how permeable concrete block pavements mitigate urban flooding, recharge groundwater aquifers, and combat urban heat island effects.",
   intro: [
-    "Direct Answer: Concrete paving blocks provide eco-friendly stormwater management by facilitating natural rainwater infiltration through silica sand-filled joint voids into open-graded aggregate subbases and subgrade aquifers. This process recharges groundwater tables, mitigates urban flash flood runoff surges (aligned with Low Impact Development / SuDS principles), and reduces ambient microclimate heat through higher Solar Reflectance Index (SRI) values compared to dark asphalt.",
+    "Direct Answer: Conventional segmental concrete pavers contribute to eco-friendly stormwater management by facilitating rainwater infiltration through sand-filled joint lines into underlying aggregate and subgrade layers, aiding groundwater recharge and reducing surface runoff compared to impermeable asphalt. For heavy stormwater retention requirements, these concepts can be extended into dedicated Permeable Interlocking Concrete Pavement (PICP) systems utilizing open-graded aggregate layers.",
     "Rapid urbanization and expanding infrastructure development across metropolitan regions throughout Indonesia often accelerate the proliferation of impervious ground surfaces due to continuous asphalt paving and monolithic concrete slab construction.",
     "When natural ground loses its capacity to infiltrate rainwater, stormwater runoff volumes and peak discharge velocities surge dramatically, overwhelming municipal drainage channels, causing localized flash flooding, and accelerating groundwater aquifer depletion in residential sectors.",
     "In this comprehensive environmental civil engineering article, PT Kaha Sukses Mandiri (Kaha Block) explores how modular segmental concrete paving functions as a cornerstone of green infrastructure, advancing the principles of Low Impact Development (LID) and Sustainable Urban Drainage Systems (SuDS) to preserve natural hydrological cycles across urban landscapes.",
@@ -206,7 +205,7 @@ export const article9En: BlogPost = {
       id: "infiltration-mechanisms",
       heading: "2. Rainwater Infiltration Mechanisms in Segmental Paver Systems",
       paragraphs: [
-        "Segmental concrete block pavements possess inherent hydrological advantages over continuous monolithic surfaces thanks to the thousands of perimeter joint voids between the blocks.",
+        "Conventional segmental concrete block pavements possess inherent hydrological advantages over continuous monolithic surfaces thanks to perimeter joint voids. It is important to distinguish standard sand-jointed pavers from dedicated Permeable Interlocking Concrete Pavements (PICP), which utilize wide aggregate-filled void spaces and open-graded stone base reservoirs without bedding sand.",
       ],
       subsections: [
         {
@@ -284,10 +283,9 @@ export const article9En: BlogPost = {
       list: {
         title: "Technical Standards & Environmental Guidelines:",
         items: [
-          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (technical specifications and water absorption limits).",
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Roads (Ministry of Public Works / PUPR).",
-          "ICPI Tech Spec 18: Construction of Permeable Interlocking Concrete Pavement Systems (Interlocking Concrete Pavement Institute).",
-          "Low Impact Development (LID) Stormwater Management Guidelines (US EPA).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — Indonesian National Standard specifying physical requirements and water absorption limits.",
+          "[CMHA Tech Spec 18](https://masonryandhardscapes.org): Construction of Permeable Interlocking Concrete Pavement Systems (guidelines for permeable interlocking concrete pavement / PICP systems).",
+          "[US EPA Low Impact Development (LID)](https://www.epa.gov/nps/urban-runoff-low-impact-development): Stormwater Management Guidelines.",
         ],
       },
     },

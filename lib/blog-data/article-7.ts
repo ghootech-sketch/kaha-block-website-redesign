@@ -140,9 +140,9 @@ export const article7Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Pemeliharaan Terverifikasi:",
         items: [
-          "ICPI Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (panduan pembersihan lumut, re-sanding nat silika, dan pencegahan noda kimia).",
-          "SNI 03-0691-1996: Bata Beton untuk Lantai (ketahanan aus permukaan dan penyerapan air maksimum).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (ketahanan terhadap pelapukan iklim dan penyerapan air).",
+          "[CMHA Tech Spec 5](https://masonryandhardscapes.org): Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (panduan pembersihan lumut, re-sanding nat silika, dan perawatan perkerasan beton modular).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar ketahanan aus permukaan dan batas penyerapan air.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },
     },
@@ -325,9 +325,9 @@ export const article7En: BlogPost = {
       list: {
         title: "Technical Standards & Industry Maintenance References:",
         items: [
-          "ICPI Tech Spec 5: Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (comprehensive guidelines on pressure washing, joint stabilization, and chemical cleaning).",
-          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (standards for surface wear resistance and water absorption).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (freeze-thaw durability, absorption limits, and structural integrity).",
+          "[CMHA Tech Spec 5](https://masonryandhardscapes.org): Cleaning, Sealing and Maintaining Interlocking Concrete Pavements (comprehensive guidelines on pressure washing, joint stabilization, and chemical cleaning).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors (standards for surface wear resistance and water absorption).",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
         ],
       },
     },

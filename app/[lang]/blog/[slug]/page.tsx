@@ -101,6 +101,13 @@ export default async function BlogPostPage({
     { year: "numeric", month: "long", day: "numeric" }
   );
 
+  const isQuickAnswer =
+    post.intro[0]?.startsWith("Jawaban Langsung:") ||
+    post.intro[0]?.startsWith("Direct Answer:") ||
+    post.intro[0]?.startsWith("Quick Summary:");
+  const quickAnswer = isQuickAnswer ? post.intro[0] : null;
+  const remainingIntro = isQuickAnswer ? post.intro.slice(1) : post.intro;
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 selection:bg-amber-500/30 selection:text-amber-200">
       {/* Unified JSON-LD Graph Injection */}
@@ -171,6 +178,23 @@ export default async function BlogPostPage({
             <FormattedText text={post.excerpt} />
           </p>
 
+          {/* Quick Answer Callout */}
+          {quickAnswer && (
+            <div className="mb-6 rounded-xl bg-amber-500/10 border border-amber-500/30 p-4 sm:p-5 text-sm sm:text-base text-amber-100/90 shadow-sm">
+              <div className="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
+                <Lightbulb className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>
+                  {isEn
+                    ? "Quick Answer / Executive Summary"
+                    : "Jawaban Cepat / Ringkasan Teknis"}
+                </span>
+              </div>
+              <div className="text-slate-200 leading-relaxed">
+                <FormattedText text={quickAnswer} />
+              </div>
+            </div>
+          )}
+
           {/* Author / Publisher Byline */}
           <div className="flex items-center gap-3 pt-6 border-t border-slate-800 text-xs text-slate-400">
             <div className="w-8 h-8 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 font-bold">
@@ -236,13 +260,15 @@ export default async function BlogPostPage({
         )}
 
         {/* Intro Paragraphs */}
-        <div className="space-y-5 text-slate-300 text-base sm:text-lg leading-relaxed mb-12">
-          {post.intro.map((p, i) => (
-            <p key={i}>
-              <FormattedText text={p} />
-            </p>
-          ))}
-        </div>
+        {remainingIntro.length > 0 && (
+          <div className="space-y-5 text-slate-300 text-base sm:text-lg leading-relaxed mb-12">
+            {remainingIntro.map((p, i) => (
+              <p key={i}>
+                <FormattedText text={p} />
+              </p>
+            ))}
+          </div>
+        )}
 
         {/* Dynamic Sections */}
         <div className="space-y-16">

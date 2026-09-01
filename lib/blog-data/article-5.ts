@@ -128,9 +128,9 @@ export const article5Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Teknis Pelaksanaan:",
         items: [
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
-          "Spesifikasi Umum Bina Marga Divisi 5 & Divisi 6 (Perkerasan Berbutir dan Struktur Pondasi Jalan).",
-          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (panduan persiapan tanah dasar, toleransi elevasi bed sand, dan pemadatan perkerasan blok beton).",
+          "[Spesifikasi Umum Bina Marga](https://binamarga.pu.go.id): Divisi 5 Perkerasan Berbutir dan Divisi 6 Struktur Pondasi Jalan (Kementerian PUPR).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar mutu dan spesifikasi fisik perkerasan blok beton.",
+          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (panduan persiapan tanah dasar, perataan pasir alas, dan pemadatan perkerasan blok beton).",
         ],
       },
     },
@@ -301,9 +301,9 @@ export const article5En: BlogPost = {
       list: {
         title: "Technical Standards & Construction Codes:",
         items: [
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
-          "Indonesian Directorate General of Highways (Bina Marga) Standard Specifications: Division 5 & 6 (Granular Pavement & Road Base Structures).",
-          "ICPI Tech Spec 2: Construction of Interlocking Concrete Pavements (subgrade preparation, bedding sand grading, and compaction protocols).",
+          "[Indonesian Bina Marga General Specifications](https://binamarga.pu.go.id): Division 5 (Granular Pavements) and Division 6 (Road Base Structures) — Ministry of Public Works (PUPR).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks — Indonesian National Standard for precast concrete paving units.",
+          "[CMHA Tech Spec 2](https://masonryandhardscapes.org): Construction of Interlocking Concrete Pavements (guidelines for subgrade preparation, bedding sand screeding, and compaction protocols).",
         ],
       },
     },

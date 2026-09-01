@@ -54,7 +54,7 @@ export const article6Id: BlogPost = {
           id: "mutu-beton-k400",
           heading: "Standar Mutu Beton K-300 & K-350 Mesin Full Otomatis Hidrolik",
           paragraphs: [
-            "Paving block heavy-duty wajib diproduksi dengan standar mutu K-300 hingga K-350 (kuat tekan karakteristik hingga 350 kg/cm² atau setara ~33 MPa) menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
+            "Paving block heavy-duty wajib diproduksi dengan standar mutu K-300 hingga K-350 (kuat tekan karakteristik 300 hingga 350 kg/cm²) menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
             "Kepadatan matriks beton yang rapat memastikan balok tidak retak atau pecah akibat benturan dinamis, serta memiliki ketahanan abrasi permukaan yang sangat tinggi terhadap gesekan ban karet pejal forklift.",
           ],
         },
@@ -131,10 +131,10 @@ export const article6Id: BlogPost = {
       list: {
         title: "Daftar Rujukan Teknis & Standar Terverifikasi:",
         items: [
-          "SNI 03-0691-1996: Bata Beton untuk Lantai (klasifikasi Mutu A / B untuk perkerasan lalu lintas berat).",
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Lalu Lintas Berat (Kementerian PUPR).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (standar kuat tekan minimum, daya serap air, dan ketahanan abrasi).",
-          "ICPI Tech Spec 3: Edge Restraints for Interlocking Concrete Pavements & Heavy-Duty Pavement Design (Interlocking Concrete Pavement Institute).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar mutu dan spesifikasi fisik perkerasan blok beton.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (standar acuan kuat tekan, penyerapan air, dan ketahanan abrasi).",
+          "[CMHA Tech Spec 3](https://masonryandhardscapes.org): Edge Restraints for Interlocking Concrete Pavements (panduan penahan tepi dan perkerasan beban berat).",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots.",
         ],
       },
     },
@@ -308,10 +308,10 @@ export const article6En: BlogPost = {
       list: {
         title: "Technical Standards & Verified Engineering References:",
         items: [
-          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (Grade A / B requirements for heavy industrial traffic).",
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Roads and Heavy-Duty Applications (Indonesian Ministry of Public Works / PUPR).",
-          "ASTM C936 / C936M: Standard Specification for Solid Concrete Interlocking Paving Units (minimum compressive strength, water absorption, and abrasion resistance).",
-          "ICPI Tech Spec 3: Edge Restraints for Interlocking Concrete Pavements & Heavy-Duty Pavement Design (Interlocking Concrete Pavement Institute).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — Indonesian National Standard specifying physical requirements and quality classes.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units (compressive strength, absorption, and abrasion resistance).",
+          "[CMHA Tech Spec 3](https://masonryandhardscapes.org): Edge Restraints for Interlocking Concrete Pavements.",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots.",
         ],
       },
     },

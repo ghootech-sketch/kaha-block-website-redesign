@@ -142,9 +142,9 @@ export const article4Id: BlogPost = {
       list: {
         title: "Rujukan Pedoman Teknis Perencanaan:",
         items: [
-          "Pedoman Teknis Pd T-04-2005-B: Perencanaan Perkerasan Blok Beton untuk Jalan Lingkungan dan Pemukiman (Departemen Pekerjaan Umum / Kementerian PUPR).",
-          "SNI 03-0691-1996: Bata Beton untuk Lantai (dimensi, toleransi ukuran, dan metode pemasangan modular).",
-          "ICPI Tech Spec 4: Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (Interlocking Concrete Pavement Institute).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Bata beton (paving block) — standar nasional mengenai dimensi nominal, toleransi ukuran, dan metode pemasangan modular.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (panduan perencanaan struktur perkerasan blok beton).",
         ],
       },
     },
@@ -329,9 +329,9 @@ export const article4En: BlogPost = {
       list: {
         title: "Technical References & Guidelines:",
         items: [
-          "Pd T-04-2005-B Guideline: Planning Concrete Block Pavements for Residential & Environmental Roads (Ministry of Public Works / PUPR).",
-          "SNI 03-0691-1996: Concrete Paving Blocks for Floors (dimensional tolerances, laying density, and modular sizing).",
-          "ICPI Tech Spec 4: Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (Interlocking Concrete Pavement Institute).",
+          "[SNI 03-0691-1996](https://pesta.bsn.go.id): Concrete Paving Blocks for Floors — Indonesian National Standard on dimensional tolerances, laying density, and modular sizing.",
+          "[ASTM C936 / C936M](https://www.astm.org/c0936_c0936m.html): Standard Specification for Solid Concrete Interlocking Paving Units.",
+          "[CMHA Tech Spec 4](https://masonryandhardscapes.org): Structural Design of Interlocking Concrete Pavement for Roads and Parking Lots (design guidelines for concrete block pavement structures).",
         ],
       },
     },
