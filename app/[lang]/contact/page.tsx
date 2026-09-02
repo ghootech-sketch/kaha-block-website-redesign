@@ -293,11 +293,11 @@ export default async function Contact({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-primary/40 hover:shadow-xs transition-all"
+                  className="bg-surface border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
-                      <span className="w-8 h-8 rounded-lg bg-primary text-white font-mono text-xs font-bold flex items-center justify-center">
+                      <span className="w-8 h-8 rounded-lg bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center shadow-xs">
                         {item.number}
                       </span>
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
@@ -340,10 +340,10 @@ export default async function Contact({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-primary/30 hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
-                    <span className="w-9 h-9 rounded-xl bg-primary text-white font-mono text-xs font-bold flex items-center justify-center mb-4">
+                    <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
                       {step.number}
                     </span>
                     <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">

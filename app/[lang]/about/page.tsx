@@ -97,7 +97,7 @@ export default async function About({
             className="object-cover object-center opacity-10 -z-20 pointer-events-none"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/90 to-surface -z-10" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-200/40 rounded-full filter blur-3xl opacity-50 pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full filter blur-3xl opacity-50 pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-200/40 rounded-full filter blur-3xl opacity-50 pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -140,7 +140,7 @@ export default async function About({
               </ScrollReveal>
 
               {/* Highlight Sidebar Card (5 cols) */}
-              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-surface rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-xs">
+              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-surface rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-stone-200/80 border-t-4 border-t-accent shadow-xs">
                 <div className="border-b border-stone-200/80 pb-5 mb-5">
                   <div className="text-xs font-bold uppercase tracking-widest text-slate-700 mb-1">
                     Brand & Badan Usaha
@@ -155,8 +155,8 @@ export default async function About({
 
                 <div className="space-y-4 text-xs sm:text-sm text-slate-700">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0 mt-0.5">
-                      <Calendar className="w-4 h-4" aria-hidden="true" />
+                    <div className="w-8 h-8 rounded-lg bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center shrink-0 mt-0.5">
+                      <Calendar className="w-4 h-4 text-slate-900" aria-hidden="true" />
                     </div>
                     <div>
                       <strong className="text-slate-900 block">{dict.facts.items[0].label}</strong>
@@ -165,8 +165,8 @@ export default async function About({
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0 mt-0.5">
-                      <Factory className="w-4 h-4" aria-hidden="true" />
+                    <div className="w-8 h-8 rounded-lg bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center shrink-0 mt-0.5">
+                      <Factory className="w-4 h-4 text-slate-900" aria-hidden="true" />
                     </div>
                     <div>
                       <strong className="text-slate-900 block">{dict.facts.items[1].label}</strong>
@@ -175,8 +175,8 @@ export default async function About({
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0 mt-0.5">
-                      <ShieldCheck className="w-4 h-4" aria-hidden="true" />
+                    <div className="w-8 h-8 rounded-lg bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center shrink-0 mt-0.5">
+                      <ShieldCheck className="w-4 h-4 text-slate-900" aria-hidden="true" />
                     </div>
                     <div>
                       <strong className="text-slate-900 block">{dict.facts.items[3].label}</strong>
@@ -185,8 +185,8 @@ export default async function About({
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0 mt-0.5">
-                      <Truck className="w-4 h-4" aria-hidden="true" />
+                    <div className="w-8 h-8 rounded-lg bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center shrink-0 mt-0.5">
+                      <Truck className="w-4 h-4 text-slate-900" aria-hidden="true" />
                     </div>
                     <div>
                       <strong className="text-slate-900 block">{dict.facts.items[4].label}</strong>
@@ -235,11 +235,11 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.05}
-                    className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
+                    className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
                   >
                     <div>
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 border border-primary/20">
-                        <IconComponent className="w-6 h-6" aria-hidden="true" />
+                      <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40">
+                        <IconComponent className="w-6 h-6 text-slate-900" aria-hidden="true" />
                       </div>
                       <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
                         {fact.label}
@@ -300,10 +300,10 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.08}
-                    className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs relative flex flex-col justify-between"
+                    className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs relative flex flex-col justify-between hover:border-accent transition-colors"
                   >
                     <div>
-                      <div className="text-3xl sm:text-4xl font-extrabold font-heading text-primary mb-3 tracking-tighter">
+                      <div className="w-10 h-10 rounded-xl bg-accent text-slate-900 font-extrabold font-mono text-sm flex items-center justify-center mb-3 shadow-xs">
                         {mission.number}
                       </div>
                       <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-sans font-medium">
@@ -346,11 +346,11 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.05}
-                    className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs flex flex-col justify-between"
+                    className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs flex flex-col justify-between hover:border-accent transition-colors"
                   >
                     <div>
-                      <div className="w-11 h-11 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center mb-4 border border-secondary/10">
-                        <IconComponent className="w-5 h-5 text-secondary" aria-hidden="true" />
+                      <div className="w-11 h-11 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40">
+                        <IconComponent className="w-5 h-5 text-slate-900" aria-hidden="true" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mb-2.5">
                         {item.title}
@@ -360,7 +360,7 @@ export default async function About({
                       </p>
                     </div>
                     <div className="mt-4 pt-3 border-t border-stone-100 flex items-center gap-1.5 text-xs text-slate-900 font-semibold">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true" />
                       <span>Standar Kaha Block</span>
                     </div>
                   </ScrollReveal>
@@ -394,11 +394,11 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.05}
-                    className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs hover:border-secondary/30 transition-colors flex flex-col justify-between"
+                    className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs hover:border-accent transition-colors flex flex-col justify-between"
                   >
                     <div>
-                      <div className="w-11 h-11 rounded-xl bg-white text-secondary flex items-center justify-center mb-4 border border-stone-200 shadow-2xs">
-                        <IconComponent className="w-5 h-5 text-secondary" aria-hidden="true" />
+                      <div className="w-11 h-11 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40 shadow-2xs">
+                        <IconComponent className="w-5 h-5 text-slate-900" aria-hidden="true" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mb-2">
                         {serve.title}

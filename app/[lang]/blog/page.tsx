@@ -133,7 +133,7 @@ export default async function BlogIndexPage({
                 </h2>
               </div>
 
-              <div className="relative rounded-2xl bg-surface-card border border-slate-200/90 p-6 sm:p-8 lg:p-10 shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative rounded-2xl bg-surface-card border border-slate-200/90 border-t-4 border-t-accent p-6 sm:p-8 lg:p-10 shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10 group-hover:bg-accent/10 transition-all duration-500" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -181,7 +181,7 @@ export default async function BlogIndexPage({
                   </div>
 
                   {/* Highlights Summary Card */}
-                  <div className="lg:col-span-4 rounded-xl bg-amber-500/5 border border-amber-500/20 p-5 lg:p-6">
+                  <div className="lg:col-span-4 rounded-xl bg-accent/10 border border-accent/30 p-5 lg:p-6">
                     <h4 className="text-xs font-bold uppercase tracking-wider text-accent mb-3 flex items-center gap-2 font-heading">
                       <ShieldCheck className="w-4 h-4 text-accent" />
                       <span>{featuredPost.summary.title}</span>

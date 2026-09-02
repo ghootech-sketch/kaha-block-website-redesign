@@ -180,7 +180,7 @@ export default async function BlogPostPage({
 
           {/* Quick Answer Callout */}
           {quickAnswer && (
-            <div className="mb-6 rounded-xl bg-amber-500/10 border border-amber-500/30 p-4 sm:p-5 text-sm sm:text-base text-slate-800 shadow-xs">
+            <div className="mb-6 rounded-xl bg-accent/15 border border-accent/40 p-4 sm:p-5 text-sm sm:text-base text-slate-800 shadow-xs">
               <div className="flex items-center gap-2 text-accent font-bold text-xs uppercase tracking-wider mb-2 font-heading">
                 <Lightbulb className="w-4 h-4 text-accent shrink-0" />
                 <span>
@@ -356,7 +356,7 @@ export default async function BlogPostPage({
                       ? "bg-rose-50 border-rose-200 text-rose-900"
                       : section.callout.type === "tip"
                       ? "bg-emerald-50 border-emerald-200 text-emerald-900"
-                      : "bg-amber-500/10 border-amber-500/30 text-amber-950"
+                      : "bg-accent/15 border-accent/40 text-slate-900"
                   }`}
                 >
                   {section.callout.type === "warning" ? (
@@ -423,7 +423,7 @@ export default async function BlogPostPage({
         </div>
 
         {/* Summary Box */}
-        <section className="mt-16 rounded-2xl bg-amber-500/10 border border-amber-500/30 p-6 sm:p-8">
+        <section className="mt-16 rounded-2xl bg-accent/15 border border-accent/40 p-6 sm:p-8">
           <div className="flex items-center gap-2.5 text-accent font-bold uppercase text-xs sm:text-sm tracking-wider mb-4 font-heading">
             <ShieldCheck className="w-5 h-5 text-accent" />
             <span>{post.summary.title}</span>

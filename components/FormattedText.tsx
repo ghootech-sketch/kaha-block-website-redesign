@@ -28,7 +28,7 @@ export default function FormattedText({ text, className = "" }: FormattedTextPro
               <Link
                 key={index}
                 href={href}
-                className="text-amber-400 hover:text-amber-300 underline underline-offset-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-400 rounded-xs"
+                className="text-primary hover:text-primary-hover underline underline-offset-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-xs"
               >
                 {linkText}
               </Link>
@@ -40,7 +40,7 @@ export default function FormattedText({ text, className = "" }: FormattedTextPro
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-400 hover:text-amber-300 underline underline-offset-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-400 rounded-xs"
+              className="text-primary hover:text-primary-hover underline underline-offset-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-xs"
             >
               {linkText}
             </a>
@@ -51,7 +51,7 @@ export default function FormattedText({ text, className = "" }: FormattedTextPro
         const boldMatch = part.match(/^\*\*(.*?)\*\*$/);
         if (boldMatch) {
           return (
-            <strong key={index} className="font-semibold text-white">
+            <strong key={index} className="font-semibold text-slate-900">
               {boldMatch[1]}
             </strong>
           );

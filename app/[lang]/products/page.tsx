@@ -137,7 +137,7 @@ export default async function Products({
                 <ScrollReveal
                   key={key}
                   delay={index * 0.03}
-                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 hover:shadow-lg transition-all duration-300 group flex flex-col h-full scroll-mt-28"
+                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-lg transition-all duration-300 group flex flex-col h-full scroll-mt-28"
                   id={anchorId}
                 >
                   {/* 3:2 Product Image Container */}
@@ -149,7 +149,7 @@ export default async function Products({
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 right-3 bg-secondary/90 text-accent px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                    <div className="absolute top-3 right-3 bg-accent text-slate-900 px-3 py-1 rounded-full text-xs font-mono font-bold shadow-xs">
                       {product.badge}
                     </div>
                   </div>
@@ -271,11 +271,11 @@ export default async function Products({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:border-secondary/40 hover:shadow-sm transition-all"
+                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-sm transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
-                      <span className="w-8 h-8 rounded-lg bg-secondary text-accent font-mono text-xs font-bold flex items-center justify-center">
+                      <span className="w-8 h-8 rounded-lg bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center shadow-xs">
                         {item.number}
                       </span>
                       <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
