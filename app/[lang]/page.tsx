@@ -3,7 +3,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ScrollReveal from "@/components/ScrollReveal";
+import ScrollReveal, { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import JsonLd from "@/components/JsonLd";
 import {
@@ -222,10 +222,13 @@ export default async function Home({
               {homeDict.trustStats.heading}
             </h2>
 
-            <ScrollReveal>
+            <RevealGroup>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Stat 1: Since 2015 */}
-                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={0}
+                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-secondary/5 text-secondary mb-4">
                       <Sparkles className="w-5 h-5" aria-hidden="true" />
@@ -240,10 +243,13 @@ export default async function Home({
                       {homeDict.trustStats.sinceDesc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Stat 2: Facility Size 9.080 m2 */}
-                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={1}
+                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary mb-4">
                       <Factory className="w-5 h-5" aria-hidden="true" />
@@ -258,10 +264,13 @@ export default async function Home({
                       {homeDict.trustStats.facilityDesc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Stat 3: Quality Options */}
-                <div className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent/50 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={2}
+                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent/50 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-accent/20 text-secondary mb-4">
                       <Award className="w-5 h-5" aria-hidden="true" />
@@ -276,9 +285,9 @@ export default async function Home({
                       {homeDict.trustStats.qualityDesc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
               </div>
-            </ScrollReveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -291,21 +300,27 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block">
-                  {homeDict.featuredProducts.eyebrow}
-                </span>
-                <h2
-                  id="featured-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.featuredProducts.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.featuredProducts.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.featuredProducts.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="featured-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.featuredProducts.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.featuredProducts.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               {/* Balanced 5 Product Grid: 3 cards top row, 2 cards bottom row centered */}
@@ -318,8 +333,10 @@ export default async function Home({
                       : "lg:col-span-2";
 
                   return (
-                    <div
+                    <Reveal
                       key={key}
+                      staggerIndex={index}
+                      baseDelay={0.24}
                       className={`${colSpanClass} bg-surface rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 overflow-hidden shadow-xs hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full hover:border-accent`}
                     >
                       <div>
@@ -361,13 +378,13 @@ export default async function Home({
                           <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
                         </Link>
                       </div>
-                    </div>
+                    </Reveal>
                   );
                 })}
               </div>
 
               {/* Catalog CTA */}
-              <div className="mt-10 sm:mt-12 text-center">
+              <Reveal delay={0.64} className="mt-10 sm:mt-12 text-center">
                 <Link
                   id="view-all-products-btn"
                   href={`/${currentLang}/products`}
@@ -376,8 +393,8 @@ export default async function Home({
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
                 </Link>
-              </div>
-            </ScrollReveal>
+              </Reveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -390,33 +407,41 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-b border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                  {homeDict.solutionsByArea.eyebrow}
-                </span>
-                <h2
-                  id="solutions-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.solutionsByArea.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.solutionsByArea.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.solutionsByArea.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="solutions-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.solutionsByArea.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.solutionsByArea.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-10">
-                {homeDict.solutionsByArea.items.map((item) => {
+                {homeDict.solutionsByArea.items.map((item, index) => {
                   let AreaIcon = HomeIcon;
                   if (item.id === "commercial") AreaIcon = Building2;
                   if (item.id === "industrial") AreaIcon = Warehouse;
                   if (item.id === "public") AreaIcon = Landmark;
 
                   return (
-                    <div
+                    <Reveal
                       key={item.id}
+                      staggerIndex={index}
+                      baseDelay={0.24}
                       className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-[border-color,box-shadow,transform] duration-300"
                     >
                       <div>
@@ -440,20 +465,20 @@ export default async function Home({
                           <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                         </Link>
                       </div>
-                    </div>
+                    </Reveal>
                   );
                 })}
               </div>
 
-              <div className="bg-white border border-stone-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
+              <Reveal delay={0.56} className="bg-white border border-stone-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
                 <p className="text-xs sm:text-sm text-slate-700 font-sans">
                   <span className="font-semibold text-slate-900">
                     {currentLang === "id" ? "Catatan:" : "Note:"}{" "}
                   </span>
                   {homeDict.solutionsByArea.consultNote}
                 </p>
-              </div>
-            </ScrollReveal>
+              </Reveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -466,26 +491,36 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block">
-                  {homeDict.installation.eyebrow}
-                </span>
-                <h2
-                  id="installation-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.installation.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.installation.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.installation.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="installation-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.installation.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.installation.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 {/* Point 1: Integrated Package */}
-                <div className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={0}
+                  baseDelay={0.24}
+                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-secondary text-accent flex items-center justify-center mb-5 shadow-xs">
                       <Layers className="w-6 h-6" aria-hidden="true" />
@@ -497,10 +532,14 @@ export default async function Home({
                       {homeDict.installation.point1Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Point 2: From Raw Land to Neat Completion */}
-                <div className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={1}
+                  baseDelay={0.24}
+                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center mb-5 shadow-xs">
                       <ShieldCheck className="w-6 h-6" aria-hidden="true" />
@@ -512,10 +551,14 @@ export default async function Home({
                       {homeDict.installation.point2Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Point 3: Jabodetabek & Regional Coverage */}
-                <div className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={2}
+                  baseDelay={0.24}
+                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
+                >
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center mb-5 shadow-xs">
                       <Truck className="w-6 h-6 text-accent" aria-hidden="true" />
@@ -527,93 +570,96 @@ export default async function Home({
                       {homeDict.installation.point3Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
               </div>
-            </ScrollReveal>
 
-            {/* Workflow Banner (Red primary 4-step execution workflow with Gold accents) */}
-            <ScrollReveal className="bg-gradient-to-r from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border-t-4 border-t-accent relative overflow-hidden">
-              <div className="relative z-10">
-                <div className="max-w-3xl mb-8">
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-accent mb-2">
-                    {homeDict.installation.workflowTitle}
-                  </h3>
-                  <p className="text-sm sm:text-base text-slate-300 font-sans">
-                    {homeDict.installation.workflowSubtitle}
-                  </p>
+              {/* Workflow Banner (Red primary 4-step execution workflow with Gold accents) */}
+              <Reveal
+                delay={0.48}
+                className="bg-gradient-to-r from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border-t-4 border-t-accent relative overflow-hidden"
+              >
+                <div className="relative z-10">
+                  <div className="max-w-3xl mb-8">
+                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-accent mb-2">
+                      {homeDict.installation.workflowTitle}
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-300 font-sans">
+                      {homeDict.installation.workflowSubtitle}
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    {/* Step 1 */}
+                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-mono text-accent font-bold block mb-1">01</span>
+                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
+                          {homeDict.installation.step1Title}
+                        </h4>
+                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
+                          {homeDict.installation.step1Desc}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-mono text-accent font-bold block mb-1">02</span>
+                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
+                          {homeDict.installation.step2Title}
+                        </h4>
+                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
+                          {homeDict.installation.step2Desc}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 3 */}
+                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-mono text-accent font-bold block mb-1">03</span>
+                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
+                          {homeDict.installation.step3Title}
+                        </h4>
+                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
+                          {homeDict.installation.step3Desc}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 4 */}
+                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-mono text-accent font-bold block mb-1">04</span>
+                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
+                          {homeDict.installation.step4Title}
+                        </h4>
+                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
+                          {homeDict.installation.step4Desc}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <span className="text-xs sm:text-sm text-slate-300 font-sans text-center sm:text-left">
+                      {dict.products.availability}
+                    </span>
+                    <a
+                      id="installation-consult-btn"
+                      href={dict.contact.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    >
+                      <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
+                      {homeDict.installation.cta}
+                    </a>
+                  </div>
                 </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                  {/* Step 1 */}
-                  <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                    <div>
-                      <span className="text-xs font-mono text-accent font-bold block mb-1">01</span>
-                      <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                        {homeDict.installation.step1Title}
-                      </h4>
-                      <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                        {homeDict.installation.step1Desc}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Step 2 */}
-                  <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                    <div>
-                      <span className="text-xs font-mono text-accent font-bold block mb-1">02</span>
-                      <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                        {homeDict.installation.step2Title}
-                      </h4>
-                      <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                        {homeDict.installation.step2Desc}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Step 3 */}
-                  <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                    <div>
-                      <span className="text-xs font-mono text-accent font-bold block mb-1">03</span>
-                      <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                        {homeDict.installation.step3Title}
-                      </h4>
-                      <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                        {homeDict.installation.step3Desc}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Step 4 */}
-                  <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                    <div>
-                      <span className="text-xs font-mono text-accent font-bold block mb-1">04</span>
-                      <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                        {homeDict.installation.step4Title}
-                      </h4>
-                      <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                        {homeDict.installation.step4Desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <span className="text-xs sm:text-sm text-slate-300 font-sans text-center sm:text-left">
-                    {dict.products.availability}
-                  </span>
-                  <a
-                    id="installation-consult-btn"
-                    href={dict.contact.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  >
-                    <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-                    {homeDict.installation.cta}
-                  </a>
-                </div>
-              </div>
-            </ScrollReveal>
+              </Reveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -626,26 +672,36 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-t border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block">
-                  {homeDict.ordering.eyebrow}
-                </span>
-                <h2
-                  id="ordering-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.ordering.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.ordering.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.ordering.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="ordering-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.ordering.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.ordering.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Step 1 */}
-                <div className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300">
+                <Reveal
+                  staggerIndex={0}
+                  baseDelay={0.24}
+                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                >
                   <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step1Number}
                   </div>
@@ -655,10 +711,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.ordering.step1Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Step 2 */}
-                <div className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300">
+                <Reveal
+                  staggerIndex={1}
+                  baseDelay={0.24}
+                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                >
                   <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step2Number}
                   </div>
@@ -668,10 +728,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.ordering.step2Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Step 3 */}
-                <div className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300">
+                <Reveal
+                  staggerIndex={2}
+                  baseDelay={0.24}
+                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                >
                   <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step3Number}
                   </div>
@@ -681,10 +745,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.ordering.step3Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Step 4 */}
-                <div className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300">
+                <Reveal
+                  staggerIndex={3}
+                  baseDelay={0.24}
+                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                >
                   <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
                     {homeDict.ordering.step4Number}
                   </div>
@@ -694,9 +762,9 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.ordering.step4Desc}
                   </p>
-                </div>
+                </Reveal>
               </div>
-            </ScrollReveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -709,27 +777,37 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block">
-                  {homeDict.gallery.eyebrow}
-                </span>
-                <h2
-                  id="gallery-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.gallery.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.gallery.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.gallery.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="gallery-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.gallery.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.gallery.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               {/* 3 Documentation Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                 {/* Card 1: Produk */}
-                <div className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50">
+                <Reveal
+                  staggerIndex={0}
+                  baseDelay={0.24}
+                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                >
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
@@ -759,10 +837,14 @@ export default async function Home({
                       {homeDict.gallery.caption1Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Card 2: Pemasangan */}
-                <div className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50">
+                <Reveal
+                  staggerIndex={1}
+                  baseDelay={0.24}
+                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                >
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
@@ -792,10 +874,14 @@ export default async function Home({
                       {homeDict.gallery.caption2Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
 
                 {/* Card 3: Aplikasi Lapangan */}
-                <div className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50">
+                <Reveal
+                  staggerIndex={2}
+                  baseDelay={0.24}
+                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                >
                   <div className="w-full h-48 relative overflow-hidden bg-stone-100">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
@@ -825,11 +911,11 @@ export default async function Home({
                       {homeDict.gallery.caption3Desc}
                     </p>
                   </div>
-                </div>
+                </Reveal>
               </div>
 
               {/* Gallery Page CTA */}
-              <div className="mt-10 sm:mt-12 text-center">
+              <Reveal delay={0.48} className="mt-10 sm:mt-12 text-center">
                 <Link
                   id="view-gallery-btn"
                   href={`/${currentLang}/projects`}
@@ -838,8 +924,8 @@ export default async function Home({
                   {homeDict.gallery.cta}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
                 </Link>
-              </div>
-            </ScrollReveal>
+              </Reveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -852,26 +938,36 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-t border-stone-200/60"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block">
-                  {homeDict.benefits.eyebrow}
-                </span>
-                <h2
-                  id="benefits-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.benefits.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.benefits.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.benefits.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="benefits-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.benefits.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.benefits.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {/* Feature 1 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={0}
+                  baseDelay={0.24}
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
                     <ShieldCheck className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
@@ -881,10 +977,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.benefits.item1Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Feature 2 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={1}
+                  baseDelay={0.24}
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
                     <Factory className="w-6 h-6 text-slate-900" aria-hidden="true" />
                   </div>
@@ -894,10 +994,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.benefits.item2Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Feature 3 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={2}
+                  baseDelay={0.24}
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
                     <Truck className="w-6 h-6 text-slate-900" aria-hidden="true" />
                   </div>
@@ -907,10 +1011,14 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.benefits.item3Desc}
                   </p>
-                </div>
+                </Reveal>
 
                 {/* Feature 4 */}
-                <div className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all">
+                <Reveal
+                  staggerIndex={3}
+                  baseDelay={0.24}
+                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
                     <CreditCard className="w-6 h-6 text-slate-900" aria-hidden="true" />
                   </div>
@@ -920,9 +1028,9 @@ export default async function Home({
                   <p className="text-sm text-slate-600 font-sans leading-relaxed">
                     {homeDict.benefits.item4Desc}
                   </p>
-                </div>
+                </Reveal>
               </div>
-            </ScrollReveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -935,42 +1043,49 @@ export default async function Home({
           className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-t border-stone-200/60"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <RevealGroup>
               <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                  {homeDict.faq.eyebrow}
-                </span>
-                <h2
-                  id="faq-heading"
-                  className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                >
-                  {homeDict.faq.title}
-                </h2>
-                <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
-                  {homeDict.faq.subtitle}
-                </p>
+                <Reveal delay={0}>
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+                    {homeDict.faq.eyebrow}
+                  </span>
+                </Reveal>
+                <Reveal delay={0.08}>
+                  <h2
+                    id="faq-heading"
+                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                  >
+                    {homeDict.faq.title}
+                  </h2>
+                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+                </Reveal>
+                <Reveal delay={0.16}>
+                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                    {homeDict.faq.subtitle}
+                  </p>
+                </Reveal>
               </div>
 
               <div className="space-y-4">
                 {homeDict.faq.items.map((item, index) => (
-                  <details
-                    key={index}
-                    className="group bg-surface rounded-2xl border border-stone-200/80 open:border-secondary/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
-                  >
-                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
-                      <span className="pr-4">{item.q}</span>
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-slate-900 group-hover:border-primary group-open:rotate-180 transition-transform duration-200">
-                        <ChevronDown className="w-4 h-4" aria-hidden="true" />
-                      </span>
-                    </summary>
-                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-stone-200/40">
-                      {item.a}
-                    </div>
-                  </details>
+                  <Reveal key={index} staggerIndex={index} baseDelay={0.24} staggerInterval={0.06}>
+                    <details
+                      className="group bg-surface rounded-2xl border border-stone-200/80 open:border-secondary/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
+                    >
+                      <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
+                        <span className="pr-4">{item.q}</span>
+                        <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-slate-900 group-hover:border-primary group-open:rotate-180 transition-transform duration-200">
+                          <ChevronDown className="w-4 h-4" aria-hidden="true" />
+                        </span>
+                      </summary>
+                      <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-stone-200/40">
+                        {item.a}
+                      </div>
+                    </details>
+                  </Reveal>
                 ))}
               </div>
-            </ScrollReveal>
+            </RevealGroup>
           </div>
         </section>
 
@@ -993,39 +1108,45 @@ export default async function Home({
           />
 
           <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
-            <ScrollReveal>
-              <h2
-                id="final-cta-heading"
-                className="text-3xl sm:text-4xl md:text-5xl font-black font-heading tracking-tight mb-6 text-white"
-              >
-                {homeDict.finalCta.title}
-              </h2>
-              <p className="text-base sm:text-lg text-slate-100 font-sans mb-10 max-w-2xl mx-auto leading-relaxed">
-                {homeDict.finalCta.subtitle}
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  id="final-whatsapp-btn"
-                  href={dict.contact.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-primary hover:bg-stone-100 px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            <RevealGroup>
+              <Reveal delay={0}>
+                <h2
+                  id="final-cta-heading"
+                  className="text-3xl sm:text-4xl md:text-5xl font-black font-heading tracking-tight mb-6 text-white"
                 >
-                  <Phone className="w-5 h-5 mr-2.5 text-primary" aria-hidden="true" />
-                  {homeDict.finalCta.ctaPrimary}
-                </a>
+                  {homeDict.finalCta.title}
+                </h2>
+              </Reveal>
+              <Reveal delay={0.08}>
+                <p className="text-base sm:text-lg text-slate-100 font-sans mb-10 max-w-2xl mx-auto leading-relaxed">
+                  {homeDict.finalCta.subtitle}
+                </p>
+              </Reveal>
 
-                <Link
-                  id="final-products-btn"
-                  href={`/${currentLang}/products`}
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-bold text-base backdrop-blur-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                >
-                  {homeDict.finalCta.ctaSecondary}
-                  <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
-                </Link>
-              </div>
-            </ScrollReveal>
+              <Reveal delay={0.16}>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <a
+                    id="final-whatsapp-btn"
+                    href={dict.contact.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-primary hover:bg-stone-100 px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
+                    <Phone className="w-5 h-5 mr-2.5 text-primary" aria-hidden="true" />
+                    {homeDict.finalCta.ctaPrimary}
+                  </a>
+
+                  <Link
+                    id="final-products-btn"
+                    href={`/${currentLang}/products`}
+                    className="w-full sm:w-auto inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-bold text-base backdrop-blur-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                  >
+                    {homeDict.finalCta.ctaSecondary}
+                    <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                  </Link>
+                </div>
+              </Reveal>
+            </RevealGroup>
           </div>
         </section>
       </div>

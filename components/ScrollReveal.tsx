@@ -1,47 +1,144 @@
 "use client";
 
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import React, {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
-interface ScrollRevealProps {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-  direction?: "up" | "down" | "left" | "right" | "none";
-  id?: string;
-  immediate?: boolean;
+interface RevealGroupContextValue {
+  isVisible: boolean;
+  staggerInterval: number;
 }
 
-export default function ScrollReveal({
+const RevealGroupContext = createContext<RevealGroupContextValue | null>(null);
+
+export interface RevealGroupProps {
+  children: ReactNode;
+  className?: string;
+  staggerInterval?: number; // in seconds, default 0.08 (80ms)
+  threshold?: number; // default 0.1
+  rootMargin?: string; // default "0px 0px -40px 0px"
+  id?: string;
+  as?: React.ElementType;
+}
+
+export function RevealGroup({
   children,
   className = "",
-  delay = 0,
-  direction = "up",
+  staggerInterval = 0.08,
+  threshold = 0.1,
+  rootMargin = "0px 0px -40px 0px",
   id,
-  immediate = false,
-}: ScrollRevealProps) {
-  const [isVisible, setIsVisible] = useState(immediate);
-  const domRef = useRef<HTMLDivElement>(null);
+  as: Component = "div",
+}: RevealGroupProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const groupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (immediate) {
+    // Accessibility check: prefers-reduced-motion
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       setIsVisible(true);
       return;
     }
 
-    const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (isReduced) {
-      setIsVisible(true);
-      return;
-    }
-
-    const currentElem = domRef.current;
+    const currentElem = groupRef.current;
     if (!currentElem) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setIsVisible(true);
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold, rootMargin }
+    );
+
+    observer.observe(currentElem);
+
+    return () => {
+      if (currentElem) observer.unobserve(currentElem);
+    };
+  }, [threshold, rootMargin]);
+
+  return (
+    <RevealGroupContext.Provider value={{ isVisible, staggerInterval }}>
+      <Component id={id} ref={groupRef} className={className}>
+        {children}
+      </Component>
+    </RevealGroupContext.Provider>
+  );
+}
+
+export interface RevealProps {
+  children: ReactNode;
+  className?: string;
+  delay?: number; // in seconds
+  staggerIndex?: number;
+  staggerInterval?: number; // in seconds
+  baseDelay?: number; // in seconds
+  direction?: "up" | "down" | "left" | "right" | "none";
+  duration?: number; // in seconds, default 0.6
+  id?: string;
+  immediate?: boolean;
+  as?: React.ElementType;
+}
+
+export function Reveal({
+  children,
+  className = "",
+  delay,
+  staggerIndex,
+  staggerInterval,
+  baseDelay = 0,
+  direction = "up",
+  duration = 0.6,
+  id,
+  immediate = false,
+  as: Component = "div",
+}: RevealProps) {
+  const groupContext = useContext(RevealGroupContext);
+  const [localIsVisible, setLocalIsVisible] = useState(immediate);
+  const domRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (immediate || groupContext) return;
+
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setLocalIsVisible(true);
+      return;
+    }
+
+    const currentElem = domRef.current;
+    if (!currentElem) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setLocalIsVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setLocalIsVisible(true);
             observer.unobserve(entry.target);
           }
         });
@@ -54,7 +151,24 @@ export default function ScrollReveal({
     return () => {
       if (currentElem) observer.unobserve(currentElem);
     };
-  }, [immediate]);
+  }, [immediate, groupContext]);
+
+  const isVisible = immediate
+    ? true
+    : groupContext
+    ? groupContext.isVisible
+    : localIsVisible;
+
+  let computedDelay = 0;
+  if (delay !== undefined) {
+    computedDelay = delay;
+  } else if (staggerIndex !== undefined) {
+    const interval =
+      staggerInterval ?? groupContext?.staggerInterval ?? 0.08;
+    computedDelay = baseDelay + staggerIndex * interval;
+  } else {
+    computedDelay = baseDelay;
+  }
 
   const getDirectionClasses = () => {
     if (immediate) {
@@ -63,28 +177,43 @@ export default function ScrollReveal({
 
     switch (direction) {
       case "up":
-        return isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8";
+        return isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-6";
       case "down":
-        return isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8";
+        return isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-6";
       case "left":
-        return isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8";
+        return isVisible
+          ? "opacity-100 translate-x-0"
+          : "opacity-0 translate-x-6";
       case "right":
-        return isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8";
+        return isVisible
+          ? "opacity-100 translate-x-0"
+          : "opacity-0 -translate-x-6";
       case "none":
-        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95";
+        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-[0.98]";
     }
   };
 
   return (
-    <div
+    <Component
       id={id}
-      ref={domRef}
+      ref={groupContext ? undefined : domRef}
       style={{
-        transitionDelay: `${delay}s`,
+        transitionDelay: `${computedDelay}s`,
+        transitionDuration: `${duration}s`,
+        transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
       }}
-      className={`transition-all duration-700 ease-out motion-reduce:transform-none motion-reduce:transition-none motion-reduce:opacity-100 ${getDirectionClasses()} ${className}`}
+      className={`transition-[opacity,transform] ease-out motion-reduce:transform-none motion-reduce:transition-none motion-reduce:opacity-100 ${getDirectionClasses()} ${className}`}
     >
       {children}
-    </div>
+    </Component>
   );
 }
+
+export default function ScrollReveal(props: RevealProps) {
+  return <Reveal {...props} />;
+}
+

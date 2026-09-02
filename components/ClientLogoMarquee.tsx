@@ -46,8 +46,8 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
       aria-labelledby="client-logos-heading"
       className="py-7 sm:py-9 bg-white border-y border-stone-200/60 overflow-hidden relative"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center">
-        <ScrollReveal>
+      <ScrollReveal>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center">
           {/* Eyebrow badge with Gold indicator */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/15 border border-accent/40 text-primary font-bold text-xs uppercase tracking-wider font-heading mb-2.5 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-accent" aria-hidden="true" />
@@ -72,52 +72,52 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
               {dict.subtitle}
             </p>
           )}
-        </ScrollReveal>
-      </div>
-
-      {/* Marquee Track Container with Edge Fade Gradients */}
-      <div className="relative w-full overflow-hidden py-1">
-        {/* Left Edge Fade */}
-        <div
-          className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-r from-white via-white/80 to-transparent z-10"
-          aria-hidden="true"
-        />
-
-        {/* Right Edge Fade */}
-        <div
-          className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-l from-white via-white/80 to-transparent z-10"
-          aria-hidden="true"
-        />
-
-        {/* Infinite Moving Track */}
-        <div className="flex w-max animate-marquee gap-4 sm:gap-6 lg:gap-8 motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:w-full motion-reduce:px-4">
-          {displayLogos.map((client, index) => {
-            const isDuplicate = index >= CLIENT_LOGOS.length;
-            const paddedId = String(client.id).padStart(2, "0");
-            const altText = `KAHA BLOCK client logo ${paddedId}`;
-
-            return (
-              <div
-                key={`${client.id}-${index}`}
-                aria-hidden={isDuplicate ? "true" : undefined}
-                className={`relative flex shrink-0 items-center justify-center h-20 w-48 sm:h-24 sm:w-60 lg:h-32 lg:w-72 p-3 sm:p-4 rounded-xl bg-white border border-stone-200/80 shadow-2xs transition-all duration-300 hover:border-accent hover:shadow-sm group ${
-                  isDuplicate ? "motion-reduce:hidden" : ""
-                }`}
-              >
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <Image
-                    src={client.logo}
-                    alt={altText}
-                    fill
-                    sizes="(max-width: 640px) 192px, (max-width: 1024px) 240px, 288px"
-                    className="object-contain p-1.5 sm:p-2 max-h-[60px] sm:max-h-[66px] lg:max-h-[70px] max-w-[75%] m-auto group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
-            );
-          })}
         </div>
-      </div>
+
+        {/* Marquee Track Container with Edge Fade Gradients */}
+        <div className="relative w-full overflow-hidden py-1">
+          {/* Left Edge Fade */}
+          <div
+            className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-r from-white via-white/80 to-transparent z-10"
+            aria-hidden="true"
+          />
+
+          {/* Right Edge Fade */}
+          <div
+            className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-l from-white via-white/80 to-transparent z-10"
+            aria-hidden="true"
+          />
+
+          {/* Infinite Moving Track */}
+          <div className="flex w-max animate-marquee gap-4 sm:gap-6 lg:gap-8 motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:w-full motion-reduce:px-4">
+            {displayLogos.map((client, index) => {
+              const isDuplicate = index >= CLIENT_LOGOS.length;
+              const paddedId = String(client.id).padStart(2, "0");
+              const altText = `KAHA BLOCK client logo ${paddedId}`;
+
+              return (
+                <div
+                  key={`${client.id}-${index}`}
+                  aria-hidden={isDuplicate ? "true" : undefined}
+                  className={`relative flex shrink-0 items-center justify-center h-20 w-48 sm:h-24 sm:w-60 lg:h-32 lg:w-72 p-3 sm:p-4 rounded-xl bg-white border border-stone-200/80 shadow-2xs transition-all duration-300 hover:border-accent hover:shadow-sm group ${
+                    isDuplicate ? "motion-reduce:hidden" : ""
+                  }`}
+                >
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    <Image
+                      src={client.logo}
+                      alt={altText}
+                      fill
+                      sizes="(max-width: 640px) 192px, (max-width: 1024px) 240px, 288px"
+                      className="object-contain p-1.5 sm:p-2 max-h-[60px] sm:max-h-[66px] lg:max-h-[70px] max-w-[75%] m-auto group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </ScrollReveal>
     </section>
   );
 }
