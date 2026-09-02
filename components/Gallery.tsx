@@ -79,13 +79,13 @@ export default function Gallery({
         <div className="mb-16 sm:mb-20 md:mb-24">
           {featuredHeader && (
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#7A1C1C] mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
                 {featuredHeader.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0F2042]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {featuredHeader.title}
               </h2>
-              <div className="w-16 h-1 bg-[#7A1C1C] mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
                 {featuredHeader.subtitle}
               </p>
@@ -96,7 +96,7 @@ export default function Gallery({
             {featuredItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col h-full"
+                className="bg-surface-card rounded-2xl sm:rounded-3xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col h-full"
                 onClick={() => openLightboxBySrc(item.image)}
                 role="button"
                 tabIndex={0}
@@ -117,24 +117,24 @@ export default function Gallery({
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 right-3 bg-[#0F2042]/90 text-[#D4AF37] px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                  <div className="absolute top-3 right-3 bg-secondary/90 text-accent px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
                     {item.badge}
                   </div>
-                  <div className="absolute inset-0 bg-[#0F2042]/0 group-hover:bg-[#0F2042]/20 transition-colors duration-300 flex items-center justify-center">
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-[#0F2042] flex items-center justify-center shadow-lg">
+                  <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300 flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-secondary flex items-center justify-center shadow-lg">
                       <ZoomIn className="w-5 h-5" aria-hidden="true" />
                     </span>
                   </div>
                 </div>
 
                 {/* Permanent Caption Panel */}
-                <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-white border-t border-slate-100">
+                <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-surface-card border-t border-slate-100">
                   <div>
-                    <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#7A1C1C] mb-1.5 font-heading">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#7A1C1C]" aria-hidden="true" />
+                    <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-primary mb-1.5 font-heading">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
                       <span>{item.label}</span>
                     </div>
-                    <p className="text-sm sm:text-base text-[#0F2042] font-semibold font-sans leading-snug">
+                    <p className="text-sm sm:text-base text-slate-900 font-semibold font-sans leading-snug">
                       {item.caption}
                     </p>
                   </div>
@@ -151,7 +151,7 @@ export default function Gallery({
       <div>
         {completeGalleryHeading && (
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-200/80">
-            <h2 className="text-xl sm:text-2xl font-bold font-heading text-[#0F2042]">
+            <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">
               {completeGalleryHeading}
             </h2>
             <span className="text-xs sm:text-sm font-mono text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full">
@@ -183,8 +183,8 @@ export default function Gallery({
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-[#0F2042]/0 group-hover:bg-[#0F2042]/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-[#0F2042] flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300 flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-secondary flex items-center justify-center shadow-lg">
                   <ZoomIn className="w-5 h-5" aria-hidden="true" />
                 </span>
               </div>
@@ -199,14 +199,14 @@ export default function Gallery({
           {hasMore ? (
             <button
               onClick={handleLoadMore}
-              className="inline-flex items-center justify-center bg-[#0F2042] hover:bg-[#7A1C1C] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-h-[44px]"
+              className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
             >
               {dict.loadMore}
             </button>
           ) : images.length > INITIAL_COUNT ? (
             <button
               onClick={handleShowLess}
-              className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-[#0F2042] border-2 border-[#0F2042]/15 hover:border-[#0F2042] px-8 py-3.5 rounded-full font-bold text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F2042] min-h-[44px]"
+              className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-300 hover:border-slate-800 px-8 py-3.5 rounded-full font-bold text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
             >
               {dict.showLess}
             </button>

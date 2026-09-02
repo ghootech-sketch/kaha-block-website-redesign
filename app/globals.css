@@ -5,32 +5,33 @@
   --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand Palette Tokens */
-  --color-cream: #F7F5F0;
-  --color-cream-light: #F7F5F0;
-  --color-cream-dark: #EFECE6;
-  
-  --color-gold: #D4AF37;
-  --color-gold-hover: #C59F2E;
-  --color-gold-light: #FAF4E1;
-  
-  --color-venetian: #7A1C1C;
-  --color-venetian-hover: #631616;
-  --color-venetian-light: #FDF2F2;
-  
-  --color-sapphire: #0F2042;
-  --color-sapphire-dark: #0A1630;
-  --color-sapphire-light: #1A365D;
-
-  /* Semantic Aliases */
+  /* Brand Semantic Palette Tokens */
   --color-primary: #7A1C1C;
   --color-primary-hover: #631616;
-  --color-secondary: #0F2042;
+
   --color-accent: #D4AF37;
   --color-accent-hover: #C59F2E;
-  --color-highlight: #D4AF37;
+
+  --color-secondary: #0F2042;
+  --color-secondary-hover: #0A1630;
+
   --color-surface: #F7F5F0;
   --color-surface-card: #FFFFFF;
+
+  --color-footer: #0F2042;
+
+  --color-text: #0F172A;
+  --color-text-muted: #475569;
+
+  --color-border: #E2E8F0;
+
+  /* Direct Brand References */
+  --color-venetian: #7A1C1C;
+  --color-venetian-hover: #631616;
+  --color-gold: #D4AF37;
+  --color-gold-hover: #C59F2E;
+  --color-sapphire: #0F2042;
+  --color-sapphire-dark: #0A1630;
 }
 
 body {
@@ -40,3 +41,4 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
+

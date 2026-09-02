@@ -28,7 +28,7 @@ export default function LanguageSwitcher({
 
   return (
     <div
-      className={`inline-flex items-center space-x-1 bg-[#F7F5F0] p-1 rounded-xl ${className}`}
+      className={`inline-flex items-center space-x-1 bg-surface p-1 rounded-xl ${className}`}
       role="group"
       aria-label="Language selection"
     >
@@ -36,10 +36,10 @@ export default function LanguageSwitcher({
         href={getTargetUrl("id")}
         aria-current={currentLang === "id" ? "true" : undefined}
         aria-label="Switch to Indonesian language"
-        className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-w-[44px] min-h-[44px] flex items-center justify-center ${
+        className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "id"
-            ? "bg-[#0F2042] text-[#D4AF37] shadow-sm"
-            : "text-[#0F2042] hover:bg-white/80 active:bg-white"
+            ? "bg-secondary text-accent shadow-sm"
+            : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
         ID
@@ -51,10 +51,10 @@ export default function LanguageSwitcher({
         href={getTargetUrl("en")}
         aria-current={currentLang === "en" ? "true" : undefined}
         aria-label="Switch to English language"
-        className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] min-w-[44px] min-h-[44px] flex items-center justify-center ${
+        className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "en"
-            ? "bg-[#0F2042] text-[#D4AF37] shadow-sm"
-            : "text-[#0F2042] hover:bg-white/80 active:bg-white"
+            ? "bg-secondary text-accent shadow-sm"
+            : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
         EN

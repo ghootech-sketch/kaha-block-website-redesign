@@ -65,7 +65,7 @@ export default function Lightbox({
           e.stopPropagation();
           onClose();
         }}
-        className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+        className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         aria-label={dict.closeLightbox}
       >
         <X className="w-8 h-8" />
@@ -76,7 +76,7 @@ export default function Lightbox({
           e.stopPropagation();
           onPrev();
         }}
-        className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+        className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         disabled={currentIndex === 0}
         aria-label={dict.prevImage}
       >
@@ -88,7 +88,7 @@ export default function Lightbox({
           e.stopPropagation();
           onNext();
         }}
-        className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37]"
+        className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 rounded-full disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         disabled={currentIndex === images.length - 1}
         aria-label={dict.nextImage}
       >

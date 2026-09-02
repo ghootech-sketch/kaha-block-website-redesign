@@ -1,35 +1,35 @@
 # KAHA BLOCK - Design System & Color Palette
 
-Dokumen ini memuat panduan desain (Design System) elegan, hangat, dan berkelas untuk aplikasi KAHA BLOCK.
+Dokumen ini memuat panduan sistem desain (Design System) resmi untuk aplikasi KAHA BLOCK.
 
 ## 🎨 Color Palette & Hierarchy (Peta Palet Warna & Hierarki)
 
-Kombinasi warna baru mengusung palet hangat, mewah, dan profesional dengan dominasi permukaan Cream/White (60–70%), aksen Venetian Red (15–20%), sentuhan Gold (8–12%), dan Sapphire Blue (5–10%) sebagai warna pendukung.
+Sistem warna KAHA BLOCK mengusung fondasi terang, hangat, dan berkelas dengan dominasi permukaan Cream & Pure White (60–70%), aksen merek utama Venetian Red (15–20%), sentuhan Gold (8–12%) sebagai penegas premium, dan Sapphire Blue (5–10%) secara terbatas hanya untuk kontras struktur pendukung.
 
-| Warna | Nama / Peran | Kode HEX | Token / Class | Dominansi & Penggunaan Utama |
+| Warna | Nama / Peran | Kode HEX | Token / Semantic Class | Penggunaan & Peran Utama |
 | :---: | :--- | :--- | :--- | :--- |
-| 🪨 | **Pearl White / Light Cream** | `#F7F5F0` | `--color-surface-cream` / `bg-[#F7F5F0]` | **60–70% (Dominan)** — Latar belakang section sekunder, card container lembut, fondasi visual warm luxury. |
-| ⬜ | **Pure White** | `#FFFFFF` | `--color-surface-pure` / `bg-white` | Latar belakang section utama, card containers, teks kontras tinggi di atas latar gelap. |
-| 🍷 | **Venetian Red** | `#7A1C1C` | `--color-brand-red` / `bg-[#7A1C1C]` | **15–20% (Aksen Utama)** — Tombol Call-to-Action utama, badge penting, active links, divider accents, dan status highlights. |
-| 👑 | **Gold / Antique Gold** | `#D4AF37` | `--color-brand-gold` / `text-[#D4AF37]` | **8–12% (Aksen Elegan)** — Divider halus, nomor urut langkah, icon highlight, badge premium, border aksen, focus rings. |
-| 🌌 | **Sapphire Blue** | `#0F2042` | `--color-brand-blue` / `text-[#0F2042]` | **5–10% (Pendukung)** — Teks judul (headings), footer/hero banner latar gelap pendukung, border terstruktur. Tidak mendominasi. |
-| 💬 | **WhatsApp Green** | `#25D366` | `bg-[#25D366]` | Khusus untuk UI/tombol integrasi WhatsApp resmi. |
+| 🪨 | **Pearl White / Light Cream** | `#F7F5F0` | `bg-surface` / `--color-surface` | **Fondasi Utama (Dominan)** — Latar belakang halaman, section terstruktur, area netral hangat. |
+| ⬜ | **Pure White** | `#FFFFFF` | `bg-surface-card` / `bg-white` | **Fondasi Utama (Kartu)** — Permukaan kartu produk/fitur, container konten, background komponen utama. |
+| 🍷 | **Venetian Red** | `#7A1C1C` | `bg-primary` / `text-primary` | **Aksen Merek Utama** — Tombol Call-to-Action (CTA) utama, navigasi aktif, label section penting, statistik kunci, divider penegas konversi. |
+| 👑 | **Gold / Antique Gold** | `#D4AF37` | `bg-accent` / `text-accent` | **Aksen Premium** — Badge spesifikasi, nomor langkah/step markers, ikon aksen, ring fokus keyboard, border highlight. |
+| 🌌 | **Sapphire Blue** | `#0F2042` | `bg-secondary` / `bg-footer` | **Pendukung Terbatas** — Background Footer, kontras struktur gelap tertentu, aksen tipografi terstruktur secara selektif. Bukan warna default body atau heading. |
+| 💬 | **WhatsApp Green** | `#25D366` | `bg-[#25D366]` | **Integrasi Khusus** — Tombol dan badge resmi WhatsApp. |
 
 ## 📐 Prinsip Desain & Hierarki Visual
 
 1. **Cream/White-First Surface Dominance**
-   - 60–70% ruang visual didominasi oleh permukaan Cream `#F7F5F0` dan Pure White `#FFFFFF`.
-   - Menghasilkan pengalaman membaca yang lapang, tenang, hangat, dan tidak melelahkan mata.
+   - 60–70% ruang visual didominasi oleh permukaan Cream (`bg-surface` / `#F7F5F0`) dan Pure White (`bg-surface-card` / `#FFFFFF`).
+   - Menghasilkan tampilan yang bersih, hangat, profesional, dan lapang.
 
-2. **Aksen Terarah (Venetian Red & Gold)**
-   - Venetian Red `#7A1C1C` memandu mata pengguna ke tindakan konversi utama (konsultasi proyek, CTA, kontak).
-   - Gold `#D4AF37` memberikan sentuhan aksen elegan pada divider, badge spesifikasi, nomor langkah, dan garis aksen tanpa memenuhi ruang secara berlebihan.
+2. **Tipografi Netral Gelap (Neutral Dark Typography)**
+   - Body text dan sebagian besar heading menggunakan warna Slate/Stone netral (`text-slate-900`, `text-slate-800`, `text-slate-600`) untuk keterbacaan optimal.
+   - Sapphire Blue (`text-secondary`) dan Venetian Red (`text-primary`) hanya diterapkan secara sengaja pada judul penegas tertentu.
 
-3. **Bebas Slop & Cliché**
-   - Tanpa gradien ungu-ke-biru generik atau glow drop shadow buatan.
-   - Tipografi terstruktur dengan kontras tajam (Plus Jakarta Sans + Outfit).
-   - Radius sudut matematis dan konsisten (rounded-xl / rounded-2xl / rounded-3xl).
+3. **Aksen Terarah (Venetian Red & Gold)**
+   - **Venetian Red (`bg-primary`)**: Memandu pengguna secara langsung ke tindakan konversi utama (CTA utama, WhatsApp CTA, tombol konfirmasi).
+   - **Gold (`text-accent` / `border-accent`)**: Memberikan detail premium pada nomor langkah, badge teknis, dan ikon.
 
-4. **Interaksi Halus & Aksesibilitas**
-   - Focus ring standar emas `#D4AF37` untuk navigasi keyboard yang aksesibel.
-   - Hover transition halus pada card (`hover:border-[#D4AF37]/50 hover:shadow-md`) dan tombol CTA.
+4. **Sapphire Blue Sebagai Pendukung Terbatas**
+   - Sapphire Blue (`#0F2042`) tidak digunakan sebagai warna default body text, heading default, atau hero canvas utama.
+   - Sapphire Blue diprioritaskan untuk Footer dan elemen struktur gelap pendukung secara terbatas.
+
