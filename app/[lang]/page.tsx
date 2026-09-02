@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import JsonLd from "@/components/JsonLd";
 import {
   ShieldCheck,
@@ -80,13 +81,13 @@ export default async function Home({
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[60%_center] sm:object-center opacity-20 -z-20 pointer-events-none"
+            className="object-cover object-[70%_center] lg:object-right-center opacity-60 -z-20 pointer-events-none"
           />
 
           {/* Warm Light Gradients & Glows */}
-          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/95 to-surface/80 -z-10" />
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl opacity-60 pointer-events-none -z-10" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-200/30 rounded-full blur-3xl opacity-50 pointer-events-none -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/85 to-surface/15 -z-10" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-50 pointer-events-none -z-10" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-200/20 rounded-full blur-3xl opacity-40 pointer-events-none -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal immediate>
@@ -202,6 +203,11 @@ export default async function Home({
             </ScrollReveal>
           </div>
         </section>
+
+        {/* =========================================================================
+            SECTION 1.5: CLIENT & PARTNER LOGO MARQUEE
+           ========================================================================= */}
+        <ClientLogoMarquee dict={homeDict.clientLogos} />
 
         {/* =========================================================================
             SECTION 2: TRUST & CAPABILITY STATS

@@ -100,6 +100,11 @@ export const dictionaries = {
           cta: "Lihat Katalog Lengkap",
         },
       },
+      clientLogos: {
+        eyebrow: "Mitra & Kepercayaan",
+        title: "Klien & Mitra Kami",
+        subtitle: "Kepercayaan dan kemitraan dalam pengadaan material serta instalasi paving block.",
+      },
       solutionsByArea: {
         eyebrow: "Kebutuhan Area",
         title: "Solusi Berdasarkan Kebutuhan Area",
@@ -945,6 +950,11 @@ export const dictionaries = {
           ],
           cta: "View Full Catalog",
         },
+      },
+      clientLogos: {
+        eyebrow: "Trust & Partners",
+        title: "Our Clients & Partners",
+        subtitle: "Trusted partnerships in paving block supply and infrastructure projects.",
       },
       solutionsByArea: {
         eyebrow: "Area Requirements",
