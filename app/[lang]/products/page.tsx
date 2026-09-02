@@ -226,7 +226,7 @@ export default async function Products({
                         href={contactDict.whatsappUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full min-h-[44px] bg-secondary text-white py-3 px-4 rounded-full font-bold text-sm hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-full font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                         {dict.orderCta}

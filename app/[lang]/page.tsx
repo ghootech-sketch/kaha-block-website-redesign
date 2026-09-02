@@ -67,9 +67,9 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-slate-950 pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-slate-900 min-h-[620px] flex items-center"
+          className="relative isolate overflow-hidden bg-surface pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-stone-200/80 min-h-[620px] flex items-center"
         >
-          {/* Background Image */}
+          {/* Background Image with warm light image-led treatment */}
           <Image
             src="/images/hero/kaha-block-hero-paving.webp"
             alt={
@@ -80,18 +80,13 @@ export default async function Home({
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[60%_center] sm:object-center -z-20"
+            className="object-cover object-[60%_center] sm:object-center opacity-20 -z-20 pointer-events-none"
           />
 
-          {/* Gradients */}
-          {/* Mobile gradient: dark neutral darkening for image readability */}
-          <div className="absolute inset-0 bg-slate-950/75 sm:hidden -z-10" />
-          
-          {/* Desktop/Tablet horizontal gradient: heavy neutral dark on left, fading to right */}
-          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.95)_0%,rgba(15,23,42,0.82)_40%,rgba(15,23,42,0.38)_70%,rgba(15,23,42,0.1)_100%)] -z-10" />
-
-          {/* Vertical overlay for extra text contrast on bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-slate-950/20 -z-10" />
+          {/* Warm Light Gradients & Glows */}
+          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/95 to-surface/80 -z-10" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-200/30 rounded-full blur-3xl opacity-60 pointer-events-none -z-10" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-200/30 rounded-full blur-3xl opacity-50 pointer-events-none -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal immediate>
@@ -99,9 +94,9 @@ export default async function Home({
                 {/* Left Content Column (7 cols on desktop) */}
                 <div className="lg:col-span-7 flex flex-col justify-center text-left">
                   {/* Eyebrow badge */}
-                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 w-fit mb-4 sm:mb-5 backdrop-blur-sm">
+                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 w-fit mb-4 sm:mb-5">
                     <span className="w-2 h-2 rounded-full bg-accent motion-safe:animate-pulse" />
-                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-white font-heading">
+                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary font-heading">
                       {homeDict.hero.eyebrow}
                     </span>
                   </div>
@@ -109,13 +104,13 @@ export default async function Home({
                   {/* H1 Heading */}
                   <h1
                     id="hero-title"
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-white tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-slate-900 tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
                   >
                     {homeDict.hero.h1}
                   </h1>
 
                   {/* Clear Narrative Description */}
-                  <p className="text-base sm:text-lg text-slate-200/90 font-sans leading-relaxed mb-8 max-w-[600px]">
+                  <p className="text-base sm:text-lg text-slate-700 font-sans leading-relaxed mb-8 max-w-[600px]">
                     {homeDict.hero.description}
                   </p>
 
@@ -126,7 +121,7 @@ export default async function Home({
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(122,28,28,0.28)] hover:shadow-[0_15px_40px_rgba(122,28,28,0.35)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(122,28,28,0.25)] hover:shadow-[0_15px_40px_rgba(122,28,28,0.32)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
                     >
                       <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
                       {homeDict.hero.ctaPrimary}
@@ -135,25 +130,25 @@ export default async function Home({
                     <Link
                       id="hero-secondary-cta"
                       href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-white/5 hover:bg-white/10 text-white border-2 border-white/25 hover:border-white/45 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base backdrop-blur-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-white hover:bg-stone-100 text-slate-900 border-2 border-stone-300 hover:border-primary/40 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                     >
                       {homeDict.hero.ctaSecondary}
-                      <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                      <ArrowRight className="w-4 h-4 ml-2 text-primary" aria-hidden="true" />
                     </Link>
                   </div>
 
                   {/* Trust Line & Key Verification Badges */}
-                  <div className="pt-6 border-t border-white/15 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-200 font-sans">
+                  <div className="pt-6 border-t border-stone-200 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-700 font-sans">
                     <div className="flex items-center space-x-1.5">
-                      <ShieldCheck className="w-4 h-4 text-accent" aria-hidden="true" />
-                      <span className="font-semibold text-white">
+                      <ShieldCheck className="w-4.5 h-4.5 text-accent" aria-hidden="true" />
+                      <span className="font-semibold text-slate-900">
                         {homeDict.hero.trustNote}
                       </span>
                     </div>
-                    <span className="text-white/30 hidden sm:inline" aria-hidden="true">•</span>
+                    <span className="text-stone-300 hidden sm:inline" aria-hidden="true">•</span>
                     <div className="flex items-center space-x-1.5">
-                      <Factory className="w-4 h-4 text-accent" aria-hidden="true" />
-                      <span>{homeDict.hero.plantBadge}</span>
+                      <Factory className="w-4.5 h-4.5 text-accent" aria-hidden="true" />
+                      <span className="text-slate-800">{homeDict.hero.plantBadge}</span>
                     </div>
                   </div>
                 </div>
@@ -162,22 +157,22 @@ export default async function Home({
                 <div className="hidden lg:flex lg:col-span-5 items-center justify-end">
                   <aside
                     aria-labelledby="hero-product-nav-heading"
-                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-slate-700/60 bg-slate-900/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
+                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border-t-4 border-t-accent border border-stone-200/90 bg-white/95 p-6 xl:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.08)] backdrop-blur-md"
                   >
-                    <div className="h-1 w-12 rounded-full bg-accent mb-4" />
+                    <div className="h-1.5 w-14 rounded-full bg-accent mb-4" />
                     
-                    <p className="text-[11px] font-bold text-accent uppercase tracking-wider mb-1 font-heading">
+                    <p className="text-[11px] font-bold text-amber-800 uppercase tracking-wider mb-1 font-heading">
                       {homeDict.hero.productNavigator.eyebrow}
                     </p>
 
                     <h2
                       id="hero-product-nav-heading"
-                      className="text-lg font-bold text-white font-heading tracking-tight mb-2.5"
+                      className="text-lg font-bold text-slate-900 font-heading tracking-tight mb-2.5"
                     >
                       {homeDict.hero.productNavigator.title}
                     </h2>
 
-                    <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-slate-200 mb-4">
+                    <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-xs font-semibold text-amber-900 mb-4">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true" />
                       <span>{homeDict.hero.productNavigator.highlightBadge}</span>
                     </div>
@@ -186,9 +181,9 @@ export default async function Home({
                       {homeDict.hero.productNavigator.products.map((item, idx) => (
                         <li
                           key={idx}
-                          className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.06] border border-white/10 text-xs font-medium text-slate-200"
+                          className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface border border-stone-200/80 text-xs font-semibold text-slate-800"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0" aria-hidden="true" />
+                          <span className="w-2 h-2 rounded-full bg-accent shrink-0" aria-hidden="true" />
                           <span className="truncate">{item}</span>
                         </li>
                       ))}
@@ -196,9 +191,9 @@ export default async function Home({
 
                     <Link
                       href={`/${currentLang}/products`}
-                      className="flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-xs font-bold text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      className="flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-xs font-bold text-white transition-colors shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
-                      <span>{homeDict.hero.productNavigator.cta}</span>
+                      <span className="text-white">{homeDict.hero.productNavigator.cta}</span>
                       <ArrowRight className="w-4 h-4 text-accent" aria-hidden="true" />
                     </Link>
                   </aside>
@@ -354,7 +349,7 @@ export default async function Home({
                       <div className="px-6 pb-6 pt-0 mt-auto">
                         <Link
                           href={`/${currentLang}/products`}
-                          className="w-full inline-flex items-center justify-center bg-secondary/5 hover:bg-secondary text-secondary hover:text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                          className="w-full inline-flex items-center justify-center bg-primary/10 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                         >
                           {homeDict.featuredProducts.viewSpecs}
                           <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
@@ -370,7 +365,7 @@ export default async function Home({
                 <Link
                   id="view-all-products-btn"
                   href={`/${currentLang}/products`}
-                  className="inline-flex items-center justify-center bg-secondary hover:bg-primary text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -530,8 +525,8 @@ export default async function Home({
               </div>
             </ScrollReveal>
 
-            {/* Workflow Banner (Neutral 4-step execution workflow) */}
-            <ScrollReveal className="bg-gradient-to-r from-secondary to-slate-900 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl relative overflow-hidden">
+            {/* Workflow Banner (Red primary 4-step execution workflow with Gold accents) */}
+            <ScrollReveal className="bg-gradient-to-r from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border-t-4 border-t-accent relative overflow-hidden">
               <div className="relative z-10">
                 <div className="max-w-3xl mb-8">
                   <h3 className="text-xl sm:text-2xl font-bold font-heading text-accent mb-2">
@@ -832,7 +827,7 @@ export default async function Home({
                 <Link
                   id="view-gallery-btn"
                   href={`/${currentLang}/projects`}
-                  className="inline-flex items-center justify-center bg-secondary hover:bg-primary text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.gallery.cta}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />

@@ -129,10 +129,10 @@ export default async function Projects({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.05}
-                  className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-xs transition-all"
+                  className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-xs transition-all"
                 >
                   <div>
-                    <span className="w-9 h-9 rounded-xl bg-secondary text-accent font-mono text-xs font-bold flex items-center justify-center mb-4">
+                    <span className="w-9 h-9 rounded-xl bg-primary text-white font-mono text-xs font-bold flex items-center justify-center mb-4">
                       {item.number}
                     </span>
                     <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-2.5">
@@ -173,10 +173,10 @@ export default async function Projects({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:border-secondary/30 hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-surface border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:border-primary/30 hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
-                    <span className="w-9 h-9 rounded-xl bg-secondary text-accent font-mono text-xs font-bold flex items-center justify-center mb-4">
+                    <span className="w-9 h-9 rounded-xl bg-primary text-white font-mono text-xs font-bold flex items-center justify-center mb-4">
                       {step.number}
                     </span>
                     <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">

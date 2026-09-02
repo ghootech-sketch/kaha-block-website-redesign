@@ -111,7 +111,7 @@ export default async function About({
               <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-600 font-sans leading-relaxed">
                 {dict.subtitle}
               </p>
-              <div className="w-16 sm:w-20 h-1 sm:h-1.5 bg-primary mx-auto mt-6 rounded-full" />
+              <div className="w-16 sm:w-20 h-1 sm:h-1.5 bg-accent mx-auto mt-6 rounded-full" />
             </ScrollReveal>
           </div>
         </section>
@@ -200,7 +200,7 @@ export default async function About({
                     href={contactDict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full min-h-[44px] bg-secondary text-white px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="inline-flex items-center justify-center w-full min-h-[44px] bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                     {dict.finalCta.ctaPrimary}
@@ -238,7 +238,7 @@ export default async function About({
                     className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
                   >
                     <div>
-                      <div className="w-12 h-12 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center mb-4 border border-secondary/10">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 border border-primary/20">
                         <IconComponent className="w-6 h-6" aria-hidden="true" />
                       </div>
                       <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
@@ -276,7 +276,7 @@ export default async function About({
             </ScrollReveal>
 
             {/* Vision Statement Card (Hero Banner Card) */}
-            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-secondary to-slate-900 text-white rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
+            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-widest text-accent mb-3 sm:mb-4">
                   <Target className="w-4 h-4 sm:w-5 sm:h-5 text-accent" aria-hidden="true" />
