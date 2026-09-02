@@ -67,7 +67,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-secondary pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-secondary min-h-[620px] flex items-center"
+          className="relative isolate overflow-hidden bg-slate-950 pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-slate-900 min-h-[620px] flex items-center"
         >
           {/* Background Image */}
           <Image
@@ -84,14 +84,14 @@ export default async function Home({
           />
 
           {/* Gradients */}
-          {/* Mobile gradient: more uniform darkening to ensure readability on small screens */}
-          <div className="absolute inset-0 bg-secondary/72 sm:hidden -z-10" />
+          {/* Mobile gradient: dark neutral darkening for image readability */}
+          <div className="absolute inset-0 bg-slate-950/75 sm:hidden -z-10" />
           
-          {/* Desktop/Tablet horizontal gradient: heavy on the left, fading to the right */}
-          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(15,32,66,0.94)_0%,rgba(15,32,66,0.80)_40%,rgba(15,32,66,0.34)_70%,rgba(15,32,66,0.08)_100%)] -z-10" />
+          {/* Desktop/Tablet horizontal gradient: heavy neutral dark on left, fading to right */}
+          <div className="hidden sm:block absolute inset-0 bg-[linear-gradient(90deg,rgba(15,23,42,0.95)_0%,rgba(15,23,42,0.82)_40%,rgba(15,23,42,0.38)_70%,rgba(15,23,42,0.1)_100%)] -z-10" />
 
           {/* Vertical overlay for extra text contrast on bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-secondary/25 via-transparent to-secondary/10 -z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-slate-950/20 -z-10" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <ScrollReveal immediate>
@@ -162,7 +162,7 @@ export default async function Home({
                 <div className="hidden lg:flex lg:col-span-5 items-center justify-end">
                   <aside
                     aria-labelledby="hero-product-nav-heading"
-                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-white/15 bg-secondary/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
+                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border border-slate-700/60 bg-slate-900/80 p-6 xl:p-7 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.35)]"
                   >
                     <div className="h-1 w-12 rounded-full bg-accent mb-4" />
                     
@@ -979,15 +979,15 @@ export default async function Home({
         <section
           id="final-cta-section"
           aria-labelledby="final-cta-heading"
-          className="py-12 sm:py-16 md:py-20 bg-secondary text-white relative overflow-hidden"
+          className="py-12 sm:py-16 md:py-20 bg-primary text-white relative overflow-hidden"
         >
           {/* Subtle accent circles */}
           <div
-            className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none"
+            className="absolute top-0 right-0 w-80 h-80 bg-accent/20 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
           <div
-            className="absolute bottom-0 left-0 w-80 h-80 bg-primary/15 rounded-full blur-3xl pointer-events-none"
+            className="absolute bottom-0 left-0 w-80 h-80 bg-black/20 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
 
@@ -999,7 +999,7 @@ export default async function Home({
               >
                 {homeDict.finalCta.title}
               </h2>
-              <p className="text-base sm:text-lg text-slate-300 font-sans mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-100 font-sans mb-10 max-w-2xl mx-auto leading-relaxed">
                 {homeDict.finalCta.subtitle}
               </p>
 
@@ -1009,9 +1009,9 @@ export default async function Home({
                   href={dict.contact.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-primary hover:bg-stone-100 px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
-                  <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
+                  <Phone className="w-5 h-5 mr-2.5 text-primary" aria-hidden="true" />
                   {homeDict.finalCta.ctaPrimary}
                 </a>
 

@@ -547,14 +547,14 @@ export default async function BlogPostPage({
 
         {/* Bottom Consultation CTA */}
         <section className="mt-20">
-          <div className="rounded-2xl bg-secondary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="rounded-2xl bg-primary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-heading">
                 {isEn
                   ? "Need Engineering Guidance for Your Project?"
                   : "Butuh Konsultasi Teknis untuk Proyek Anda?"}
               </h3>
-              <p className="text-sm text-slate-200 max-w-xl leading-relaxed font-sans">
+              <p className="text-sm text-slate-100 max-w-xl leading-relaxed font-sans">
                 {isEn
                   ? "Connect with PT Kaha Sukses Mandiri to discuss paving specifications, load calculations, and verified quotations."
                   : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-300 hingga K-350 mesin full otomatis hidrolik."}
@@ -563,7 +563,7 @@ export default async function BlogPostPage({
             <div className="flex flex-wrap gap-3 shrink-0">
               <Link
                 href={`/${currentLang}/products`}
-                className="px-5 py-2.5 rounded-full bg-primary text-white font-bold text-sm hover:bg-primary-hover transition-colors shadow-md min-h-[44px] flex items-center justify-center"
+                className="px-5 py-2.5 rounded-full bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px] flex items-center justify-center"
               >
                 {isEn ? "View Products" : "Lihat Produk"}
               </Link>

@@ -294,7 +294,7 @@ export default async function BlogIndexPage({
         {/* Bottom Consulting & Product Navigator CTA */}
         <section className="mt-24">
           <ScrollReveal direction="up">
-            <div className="rounded-2xl bg-secondary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-xl">
+            <div className="rounded-2xl bg-primary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-accent text-xs font-semibold uppercase tracking-wider mb-3 font-heading">
@@ -306,7 +306,7 @@ export default async function BlogIndexPage({
                       ? "Plan Your Paving Project with High Precision"
                       : "Rencanakan Proyek Paving Anda Bersama Kaha Block"}
                   </h3>
-                  <p className="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl font-sans">
+                  <p className="text-slate-100 text-sm sm:text-base leading-relaxed max-w-2xl font-sans">
                     {isEn
                       ? "Consult on product choices, technical site preparation, and receive verified quotations for K-300 and K-350 paving blocks produced with fully automated hydraulic machinery."
                       : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-300 hingga K-350 mesin full otomatis hidrolik untuk proyek Anda."}
@@ -316,9 +316,9 @@ export default async function BlogIndexPage({
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
                   <Link
                     href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-white font-bold text-sm hover:bg-primary-hover transition-colors shadow-md min-h-[44px]"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px]"
                   >
-                    <Layers className="w-4 h-4" />
+                    <Layers className="w-4 h-4 text-primary" />
                     <span>{isEn ? "View Product Catalog" : "Lihat Katalog Produk"}</span>
                   </Link>
                   <a

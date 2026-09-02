@@ -2,6 +2,7 @@ import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import {
@@ -86,19 +87,28 @@ export default async function About({
         {/* =========================================================
             1. ABOUT HERO
         ========================================================= */}
-        <section id="about-hero" className="bg-secondary text-white pt-16 sm:pt-20 md:pt-24 pb-14 sm:pb-18 md:pb-20 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full filter blur-3xl opacity-10 pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full filter blur-3xl opacity-15 pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
+        <section id="about-hero" className="bg-surface text-slate-900 pt-16 sm:pt-20 md:pt-24 pb-14 sm:pb-18 md:pb-20 relative overflow-hidden border-b border-stone-200/80">
+          {/* Image-led background with warm overlay */}
+          <Image
+            src="/images/projects/kaha-block-dokumentasi-25.webp"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center opacity-10 -z-20 pointer-events-none"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/90 to-surface -z-10" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-200/40 rounded-full filter blur-3xl opacity-50 pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-200/40 rounded-full filter blur-3xl opacity-50 pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <ScrollReveal immediate>
-              <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 text-slate-200 border border-white/15 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4">
+              <span className="inline-block px-3.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 font-heading">
                 {dict.overview.eyebrow}
               </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-heading mb-4 sm:mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-heading text-slate-900 mb-4 sm:mb-6">
                 {dict.title}
               </h1>
-              <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-200 font-sans leading-relaxed">
+              <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-600 font-sans leading-relaxed">
                 {dict.subtitle}
               </p>
               <div className="w-16 sm:w-20 h-1 sm:h-1.5 bg-primary mx-auto mt-6 rounded-full" />
@@ -409,15 +419,15 @@ export default async function About({
         ========================================================= */}
         <section id="about-cta" className="py-12 sm:py-16 md:py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="bg-secondary text-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-accent rounded-bl-full opacity-10 pointer-events-none transform translate-x-12 -translate-y-12" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary rounded-tr-full opacity-20 pointer-events-none transform -translate-x-12 translate-y-12" />
+            <ScrollReveal className="bg-primary text-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
 
               <div className="relative z-10 max-w-3xl mx-auto">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-4 sm:mb-6 leading-tight">
                   {dict.finalCta.title}
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg text-slate-200 mb-8 sm:mb-10 font-sans leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-slate-100 mb-8 sm:mb-10 font-sans leading-relaxed">
                   {dict.finalCta.subtitle}
                 </p>
 
@@ -426,9 +436,9 @@ export default async function About({
                     href={contactDict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-primary hover:bg-primary-hover text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent text-sm sm:text-base"
+                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-white hover:bg-stone-100 text-primary font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent text-sm sm:text-base"
                   >
-                    <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
+                    <Phone className="w-5 h-5 mr-2 text-primary" aria-hidden="true" />
                     {dict.finalCta.ctaPrimary}
                   </a>
 

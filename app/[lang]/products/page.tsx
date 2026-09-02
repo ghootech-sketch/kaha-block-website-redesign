@@ -336,11 +336,11 @@ export default async function Products({
       )}
 
       {/* =========================================================================
-          5. FINAL CONSULTATION CTA (Sapphire Navy Background)
+          5. FINAL CONSULTATION CTA (Venetian Red Background)
          ========================================================================= */}
-      <section className="bg-secondary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent rounded-bl-full opacity-10 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary rounded-tr-full opacity-15 pointer-events-none" />
+      <section className="bg-primary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal direction="up">
@@ -363,9 +363,9 @@ export default async function Products({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
-                <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
+                <MessageSquare className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
                 {dict.finalCta?.button || dict.needHelp?.cta}
               </a>
             </div>
