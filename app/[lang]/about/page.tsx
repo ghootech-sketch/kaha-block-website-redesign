@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
+import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
 import {
   Calendar,
   Factory,
@@ -77,6 +78,39 @@ export default async function About({
     HardHat,
     Landmark,
     Layers,
+  ];
+
+  const aboutVideos: FactoryVideoData[] = [
+    {
+      id: "prod-01",
+      videoSrc: "/videos/factory/factory-production-01.mp4",
+      posterSrc: "/images/factory/factory-production-01.webp",
+    },
+    {
+      id: "prod-02",
+      videoSrc: "/videos/factory/factory-production-02.mp4",
+      posterSrc: "/images/factory/factory-production-02.webp",
+    },
+    {
+      id: "prod-03",
+      videoSrc: "/videos/factory/factory-production-03.mp4",
+      posterSrc: "/images/factory/factory-production-03.webp",
+    },
+    {
+      id: "prod-04",
+      videoSrc: "/videos/factory/factory-production-04.mp4",
+      posterSrc: "/images/factory/factory-production-04.webp",
+    },
+    {
+      id: "prod-05",
+      videoSrc: "/videos/factory/factory-production-05.mp4",
+      posterSrc: "/images/factory/factory-production-05.webp",
+    },
+    {
+      id: "prod-06",
+      videoSrc: "/videos/factory/factory-production-06.mp4",
+      posterSrc: "/images/factory/factory-production-06.webp",
+    },
   ];
 
   return (
@@ -413,6 +447,16 @@ export default async function About({
             </div>
           </div>
         </section>
+
+        {/* =========================================================
+            6.5. FACTORY PRODUCTION VIDEOS
+        ========================================================= */}
+        <FactoryVideoGallery
+          title={dict.factoryVideos.title}
+          subtitle={dict.factoryVideos.subtitle}
+          playLabelPrefix={dict.factoryVideos.playLabel}
+          videos={aboutVideos}
+        />
 
         {/* =========================================================
             7. FINAL CTA

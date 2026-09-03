@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal, { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
+import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
 import JsonLd from "@/components/JsonLd";
 import {
   ShieldCheck,
@@ -56,6 +57,24 @@ export default async function Home({
     "topiUskup",
     "kanstein",
   ] as const;
+
+  const homepageVideos: FactoryVideoData[] = [
+    {
+      id: "prod-01",
+      videoSrc: "/videos/factory/factory-production-01.mp4",
+      posterSrc: "/images/factory/factory-production-01.webp",
+    },
+    {
+      id: "prod-02",
+      videoSrc: "/videos/factory/factory-production-02.mp4",
+      posterSrc: "/images/factory/factory-production-02.webp",
+    },
+    {
+      id: "prod-03",
+      videoSrc: "/videos/factory/factory-production-03.mp4",
+      posterSrc: "/images/factory/factory-production-03.webp",
+    },
+  ];
 
   return (
     <>
@@ -290,6 +309,16 @@ export default async function Home({
             </RevealGroup>
           </div>
         </section>
+
+        {/* =========================================================================
+            SECTION 2.5: FACTORY PRODUCTION VIDEOS
+           ========================================================================= */}
+        <FactoryVideoGallery
+          title={homeDict.factoryVideos.title}
+          subtitle={homeDict.factoryVideos.subtitle}
+          playLabelPrefix={homeDict.factoryVideos.playLabel}
+          videos={homepageVideos}
+        />
 
         {/* =========================================================================
             SECTION 3: FEATURED PRODUCTS PREVIEW (5 Product Cards Balanced Grid)

@@ -184,6 +184,11 @@ export const dictionaries = {
         qualityTitle: "Melayani Jabodetabek & Luar Kota",
         qualityDesc: "Pengiriman Jabodetabek gratis dan termasuk penurunan barang. Layanan juga tersedia untuk kebutuhan luar kota.",
       },
+      factoryVideos: {
+        title: "Proses Produksi Kaha Block",
+        subtitle: "Dokumentasi visual tahapan proses produksi mesin full otomatis hidrolik di pabrik Kaha Block.",
+        playLabel: "Putar video proses produksi",
+      },
       featuredProducts: {
         eyebrow: "Katalog Produk",
         title: "Produk Unggulan",
@@ -372,6 +377,11 @@ export const dictionaries = {
             desc: "Penyesuaian spesifikasi pola, warna, dan kanstein untuk beragam jenis proyek.",
           },
         ],
+      },
+      factoryVideos: {
+        title: "Produksi & Fasilitas Kami",
+        subtitle: "Dokumentasi proses kerja operasional dan fasilitas produksi Kaha Block.",
+        playLabel: "Putar video proses produksi",
       },
       finalCta: {
         title: "Siap Memulai Proyek Paving Block Anda?",
@@ -1035,6 +1045,11 @@ export const dictionaries = {
         qualityTitle: "Greater Jakarta & Regional Coverage",
         qualityDesc: "Free delivery and unloading are available within Greater Jakarta. Services are also available for projects outside the region.",
       },
+      factoryVideos: {
+        title: "Inside Our Production",
+        subtitle: "Visual documentation of the fully automatic hydraulic machinery production process at the Kaha Block factory.",
+        playLabel: "Play production video",
+      },
       featuredProducts: {
         eyebrow: "Product Catalog",
         title: "Featured Products",
@@ -1223,6 +1238,11 @@ export const dictionaries = {
             desc: "Tailored patterns, colors, and curbing solutions for various infrastructure projects.",
           },
         ],
+      },
+      factoryVideos: {
+        title: "Our Production & Facilities",
+        subtitle: "Documentation of Kaha Block's operational workflow and production facilities.",
+        playLabel: "Play production video",
       },
       finalCta: {
         title: "Ready to Start Your Paving Block Project?",
