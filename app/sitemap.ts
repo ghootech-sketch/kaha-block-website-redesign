@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { allArticlesId, allArticlesEn } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://kahablock.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com";
   const locales = ["id", "en"] as const;
   const coreRoutes = ["", "/about", "/products", "/projects", "/blog", "/contact"] as const;
   const coreLastModified = new Date("2026-09-01T00:00:00.000Z");

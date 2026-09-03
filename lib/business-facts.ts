@@ -8,7 +8,7 @@ export const BUSINESS_FACTS = {
   legalName: "PT Kaha Sukses Mandiri",
   foundingYear: 2015,
   foundingDate: "2015",
-  domain: "https://kahablock.com",
+  domain: process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com",
 
   // Factory & Office Physical Location
   address: {
