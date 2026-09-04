@@ -104,6 +104,10 @@ export const dictionaries = {
         eyebrow: "Mitra & Kepercayaan",
         title: "Klien & Mitra Kami",
         subtitle: "Kepercayaan dan kemitraan dalam pengadaan material serta instalasi paving block.",
+        play: "Putar",
+        pause: "Jeda",
+        playAria: "Putar animasi logo klien",
+        pauseAria: "Jeda animasi logo klien",
       },
       solutionsByArea: {
         eyebrow: "Kebutuhan Area",
@@ -965,6 +969,10 @@ export const dictionaries = {
         eyebrow: "Trust & Partners",
         title: "Our Clients & Partners",
         subtitle: "Trusted partnerships in paving block supply and infrastructure projects.",
+        play: "Play",
+        pause: "Pause",
+        playAria: "Play client logo animation",
+        pauseAria: "Pause client logo animation",
       },
       solutionsByArea: {
         eyebrow: "Area Requirements",
@@ -1122,7 +1130,7 @@ export const dictionaries = {
         title: "Benefits & Prime Services",
         subtitle: "Core operating principles of PT Kaha Sukses Mandiri in delivering superior client satisfaction.",
         item1Title: "Precision & Quality",
-        item1Desc: "Selected materials and accurate sizing. Product quality is produced according to agreed project specifications.",
+        item1Desc: "Selected materials and accurate sizing. Product quality is maintained in accordance with agreed project specifications.",
         item2Title: "Fully Automatic Hydraulic Machinery",
         item2Desc: "Manufactured with fully automatic hydraulic machinery for consistent density and production precision.",
         item3Title: "Punctual Delivery & Service",
@@ -1227,7 +1235,7 @@ export const dictionaries = {
           },
           {
             title: "Contractors and Developers",
-            desc: "Large-volume procurement with guaranteed concrete strength and coordinated project scheduling.",
+            desc: "Large-volume procurement with specified concrete strength and coordinated project scheduling.",
           },
           {
             title: "Public Facilities",
