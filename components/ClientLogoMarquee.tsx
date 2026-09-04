@@ -1,6 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Handshake } from "lucide-react";
+import { Handshake, Play, Pause } from "lucide-react";
 
 export interface ClientLogo {
   id: number;
@@ -37,6 +40,7 @@ interface ClientLogoMarqueeProps {
 }
 
 export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
+  const [isPaused, setIsPaused] = useState(false);
   // Render array twice for seamless continuous horizontal marquee animation loop
   const displayLogos = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
 
@@ -47,7 +51,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
       className="py-7 sm:py-9 bg-white border-y border-stone-200/60 overflow-hidden relative"
     >
       <ScrollReveal>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center relative">
           {/* Eyebrow badge with Gold indicator */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/15 border border-accent/40 text-primary font-bold text-xs uppercase tracking-wider font-heading mb-2.5 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-accent" aria-hidden="true" />
@@ -72,6 +76,16 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
               {dict.subtitle}
             </p>
           )}
+
+          {/* Marquee Play/Pause Control */}
+          <button
+            onClick={() => setIsPaused(!isPaused)}
+            className="mt-4 sm:mt-0 sm:absolute sm:top-0 sm:right-6 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-card border border-stone-200/80 text-slate-600 text-xs font-semibold hover:bg-stone-100 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px] sm:min-h-[36px]"
+            aria-label={isPaused ? "Play marquee animation" : "Pause marquee animation"}
+          >
+            {isPaused ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
+            <span>{isPaused ? "Play" : "Pause"}</span>
+          </button>
         </div>
 
         {/* Marquee Track Container with Edge Fade Gradients */}
@@ -89,7 +103,10 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
           />
 
           {/* Infinite Moving Track */}
-          <div className="flex w-max animate-marquee gap-4 sm:gap-6 lg:gap-8 motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:w-full motion-reduce:px-4">
+          <div 
+            className="flex w-max animate-marquee gap-4 sm:gap-6 lg:gap-8 motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:w-full motion-reduce:px-4"
+            style={{ animationPlayState: isPaused ? 'paused' : undefined }}
+          >
             {displayLogos.map((client, index) => {
               const isDuplicate = index >= CLIENT_LOGOS.length;
               const paddedId = String(client.id).padStart(2, "0");

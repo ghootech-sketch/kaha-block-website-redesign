@@ -60,7 +60,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden lg:flex items-center space-x-6 lg:space-x-8">
             <div className="flex space-x-4 lg:space-x-6">
               {links.map((link) => {
                 const isActive = pathname === link.href;
@@ -100,7 +100,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           </div>
 
           {/* Mobile Actions (Language Switcher + Hamburger with 44px min touch targets) */}
-          <div className="flex items-center md:hidden space-x-1.5 sm:space-x-2 flex-shrink-0">
+          <div className="flex items-center lg:hidden space-x-1.5 sm:space-x-2 flex-shrink-0">
             <LanguageSwitcher currentLang={lang} />
             <button
               type="button"
@@ -131,7 +131,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className="md:hidden border-t border-gray-100 bg-surface-card shadow-lg animate-in fade-in slide-in-from-top-2 duration-200"
+          className="lg:hidden border-t border-gray-100 bg-surface-card shadow-lg animate-in fade-in slide-in-from-top-2 duration-200"
           id="mobile-menu"
         >
           <div className="px-4 pt-3 pb-5 space-y-1">

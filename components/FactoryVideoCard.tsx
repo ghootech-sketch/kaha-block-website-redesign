@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
 
@@ -18,22 +18,22 @@ export default function FactoryVideoCard({
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    if (!isPlaying || !videoRef.current) return;
+
+    document.querySelectorAll("video").forEach((vid) => {
+      if (vid !== videoRef.current) {
+        vid.pause();
+      }
+    });
+
+    videoRef.current.play().catch(() => {
+      // User can still start playback using native controls.
+    });
+  }, [isPlaying]);
+
   const handlePlay = () => {
     setIsPlaying(true);
-    // Defer play call to next tick so video element mounts
-    setTimeout(() => {
-      if (videoRef.current) {
-        // Pause all other videos on the page
-        document.querySelectorAll("video").forEach((vid) => {
-          if (vid !== videoRef.current) {
-            vid.pause();
-          }
-        });
-        videoRef.current.play().catch(() => {
-          // Ignore auto-play errors
-        });
-      }
-    }, 0);
   };
 
   return (
