@@ -87,136 +87,88 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-surface pt-12 sm:pt-16 md:pt-24 lg:pt-28 pb-16 sm:pb-20 md:pb-28 border-b border-stone-200/80 min-h-[620px] flex items-center"
+          className="relative isolate overflow-hidden bg-slate-950 min-h-[620px] lg:min-h-[85vh] flex items-center"
         >
-          {/* Background Image with warm light image-led treatment */}
-          <Image
-            src="/images/hero/kaha-block-hero-paving.webp"
-            alt={
-              currentLang === "id"
-                ? "Hasil pemasangan paving block Kaha Block"
-                : "Kaha Block paving installation result"
-            }
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[70%_center] lg:object-right-center opacity-60 -z-20 pointer-events-none"
-          />
+          {/* Background Image - Asymmetric on desktop */}
+          <div className="absolute inset-0 lg:left-[45%] -z-20">
+            <Image
+              src="/images/hero/kaha-block-hero-paving.webp"
+              alt={
+                currentLang === "id"
+                  ? "Hasil pemasangan paving block Kaha Block"
+                  : "Kaha Block paving installation result"
+              }
+              fill
+              priority
+              sizes="(max-width: 1023px) 100vw, 55vw"
+              className="object-cover object-center lg:object-left"
+            />
+            {/* Desktop fade from black to image */}
+            <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent w-full" />
+            {/* Mobile dark overlay for readability */}
+            <div className="lg:hidden absolute inset-0 bg-slate-950/75" />
+          </div>
 
-          {/* Warm Light Gradients & Glows */}
-          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/85 to-surface/15 -z-10" />
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/15 rounded-full blur-3xl opacity-50 pointer-events-none -z-10" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-200/20 rounded-full blur-3xl opacity-40 pointer-events-none -z-10" />
-
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">
             <ScrollReveal immediate>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-                {/* Left Content Column (7 cols on desktop) */}
-                <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                  {/* Eyebrow badge */}
-                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-accent/20 border border-accent/50 text-slate-900 font-bold w-fit mb-4 sm:mb-5">
-                    <span className="w-2 h-2 rounded-full bg-primary motion-safe:animate-pulse" />
-                    <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-900 font-heading">
-                      {homeDict.hero.eyebrow}
-                    </span>
-                  </div>
-
-                  {/* H1 Heading */}
-                  <h1
-                    id="hero-title"
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-slate-900 tracking-tight font-heading leading-[1.15] mb-5 sm:mb-6 max-w-[600px]"
-                  >
-                    {homeDict.hero.h1}
-                  </h1>
-
-                  {/* Clear Narrative Description */}
-                  <p className="text-base sm:text-lg text-slate-700 font-sans leading-relaxed mb-8 max-w-[600px]">
-                    {homeDict.hero.description}
-                  </p>
-
-                  {/* Primary & Secondary Action Buttons */}
-                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-8">
-                    <a
-                      id="hero-primary-cta"
-                      href={dict.contact.whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-[0_12px_35px_rgba(122,28,28,0.25)] hover:shadow-[0_15px_40px_rgba(122,28,28,0.32)] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
-                    >
-                      <Phone className="w-5 h-5 mr-2.5" aria-hidden="true" />
-                      {homeDict.hero.ctaPrimary}
-                    </a>
-
-                    <Link
-                      id="hero-secondary-cta"
-                      href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-white hover:bg-stone-100 text-slate-900 border-2 border-stone-300 hover:border-primary/40 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                    >
-                      {homeDict.hero.ctaSecondary}
-                      <ArrowRight className="w-4 h-4 ml-2 text-primary" aria-hidden="true" />
-                    </Link>
-                  </div>
-
-                  {/* Trust Line & Key Verification Badges */}
-                  <div className="pt-6 border-t border-stone-200 flex flex-wrap items-center gap-y-2 gap-x-4 text-xs sm:text-sm text-slate-700 font-sans">
-                    <div className="flex items-center space-x-1.5">
-                      <ShieldCheck className="w-4.5 h-4.5 text-accent" aria-hidden="true" />
-                      <span className="font-semibold text-slate-900">
-                        {homeDict.hero.trustNote}
-                      </span>
-                    </div>
-                    <span className="text-stone-300 hidden sm:inline" aria-hidden="true">•</span>
-                    <div className="flex items-center space-x-1.5">
-                      <Factory className="w-4.5 h-4.5 text-accent" aria-hidden="true" />
-                      <span className="text-slate-800">{homeDict.hero.plantBadge}</span>
-                    </div>
-                  </div>
+              <div className="max-w-3xl">
+                {/* Eyebrow marker */}
+                <div className="flex items-center space-x-4 mb-8">
+                  <div className="h-[2px] w-12 bg-accent" aria-hidden="true" />
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-accent font-heading">
+                    {homeDict.hero.eyebrow}
+                  </span>
                 </div>
 
-                {/* Right Visual Column: Premium Product Range Navigator (5 cols on desktop) */}
-                <div className="hidden lg:flex lg:col-span-5 items-center justify-end">
-                  <aside
-                    aria-labelledby="hero-product-nav-heading"
-                    className="w-full max-w-[390px] overflow-hidden rounded-3xl border-t-4 border-t-accent border border-stone-200/90 bg-white/95 p-6 xl:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.08)] backdrop-blur-md"
+                {/* H1 Heading */}
+                <h1
+                  id="hero-title"
+                  className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-black text-white tracking-tight font-heading leading-[1.05] mb-8"
+                >
+                  {homeDict.hero.h1}
+                </h1>
+
+                {/* Clear Narrative Description */}
+                <p className="text-lg sm:text-xl text-slate-300 font-sans leading-relaxed mb-10 max-w-2xl">
+                  {homeDict.hero.description}
+                </p>
+
+                {/* Primary & Secondary Action Buttons */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-14">
+                  <a
+                    id="hero-primary-cta"
+                    href={dict.contact.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-4 font-bold text-sm tracking-wide uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
                   >
-                    <div className="h-1.5 w-14 rounded-full bg-accent mb-4" />
-                    
-                    <p className="text-[11px] font-bold text-primary uppercase tracking-wider mb-1 font-heading">
-                      {homeDict.hero.productNavigator.eyebrow}
-                    </p>
+                    <Phone className="w-4 h-4 mr-3" aria-hidden="true" />
+                    {homeDict.hero.ctaPrimary}
+                  </a>
 
-                    <h2
-                      id="hero-product-nav-heading"
-                      className="text-lg font-bold text-slate-900 font-heading tracking-tight mb-2.5"
-                    >
-                      {homeDict.hero.productNavigator.title}
-                    </h2>
+                  <Link
+                    id="hero-secondary-cta"
+                    href={`/${currentLang}/products`}
+                    className="inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white border border-white/30 px-8 py-4 font-bold text-sm tracking-wide uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                  >
+                    {homeDict.hero.ctaSecondary}
+                    <ArrowRight className="w-4 h-4 ml-3 text-accent" aria-hidden="true" />
+                  </Link>
+                </div>
 
-                    <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-accent/20 border border-accent/50 text-xs font-bold text-slate-900 mb-4">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary" aria-hidden="true" />
-                      <span>{homeDict.hero.productNavigator.highlightBadge}</span>
-                    </div>
-
-                    <ul className="grid grid-cols-2 gap-2 mb-4">
-                      {homeDict.hero.productNavigator.products.map((item, idx) => (
-                        <li
-                          key={idx}
-                          className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface border border-stone-200/80 text-xs font-semibold text-slate-800"
-                        >
-                          <span className="w-2 h-2 rounded-full bg-accent shrink-0" aria-hidden="true" />
-                          <span className="truncate">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link
-                      href={`/${currentLang}/products`}
-                      className="flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-xs font-bold text-white transition-colors shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                    >
-                      <span className="text-white">{homeDict.hero.productNavigator.cta}</span>
-                      <ArrowRight className="w-4 h-4 text-accent" aria-hidden="true" />
-                    </Link>
-                  </aside>
+                {/* Trust Line & Key Verification Badges */}
+                <div className="pt-8 border-t border-white/10 flex flex-wrap items-center gap-y-3 gap-x-6 text-xs uppercase tracking-widest text-slate-400 font-sans">
+                  <div className="flex items-center space-x-2">
+                    <ShieldCheck className="w-4 h-4 text-accent" aria-hidden="true" />
+                    <span className="font-semibold text-slate-200">
+                      {homeDict.hero.trustNote}
+                    </span>
+                  </div>
+                  <div className="hidden sm:block w-1 h-1 bg-slate-600" aria-hidden="true" />
+                  <div className="flex items-center space-x-2">
+                    <Factory className="w-4 h-4 text-accent" aria-hidden="true" />
+                    <span className="text-slate-300">{homeDict.hero.plantBadge}</span>
+                  </div>
                 </div>
               </div>
             </ScrollReveal>
@@ -234,7 +186,7 @@ export default async function Home({
         <section
           id="trust-stats-section"
           aria-labelledby="stats-heading"
-          className="py-12 sm:py-16 bg-surface border-b border-stone-200/60"
+          className="py-16 sm:py-20 lg:py-24 bg-white border-b border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="stats-heading" className="sr-only">
@@ -242,68 +194,65 @@ export default async function Home({
             </h2>
 
             <RevealGroup>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 divide-y md:divide-y-0 md:divide-x divide-stone-200/60">
                 {/* Stat 1: Since 2015 */}
                 <Reveal
                   staggerIndex={0}
-                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
+                  className="pt-8 md:pt-0 md:pl-8 lg:pl-12 first:pt-0 first:md:pl-0 flex flex-col"
                 >
-                  <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-secondary/5 text-secondary mb-4">
-                      <Sparkles className="w-5 h-5" aria-hidden="true" />
-                    </div>
-                    <div className="text-3xl sm:text-4xl font-black font-heading text-slate-900 mb-2 tracking-tight">
-                      {homeDict.trustStats.sinceValue}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.trustStats.sinceTitle}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.trustStats.sinceDesc}
-                    </p>
+                  <div className="flex items-center space-x-3 mb-5">
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                    <Sparkles className="w-4 h-4 text-accent" aria-hidden="true" />
                   </div>
+                  <div className="text-4xl sm:text-5xl lg:text-6xl font-light font-heading text-slate-900 mb-4 tracking-tight">
+                    {homeDict.trustStats.sinceValue}
+                  </div>
+                  <h3 className="text-sm font-bold uppercase tracking-widest font-heading text-slate-900 mb-3">
+                    {homeDict.trustStats.sinceTitle}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed max-w-sm">
+                    {homeDict.trustStats.sinceDesc}
+                  </p>
                 </Reveal>
 
                 {/* Stat 2: Facility Size 9.080 m2 */}
                 <Reveal
                   staggerIndex={1}
-                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all"
+                  className="pt-8 md:pt-0 md:pl-8 lg:pl-12 flex flex-col"
                 >
-                  <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary mb-4">
-                      <Factory className="w-5 h-5" aria-hidden="true" />
-                    </div>
-                    <div className="text-3xl sm:text-4xl font-black font-heading text-primary mb-2 tracking-tight">
-                      {homeDict.trustStats.facilityValue}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.trustStats.facilityTitle}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.trustStats.facilityDesc}
-                    </p>
+                  <div className="flex items-center space-x-3 mb-5">
+                    <span className="w-8 h-px bg-primary" aria-hidden="true" />
+                    <Factory className="w-4 h-4 text-primary" aria-hidden="true" />
                   </div>
+                  <div className="text-4xl sm:text-5xl lg:text-6xl font-light font-heading text-slate-900 mb-4 tracking-tight">
+                    {homeDict.trustStats.facilityValue}
+                  </div>
+                  <h3 className="text-sm font-bold uppercase tracking-widest font-heading text-slate-900 mb-3">
+                    {homeDict.trustStats.facilityTitle}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed max-w-sm">
+                    {homeDict.trustStats.facilityDesc}
+                  </p>
                 </Reveal>
 
                 {/* Stat 3: Quality Options */}
                 <Reveal
                   staggerIndex={2}
-                  className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent/50 hover:shadow-md transition-all"
+                  className="pt-8 md:pt-0 md:pl-8 lg:pl-12 flex flex-col"
                 >
-                  <div>
-                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-accent/20 text-secondary mb-4">
-                      <Award className="w-5 h-5" aria-hidden="true" />
-                    </div>
-                    <div className="text-2xl sm:text-3xl font-black font-heading text-slate-900 mb-2 tracking-tight">
-                      {homeDict.trustStats.qualityValue}
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.trustStats.qualityTitle}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.trustStats.qualityDesc}
-                    </p>
+                  <div className="flex items-center space-x-3 mb-5">
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                    <Award className="w-4 h-4 text-accent" aria-hidden="true" />
                   </div>
+                  <div className="text-3xl sm:text-4xl lg:text-5xl font-light font-heading text-slate-900 mb-4 tracking-tight">
+                    {homeDict.trustStats.qualityValue}
+                  </div>
+                  <h3 className="text-sm font-bold uppercase tracking-widest font-heading text-slate-900 mb-3">
+                    {homeDict.trustStats.qualityTitle}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed max-w-sm">
+                    {homeDict.trustStats.qualityDesc}
+                  </p>
                 </Reveal>
               </div>
             </RevealGroup>
@@ -318,6 +267,7 @@ export default async function Home({
           subtitle={homeDict.factoryVideos.subtitle}
           playLabelPrefix={homeDict.factoryVideos.playLabel}
           videos={homepageVideos}
+          variant="premium"
         />
 
         {/* =========================================================================
@@ -326,34 +276,49 @@ export default async function Home({
         <section
           id="featured-products-section"
           aria-labelledby="featured-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
+          className="py-16 sm:py-20 lg:py-28 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.featuredProducts.eyebrow}
-                  </span>
-                </Reveal>
-                <Reveal delay={0.08}>
-                  <h2
-                    id="featured-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+                <div className="max-w-2xl">
+                  <Reveal delay={0}>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                        {homeDict.featuredProducts.eyebrow}
+                      </span>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.08}>
+                    <h2
+                      id="featured-heading"
+                      className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
+                    >
+                      {homeDict.featuredProducts.title}
+                    </h2>
+                  </Reveal>
+                  <Reveal delay={0.16}>
+                    <p className="text-base text-slate-500 font-sans mt-4 max-w-xl leading-relaxed">
+                      {homeDict.featuredProducts.subtitle}
+                    </p>
+                  </Reveal>
+                </div>
+                
+                <Reveal delay={0.24} className="hidden md:block">
+                  <Link
+                    id="view-all-products-btn"
+                    href={`/${currentLang}/products`}
+                    className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
-                    {homeDict.featuredProducts.title}
-                  </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                </Reveal>
-                <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
-                    {homeDict.featuredProducts.subtitle}
-                  </p>
+                    {homeDict.featuredProducts.viewAll}
+                    <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                  </Link>
                 </Reveal>
               </div>
 
-              {/* Balanced 5 Product Grid: 3 cards top row, 2 cards bottom row centered */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8">
+              {/* Balanced 5 Product Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-x-8 gap-y-12">
                 {featuredKeys.map((key, index) => {
                   const product = dict.products.items[key];
                   const colSpanClass =
@@ -366,45 +331,46 @@ export default async function Home({
                       key={key}
                       staggerIndex={index}
                       baseDelay={0.24}
-                      className={`${colSpanClass} bg-surface rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 overflow-hidden shadow-xs hover:shadow-lg motion-safe:hover:-translate-y-0.5 transition-[transform,box-shadow,border-color] duration-300 flex flex-col justify-between h-full hover:border-accent`}
+                      className={`${colSpanClass} group flex flex-col h-full`}
                     >
-                      <div>
-                        {/* Visual Image */}
-                        <div className="relative aspect-[3/2] w-full overflow-hidden bg-stone-100">
-                          <Image
-                            src={product.image}
-                            alt={`${dict.products.imageAltPrefix} ${product.name}`}
-                            fill
-                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                            className="object-cover object-center"
-                          />
-                          {/* Mutu Badge from verified company profile */}
-                          <div className="absolute top-3 right-3 bg-accent text-slate-900 px-2.5 py-1 rounded-full text-xs font-mono font-bold shadow-sm">
-                            {product.badge}
-                          </div>
-                        </div>
-
-                        {/* Content Area */}
-                        <div className="p-6">
-                          <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-2">
-                            {product.name}
-                          </h3>
-                          <ul className="space-y-1.5 text-xs sm:text-sm text-slate-600 font-sans mb-4">
-                            {product.quickSpecs?.slice(0, 3).map((spec, i) => (
-                              <li key={i}>{spec}</li>
-                            ))}
-                          </ul>
+                      {/* Visual Image */}
+                      <div className="relative aspect-[4/5] w-full overflow-hidden bg-stone-100 mb-5">
+                        <Image
+                          src={product.image}
+                          alt={`${dict.products.imageAltPrefix} ${product.name}`}
+                          fill
+                          sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                        />
+                        {/* Elegant Mutu Badge */}
+                        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3 py-1.5 text-[10px] uppercase tracking-widest font-heading font-bold shadow-sm">
+                          {product.badge}
                         </div>
                       </div>
 
+                      {/* Content Area - Minimal */}
+                      <div className="flex flex-col flex-grow">
+                        <div className="flex items-center space-x-2 mb-3">
+                          <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                          <h3 className="text-xl font-medium font-heading text-slate-900">
+                            {product.name}
+                          </h3>
+                        </div>
+                        <ul className="space-y-2 text-xs text-slate-500 font-sans mb-6 pl-6 border-l border-stone-200 ml-2">
+                          {product.quickSpecs?.slice(0, 3).map((spec, i) => (
+                            <li key={i}>{spec}</li>
+                          ))}
+                        </ul>
+                      </div>
+
                       {/* Card Action Link */}
-                      <div className="px-6 pb-6 pt-0 mt-auto">
+                      <div className="mt-auto pl-6 ml-2">
                         <Link
                           href={`/${currentLang}/products`}
-                          className="w-full inline-flex items-center justify-center bg-primary/10 hover:bg-primary text-primary hover:text-white py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                          className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-slate-900 hover:text-primary transition-colors group/link focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
                         >
-                          {homeDict.featuredProducts.viewSpecs}
-                          <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
+                          <span className="border-b border-slate-900 group-hover/link:border-primary pb-0.5">{homeDict.featuredProducts.viewSpecs}</span>
+                          <ArrowRight className="w-3 h-3 ml-2 transform group-hover/link:translate-x-1 transition-transform" aria-hidden="true" />
                         </Link>
                       </div>
                     </Reveal>
@@ -412,12 +378,11 @@ export default async function Home({
                 })}
               </div>
 
-              {/* Catalog CTA */}
-              <Reveal delay={0.64} className="mt-10 sm:mt-12 text-center">
+              {/* Mobile CTA */}
+              <Reveal delay={0.64} className="mt-12 text-center md:hidden">
                 <Link
-                  id="view-all-products-btn"
                   href={`/${currentLang}/products`}
-                  className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -433,33 +398,37 @@ export default async function Home({
         <section
           id="solutions-by-area-section"
           aria-labelledby="solutions-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-b border-stone-200/60"
+          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-b border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.solutionsByArea.eyebrow}
-                  </span>
-                </Reveal>
-                <Reveal delay={0.08}>
-                  <h2
-                    id="solutions-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                  >
-                    {homeDict.solutionsByArea.title}
-                  </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                </Reveal>
-                <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+                <div className="max-w-2xl">
+                  <Reveal delay={0}>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                        {homeDict.solutionsByArea.eyebrow}
+                      </span>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.08}>
+                    <h2
+                      id="solutions-heading"
+                      className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
+                    >
+                      {homeDict.solutionsByArea.title}
+                    </h2>
+                  </Reveal>
+                </div>
+                <Reveal delay={0.16} className="max-w-md">
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed">
                     {homeDict.solutionsByArea.subtitle}
                   </p>
                 </Reveal>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mb-16">
                 {homeDict.solutionsByArea.items.map((item, index) => {
                   let AreaIcon = HomeIcon;
                   if (item.id === "commercial") AreaIcon = Building2;
@@ -471,41 +440,40 @@ export default async function Home({
                       key={item.id}
                       staggerIndex={index}
                       baseDelay={0.24}
-                      className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-[border-color,box-shadow,transform] duration-300"
+                      className="group flex flex-col pt-8 border-t border-stone-300 hover:border-slate-900 transition-colors duration-300"
                     >
-                      <div>
-                        <div className="w-12 h-12 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center mb-5">
-                          <AreaIcon className="w-6 h-6" aria-hidden="true" />
-                        </div>
-                        <h3 className="text-lg font-bold font-heading text-slate-900 mb-2.5">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-slate-600 font-sans leading-relaxed mb-6">
-                          {item.desc}
-                        </p>
+                      <div className="mb-6 flex justify-between items-center">
+                        <AreaIcon className="w-6 h-6 text-slate-400 group-hover:text-slate-900 transition-colors" aria-hidden="true" />
+                        <span className="text-[10px] font-bold text-slate-400 font-mono">0{index + 1}</span>
                       </div>
+                      <h3 className="text-xl font-medium font-heading text-slate-900 mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-slate-500 font-sans leading-relaxed mb-8 flex-grow">
+                        {item.desc}
+                      </p>
 
-                      <div>
-                        <Link
-                          href={item.href}
-                          className="inline-flex items-center text-xs sm:text-sm font-bold text-secondary hover:text-primary transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm py-1"
-                        >
-                          <span>{item.linkText}</span>
-                          <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                        </Link>
-                      </div>
+                      <Link
+                        href={item.href}
+                        className="inline-flex items-center text-[11px] uppercase tracking-widest font-bold text-slate-900 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent mt-auto"
+                      >
+                        <span className="border-b border-transparent group-hover:border-primary pb-0.5">{item.linkText}</span>
+                        <ArrowRight className="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                      </Link>
                     </Reveal>
                   );
                 })}
               </div>
 
-              <Reveal delay={0.56} className="bg-white border border-stone-200/70 rounded-2xl p-5 sm:p-6 text-center max-w-3xl mx-auto">
-                <p className="text-xs sm:text-sm text-slate-700 font-sans">
-                  <span className="font-semibold text-slate-900">
+              <Reveal delay={0.56} className="border-t border-stone-200 pt-8 flex items-center justify-center space-x-3">
+                <span className="w-4 h-px bg-slate-300" aria-hidden="true" />
+                <p className="text-xs text-slate-500 font-sans tracking-wide">
+                  <span className="font-bold text-slate-900 uppercase">
                     {currentLang === "id" ? "Catatan:" : "Note:"}{" "}
                   </span>
                   {homeDict.solutionsByArea.consultNote}
                 </p>
+                <span className="w-4 h-px bg-slate-300" aria-hidden="true" />
               </Reveal>
             </RevealGroup>
           </div>
@@ -517,157 +485,130 @@ export default async function Home({
         <section
           id="installation-services-section"
           aria-labelledby="installation-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
+          className="py-16 sm:py-20 lg:py-28 bg-slate-950 text-white border-t border-slate-800"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.installation.eyebrow}
-                  </span>
-                </Reveal>
-                <Reveal delay={0.08}>
-                  <h2
-                    id="installation-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
-                  >
-                    {homeDict.installation.title}
-                  </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                </Reveal>
-                <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
-                    {homeDict.installation.subtitle}
-                  </p>
-                </Reveal>
+              <div className="flex flex-col md:flex-row justify-between mb-16 lg:mb-20 gap-10">
+                <div className="max-w-xl">
+                  <Reveal delay={0}>
+                    <div className="flex items-center space-x-3 mb-6">
+                      <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                        {homeDict.installation.eyebrow}
+                      </span>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.08}>
+                    <h2
+                      id="installation-heading"
+                      className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-white tracking-tight leading-tight mb-6"
+                    >
+                      {homeDict.installation.title}
+                    </h2>
+                  </Reveal>
+                  <Reveal delay={0.16}>
+                    <p className="text-sm sm:text-base text-slate-400 font-sans leading-relaxed">
+                      {homeDict.installation.subtitle}
+                    </p>
+                  </Reveal>
+                </div>
+
+                <div className="max-w-md flex flex-col justify-end">
+                  <div className="grid grid-cols-1 gap-8">
+                    {/* Point 1: Integrated Package */}
+                    <Reveal staggerIndex={0} baseDelay={0.24}>
+                      <h3 className="text-lg font-medium font-heading text-white mb-2 flex items-center">
+                        <Layers className="w-4 h-4 text-accent mr-3" aria-hidden="true" />
+                        {homeDict.installation.point1Title}
+                      </h3>
+                      <p className="text-sm text-slate-400 font-sans leading-relaxed pl-7">
+                        {homeDict.installation.point1Desc}
+                      </p>
+                    </Reveal>
+                    {/* Point 2: From Raw Land to Neat Completion */}
+                    <Reveal staggerIndex={1} baseDelay={0.24}>
+                      <h3 className="text-lg font-medium font-heading text-white mb-2 flex items-center">
+                        <ShieldCheck className="w-4 h-4 text-accent mr-3" aria-hidden="true" />
+                        {homeDict.installation.point2Title}
+                      </h3>
+                      <p className="text-sm text-slate-400 font-sans leading-relaxed pl-7">
+                        {homeDict.installation.point2Desc}
+                      </p>
+                    </Reveal>
+                    {/* Point 3: Jabodetabek & Regional Coverage */}
+                    <Reveal staggerIndex={2} baseDelay={0.24}>
+                      <h3 className="text-lg font-medium font-heading text-white mb-2 flex items-center">
+                        <Truck className="w-4 h-4 text-accent mr-3" aria-hidden="true" />
+                        {homeDict.installation.point3Title}
+                      </h3>
+                      <p className="text-sm text-slate-400 font-sans leading-relaxed pl-7">
+                        {homeDict.installation.point3Desc}
+                      </p>
+                    </Reveal>
+                  </div>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
-                {/* Point 1: Integrated Package */}
-                <Reveal
-                  staggerIndex={0}
-                  baseDelay={0.24}
-                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-secondary text-accent flex items-center justify-center mb-5 shadow-xs">
-                      <Layers className="w-6 h-6" aria-hidden="true" />
-                    </div>
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.installation.point1Title}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.installation.point1Desc}
-                    </p>
-                  </div>
-                </Reveal>
-
-                {/* Point 2: From Raw Land to Neat Completion */}
-                <Reveal
-                  staggerIndex={1}
-                  baseDelay={0.24}
-                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-primary/30 hover:shadow-md transition-all"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center mb-5 shadow-xs">
-                      <ShieldCheck className="w-6 h-6" aria-hidden="true" />
-                    </div>
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.installation.point2Title}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.installation.point2Desc}
-                    </p>
-                  </div>
-                </Reveal>
-
-                {/* Point 3: Jabodetabek & Regional Coverage */}
-                <Reveal
-                  staggerIndex={2}
-                  baseDelay={0.24}
-                  className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-secondary/30 hover:shadow-md transition-all"
-                >
-                  <div>
-                    <div className="w-12 h-12 rounded-xl bg-secondary text-white flex items-center justify-center mb-5 shadow-xs">
-                      <Truck className="w-6 h-6 text-accent" aria-hidden="true" />
-                    </div>
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                      {homeDict.installation.point3Title}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
-                      {homeDict.installation.point3Desc}
-                    </p>
-                  </div>
-                </Reveal>
-              </div>
-
-              {/* Workflow Banner (Red primary 4-step execution workflow with Gold accents) */}
+              {/* Workflow Banner */}
               <Reveal
                 delay={0.48}
-                className="bg-gradient-to-r from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border-t-4 border-t-accent relative overflow-hidden"
+                className="bg-slate-900 border border-slate-800 rounded-none p-8 sm:p-12 lg:p-16 relative overflow-hidden"
               >
+                <div className="absolute top-0 left-0 w-2 h-full bg-accent" aria-hidden="true" />
                 <div className="relative z-10">
-                  <div className="max-w-3xl mb-8">
-                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-accent mb-2">
+                  <div className="mb-12">
+                    <h3 className="text-2xl lg:text-3xl font-light font-heading text-white mb-3">
                       {homeDict.installation.workflowTitle}
                     </h3>
-                    <p className="text-sm sm:text-base text-slate-300 font-sans">
+                    <p className="text-sm text-slate-400 font-sans max-w-2xl">
                       {homeDict.installation.workflowSubtitle}
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 divide-y sm:divide-y-0 sm:divide-x divide-slate-800">
                     {/* Step 1 */}
-                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-mono text-accent font-bold block mb-1">01</span>
-                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                          {homeDict.installation.step1Title}
-                        </h4>
-                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                          {homeDict.installation.step1Desc}
-                        </p>
-                      </div>
+                    <div className="pt-6 sm:pt-0 sm:pl-6 lg:pl-8 first:pt-0 first:sm:pl-0 flex flex-col">
+                      <span className="text-xs font-mono text-accent font-bold block mb-4">01</span>
+                      <h4 className="text-base font-medium font-heading text-white mb-3">
+                        {homeDict.installation.step1Title}
+                      </h4>
+                      <p className="text-xs text-slate-400 font-sans leading-relaxed flex-grow">
+                        {homeDict.installation.step1Desc}
+                      </p>
                     </div>
 
                     {/* Step 2 */}
-                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-mono text-accent font-bold block mb-1">02</span>
-                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                          {homeDict.installation.step2Title}
-                        </h4>
-                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                          {homeDict.installation.step2Desc}
-                        </p>
-                      </div>
+                    <div className="pt-6 sm:pt-0 sm:pl-6 lg:pl-8 flex flex-col">
+                      <span className="text-xs font-mono text-accent font-bold block mb-4">02</span>
+                      <h4 className="text-base font-medium font-heading text-white mb-3">
+                        {homeDict.installation.step2Title}
+                      </h4>
+                      <p className="text-xs text-slate-400 font-sans leading-relaxed flex-grow">
+                        {homeDict.installation.step2Desc}
+                      </p>
                     </div>
 
                     {/* Step 3 */}
-                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-mono text-accent font-bold block mb-1">03</span>
-                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                          {homeDict.installation.step3Title}
-                        </h4>
-                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                          {homeDict.installation.step3Desc}
-                        </p>
-                      </div>
+                    <div className="pt-6 sm:pt-0 sm:pl-6 lg:pl-8 flex flex-col">
+                      <span className="text-xs font-mono text-accent font-bold block mb-4">03</span>
+                      <h4 className="text-base font-medium font-heading text-white mb-3">
+                        {homeDict.installation.step3Title}
+                      </h4>
+                      <p className="text-xs text-slate-400 font-sans leading-relaxed flex-grow">
+                        {homeDict.installation.step3Desc}
+                      </p>
                     </div>
 
                     {/* Step 4 */}
-                    <div className="bg-white/10 backdrop-blur-xs rounded-xl p-4 border border-white/10 flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-mono text-accent font-bold block mb-1">04</span>
-                        <h4 className="text-sm font-bold font-heading text-white mb-1.5">
-                          {homeDict.installation.step4Title}
-                        </h4>
-                        <p className="text-xs text-slate-300 font-sans leading-relaxed">
-                          {homeDict.installation.step4Desc}
-                        </p>
-                      </div>
+                    <div className="pt-6 sm:pt-0 sm:pl-6 lg:pl-8 flex flex-col">
+                      <span className="text-xs font-mono text-accent font-bold block mb-4">04</span>
+                      <h4 className="text-base font-medium font-heading text-white mb-3">
+                        {homeDict.installation.step4Title}
+                      </h4>
+                      <p className="text-xs text-slate-400 font-sans leading-relaxed flex-grow">
+                        {homeDict.installation.step4Desc}
+                      </p>
                     </div>
                   </div>
 
@@ -698,46 +639,51 @@ export default async function Home({
         <section
           id="ordering-process-section"
           aria-labelledby="ordering-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-t border-stone-200/60"
+          className="py-16 sm:py-20 lg:py-28 bg-white border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+              <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
                 <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.ordering.eyebrow}
-                  </span>
+                  <div className="flex items-center justify-center space-x-3 mb-4">
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                      {homeDict.ordering.eyebrow}
+                    </span>
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                  </div>
                 </Reveal>
                 <Reveal delay={0.08}>
                   <h2
                     id="ordering-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                    className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
                   >
                     {homeDict.ordering.title}
                   </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
                 </Reveal>
                 <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  <p className="text-sm sm:text-base text-slate-500 font-sans mt-4 max-w-xl mx-auto leading-relaxed">
                     {homeDict.ordering.subtitle}
                   </p>
                 </Reveal>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative">
+                <div className="hidden lg:block absolute top-4 left-[10%] right-[10%] h-[1px] bg-stone-200" aria-hidden="true" />
+                
                 {/* Step 1 */}
                 <Reveal
                   staggerIndex={0}
                   baseDelay={0.24}
-                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                  className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                     {homeDict.ordering.step1Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
+                  <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
                     {homeDict.ordering.step1Title}
                   </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <p className="text-xs text-slate-500 font-sans leading-relaxed max-w-xs">
                     {homeDict.ordering.step1Desc}
                   </p>
                 </Reveal>
@@ -746,15 +692,15 @@ export default async function Home({
                 <Reveal
                   staggerIndex={1}
                   baseDelay={0.24}
-                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                  className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                     {homeDict.ordering.step2Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
+                  <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
                     {homeDict.ordering.step2Title}
                   </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <p className="text-xs text-slate-500 font-sans leading-relaxed max-w-xs">
                     {homeDict.ordering.step2Desc}
                   </p>
                 </Reveal>
@@ -763,15 +709,15 @@ export default async function Home({
                 <Reveal
                   staggerIndex={2}
                   baseDelay={0.24}
-                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                  className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                     {homeDict.ordering.step3Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
+                  <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
                     {homeDict.ordering.step3Title}
                   </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <p className="text-xs text-slate-500 font-sans leading-relaxed max-w-xs">
                     {homeDict.ordering.step3Desc}
                   </p>
                 </Reveal>
@@ -780,15 +726,15 @@ export default async function Home({
                 <Reveal
                   staggerIndex={3}
                   baseDelay={0.24}
-                  className="bg-white border border-stone-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 h-full flex flex-col hover:border-accent hover:shadow-md transition-all duration-300"
+                  className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-5 shadow-xs">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                     {homeDict.ordering.step4Number}
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
+                  <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
                     {homeDict.ordering.step4Title}
                   </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <p className="text-xs text-slate-500 font-sans leading-relaxed max-w-xs">
                     {homeDict.ordering.step4Desc}
                   </p>
                 </Reveal>
@@ -803,66 +749,72 @@ export default async function Home({
         <section
           id="gallery-preview-section"
           aria-labelledby="gallery-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white"
+          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-                <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.gallery.eyebrow}
-                  </span>
-                </Reveal>
-                <Reveal delay={0.08}>
-                  <h2
-                    id="gallery-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+                <div className="max-w-2xl">
+                  <Reveal delay={0}>
+                    <div className="flex items-center space-x-3 mb-4">
+                      <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                      <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                        {homeDict.gallery.eyebrow}
+                      </span>
+                    </div>
+                  </Reveal>
+                  <Reveal delay={0.08}>
+                    <h2
+                      id="gallery-heading"
+                      className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
+                    >
+                      {homeDict.gallery.title}
+                    </h2>
+                  </Reveal>
+                  <Reveal delay={0.16}>
+                    <p className="text-base text-slate-500 font-sans mt-4 max-w-xl leading-relaxed">
+                      {homeDict.gallery.subtitle}
+                    </p>
+                  </Reveal>
+                </div>
+                
+                <Reveal delay={0.24} className="hidden md:block">
+                  <Link
+                    id="view-gallery-btn"
+                    href={`/${currentLang}/projects`}
+                    className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
-                    {homeDict.gallery.title}
-                  </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                </Reveal>
-                <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
-                    {homeDict.gallery.subtitle}
-                  </p>
+                    {homeDict.gallery.cta}
+                    <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                  </Link>
                 </Reveal>
               </div>
 
-              {/* 3 Documentation Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              {/* 3 Documentation Images without card borders */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                 {/* Card 1: Produk */}
                 <Reveal
                   staggerIndex={0}
                   baseDelay={0.24}
-                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                  className="flex flex-col group"
                 >
-                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
+                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
                       alt={homeDict.gallery.caption1}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
-                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
-                        {homeDict.gallery.doc1Label}
-                      </span>
-                      <span className="px-2 py-0.5 bg-white/20 backdrop-blur-md rounded text-[10px] text-white shadow-sm border border-white/10">
-                        {homeDict.gallery.doc1Badge}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
-                      {homeDict.gallery.doc1Footer}
-                    </div>
                   </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-1.5">
-                      {homeDict.gallery.caption1}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex flex-col flex-grow">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                      <h3 className="text-lg font-medium font-heading text-slate-900">
+                        {homeDict.gallery.caption1}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                       {homeDict.gallery.caption1Desc}
                     </p>
                   </div>
@@ -872,34 +824,25 @@ export default async function Home({
                 <Reveal
                   staggerIndex={1}
                   baseDelay={0.24}
-                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                  className="flex flex-col group"
                 >
-                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
+                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
                       alt={homeDict.gallery.caption2}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
-                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
-                        {homeDict.gallery.doc2Label}
-                      </span>
-                      <span className="px-2 py-0.5 bg-emerald-600/80 backdrop-blur-md text-white rounded text-[10px] shadow-sm border border-emerald-400/20">
-                        {homeDict.gallery.doc2Badge}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
-                      {homeDict.gallery.doc2Footer}
-                    </div>
                   </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-1.5">
-                      {homeDict.gallery.caption2}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex flex-col flex-grow">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                      <h3 className="text-lg font-medium font-heading text-slate-900">
+                        {homeDict.gallery.caption2}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                       {homeDict.gallery.caption2Desc}
                     </p>
                   </div>
@@ -909,46 +852,36 @@ export default async function Home({
                 <Reveal
                   staggerIndex={2}
                   baseDelay={0.24}
-                  className="bg-surface rounded-2xl border border-stone-200/80 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col h-full group hover:border-accent/50"
+                  className="flex flex-col group"
                 >
-                  <div className="w-full h-48 relative overflow-hidden bg-stone-100">
+                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
                       alt={homeDict.gallery.caption3}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/40" />
-                    <div className="absolute top-0 left-0 right-0 p-4 flex items-center justify-between text-white/90">
-                      <span className="text-[11px] font-mono uppercase tracking-wider font-semibold drop-shadow-md">
-                        {homeDict.gallery.doc3Label}
-                      </span>
-                      <span className="px-2 py-0.5 bg-accent/90 backdrop-blur-md text-slate-900 font-bold rounded text-[10px] shadow-sm">
-                        {homeDict.gallery.doc3Badge}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 text-[11px] font-mono text-white/90 drop-shadow-md">
-                      {homeDict.gallery.doc3Footer}
-                    </div>
                   </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-lg font-bold font-heading text-slate-900 mb-1.5">
-                      {homeDict.gallery.caption3}
-                    </h3>
-                    <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex flex-col flex-grow">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                      <h3 className="text-lg font-medium font-heading text-slate-900">
+                        {homeDict.gallery.caption3}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                       {homeDict.gallery.caption3Desc}
                     </p>
                   </div>
                 </Reveal>
               </div>
 
-              {/* Gallery Page CTA */}
-              <Reveal delay={0.48} className="mt-10 sm:mt-12 text-center">
+              {/* Mobile CTA */}
+              <Reveal delay={0.48} className="mt-12 text-center md:hidden">
                 <Link
-                  id="view-gallery-btn"
                   href={`/${currentLang}/projects`}
-                  className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-base transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.gallery.cta}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -964,46 +897,52 @@ export default async function Home({
         <section
           id="benefits-payment-section"
           aria-labelledby="benefits-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-surface border-t border-stone-200/60"
+          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+              <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
                 <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.benefits.eyebrow}
-                  </span>
+                  <div className="flex items-center justify-center space-x-3 mb-4">
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                      {homeDict.benefits.eyebrow}
+                    </span>
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                  </div>
                 </Reveal>
                 <Reveal delay={0.08}>
                   <h2
                     id="benefits-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                    className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
                   >
                     {homeDict.benefits.title}
                   </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
                 </Reveal>
                 <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
+                  <p className="text-sm sm:text-base text-slate-500 font-sans mt-4 max-w-xl mx-auto leading-relaxed">
                     {homeDict.benefits.subtitle}
                   </p>
                 </Reveal>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                 {/* Feature 1 */}
                 <Reveal
                   staggerIndex={0}
                   baseDelay={0.24}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                  className="flex flex-col group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
-                    <ShieldCheck className="w-6 h-6 text-primary" aria-hidden="true" />
+                  <div className="w-12 h-12 flex items-center justify-center mb-6 text-accent">
+                    <ShieldCheck className="w-8 h-8" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                    {homeDict.benefits.item1Title}
-                  </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                    <h3 className="text-lg font-medium font-heading text-slate-900">
+                      {homeDict.benefits.item1Title}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                     {homeDict.benefits.item1Desc}
                   </p>
                 </Reveal>
@@ -1012,15 +951,18 @@ export default async function Home({
                 <Reveal
                   staggerIndex={1}
                   baseDelay={0.24}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                  className="flex flex-col group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
-                    <Factory className="w-6 h-6 text-slate-900" aria-hidden="true" />
+                  <div className="w-12 h-12 flex items-center justify-center mb-6 text-accent">
+                    <Factory className="w-8 h-8" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                    {homeDict.benefits.item2Title}
-                  </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                    <h3 className="text-lg font-medium font-heading text-slate-900">
+                      {homeDict.benefits.item2Title}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                     {homeDict.benefits.item2Desc}
                   </p>
                 </Reveal>
@@ -1029,15 +971,18 @@ export default async function Home({
                 <Reveal
                   staggerIndex={2}
                   baseDelay={0.24}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                  className="flex flex-col group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
-                    <Truck className="w-6 h-6 text-slate-900" aria-hidden="true" />
+                  <div className="w-12 h-12 flex items-center justify-center mb-6 text-accent">
+                    <Truck className="w-8 h-8" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                    {homeDict.benefits.item3Title}
-                  </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                    <h3 className="text-lg font-medium font-heading text-slate-900">
+                      {homeDict.benefits.item3Title}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                     {homeDict.benefits.item3Desc}
                   </p>
                 </Reveal>
@@ -1046,15 +991,18 @@ export default async function Home({
                 <Reveal
                   staggerIndex={3}
                   baseDelay={0.24}
-                  className="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 border-t-2 border-t-accent/60 flex flex-col h-full hover:border-accent hover:shadow-md transition-all"
+                  className="flex flex-col group"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 border border-accent/40 flex items-center justify-center mb-5">
-                    <CreditCard className="w-6 h-6 text-slate-900" aria-hidden="true" />
+                  <div className="w-12 h-12 flex items-center justify-center mb-6 text-accent">
+                    <CreditCard className="w-8 h-8" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
-                    {homeDict.benefits.item4Title}
-                  </h3>
-                  <p className="text-sm text-slate-600 font-sans leading-relaxed">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                    <h3 className="text-lg font-medium font-heading text-slate-900">
+                      {homeDict.benefits.item4Title}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed ml-6">
                     {homeDict.benefits.item4Desc}
                   </p>
                 </Reveal>
@@ -1069,45 +1017,43 @@ export default async function Home({
         <section
           id="faq-section"
           aria-labelledby="faq-heading"
-          className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white border-t border-stone-200/60"
+          className="py-16 sm:py-20 lg:py-28 bg-white border-t border-stone-200/40"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
-              <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+              <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
                 <Reveal delay={0}>
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
-                    {homeDict.faq.eyebrow}
-                  </span>
+                  <div className="flex items-center justify-center space-x-3 mb-4">
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                      {homeDict.faq.eyebrow}
+                    </span>
+                    <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                  </div>
                 </Reveal>
                 <Reveal delay={0.08}>
                   <h2
                     id="faq-heading"
-                    className="text-3xl md:text-4xl font-bold font-heading text-slate-900"
+                    className="text-3xl md:text-4xl lg:text-5xl font-light font-heading text-slate-900 tracking-tight"
                   >
                     {homeDict.faq.title}
                   </h2>
-                  <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
-                </Reveal>
-                <Reveal delay={0.16}>
-                  <p className="text-base sm:text-lg text-slate-600 font-sans">
-                    {homeDict.faq.subtitle}
-                  </p>
                 </Reveal>
               </div>
 
-              <div className="space-y-4">
+              <div className="border-t border-stone-200">
                 {homeDict.faq.items.map((item, index) => (
                   <Reveal key={index} staggerIndex={index} baseDelay={0.24} staggerInterval={0.06}>
                     <details
-                      className="group bg-surface rounded-2xl border border-stone-200/80 open:border-secondary/30 open:shadow-xs transition-[border-color,box-shadow] duration-200"
+                      className="group border-b border-stone-200"
                     >
-                      <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
+                      <summary className="flex items-center justify-between py-6 sm:py-8 cursor-pointer list-none select-none font-heading font-medium text-lg sm:text-xl text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent">
                         <span className="pr-4">{item.q}</span>
-                        <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-slate-900 group-hover:border-primary group-open:rotate-180 transition-transform duration-200">
+                        <span className="shrink-0 w-8 h-8 rounded-full border border-stone-300 flex items-center justify-center text-slate-400 group-hover:border-primary group-open:rotate-180 transition-all duration-300 group-open:text-primary">
                           <ChevronDown className="w-4 h-4" aria-hidden="true" />
                         </span>
                       </summary>
-                      <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm sm:text-base text-slate-600 font-sans leading-relaxed border-t border-stone-200/40">
+                      <div className="pb-6 sm:pb-8 pr-12 text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                         {item.a}
                       </div>
                     </details>
@@ -1124,54 +1070,47 @@ export default async function Home({
         <section
           id="final-cta-section"
           aria-labelledby="final-cta-heading"
-          className="py-12 sm:py-16 md:py-20 bg-primary text-white relative overflow-hidden"
+          className="py-20 sm:py-28 lg:py-36 bg-slate-950 text-white relative overflow-hidden"
         >
-          {/* Subtle accent circles */}
-          <div
-            className="absolute top-0 right-0 w-80 h-80 bg-accent/20 rounded-full blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute bottom-0 left-0 w-80 h-80 bg-black/20 rounded-full blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
+          {/* Architectural Line */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-accent" aria-hidden="true" />
 
           <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
             <RevealGroup>
               <Reveal delay={0}>
                 <h2
                   id="final-cta-heading"
-                  className="text-3xl sm:text-4xl md:text-5xl font-black font-heading tracking-tight mb-6 text-white"
+                  className="text-4xl sm:text-5xl lg:text-7xl font-light font-heading tracking-tight mb-8 text-white"
                 >
                   {homeDict.finalCta.title}
                 </h2>
               </Reveal>
               <Reveal delay={0.08}>
-                <p className="text-base sm:text-lg text-slate-100 font-sans mb-10 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-400 font-sans mb-12 max-w-2xl mx-auto leading-relaxed">
                   {homeDict.finalCta.subtitle}
                 </p>
               </Reveal>
 
               <Reveal delay={0.16}>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
                   <a
                     id="final-whatsapp-btn"
                     href={dict.contact.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto inline-flex items-center justify-center bg-white text-primary hover:bg-stone-100 px-8 py-4 rounded-full font-bold text-base shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-10 py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
-                    <Phone className="w-5 h-5 mr-2.5 text-primary" aria-hidden="true" />
+                    <Phone className="w-4 h-4 mr-3 text-white" aria-hidden="true" />
                     {homeDict.finalCta.ctaPrimary}
                   </a>
 
                   <Link
                     id="final-products-btn"
                     href={`/${currentLang}/products`}
-                    className="w-full sm:w-auto inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-bold text-base backdrop-blur-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                    className="inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white border border-white/20 px-10 py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                   >
                     {homeDict.finalCta.ctaSecondary}
-                    <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+                    <ArrowRight className="w-4 h-4 ml-3 text-accent" aria-hidden="true" />
                   </Link>
                 </div>
               </Reveal>

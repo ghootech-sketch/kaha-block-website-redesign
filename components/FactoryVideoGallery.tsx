@@ -12,6 +12,7 @@ interface FactoryVideoGalleryProps {
   subtitle?: string;
   playLabelPrefix: string;
   videos: FactoryVideoData[];
+  variant?: "default" | "premium";
 }
 
 export default function FactoryVideoGallery({
@@ -19,21 +20,24 @@ export default function FactoryVideoGallery({
   subtitle,
   playLabelPrefix,
   videos,
+  variant = "default",
 }: FactoryVideoGalleryProps) {
+  const isPremium = variant === "premium";
+
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-surface border-t border-b border-stone-200/60">
+    <section className={`py-12 sm:py-16 md:py-24 ${isPremium ? 'bg-slate-950 border-none text-white' : 'bg-surface border-y border-stone-200/60 text-slate-900'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <RevealGroup>
-          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <Reveal delay={0}>
-              <h2 className="text-3xl md:text-4xl font-bold font-heading text-slate-900">
+              <h2 className={`text-3xl md:text-4xl lg:text-5xl font-black font-heading ${isPremium ? 'text-white tracking-tight' : 'text-slate-900'}`}>
                 {title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className={`w-16 h-1 mx-auto mt-6 mb-6 ${isPremium ? 'bg-accent' : 'bg-primary rounded-full'}`} />
             </Reveal>
             {subtitle && (
               <Reveal delay={0.08}>
-                <p className="text-base sm:text-lg text-slate-600 font-sans">
+                <p className={`text-base sm:text-lg lg:text-xl font-sans ${isPremium ? 'text-slate-300' : 'text-slate-600'}`}>
                   {subtitle}
                 </p>
               </Reveal>

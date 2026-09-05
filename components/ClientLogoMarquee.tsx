@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
-import { Handshake, Play, Pause } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 
 export interface ClientLogo {
   id: number;
@@ -36,6 +36,10 @@ interface ClientLogoMarqueeProps {
     eyebrow: string;
     title: string;
     subtitle?: string;
+    play?: string;
+    pause?: string;
+    playAria?: string;
+    pauseAria?: string;
   };
 }
 
@@ -48,31 +52,30 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
     <section
       id="clients-partners-section"
       aria-labelledby="client-logos-heading"
-      className="py-7 sm:py-9 bg-white border-y border-stone-200/60 overflow-hidden relative"
+      className="py-12 sm:py-16 bg-stone-50 overflow-hidden relative"
     >
       <ScrollReveal>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center relative">
-          {/* Eyebrow badge with Gold indicator */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/15 border border-accent/40 text-primary font-bold text-xs uppercase tracking-wider font-heading mb-2.5 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-accent" aria-hidden="true" />
-            <Handshake className="w-3.5 h-3.5 text-primary shrink-0" aria-hidden="true" />
-            <span>{dict.eyebrow}</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10 text-center relative">
+          {/* Elegant section label */}
+          <div className="inline-flex items-center space-x-3 mb-4">
+            <span className="w-8 h-px bg-slate-300" aria-hidden="true" />
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+              {dict.eyebrow}
+            </span>
+            <span className="w-8 h-px bg-slate-300" aria-hidden="true" />
           </div>
 
           {/* Heading */}
           <h2
             id="client-logos-heading"
-            className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight"
+            className="text-xl sm:text-2xl lg:text-3xl font-light font-heading text-slate-800 tracking-wide mb-4"
           >
             {dict.title}
           </h2>
 
-          {/* Short heading divider */}
-          <div className="h-0.5 w-12 bg-accent rounded-full my-2 mx-auto" aria-hidden="true" />
-
           {/* Supporting subtitle line */}
           {dict.subtitle && (
-            <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-sans">
+            <p className="text-sm text-slate-500 max-w-2xl mx-auto font-sans tracking-wide">
               {dict.subtitle}
             </p>
           )}
@@ -80,11 +83,11 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
           {/* Marquee Play/Pause Control */}
           <button
             onClick={() => setIsPaused(!isPaused)}
-            className="mt-4 sm:mt-0 sm:absolute sm:top-0 sm:right-6 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-card border border-stone-200/80 text-slate-600 text-xs font-semibold hover:bg-stone-100 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px] sm:min-h-[36px]"
-            aria-label={isPaused ? "Play marquee animation" : "Pause marquee animation"}
+            className="mt-6 sm:mt-0 sm:absolute sm:bottom-0 sm:right-6 inline-flex items-center gap-2 px-4 py-2 text-slate-400 text-[10px] uppercase tracking-widest font-semibold hover:text-slate-700 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-300"
+            aria-label={isPaused ? dict.playAria || "Play" : dict.pauseAria || "Pause"}
           >
-            {isPaused ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
-            <span>{isPaused ? "Play" : "Pause"}</span>
+            {isPaused ? <Play className="w-3 h-3" /> : <Pause className="w-3 h-3" />}
+            <span>{isPaused ? dict.play || "Play" : dict.pause || "Pause"}</span>
           </button>
         </div>
 
@@ -92,13 +95,13 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
         <div className="relative w-full overflow-hidden py-1">
           {/* Left Edge Fade */}
           <div
-            className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-r from-white via-white/80 to-transparent z-10"
+            className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-r from-stone-50 via-stone-50/80 to-transparent z-10"
             aria-hidden="true"
           />
 
           {/* Right Edge Fade */}
           <div
-            className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 lg:w-36 bg-gradient-to-l from-white via-white/80 to-transparent z-10"
+            className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-l from-stone-50 via-stone-50/80 to-transparent z-10"
             aria-hidden="true"
           />
 
@@ -116,7 +119,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
                 <div
                   key={`${client.id}-${index}`}
                   aria-hidden={isDuplicate ? "true" : undefined}
-                  className={`relative flex shrink-0 items-center justify-center h-20 w-48 sm:h-24 sm:w-60 lg:h-32 lg:w-72 p-3 sm:p-4 rounded-xl bg-white border border-stone-200/80 shadow-2xs transition-all duration-300 hover:border-accent hover:shadow-sm group ${
+                  className={`relative flex shrink-0 items-center justify-center h-20 w-40 sm:h-24 sm:w-48 lg:h-28 lg:w-56 p-4 mix-blend-multiply opacity-70 hover:opacity-100 transition-opacity duration-300 ${
                     isDuplicate ? "motion-reduce:hidden" : ""
                   }`}
                 >
@@ -125,8 +128,8 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
                       src={client.logo}
                       alt={altText}
                       fill
-                      sizes="(max-width: 640px) 192px, (max-width: 1024px) 240px, 288px"
-                      className="object-contain p-1.5 sm:p-2 max-h-[60px] sm:max-h-[66px] lg:max-h-[70px] max-w-[75%] m-auto group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
+                      className="object-contain p-2 max-h-[60px] sm:max-h-[70px] max-w-[80%] m-auto grayscale contrast-125"
                     />
                   </div>
                 </div>
