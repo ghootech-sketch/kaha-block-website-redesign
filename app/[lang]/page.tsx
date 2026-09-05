@@ -334,13 +334,13 @@ export default async function Home({
                       className={`${colSpanClass} group flex flex-col h-full`}
                     >
                       {/* Visual Image */}
-                      <div className="relative aspect-[4/5] w-full overflow-hidden bg-stone-100 mb-5">
+                      <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-100 mb-5 flex items-center justify-center">
                         <Image
                           src={product.image}
                           alt={`${dict.products.imageAltPrefix} ${product.name}`}
                           fill
                           sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                          className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                          className="object-contain p-4 sm:p-6 group-hover:scale-105 transition-transform duration-700 ease-out"
                         />
                         {/* Elegant Mutu Badge */}
                         <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-slate-900 px-3 py-1.5 text-[10px] uppercase tracking-widest font-heading font-bold shadow-sm">
@@ -798,12 +798,12 @@ export default async function Home({
                   baseDelay={0.24}
                   className="flex flex-col group"
                 >
-                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
+                  <div className="w-full aspect-[3/2] relative overflow-hidden bg-stone-200 mb-6 flex items-center justify-center">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
                       alt={homeDict.gallery.caption1}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="object-cover object-[center_40%] group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
@@ -826,12 +826,12 @@ export default async function Home({
                   baseDelay={0.24}
                   className="flex flex-col group"
                 >
-                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
+                  <div className="w-full aspect-[3/2] relative overflow-hidden bg-stone-200 mb-6 flex items-center justify-center">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
                       alt={homeDict.gallery.caption2}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
@@ -854,12 +854,12 @@ export default async function Home({
                   baseDelay={0.24}
                   className="flex flex-col group"
                 >
-                  <div className="w-full aspect-[4/3] relative overflow-hidden bg-stone-200 mb-6">
+                  <div className="w-full aspect-[3/2] relative overflow-hidden bg-stone-200 mb-6 flex items-center justify-center">
                     <Image
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
                       alt={homeDict.gallery.caption3}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
