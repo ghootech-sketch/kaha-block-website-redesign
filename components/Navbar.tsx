@@ -55,8 +55,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
         isHomepage
           ? `fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
               isScrolled
-                ? "bg-black/30 backdrop-blur-xl border-b border-white/[0.07] shadow-[0_4px_20px_rgba(0,0,0,0.12)]"
-                : "bg-white/[0.04] backdrop-blur-md border-b border-white/[0.05]"
+                ? "bg-black/45 backdrop-blur-none border-b border-white/10 shadow-md"
+                : "bg-transparent backdrop-blur-none border-b border-transparent"
             }`
           : "bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs font-sans"
       }
@@ -175,7 +175,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         <div
           className={`lg:hidden shadow-xl animate-in fade-in slide-in-from-top-2 duration-200 ${
             isHomepage
-              ? "border-t border-white/[0.06] bg-black/50 backdrop-blur-2xl"
+              ? "border-t border-white/10 bg-black/90 backdrop-blur-none"
               : "border-t border-gray-100 bg-surface-card"
           }`}
           id="mobile-menu"

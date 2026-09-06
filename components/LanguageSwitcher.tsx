@@ -34,7 +34,7 @@ export default function LanguageSwitcher({
     <div
       className={`inline-flex items-center space-x-1 p-1 rounded-xl ${
         isDark
-          ? "bg-white/[0.08] backdrop-blur-md border border-white/10"
+          ? "bg-black/25 backdrop-blur-none border border-white/15"
           : "bg-surface"
       } ${className}`}
       role="group"

@@ -111,18 +111,15 @@ export default async function Home({
               fill
               priority
               sizes="100vw"
-              className="object-cover"
-              style={{
-                objectPosition: "50% 28%",
-              }}
+              className="object-cover object-center lg:object-contain lg:object-center"
             />
 
-            {/* Lighter, cinematic directional gradient: gently shades the left column for crisp typography while preserving full luminous factory lighting and paving block detail on the right */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/35 to-dark/50 sm:bg-gradient-to-r sm:from-dark/75 sm:via-dark/30 sm:via-45% sm:to-transparent" />
+            {/* Directional localized gradient: left has dark overlay for crisp headline readability; center has light overlay; right has almost no overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/75 via-dark/35 to-dark/50 lg:bg-none" />
+            <div className="hidden lg:block absolute inset-y-0 left-0 w-[58%] bg-gradient-to-r from-dark/85 via-dark/35 via-70% to-transparent pointer-events-none" />
 
-            {/* Soft top and bottom ambient feathering for seamless navbar and bottom rail transition */}
-            <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-black/10 to-transparent pointer-events-none" />
-            <div className="absolute bottom-0 inset-x-0 h-20 bg-gradient-to-t from-dark/60 via-dark/15 to-transparent pointer-events-none" />
+            {/* Bottom ambient feathering for seamless transition to bottom trust rail */}
+            <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-dark/50 via-dark/15 to-transparent pointer-events-none" />
           </div>
 
           {/* Main Centered Container with Generous Horizontal Breathing Room */}
