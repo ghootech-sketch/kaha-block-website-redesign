@@ -94,7 +94,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-0 lg:h-[100svh] flex flex-col justify-between pt-20 sm:pt-22 lg:pt-20 xl:pt-22 pb-4 sm:pb-5 lg:pb-4 xl:pb-5"
+          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-0 lg:h-[100svh] flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
         >
           {/* =======================================================================
               UNIFIED HERO VISUAL SCENE (hero-main.webp)
@@ -124,162 +124,159 @@ export default async function Home({
             <div className="absolute bottom-0 inset-x-0 h-14 bg-gradient-to-t from-dark/50 via-dark/15 to-transparent pointer-events-none" />
           </div>
 
-          {/* Main Centered Container with Generous Horizontal Breathing Room */}
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-20 w-full flex-1 flex flex-col justify-between">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-1 sm:pt-2 lg:pt-2">
-              {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Narrative Copy, CTAs, Categories */}
-              <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
-                {/* Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
-                <div className="flex items-center space-x-3 mb-3 lg:mb-3.5">
-                  <span className="h-[1.5px] w-8 sm:w-10 bg-accent" aria-hidden="true" />
-                  <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
-                    {currentLang === "id"
-                      ? "KOKOH DI SETIAP LANGKAH"
-                      : "SOLID AT EVERY STEP"}
-                  </span>
-                </div>
+          {/* Main Centered Container - Left content constrained to ~40-45% of viewport */}
+          <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-20 w-full flex-1 flex flex-col justify-center">
+            {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Supporting Copy, CTAs, Specification Trust Rail, Category Rail */}
+            <div className="w-full max-w-[620px] xl:max-w-[680px] flex flex-col justify-center">
+              {/* 1. Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
+              <div className="flex items-center space-x-3 mb-3 lg:mb-4">
+                <span className="h-[1.5px] w-7 sm:w-9 bg-accent" aria-hidden="true" />
+                <span className="text-[11px] sm:text-xs lg:text-[13px] font-bold uppercase tracking-[0.22em] text-accent font-heading">
+                  {currentLang === "id"
+                    ? "KOKOH DI SETIAP LANGKAH"
+                    : "SOLID AT EVERY STEP"}
+                </span>
+              </div>
 
-                {/* Master Headline: 3-Line High Impact Hierarchy */}
-                <h1
-                  id="hero-title"
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-[54px] xl:text-[66px] font-black tracking-tight font-heading leading-[0.98] uppercase mb-4 lg:mb-4 xl:mb-5 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+              {/* 2. Master Headline: Exact 3-Line Compact High Impact Hierarchy */}
+              <h1
+                id="hero-title"
+                className="text-4xl sm:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight font-heading leading-[0.92] lg:leading-[0.94] uppercase mb-4 lg:mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
+              >
+                <span className="block whitespace-normal sm:whitespace-nowrap">
+                  <span className="text-accent">PAVING</span>{" "}
+                  <span className="text-white">BLOCK</span>
+                </span>
+                <span className="block text-white whitespace-normal sm:whitespace-nowrap">
+                  {currentLang === "id" ? "BERKUALITAS" : "PREMIUM QUALITY"}
+                </span>
+                <span className="block text-white whitespace-normal sm:whitespace-nowrap">
+                  {currentLang === "id" ? "UNTUK INDONESIA" : "FOR INDONESIA"}
+                </span>
+              </h1>
+
+              {/* 3. Supporting Narrative Copy: 2-3 lines on desktop, warm white */}
+              <p className="text-sm sm:text-base lg:text-[16px] xl:text-[17px] text-slate-200/95 font-sans leading-[1.6] mb-5 lg:mb-6 max-w-[500px] xl:max-w-[540px] drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
+                {homeDict.hero.description}
+              </p>
+
+              {/* 4. CTA Row: Horizontal on desktop, Royal Gold primary with arrow + dark secondary with Gold border */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-5 lg:mb-6">
+                <a
+                  id="hero-primary-cta"
+                  href={dict.contact.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-6 sm:px-7 h-[56px] lg:h-[60px] font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-xs font-heading group"
                 >
-                  <span className="block">
-                    <span className="text-accent">PAVING</span>{" "}
-                    <span className="text-white">BLOCK</span>
-                  </span>
-                  <span className="block text-white">
-                    {currentLang === "id" ? "BERKUALITAS" : "PREMIUM QUALITY"}
-                  </span>
-                  <span className="block text-white">
-                    {currentLang === "id" ? "UNTUK INDONESIA" : "FOR INDONESIA"}
-                  </span>
-                </h1>
-
-                {/* Supporting Narrative Copy: Short visually (approx 2-3 lines on desktop) */}
-                <p className="text-base sm:text-lg text-slate-200 font-sans leading-relaxed mb-5 lg:mb-6 max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                  {homeDict.hero.description}
-                </p>
-
-                {/* CTAs: Wide rectangular buttons, minimal radius */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-5 lg:mb-6">
-                  <a
-                    id="hero-primary-cta"
-                    href={dict.contact.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[48px] rounded-xs font-heading"
-                  >
-                    <Phone className="w-4 h-4 mr-3 text-dark fill-dark/20" aria-hidden="true" />
+                  <Phone className="w-4 h-4 mr-2.5 text-dark fill-dark/20 flex-shrink-0" aria-hidden="true" />
+                  <span>
                     {currentLang === "id"
                       ? "KONSULTASI VIA WHATSAPP"
                       : "CONSULT VIA WHATSAPP"}
-                  </a>
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-2.5 text-dark group-hover:translate-x-1 transition-transform flex-shrink-0" aria-hidden="true" />
+                </a>
 
-                  <Link
-                    id="hero-secondary-cta"
-                    href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center bg-black/30 hover:bg-white/10 text-white border border-accent hover:border-accent-hover backdrop-blur-xs px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[48px] rounded-xs group font-heading"
-                  >
+                <Link
+                  id="hero-secondary-cta"
+                  href={`/${currentLang}/products`}
+                  className="inline-flex items-center justify-center bg-black/30 hover:bg-white/10 text-white border border-accent hover:border-accent-hover px-5 sm:px-6 h-[56px] lg:h-[60px] font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-xs group font-heading"
+                >
+                  <span>
                     {currentLang === "id"
                       ? "LIHAT PRODUK"
                       : "VIEW PRODUCTS"}
-                    <ArrowRight className="w-4 h-4 ml-3 text-accent group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                  </Link>
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-2.5 text-accent group-hover:translate-x-1 transition-transform flex-shrink-0" aria-hidden="true" />
+                </Link>
+              </div>
+
+              {/* 5. Trust / Fact Rail - Architectural Specification Strip Directly Below CTAs */}
+              <div className="pt-3.5 lg:pt-4 pb-2.5 sm:pb-3 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 lg:gap-0 lg:flex lg:items-center lg:divide-x lg:divide-white/15">
+                {/* Fact 1: Sejak 2015 */}
+                <div className="flex items-center space-x-2.5 lg:pr-4 xl:pr-5">
+                  <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
+                  <div>
+                    <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
+                      {currentLang === "id" ? "SEJAK" : "ESTABLISHED"}
+                    </div>
+                    <div className="text-xs sm:text-sm font-bold text-white font-heading">
+                      2015
+                    </div>
+                  </div>
                 </div>
 
-                {/* Product Category Rail: Small uppercase, muted white, Gold leading line */}
-                <div className="hidden sm:flex flex-wrap items-center gap-y-1.5 text-xs font-heading tracking-wider uppercase text-slate-300">
-                  <span className="w-5 h-[1.5px] bg-accent mr-3" aria-hidden="true" />
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                    {[
-                      { label: "Paving Block", href: `/${currentLang}/products` },
-                      { label: "Kanstein", href: `/${currentLang}/products` },
-                      { label: "Ubin & Hexa", href: `/${currentLang}/products` },
-                      {
-                        label:
-                          currentLang === "id"
-                            ? "Produk Beton Lainnya"
-                            : "Other Concrete Products",
-                        href: `/${currentLang}/products`,
-                      },
-                    ].map((cat, idx, arr) => (
-                      <span key={cat.label} className="inline-flex items-center">
-                        <Link
-                          href={cat.href}
-                          className="hover:text-accent text-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
-                        >
-                          {cat.label}
-                        </Link>
-                        {idx < arr.length - 1 && (
-                          <span className="text-white/20 mx-3 select-none" aria-hidden="true">
-                            /
-                          </span>
-                        )}
-                      </span>
-                    ))}
+                {/* Fact 2: Area Pabrik 9.080 m² */}
+                <div className="flex items-center space-x-2.5 lg:px-4 xl:px-5">
+                  <Factory className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
+                  <div>
+                    <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
+                      {currentLang === "id" ? "AREA PABRIK" : "FACILITY SIZE"}
+                    </div>
+                    <div className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap">
+                      9.080 m²
+                    </div>
+                  </div>
+                </div>
+
+                {/* Fact 3: Mutu Beton K-300 — K-350 */}
+                <div className="flex items-center space-x-2.5 lg:px-4 xl:px-5">
+                  <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
+                  <div>
+                    <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
+                      {currentLang === "id" ? "MUTU BETON" : "CONCRETE GRADE"}
+                    </div>
+                    <div className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap">
+                      K-300 — K-350
+                    </div>
+                  </div>
+                </div>
+
+                {/* Fact 4: Layanan Jabodetabek & Luar Kota */}
+                <div className="flex items-center space-x-2.5 lg:pl-4 xl:pl-5">
+                  <Truck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
+                  <div>
+                    <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
+                      {currentLang === "id" ? "LAYANAN" : "SERVICE AREA"}
+                    </div>
+                    <div className="text-xs sm:text-sm font-bold text-white font-heading">
+                      {currentLang === "id" ? "Jabodetabek & Luar Kota" : "Jabodetabek & Regional"}
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* RIGHT COLUMN: Spatial clearing allowing the unified hero-main artwork (paving blocks & factory lighting) to remain completely unobstructed */}
-              <div
-                className="hidden lg:block lg:col-span-6 xl:col-span-6 pointer-events-none select-none"
-                aria-hidden="true"
-              />
-            </div>
-
-            {/* Bottom Trust / Fact Rail - Compact Horizontal Trust Rail (Verified Facts Only) */}
-            <div className="pt-3.5 sm:pt-4 lg:pt-4 xl:pt-5 mt-4 sm:mt-5 lg:mt-5 xl:mt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-6">
-              {/* Fact 1: Sejak 2015 */}
-              <div className="flex items-start space-x-3">
-                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
-                <div>
-                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 font-heading">
-                    {currentLang === "id" ? "SEJAK" : "ESTABLISHED"}
-                  </div>
-                  <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    2015
-                  </div>
-                </div>
-              </div>
-
-              {/* Fact 2: Area Pabrik 9.080 m² */}
-              <div className="flex items-start space-x-3">
-                <Factory className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
-                <div>
-                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 font-heading">
-                    {currentLang === "id" ? "AREA PABRIK" : "FACILITY SIZE"}
-                  </div>
-                  <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    9.080 m²
-                  </div>
-                </div>
-              </div>
-
-              {/* Fact 3: Mutu Beton K-300 — K-350 */}
-              <div className="flex items-start space-x-3">
-                <Award className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
-                <div>
-                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 font-heading">
-                    {currentLang === "id" ? "MUTU BETON" : "CONCRETE GRADE"}
-                  </div>
-                  <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    K-300 — K-350
-                  </div>
-                </div>
-              </div>
-
-              {/* Fact 4: Layanan Jabodetabek & Luar Kota */}
-              <div className="flex items-start space-x-3">
-                <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
-                <div>
-                  <div className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 font-heading">
-                    {currentLang === "id" ? "LAYANAN" : "SERVICE AREA"}
-                  </div>
-                  <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    {currentLang === "id" ? "Jabodetabek & Luar Kota" : "Greater Jakarta & Regional"}
-                  </div>
+              {/* 6. Product Category Rail: Small uppercase, muted white, Gold leading line */}
+              <div className="pt-2 sm:pt-2.5 flex flex-wrap items-center gap-y-1 text-[11px] sm:text-xs font-heading tracking-wider uppercase text-slate-300/90">
+                <span className="w-5 h-[1.5px] bg-accent mr-3 flex-shrink-0" aria-hidden="true" />
+                <div className="flex flex-wrap items-center gap-x-2.5 sm:gap-x-3.5 gap-y-1">
+                  {[
+                    { label: "Paving Block", href: `/${currentLang}/products` },
+                    { label: "Kanstein", href: `/${currentLang}/products` },
+                    { label: "Ubin & Hexa", href: `/${currentLang}/products` },
+                    {
+                      label:
+                        currentLang === "id"
+                          ? "Produk Beton Lainnya"
+                          : "Other Concrete Products",
+                      href: `/${currentLang}/products`,
+                    },
+                  ].map((cat, idx, arr) => (
+                    <span key={cat.label} className="inline-flex items-center">
+                      <Link
+                        href={cat.href}
+                        className="hover:text-accent text-slate-300/90 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
+                      >
+                        {cat.label}
+                      </Link>
+                      {idx < arr.length - 1 && (
+                        <span className="text-white/20 mx-2 sm:mx-2.5 select-none" aria-hidden="true">
+                          /
+                        </span>
+                      )}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
