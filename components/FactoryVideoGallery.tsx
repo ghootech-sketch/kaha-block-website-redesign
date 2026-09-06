@@ -25,7 +25,7 @@ export default function FactoryVideoGallery({
   const isPremium = variant === "premium";
 
   return (
-    <section className={`py-12 sm:py-16 md:py-24 ${isPremium ? 'bg-slate-950 border-none text-white' : 'bg-surface border-y border-stone-200/60 text-slate-900'}`}>
+    <section className={`py-12 sm:py-16 md:py-24 ${isPremium ? 'bg-dark border-none text-white' : 'bg-surface border-y border-stone-200/60 text-slate-900'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <RevealGroup>
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">

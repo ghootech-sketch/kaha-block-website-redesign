@@ -80,14 +80,14 @@ export default async function Home({
     <>
       <JsonLd page="home" lang={currentLang} />
 
-      <div className="flex flex-col min-h-screen bg-white">
+      <div className="flex flex-col min-h-screen bg-surface">
         {/* =========================================================================
             SECTION 1: HERO SECTION
            ========================================================================= */}
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-slate-950 min-h-[620px] lg:min-h-[85vh] flex items-center"
+          className="relative isolate overflow-hidden bg-dark min-h-[620px] lg:min-h-[85vh] flex items-center"
         >
           {/* Background Image - Asymmetric on desktop */}
           <div className="absolute inset-0 lg:left-[45%] -z-20">
@@ -104,9 +104,9 @@ export default async function Home({
               className="object-cover object-center lg:object-left"
             />
             {/* Desktop fade from black to image */}
-            <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent w-full" />
+            <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-transparent w-full" />
             {/* Mobile dark overlay for readability */}
-            <div className="lg:hidden absolute inset-0 bg-slate-950/75" />
+            <div className="lg:hidden absolute inset-0 bg-dark/75" />
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">
@@ -309,7 +309,7 @@ export default async function Home({
                   <Link
                     id="view-all-products-btn"
                     href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="inline-flex items-center justify-center bg-dark hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {homeDict.featuredProducts.viewAll}
                     <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -382,7 +382,7 @@ export default async function Home({
               <Reveal delay={0.64} className="mt-12 text-center md:hidden">
                 <Link
                   href={`/${currentLang}/products`}
-                  className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-dark hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -398,7 +398,7 @@ export default async function Home({
         <section
           id="solutions-by-area-section"
           aria-labelledby="solutions-heading"
-          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-b border-stone-200/40"
+          className="py-16 sm:py-20 lg:py-28 bg-surface border-b border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
@@ -485,7 +485,7 @@ export default async function Home({
         <section
           id="installation-services-section"
           aria-labelledby="installation-heading"
-          className="py-16 sm:py-20 lg:py-28 bg-slate-950 text-white border-t border-slate-800"
+          className="py-16 sm:py-20 lg:py-28 bg-dark text-white border-t border-white/10"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
@@ -553,7 +553,7 @@ export default async function Home({
               {/* Workflow Banner */}
               <Reveal
                 delay={0.48}
-                className="bg-slate-900 border border-slate-800 rounded-none p-8 sm:p-12 lg:p-16 relative overflow-hidden"
+                className="bg-black/60 border border-white/10 rounded-none p-8 sm:p-12 lg:p-16 relative overflow-hidden"
               >
                 <div className="absolute top-0 left-0 w-2 h-full bg-accent" aria-hidden="true" />
                 <div className="relative z-10">
@@ -677,7 +677,7 @@ export default async function Home({
                   baseDelay={0.24}
                   className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-dark transition-colors duration-300">
                     {homeDict.ordering.step1Number}
                   </div>
                   <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
@@ -694,7 +694,7 @@ export default async function Home({
                   baseDelay={0.24}
                   className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-dark transition-colors duration-300">
                     {homeDict.ordering.step2Number}
                   </div>
                   <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
@@ -711,7 +711,7 @@ export default async function Home({
                   baseDelay={0.24}
                   className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-dark transition-colors duration-300">
                     {homeDict.ordering.step3Number}
                   </div>
                   <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
@@ -728,7 +728,7 @@ export default async function Home({
                   baseDelay={0.24}
                   className="relative flex flex-col items-center text-center group"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  <div className="w-8 h-8 rounded-full bg-white border border-accent text-accent font-mono text-xs font-bold flex items-center justify-center mb-6 relative z-10 group-hover:bg-accent group-hover:text-dark transition-colors duration-300">
                     {homeDict.ordering.step4Number}
                   </div>
                   <h3 className="text-base font-bold font-heading text-slate-900 mb-3">
@@ -749,7 +749,7 @@ export default async function Home({
         <section
           id="gallery-preview-section"
           aria-labelledby="gallery-heading"
-          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-t border-stone-200/40"
+          className="py-16 sm:py-20 lg:py-28 bg-surface border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
@@ -782,7 +782,7 @@ export default async function Home({
                   <Link
                     id="view-gallery-btn"
                     href={`/${currentLang}/projects`}
-                    className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="inline-flex items-center justify-center bg-dark hover:bg-slate-800 text-white px-6 py-3 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {homeDict.gallery.cta}
                     <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -881,7 +881,7 @@ export default async function Home({
               <Reveal delay={0.48} className="mt-12 text-center md:hidden">
                 <Link
                   href={`/${currentLang}/projects`}
-                  className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center bg-dark hover:bg-slate-800 text-white w-full py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {homeDict.gallery.cta}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
@@ -897,7 +897,7 @@ export default async function Home({
         <section
           id="benefits-payment-section"
           aria-labelledby="benefits-heading"
-          className="py-16 sm:py-20 lg:py-28 bg-stone-50 border-t border-stone-200/40"
+          className="py-16 sm:py-20 lg:py-28 bg-surface border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>
@@ -1070,7 +1070,7 @@ export default async function Home({
         <section
           id="final-cta-section"
           aria-labelledby="final-cta-heading"
-          className="py-20 sm:py-28 lg:py-36 bg-slate-950 text-white relative overflow-hidden"
+          className="py-20 sm:py-28 lg:py-36 bg-dark text-white relative overflow-hidden"
         >
           {/* Architectural Line */}
           <div className="absolute top-0 left-0 w-full h-1 bg-accent" aria-hidden="true" />

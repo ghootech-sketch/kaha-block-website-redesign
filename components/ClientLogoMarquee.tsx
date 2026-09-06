@@ -52,7 +52,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
     <section
       id="clients-partners-section"
       aria-labelledby="client-logos-heading"
-      className="py-12 sm:py-16 bg-stone-50 overflow-hidden relative"
+      className="py-12 sm:py-16 bg-surface overflow-hidden relative"
     >
       <ScrollReveal>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10 text-center relative">
@@ -95,13 +95,13 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
         <div className="relative w-full overflow-hidden py-1">
           {/* Left Edge Fade */}
           <div
-            className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-r from-stone-50 via-stone-50/80 to-transparent z-10"
+            className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"
             aria-hidden="true"
           />
 
           {/* Right Edge Fade */}
           <div
-            className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-l from-stone-50 via-stone-50/80 to-transparent z-10"
+            className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 lg:w-48 bg-gradient-to-l from-surface via-surface/80 to-transparent z-10"
             aria-hidden="true"
           />
 

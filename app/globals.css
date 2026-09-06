@@ -6,32 +6,41 @@
   --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 
   /* Brand Semantic Palette Tokens */
-  --color-primary: #7A1C1C;
-  --color-primary-hover: #631616;
+  --color-primary: #B22222;
+  --color-primary-hover: #931B1B;
 
   --color-accent: #D4AF37;
   --color-accent-hover: #C59F2E;
 
-  --color-secondary: #0F2042;
-  --color-secondary-hover: #0A1630;
+  --color-secondary: #1E3A8A;
+  --color-secondary-hover: #162B66;
 
-  --color-surface: #F7F5F0;
+  --color-surface: #F8F6F1;
   --color-surface-card: #FFFFFF;
 
-  --color-footer: #0F2042;
+  --color-dark: #0B0B0B;
+  --color-footer: #0B0B0B;
 
-  --color-text: #0F172A;
+  --color-text: #0B0B0B;
   --color-text-muted: #475569;
 
   --color-border: #E2E8F0;
 
-  /* Direct Brand References */
-  --color-venetian: #7A1C1C;
-  --color-venetian-hover: #631616;
+  /* Direct Brand References & Aliases */
+  --color-royal-gold: #D4AF37;
+  --color-regal-red: #B22222;
+  --color-pearl-white: #F8F6F1;
+  --color-royal-blue: #1E3A8A;
+  --color-elegant-black: #0B0B0B;
+
+  --color-regal: #B22222;
+  --color-regal-hover: #931B1B;
+  --color-venetian: #B22222;
+  --color-venetian-hover: #931B1B;
   --color-gold: #D4AF37;
   --color-gold-hover: #C59F2E;
-  --color-sapphire: #0F2042;
-  --color-sapphire-dark: #0A1630;
+  --color-sapphire: #1E3A8A;
+  --color-sapphire-dark: #162B66;
 }
 
 body {
