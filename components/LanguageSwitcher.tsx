@@ -7,9 +7,11 @@ import { Locale } from "@/lib/dictionary";
 export default function LanguageSwitcher({
   currentLang,
   className = "",
+  variant = "default",
 }: {
   currentLang: Locale;
   className?: string;
+  variant?: "default" | "dark";
 }) {
   const pathname = usePathname();
 
@@ -26,9 +28,15 @@ export default function LanguageSwitcher({
     }
   };
 
+  const isDark = variant === "dark";
+
   return (
     <div
-      className={`inline-flex items-center space-x-1 bg-surface p-1 rounded-xl ${className}`}
+      className={`inline-flex items-center space-x-1 p-1 rounded-xl ${
+        isDark
+          ? "bg-black/40 backdrop-blur-xs border border-white/15"
+          : "bg-surface"
+      } ${className}`}
       role="group"
       aria-label="Language selection"
     >
@@ -38,13 +46,22 @@ export default function LanguageSwitcher({
         aria-label="Switch to Indonesian language"
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "id"
-            ? "bg-secondary text-accent shadow-sm"
+            ? isDark
+              ? "bg-accent text-dark shadow-sm"
+              : "bg-secondary text-accent shadow-sm"
+            : isDark
+            ? "text-white/80 hover:bg-white/15 hover:text-white active:bg-white/20"
             : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
         ID
       </Link>
-      <span className="text-gray-400 text-xs select-none px-0.5" aria-hidden="true">
+      <span
+        className={`text-xs select-none px-0.5 ${
+          isDark ? "text-white/30" : "text-gray-400"
+        }`}
+        aria-hidden="true"
+      >
         /
       </span>
       <Link
@@ -53,7 +70,11 @@ export default function LanguageSwitcher({
         aria-label="Switch to English language"
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "en"
-            ? "bg-secondary text-accent shadow-sm"
+            ? isDark
+              ? "bg-accent text-dark shadow-sm"
+              : "bg-secondary text-accent shadow-sm"
+            : isDark
+            ? "text-white/80 hover:bg-white/15 hover:text-white active:bg-white/20"
             : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
