@@ -119,7 +119,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
                 <div
                   key={`${client.id}-${index}`}
                   aria-hidden={isDuplicate ? "true" : undefined}
-                  className={`relative flex shrink-0 items-center justify-center h-20 w-40 sm:h-24 sm:w-48 lg:h-28 lg:w-56 p-4 mix-blend-multiply opacity-70 hover:opacity-100 transition-opacity duration-300 ${
+                  className={`relative flex shrink-0 items-center justify-center h-20 w-40 sm:h-24 sm:w-48 lg:h-28 lg:w-56 p-4 opacity-100 ${
                     isDuplicate ? "motion-reduce:hidden" : ""
                   }`}
                 >
@@ -129,7 +129,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
                       alt={altText}
                       fill
                       sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
-                      className="object-contain p-2 max-h-[60px] sm:max-h-[70px] max-w-[80%] m-auto grayscale contrast-125"
+                      className="object-contain p-2 max-h-[60px] sm:max-h-[70px] max-w-[80%] m-auto"
                     />
                   </div>
                 </div>
