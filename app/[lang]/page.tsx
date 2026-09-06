@@ -231,7 +231,7 @@ export default async function Home({
                   </div>
                 </div>
 
-                {/* Fact 3: Mutu Beton K-300 — K-350 */}
+                {/* Fact 3: Mutu Beton K-250 • K-300 • K-400 */}
                 <div className="flex items-center space-x-2.5 lg:px-4 xl:px-5">
                   <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
                   <div>
@@ -239,12 +239,12 @@ export default async function Home({
                       {currentLang === "id" ? "MUTU BETON" : "CONCRETE GRADE"}
                     </div>
                     <div className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap">
-                      K-300 — K-350
+                      K-250 • K-300 • K-400
                     </div>
                   </div>
                 </div>
 
-                {/* Fact 4: Layanan Jabodetabek & Luar Kota */}
+                {/* Fact 4: Layanan Jabodetabek */}
                 <div className="flex items-center space-x-2.5 lg:pl-4 xl:pl-5">
                   <Truck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent flex-shrink-0" aria-hidden="true" />
                   <div>
@@ -252,7 +252,7 @@ export default async function Home({
                       {currentLang === "id" ? "LAYANAN" : "SERVICE AREA"}
                     </div>
                     <div className="text-xs sm:text-sm font-bold text-white font-heading">
-                      {currentLang === "id" ? "Jabodetabek & Luar Kota" : "Jabodetabek & Regional"}
+                      {currentLang === "id" ? "Jabodetabek" : "Greater Jakarta"}
                     </div>
                   </div>
                 </div>
@@ -655,7 +655,7 @@ export default async function Home({
                         {homeDict.installation.point2Desc}
                       </p>
                     </Reveal>
-                    {/* Point 3: Jabodetabek & Regional Coverage */}
+                    {/* Point 3: Jabodetabek Coverage */}
                     <Reveal staggerIndex={2} baseDelay={0.24}>
                       <h3 className="text-lg font-medium font-heading text-white mb-2 flex items-center">
                         <Truck className="w-4 h-4 text-accent mr-3" aria-hidden="true" />

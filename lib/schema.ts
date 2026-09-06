@@ -7,6 +7,7 @@ export type SchemaPageType =
   | "about"
   | "products"
   | "projects"
+  | "projectsProduction"
   | "contact"
   | "blog"
   | "blogPost";
@@ -146,6 +147,13 @@ export function generateStructuredDataGraph({
         name: isEn ? "Project Gallery" : "Galeri Proyek",
         item: canonicalUrl,
       });
+    } else if (page === "projectsProduction") {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Production Gallery" : "Galeri Produksi",
+        item: canonicalUrl,
+      });
     } else if (page === "contact") {
       items.push({
         "@type": "ListItem",
@@ -195,7 +203,7 @@ export function generateStructuredDataGraph({
         : "Kaha Block | Pabrik Paving Block Berkualitas Mesin Hidrolik";
       pageDescription = isEn
         ? "Manufacturer of high-strength hydraulic concrete paving blocks, Truepave, Hexagonal, and curb stones in Tangerang."
-        : "Pabrik produsen paving block presisi mesin hidrolik otomatis mutu K-300 hingga K-350 di Cisauk, Tangerang.";
+        : "Pabrik produsen paving block presisi mesin hidrolik otomatis mutu K-250, K-300, dan K-400 di Cisauk, Tangerang.";
       break;
     case "about":
       pageType = "AboutPage";
@@ -224,6 +232,15 @@ export function generateStructuredDataGraph({
         ? "Documentation of paving block applications across residential estates, commercial parking lots, and industrial facilities."
         : "Dokumentasi aplikasi paving block Kaha Block pada perumahan, area parkir ruko komersial, dan kawasan industri.";
       break;
+    case "projectsProduction":
+      pageType = "CollectionPage";
+      pageName = isEn
+        ? "Paving Block Production Gallery | Kaha Block"
+        : "Galeri Produksi Paving Block | Kaha Block";
+      pageDescription = isEn
+        ? "Production documentation from Kaha Block's paving block facility in Cisauk, Tangerang using full automatic hydraulic machinery."
+        : "Dokumentasi proses produksi paving block Kaha Block di Cisauk, Tangerang dengan mesin full otomatis hidrolik.";
+      break;
     case "contact":
       pageType = "ContactPage";
       pageName = isEn
@@ -240,7 +257,7 @@ export function generateStructuredDataGraph({
         : "Artikel & Panduan Teknis Paving Block | Kaha Block";
       pageDescription = isEn
         ? "Technical guides, thickness selection, concrete strength grades, and installation methods from Kaha Block."
-        : "Kumpulan artikel teknis, panduan ketebalan, mutu beton K-300 dan K-350, serta tips pemasangan paving block presisi.";
+        : "Kumpulan artikel teknis, panduan ketebalan, mutu beton K-250, K-300, dan K-400, serta tips pemasangan paving block presisi.";
       break;
     case "blogPost":
       if (post) {
@@ -292,8 +309,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-truepave`,
         name: isEn ? "Truepave" : "Truepave",
         description: isEn
-          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-300 to K-350. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-300 sampai K-350. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
+          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-250, K-300, and K-400. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-250, K-300, dan K-400. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -310,8 +327,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-half-tahu`,
         name: isEn ? "Half / Tahu" : "Half / Tahu",
         description: isEn
-          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Compressive Strength: K-300 & K-350. Function: Paving pattern lock & color boundary."
-          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Kuat Tekan: K-300 & K-350. Fungsi: Pengunci pola paving & pembatas warna.",
+          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Compressive Strength: K-250, K-300, and K-400. Function: Paving pattern lock & color boundary."
+          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Kuat Tekan: K-250, K-300, and K-400. Fungsi: Pengunci pola paving & pembatas warna.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -328,7 +345,7 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-hexa`,
         name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
-          ? "Product family: K-300 to K-350. Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
+          ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
           : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
         brand: {
           "@type": "Brand",
@@ -346,7 +363,7 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-ubin`,
         name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
         description: isEn
-          ? "Product family: K-300 to K-350. Thickness: 8 cm. Color Options: Grey, Red, Black."
+          ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black."
           : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
         brand: {
           "@type": "Brand",

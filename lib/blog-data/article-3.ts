@@ -1,27 +1,27 @@
 import { BlogPost } from "../blog-types";
 
 export const article3Id: BlogPost = {
-  slug: "mutu-beton-k300-k350-paving-block",
+  slug: "mutu-beton-k250-k300-k400-paving-block",
   locale: "id",
-  title: "Mengenal Mutu Beton K-300 hingga K-350 pada Paving Block",
-  excerpt: "Penjelasan lengkap mengenai arti mutu beton K-300 dan K-350, pengaruh komposisi bahan baku dan mesin hidrolik otomatis terhadap kepadatan, serta relevansinya untuk proyek infrastruktur.",
+  title: "Mengenal Mutu Beton K-250, K-300, dan K-400 pada Paving Block",
+  excerpt: "Penjelasan lengkap mengenai arti mutu beton K-250, K-300, dan K-400, pengaruh komposisi bahan baku dan mesin hidrolik otomatis terhadap kepadatan, serta relevansinya untuk proyek infrastruktur.",
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
-  seoTitle: "Mengenal Mutu Beton K-300 & K-350 Paving Block",
-  seoDescription: "Pahami mutu beton K-300 dan K-350 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
+  seoTitle: "Mengenal Mutu Beton K-250, K-300, dan K-400 Paving Block",
+  seoDescription: "Pahami mutu beton K-250, K-300, dan K-400 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
   intro: [
-    "Jawaban Langsung: Mutu beton K-300 dan K-350 pada paving block menunjukkan kuat tekan karakteristik benda uji kubus sebesar 300 kg/cm² dan 350 kg/cm² pada umur 28 hari. Mutu ini dihasilkan melalui metode beton semi-kering (zero-slump) dengan mesin full otomatis hidrolik bertekanan tinggi, menghasilkan kepadatan matriks beton yang rapat, daya serap air rendah terkontrol, dan ketahanan abrasi terhadap roda kendaraan.",
-    "Dalam spesifikasi teknis proyek konstruksi jalan dan perumahan di Indonesia, istilah mutu beton dengan notasi huruf 'K' (Karakteristik) seperti K-300 atau K-350 adalah standar yang paling sering dicantumkan dalam dokumen Rencana Kerja dan Syarat-syarat (RKS).",
-    "Meskipun istilah ini sangat akrab di telinga praktisi teknik sipil dan kontraktor berpengalaman, banyak pemilik properti, konsultan perencana arsitektur, maupun pengembang pemula yang masih membutuhkan penjelasan terperinci: apa sebenarnya arti matematis angka K-300 hingga K-350, bagaimana mutu ini dicapai dalam proses pabrikasi paving block semi-kering, dan mengapa rentang mutu ini menjadi standar untuk perkerasan lalu lintas kendaraan?",
+    "Jawaban Langsung: Mutu beton K-250, K-300, dan K-400 pada paving block menunjukkan kuat tekan karakteristik benda uji kubus sebesar 250 kg/cm², 300 kg/cm², dan 400 kg/cm² pada umur 28 hari. Mutu ini dihasilkan melalui metode beton semi-kering (zero-slump) dengan mesin full otomatis hidrolik bertekanan tinggi, menghasilkan kepadatan matriks beton yang rapat, daya serap air rendah terkontrol, dan ketahanan abrasi terhadap roda kendaraan.",
+    "Dalam spesifikasi teknis proyek konstruksi jalan dan perumahan di Indonesia, istilah mutu beton dengan notasi huruf 'K' (Karakteristik) seperti K-250, K-300, atau K-400 adalah standar yang paling sering dicantumkan dalam dokumen Rencana Kerja dan Syarat-syarat (RKS).",
+    "Meskipun istilah ini sangat akrab di telinga praktisi teknik sipil dan kontraktor berpengalaman, banyak pemilik properti, konsultan perencana arsitektur, maupun pengembang pemula yang masih membutuhkan penjelasan terperinci: apa sebenarnya arti matematis mutu K-250, K-300, dan K-400, bagaimana mutu ini dicapai dalam proses pabrikasi paving block semi-kering, dan mengapa rentang mutu ini menjadi standar untuk perkerasan lalu lintas kendaraan?",
     "Melalui artikel ini, PT Kaha Sukses Mandiri (Kaha Block) mengupas tuntas seluk-beluk mutu beton pada paving block, mulai dari konsep dasar kuat tekan karakteristik, parameter penentu kepadatan matriks beton di pabrik, prosedur pengujian kuat tekan, hingga aplikasinya pada berbagai skenario perkerasan di lapangan.",
   ],
   sections: [
     {
       id: "definisi-mutu-k",
-      heading: "1. Apa Arti Notasi Mutu Beton K-300 dan K-350?",
+      heading: "1. Apa Arti Notasi Mutu Beton K-250, K-300, dan K-400?",
       paragraphs: [
         "Notasi 'K' merujuk pada Karakteristik kuat tekan beton (compressive strength) yang diukur menggunakan benda uji kubus berukuran 15 cm x 15 cm x 15 cm setelah melalui masa perawatan (curing) standar selama 28 hari. Angka di belakang huruf K menunjukkan kemampuan beton menahan beban tekan aksial per satuan luas dalam satuan kilogram per sentimeter persegi (kg/cm²).",
         "Sebagai ilustrasi komparatif:",
@@ -136,7 +136,7 @@ export const article3Id: BlogPost = {
   summary: {
     title: "Ringkasan Mutu Beton Paving Block",
     points: [
-      "Notasi K mengindikasikan kuat tekan karakteristik pada pengujian kubus standar 15 cm (K-300 dan K-350).",
+      "Notasi K mengindikasikan kuat tekan karakteristik pada pengujian kubus standar 15 cm (K-250, K-300, dan K-400).",
       "Mutu tinggi dihasilkan dari sinergi agregat pilihan, rasio air-semen rendah, dan mesin pres hidrolik bertekanan tinggi.",
       "Paving mutu presisi menawarkan ketahanan aus optimal, penyerapan air rendah terkontrol, dan ketahanan sudut terhadap keretakan.",
       "Curing yang disiplin memastikan kristalisasi hidrasi semen mencapai puncak kekuatannya secara stabil.",
@@ -172,27 +172,27 @@ export const article3Id: BlogPost = {
 };
 
 export const article3En: BlogPost = {
-  slug: "mutu-beton-k300-k350-paving-block",
+  slug: "mutu-beton-k250-k300-k400-paving-block",
   locale: "en",
-  title: "Understanding Concrete Compressive Strength (K-300 and K-350) in Paving Blocks",
-  excerpt: "A thorough technical breakdown of K-300 and K-350 compressive strength ratings, aggregate mix design, hydraulic compaction technology, and curing protocols for civil infrastructure.",
+  title: "Understanding Concrete Compressive Strength (K-250, K-300, and K-400) in Paving Blocks",
+  excerpt: "A thorough technical breakdown of K-250, K-300, and K-400 compressive strength ratings, aggregate mix design, hydraulic compaction technology, and curing protocols for civil infrastructure.",
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
-  seoTitle: "K-300 and K-350 Concrete Paving Block Strength",
-  seoDescription: "Learn what K-300 and K-350 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
+  seoTitle: "K-250, K-300, and K-400 Concrete Paving Block Strength",
+  seoDescription: "Learn what K-250, K-300, and K-400 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
   intro: [
-    "Direct Answer: K-300 and K-350 concrete strength ratings denote characteristic compressive strengths of 300 kg/cm² and 350 kg/cm² tested on 15 cm cube specimens at 28 days. Manufactured via zero-slump semi-dry mixes under high-tonnage automated hydraulic vibro-compaction, these grades ensure high matrix density, controlled water absorption, and dependable tire abrasion resistance.",
-    "In Indonesian civil engineering and municipal construction specifications, concrete compressive strength designated with the prefix 'K' (Karakteristik)—such as K-300 or K-350—serves as the benchmark in project tender documents.",
+    "Direct Answer: K-250, K-300, and K-400 concrete strength ratings denote characteristic compressive strengths of 250 kg/cm², 300 kg/cm², and 400 kg/cm² tested on 15 cm cube specimens at 28 days. Manufactured via zero-slump semi-dry mixes under high-tonnage automated hydraulic vibro-compaction, these grades ensure high matrix density, controlled water absorption, and dependable tire abrasion resistance.",
+    "In Indonesian civil engineering and municipal construction specifications, concrete compressive strength designated with the prefix 'K' (Karakteristik)—such as K-250, K-300, or K-400—serves as the benchmark in project tender documents.",
     "While civil engineers and seasoned paving contractors are intimately familiar with these metrics, property owners, landscape architects, and project managers often seek clarity: what do characteristic strength numbers signify, how is this density achieved in zero-slump semi-dry manufacturing, and why is high compressive strength essential for vehicular pavements?",
     "In this comprehensive analysis, PT Kaha Sukses Mandiri (Kaha Block) explores the structural mechanics of high-strength concrete pavers, detailing mix design ratios, automated hydraulic pressing, compression testing, and on-site engineering applications.",
   ],
   sections: [
     {
       id: "defining-k-strength",
-      heading: "1. What Do K-300 and K-350 Strength Ratings Mean?",
+      heading: "1. What Do K-250, K-300, and K-400 Strength Ratings Mean?",
       paragraphs: [
         "The 'K' notation designates characteristic compressive strength tested on 15 cm x 15 cm x 15 cm concrete cube specimens following 28 days of standard moisture curing. The numeric value represents the axial load resistance in kilograms per square centimeter (kg/cm²).",
         "Key comparative definitions:",
@@ -279,7 +279,7 @@ export const article3En: BlogPost = {
       id: "kaha-quality-assurance",
       heading: "6. PT Kaha Sukses Mandiri Quality Standards",
       paragraphs: [
-        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit)—with K-300 to K-350 compressive strength options.",
+        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit)—with K-250, K-300, and K-400 compressive strength options.",
         "Through advanced hydraulic technology, rigorous aggregate quality control, and experienced turnkey installation teams, Kaha Block remains the trusted supplier for infrastructure across Greater Jakarta. View completed works in our [Project Gallery](/en/projects) or reach out via our [Contact Page](/en/contact).",
       ],
     },
@@ -302,7 +302,7 @@ export const article3En: BlogPost = {
   summary: {
     title: "Key Takeaways: Concrete Compressive Strength in Pavers",
     points: [
-      "K-ratings denote characteristic cube compressive strengths (K-300 and K-350) at 28-day maturity.",
+      "K-ratings denote characteristic cube compressive strengths (K-250, K-300, and K-400) at 28-day maturity.",
       "High strength requires zero-slump semi-dry mixes, low water-cement ratios, and automated hydraulic compaction.",
       "Delivers high abrasion resistance, minimal water absorption, and superior edge durability.",
       "Proper curing procedures ensure uniform hydration and structural consistency.",

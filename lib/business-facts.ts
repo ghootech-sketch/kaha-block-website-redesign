@@ -47,7 +47,7 @@ export const BUSINESS_FACTS = {
     facilityAreaM2: 9080,
     facilityAreaDisplay: "9.080 m²",
     serviceArea: {
-      id: "Jabodetabek dan luar kota",
+      id: "Jabodetabek",
       en: "Greater Jakarta (Jabodetabek) and surrounding regions",
     },
     machineryType: {
@@ -55,8 +55,8 @@ export const BUSINESS_FACTS = {
       en: "Fully automated hydraulic block machines",
     },
     concreteGrades: {
-      id: "Pilihan mutu beton K-300 hingga K-350",
-      en: "Concrete strength grades K-300 to K-350",
+      id: "Pilihan mutu beton K-250, K-300, dan K-400",
+      en: "Concrete grade options K-250, K-300, and K-400",
     },
     rawMaterials: {
       id: "Semen curah Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, pasir Bangka",

@@ -14,7 +14,7 @@ export const article1Id: BlogPost = {
   seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport, jalan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
   featured: true,
   intro: [
-    "Jawaban Langsung: Untuk memilih paving block yang tepat, pertimbangkan fungsi peruntukan area dan perkiraan beban lalu lintas: ketebalan 6 cm umumnya digunakan untuk trotoar pejalan kaki dan carport kendaraan pribadi; ketebalan 8 cm dengan mutu K-300 hingga K-350 dan pola interlocking herringbone untuk jalan lingkungan perumahan serta area komersial; serta tebal 10 cm untuk kawasan industri dan logistik bertonase berat. Struktur lapisan pondasi dan spesifikasi akhir disesuaikan dengan kondisi tanah serta perencanaan teknis masing-masing proyek.",
+    "Jawaban Langsung: Untuk memilih paving block yang tepat, pertimbangkan fungsi peruntukan area dan perkiraan beban lalu lintas: ketebalan 6 cm umumnya digunakan untuk trotoar pejalan kaki dan carport kendaraan pribadi; ketebalan 8 cm dengan mutu K-250, K-300, dan K-400 dan pola interlocking herringbone untuk jalan lingkungan perumahan serta area komersial; serta tebal 10 cm untuk kawasan industri dan logistik bertonase berat. Struktur lapisan pondasi dan spesifikasi akhir disesuaikan dengan kondisi tanah serta perencanaan teknis masing-masing proyek.",
     "Memilih perkerasan jalan atau pelataran luar ruangan memerlukan pertimbangan matang antara kekuatan struktural, fungsi drainase, dan estetika visual. Paving block (conblock) menjadi salah satu material favorit di Indonesia karena menawarkan fleksibilitas pemasangan, kemudahan perawatan jangka panjang, dan daya serap air yang baik pada celah nat antar-blok.",
     "Namun, keberhasilan pengaplikasian paving block sangat bergantung pada kesesuaian antara spesifikasi material yang dipilih dengan jenis beban yang akan melintas di atasnya. Menggunakan paving block yang terlalu tipis untuk area lalu lintas berat dapat memicu retak dini dan amblas, sementara menggunakan spesifikasi berlebih pada pedestrian santai dapat menyebabkan inefisiensi anggaran proyek.",
     "Dalam artikel ini, PT Kaha Sukses Mandiri (Kaha Block) menyusun panduan komprehensif untuk membantu pemilik hunian, arsitek, pengembang properti, dan kontraktor dalam menentukan jenis, ketebalan, serta mutu paving block yang paling proporsional untuk berbagai skala kebutuhan.",
@@ -109,8 +109,8 @@ export const article1Id: BlogPost = {
       id: "mutu-beton-dan-proses-produksi",
       heading: "4. Memperhatikan Mutu Beton dan Standar Produksi",
       paragraphs: [
-        "Mutu beton menunjukkan kuat tekan karakteristik per satuan luas yang mampu ditahan oleh material sebelum mengalami keruntuhan. Di Indonesia, klasifikasi mutu beton umumnya dinyatakan dalam angka K (karakteristik kubus 15x15 cm dalam kg/cm²). Pembahasan lengkap mengenai perbandingan mutu dapat dibaca pada artikel [Mengenal Mutu Beton K-300 dan K-350](/id/blog/mutu-beton-k300-k350-paving-block).",
-        "Paving block berkualitas tinggi untuk infrastruktur perumahan dan komersial umumnya diproduksi pada rentang mutu K-300 hingga K-350. Mutu ini dihasilkan melalui formulasi bahan baku pilihan—seperti pasir silika, abu batu, semen portland berkualitas tinggi, dan agregat halus—yang dicetak menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
+        "Mutu beton menunjukkan kuat tekan karakteristik per satuan luas yang mampu ditahan oleh material sebelum mengalami keruntuhan. Di Indonesia, klasifikasi mutu beton umumnya dinyatakan dalam angka K (karakteristik kubus 15x15 cm dalam kg/cm²). Pembahasan lengkap mengenai perbandingan mutu dapat dibaca pada artikel [Mengenal Mutu Beton K-250, K-300, dan K-400](/id/blog/mutu-beton-k250-k300-k400-paving-block).",
+        "Paving block berkualitas tinggi untuk infrastruktur perumahan dan komersial umumnya diproduksi pada rentang mutu K-250, K-300, dan K-400. Mutu ini dihasilkan melalui formulasi bahan baku pilihan—seperti pasir silika, abu batu, semen portland berkualitas tinggi, dan agregat halus—yang dicetak menggunakan mesin full otomatis hidrolik bertekanan tinggi.",
         "Kelebihan utama paving block hasil cetak mesin otomatis hidrolik adalah:",
       ],
       list: {
@@ -156,7 +156,7 @@ export const article1Id: BlogPost = {
       id: "layanan-pengadaan-kaha-block",
       heading: "6. Solusi Terintegrasi Bersama Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di atas fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, memproduksi beragam pilihan paving block mutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik modern.",
+        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di atas fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, memproduksi beragam pilihan paving block mutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik modern.",
         "Selain memproduksi [katalog produk paving lengkap](/id/products) yang mencakup Truepave, Hexagonal, Ubin, Topi Uskup, dan Kanstein, Kaha Block juga melayani paket pengadaan material sekaligus jasa pemasangan profesional untuk memastikan perkerasan proyek Anda kokoh dan presisi. Lihat hasil pengerjaan kami di [Galeri Proyek Kaha Block](/id/projects).",
       ],
     },
@@ -181,7 +181,7 @@ export const article1Id: BlogPost = {
     points: [
       "Pilih ketebalan sesuai peruntukan: 6 cm untuk carport/pedestrian hunian, 8 cm untuk jalan lingkungan dan area komersial, 10 cm untuk kawasan industri berat.",
       "Gunakan pola anyaman tulang ikan (herringbone) pada model Truepave untuk area lalu lintas kendaraan guna memaksimalkan efek interlocking.",
-      "Prioritaskan paving hasil cetak mesin full otomatis hidrolik dengan mutu K-300 hingga K-350 untuk jaminan presisi dan kepadatan.",
+      "Prioritaskan paving hasil cetak mesin full otomatis hidrolik dengan mutu K-250, K-300, dan K-400 untuk jaminan presisi dan kepadatan.",
       "Jangan abaikan pemadatan tanah dasar dan ketebalan lapisan base course sebelum memasang pasir alas.",
       "Pasang kanstein pengunci di seluruh perimeter tepi dan pastikan kemiringan drainase permukaan 1,5%–2%.",
     ],
@@ -209,7 +209,7 @@ export const article1Id: BlogPost = {
   },
   relatedSlugs: [
     "perbedaan-ketebalan-paving-block-6cm-8cm-10cm",
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "persiapan-sebelum-pemasangan-paving-block",
   ],
 };
@@ -228,7 +228,7 @@ export const article1En: BlogPost = {
   seoDescription: "Learn how to select the right paving blocks for residential carports, access roads, and commercial complexes with precision thickness and strength ratings.",
   featured: true,
   intro: [
-    "Direct Answer: To choose the appropriate paving block, match thickness and compressive strength to site requirements: 6 cm thickness is commonly applied for pedestrian walkways and private carports; 8 cm thickness (K-300 to K-350 grade) with herringbone interlocking for residential cluster roads and moderate commercial traffic; and 10 cm for heavy industrial freight areas. Final subbase thickness and specifications should be engineered according to soil conditions and project requirements.",
+    "Direct Answer: To choose the appropriate paving block, match thickness and compressive strength to site requirements: 6 cm thickness is commonly applied for pedestrian walkways and private carports; 8 cm thickness (K-250, K-300, and K-400 grade) with herringbone interlocking for residential cluster roads and moderate commercial traffic; and 10 cm for heavy industrial freight areas. Final subbase thickness and specifications should be engineered according to soil conditions and project requirements.",
     "Choosing the right outdoor pavement requires balancing structural load capacity, drainage efficiency, and visual appeal. Interlocking concrete paving blocks (conblocks) have long been a premier surfacing solution across Indonesia because they provide modular flexibility, easy long-term maintenance, and effective rainwater infiltration through sand-filled joints.",
     "However, the structural longevity of any paved surface depends heavily on matching product specifications to the actual traffic loads that will traverse the area. Installing undersized pavers in high-traffic zones leads to premature rutting and edge breakage, while over-engineering pedestrian pathways introduces unnecessary project costs.",
     "In this comprehensive guide, PT Kaha Sukses Mandiri (Kaha Block) shares practical recommendations to help homeowners, architects, property developers, and civil contractors choose the ideal paving block type, thickness, and concrete compressive strength for any project scale.",
@@ -323,8 +323,8 @@ export const article1En: BlogPost = {
       id: "concrete-quality-and-production",
       heading: "4. Assessing Concrete Compressive Strength and Manufacturing Quality",
       paragraphs: [
-        "Concrete quality is measured by characteristic compressive strength (commonly designated as K-rating in Indonesian standards, representing kg/cm² on a 15x15 cm cube). Learn more in our guide on [Understanding Concrete Strength (K-300 and K-350)](/en/blog/mutu-beton-k300-k350-paving-block).",
-        "High-performance paving blocks for residential and infrastructure projects typically range from K-300 to K-350 concrete grades. Achieving this standard requires carefully graded raw materials—including silica sand, stone dust, premium Portland cement, and clean aggregates—compacted under high hydraulic pressure in fully automated machinery.",
+        "Concrete quality is measured by characteristic compressive strength (commonly designated as K-rating in Indonesian standards, representing kg/cm² on a 15x15 cm cube). Learn more in our guide on [Understanding Concrete Strength (K-250, K-300, and K-400)](/en/blog/mutu-beton-k250-k300-k400-paving-block).",
+        "High-performance paving blocks for residential and infrastructure projects typically range from K-250, K-300, and K-400 concrete grades. Achieving this standard requires carefully graded raw materials—including silica sand, stone dust, premium Portland cement, and clean aggregates—compacted under high hydraulic pressure in fully automated machinery.",
         "Key advantages of fully automated hydraulic machine production include:",
       ],
       list: {
@@ -370,7 +370,7 @@ export const article1En: BlogPost = {
       id: "integrated-supply-and-install",
       heading: "6. Integrated Supply and Installation Solutions",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, supplies high-precision K-300 and K-350 paving blocks across Greater Jakarta and surrounding regions.",
+        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, supplies high-precision K-250, K-300, and K-400 paving blocks across Greater Jakarta (Jabodetabek).",
         "In addition to manufacturing our complete [product catalog](/en/products)—including Truepave, Hexa, Square pavers, Bishop Hat (Topi Uskup), and diverse curb units—Kaha Block provides professional turnkey installation services. View completed project applications in our [Project Gallery](/en/projects), or reach out via our [contact page](/en/contact) for direct consultations.",
       ],
     },
@@ -395,7 +395,7 @@ export const article1En: BlogPost = {
     points: [
       "Match thickness to traffic: 6 cm for residential carports and walkways, 8 cm for access roads and commercial parking, 10 cm for industrial freight zones.",
       "Choose the right pattern: Truepave in a herringbone layout offers the highest multidirectional interlocking under vehicular braking forces.",
-      "Specify K-300 or K-350 compressive strength produced with automated hydraulic machinery for consistent density and dimensional accuracy.",
+      "Specify K-250, K-300, or K-400 compressive strength produced with automated hydraulic machinery for consistent density and dimensional accuracy.",
       "Ensure thorough subgrade and base course compaction prior to placing bedding sand.",
       "Install robust concrete edge restraints (Kanstein) and maintain at least 1.5%–2% surface drainage slope.",
     ],
@@ -417,13 +417,13 @@ export const article1En: BlogPost = {
       },
       {
         question: "Does Kaha Block provide installation services alongside product delivery?",
-        answer: "Yes, PT Kaha Sukses Mandiri offers integrated supply and professional installation packages across Greater Jakarta and regional project destinations.",
+        answer: "Yes, PT Kaha Sukses Mandiri offers integrated supply and professional installation packages across Greater Jakarta (Jabodetabek).",
       },
     ],
   },
   relatedSlugs: [
     "perbedaan-ketebalan-paving-block-6cm-8cm-10cm",
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "persiapan-sebelum-pemasangan-paving-block",
   ],
 };

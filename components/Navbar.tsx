@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { dictionaries, Locale } from "@/lib/dictionary";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar({ lang }: { lang: Locale }) {
@@ -13,6 +13,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
 
   const isHomepage = pathname === `/${lang}` || pathname === `/${lang}/`;
 
@@ -43,7 +44,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/products`, label: dict.nav.products },
-    { href: `/${lang}/projects`, label: dict.nav.projects },
+    { 
+      href: `/${lang}/projects`, 
+      label: dict.nav.projects,
+      subLinks: [
+        { href: `/${lang}/projects`, label: dict.nav.projectsInstall },
+        { href: `/${lang}/projects/production`, label: dict.nav.projectsProduction }
+      ]
+    },
     { href: `/${lang}/blog`, label: dict.nav.blog },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
@@ -103,7 +111,58 @@ export default function Navbar({ lang }: { lang: Locale }) {
           <div className="hidden lg:flex items-center space-x-7 xl:space-x-9">
             <div className="flex items-center gap-7 xl:gap-9">
               {links.map((link) => {
-                const isActive = pathname === link.href;
+                // Determine if a link is active based on exact or prefix matching (for projects)
+                let isActive = pathname === link.href;
+                if (link.subLinks) {
+                  isActive = pathname.startsWith(`/${lang}/projects`);
+                }
+
+                if (link.subLinks) {
+                  return (
+                    <div key={link.href} className="relative group">
+                      <button
+                        className={
+                          isHomepage
+                            ? `relative inline-flex items-center text-sm lg:text-[15px] font-medium tracking-wide transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded min-h-[44px] ${
+                                isActive
+                                  ? "text-accent drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] after:content-[''] after:absolute after:bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-accent after:shadow-[0_0_8px_rgba(212,175,55,0.6)]"
+                                  : "text-white/90 hover:text-accent drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]"
+                              }`
+                            : `inline-flex items-center px-1 pt-1 border-b-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded min-h-[44px] ${
+                                isActive
+                                  ? "border-primary text-primary"
+                                  : "border-transparent text-slate-800 hover:border-accent hover:text-primary"
+                              }`
+                        }
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                      >
+                        {link.label}
+                        <ChevronDown className="ml-1.5 h-4 w-4" aria-hidden="true" />
+                      </button>
+                      <div className="absolute left-0 top-full mt-2 w-72 rounded-md shadow-lg bg-[#0F0F0F] border border-[#D4AF37]/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+                        <div className="py-2 flex flex-col">
+                          {link.subLinks.map((subLink) => {
+                            const isSubActive = pathname === subLink.href;
+                            return (
+                              <Link
+                                key={subLink.href}
+                                href={subLink.href}
+                                aria-current={isSubActive ? "page" : undefined}
+                                className={`block px-4 py-3 text-sm font-medium transition-colors ${
+                                  isSubActive ? "text-[#D4AF37] bg-white/5" : "text-[#F8F8FF] hover:text-[#D4AF37] hover:bg-white/5"
+                                }`}
+                              >
+                                {subLink.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
                 return (
                   <Link
                     key={link.href}
@@ -230,7 +289,60 @@ export default function Navbar({ lang }: { lang: Locale }) {
         >
           <div className="px-4 pt-3 pb-5 space-y-1">
             {links.map((link) => {
-              const isActive = pathname === link.href;
+              let isActive = pathname === link.href;
+              if (link.subLinks) {
+                isActive = pathname.startsWith(`/${lang}/projects`);
+              }
+
+              if (link.subLinks) {
+                return (
+                  <div key={link.href} className="flex flex-col space-y-1">
+                    <button
+                      onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                      className={`flex items-center justify-between min-h-[44px] px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
+                        isHomepage
+                          ? isActive
+                            ? "bg-accent/15 text-accent border-l-4 border-accent font-bold"
+                            : "text-white/90 hover:bg-white/10 hover:text-white"
+                          : isActive
+                          ? "bg-red-50 text-primary border-l-4 border-primary"
+                          : "text-slate-800 hover:bg-surface hover:text-primary"
+                      }`}
+                      aria-expanded={mobileProjectsOpen}
+                    >
+                      {link.label}
+                      <ChevronDown className={`h-5 w-5 transition-transform duration-200 ${mobileProjectsOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {mobileProjectsOpen && (
+                      <div className="flex flex-col space-y-1 pl-4 mt-1">
+                        {link.subLinks.map((subLink) => {
+                          const isSubActive = pathname === subLink.href;
+                          return (
+                            <Link
+                              key={subLink.href}
+                              href={subLink.href}
+                              onClick={() => setIsOpen(false)}
+                              aria-current={isSubActive ? "page" : undefined}
+                              className={`flex items-center min-h-[44px] px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                                isHomepage
+                                  ? isSubActive
+                                    ? "text-accent bg-white/5"
+                                    : "text-white/80 hover:text-white hover:bg-white/5"
+                                  : isSubActive
+                                  ? "text-primary bg-slate-50"
+                                  : "text-slate-600 hover:text-primary hover:bg-slate-50"
+                              }`}
+                            >
+                              {subLink.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={link.href}

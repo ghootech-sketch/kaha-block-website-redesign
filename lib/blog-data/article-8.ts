@@ -104,7 +104,7 @@ export const article8Id: BlogPost = {
         caption: "Matriks Perbandingan Paving Block vs Aspal vs Cor Beton",
         headers: ["Kriteria Penilaian", "Paving Block", "Aspal Hotmix", "Cor Beton Rigid"],
         rows: [
-          ["Daya Dukung Beban", "Sangat Baik (K-300–K-350 tebal 6-10 cm)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
+          ["Daya Dukung Beban", "Sangat Baik (K-250, K-300, dan K-400 tebal 6-10 cm)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
           ["Kecepatan Siap Pakai", "Bisa langsung dilintasi setelah pemadatan nat", "Bisa dilintasi setelah dingin (beberapa jam)", "Menunggu masa curing 14–28 hari"],
           ["Perbaikan Utilitas Bawah Tanah", "Sangat Mudah (Bongkar-pasang reusable)", "Sulit (meninggalkan tambalan permanen)", "Sangat Sulit & Mahal (harus di-jackhammer)"],
           ["Manajemen Resapan Air", "Baik (meresap melalui celah nat)", "Kedap air total (resiko genangan tinggi)", "Kedap air total (perlu got drainase besar)"],
@@ -133,7 +133,7 @@ export const article8Id: BlogPost = {
       id: "keunggulan-kaha-block",
       heading: "6. Keunggulan Paving Presisi dari PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan mutu beton K-300 hingga K-350 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
+        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan mutu beton K-250, K-300, dan K-400 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
         "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek dan sekitarnya.",
       ],
     },
@@ -159,7 +159,7 @@ export const article8Id: BlogPost = {
       "Paving block menawarkan keseimbangan terbaik antara estetika visual, kemudahan bongkar-pasang utilitas, dan peresapan air.",
       "Aspal unggul dalam kenyamanan laju kecepatan tinggi, namun rentan rusak terhadap genangan air dan tumpahan oli.",
       "Cor beton memiliki kekuatan beban gandar sangat tinggi, namun memerlukan waktu curing lama dan sangat sulit dibongkar jika terjadi kerusakan pipa bawah tanah.",
-      "Paving block Kaha Block mutu K-300–K-350 mesin full otomatis hidrolik menghadirkan daya tahan beton padat dengan fleksibilitas sistem modular.",
+      "Paving block Kaha Block mutu K-250, K-300, dan K-400 mesin full otomatis hidrolik menghadirkan daya tahan beton padat dengan fleksibilitas sistem modular.",
     ],
   },
   faq: {
@@ -171,7 +171,7 @@ export const article8Id: BlogPost = {
       },
       {
         question: "Bisakah paving block menahan beban truk tangki air atau truk pemadam kebakaran?",
-        answer: "Ya, paving block dengan ketebalan 8 cm mutu K-300 hingga K-350 yang dipasang dengan pola herringbone di atas pondasi batu pecah padat mampu menahan beban truk pemadam kebakaran dan kendaraan operasional bertonase berat.",
+        answer: "Ya, paving block dengan ketebalan 8 cm mutu K-250, K-300, dan K-400 yang dipasang dengan pola herringbone di atas pondasi batu pecah padat mampu menahan beban truk pemadam kebakaran dan kendaraan operasional bertonase berat.",
       },
       {
         question: "Mengapa kompleks perumahan modern lebih menyukai paving block daripada aspal?",
@@ -185,7 +185,7 @@ export const article8Id: BlogPost = {
   },
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "paving-block-ramah-lingkungan-resapan-air",
   ],
 };
@@ -294,7 +294,7 @@ export const article8En: BlogPost = {
         caption: "Comprehensive Comparison: Concrete Pavers vs. Asphalt vs. Rigid Concrete",
         headers: ["Evaluation Parameter", "Segmental Concrete Pavers", "Hotmix Asphalt", "Rigid Cast-in-Place Concrete"],
         rows: [
-          ["Structural Load Capacity", "Very High (K-300–K-350 in 6-10 cm)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
+          ["Structural Load Capacity", "Very High (K-250, K-300, dan K-400 in 6-10 cm)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
           ["Traffic Readiness Time", "Instantaneous after final joint compaction", "Fast (once cooled, a few hours)", "Slow (14–28 days mandatory curing)"],
           ["Underground Utility Access", "Effortless (reusable blocks, minimal scars)", "Difficult (leaves permanent trench patches)", "Extremely Difficult & Costly (destructive jackhammer)"],
           ["Stormwater Permeability", "High (infiltrates through joint voids)", "Impermeable (high runoff velocity)", "Impermeable (requires large drainage gutters)"],
@@ -323,8 +323,8 @@ export const article8En: BlogPost = {
       id: "kaha-manufacturing-excellence",
       heading: "6. Precision Manufacturing by PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-300 and K-350 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta and surrounding regions.",
+        "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-250, K-300, and K-400 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
+        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta (Jabodetabek).",
       ],
     },
     {
@@ -361,7 +361,7 @@ export const article8En: BlogPost = {
       },
       {
         question: "Can concrete pavers support emergency fire trucks and water tanker vehicles?",
-        answer: "Yes, 8 cm K-300 to K-350 pavers laid in a 45° herringbone pattern over a compacted aggregate base are engineered to support fire engines and municipal heavy service vehicles safely.",
+        answer: "Yes, 8 cm K-250, K-300, and K-400 pavers laid in a 45° herringbone pattern over a compacted aggregate base are engineered to support fire engines and municipal heavy service vehicles safely.",
       },
       {
         question: "Why do master-planned residential estates favor concrete pavers over asphalt?",
@@ -375,7 +375,7 @@ export const article8En: BlogPost = {
   },
   relatedSlugs: [
     "panduan-memilih-paving-block-hunian-proyek",
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "paving-block-ramah-lingkungan-resapan-air",
   ],
 };

@@ -4,19 +4,19 @@ export const article6Id: BlogPost = {
   slug: "paving-block-parkir-pergudangan-kawasan-industri",
   locale: "id",
   title: "Paving Block untuk Area Parkir, Pergudangan, dan Kawasan Industri",
-  excerpt: "Spesifikasi teknis, ketebalan ideal (8 cm hingga 10 cm), mutu beton K-300 hingga K-350, serta pola pemasangan herringbone yang dirancang khusus untuk menahan beban gandar truk kontainer dan forklift di kawasan komersial.",
+  excerpt: "Spesifikasi teknis, ketebalan ideal (8 cm hingga 10 cm), mutu beton K-250, K-300, dan K-400, serta pola pemasangan herringbone yang dirancang khusus untuk menahan beban gandar truk kontainer dan forklift di kawasan komersial.",
   category: "Aplikasi Khusus",
   categorySlug: "application",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
   seoTitle: "Paving Block Gudang & Kawasan Industri",
-  seoDescription: "Panduan paving block heavy-duty untuk parkir komersial, depo logistik, dan kawasan industri: ketebalan 8-10 cm, mutu K-300 hingga K-350, dan pola herringbone.",
+  seoDescription: "Panduan paving block heavy-duty untuk parkir komersial, depo logistik, dan kawasan industri: ketebalan 8-10 cm, mutu K-250, K-300, dan K-400, dan pola herringbone.",
   intro: [
-    "Jawaban Langsung: Untuk area lalu lintas berat seperti area parkir komersial, pergudangan, dan kawasan industri, perkerasan paving umumnya menggunakan tebal 8 cm atau 10 cm dengan mutu beton K-300 hingga K-350, serta pola pasang interlocking seperti herringbone. Struktur perkerasan—termasuk tebal pondasi agregat dan perkuatan tanah dasar—harus disesuaikan dengan perkiraan volume lalu lintas, beban gandar kendaraan, dan daya dukung tanah setempat.",
+    "Jawaban Langsung: Untuk area lalu lintas berat seperti area parkir komersial, pergudangan, dan kawasan industri, perkerasan paving umumnya menggunakan tebal 8 cm atau 10 cm dengan mutu beton K-250, K-300, dan K-400, serta pola pasang interlocking seperti herringbone. Struktur perkerasan—termasuk tebal pondasi agregat dan perkuatan tanah dasar—harus disesuaikan dengan perkiraan volume lalu lintas, beban gandar kendaraan, dan daya dukung tanah setempat.",
     "Pelataran area parkir komersial, pusat distribusi logistik pergudangan, dan kawasan industri manufaktur menghadapi tantangan beban perkerasan yang lebih tinggi dibandingkan dengan jalan perumahan biasa.",
     "Setiap harinya, permukaan jalan kawasan industri menerima kombinasi beban statis dari tumpukan muatan, beban dinamis dari kendaraan angkutan barang, gaya geser dari manuver roda forklift bermuatan di ruang sempit, serta potensi ceceran oli pelumas dan bahan bakar solar.",
-    "Dalam artikel teknis ini, PT Kaha Sukses Mandiri (Kaha Block) membahas panduan teknis perkerasan paving block untuk area industri, mulai dari pertimbangan mutu beton K-300 hingga K-350, ketebalan balok 8–10 cm, konfigurasi pola interlocking herringbone, hingga desain struktur pondasi pendukung.",
+    "Dalam artikel teknis ini, PT Kaha Sukses Mandiri (Kaha Block) membahas panduan teknis perkerasan paving block untuk area industri, mulai dari pertimbangan mutu beton K-250, K-300, dan K-400, ketebalan balok 8–10 cm, konfigurasi pola interlocking herringbone, hingga desain struktur pondasi pendukung.",
   ],
   sections: [
     {
@@ -37,7 +37,7 @@ export const article6Id: BlogPost = {
     },
     {
       id: "spesifikasi-ketebalan-dan-mutu",
-      heading: "2. Spesifikasi Paving Heavy-Duty: Tebal 8 cm & 10 cm Mutu K-300 hingga K-350",
+      heading: "2. Spesifikasi Paving Heavy-Duty: Tebal 8 cm & 10 cm Mutu K-250, K-300, dan K-400",
       paragraphs: [
         "Untuk mengakomodasi intensitas beban industri, spesifikasi paving block perlu disesuaikan dengan kebutuhan operasional:",
       ],
@@ -52,9 +52,9 @@ export const article6Id: BlogPost = {
         },
         {
           id: "mutu-beton-k400",
-          heading: "Standar Mutu Beton K-300 & K-350 Mesin Full Otomatis Hidrolik",
+          heading: "Standar Mutu Beton K-250, K-300, dan K-400 Mesin Full Otomatis Hidrolik",
           paragraphs: [
-            "Paving block untuk area lalu lintas berat umumnya diproduksi dengan standar mutu K-300 hingga K-350 (kuat tekan karakteristik 300 hingga 350 kg/cm²) menggunakan mesin pres hidrolik otomatis bertekanan tinggi.",
+            "Paving block untuk area lalu lintas berat umumnya diproduksi dengan standar mutu K-250, K-300, dan K-400 (kuat tekan karakteristik 250 hingga 400 kg/cm²) menggunakan mesin pres hidrolik otomatis bertekanan tinggi.",
             "Kepadatan matriks beton membantu balok menahan beban dinamis serta memberikan ketahanan aus permukaan yang baik terhadap gesekan roda kendaraan.",
           ],
         },
@@ -85,7 +85,7 @@ export const article6Id: BlogPost = {
         caption: "Contoh Spesifikasi Lapisan Struktur Perkerasan Paving Kawasan Industri",
         headers: ["Lapisan Struktur", "Material yang Direkomendasikan", "Ketebalan Tipikal", "Fungsi Teknis"],
         rows: [
-          ["Lapisan Permukaan (Wearing Course)", "Paving Truepave Mutu K-300/K-350 (Mesin Hidrolik)", "8 cm atau 10 cm", "Menahan beban kontak ban, abrasi gesek, dan tumpahan oli."],
+          ["Lapisan Permukaan (Wearing Course)", "Paving Truepave Mutu K-250/K-300/K-400 (Mesin Hidrolik)", "8 cm atau 10 cm", "Menahan beban kontak ban, abrasi gesek, dan tumpahan oli."],
           ["Pasir Pengisi Nat (Jointing Sand)", "Pasir silika kering berbutir 0,1 - 2,0 mm", "Celah nat 2 - 4 mm", "Menyalurkan gaya geser lateral antar-balok melalui efek baji (wedge effect)."],
           ["Pasir Alas (Bedding Sand)", "Pasir cor berbutir tajam kasar (kadar lumpur < 3%)", "3 - 5 cm (lepas)", "Bantalan perata tempat balok mengunci secara vertikal."],
           ["Pondasi Atas (Base Course)", "Batu agregat pecah kelas A (split + abu batu padat)", "15 - 25 cm (dipadatkan)", "Distributor utama beban gandar menuju tanah dasar."],
@@ -118,7 +118,7 @@ export const article6Id: BlogPost = {
       id: "kemitraan-industri-kaha",
       heading: "6. Solusi Paving Industri dari PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri memproduksi paving block dengan mutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di fasilitas modern seluas 9.080 m² di Cisauk, Tangerang.",
+        "PT Kaha Sukses Mandiri memproduksi paving block dengan mutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik di fasilitas modern seluas 9.080 m² di Cisauk, Tangerang.",
         "Kaha Block siap melayani kebutuhan pengadaan material perkerasan dan layanan pemasangan (supply & install) untuk kawasan pergudangan, depo logistik, pelataran pabrik, dan pusat perbelanjaan di wilayah Jabodetabek dan sekitarnya.",
       ],
     },
@@ -142,7 +142,7 @@ export const article6Id: BlogPost = {
   summary: {
     title: "Ringkasan Paving Industri & Pergudangan",
     points: [
-      "Kawasan industri umumnya menggunakan ketebalan balok 8 cm atau 10 cm dengan mutu beton K-300 atau K-350 yang diproduksi dengan mesin hidrolik presisi.",
+      "Kawasan industri umumnya menggunakan ketebalan balok 8 cm atau 10 cm dengan mutu beton K-250, K-300, atau K-400 yang diproduksi dengan mesin hidrolik presisi.",
       "Pola pemasangan anyaman tulang ikan (herringbone 45°/90°) sangat dianjurkan untuk membantu mendistribusikan gaya dorong horizontal dan geser roda kendaraan.",
       "Struktur pondasi agregat dan pemadatan tanah dasar harus disesuaikan dengan volume lalu lintas dan beban gandar yang direncanakan.",
       "Paving block memberikan keunggulan dalam ketahanan terhadap tumpahan solar/oli serta kemudahan perbaikan utilitas lokal.",
@@ -154,7 +154,7 @@ export const article6Id: BlogPost = {
     items: [
       {
         question: "Apakah paving block tebal 8 cm cukup kuat untuk dilintasi truk kontainer 40 kaki?",
-        answer: "Paving 8 cm mutu K-300/K-350 sangat kuat asalkan ditunjang dengan struktur pondasi base course agregat batu pecah yang tebal (15–20 cm) dan dipadatkan secara maksimal dengan roller compactor.",
+        answer: "Paving 8 cm mutu K-250/K-300/K-400 sangat kuat asalkan ditunjang dengan struktur pondasi base course agregat batu pecah yang tebal (15–20 cm) dan dipadatkan secara maksimal dengan roller compactor.",
       },
       {
         question: "Mengapa pola susun bata (stretcher bond) tidak dianjurkan untuk jalur lalu lintas truk?",
@@ -166,12 +166,12 @@ export const article6Id: BlogPost = {
       },
       {
         question: "Apakah Kaha Block melayani suplai volume besar untuk proyek kawasan industri di luar Tangerang?",
-        answer: "Ya, PT Kaha Sukses Mandiri melayani pengadaan material untuk kawasan industri di seluruh Jabodetabek dan proyek di luar kota.",
+        answer: "Ya, PT Kaha Sukses Mandiri melayani pengadaan material untuk kawasan industri di wilayah Jabodetabek.",
       },
     ],
   },
   relatedSlugs: [
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "perbedaan-ketebalan-paving-block-6cm-8cm-10cm",
     "persiapan-sebelum-pemasangan-paving-block",
   ],
@@ -181,19 +181,19 @@ export const article6En: BlogPost = {
   slug: "paving-block-parkir-pergudangan-kawasan-industri",
   locale: "en",
   title: "Heavy-Duty Paving for Industrial Estates",
-  excerpt: "Technical engineering specifications, recommended 8 cm to 10 cm thicknesses, K-300 to K-350 concrete strength ratings, and 45° herringbone interlocking patterns designed for heavy freight loading bays and industrial forklift operations.",
+  excerpt: "Technical engineering specifications, recommended 8 cm to 10 cm thicknesses, K-250, K-300, and K-400 concrete strength ratings, and 45° herringbone interlocking patterns designed for heavy freight loading bays and industrial forklift operations.",
   category: "Specialized Applications",
   categorySlug: "application",
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
   seoTitle: "Heavy-Duty Paving Blocks for Industrial Estates",
-  seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-300–K-350, and herringbone.",
+  seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-250, K-300, dan K-400, and herringbone.",
   intro: [
-    "Direct Answer: For heavy-traffic applications such as commercial parking, logistics facilities, and industrial areas, concrete pavers are commonly specified in 8 cm or 10 cm thickness with K-300 to K-350 strength and interlocking patterns such as herringbone. The complete pavement structure—including aggregate base thickness and subgrade preparation—should be designed based on expected traffic volume, vehicle axle loads, and local subgrade conditions.",
+    "Direct Answer: For heavy-traffic applications such as commercial parking, logistics facilities, and industrial areas, concrete pavers are commonly specified in 8 cm or 10 cm thickness with K-250, K-300, and K-400 strength and interlocking patterns such as herringbone. The complete pavement structure—including aggregate base thickness and subgrade preparation—should be designed based on expected traffic volume, vehicle axle loads, and local subgrade conditions.",
     "Commercial parking fields, logistics distribution centers, freight forwarding yards, and manufacturing facilities subject pavement surfaces to substantial mechanical stresses compared to standard residential roads.",
     "Industrial pavements experience dynamic multi-axle freight traffic, point loads from equipment supports, tire shear forces generated by tight pivot turns of forklifts, and occasional chemical drippings of diesel fuel and lubricants.",
-    "In this engineering guide, PT Kaha Sukses Mandiri (Kaha Block) examines technical considerations for industrial segmental concrete paving, discussing K-300 to K-350 strength ratings, 8 cm and 10 cm thicknesses, herringbone interlocking patterns, and supporting base foundations.",
+    "In this engineering guide, PT Kaha Sukses Mandiri (Kaha Block) examines technical considerations for industrial segmental concrete paving, discussing K-250, K-300, and K-400 strength ratings, 8 cm and 10 cm thicknesses, herringbone interlocking patterns, and supporting base foundations.",
   ],
   sections: [
     {
@@ -214,7 +214,7 @@ export const article6En: BlogPost = {
     },
     {
       id: "thickness-and-grade-specs",
-      heading: "2. Heavy-Duty Specifications: 8 cm & 10 cm Thickness at K-300 to K-350 Grade",
+      heading: "2. Heavy-Duty Specifications: 8 cm & 10 cm Thickness at K-250, K-300, and K-400 Grade",
       paragraphs: [
         "To withstand sustained industrial traffic, material specifications should be matched to operational needs:",
       ],
@@ -229,9 +229,9 @@ export const article6En: BlogPost = {
         },
         {
           id: "k400-strength-standard",
-          heading: "K-300 & K-350 Concrete Strength via Automated Hydraulic Machinery",
+          heading: "K-250, K-300, dan K-400 Concrete Strength via Automated Hydraulic Machinery",
           paragraphs: [
-            "Heavy-duty segmental pavers are typically produced with compressive strengths of K-300 to K-350 (up to 350 kg/cm² / ~33 MPa) using automated hydraulic vibro-press machinery.",
+            "Heavy-duty segmental pavers are typically produced with compressive strengths of K-250, K-300, and K-400 (up to 400 kg/cm² / ~33 MPa) using automated hydraulic vibro-press machinery.",
             "Adequate concrete matrix density supports resistance against dynamic loads and provides durable surface wear resistance under vehicular traffic.",
           ],
         },
@@ -262,7 +262,7 @@ export const article6En: BlogPost = {
         caption: "Typical Cross-Sectional Layers for Industrial Concrete Block Pavements",
         headers: ["Structural Layer", "Specified Material", "Typical Depth", "Technical Purpose"],
         rows: [
-          ["Surface Course (Pavers)", "Truepave K-300/K-350 Grade (Hydraulic Press)", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
+          ["Surface Course (Pavers)", "Truepave K-250/K-300/K-400 Grade (Hydraulic Press)", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
           ["Jointing Sand", "Dry silica sand (0.1 - 2.0 mm grading)", "2 - 4 mm joint gaps", "Transmits horizontal shear forces across blocks via mechanical wedge action."],
           ["Bedding Sand", "Clean sharp concrete sand (fines < 3%)", "3 - 5 cm (uncompacted)", "Provides a uniform seating layer for block bedding."],
           ["Base Course", "Class A dense-graded crushed stone aggregate", "15 - 25 cm (compacted)", "Primary load-spreading foundation distributing loads across the subgrade."],
@@ -295,8 +295,8 @@ export const article6En: BlogPost = {
       id: "kaha-industrial-solutions",
       heading: "6. Kaha Block Industrial Pavement Solutions",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures concrete paving blocks with K-300 to K-350 compressive strength utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta and surrounding regions.",
+        "PT Kaha Sukses Mandiri manufactures concrete paving blocks with K-250, K-300, and K-400 compressive strength utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
+        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta (Jabodetabek).",
       ],
     },
     {
@@ -319,7 +319,7 @@ export const article6En: BlogPost = {
   summary: {
     title: "Summary of Industrial Paving Specifications",
     points: [
-      "Industrial freight pavements typically utilize 8 cm or 10 cm paver thickness with K-300 or K-350 concrete strength.",
+      "Industrial freight pavements typically utilize 8 cm or 10 cm paver thickness with K-250, K-300, or K-400 concrete strength.",
       "45° or 90° herringbone laying patterns provide superior multi-directional mechanical interlocking against heavy wheel shear and braking forces.",
       "Aggregate base thickness and subgrade compaction must be tailored to projected axle load repetitions and site soil conditions.",
       "Concrete pavers provide high durability against fuel spills and maintain surface elevation under stationary equipment.",
@@ -331,7 +331,7 @@ export const article6En: BlogPost = {
     items: [
       {
         question: "Is 8 cm paver thickness sufficient for 40-foot container trucks?",
-        answer: "Yes, 8 cm K-300/K-350 paving blocks provide exceptional performance provided they rest on a well-compacted 15–20 cm dense-graded crushed stone base course.",
+        answer: "Yes, 8 cm K-250/K-300/K-400 paving blocks provide exceptional performance provided they rest on a well-compacted 15–20 cm dense-graded crushed stone base course.",
       },
       {
         question: "Why is a stretcher bond pattern discouraged on truck roadways?",
@@ -348,7 +348,7 @@ export const article6En: BlogPost = {
     ],
   },
   relatedSlugs: [
-    "mutu-beton-k300-k350-paving-block",
+    "mutu-beton-k250-k300-k400-paving-block",
     "perbedaan-ketebalan-paving-block-6cm-8cm-10cm",
     "persiapan-sebelum-pemasangan-paving-block",
   ],

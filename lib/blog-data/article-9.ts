@@ -48,7 +48,7 @@ export const article9Id: BlogPost = {
           id: "infiltrasi-melalui-nat",
           heading: "Karakteristik Air pada Sambungan Paving Konvensional",
           paragraphs: [
-            "Meskipun balok paving beton itu sendiri memiliki kepadatan mutu K-300 hingga K-350 yang rapat, sambungan antar-unit terisi pasir pengisi nat. Sebagian air hujan dapat masuk melalui celah sambungan ini, namun pada perkerasan konvensional dengan lapisan alas pasir dan pondasi agregat bergradasi rapat (dense-graded aggregate), perkerasan umumnya tidak dirancang untuk menampung atau meresapkan air dalam volume besar secara otomatis.",
+            "Meskipun balok paving beton itu sendiri memiliki kepadatan mutu K-250, K-300, dan K-400 yang rapat, sambungan antar-unit terisi pasir pengisi nat. Sebagian air hujan dapat masuk melalui celah sambungan ini, namun pada perkerasan konvensional dengan lapisan alas pasir dan pondasi agregat bergradasi rapat (dense-graded aggregate), perkerasan umumnya tidak dirancang untuk menampung atau meresapkan air dalam volume besar secara otomatis.",
             "Oleh karena itu, perkerasan konvensional tetap membutuhkan perancangan kemiringan permukaan (slope/cross-fall) yang memadai menuju saluran pembuangan atau area peresapan khusus.",
           ],
         },
@@ -106,7 +106,7 @@ export const article9Id: BlogPost = {
       id: "peran-kaha-block-keberlanjutan",
       heading: "6. Produksi Paving Block PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-300 hingga K-350 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
+        "PT Kaha Sukses Mandiri (Kaha Block) memproduksi aneka ragam paving block bermutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
         "PT Kaha Sukses Mandiri menggunakan bahan baku pilihan berupa semen curah Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, dan Pasir Bangka dalam proses produksi paving block Kaha Block. Secara umum, komposisi dan karakteristik material penyusun beton merupakan salah satu faktor yang memengaruhi kepadatan dan performa produk beton.",
         "Kaha Block siap melayani kebutuhan material paving block untuk pembangunan infrastruktur perumahan, komersial, dan industri di wilayah Jabodetabek dan sekitarnya.",
       ],
@@ -213,7 +213,7 @@ export const article9En: BlogPost = {
           id: "gravity-joint-infiltration",
           heading: "Water Ingress in Conventional Sand-Jointed Pavers",
           paragraphs: [
-            "Although individual K-300 and K-350 concrete units possess dense, durable matrices, the units are separated by sand-filled joint lines. While some precipitation may penetrate these joints, conventional installations with dense-graded aggregate bases are not engineered to function automatically as large-scale stormwater infiltration or retention reservoirs.",
+            "Although individual K-250, K-300, and K-400 concrete units possess dense, durable matrices, the units are separated by sand-filled joint lines. While some precipitation may penetrate these joints, conventional installations with dense-graded aggregate bases are not engineered to function automatically as large-scale stormwater infiltration or retention reservoirs.",
             "Consequently, conventional pavements rely primarily on planned surface cross-fall gradients to direct surface runoff toward designated drainage channels, bio-swales, or dedicated retention features.",
           ],
         },
@@ -271,7 +271,7 @@ export const article9En: BlogPost = {
       id: "kaha-sustainability-commitment",
       heading: "6. PT Kaha Sukses Mandiri Segmental Paving Production",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures durable K-300 and K-350 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
+        "PT Kaha Sukses Mandiri manufactures durable K-250, K-300, and K-400 concrete paving blocks using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
         "Kaha Block uses Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand in its paving block production. The characteristics and proportioning of concrete constituents generally influence the density and engineering performance of precast concrete products.",
         "Kaha Block is ready to supply segmental paving solutions for residential, commercial, and industrial developments throughout Greater Jakarta and surrounding regions.",
       ],

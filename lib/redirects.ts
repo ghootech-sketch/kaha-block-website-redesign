@@ -29,4 +29,8 @@ export const legacyRedirects: Record<string, string> = {
   "/perbandingan-paving-block-dan-cor-beton-mana-yang-lebih-baik": "/id/blog/perbandingan-paving-block-aspal-cor-beton",
   "/jual-conblock-berbagai-model-dan-ukuran-cocok-untuk-semua-kebutuhan": "/id/products",
   "/kelebihan-paving-block-untuk-jalan-perumahan-dan-area-parkir": "/id/blog/paving-block-parkir-pergudangan-kawasan-industri",
+
+  "/id/blog/mutu-beton-k300-k350-paving-block": "/id/blog/mutu-beton-k250-k300-k400-paving-block",
+  "/en/blog/mutu-beton-k300-k350-paving-block": "/en/blog/mutu-beton-k250-k300-k400-paving-block",
 };
+

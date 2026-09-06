@@ -557,7 +557,7 @@ export default async function BlogPostPage({
               <p className="text-sm text-slate-100 max-w-xl leading-relaxed font-sans">
                 {isEn
                   ? "Connect with PT Kaha Sukses Mandiri to discuss paving specifications, load calculations, and verified quotations."
-                  : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-300 hingga K-350 mesin full otomatis hidrolik."}
+                  : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik."}
               </p>
             </div>
             <div className="flex flex-wrap gap-3 shrink-0">

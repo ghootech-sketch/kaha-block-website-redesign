@@ -5,7 +5,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com";
 const OG_IMAGE_URL = `${BASE_URL}/image-og.png`;
 
 interface PageMetaConfig {
-  path: "" | "/about" | "/products" | "/projects" | "/contact" | "/blog";
+  path: "" | "/about" | "/products" | "/projects" | "/projects/production" | "/contact" | "/blog";
   id: {
     title: string;
     description: string;
@@ -69,6 +69,19 @@ const PAGE_META: Record<string, PageMetaConfig> = {
         "Field applications and distribution documentation gallery for paving block infrastructure projects by PT Kaha Sukses Mandiri.",
     },
   },
+  projectsProduction: {
+    path: "/projects/production",
+    id: {
+      title: "Galeri Produksi Paving Block | KAHA BLOCK",
+      description:
+        "Dokumentasi proses produksi paving block Kaha Block di Cisauk, Tangerang dengan mesin full otomatis hidrolik.",
+    },
+    en: {
+      title: "Paving Block Production Gallery | KAHA BLOCK",
+      description:
+        "Production documentation from Kaha Block's paving block facility in Cisauk, Tangerang using full automatic hydraulic machinery.",
+    },
+  },
   contact: {
     path: "/contact",
     id: {
@@ -87,18 +100,18 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
       description:
-        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-300 dan K-350, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
+        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-250, K-300, dan K-400, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
     },
     en: {
       title: "Blog & Paving Block Guide Center | KAHA BLOCK",
       description:
-        "Technical guides, area planning tips, thickness comparisons, K-300 and K-350 concrete strength insights, and maintenance practices from PT Kaha Sukses Mandiri.",
+        "Technical guides, area planning tips, thickness comparisons, K-250, K-300, and K-400 concrete grades insights, and maintenance practices from PT Kaha Sukses Mandiri.",
     },
   },
 };
 
 export function constructPageMetadata(
-  pageKey: "home" | "about" | "products" | "projects" | "contact" | "blog",
+  pageKey: "home" | "about" | "products" | "projects" | "projectsProduction" | "contact" | "blog",
   lang: Locale
 ): Metadata {
   const config = PAGE_META[pageKey];

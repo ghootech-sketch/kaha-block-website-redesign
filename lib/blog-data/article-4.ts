@@ -117,7 +117,7 @@ export const article4Id: BlogPost = {
       list: {
         title: "Tahapan Rencana Manajemen Kerja:",
         items: [
-          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-300 atau K-350).",
+          "Tahap 1: Tentukan peruntukan fungsi area dan jenis tonase kendaraan yang akan melintas guna menetapkan ketebalan balok (6 cm, 8 cm, atau 10 cm) dan mutu beton (K-250, K-300, atau K-400).",
           "Tahap 2: Pilih bentuk geometri paving (Truepave, Hexa, atau Ubin) dan pola susunan yang diinginkan (herringbone, basket weave, atau susun bata).",
           "Tahap 3: Ukur luas bersih di lapangan, bagi bidang tidak beraturan, dan kalikan dengan faktor cadangan (waste allowance 3%–10%).",
           "Tahap 4: Hitung volume kebutuhan agregat base course, pasir bedding, pasir pengisi nat, dan jumlah unit kanstein pembatas.",
@@ -304,7 +304,7 @@ export const article4En: BlogPost = {
       list: {
         title: "Project Management Execution Stages:",
         items: [
-          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-300 or K-350).",
+          "Stage 1: Establish traffic loading conditions to select paver thickness (6 cm, 8 cm, or 10 cm) and concrete compressive strength (K-250, K-300, or K-400).",
           "Stage 2: Select paver geometry (Truepave, Hexa, or Tile) and determine the laying pattern (herringbone, basket weave, or stretcher bond).",
           "Stage 3: Measure net surface area accurately, divide irregular boundaries, and add the appropriate cutting waste factor (3%–10%).",
           "Stage 4: Quantify aggregate base volumes, bedding sand cubic meterage, jointing sand, and precast concrete curb quantities.",
@@ -316,7 +316,7 @@ export const article4En: BlogPost = {
       id: "kaha-block-technical-support",
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
-        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-300 and K-350 concrete strength.",
+        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-250, K-300, and K-400 concrete strength.",
         "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta and surrounding regions.",
       ],
     },
