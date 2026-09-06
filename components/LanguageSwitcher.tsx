@@ -47,10 +47,10 @@ export default function LanguageSwitcher({
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "id"
             ? isDark
-              ? "bg-accent text-dark shadow-sm"
+              ? "bg-[#0B0B0B]/85 text-accent border border-white/10 shadow-xs"
               : "bg-secondary text-accent shadow-sm"
             : isDark
-            ? "text-white/80 hover:bg-white/15 hover:text-white active:bg-white/20"
+            ? "text-white/80 hover:bg-white/10 hover:text-white active:bg-white/15"
             : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
@@ -58,7 +58,7 @@ export default function LanguageSwitcher({
       </Link>
       <span
         className={`text-xs select-none px-0.5 ${
-          isDark ? "text-white/30" : "text-gray-400"
+          isDark ? "text-white/40" : "text-gray-400"
         }`}
         aria-hidden="true"
       >
@@ -71,10 +71,10 @@ export default function LanguageSwitcher({
         className={`px-3 py-1.5 text-xs sm:text-sm rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center ${
           currentLang === "en"
             ? isDark
-              ? "bg-accent text-dark shadow-sm"
+              ? "bg-[#0B0B0B]/85 text-accent border border-white/10 shadow-xs"
               : "bg-secondary text-accent shadow-sm"
             : isDark
-            ? "text-white/80 hover:bg-white/15 hover:text-white active:bg-white/20"
+            ? "text-white/80 hover:bg-white/10 hover:text-white active:bg-white/15"
             : "text-slate-800 hover:bg-white/80 active:bg-white"
         }`}
       >
