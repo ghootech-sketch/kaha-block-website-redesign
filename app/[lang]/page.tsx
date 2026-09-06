@@ -16,6 +16,7 @@ import {
   Sparkles,
   Award,
   Factory,
+  Calendar,
   CreditCard,
   Home as HomeIcon,
   Building2,
@@ -38,17 +39,10 @@ export async function generateMetadata({
 }
 
 // =============================================================================
-// HERO MASTER IMAGE ARCHITECTURE
-// The hero is built with TWO INDEPENDENT IMAGE LAYERS:
-// Layer A: Full-bleed industrial factory background image
-// Layer B: Foreground paving block product showcase
+// HERO MASTER VISUAL ASSET
+// Unified single hero artwork with integrated paving block scene
 // =============================================================================
-
-// HERO BACKGROUND IMAGE — Cinematic factory & industrial facility backdrop
-const HERO_BACKGROUND_IMAGE = "/images/hero/hero-background.webp";
-
-// HERO FOREGROUND PRODUCT IMAGE — Precision paving block product showcase
-const HERO_FOREGROUND_PRODUCT_IMAGE = "/images/hero/hero-paving-foreground.webp";
+const HERO_MAIN_IMAGE = "/images/hero/hero-main.webp";
 
 export default async function Home({
   params,
@@ -100,188 +94,116 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[94vh] lg:min-h-screen flex flex-col justify-between pt-28 sm:pt-32 lg:pt-36 pb-10 sm:pb-14"
+          className="relative isolate overflow-hidden bg-dark min-h-[92vh] lg:min-h-screen flex flex-col justify-between pt-28 sm:pt-32 lg:pt-36 pb-8 sm:pb-12"
         >
           {/* =======================================================================
-              LAYER A: FULL-BLEED INDUSTRIAL FACTORY BACKGROUND IMAGE
+              UNIFIED HERO VISUAL SCENE (hero-main.webp)
+              Single final hero artwork with factory backdrop and integrated paving block scene
              ======================================================================= */}
           <div className="absolute inset-0 -z-30 pointer-events-none select-none">
             <Image
-              src={HERO_BACKGROUND_IMAGE}
+              src={HERO_MAIN_IMAGE}
               alt={
                 currentLang === "id"
-                  ? "Fasilitas pabrik dan dokumentasi paving block Kaha Block"
-                  : "Kaha Block factory facility and paving block documentation"
+                  ? "Paving Block Kaha Block Berkualitas untuk Infrastruktur Indonesia"
+                  : "Kaha Block High-Grade Paving Block for Indonesian Infrastructure"
               }
               fill
               priority
               sizes="100vw"
-              className="object-cover object-center lg:object-[center_35%]"
+              className="object-cover object-[72%_center] sm:object-[68%_center] lg:object-center"
             />
 
-            {/* Cinematic Lighting Overlays:
-                - Left: Deep Elegant Black directional gradient for crisp, 100% readable text
-                - Center/Right: Translucent overlay keeping factory architecture visible
-                - Ambient: Radial Royal Gold backlight glow centered on product showcase zone
-                - Vertical: Soft top fade for transparent navbar & bottom transition to trust rail
-            */}
-            <div className="absolute inset-0 bg-gradient-to-r from-dark/98 via-dark/90 via-45% to-dark/50 lg:to-dark/35" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_75%_48%,rgba(212,175,55,0.22),transparent_70%)]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent via-50% to-dark/70" />
+            {/* Directional darkening for optimal text readability while keeping the right-hand artwork crisp and vibrant */}
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/75 to-dark/90 sm:bg-gradient-to-r sm:from-dark/95 sm:via-dark/70 sm:via-45% sm:to-dark/25 lg:to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-transparent via-35% to-dark/30" />
           </div>
 
-          {/* Architectural Gold Geometry & Precision Grid Accent */}
-          <div
-            className="absolute right-0 top-0 bottom-0 w-full lg:w-3/5 pointer-events-none -z-20 overflow-hidden"
-            aria-hidden="true"
-          >
-            <svg
-              viewBox="0 0 800 900"
-              fill="none"
-              preserveAspectRatio="none"
-              className="w-full h-full opacity-15"
-            >
-              <polygon
-                points="350,0 800,0 800,900 150,900"
-                fill="url(#hero-gold-grad)"
-              />
-              <line
-                x1="350"
-                y1="0"
-                x2="150"
-                y2="900"
-                stroke="#D4AF37"
-                strokeWidth="1.5"
-                strokeDasharray="6 6"
-              />
-              <defs>
-                <linearGradient id="hero-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.25" />
-                  <stop offset="100%" stopColor="#D4AF37" stopOpacity="0.02" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-
-          {/* Right-Side Vertical Micro-Copy Rail (Large Desktop Only) */}
-          <div
-            className="hidden xl:flex absolute right-6 top-1/2 -translate-y-1/2 flex-col items-center space-y-4 z-20 pointer-events-none select-none"
-            aria-hidden="true"
-          >
-            <span className="w-px h-12 bg-accent/40" />
-            <span className="[writing-mode:vertical-rl] text-[10px] tracking-[0.35em] uppercase text-slate-400 font-heading font-medium">
-              {currentLang === "id"
-                ? "SOLID DI SETIAP LANGKAH"
-                : "SOLID AT EVERY STEP"}
-            </span>
-            <span className="w-px h-12 bg-accent/40" />
-          </div>
-
-          {/* Main Hero Container */}
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full flex-1 flex flex-col justify-between">
+          {/* Main Centered Container with Generous Horizontal Breathing Room */}
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-20 w-full flex-1 flex flex-col justify-between">
             <ScrollReveal immediate>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center pt-2 sm:pt-4">
-                {/* LEFT COLUMN: Hero Typography, Copy, CTAs, Categories */}
-                <div className="lg:col-span-7 xl:col-span-7">
-                  {/* Eyebrow marker with subtle Indonesian Red-White accent */}
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-                    <div className="flex items-center space-x-3">
-                      <span className="h-[2px] w-8 sm:w-12 bg-accent" aria-hidden="true" />
-                      <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
-                        {currentLang === "id"
-                          ? "KOKOH DI SETIAP LANGKAH"
-                          : "SOLID AT EVERY STEP"}
-                      </span>
-                    </div>
-
-                    {/* Subtle Indonesian Red/White Detail */}
-                    <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/15 text-[10px] uppercase font-bold tracking-widest text-slate-200">
-                      <span
-                        className="inline-flex flex-col w-3.5 h-2.5 overflow-hidden rounded-xs border border-white/30"
-                        aria-hidden="true"
-                      >
-                        <span className="h-1/2 w-full bg-primary" />
-                        <span className="h-1/2 w-full bg-white" />
-                      </span>
-                      <span>
-                        {currentLang === "id"
-                          ? "Produksi Indonesia • Standar SNI"
-                          : "Made in Indonesia • SNI Quality"}
-                      </span>
-                    </div>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-2 sm:pt-4">
+                {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Narrative Copy, CTAs, Categories */}
+                <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
+                  {/* Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
+                  <div className="flex items-center space-x-3 mb-4 sm:mb-6">
+                    <span className="h-[1.5px] w-8 sm:w-10 bg-accent" aria-hidden="true" />
+                    <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
+                      {currentLang === "id"
+                        ? "KOKOH DI SETIAP LANGKAH"
+                        : "SOLID AT EVERY STEP"}
+                    </span>
                   </div>
 
-                  {/* Large Master Headline */}
+                  {/* Master Headline: 3-Line High Impact Hierarchy */}
                   <h1
                     id="hero-title"
-                    className="text-4xl sm:text-6xl md:text-7xl lg:text-[70px] xl:text-[80px] font-black text-white tracking-tight font-heading leading-[0.96] sm:leading-[0.98] mb-6 sm:mb-8 uppercase"
+                    className="text-4xl sm:text-6xl md:text-7xl lg:text-[72px] xl:text-[80px] font-black tracking-tight font-heading leading-[0.95] sm:leading-[0.96] uppercase mb-6 sm:mb-8"
                   >
-                    <span className="block text-accent">
-                      PAVING <span className="text-surface">BLOCK</span>
+                    <span className="block">
+                      <span className="text-accent">PAVING</span>{" "}
+                      <span className="text-white">BLOCK</span>
                     </span>
                     <span className="block text-white">
-                      {currentLang === "id"
-                        ? "MUTU TINGGI K-300 — K-350"
-                        : "HIGH-GRADE K-300 — K-350"}
+                      {currentLang === "id" ? "BERKUALITAS" : "PREMIUM QUALITY"}
                     </span>
-                    <span className="block text-white/95">
-                      {currentLang === "id"
-                        ? "UNTUK INFRASTRUKTUR INDONESIA"
-                        : "FOR INDONESIAN INFRASTRUCTURE"}
+                    <span className="block text-white">
+                      {currentLang === "id" ? "UNTUK INDONESIA" : "FOR INDONESIA"}
                     </span>
                   </h1>
 
-                  {/* Supporting Narrative Copy */}
-                  <p className="text-base sm:text-lg lg:text-xl text-slate-300 font-sans leading-relaxed mb-8 sm:mb-10 max-w-xl lg:max-w-2xl">
-                    {currentLang === "id"
-                      ? "Pabrikasi paving block presisi mesin hidrolik dengan jaminan kuat tekan teruji K-300 hingga K-350. Siap memasok kebutuhan proyek kawasan industri, perumahan, jalan tol, dan fasilitas logistik di Jabodetabek serta seluruh Indonesia."
-                      : "Precision hydraulic paving block manufacturing with certified compressive strength K-300 to K-350. Built to supply industrial estates, residential master plans, highways, and port logistics across Greater Jakarta and Indonesia."}
+                  {/* Supporting Narrative Copy: Short visually (approx 2-3 lines on desktop) */}
+                  <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed mb-8 sm:mb-10 max-w-xl">
+                    {homeDict.hero.description}
                   </p>
 
-                  {/* Primary (Royal Gold) & Secondary (Translucent / Gold border) CTAs */}
+                  {/* CTAs: Wide rectangular buttons, minimal radius */}
                   <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8 sm:mb-10">
                     <a
                       id="hero-primary-cta"
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-lg hover:shadow-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[48px] rounded-xs font-heading"
+                      className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[48px] rounded-xs font-heading"
                     >
                       <Phone className="w-4 h-4 mr-3 text-dark fill-dark/20" aria-hidden="true" />
                       {currentLang === "id"
-                        ? "KONSULTASI & ESTIMASI PROYEK"
-                        : "CONSULT & GET QUOTE"}
+                        ? "KONSULTASI VIA WHATSAPP"
+                        : "CONSULT VIA WHATSAPP"}
                     </a>
 
                     <Link
                       id="hero-secondary-cta"
                       href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-black/40 hover:bg-white/10 text-white border border-accent/60 hover:border-accent backdrop-blur-xs px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[48px] rounded-xs group font-heading"
+                      className="inline-flex items-center justify-center bg-black/30 hover:bg-white/10 text-white border border-accent hover:border-accent-hover backdrop-blur-xs px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[48px] rounded-xs group font-heading"
                     >
                       {currentLang === "id"
-                        ? "LIHAT KATALOG PRODUK"
-                        : "EXPLORE PRODUCT CATALOG"}
+                        ? "LIHAT PRODUK"
+                        : "VIEW PRODUCTS"}
                       <ArrowRight className="w-4 h-4 ml-3 text-accent transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                     </Link>
                   </div>
 
-                  {/* Small Bottom Product Category Rail */}
+                  {/* Product Category Rail: Small uppercase, muted white, Gold leading line */}
                   <div className="hidden sm:flex flex-wrap items-center gap-y-2 text-xs font-heading tracking-wider uppercase text-slate-400">
-                    <span className="w-5 h-px bg-accent mr-3" aria-hidden="true" />
-                    <span className="text-[10px] tracking-[0.2em] text-accent font-bold mr-4">
-                      {currentLang === "id" ? "KATEGORI UNGGULAN:" : "FEATURED CATEGORIES:"}
-                    </span>
+                    <span className="w-5 h-[1.5px] bg-accent mr-3" aria-hidden="true" />
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                       {[
-                        { label: "Paving Truepave", href: `/${currentLang}/products` },
+                        { label: "Paving Block", href: `/${currentLang}/products` },
                         { label: "Kanstein", href: `/${currentLang}/products` },
                         { label: "Ubin & Hexa", href: `/${currentLang}/products` },
-                        { label: "Topi Uskup", href: `/${currentLang}/products` },
+                        {
+                          label:
+                            currentLang === "id"
+                              ? "Produk Beton Lainnya"
+                              : "Other Concrete Products",
+                          href: `/${currentLang}/products`,
+                        },
                       ].map((cat, idx, arr) => (
                         <span key={cat.label} className="inline-flex items-center">
                           <Link
                             href={cat.href}
-                            className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
+                            className="hover:text-accent text-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
                           >
                             {cat.label}
                           </Link>
@@ -296,110 +218,30 @@ export default async function Home({
                   </div>
                 </div>
 
-                {/* RIGHT COLUMN: Layer B Foreground Paving Showcase Stage */}
-                <div className="lg:col-span-5 xl:col-span-5 relative">
-                  {/* Subtle Gold Ambient Radial Glow Behind Showcase */}
-                  <div
-                    className="absolute -inset-4 sm:-inset-6 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.28),rgba(212,175,55,0.06)_55%,transparent_75%)] blur-2xl -z-10 pointer-events-none"
-                    aria-hidden="true"
-                  />
-
-                  {/* Luxury Product Showcase Pedestal Card */}
-                  <div className="relative rounded-2xl border border-accent/40 bg-gradient-to-b from-white/[0.09] via-dark/80 to-dark/95 backdrop-blur-md p-4 sm:p-5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.95)] overflow-hidden group">
-                    {/* Architectural Gold Corner Brackets */}
-                    <span
-                      className="absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t-2 border-l-2 border-accent/80 pointer-events-none"
-                      aria-hidden="true"
-                    />
-                    <span
-                      className="absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t-2 border-r-2 border-accent/80 pointer-events-none"
-                      aria-hidden="true"
-                    />
-                    <span
-                      className="absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b-2 border-l-2 border-accent/80 pointer-events-none"
-                      aria-hidden="true"
-                    />
-                    <span
-                      className="absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b-2 border-r-2 border-accent/80 pointer-events-none"
-                      aria-hidden="true"
-                    />
-
-                    {/* Floating Certification Badges */}
-                    <div className="absolute top-5 left-5 z-20 flex items-center space-x-2 px-3 py-1.5 rounded-full bg-dark/90 backdrop-blur-md border border-accent/70 shadow-lg">
-                      <ShieldCheck className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
-                      <span className="text-[10px] sm:text-[11px] font-bold tracking-wider text-accent font-heading uppercase">
-                        {currentLang === "id" ? "MUTU K-300 — K-350" : "GRADE K-300 — K-350"}
-                      </span>
-                    </div>
-
-                    <div className="absolute top-5 right-5 z-20 hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-dark/90 backdrop-blur-md border border-white/20 shadow-lg">
-                      <Sparkles className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
-                      <span className="text-[10px] sm:text-[11px] font-semibold tracking-wider text-slate-200 font-heading uppercase">
-                        {currentLang === "id" ? "STANDAR SNI" : "SNI CERTIFIED"}
-                      </span>
-                    </div>
-
-                    {/* Main Foreground Paving Image Canvas */}
-                    <div className="relative w-full aspect-square sm:aspect-[4/3] lg:aspect-square overflow-hidden rounded-xl bg-black/50 flex items-center justify-center">
-                      <Image
-                        src={HERO_FOREGROUND_PRODUCT_IMAGE}
-                        alt={
-                          currentLang === "id"
-                            ? "Showcase Paving Block Kaha Block Mutu K-350 Presisi Hidrolik"
-                            : "Kaha Block Paving Block Showcase Grade K-350 Hydraulic Precision"
-                        }
-                        fill
-                        priority
-                        sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 540px"
-                        className="object-cover sm:object-contain object-center transition-transform duration-700 group-hover:scale-105 drop-shadow-[0_25px_40px_rgba(0,0,0,0.9)]"
-                      />
-
-                      {/* Smooth Bottom Fade for Natural Industrial Fusion */}
-                      <div
-                        className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-dark via-dark/50 to-transparent pointer-events-none"
-                        aria-hidden="true"
-                      />
-                    </div>
-
-                    {/* Showcase Specifications Footer */}
-                    <div className="mt-4 pt-3.5 border-t border-white/15 flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-[11px] text-slate-300 font-heading tracking-wider uppercase">
-                      <span className="flex items-center text-accent font-bold">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mr-1.5" />
-                        {currentLang === "id" ? "Toleransi ±2 mm" : "Tolerance ±2 mm"}
-                      </span>
-                      <span className="text-white/30 hidden sm:inline">•</span>
-                      <span>
-                        {currentLang === "id" ? "Kuat Tekan Teruji" : "Lab-Tested Strength"}
-                      </span>
-                      <span className="text-white/30 hidden sm:inline">•</span>
-                      <span className="text-slate-200 font-semibold">
-                        {currentLang === "id" ? "Siap Kirim Proyek" : "Project Ready"}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+                {/* RIGHT COLUMN: Spatial clearing allowing the unified hero-main artwork (paving blocks & factory lighting) to remain completely unobstructed */}
+                <div
+                  className="hidden lg:flex lg:col-span-6 xl:col-span-6 min-h-[420px] xl:min-h-[480px] pointer-events-none select-none items-end justify-end"
+                  aria-hidden="true"
+                />
               </div>
             </ScrollReveal>
 
-            {/* Bottom Trust / Fact Rail - 4 Impactful Verified Industrial Metrics */}
-            <div className="pt-6 sm:pt-8 mt-12 sm:mt-14 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-              {/* Fact 1: Since 2015 */}
+            {/* Bottom Trust / Fact Rail - Compact Horizontal Trust Rail (Verified Facts Only) */}
+            <div className="pt-6 sm:pt-7 mt-8 sm:mt-10 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+              {/* Fact 1: Sejak 2015 */}
               <div className="flex items-start space-x-3">
-                <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <div className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-slate-400 font-heading">
-                    {currentLang === "id" ? "BEROPERASI" : "ESTABLISHED"}
+                    {currentLang === "id" ? "SEJAK" : "ESTABLISHED"}
                   </div>
                   <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    {currentLang === "id" ? "Sejak 2015" : "Since 2015"}
-                  </div>
-                  <div className="text-[11px] text-slate-400 hidden sm:block">
-                    {currentLang === "id" ? "10+ Tahun Dedikasi Industri" : "10+ Years Industry Excellence"}
+                    2015
                   </div>
                 </div>
               </div>
 
-              {/* Fact 2: Facility Size */}
+              {/* Fact 2: Area Pabrik 9.080 m² */}
               <div className="flex items-start space-x-3">
                 <Factory className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
@@ -409,13 +251,10 @@ export default async function Home({
                   <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
                     9.080 m²
                   </div>
-                  <div className="text-[11px] text-slate-400 hidden sm:block">
-                    {currentLang === "id" ? "Pabrikasi Skala Besar" : "Large-Scale Manufacturing"}
-                  </div>
                 </div>
               </div>
 
-              {/* Fact 3: Concrete Grade */}
+              {/* Fact 3: Mutu Beton K-300 — K-350 */}
               <div className="flex items-start space-x-3">
                 <Award className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
@@ -425,13 +264,10 @@ export default async function Home({
                   <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
                     K-300 — K-350
                   </div>
-                  <div className="text-[11px] text-slate-400 hidden sm:block">
-                    {currentLang === "id" ? "Uji Kuat Tekan Laboratorium" : "Lab-Tested Compressive Strength"}
-                  </div>
                 </div>
               </div>
 
-              {/* Fact 4: Delivery Coverage */}
+              {/* Fact 4: Layanan Jabodetabek & Luar Kota */}
               <div className="flex items-start space-x-3">
                 <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
@@ -439,10 +275,7 @@ export default async function Home({
                     {currentLang === "id" ? "LAYANAN" : "SERVICE AREA"}
                   </div>
                   <div className="text-sm sm:text-base font-bold text-white font-heading mt-0.5">
-                    {currentLang === "id" ? "Jabodetabek & Regional" : "Greater Jakarta & Regional"}
-                  </div>
-                  <div className="text-[11px] text-slate-400 hidden sm:block">
-                    {currentLang === "id" ? "Armada Pengiriman Cepat" : "Reliable On-Time Delivery"}
+                    {currentLang === "id" ? "Jabodetabek & Luar Kota" : "Greater Jakarta & Regional"}
                   </div>
                 </div>
               </div>

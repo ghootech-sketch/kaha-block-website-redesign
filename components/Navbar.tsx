@@ -55,8 +55,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
         isHomepage
           ? `fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
               isScrolled
-                ? "bg-dark/95 backdrop-blur-md border-b border-white/10 shadow-xl"
-                : "bg-gradient-to-b from-dark/85 via-dark/45 to-transparent backdrop-blur-[2px] border-b border-white/10"
+                ? "bg-dark/90 backdrop-blur-md border-b border-white/10 shadow-lg"
+                : "bg-black/15 backdrop-blur-[2px] border-b border-white/10"
             }`
           : "bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs font-sans"
       }
@@ -70,14 +70,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
               aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
               className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-2 min-h-[44px]"
             >
-              <div className="relative h-[36px] sm:h-[40px] md:h-[44px] lg:h-[48px] w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px]">
+              <div className="relative h-[38px] sm:h-[44px] md:h-[48px] lg:h-[52px] w-[150px] sm:w-[170px] md:w-[195px] lg:w-[215px]">
                 <Image
                   src={isHomepage ? "/footer-logo.png" : "/navbar-logo.png"}
                   alt="Kaha Block - PT Kaha Sukses Mandiri"
                   fill
                   className="object-contain object-left"
                   priority
-                  sizes="(max-width: 640px) 140px, (max-width: 768px) 160px, (max-width: 1024px) 180px, 200px"
+                  sizes="(max-width: 640px) 150px, (max-width: 768px) 170px, (max-width: 1024px) 195px, 215px"
                 />
               </div>
             </Link>
@@ -126,13 +126,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     ? "Contact WhatsApp Kaha Block"
                     : "Hubungi WhatsApp Kaha Block"
                 }
-                className={`inline-flex items-center justify-center px-4 lg:px-5 py-2.5 rounded-full text-sm font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px] ${
-                  isHomepage
-                    ? "bg-accent hover:bg-accent-hover text-dark shadow-md font-heading tracking-wide"
-                    : "bg-primary text-white hover:bg-primary-hover hover:shadow-md"
-                }`}
+                className="inline-flex items-center justify-center px-4 lg:px-5 py-2.5 rounded-xs text-xs sm:text-sm font-bold tracking-wider uppercase transition-all bg-primary hover:bg-primary-hover text-white shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px] font-heading"
               >
-                <Phone className={`w-4 h-4 mr-2 ${isHomepage ? "text-dark fill-dark/20" : "text-white"}`} aria-hidden="true" />
+                <Phone className="w-4 h-4 mr-2 text-white" aria-hidden="true" />
                 WhatsApp
               </a>
             </div>
@@ -219,13 +215,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className={`w-full min-h-[48px] flex items-center justify-center px-5 py-3.5 rounded-full text-base font-bold transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-                  isHomepage
-                    ? "bg-accent hover:bg-accent-hover text-dark font-heading tracking-wide"
-                    : "bg-primary text-white hover:bg-primary-hover"
-                }`}
+                className="w-full min-h-[48px] flex items-center justify-center px-5 py-3.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all bg-primary hover:bg-primary-hover text-white shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading"
               >
-                <Phone className={`w-5 h-5 mr-2.5 ${isHomepage ? "text-dark fill-dark/20" : "text-white"}`} aria-hidden="true" />
+                <Phone className="w-5 h-5 mr-2.5 text-white" aria-hidden="true" />
                 {dict.contact.whatsapp}
               </a>
             </div>
