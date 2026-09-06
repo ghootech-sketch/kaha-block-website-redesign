@@ -94,7 +94,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-0 lg:h-[100svh] flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
+          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
         >
           {/* =======================================================================
               UNIFIED HERO VISUAL SCENE (hero-main.webp)
