@@ -94,7 +94,7 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[72vh] xl:min-h-[76vh] max-h-[860px] flex flex-col justify-between pt-20 sm:pt-24 lg:pt-28 pb-5 sm:pb-7"
+          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-0 lg:h-[100svh] flex flex-col justify-between pt-20 sm:pt-22 lg:pt-20 xl:pt-22 pb-4 sm:pb-5 lg:pb-4 xl:pb-5"
         >
           {/* =======================================================================
               UNIFIED HERO VISUAL SCENE (hero-main.webp)
@@ -111,24 +111,26 @@ export default async function Home({
               fill
               priority
               sizes="100vw"
-              className="object-cover object-center lg:object-contain lg:object-center"
+              className="object-cover object-center"
             />
 
-            {/* Directional localized gradient: left has dark overlay for crisp headline readability; center has light overlay; right has almost no overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/75 via-dark/35 to-dark/50 lg:bg-none" />
-            <div className="hidden lg:block absolute inset-y-0 left-0 w-[58%] bg-gradient-to-r from-dark/85 via-dark/35 via-70% to-transparent pointer-events-none" />
+            {/* Mobile dark gradient mask for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/75 via-dark/35 to-dark/50 lg:hidden pointer-events-none" />
+
+            {/* Desktop localized left-side dark gradient: starts below the ~80px navbar zone so top roof/lights artwork remains sharp and un-darkened behind the transparent navbar */}
+            <div className="hidden lg:block absolute top-20 bottom-0 left-0 w-[58%] bg-gradient-to-r from-dark/85 via-dark/35 via-70% to-transparent pointer-events-none" />
 
             {/* Bottom ambient feathering for seamless transition to bottom trust rail */}
-            <div className="absolute bottom-0 inset-x-0 h-16 bg-gradient-to-t from-dark/50 via-dark/15 to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 inset-x-0 h-14 bg-gradient-to-t from-dark/50 via-dark/15 to-transparent pointer-events-none" />
           </div>
 
           {/* Main Centered Container with Generous Horizontal Breathing Room */}
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-20 w-full flex-1 flex flex-col justify-between">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-2 sm:pt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-1 sm:pt-2 lg:pt-2">
               {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Narrative Copy, CTAs, Categories */}
               <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
                 {/* Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
-                <div className="flex items-center space-x-3 mb-4 sm:mb-5">
+                <div className="flex items-center space-x-3 mb-3 lg:mb-3.5">
                   <span className="h-[1.5px] w-8 sm:w-10 bg-accent" aria-hidden="true" />
                   <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
                     {currentLang === "id"
@@ -140,7 +142,7 @@ export default async function Home({
                 {/* Master Headline: 3-Line High Impact Hierarchy */}
                 <h1
                   id="hero-title"
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-[66px] xl:text-[74px] font-black tracking-tight font-heading leading-[0.98] uppercase mb-5 sm:mb-6 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+                  className="text-4xl sm:text-5xl md:text-6xl lg:text-[54px] xl:text-[66px] font-black tracking-tight font-heading leading-[0.98] uppercase mb-4 lg:mb-4 xl:mb-5 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
                 >
                   <span className="block">
                     <span className="text-accent">PAVING</span>{" "}
@@ -155,12 +157,12 @@ export default async function Home({
                 </h1>
 
                 {/* Supporting Narrative Copy: Short visually (approx 2-3 lines on desktop) */}
-                <p className="text-base sm:text-lg text-slate-200 font-sans leading-relaxed mb-7 sm:mb-9 max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                <p className="text-base sm:text-lg text-slate-200 font-sans leading-relaxed mb-5 lg:mb-6 max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
                   {homeDict.hero.description}
                 </p>
 
                 {/* CTAs: Wide rectangular buttons, minimal radius */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-7 sm:mb-9">
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-5 lg:mb-6">
                   <a
                     id="hero-primary-cta"
                     href={dict.contact.whatsappUrl}
@@ -187,7 +189,7 @@ export default async function Home({
                 </div>
 
                 {/* Product Category Rail: Small uppercase, muted white, Gold leading line */}
-                <div className="hidden sm:flex flex-wrap items-center gap-y-2 text-xs font-heading tracking-wider uppercase text-slate-300">
+                <div className="hidden sm:flex flex-wrap items-center gap-y-1.5 text-xs font-heading tracking-wider uppercase text-slate-300">
                   <span className="w-5 h-[1.5px] bg-accent mr-3" aria-hidden="true" />
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
                     {[
@@ -228,7 +230,7 @@ export default async function Home({
             </div>
 
             {/* Bottom Trust / Fact Rail - Compact Horizontal Trust Rail (Verified Facts Only) */}
-            <div className="pt-5 sm:pt-6 mt-6 sm:mt-8 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+            <div className="pt-3.5 sm:pt-4 lg:pt-4 xl:pt-5 mt-4 sm:mt-5 lg:mt-5 xl:mt-6 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-6">
               {/* Fact 1: Sejak 2015 */}
               <div className="flex items-start space-x-3">
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
