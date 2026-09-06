@@ -39,10 +39,11 @@ export async function generateMetadata({
 }
 
 // =============================================================================
-// HERO MASTER VISUAL ASSET
-// Unified single hero artwork with integrated paving block scene
+// HERO MASTER VISUAL ASSETS
+// Unified hero artworks: Desktop (landscape) and Mobile (portrait 9:16)
 // =============================================================================
 const HERO_MAIN_IMAGE = "/images/hero/hero-main.webp";
+const HERO_MOBILE_IMAGE = "/images/hero/hero-mobile.webp";
 
 export default async function Home({
   params,
@@ -97,10 +98,26 @@ export default async function Home({
           className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
         >
           {/* =======================================================================
-              UNIFIED HERO VISUAL SCENE (hero-main.webp)
-              Single final hero artwork with balanced framing, factory backdrop, and integrated paving block scene
+              RESPONSIVE HERO VISUAL SCENE
+              Mobile (< 768px): hero-mobile.webp (9:16 portrait artwork)
+              Desktop / Tablet (>= 768px): hero-main.webp (landscape artwork)
              ======================================================================= */}
           <div className="absolute inset-0 -z-30 pointer-events-none select-none">
+            {/* Mobile Hero Visual Asset (< 768px) */}
+            <Image
+              src={HERO_MOBILE_IMAGE}
+              alt={
+                currentLang === "id"
+                  ? "Paving Block Kaha Block Berkualitas untuk Infrastruktur Indonesia"
+                  : "Kaha Block High-Grade Paving Block for Indonesian Infrastructure"
+              }
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-center md:hidden"
+            />
+
+            {/* Desktop / Tablet Hero Visual Asset (>= 768px) */}
             <Image
               src={HERO_MAIN_IMAGE}
               alt={
@@ -111,7 +128,7 @@ export default async function Home({
               fill
               priority
               sizes="100vw"
-              className="object-cover object-center"
+              className="hidden md:block object-cover object-center"
             />
 
             {/* Single subtle full-width hero dark overlay with low opacity for clean, uniform readability */}
