@@ -55,8 +55,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
         isHomepage
           ? `fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
               isScrolled
-                ? "bg-dark/90 backdrop-blur-md border-b border-white/10 shadow-lg"
-                : "bg-black/15 backdrop-blur-[2px] border-b border-white/10"
+                ? "bg-black/30 backdrop-blur-xl border-b border-white/[0.07] shadow-[0_4px_20px_rgba(0,0,0,0.12)]"
+                : "bg-white/[0.04] backdrop-blur-md border-b border-white/[0.05]"
             }`
           : "bg-white border-b border-gray-100 sticky top-0 z-50 shadow-xs font-sans"
       }
@@ -173,9 +173,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className={`lg:hidden shadow-lg animate-in fade-in slide-in-from-top-2 duration-200 ${
+          className={`lg:hidden shadow-xl animate-in fade-in slide-in-from-top-2 duration-200 ${
             isHomepage
-              ? "border-t border-white/10 bg-dark/98 backdrop-blur-md"
+              ? "border-t border-white/[0.06] bg-black/50 backdrop-blur-2xl"
               : "border-t border-gray-100 bg-surface-card"
           }`}
           id="mobile-menu"

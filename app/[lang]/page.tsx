@@ -3,7 +3,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import ScrollReveal, { Reveal, RevealGroup } from "@/components/ScrollReveal";
+import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
 import JsonLd from "@/components/JsonLd";
@@ -94,11 +94,11 @@ export default async function Home({
         <section
           id="hero-section"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[92vh] lg:min-h-screen flex flex-col justify-between pt-28 sm:pt-32 lg:pt-36 pb-8 sm:pb-12"
+          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[72vh] xl:min-h-[76vh] max-h-[860px] flex flex-col justify-between pt-20 sm:pt-24 lg:pt-28 pb-5 sm:pb-7"
         >
           {/* =======================================================================
               UNIFIED HERO VISUAL SCENE (hero-main.webp)
-              Single final hero artwork with factory backdrop and integrated paving block scene
+              Single final hero artwork with balanced framing, factory backdrop, and integrated paving block scene
              ======================================================================= */}
           <div className="absolute inset-0 -z-30 pointer-events-none select-none">
             <Image
@@ -111,123 +111,127 @@ export default async function Home({
               fill
               priority
               sizes="100vw"
-              className="object-cover object-[72%_center] sm:object-[68%_center] lg:object-center"
+              className="object-cover"
+              style={{
+                objectPosition: "50% 28%",
+              }}
             />
 
-            {/* Directional darkening for optimal text readability while keeping the right-hand artwork crisp and vibrant */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/75 to-dark/90 sm:bg-gradient-to-r sm:from-dark/95 sm:via-dark/70 sm:via-45% sm:to-dark/25 lg:to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-transparent via-35% to-dark/30" />
+            {/* Lighter, cinematic directional gradient: gently shades the left column for crisp typography while preserving full luminous factory lighting and paving block detail on the right */}
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/35 to-dark/50 sm:bg-gradient-to-r sm:from-dark/75 sm:via-dark/30 sm:via-45% sm:to-transparent" />
+
+            {/* Soft top and bottom ambient feathering for seamless navbar and bottom rail transition */}
+            <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-black/10 to-transparent pointer-events-none" />
+            <div className="absolute bottom-0 inset-x-0 h-20 bg-gradient-to-t from-dark/60 via-dark/15 to-transparent pointer-events-none" />
           </div>
 
           {/* Main Centered Container with Generous Horizontal Breathing Room */}
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-20 w-full flex-1 flex flex-col justify-between">
-            <ScrollReveal immediate>
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-2 sm:pt-4">
-                {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Narrative Copy, CTAs, Categories */}
-                <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
-                  {/* Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
-                  <div className="flex items-center space-x-3 mb-4 sm:mb-6">
-                    <span className="h-[1.5px] w-8 sm:w-10 bg-accent" aria-hidden="true" />
-                    <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
-                      {currentLang === "id"
-                        ? "KOKOH DI SETIAP LANGKAH"
-                        : "SOLID AT EVERY STEP"}
-                    </span>
-                  </div>
-
-                  {/* Master Headline: 3-Line High Impact Hierarchy */}
-                  <h1
-                    id="hero-title"
-                    className="text-4xl sm:text-6xl md:text-7xl lg:text-[72px] xl:text-[80px] font-black tracking-tight font-heading leading-[0.95] sm:leading-[0.96] uppercase mb-6 sm:mb-8"
-                  >
-                    <span className="block">
-                      <span className="text-accent">PAVING</span>{" "}
-                      <span className="text-white">BLOCK</span>
-                    </span>
-                    <span className="block text-white">
-                      {currentLang === "id" ? "BERKUALITAS" : "PREMIUM QUALITY"}
-                    </span>
-                    <span className="block text-white">
-                      {currentLang === "id" ? "UNTUK INDONESIA" : "FOR INDONESIA"}
-                    </span>
-                  </h1>
-
-                  {/* Supporting Narrative Copy: Short visually (approx 2-3 lines on desktop) */}
-                  <p className="text-base sm:text-lg text-slate-300 font-sans leading-relaxed mb-8 sm:mb-10 max-w-xl">
-                    {homeDict.hero.description}
-                  </p>
-
-                  {/* CTAs: Wide rectangular buttons, minimal radius */}
-                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8 sm:mb-10">
-                    <a
-                      id="hero-primary-cta"
-                      href={dict.contact.whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[48px] rounded-xs font-heading"
-                    >
-                      <Phone className="w-4 h-4 mr-3 text-dark fill-dark/20" aria-hidden="true" />
-                      {currentLang === "id"
-                        ? "KONSULTASI VIA WHATSAPP"
-                        : "CONSULT VIA WHATSAPP"}
-                    </a>
-
-                    <Link
-                      id="hero-secondary-cta"
-                      href={`/${currentLang}/products`}
-                      className="inline-flex items-center justify-center bg-black/30 hover:bg-white/10 text-white border border-accent hover:border-accent-hover backdrop-blur-xs px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[48px] rounded-xs group font-heading"
-                    >
-                      {currentLang === "id"
-                        ? "LIHAT PRODUK"
-                        : "VIEW PRODUCTS"}
-                      <ArrowRight className="w-4 h-4 ml-3 text-accent transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                    </Link>
-                  </div>
-
-                  {/* Product Category Rail: Small uppercase, muted white, Gold leading line */}
-                  <div className="hidden sm:flex flex-wrap items-center gap-y-2 text-xs font-heading tracking-wider uppercase text-slate-400">
-                    <span className="w-5 h-[1.5px] bg-accent mr-3" aria-hidden="true" />
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                      {[
-                        { label: "Paving Block", href: `/${currentLang}/products` },
-                        { label: "Kanstein", href: `/${currentLang}/products` },
-                        { label: "Ubin & Hexa", href: `/${currentLang}/products` },
-                        {
-                          label:
-                            currentLang === "id"
-                              ? "Produk Beton Lainnya"
-                              : "Other Concrete Products",
-                          href: `/${currentLang}/products`,
-                        },
-                      ].map((cat, idx, arr) => (
-                        <span key={cat.label} className="inline-flex items-center">
-                          <Link
-                            href={cat.href}
-                            className="hover:text-accent text-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
-                          >
-                            {cat.label}
-                          </Link>
-                          {idx < arr.length - 1 && (
-                            <span className="text-white/20 mx-3 select-none" aria-hidden="true">
-                              /
-                            </span>
-                          )}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center pt-2 sm:pt-4">
+              {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Narrative Copy, CTAs, Categories */}
+              <div className="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
+                {/* Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
+                <div className="flex items-center space-x-3 mb-4 sm:mb-5">
+                  <span className="h-[1.5px] w-8 sm:w-10 bg-accent" aria-hidden="true" />
+                  <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-accent font-heading">
+                    {currentLang === "id"
+                      ? "KOKOH DI SETIAP LANGKAH"
+                      : "SOLID AT EVERY STEP"}
+                  </span>
                 </div>
 
-                {/* RIGHT COLUMN: Spatial clearing allowing the unified hero-main artwork (paving blocks & factory lighting) to remain completely unobstructed */}
-                <div
-                  className="hidden lg:flex lg:col-span-6 xl:col-span-6 min-h-[420px] xl:min-h-[480px] pointer-events-none select-none items-end justify-end"
-                  aria-hidden="true"
-                />
+                {/* Master Headline: 3-Line High Impact Hierarchy */}
+                <h1
+                  id="hero-title"
+                  className="text-4xl sm:text-5xl md:text-6xl lg:text-[66px] xl:text-[74px] font-black tracking-tight font-heading leading-[0.98] uppercase mb-5 sm:mb-6 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
+                >
+                  <span className="block">
+                    <span className="text-accent">PAVING</span>{" "}
+                    <span className="text-white">BLOCK</span>
+                  </span>
+                  <span className="block text-white">
+                    {currentLang === "id" ? "BERKUALITAS" : "PREMIUM QUALITY"}
+                  </span>
+                  <span className="block text-white">
+                    {currentLang === "id" ? "UNTUK INDONESIA" : "FOR INDONESIA"}
+                  </span>
+                </h1>
+
+                {/* Supporting Narrative Copy: Short visually (approx 2-3 lines on desktop) */}
+                <p className="text-base sm:text-lg text-slate-200 font-sans leading-relaxed mb-7 sm:mb-9 max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                  {homeDict.hero.description}
+                </p>
+
+                {/* CTAs: Wide rectangular buttons, minimal radius */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-7 sm:mb-9">
+                  <a
+                    id="hero-primary-cta"
+                    href={dict.contact.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white min-h-[48px] rounded-xs font-heading"
+                  >
+                    <Phone className="w-4 h-4 mr-3 text-dark fill-dark/20" aria-hidden="true" />
+                    {currentLang === "id"
+                      ? "KONSULTASI VIA WHATSAPP"
+                      : "CONSULT VIA WHATSAPP"}
+                  </a>
+
+                  <Link
+                    id="hero-secondary-cta"
+                    href={`/${currentLang}/products`}
+                    className="inline-flex items-center justify-center bg-black/30 hover:bg-white/10 text-white border border-accent hover:border-accent-hover backdrop-blur-xs px-7 sm:px-8 py-4 font-bold text-xs sm:text-sm tracking-widest uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[48px] rounded-xs group font-heading"
+                  >
+                    {currentLang === "id"
+                      ? "LIHAT PRODUK"
+                      : "VIEW PRODUCTS"}
+                    <ArrowRight className="w-4 h-4 ml-3 text-accent group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                  </Link>
+                </div>
+
+                {/* Product Category Rail: Small uppercase, muted white, Gold leading line */}
+                <div className="hidden sm:flex flex-wrap items-center gap-y-2 text-xs font-heading tracking-wider uppercase text-slate-300">
+                  <span className="w-5 h-[1.5px] bg-accent mr-3" aria-hidden="true" />
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                    {[
+                      { label: "Paving Block", href: `/${currentLang}/products` },
+                      { label: "Kanstein", href: `/${currentLang}/products` },
+                      { label: "Ubin & Hexa", href: `/${currentLang}/products` },
+                      {
+                        label:
+                          currentLang === "id"
+                            ? "Produk Beton Lainnya"
+                            : "Other Concrete Products",
+                        href: `/${currentLang}/products`,
+                      },
+                    ].map((cat, idx, arr) => (
+                      <span key={cat.label} className="inline-flex items-center">
+                        <Link
+                          href={cat.href}
+                          className="hover:text-accent text-slate-300 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent py-0.5"
+                        >
+                          {cat.label}
+                        </Link>
+                        {idx < arr.length - 1 && (
+                          <span className="text-white/20 mx-3 select-none" aria-hidden="true">
+                            /
+                          </span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </ScrollReveal>
+
+              {/* RIGHT COLUMN: Spatial clearing allowing the unified hero-main artwork (paving blocks & factory lighting) to remain completely unobstructed */}
+              <div
+                className="hidden lg:block lg:col-span-6 xl:col-span-6 pointer-events-none select-none"
+                aria-hidden="true"
+              />
+            </div>
 
             {/* Bottom Trust / Fact Rail - Compact Horizontal Trust Rail (Verified Facts Only) */}
-            <div className="pt-6 sm:pt-7 mt-8 sm:mt-10 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+            <div className="pt-5 sm:pt-6 mt-6 sm:mt-8 border-t border-white/15 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
               {/* Fact 1: Sejak 2015 */}
               <div className="flex items-start space-x-3">
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-accent flex-shrink-0 mt-0.5" aria-hidden="true" />
