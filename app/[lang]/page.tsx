@@ -114,14 +114,8 @@ export default async function Home({
               className="object-cover object-center"
             />
 
-            {/* Mobile dark gradient mask for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/75 via-dark/35 to-dark/50 lg:hidden pointer-events-none" />
-
-            {/* Desktop localized left-side dark gradient: starts below the ~80px navbar zone so top roof/lights artwork remains sharp and un-darkened behind the transparent navbar */}
-            <div className="hidden lg:block absolute top-20 bottom-0 left-0 w-[58%] bg-gradient-to-r from-dark/85 via-dark/35 via-70% to-transparent pointer-events-none" />
-
-            {/* Bottom ambient feathering for seamless transition to bottom trust rail */}
-            <div className="absolute bottom-0 inset-x-0 h-14 bg-gradient-to-t from-dark/50 via-dark/15 to-transparent pointer-events-none" />
+            {/* Single subtle full-width hero dark overlay with low opacity for clean, uniform readability */}
+            <div className="absolute inset-0 bg-black/35 pointer-events-none" />
           </div>
 
           {/* Main Centered Container - Left content constrained to ~40-45% of viewport */}
