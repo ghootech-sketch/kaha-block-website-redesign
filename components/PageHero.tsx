@@ -19,7 +19,7 @@ export default function PageHero({
   mobileBackgroundImage = "/images/hero/hero-mobile.webp",
 }: PageHeroProps) {
   return (
-    <section className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
+    <section data-navbar-hero="true" className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -37,7 +37,7 @@ export default function PageHero({
           priority
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/45 pointer-events-none" />
       </div>
 
       {/* Content Container */}

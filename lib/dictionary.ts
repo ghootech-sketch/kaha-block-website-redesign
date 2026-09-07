@@ -397,6 +397,7 @@ export const dictionaries = {
       },
     },
     products: {
+      eyebrow: "PRODUK KAHA BLOCK",
       title: "Produk Unggulan",
       specs: "Mutu Terjamin: Material Bahan Baku Pilihan",
       availability: "Stok banyak dan volume besar tersedia.",
@@ -1281,6 +1282,7 @@ export const dictionaries = {
       },
     },
     products: {
+      eyebrow: "KAHA BLOCK PRODUCTS",
       title: "Our Products",
       specs: "Guaranteed Quality: Selected Raw Materials",
       availability: "Plentiful stock and large volumes available.",

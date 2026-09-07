@@ -48,7 +48,7 @@ export default function LanguageSwitcher({
           currentLang === "id"
             ? isDark
               ? "bg-[#0B0B0B]/85 text-accent border border-white/10 shadow-xs"
-              : "bg-secondary text-accent shadow-sm"
+              : "bg-slate-900 text-accent shadow-sm"
             : isDark
             ? "text-white/80 hover:bg-white/10 hover:text-white active:bg-white/15"
             : "text-slate-800 hover:bg-white/80 active:bg-white"
@@ -72,7 +72,7 @@ export default function LanguageSwitcher({
           currentLang === "en"
             ? isDark
               ? "bg-[#0B0B0B]/85 text-accent border border-white/10 shadow-xs"
-              : "bg-secondary text-accent shadow-sm"
+              : "bg-slate-900 text-accent shadow-sm"
             : isDark
             ? "text-white/80 hover:bg-white/10 hover:text-white active:bg-white/15"
             : "text-slate-800 hover:bg-white/80 active:bg-white"

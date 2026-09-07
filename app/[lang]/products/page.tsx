@@ -52,6 +52,7 @@ export default async function Products({
       <JsonLd page="products" lang={currentLang} />
 
       <PageHero
+        eyebrow={dict.eyebrow}
         title={dict.title}
         description={
           <>

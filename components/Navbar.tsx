@@ -17,7 +17,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 60);
+      const hero = document.querySelector("[data-navbar-hero]");
+      if (hero) {
+        const rect = hero.getBoundingClientRect();
+        setIsScrolled(rect.bottom <= 104);
+      } else {
+        setIsScrolled(window.scrollY > 80);
+      }
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });

@@ -117,11 +117,11 @@ export default function Gallery({
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 right-3 bg-secondary/90 text-accent px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs">
+                  <div className="absolute top-3 right-3 bg-black/80 text-accent px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs border border-accent/30">
                     {item.badge}
                   </div>
-                  <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300 flex items-center justify-center">
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-secondary flex items-center justify-center shadow-lg">
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-black/75 border border-accent/30 text-accent flex items-center justify-center shadow-lg">
                       <ZoomIn className="w-5 h-5" aria-hidden="true" />
                     </span>
                   </div>
@@ -183,8 +183,8 @@ export default function Gallery({
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-white/90 text-secondary flex items-center justify-center shadow-lg">
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-black/75 border border-accent/30 text-accent flex items-center justify-center shadow-lg">
                   <ZoomIn className="w-5 h-5" aria-hidden="true" />
                 </span>
               </div>
