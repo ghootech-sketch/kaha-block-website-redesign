@@ -10,6 +10,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import FormattedText from "@/components/FormattedText";
+import PageHero from "@/components/PageHero";
 import {
   Calendar,
   Clock,
@@ -114,73 +115,15 @@ export default async function BlogPostPage({
       <JsonLd page="blogPost" lang={currentLang} post={post} />
 
       {/* Article Header & Breadcrumbs */}
-      <header className="relative pt-32 pb-16 border-b border-slate-200/80 bg-surface">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Breadcrumb Navigation */}
-          <nav
-            aria-label="Breadcrumb"
-            className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-500 mb-8"
-          >
-            <Link
-              href={`/${currentLang}`}
-              className="hover:text-primary transition-colors flex items-center gap-1.5"
-            >
-              <Home className="w-3.5 h-3.5" />
-              <span>{isEn ? "Home" : "Beranda"}</span>
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-            <Link
-              href={`/${currentLang}/blog`}
-              className="hover:text-primary transition-colors"
-            >
-              {isEn ? "Insights & Articles" : "Artikel & Wawasan"}
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-            <span className="text-primary font-semibold truncate max-w-xs sm:max-w-sm">
-              {post.category}
-            </span>
-          </nav>
-
-          {/* Meta badges */}
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-red-50 text-primary border border-primary/20">
-              {post.category}
-            </span>
-            <div className="flex items-center gap-1.5 text-xs text-slate-500">
-              <Clock className="w-3.5 h-3.5 text-slate-400" />
-              <span>{post.readingTime}</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-xs text-slate-500">
-              <Calendar className="w-3.5 h-3.5 text-slate-400" />
-              <span>
-                {isEn ? "Published: " : "Diterbitkan: "}
-                {formattedPublishedDate}
-              </span>
-            </div>
-            {post.updatedAt && (
-              <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                <span className="text-slate-400">•</span>
-                <span>
-                  {isEn ? "Updated: " : "Diperbarui: "}
-                  {formattedUpdatedDate}
-                </span>
-              </div>
-            )}
-          </div>
-
-          {/* H1 Title */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6 font-heading">
-            {post.title}
-          </h1>
-
-          {/* Excerpt */}
-          <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 border-l-2 border-primary/60 pl-4 font-sans">
-            <FormattedText text={post.excerpt} />
-          </p>
-
+      <PageHero
+        eyebrow={post.category}
+        title={post.title}
+        description={<FormattedText text={post.excerpt} />}
+      >
+        <div className="flex flex-col gap-6 mt-6 max-w-4xl">
           {/* Quick Answer Callout */}
           {quickAnswer && (
-            <div className="mb-6 rounded-xl bg-accent/15 border border-accent/40 p-4 sm:p-5 text-sm sm:text-base text-slate-800 shadow-xs">
+            <div className="rounded-xl bg-white/10 border border-white/20 p-4 sm:p-5 text-sm sm:text-base text-white shadow-xs">
               <div className="flex items-center gap-2 text-accent font-bold text-xs uppercase tracking-wider mb-2 font-heading">
                 <Lightbulb className="w-4 h-4 text-accent shrink-0" />
                 <span>
@@ -189,28 +132,80 @@ export default async function BlogPostPage({
                     : "Jawaban Cepat / Ringkasan Teknis"}
                 </span>
               </div>
-              <div className="text-slate-700 leading-relaxed font-sans">
+              <div className="text-white/90 leading-relaxed font-sans">
                 <FormattedText text={quickAnswer} />
               </div>
             </div>
           )}
 
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
+            <nav
+              aria-label="Breadcrumb"
+              className="flex flex-wrap items-center gap-2 text-xs font-medium text-white/70"
+            >
+              <Link
+                href={`/${currentLang}`}
+                className="hover:text-white transition-colors flex items-center gap-1.5"
+              >
+                <Home className="w-3.5 h-3.5" />
+                <span>{isEn ? "Home" : "Beranda"}</span>
+              </Link>
+              <ChevronRight className="w-3.5 h-3.5 text-white/50" />
+              <Link
+                href={`/${currentLang}/blog`}
+                className="hover:text-white transition-colors"
+              >
+                {isEn ? "Insights & Articles" : "Artikel & Wawasan"}
+              </Link>
+              <ChevronRight className="w-3.5 h-3.5 text-white/50" />
+              <span className="text-white font-semibold truncate max-w-xs sm:max-w-sm">
+                {post.category}
+              </span>
+            </nav>
+
+            <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-white/30" aria-hidden="true" />
+
+            {/* Meta badges */}
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="flex items-center gap-1.5 text-xs text-white/80">
+                <Clock className="w-3.5 h-3.5 text-white/60" />
+                <span>{post.readingTime}</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-xs text-white/80">
+                <Calendar className="w-3.5 h-3.5 text-white/60" />
+                <span>
+                  {isEn ? "Published: " : "Diterbitkan: "}
+                  {formattedPublishedDate}
+                </span>
+              </div>
+              {post.updatedAt && (
+                <div className="flex items-center gap-1.5 text-xs text-white/80">
+                  <span className="text-white/40">•</span>
+                  <span>
+                    {isEn ? "Updated: " : "Diperbarui: "}
+                    {formattedUpdatedDate}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+
           {/* Author / Publisher Byline */}
-          <div className="flex items-center gap-3 pt-6 border-t border-slate-200 text-xs text-slate-500">
-            <div className="w-8 h-8 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold">
+          <div className="flex items-center gap-3 pt-6 border-t border-white/20 text-xs text-white/70">
+            <div className="w-8 h-8 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white font-bold">
               K
             </div>
             <div>
-              <p className="text-slate-900 font-semibold">
+              <p className="text-white font-semibold">
                 {isEn ? "Kaha Block Technical Team" : "Tim Teknis Kaha Block"}
               </p>
-              <p className="text-slate-500">
+              <p className="text-white/60">
                 PT Kaha Sukses Mandiri • Cisauk, Tangerang
               </p>
             </div>
           </div>
         </div>
-      </header>
+      </PageHero>
 
       {/* Main Article Container */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

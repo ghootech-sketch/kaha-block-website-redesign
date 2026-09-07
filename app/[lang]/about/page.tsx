@@ -2,10 +2,10 @@ import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
+import PageHero from "@/components/PageHero";
 import {
   Calendar,
   Factory,
@@ -121,34 +121,11 @@ export default async function About({
         {/* =========================================================
             1. ABOUT HERO
         ========================================================= */}
-        <section id="about-hero" className="bg-surface text-slate-900 pt-16 sm:pt-20 md:pt-24 pb-14 sm:pb-18 md:pb-20 relative overflow-hidden border-b border-stone-200/80">
-          {/* Image-led background with warm overlay */}
-          <Image
-            src="/images/projects/kaha-block-dokumentasi-25.webp"
-            alt=""
-            fill
-            priority
-            className="object-cover object-center opacity-10 -z-20 pointer-events-none"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/90 to-surface -z-10" />
-          <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full filter blur-3xl opacity-50 pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-200/40 rounded-full filter blur-3xl opacity-50 pointer-events-none transform -translate-x-1/3 translate-y-1/3" />
-
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <ScrollReveal immediate>
-              <span className="inline-block px-3.5 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 font-heading">
-                {dict.overview.eyebrow}
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight font-heading text-slate-900 mb-4 sm:mb-6">
-                {dict.title}
-              </h1>
-              <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-600 font-sans leading-relaxed">
-                {dict.subtitle}
-              </p>
-              <div className="w-16 sm:w-20 h-1 sm:h-1.5 bg-accent mx-auto mt-6 rounded-full" />
-            </ScrollReveal>
-          </div>
-        </section>
+        <PageHero
+          eyebrow={dict.overview.eyebrow}
+          title={dict.title}
+          description={dict.subtitle}
+        />
 
         {/* =========================================================
             2. COMPANY OVERVIEW

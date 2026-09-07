@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Gallery from "@/components/Gallery";
 import JsonLd from "@/components/JsonLd";
+import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MessageSquare, Layers, Eye } from "lucide-react";
 import type { Metadata } from "next";
@@ -41,43 +42,35 @@ export default async function Projects({
     <>
       <JsonLd page="projects" lang={currentLang} />
 
-      {/* =========================================================================
-          1. EDITORIAL INTRO HERO (Warm White Background)
-         ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal immediate className="text-center max-w-4xl mx-auto">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2.5 block font-heading">
-              {dict.editorialIntro?.eyebrow || dict.title}
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight font-heading">
-              {dict.editorialIntro?.title || dict.title}
-            </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-primary mx-auto mt-4 sm:mt-5 mb-4 sm:mt-6 rounded-full" />
-            <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto font-sans leading-relaxed mb-6 sm:mb-8">
-              {dict.editorialIntro?.description || dict.description}
-            </p>
+      <PageHero
+        eyebrow={dict.editorialIntro?.eyebrow || dict.title}
+        title={dict.editorialIntro?.title || dict.title}
+        description={dict.editorialIntro?.description || dict.description}
+      />
 
-            {/* 4 Scope Badges */}
-            {dict.editorialIntro?.scopeItems && (
-              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+      {/* 4 Scope Badges Moved Below Hero */}
+      {dict.editorialIntro?.scopeItems && (
+        <section className="bg-surface border-b border-slate-200/80 py-8">
+          <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12">
+            <ScrollReveal immediate>
+              <div className="flex flex-wrap items-center justify-start gap-2 sm:gap-3">
                 {dict.editorialIntro.scopeItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-slate-900 shadow-2xs"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-slate-900 shadow-sm"
                   >
-                    <CheckCircle2 className="w-3.5 h-3.5 mr-1.5 text-primary" aria-hidden="true" />
+                    <CheckCircle2 className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
                     {item}
                   </span>
                 ))}
               </div>
-            )}
-          </ScrollReveal>
-        </div>
-      </section>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
 
       {/* =========================================================================
-          2. GALLERY SECTION: FEATURED & ALL 26 DOCUMENTATION PHOTOS (White Canvas)
+          2. GALLERY SECTION: FEATURED & ALL 33 DOCUMENTATION PHOTOS (White Canvas)
          ========================================================================= */}
       <section className="bg-white py-14 sm:py-18 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

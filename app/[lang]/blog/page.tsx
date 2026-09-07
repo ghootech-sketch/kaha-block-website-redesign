@@ -4,19 +4,19 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
+import PageHero from "@/components/PageHero";
 import { getAllBlogPosts } from "@/lib/blog-data";
 import {
-  BookOpen,
   Calendar,
   Clock,
   ArrowRight,
-  ShieldCheck,
-  CheckCircle2,
   ChevronRight,
   Home,
   Sparkles,
-  Phone,
+  ShieldCheck,
+  CheckCircle2,
   Layers,
+  Phone,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -76,49 +76,29 @@ export default async function BlogIndexPage({
     <div className="min-h-screen bg-surface text-slate-900 selection:bg-primary/20 selection:text-primary">
       <JsonLd page="blog" lang={currentLang} />
 
-      {/* Header & Breadcrumb Hero Section */}
-      <section className="relative pt-32 pb-20 border-b border-slate-200/80 overflow-hidden bg-surface">
-        {/* Subtle background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-primary/5 via-accent/5 to-transparent blur-3xl pointer-events-none -z-10" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Breadcrumb */}
-          <ScrollReveal immediate direction="down">
-            <nav
-              aria-label="Breadcrumb"
-              className="flex items-center gap-2 text-xs font-medium text-slate-500 mb-8"
-            >
-              <Link
-                href={`/${currentLang}`}
-                className="hover:text-primary transition-colors flex items-center gap-1.5"
-              >
-                <Home className="w-3.5 h-3.5" />
-                <span>{isEn ? "Home" : "Beranda"}</span>
-              </Link>
-              <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-              <span className="text-primary font-semibold">
-                {isEn ? "Blog & Insights" : "Blog & Wawasan"}
-              </span>
-            </nav>
-          </ScrollReveal>
-
-          {/* Hero Content */}
-          <div className="max-w-3xl">
-            <ScrollReveal immediate direction="up">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-4">
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>{dict.eyebrow}</span>
-              </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-5 font-heading">
-                {dict.title}
-              </h1>
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-sans">
-                {dict.subtitle}
-              </p>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      {/* Header Hero Section */}
+      <PageHero
+        eyebrow={dict.eyebrow}
+        title={dict.title}
+        description={dict.subtitle}
+      >
+        <nav
+          aria-label="Breadcrumb"
+          className="flex items-center gap-2 text-xs font-medium text-white/70 mt-6"
+        >
+          <Link
+            href={`/${currentLang}`}
+            className="hover:text-white transition-colors flex items-center gap-1.5"
+          >
+            <Home className="w-3.5 h-3.5" />
+            <span>{isEn ? "Home" : "Beranda"}</span>
+          </Link>
+          <ChevronRight className="w-3.5 h-3.5 text-white/50" />
+          <span className="text-white font-semibold">
+            {isEn ? "Blog & Insights" : "Blog & Wawasan"}
+          </span>
+        </nav>
+      </PageHero>
 
       {/* Main Content Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

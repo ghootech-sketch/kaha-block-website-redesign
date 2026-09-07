@@ -3,6 +3,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
+import PageHero from "@/components/PageHero";
 import {
   Mail,
   Phone,
@@ -12,10 +13,10 @@ import {
   Facebook,
   ExternalLink,
   ChevronDown,
-  Truck,
   CheckCircle2,
   HelpCircle,
   Layers,
+  Truck,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -47,27 +48,17 @@ export default async function Contact({
     <>
       <JsonLd page="contact" lang={currentLang} />
 
-      {/* =========================================================================
-          1. CONTACT HERO (Warm White Background)
-         ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal immediate className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2.5 block font-heading">
-              {dict.eyebrow}
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight font-heading">
-              {dict.title}
-            </h1>
-            <div className="w-16 sm:w-20 h-1 bg-primary mx-auto mt-4 mb-4 sm:mb-5 rounded-full" />
-            <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
-              {dict.description}
-            </p>
-          </ScrollReveal>
+      <PageHero
+        eyebrow={dict.eyebrow}
+        title={dict.title}
+        description={dict.description}
+      />
 
-          {/* =========================================================================
-              2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
-             ========================================================================= */}
+      {/* =========================================================================
+          2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
+         ========================================================================= */}
+      <section className="bg-surface border-b border-slate-200/80 py-12 sm:py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-14">
             {/* Card 1: WhatsApp Utama */}
             <ScrollReveal delay={0.05} className="h-full">

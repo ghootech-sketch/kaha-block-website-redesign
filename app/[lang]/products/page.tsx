@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
+import PageHero from "@/components/PageHero";
 import { Phone, ChevronDown, CheckCircle2, MessageSquare, Layers, HelpCircle, ArrowDown } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -50,27 +51,25 @@ export default async function Products({
     <>
       <JsonLd page="products" lang={currentLang} />
 
-      {/* =========================================================================
-          1. PRODUCTS HERO & PRODUCT NAVIGATOR (Warm White Canvas)
-         ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal immediate className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight font-heading">
-              {dict.title}
-            </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-primary mx-auto mt-4 sm:mt-5 mb-4 sm:mb-5 rounded-full" />
-            <p className="text-base sm:text-lg text-slate-700 font-sans leading-relaxed">
-              {dict.specs}
-            </p>
-            <p className="mt-2 text-sm sm:text-base text-primary font-bold font-sans">
-              {dict.availability}
-            </p>
-          </ScrollReveal>
+      <PageHero
+        title={dict.title}
+        description={
+          <>
+            {dict.specs}
+            <br />
+            <span className="text-accent font-bold block mt-2">{dict.availability}</span>
+          </>
+        }
+      />
 
+      {/* =========================================================================
+          2. PRODUCT NAVIGATOR (Warm White Canvas)
+         ========================================================================= */}
+      <section className="bg-surface border-b border-slate-200/80 py-10 sm:py-14">
+        <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12">
           {/* Product Navigator Panel */}
           {dict.navigator && (
-            <ScrollReveal delay={0.1} className="max-w-4xl mx-auto bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs">
+            <ScrollReveal immediate className="max-w-4xl bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs">
               <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
                 <div className="flex items-center space-x-2 text-slate-900">
                   <ArrowDown className="w-4 h-4 text-primary" aria-hidden="true" />

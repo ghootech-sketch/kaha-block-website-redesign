@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Gallery from "@/components/Gallery";
 import JsonLd from "@/components/JsonLd";
+import PageHero from "@/components/PageHero";
 import Link from "next/link";
 import { MessageSquare, ArrowRight, Factory, Calendar, Move, Award } from "lucide-react";
 import type { Metadata } from "next";
@@ -63,25 +64,11 @@ export default async function ProductionGalleryPage({
     <>
       <JsonLd page="projectsProduction" lang={currentLang} />
 
-      {/* =========================================================================
-          1. PRODUCTION INTRO HERO (Warm White Background)
-         ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 pt-12 pb-14 sm:pt-16 sm:pb-16 md:pt-20 md:pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal immediate className="text-center max-w-4xl mx-auto">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2.5 block font-heading">
-              {dict.heroEyebrow}
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 tracking-tight font-heading">
-              {dict.heroTitle}
-            </h1>
-            <div className="w-16 sm:w-24 h-1 sm:h-1.5 bg-primary mx-auto mt-4 sm:mt-5 mb-4 sm:mt-6 rounded-full" />
-            <p className="text-base sm:text-lg text-slate-700 max-w-3xl mx-auto font-sans leading-relaxed mb-6 sm:mb-8">
-              {dict.heroDesc}
-            </p>
-          </ScrollReveal>
-        </div>
-      </section>
+      <PageHero
+        eyebrow={dict.heroEyebrow}
+        title={dict.heroTitle}
+        description={dict.heroDesc}
+      />
 
       {/* =========================================================================
           2. GALLERY SECTION
