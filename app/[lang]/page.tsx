@@ -255,15 +255,13 @@ export default async function Home({
                 <span className="w-5 h-[1.5px] bg-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <div className="flex flex-wrap items-center gap-x-2.5 sm:gap-x-3.5 gap-y-1">
                   {[
-                    { label: "Paving Block", href: `/${currentLang}/products` },
-                    { label: "Kanstein", href: `/${currentLang}/products` },
-                    { label: "Ubin & Hexa", href: `/${currentLang}/products` },
-                    {
-                      label:
-                        currentLang === "id"
-                          ? "Produk Beton Lainnya"
-                          : "Other Concrete Products",
-                      href: `/${currentLang}/products`,
+                    { 
+                      label: currentLang === "id" ? "PAVING BLOCK BATA / TRUEPAVE" : "TRUEPAVE / RECTANGULAR PAVING", 
+                      href: `/${currentLang}/products` 
+                    },
+                    { 
+                      label: currentLang === "id" ? "PAVING BLOCK TAHU / HALF" : "HALF / TAHU PAVING", 
+                      href: `/${currentLang}/products` 
                     },
                   ].map((cat, idx, arr) => (
                     <span key={cat.label} className="inline-flex items-center">
