@@ -82,7 +82,7 @@ export default async function Projects({
       <section className="bg-white py-14 sm:py-18 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Gallery 
-            images={Array.from({ length: 26 }, (_, i) => `/images/projects/kaha-block-dokumentasi-${String(i + 1).padStart(2, '0')}.webp`)} 
+            images={Array.from({ length: 33 }, (_, i) => `/images/projects/kaha-block-dokumentasi-${String(i + 1).padStart(2, '0')}.webp`)} 
             featuredItems={featuredList}
             featuredHeader={dict.featured ? {
               eyebrow: dict.featured.eyebrow,
