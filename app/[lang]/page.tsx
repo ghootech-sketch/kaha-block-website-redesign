@@ -2,7 +2,7 @@ import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
@@ -84,6 +84,14 @@ export default async function Home({
     },
   ];
 
+  const common = { alt: "", fill: true, priority: true, className: "object-cover object-center" };
+  const {
+    props: { srcSet: desktopSrcSet },
+  } = getImageProps({ ...common, src: HERO_MAIN_IMAGE });
+  const {
+    props: { srcSet: mobileSrcSet, alt: mobileAlt, ...rest },
+  } = getImageProps({ ...common, src: HERO_MOBILE_IMAGE });
+
   return (
     <>
       <JsonLd page="home" lang={currentLang} />
@@ -104,33 +112,16 @@ export default async function Home({
               Desktop / Tablet (>= 768px): hero-main.webp (landscape artwork)
              ======================================================================= */}
           <div className="absolute inset-0 -z-30 pointer-events-none select-none">
-            {/* Mobile Hero Visual Asset (< 768px) */}
-            <Image
-              src={HERO_MOBILE_IMAGE}
-              alt={
-                currentLang === "id"
-                  ? "Paving Block Kaha Block Berkualitas untuk Infrastruktur Indonesia"
-                  : "Kaha Block High-Grade Paving Block for Indonesian Infrastructure"
-              }
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-center md:hidden"
-            />
-
-            {/* Desktop / Tablet Hero Visual Asset (>= 768px) */}
-            <Image
-              src={HERO_MAIN_IMAGE}
-              alt={
-                currentLang === "id"
-                  ? "Paving Block Kaha Block Berkualitas untuk Infrastruktur Indonesia"
-                  : "Kaha Block High-Grade Paving Block for Indonesian Infrastructure"
-              }
-              fill
-              priority
-              sizes="100vw"
-              className="hidden md:block object-cover object-center"
-            />
+            <picture>
+              <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+              <img
+                alt={mobileAlt}
+                aria-hidden="true"
+                srcSet={mobileSrcSet}
+                {...rest}
+                className="object-cover object-center w-full h-full"
+              />
+            </picture>
 
             {/* Single subtle full-width hero dark overlay with low opacity for clean, uniform readability */}
             <div className="absolute inset-0 bg-black/35 pointer-events-none" />
@@ -153,7 +144,7 @@ export default async function Home({
               {/* 2. Master Headline: Exact 3-Line Compact High Impact Hierarchy */}
               <h1
                 id="hero-title"
-                className="text-4xl sm:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight font-heading leading-[0.92] lg:leading-[0.94] uppercase mb-4 lg:mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
+                className="text-4xl sm:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight font-heading leading-[1.12] sm:leading-[0.92] lg:leading-[0.94] uppercase mb-4 lg:mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]"
               >
                 <span className="block whitespace-normal sm:whitespace-nowrap">
                   <span className="text-accent">PAVING</span>{" "}

@@ -70,7 +70,7 @@ export default async function Products({
         <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12">
           {/* Product Navigator Panel */}
           {dict.navigator && (
-            <ScrollReveal immediate className="max-w-4xl bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs">
+            <ScrollReveal immediate className="max-w-4xl bg-white rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-slate-200 shadow-xs">
               <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
                 <div className="flex items-center space-x-2 text-slate-900">
                   <ArrowDown className="w-4 h-4 text-primary" aria-hidden="true" />
@@ -137,7 +137,7 @@ export default async function Products({
                 <ScrollReveal
                   key={key}
                   delay={index * 0.03}
-                  className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xs border border-gray-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-lg transition-all duration-300 group flex flex-col h-full scroll-mt-28"
+                  className="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-md transition-all duration-300 group flex flex-col h-full scroll-mt-28"
                   id={anchorId}
                 >
                   {/* 3:2 Product Image Container */}
@@ -260,7 +260,7 @@ export default async function Products({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.beforeOrder.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
                 {dict.beforeOrder.subtitle}
               </p>
@@ -310,7 +310,7 @@ export default async function Products({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.faq.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.faq.subtitle}
               </p>
@@ -319,7 +319,7 @@ export default async function Products({
             <div className="space-y-4">
               {dict.faq.items.map((item, idx) => (
                 <ScrollReveal key={idx} delay={idx * 0.03}>
-                  <details className="group rounded-2xl bg-surface border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-secondary/30">
+                  <details className="group rounded-xl bg-surface border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-accent/40">
                     <summary className="font-bold text-base sm:text-lg text-slate-900 cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded select-none">
                       <span className="pr-4 font-heading">{item.q}</span>
                       <ChevronDown className="w-5 h-5 text-slate-500 shrink-0 group-open:rotate-180 transition-transform duration-200" aria-hidden="true" />

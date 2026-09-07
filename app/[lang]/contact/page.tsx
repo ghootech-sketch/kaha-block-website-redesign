@@ -66,7 +66,7 @@ export default async function Contact({
                 href={dict.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white border border-slate-200 hover:border-primary rounded-2xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
               >
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
@@ -93,10 +93,10 @@ export default async function Contact({
             <ScrollReveal delay={0.1} className="h-full">
               <a
                 href={`mailto:${dict.quickActions.emailAddress}`}
-                className="bg-white border border-slate-200 hover:border-secondary/40 rounded-2xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                className="bg-white border border-slate-200 hover:border-accent rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 text-slate-900 border border-accent/30 flex items-center justify-center mb-5">
                     <Mail className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
@@ -122,10 +122,10 @@ export default async function Contact({
                 href="https://www.instagram.com/kahablock/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white border border-slate-200 hover:border-secondary/40 rounded-2xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                className="bg-white border border-slate-200 hover:border-accent rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 text-slate-900 border border-accent/30 flex items-center justify-center mb-5">
                     <Instagram className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
@@ -149,7 +149,7 @@ export default async function Contact({
           {/* =========================================================================
               3. FULL-WIDTH FACTORY MAP
              ========================================================================= */}
-          <ScrollReveal className="bg-white border border-slate-200 rounded-2xl sm:rounded-3xl shadow-xs overflow-hidden mb-6 sm:mb-8">
+          <ScrollReveal className="bg-white border border-slate-200 rounded-xl sm:rounded-2xl shadow-xs overflow-hidden mb-6 sm:mb-8">
             {/* Map Header */}
             <div className="p-6 sm:p-8 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-white">
               <div className="space-y-1">
@@ -169,7 +169,7 @@ export default async function Contact({
                   href={dict.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 hover:border-secondary bg-white hover:bg-slate-50 text-slate-900 font-semibold text-xs sm:text-sm transition-colors shrink-0 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 hover:border-accent bg-white hover:bg-slate-50 text-slate-900 font-semibold text-xs sm:text-sm transition-colors shrink-0 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <MapPin className="w-4 h-4 text-primary" aria-hidden="true" />
                   <span>{dict.openGoogleMaps}</span>
@@ -197,12 +197,12 @@ export default async function Contact({
           {/* =========================================================================
               4. ADDITIONAL INFORMATION STRIP
              ========================================================================= */}
-          <ScrollReveal className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+          <ScrollReveal className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {/* Column 1: Alternative Contact */}
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center shrink-0 mt-0.5">
-                  <Phone className="w-5 h-5 text-secondary" aria-hidden="true" />
+                <div className="w-10 h-10 rounded-xl bg-accent/10 text-slate-900 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
+                  <Phone className="w-5 h-5 text-slate-900" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
@@ -222,8 +222,8 @@ export default async function Contact({
 
               {/* Column 2: Service Coverage */}
               <div className="flex items-start gap-4 md:border-l md:border-slate-100 md:pl-8">
-                <div className="w-10 h-10 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center shrink-0 mt-0.5">
-                  <Truck className="w-5 h-5 text-secondary" aria-hidden="true" />
+                <div className="w-10 h-10 rounded-xl bg-accent/10 text-slate-900 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
+                  <Truck className="w-5 h-5 text-slate-900" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
@@ -240,8 +240,8 @@ export default async function Contact({
 
               {/* Column 3: Facebook */}
               <div className="flex items-start gap-4 md:border-l md:border-slate-100 md:pl-8">
-                <div className="w-10 h-10 rounded-xl bg-secondary/5 text-secondary flex items-center justify-center shrink-0 mt-0.5">
-                  <Facebook className="w-5 h-5 text-secondary" aria-hidden="true" />
+                <div className="w-10 h-10 rounded-xl bg-accent/10 text-slate-900 border border-accent/30 flex items-center justify-center shrink-0 mt-0.5">
+                  <Facebook className="w-5 h-5 text-slate-900" aria-hidden="true" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
@@ -273,7 +273,7 @@ export default async function Contact({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.prepChecklist.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
                 {dict.prepChecklist.subtitle}
               </p>
@@ -284,7 +284,7 @@ export default async function Contact({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
+                  className="bg-surface border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
@@ -320,7 +320,7 @@ export default async function Contact({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.processFlow.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.processFlow.subtitle}
               </p>
@@ -331,7 +331,7 @@ export default async function Contact({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
                     <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
@@ -367,7 +367,7 @@ export default async function Contact({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.faq.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.faq.subtitle}
               </p>
@@ -377,9 +377,9 @@ export default async function Contact({
               {dict.faq.items.map((item, index) => (
                 <ScrollReveal key={index} delay={index * 0.03}>
                   <details
-                    className="group bg-surface rounded-2xl border border-slate-200/90 open:border-secondary/30 transition-all duration-200 hover:border-secondary/30"
+                    className="group border-b border-slate-200/90 open:border-accent/40 transition-all duration-200 hover:border-accent/40"
                   >
-                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl">
+                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
                       <span className="pr-4">{item.q}</span>
                       <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 group-hover:border-primary group-open:rotate-180 transition-transform duration-200">
                         <ChevronDown className="w-4 h-4" aria-hidden="true" />

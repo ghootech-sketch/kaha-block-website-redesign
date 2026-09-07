@@ -151,7 +151,7 @@ export default async function About({
               </ScrollReveal>
 
               {/* Highlight Sidebar Card (5 cols) */}
-              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-surface rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-stone-200/80 border-t-4 border-t-accent shadow-xs">
+              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-surface rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-stone-200/80 border-t-4 border-t-accent shadow-xs">
                 <div className="border-b border-stone-200/80 pb-5 mb-5">
                   <div className="text-xs font-bold uppercase tracking-widest text-slate-700 mb-1">
                     Brand & Badan Usaha
@@ -287,7 +287,7 @@ export default async function About({
             </ScrollReveal>
 
             {/* Vision Statement Card (Hero Banner Card) */}
-            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-primary to-primary-hover text-white rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
+            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-primary to-primary-hover text-white rounded-xl sm:rounded-2xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
               <div className="max-w-4xl">
                 <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-widest text-accent mb-3 sm:mb-4">
                   <Target className="w-4 h-4 sm:w-5 sm:h-5 text-accent" aria-hidden="true" />
@@ -440,7 +440,7 @@ export default async function About({
         ========================================================= */}
         <section id="about-cta" className="py-12 sm:py-16 md:py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="bg-primary text-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 md:p-16 text-center shadow-xl relative overflow-hidden">
+            <ScrollReveal className="bg-primary text-white rounded-xl sm:rounded-2xl p-8 sm:p-12 md:p-16 text-center shadow-lg relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
 

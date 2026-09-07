@@ -85,7 +85,7 @@ export default function Gallery({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {featuredHeader.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
                 {featuredHeader.subtitle}
               </p>
@@ -94,18 +94,11 @@ export default function Gallery({
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {featuredItems.map((item, index) => (
-              <div
+              <button
+                type="button"
                 key={index}
-                className="bg-surface-card rounded-2xl sm:rounded-3xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col h-full"
+                className="text-left w-full bg-surface-card rounded-xl sm:rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col h-full"
                 onClick={() => openLightboxBySrc(item.image)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    openLightboxBySrc(item.image);
-                  }
-                }}
                 aria-label={`${item.label} - ${item.caption}`}
               >
                 {/* 3:2 Aspect Ratio Image */}
@@ -139,7 +132,7 @@ export default function Gallery({
                     </p>
                   </div>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -162,18 +155,11 @@ export default function Gallery({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {images.slice(0, visibleCount).map((src, index) => (
-            <div
+            <button
+              type="button"
               key={src}
-              className="group relative rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-200/80 cursor-pointer aspect-[3/2] bg-slate-100"
+              className="text-left w-full block group relative rounded-xl overflow-hidden shadow-none hover:shadow-md transition-all duration-300 border border-gray-200/80 cursor-pointer aspect-[3/2] bg-slate-100"
               onClick={() => openLightboxByIndex(index)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  openLightboxByIndex(index);
-                }
-              }}
               aria-label={`${dict.imageAlt} ${index + 1}`}
             >
               <Image
@@ -191,7 +177,7 @@ export default function Gallery({
               <div className="absolute bottom-2 right-2 bg-black/60 text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-xs">
                 #{String(index + 1).padStart(2, "0")}
               </div>
-            </div>
+            </button>
           ))}
         </div>
 

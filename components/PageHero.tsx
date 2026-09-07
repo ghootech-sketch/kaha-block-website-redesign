@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import React from "react";
 
 interface PageHeroProps {
@@ -18,24 +18,28 @@ export default function PageHero({
   backgroundImage = "/images/hero/hero-main.webp",
   mobileBackgroundImage = "/images/hero/hero-mobile.webp",
 }: PageHeroProps) {
+  const common = { alt: "", fill: true, priority: true, className: "object-cover object-center" };
+  const {
+    props: { srcSet: desktopSrcSet },
+  } = getImageProps({ ...common, src: backgroundImage });
+  const {
+    props: { srcSet: mobileSrcSet, alt: mobileAlt, ...rest },
+  } = getImageProps({ ...common, src: mobileBackgroundImage });
+
   return (
     <section data-navbar-hero="true" className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src={mobileBackgroundImage}
-          alt="Hero background mobile"
-          fill
-          className="object-cover object-center md:hidden"
-          priority
-        />
-        <Image
-          src={backgroundImage}
-          alt="Hero background"
-          fill
-          className="object-cover object-center hidden md:block"
-          priority
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+          <img
+            alt={mobileAlt}
+            aria-hidden="true"
+            srcSet={mobileSrcSet}
+            {...rest}
+            className="object-cover object-center w-full h-full"
+          />
+        </picture>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/45 pointer-events-none" />
       </div>
@@ -52,7 +56,7 @@ export default function PageHero({
             </div>
           )}
           
-          <h1 className="text-white font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.1] mb-6">
+          <h1 className="text-white font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.12] sm:leading-[1.1] mb-6">
             {title}
           </h1>
 

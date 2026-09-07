@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -14,15 +14,26 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
+  const [desktopProjectsOpen, setDesktopProjectsOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const hero = document.querySelector("[data-navbar-hero]");
-      if (hero) {
-        const rect = hero.getBoundingClientRect();
-        setIsScrolled(rect.bottom <= 104);
-      } else {
-        setIsScrolled(window.scrollY > 80);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const hero = document.querySelector("[data-navbar-hero]");
+          const navbarHeight = navRef.current?.getBoundingClientRect().height ?? 80;
+          if (hero) {
+            const rect = hero.getBoundingClientRect();
+            setIsScrolled(rect.bottom <= navbarHeight);
+          } else {
+            setIsScrolled(window.scrollY > 80);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
     handleScroll();
@@ -32,13 +43,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) {
+      if (e.key === "Escape") {
         setIsOpen(false);
+        setMobileProjectsOpen(false);
+        setDesktopProjectsOpen(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen]);
+  }, []);
 
   const links = [
     { href: `/${lang}`, label: dict.nav.home },
@@ -58,6 +71,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   return (
     <nav
+      ref={navRef}
       aria-label={lang === "en" ? "Main Navigation" : "Navigasi Utama"}
       className={`fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
         isScrolled
@@ -99,20 +113,53 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
                 if (link.subLinks) {
                   return (
-                    <div key={link.href} className="relative group">
+                    <div 
+                      key={link.href} 
+                      className="relative"
+                      onMouseEnter={() => setDesktopProjectsOpen(true)}
+                      onMouseLeave={() => setDesktopProjectsOpen(false)}
+                      onBlur={(event) => {
+                        if (!event.currentTarget.contains(event.relatedTarget as Node)) {
+                          setDesktopProjectsOpen(false);
+                        }
+                      }}
+                    >
                       <button
                         className={`relative inline-flex items-center text-sm lg:text-[15px] font-medium tracking-wide transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded min-h-[44px] ${
                           isActive
                             ? "text-accent drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)] after:content-[''] after:absolute after:bottom-1 after:left-0 after:right-0 after:h-[2px] after:bg-accent after:shadow-[0_0_8px_rgba(212,175,55,0.6)]"
                             : "text-white/90 hover:text-accent drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]"
                         }`}
-                        aria-expanded="false"
-                        aria-haspopup="true"
+                        aria-expanded={desktopProjectsOpen}
+                        aria-haspopup="menu"
+                        aria-controls="desktop-projects-menu"
+                        onClick={() => setDesktopProjectsOpen(!desktopProjectsOpen)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            setDesktopProjectsOpen(!desktopProjectsOpen);
+                          } else if (e.key === "ArrowDown") {
+                            e.preventDefault();
+                            setDesktopProjectsOpen(true);
+                            // Focus first submenu item on next tick
+                            setTimeout(() => {
+                              const menu = document.getElementById("desktop-projects-menu");
+                              const firstLink = menu?.querySelector("a");
+                              firstLink?.focus();
+                            }, 0);
+                          }
+                        }}
                       >
                         {link.label}
-                        <ChevronDown className="ml-1.5 h-4 w-4" aria-hidden="true" />
+                        <ChevronDown className={`ml-1.5 h-4 w-4 transition-transform duration-200 ${desktopProjectsOpen ? "rotate-180" : ""}`} aria-hidden="true" />
                       </button>
-                      <div className="absolute left-0 top-full mt-2 w-72 rounded-md shadow-lg bg-[#0F0F0F] border border-[#D4AF37]/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+                      <div 
+                        id="desktop-projects-menu"
+                        role="menu"
+                        className={`absolute left-0 top-full mt-2 w-72 rounded-md shadow-lg bg-[#0F0F0F] border border-[#D4AF37]/30 transition-all duration-200 z-50 ${
+                          desktopProjectsOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                        }`}
+                      >
                         <div className="py-2 flex flex-col">
                           {link.subLinks.map((subLink) => {
                             const isSubActive = pathname === subLink.href;
@@ -120,10 +167,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
                               <Link
                                 key={subLink.href}
                                 href={subLink.href}
+                                role="menuitem"
                                 aria-current={isSubActive ? "page" : undefined}
-                                className={`block px-4 py-3 text-sm font-medium transition-colors ${
-                                  isSubActive ? "text-[#D4AF37] bg-white/5" : "text-[#F8F8FF] hover:text-[#D4AF37] hover:bg-white/5"
+                                className={`block px-4 py-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                                  isSubActive ? "text-[#D4AF37] bg-white/5" : "text-[#F8F8FF] hover:text-[#D4AF37] hover:bg-white/5 focus-visible:bg-white/5"
                                 }`}
+                                onClick={() => {
+                                  setDesktopProjectsOpen(false);
+                                  setIsOpen(false);
+                                }}
                               >
                                 {subLink.label}
                               </Link>

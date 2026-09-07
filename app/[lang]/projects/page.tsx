@@ -57,7 +57,7 @@ export default async function Projects({
                 {dict.editorialIntro.scopeItems.map((item, idx) => (
                   <span
                     key={idx}
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-slate-900 shadow-sm"
+                    className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-slate-900 shadow-none"
                   >
                     <CheckCircle2 className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
                     {item}
@@ -111,7 +111,7 @@ export default async function Projects({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.scope.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
                 {dict.scope.subtitle}
               </p>
@@ -122,7 +122,7 @@ export default async function Projects({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.05}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
+                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
                 >
                   <div>
                     <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
@@ -155,7 +155,7 @@ export default async function Projects({
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.projectSupport.title}
               </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-4 rounded-full" />
+              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {dict.projectSupport.subtitle}
               </p>
@@ -166,7 +166,7 @@ export default async function Projects({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/80 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-surface border border-slate-200/80 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
                     <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">

@@ -113,7 +113,7 @@ export default async function BlogIndexPage({
                 </h2>
               </div>
 
-              <div className="relative rounded-2xl bg-surface-card border border-slate-200/90 border-t-4 border-t-accent p-6 sm:p-8 lg:p-10 shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="relative rounded-xl bg-surface-card border border-slate-200/90 border-t-4 border-t-accent p-6 sm:p-8 lg:p-10 shadow-xs overflow-hidden hover:shadow-md transition-all duration-300 group">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10 group-hover:bg-accent/10 transition-all duration-500" />
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -217,7 +217,7 @@ export default async function BlogIndexPage({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {remainingPosts.map((post, index) => (
               <ScrollReveal key={post.slug} direction="up" delay={index * 0.05}>
-                <article className="flex flex-col h-full rounded-2xl bg-surface-card border border-slate-200/90 hover:border-primary/40 p-6 transition-all duration-300 hover:shadow-lg group shadow-xs">
+                <article className="flex flex-col h-full rounded-xl bg-surface-card border border-slate-200/90 hover:border-accent/50 p-6 transition-all duration-300 hover:shadow-md group shadow-none">
                   {/* Category & Reading Time */}
                   <div className="flex items-center justify-between gap-2 mb-4">
                     <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-red-50 text-primary border border-primary/20">
@@ -274,7 +274,7 @@ export default async function BlogIndexPage({
         {/* Bottom Consulting & Product Navigator CTA */}
         <section className="mt-24">
           <ScrollReveal direction="up">
-            <div className="rounded-2xl bg-primary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-xl">
+            <div className="rounded-xl bg-primary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-accent text-xs font-semibold uppercase tracking-wider mb-3 font-heading">

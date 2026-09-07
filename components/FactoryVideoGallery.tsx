@@ -33,7 +33,7 @@ export default function FactoryVideoGallery({
               <h2 className={`text-3xl md:text-4xl lg:text-5xl font-black font-heading ${isPremium ? 'text-white tracking-tight' : 'text-slate-900'}`}>
                 {title}
               </h2>
-              <div className={`w-16 h-1 mx-auto mt-6 mb-6 ${isPremium ? 'bg-accent' : 'bg-primary rounded-full'}`} />
+              <div className="w-16 h-1 bg-accent mx-auto mt-6 mb-6 rounded-full" />
             </Reveal>
             {subtitle && (
               <Reveal delay={0.08}>

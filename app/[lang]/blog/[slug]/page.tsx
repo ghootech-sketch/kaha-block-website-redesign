@@ -418,7 +418,7 @@ export default async function BlogPostPage({
         </div>
 
         {/* Summary Box */}
-        <section className="mt-16 rounded-2xl bg-accent/15 border border-accent/40 p-6 sm:p-8">
+        <section className="mt-16 rounded-xl bg-accent/15 border border-accent/40 p-6 sm:p-8">
           <div className="flex items-center gap-2.5 text-accent font-bold uppercase text-xs sm:text-sm tracking-wider mb-4 font-heading">
             <ShieldCheck className="w-5 h-5 text-accent" />
             <span>{post.summary.title}</span>
@@ -542,7 +542,7 @@ export default async function BlogPostPage({
 
         {/* Bottom Consultation CTA */}
         <section className="mt-20">
-          <div className="rounded-2xl bg-primary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="rounded-xl bg-primary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
             <div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-heading">
                 {isEn
