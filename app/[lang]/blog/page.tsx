@@ -302,7 +302,7 @@ export default async function BlogIndexPage({
                     <span>{isEn ? "View Product Catalog" : "Lihat Katalog Produk"}</span>
                   </Link>
                   <a
-                    href="https://wa.me/628119753030"
+                    href="https://wa.me/6281283812475"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 min-h-[44px]"

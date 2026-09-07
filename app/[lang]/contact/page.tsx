@@ -209,7 +209,9 @@ export default async function Contact({
                     {dict.infoStrip.altContactLabel}
                   </span>
                   <a
-                    href={`tel:${dict.infoStrip.altContactValue.replace(/\D/g, "")}`}
+                    href={dict.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-base sm:text-lg font-bold text-slate-900 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
                   >
                     {dict.infoStrip.altContactValue}

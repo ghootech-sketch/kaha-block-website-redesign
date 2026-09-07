@@ -34,12 +34,12 @@ export const BUSINESS_FACTS = {
 
   // Contact Channels
   contact: {
-    primaryPhoneDisplay: "0811 975 3030",
-    primaryPhoneE164: "+628119753030",
-    altPhoneDisplay: "0855 889 3030",
-    altPhoneE164: "+628558893030",
+    primaryPhoneDisplay: "0812 8381 2475",
+    primaryPhoneE164: "+6281283812475",
+    altPhoneDisplay: "0812 8381 2475",
+    altPhoneE164: "+6281283812475",
     email: "sanliong68@gmail.com",
-    whatsappUrl: "https://wa.me/628119753030",
+    whatsappUrl: "https://wa.me/6281283812475",
   },
 
   // Operational & Production Metrics (Verified First-Party Data)
@@ -48,7 +48,7 @@ export const BUSINESS_FACTS = {
     facilityAreaDisplay: "9.080 m²",
     serviceArea: {
       id: "Jabodetabek",
-      en: "Greater Jakarta (Jabodetabek) and surrounding regions",
+      en: "Greater Jakarta (Jabodetabek)",
     },
     machineryType: {
       id: "Mesin full otomatis hidrolik",

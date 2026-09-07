@@ -78,14 +78,7 @@ export function generateStructuredDataGraph({
       {
         "@type": "ContactPoint",
         telephone: BUSINESS_FACTS.contact.primaryPhoneE164,
-        contactType: "sales",
-        areaServed: "ID",
-        availableLanguage: ["id", "en"],
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: BUSINESS_FACTS.contact.altPhoneE164,
-        contactType: "customer support",
+        contactType: "sales and customer support",
         areaServed: "ID",
         availableLanguage: ["id", "en"],
       },
