@@ -187,7 +187,7 @@ export default async function Projects({
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 border-t border-slate-200/80">
               <Link
                 href={`/${currentLang}/contact`}
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
               >
                 <span>{currentLang === "id" ? "Lihat Kontak & Lokasi Pabrik" : "View Contact & Factory Location"}</span>
                 <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
@@ -225,7 +225,7 @@ export default async function Projects({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
                 {dict.projectCta?.button || "Diskusikan Proyek Anda"}

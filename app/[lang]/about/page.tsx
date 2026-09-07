@@ -211,7 +211,7 @@ export default async function About({
                     href={contactDict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full min-h-[44px] bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="inline-flex items-center justify-center w-full min-h-[44px] bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                     {dict.finalCta.ctaPrimary}
@@ -457,7 +457,7 @@ export default async function About({
                     href={contactDict.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-white hover:bg-stone-100 text-primary font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent text-sm sm:text-base"
+                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-white hover:bg-stone-100 text-primary font-bold px-8 py-3.5 rounded-xl transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent text-sm sm:text-base"
                   >
                     <Phone className="w-5 h-5 mr-2 text-primary" aria-hidden="true" />
                     {dict.finalCta.ctaPrimary}
@@ -465,7 +465,7 @@ export default async function About({
 
                   <Link
                     href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-full border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm sm:text-base"
+                    className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-xl border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm sm:text-base"
                   >
                     {dict.finalCta.ctaSecondary}
                     <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />

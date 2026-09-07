@@ -14,7 +14,7 @@ export default function GlobalError({
           <p className="text-slate-600 mb-8">Silakan coba beberapa saat lagi.</p>
           <button
             onClick={() => reset()}
-            className="bg-primary hover:bg-primary-hover text-white px-8 py-3 rounded-full font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="bg-primary hover:bg-primary-hover text-white px-8 py-3 rounded-xl font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             Coba Lagi
           </button>

@@ -153,7 +153,7 @@ export default async function BlogIndexPage({
                     {/* CTA Button */}
                     <Link
                       href={`/${currentLang}/blog/${featuredPost.slug}`}
-                      className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-primary text-white text-sm font-bold hover:bg-primary-hover transition-all duration-200 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                      className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-hover transition-all duration-200 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
                     >
                       <span>{dict.readMore}</span>
                       <ArrowRight className="w-4 h-4" />
@@ -296,7 +296,7 @@ export default async function BlogIndexPage({
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
                   <Link
                     href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px]"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px]"
                   >
                     <Layers className="w-4 h-4 text-primary" />
                     <span>{isEn ? "View Product Catalog" : "Lihat Katalog Produk"}</span>
@@ -305,7 +305,7 @@ export default async function BlogIndexPage({
                     href="https://wa.me/628119753030"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 min-h-[44px]"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 min-h-[44px]"
                   >
                     <Phone className="w-4 h-4 text-emerald-400" />
                     <span>{isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}</span>

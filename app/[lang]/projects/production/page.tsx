@@ -141,7 +141,7 @@ export default async function ProductionGalleryPage({
          ========================================================================= */}
       <section className="bg-white py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="bg-surface-card rounded-[2rem] p-8 sm:p-12 border border-slate-200/80 shadow-xs text-center">
+          <ScrollReveal className="bg-surface-card rounded-2xl p-8 sm:p-12 border border-slate-200/80 shadow-xs text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading mb-4">
               {dict.ctaHeading}
             </h2>

@@ -185,14 +185,14 @@ export default function Gallery({
           {hasMore ? (
             <button
               onClick={handleLoadMore}
-              className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+              className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
             >
               {dict.loadMore}
             </button>
           ) : images.length > INITIAL_COUNT ? (
             <button
               onClick={handleShowLess}
-              className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-300 hover:border-slate-800 px-8 py-3.5 rounded-full font-bold text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+              className="inline-flex items-center justify-center bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-300 hover:border-slate-800 px-8 py-3.5 rounded-xl font-bold text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
             >
               {dict.showLess}
             </button>

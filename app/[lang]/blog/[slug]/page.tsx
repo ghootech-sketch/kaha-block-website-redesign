@@ -558,7 +558,7 @@ export default async function BlogPostPage({
             <div className="flex flex-wrap gap-3 shrink-0">
               <Link
                 href={`/${currentLang}/products`}
-                className="px-5 py-2.5 rounded-full bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px] flex items-center justify-center"
+                className="px-5 py-2.5 rounded-xl bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px] flex items-center justify-center"
               >
                 {isEn ? "View Products" : "Lihat Produk"}
               </Link>
@@ -566,7 +566,7 @@ export default async function BlogPostPage({
                 href="https://wa.me/628119753030"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 flex items-center gap-2 min-h-[44px] justify-center"
+                className="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 flex items-center gap-2 min-h-[44px] justify-center"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
                 <span>WhatsApp</span>

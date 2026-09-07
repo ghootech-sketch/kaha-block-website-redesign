@@ -730,7 +730,7 @@ export default async function Home({
                       href={dict.contact.whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                       {homeDict.installation.cta}
@@ -858,7 +858,7 @@ export default async function Home({
         <section
           id="gallery-preview-section"
           aria-labelledby="gallery-heading"
-          className="py-16 sm:py-20 lg:py-28 bg-surface border-t border-stone-200/40"
+          className="py-20 sm:py-24 lg:py-36 bg-surface border-t border-stone-200/40"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <RevealGroup>

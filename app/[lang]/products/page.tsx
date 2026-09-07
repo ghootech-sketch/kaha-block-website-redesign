@@ -226,7 +226,7 @@ export default async function Products({
                         href={contactDict.whatsappUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-full font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                         {dict.orderCta}
@@ -363,7 +363,7 @@ export default async function Products({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
                 {dict.finalCta?.button || dict.needHelp?.cta}
