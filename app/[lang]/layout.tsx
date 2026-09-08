@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Locale, isValidLocale } from "@/lib/dictionary";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
@@ -53,6 +54,7 @@ export default async function LangLayout({
           {children}
         </main>
         <Footer lang={currentLang} />
+        <FloatingWhatsApp lang={currentLang} />
         <Analytics />
       </body>
     </html>
