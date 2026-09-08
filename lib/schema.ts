@@ -52,8 +52,8 @@ export function generateStructuredDataGraph({
     telephone: BUSINESS_FACTS.contact.primaryPhoneE164,
     address: {
       "@type": "PostalAddress",
-      streetAddress: BUSINESS_FACTS.address.street,
-      addressLocality: BUSINESS_FACTS.address.locality,
+      streetAddress: `${BUSINESS_FACTS.address.street}, ${BUSINESS_FACTS.address.locality}`,
+      addressLocality: isEn ? BUSINESS_FACTS.address.cityEn : BUSINESS_FACTS.address.city,
       addressRegion: BUSINESS_FACTS.address.region,
       postalCode: BUSINESS_FACTS.address.postalCode,
       addressCountry: BUSINESS_FACTS.address.countryCode,

@@ -14,12 +14,14 @@ export const BUSINESS_FACTS = {
   address: {
     street: "Jl. Raya Cibadak No. 7, Suradita",
     locality: "Cisauk",
-    city: "Tangerang",
+    city: "Tangerang Selatan",
+    cityEn: "South Tangerang",
     region: "Banten",
     postalCode: "15343",
     country: "Indonesia",
     countryCode: "ID",
-    formatted: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
+    formatted: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang Selatan 15343",
+    formattedEn: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, South Tangerang 15343",
   },
 
   // Geographic Coordinates & Map Reference
@@ -36,8 +38,10 @@ export const BUSINESS_FACTS = {
   contact: {
     primaryPhoneDisplay: "0812 8381 2475",
     primaryPhoneE164: "+6281283812475",
-    altPhoneDisplay: "0812 8381 2475",
-    altPhoneE164: "+6281283812475",
+    secondaryPhoneDisplay: "0855 889 3030",
+    secondaryPhoneE164: "+628558893030",
+    altPhoneDisplay: "0855 889 3030",
+    altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
     whatsappUrl: "https://wa.me/6281283812475",
   },

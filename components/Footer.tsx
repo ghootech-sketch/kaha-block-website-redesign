@@ -67,15 +67,26 @@ export default function Footer({ lang }: { lang: Locale }) {
             <ul className="space-y-3.5 sm:space-y-4 font-sans text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span className="text-gray-300 min-w-0 flex-1 break-words">{BUSINESS_FACTS.address.formatted}</span>
+                <span className="text-gray-300 min-w-0 flex-1 break-words">
+                  {lang === "en" ? BUSINESS_FACTS.address.formattedEn : BUSINESS_FACTS.address.formatted}
+                </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`tel:${BUSINESS_FACTS.contact.primaryPhoneE164.replace(/\D/g, "")}`}
+                  href={`tel:${BUSINESS_FACTS.contact.primaryPhoneE164}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
                   {BUSINESS_FACTS.contact.primaryPhoneDisplay}
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
+                <a
+                  href={`tel:${BUSINESS_FACTS.contact.secondaryPhoneE164}`}
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
+                >
+                  {BUSINESS_FACTS.contact.secondaryPhoneDisplay}
                 </a>
               </li>
               <li className="flex items-center">

@@ -799,7 +799,7 @@ export const dictionaries = {
       },
       factoryLocationEyebrow: "Lokasi Pabrik",
       factoryLocationHeading: "Paving Block Kaha",
-      address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
+      address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang Selatan 15343",
       openGoogleMaps: "Buka Google Maps",
       mapIframeTitle: "Lokasi Pabrik Kaha Block",
       infoStrip: {
@@ -1688,7 +1688,7 @@ export const dictionaries = {
       },
       factoryLocationEyebrow: "Factory Location",
       factoryLocationHeading: "Paving Block Kaha",
-      address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang 15343",
+      address: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, South Tangerang 15343",
       openGoogleMaps: "Open Google Maps",
       mapIframeTitle: "Kaha Block Factory Location",
       infoStrip: {
