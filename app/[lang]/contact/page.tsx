@@ -120,7 +120,7 @@ export default async function Contact({
             {/* Card 3: Instagram */}
             <ScrollReveal delay={0.15} className="h-full">
               <a
-                href="https://www.instagram.com/kahablock/"
+                href={BUSINESS_FACTS.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-accent rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"

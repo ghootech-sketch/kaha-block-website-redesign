@@ -52,7 +52,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-1 inline-block min-h-[36px]"
+                    className="text-gray-300 hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5 inline-flex items-center min-h-[44px]"
                   >
                     {link.label}
                   </Link>
@@ -75,7 +75,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={`tel:${BUSINESS_FACTS.contact.primaryPhoneE164}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[44px] inline-flex items-center"
                 >
                   {BUSINESS_FACTS.contact.primaryPhoneDisplay}
                 </a>
@@ -87,7 +87,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`WhatsApp Kaha Block ${BUSINESS_FACTS.contact.secondaryPhoneDisplay}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center gap-2"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[44px] inline-flex items-center gap-2"
                 >
                   <span>{BUSINESS_FACTS.contact.secondaryPhoneDisplay}</span>
                   <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-accent px-1.5 py-0.5 rounded border border-accent/30 font-heading">
@@ -99,7 +99,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 <Mail className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={`mailto:${BUSINESS_FACTS.contact.email}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[44px] inline-flex items-center"
                 >
                   {BUSINESS_FACTS.contact.email}
                 </a>
@@ -127,7 +127,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram Kaha Block @kahablock"
-                    className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5"
+                    className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5 min-h-[44px] inline-flex items-center"
                   >
                     @kahablock
                   </a>
@@ -149,7 +149,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook Kaha Block - Richard Kahablock id"
-                    className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5"
+                    className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5 min-h-[44px] inline-flex items-center"
                   >
                     {dict.footer.facebookText}
                   </a>

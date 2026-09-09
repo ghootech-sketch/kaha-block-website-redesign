@@ -339,7 +339,7 @@ export function generateStructuredDataGraph({
         name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
           ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
-          : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
+          : "Keluarga produk: K-250, K-300, dan K-400. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -357,7 +357,7 @@ export function generateStructuredDataGraph({
         name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
         description: isEn
           ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black."
-          : "Keluarga produk: K-300 hingga K-350. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
+          : "Keluarga produk: K-250, K-300, dan K-400. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
