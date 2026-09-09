@@ -179,8 +179,8 @@ export default async function Contact({
               </div>
             </div>
 
-            {/* Map Iframe */}
-            <div className="relative w-full h-[360px] sm:h-[460px] lg:h-[520px]">
+            {/* Map Iframe with Full-Area Clickable Overlay */}
+            <div className="relative group w-full h-[360px] sm:h-[460px] lg:h-[520px] overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2738484247357!2d106.64021975454531!3d-6.358589787390475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46e589e68b5%3A0xfbfdcc6d2b296521!2sPaving%20Block%20Kaha!5e0!3m2!1sid!2sid!4v1788076236518!5m2!1sid!2sid"
                 width="100%"
@@ -190,22 +190,29 @@ export default async function Contact({
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
                 title={dict.mapIframeTitle}
-                className="w-full h-full block"
+                className="w-full h-full block pointer-events-none"
               />
-              {/* Corner Map Action Affordance */}
-              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 pointer-events-auto">
-                <a
-                  href={dict.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white/95 hover:bg-white text-slate-900 hover:text-primary font-semibold text-xs sm:text-sm shadow-md border border-slate-200/80 backdrop-blur-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[38px]"
-                  aria-label={dict.openGoogleMaps}
-                >
+              {/* Full-area clickable overlay to Google Maps */}
+              <a
+                href={dict.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={
+                  lang === "en"
+                    ? "Open Kaha Block factory location in Google Maps"
+                    : "Buka lokasi pabrik Kaha Block di Google Maps"
+                }
+                className="absolute inset-0 z-10 flex items-start justify-end p-3 sm:p-4 bg-black/0 hover:bg-black/5 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
+              >
+                {/* One clear visual hint: Open in Google Maps ↗ (>= 44px touch target) */}
+                <span className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white/95 group-hover:bg-white text-slate-900 group-hover:text-primary font-semibold text-xs sm:text-sm shadow-md border border-slate-200/80 backdrop-blur-xs transition-all min-h-[44px]">
                   <MapPin className="w-4 h-4 text-primary" aria-hidden="true" />
-                  <span>{dict.openGoogleMaps}</span>
+                  <span>
+                    {lang === "en" ? "Open in Google Maps" : "Buka di Google Maps"}
+                  </span>
                   <ExternalLink className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           </ScrollReveal>
 

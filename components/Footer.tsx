@@ -2,7 +2,7 @@ import { dictionaries, Locale } from "@/lib/dictionary";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone, Instagram, Facebook } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Facebook, MessageCircle } from "lucide-react";
 
 export default function Footer({ lang }: { lang: Locale }) {
   const dict = dictionaries[lang];
@@ -81,15 +81,18 @@ export default function Footer({ lang }: { lang: Locale }) {
                 </a>
               </li>
               <li className="flex items-center">
-                <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
+                <MessageCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={BUSINESS_FACTS.contact.secondaryWhatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`WhatsApp Kaha Block ${BUSINESS_FACTS.contact.secondaryPhoneDisplay}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
+                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center gap-2"
                 >
-                  {BUSINESS_FACTS.contact.secondaryPhoneDisplay}
+                  <span>{BUSINESS_FACTS.contact.secondaryPhoneDisplay}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-accent px-1.5 py-0.5 rounded border border-accent/30 font-heading">
+                    WA
+                  </span>
                 </a>
               </li>
               <li className="flex items-center">
