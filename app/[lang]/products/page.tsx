@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
-import { Phone, ChevronDown, CheckCircle2, MessageSquare, Layers, HelpCircle, ArrowDown } from "lucide-react";
+import { Phone, ChevronDown, CheckCircle2, MessageSquare, Layers, ArrowDown } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -73,7 +73,7 @@ export default async function Products({
             <ScrollReveal immediate className="max-w-4xl bg-white rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-slate-200 shadow-xs">
               <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
                 <div className="flex items-center space-x-2 text-slate-900">
-                  <ArrowDown className="w-4 h-4 text-primary" aria-hidden="true" />
+                  <ArrowDown className="w-4 h-4 text-accent" aria-hidden="true" />
                   <span className="text-xs sm:text-sm font-bold uppercase tracking-wider font-heading">
                     {dict.navigator.title}
                   </span>
@@ -91,7 +91,7 @@ export default async function Products({
                       <a
                         key={item.targetId}
                         href={`#${item.targetId}`}
-                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-900 hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-900 hover:border-accent hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         {item.name}
                       </a>
@@ -109,7 +109,7 @@ export default async function Products({
                       <a
                         key={item.targetId}
                         href={`#${item.targetId}`}
-                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-900 hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-900 hover:border-accent hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         {item.name}
                       </a>
@@ -171,7 +171,7 @@ export default async function Products({
 
                           return (
                             <li key={i} className="flex items-start">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-1.5 mr-2 shrink-0" aria-hidden="true" />
+                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent mt-1.5 mr-2 shrink-0" aria-hidden="true" />
                               <span className="leading-snug">
                                 {parts.length > 1 ? (
                                   <>
@@ -192,7 +192,7 @@ export default async function Products({
                       {/* Collapsible Detail Section (Only if extra verified data exists) */}
                       {hasDetails && product.detailSpecs && (
                         <details className="mb-4 group/detail rounded-xl bg-slate-50 border border-slate-200/80 p-3 text-xs sm:text-sm">
-                          <summary className="font-semibold text-slate-900 cursor-pointer hover:text-primary transition-colors list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded select-none">
+                          <summary className="font-semibold text-slate-900 cursor-pointer hover:text-accent transition-colors list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded select-none">
                             <span>{dict.detailsLabel}</span>
                             <ChevronDown className="w-4 h-4 text-slate-500 group-open/detail:rotate-180 transition-transform duration-200" aria-hidden="true" />
                           </summary>
@@ -254,7 +254,7 @@ export default async function Products({
         <section className="bg-surface border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.beforeOrder.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
@@ -301,12 +301,9 @@ export default async function Products({
         <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 mb-3">
-                <HelpCircle className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-900 font-heading">
-                  {dict.faq.eyebrow}
-                </span>
-              </div>
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
+                {dict.faq.eyebrow}
+              </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.faq.title}
               </h2>
@@ -320,7 +317,7 @@ export default async function Products({
               {dict.faq.items.map((item, idx) => (
                 <ScrollReveal key={idx} delay={idx * 0.03}>
                   <details className="group rounded-xl bg-surface border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-accent/40">
-                    <summary className="font-bold text-base sm:text-lg text-slate-900 cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded select-none">
+                    <summary className="font-bold text-base sm:text-lg text-slate-900 cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded select-none">
                       <span className="pr-4 font-heading">{item.q}</span>
                       <ChevronDown className="w-5 h-5 text-slate-500 shrink-0 group-open:rotate-180 transition-transform duration-200" aria-hidden="true" />
                     </summary>

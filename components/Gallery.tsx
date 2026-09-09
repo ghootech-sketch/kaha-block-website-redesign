@@ -79,7 +79,7 @@ export default function Gallery({
         <div className="mb-16 sm:mb-20 md:mb-24">
           {featuredHeader && (
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {featuredHeader.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
@@ -123,8 +123,8 @@ export default function Gallery({
                 {/* Permanent Caption Panel */}
                 <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-surface-card border-t border-slate-100">
                   <div>
-                    <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-primary mb-1.5 font-heading">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
+                    <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-accent mb-1.5 font-heading">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
                       <span>{item.label}</span>
                     </div>
                     <p className="text-sm sm:text-base text-slate-900 font-semibold font-sans leading-snug">

@@ -104,28 +104,28 @@ export default async function ProductionGalleryPage({
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x-0 md:divide-x md:divide-slate-200">
               <div className="flex flex-col items-center text-center px-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4 text-primary">
+                <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Calendar className="w-6 h-6" />
                 </div>
                 <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripSince}</h3>
                 <p className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading">{dict.stripSinceValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4 text-primary">
+                <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Move className="w-6 h-6" />
                 </div>
                 <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripArea}</h3>
                 <p className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading">{dict.stripAreaValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4 text-primary">
+                <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Factory className="w-6 h-6" />
                 </div>
                 <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripMachine}</h3>
                 <p className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">{dict.stripMachineValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
-                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4 text-primary">
+                <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Award className="w-6 h-6" />
                 </div>
                 <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripGrade}</h3>
@@ -142,6 +142,9 @@ export default async function ProductionGalleryPage({
       <section className="bg-white py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="bg-surface-card rounded-2xl p-8 sm:p-12 border border-slate-200/80 shadow-xs text-center">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
+              {currentLang === 'en' ? "Factory Direct" : "Langsung Dari Pabrik"}
+            </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading mb-4">
               {dict.ctaHeading}
             </h2>

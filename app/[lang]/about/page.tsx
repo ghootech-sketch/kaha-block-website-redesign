@@ -136,8 +136,8 @@ export default async function About({
               
               {/* Main Narrative Column (7 cols) */}
               <ScrollReveal direction="right" className="lg:col-span-7 space-y-4 sm:space-y-5 text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed">
-                <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary">
-                  <span className="w-2 h-2 rounded-full bg-primary" aria-hidden="true" />
+                <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                  <span className="w-2 h-2 rounded-full bg-accent" aria-hidden="true" />
                   {dict.overview.eyebrow}
                 </div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight">
@@ -228,7 +228,7 @@ export default async function About({
         <section id="company-facts" className="py-12 sm:py-16 md:py-20 bg-surface border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary block mb-2">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
                 {dict.facts.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight mb-3">
@@ -275,7 +275,7 @@ export default async function About({
         <section id="vision-and-mission" className="py-12 sm:py-16 md:py-20 bg-white border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary block mb-2">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
                 {dict.visionMission.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight mb-3">
@@ -302,7 +302,7 @@ export default async function About({
             {/* Mission Section (01, 02, 03 Numbered Steps) */}
             <div>
               <div className="flex items-center gap-2 mb-6 text-sm sm:text-base font-bold text-slate-900 font-heading">
-                <Compass className="w-5 h-5 text-primary" aria-hidden="true" />
+                <Compass className="w-5 h-5 text-accent" aria-hidden="true" />
                 <span>{dict.visionMission.missionTitle}</span>
               </div>
 
@@ -339,7 +339,7 @@ export default async function About({
         <section id="our-commitments" className="py-12 sm:py-16 md:py-20 bg-surface border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary block mb-2">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
                 {dict.commitments.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight mb-3">
@@ -387,7 +387,7 @@ export default async function About({
         <section id="who-we-serve" className="py-12 sm:py-16 md:py-20 bg-white border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-primary block mb-2">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
                 {dict.whoWeServe.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight mb-3">

@@ -240,9 +240,9 @@ export default async function BlogPostPage({
                   <li key={section.id}>
                     <a
                       href={`#${section.id}`}
-                      className="hover:text-primary transition-colors flex items-start gap-2.5"
+                      className="hover:text-accent transition-colors flex items-start gap-2.5"
                     >
-                      <span className="text-primary font-mono text-xs mt-0.5 font-bold">
+                      <span className="text-accent font-mono text-xs mt-0.5 font-bold">
                         {String(idx + 1).padStart(2, "0")}.
                       </span>
                       <span>{section.heading}</span>
@@ -288,14 +288,14 @@ export default async function BlogPostPage({
                 <div className="my-6 rounded-xl bg-surface-card border border-slate-200 p-5 sm:p-6 shadow-xs">
                   {section.list.title && (
                     <h4 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2 font-heading">
-                      <ShieldCheck className="w-4 h-4 text-primary" />
+                      <ShieldCheck className="w-4 h-4 text-accent" />
                       <span>{section.list.title}</span>
                     </h4>
                   )}
                   <ul className="space-y-2.5 text-sm text-slate-700">
                     {section.list.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                         <span>
                           <FormattedText text={item} />
                         </span>
@@ -400,7 +400,7 @@ export default async function BlogPostPage({
                           <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700">
                             {sub.list.items.map((item, i) => (
                               <li key={i} className="flex items-start gap-2">
-                                <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                                <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />
                                 <span>
                                   <FormattedText text={item} />
                                 </span>
@@ -426,7 +426,7 @@ export default async function BlogPostPage({
           <ul className="space-y-3 text-sm text-slate-800 font-sans">
             {post.summary.points.map((pt, i) => (
               <li key={i} className="flex items-start gap-3">
-                <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
                   <FormattedText text={pt} />
                 </span>
@@ -472,13 +472,13 @@ export default async function BlogPostPage({
           {prevPost ? (
             <Link
               href={`/${currentLang}/blog/${prevPost.slug}`}
-              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-primary/40 transition-colors group text-left shadow-xs"
+              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-accent/60 transition-colors group text-left shadow-xs"
             >
               <span className="text-xs text-slate-500 flex items-center gap-1 mb-1">
                 <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
                 <span>{dict.prevArticle}</span>
               </span>
-              <span className="text-sm font-semibold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 font-heading">
+              <span className="text-sm font-semibold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
                 {prevPost.title}
               </span>
             </Link>
@@ -489,13 +489,13 @@ export default async function BlogPostPage({
           {nextPost ? (
             <Link
               href={`/${currentLang}/blog/${nextPost.slug}`}
-              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-primary/40 transition-colors group text-right sm:text-right shadow-xs"
+              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-accent/60 transition-colors group text-right sm:text-right shadow-xs"
             >
               <span className="text-xs text-slate-500 flex items-center justify-end gap-1 mb-1">
                 <span>{dict.nextArticle}</span>
                 <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
               </span>
-              <span className="text-sm font-semibold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 font-heading">
+              <span className="text-sm font-semibold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
                 {nextPost.title}
               </span>
             </Link>
@@ -514,12 +514,12 @@ export default async function BlogPostPage({
               {relatedPosts.map((rPost) => (
                 <article
                   key={rPost.slug}
-                  className="flex flex-col rounded-xl bg-surface-card border border-slate-200 hover:border-primary/30 p-5 transition-all group shadow-xs"
+                  className="flex flex-col rounded-xl bg-surface-card border border-slate-200 hover:border-accent/50 p-5 transition-all group shadow-xs"
                 >
-                  <span className="text-[11px] font-semibold text-primary mb-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-accent mb-2 font-heading">
                     {rPost.category}
                   </span>
-                  <h3 className="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 mb-2 font-heading">
+                  <h3 className="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 mb-2 font-heading">
                     <Link href={`/${currentLang}/blog/${rPost.slug}`}>
                       {rPost.title}
                     </Link>
@@ -529,7 +529,7 @@ export default async function BlogPostPage({
                   </p>
                   <Link
                     href={`/${currentLang}/blog/${rPost.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-primary-hover mt-auto"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-slate-900 hover:text-accent mt-auto"
                   >
                     <span>{dict.readMore}</span>
                     <ArrowRight className="w-3 h-3" />

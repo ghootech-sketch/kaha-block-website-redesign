@@ -6,7 +6,7 @@ import Gallery from "@/components/Gallery";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, MessageSquare, Layers, Eye } from "lucide-react";
+import { ArrowRight, CheckCircle2, MessageSquare, Layers } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -59,7 +59,7 @@ export default async function Projects({
                     key={idx}
                     className="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-slate-200 text-xs sm:text-sm font-semibold text-slate-900 shadow-none"
                   >
-                    <CheckCircle2 className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
+                    <CheckCircle2 className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
                     {item}
                   </span>
                 ))}
@@ -102,12 +102,9 @@ export default async function Projects({
         <section className="bg-surface border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 mb-3.5">
-                <Eye className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-900 font-heading">
-                  {dict.scope.eyebrow}
-                </span>
-              </div>
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
+                {dict.scope.eyebrow}
+              </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.scope.title}
               </h2>
@@ -149,7 +146,7 @@ export default async function Projects({
         <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.projectSupport.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">

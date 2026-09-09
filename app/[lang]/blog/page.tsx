@@ -108,7 +108,7 @@ export default async function BlogIndexPage({
             <ScrollReveal direction="up">
               <div className="flex items-center gap-2 mb-6">
                 <Sparkles className="w-4 h-4 text-accent" />
-                <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 font-heading">
+                <h2 className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent font-heading">
                   {dict.featuredBadge}
                 </h2>
               </div>
@@ -120,7 +120,7 @@ export default async function BlogIndexPage({
                   <div className="lg:col-span-8">
                     {/* Badges & Meta */}
                     <div className="flex flex-wrap items-center gap-3 mb-4">
-                      <span className="px-3 py-1 rounded-full text-xs font-semibold bg-red-50 text-primary border border-primary/20">
+                      <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-accent/10 text-slate-900 border border-accent/30 font-heading">
                         {featuredPost.category}
                       </span>
                       <div className="flex items-center gap-1.5 text-xs text-slate-500">
@@ -139,7 +139,7 @@ export default async function BlogIndexPage({
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 group-hover:text-primary transition-colors leading-snug font-heading">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 group-hover:text-accent transition-colors leading-snug font-heading">
                       <Link href={`/${currentLang}/blog/${featuredPost.slug}`}>
                         {featuredPost.title}
                       </Link>
@@ -169,7 +169,7 @@ export default async function BlogIndexPage({
                     <ul className="space-y-2.5 text-xs text-slate-700">
                       {featuredPost.summary.points.slice(0, 3).map((pt, i) => (
                         <li key={i} className="flex items-start gap-2 leading-relaxed">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />
                           <span>{pt}</span>
                         </li>
                       ))}
@@ -220,7 +220,7 @@ export default async function BlogIndexPage({
                 <article className="flex flex-col h-full rounded-xl bg-surface-card border border-slate-200/90 hover:border-accent/50 p-6 transition-all duration-300 hover:shadow-md group shadow-none">
                   {/* Category & Reading Time */}
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-red-50 text-primary border border-primary/20">
+                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-accent/10 text-slate-900 border border-accent/30 font-heading">
                       {post.category}
                     </span>
                     <div className="flex items-center gap-1 text-[11px] text-slate-500">
@@ -241,7 +241,7 @@ export default async function BlogIndexPage({
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug mb-3 line-clamp-2 font-heading">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-accent transition-colors leading-snug mb-3 line-clamp-2 font-heading">
                     <Link href={`/${currentLang}/blog/${post.slug}`}>
                       {post.title}
                     </Link>
@@ -256,7 +256,7 @@ export default async function BlogIndexPage({
                   <div className="pt-4 border-t border-slate-100 mt-auto flex items-center justify-between">
                     <Link
                       href={`/${currentLang}/blog/${post.slug}`}
-                      className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:text-primary-hover transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-900 hover:text-accent transition-colors"
                     >
                       <span>{dict.readMore}</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

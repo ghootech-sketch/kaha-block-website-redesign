@@ -15,7 +15,6 @@ import {
   ExternalLink,
   ChevronDown,
   CheckCircle2,
-  HelpCircle,
   Layers,
   Truck,
 } from "lucide-react";
@@ -154,14 +153,14 @@ export default async function Contact({
             {/* Map Header */}
             <div className="p-6 sm:p-8 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-white">
               <div className="space-y-1">
-                <span className="text-xs font-bold uppercase tracking-wider text-primary block font-heading">
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-1 font-heading">
                   {dict.factoryLocationEyebrow}
                 </span>
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">
                   {dict.factoryLocationHeading}
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 font-sans flex items-start sm:items-center gap-1.5 pt-0.5">
-                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" />
+                  <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" />
                   <span>{dict.address}</span>
                 </p>
               </div>
@@ -172,7 +171,7 @@ export default async function Contact({
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 hover:border-accent bg-white hover:bg-slate-50 text-slate-900 font-semibold text-xs sm:text-sm transition-colors shrink-0 min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
-                  <MapPin className="w-4 h-4 text-primary" aria-hidden="true" />
+                  <MapPin className="w-4 h-4 text-accent" aria-hidden="true" />
                   <span>{dict.openGoogleMaps}</span>
                   <ExternalLink className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
                 </a>
@@ -206,7 +205,7 @@ export default async function Contact({
               >
                 {/* One clear visual hint: Open in Google Maps ↗ (>= 44px touch target) */}
                 <span className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white/95 group-hover:bg-white text-slate-900 group-hover:text-primary font-semibold text-xs sm:text-sm shadow-md border border-slate-200/80 backdrop-blur-xs transition-all min-h-[44px]">
-                  <MapPin className="w-4 h-4 text-primary" aria-hidden="true" />
+                  <MapPin className="w-4 h-4 text-accent" aria-hidden="true" />
                   <span>
                     {lang === "en" ? "Open in Google Maps" : "Buka di Google Maps"}
                   </span>
@@ -309,7 +308,7 @@ export default async function Contact({
         <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.prepChecklist.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
@@ -356,7 +355,7 @@ export default async function Contact({
         <section className="bg-surface py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-primary mb-2 block font-heading">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.processFlow.eyebrow}
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
@@ -400,12 +399,9 @@ export default async function Contact({
         <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 mb-3">
-                <HelpCircle className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-900 font-heading">
-                  {dict.faq.eyebrow}
-                </span>
-              </div>
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
+                {dict.faq.eyebrow}
+              </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
                 {dict.faq.title}
               </h2>
@@ -421,9 +417,9 @@ export default async function Contact({
                   <details
                     className="group border-b border-slate-200/90 open:border-accent/40 transition-all duration-200 hover:border-accent/40"
                   >
-                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
+                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
                       <span className="pr-4">{item.q}</span>
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 group-hover:border-primary group-open:rotate-180 transition-transform duration-200">
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 group-hover:border-accent group-open:rotate-180 transition-transform duration-200">
                         <ChevronDown className="w-4 h-4" aria-hidden="true" />
                       </span>
                     </summary>
