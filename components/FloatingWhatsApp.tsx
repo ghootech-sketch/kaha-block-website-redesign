@@ -20,11 +20,11 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={ariaLabel}
-        className="group relative flex items-center justify-center bg-[#25D366] hover:bg-[#20ba59] active:bg-[#1da850] text-white rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-[52px] sm:h-[56px] min-w-[52px] sm:min-w-[56px] px-3 sm:px-3.5 hover:pl-4 focus-visible:pl-4"
+        className="group relative flex items-center justify-center bg-[#25D366] hover:bg-[#20ba59] active:bg-[#1da850] text-white rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-[58px] sm:h-[64px] min-w-[58px] sm:min-w-[64px] px-3.5 sm:px-4 hover:pl-5 focus-visible:pl-5"
       >
         {/* Subtle expanding label on desktop hover/focus (expands smoothly to the left) */}
         <span
-          className="hidden md:inline-block max-w-0 opacity-0 overflow-hidden whitespace-nowrap text-sm font-semibold transition-all duration-300 ease-out group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-2 group-focus-visible:max-w-xs group-focus-visible:opacity-100 group-focus-visible:mr-2"
+          className="hidden md:inline-block max-w-0 opacity-0 overflow-hidden whitespace-nowrap text-sm font-semibold transition-all duration-300 ease-out group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-2.5 group-focus-visible:max-w-xs group-focus-visible:opacity-100 group-focus-visible:mr-2.5"
           aria-hidden="true"
         >
           WhatsApp Kaha Block
@@ -32,7 +32,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
 
         {/* WhatsApp Brand SVG Icon */}
         <svg
-          className="w-7 h-7 sm:w-8 sm:h-8 fill-current flex-shrink-0"
+          className="w-8 h-8 sm:w-9 sm:h-9 fill-current flex-shrink-0"
           viewBox="0 0 24 24"
           aria-hidden="true"
         >

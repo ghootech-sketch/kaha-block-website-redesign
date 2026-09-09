@@ -1,4 +1,5 @@
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -179,7 +180,7 @@ export default async function Contact({
             </div>
 
             {/* Map Iframe */}
-            <div className="w-full h-[360px] sm:h-[460px] lg:h-[520px]">
+            <div className="relative w-full h-[360px] sm:h-[460px] lg:h-[520px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2738484247357!2d106.64021975454531!3d-6.358589787390475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e46e589e68b5%3A0xfbfdcc6d2b296521!2sPaving%20Block%20Kaha!5e0!3m2!1sid!2sid!4v1788076236518!5m2!1sid!2sid"
                 width="100%"
@@ -191,6 +192,20 @@ export default async function Contact({
                 title={dict.mapIframeTitle}
                 className="w-full h-full block"
               />
+              {/* Corner Map Action Affordance */}
+              <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 pointer-events-auto">
+                <a
+                  href={dict.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white/95 hover:bg-white text-slate-900 hover:text-primary font-semibold text-xs sm:text-sm shadow-md border border-slate-200/80 backdrop-blur-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[38px]"
+                  aria-label={dict.openGoogleMaps}
+                >
+                  <MapPin className="w-4 h-4 text-primary" aria-hidden="true" />
+                  <span>{dict.openGoogleMaps}</span>
+                  <ExternalLink className="w-3.5 h-3.5 text-slate-500" aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </ScrollReveal>
 
@@ -219,6 +234,19 @@ export default async function Contact({
                   <p className="text-xs sm:text-sm text-slate-600 font-sans mt-1 leading-relaxed">
                     {dict.infoStrip.altContactDesc}
                   </p>
+                  <div className="pt-2.5 mt-2.5 border-t border-slate-100">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 block mb-0.5 font-heading">
+                      {dict.infoStrip.secondaryContactLabel}
+                    </span>
+                    <a
+                      href={BUSINESS_FACTS.contact.secondaryWhatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm sm:text-base font-bold text-slate-700 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+                    >
+                      {dict.infoStrip.secondaryContactValue}
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -249,9 +277,14 @@ export default async function Contact({
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
                     {dict.infoStrip.facebookLabel}
                   </span>
-                  <p className="text-base sm:text-lg font-bold text-slate-900">
+                  <a
+                    href={BUSINESS_FACTS.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base sm:text-lg font-bold text-slate-900 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+                  >
                     {dict.infoStrip.facebookValue}
-                  </p>
+                  </a>
                   <p className="text-xs sm:text-sm text-slate-600 font-sans mt-1 leading-relaxed">
                     {dict.infoStrip.facebookDesc}
                   </p>

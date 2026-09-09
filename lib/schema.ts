@@ -83,7 +83,7 @@ export function generateStructuredDataGraph({
         availableLanguage: ["id", "en"],
       },
     ],
-    sameAs: [BUSINESS_FACTS.social.instagram],
+    sameAs: [BUSINESS_FACTS.social.instagram, BUSINESS_FACTS.social.facebook],
   };
 
   // 2. WebSite Entity

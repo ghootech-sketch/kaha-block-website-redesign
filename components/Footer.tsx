@@ -83,7 +83,10 @@ export default function Footer({ lang }: { lang: Locale }) {
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
-                  href={`tel:${BUSINESS_FACTS.contact.secondaryPhoneE164}`}
+                  href={BUSINESS_FACTS.contact.secondaryWhatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`WhatsApp Kaha Block ${BUSINESS_FACTS.contact.secondaryPhoneDisplay}`}
                   className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[36px] inline-flex items-center"
                 >
                   {BUSINESS_FACTS.contact.secondaryPhoneDisplay}
@@ -127,11 +130,27 @@ export default function Footer({ lang }: { lang: Locale }) {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-3 text-gray-300 text-sm font-sans">
-                <div className="bg-slate-800 p-2.5 sm:p-3 rounded-full min-w-[44px] min-h-[44px] flex items-center justify-center">
+              <div className="flex items-center space-x-3">
+                <a
+                  href={BUSINESS_FACTS.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook Kaha Block - Richard Kahablock id"
+                  className="bg-slate-800 p-2.5 sm:p-3 rounded-full hover:bg-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-w-[44px] min-h-[44px] flex items-center justify-center flex-shrink-0"
+                >
                   <Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-white" aria-hidden="true" />
+                </a>
+                <div className="flex flex-wrap items-center gap-x-1.5 text-gray-300 text-sm font-sans">
+                  <a
+                    href={BUSINESS_FACTS.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook Kaha Block - Richard Kahablock id"
+                    className="hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-0.5"
+                  >
+                    {dict.footer.facebookText}
+                  </a>
                 </div>
-                <span>{dict.footer.facebookText}</span>
               </div>
             </div>
             <div className="mt-5 sm:mt-6">
