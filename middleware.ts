@@ -16,11 +16,22 @@ function applyVercelRobotsHeader(request: NextRequest, response: NextResponse): 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
-  // Skip public files and api routes
+  // Handle Vercel Analytics telemetry endpoints gracefully
+  if (pathname.startsWith('/_vercel/')) {
+    return new NextResponse(null, { status: 204 });
+  }
+
+  // Skip public files, next assets, videos, and api routes
   if (
     pathname.startsWith('/_next') ||
+    pathname.startsWith('/_vercel') ||
     pathname.startsWith('/images') ||
-    pathname.includes('/api/') ||
+    pathname.startsWith('/videos') ||
+    pathname.startsWith('/api/') ||
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.xml' ||
+    pathname === '/icon.png' ||
+    pathname === '/favicon.ico' ||
     pathname.match(/\.(.*)$/)
   ) {
     return applyVercelRobotsHeader(request, NextResponse.next());
@@ -65,6 +76,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|images/).*)',
+    '/((?!_next/static|_next/image|favicon.ico|icon.png|images/|videos/).*)',
   ],
 };

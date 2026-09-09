@@ -71,16 +71,20 @@ export default async function Home({
       id: "prod-01",
       videoSrc: "/videos/factory/factory-production-01.mp4",
       posterSrc: "/images/factory/factory-production-01.webp",
+      title: currentLang === "en" ? "Hydraulic Press Machine" : "Mesin Press Hidrolik Otomatis",
     },
     {
-      id: "prod-02",
-      videoSrc: "/videos/factory/factory-production-02.mp4",
-      posterSrc: "/images/factory/factory-production-02.webp",
+      id: "prod-07",
+      videoSrc: "/videos/factory/factory-production-07.mp4",
+      posterSrc: "/images/factory/factory-production-07.webp",
+      title: currentLang === "en" ? "Red Paving Block Production" : "Produksi Paving Block Merah",
+      tag: currentLang === "en" ? "Red Paving" : "Paving Merah",
     },
     {
       id: "prod-03",
       videoSrc: "/videos/factory/factory-production-03.mp4",
       posterSrc: "/images/factory/factory-production-03.webp",
+      title: currentLang === "en" ? "Factory Curing & Operations" : "Operasional & Pengeringan Pabrik",
     },
   ];
 
