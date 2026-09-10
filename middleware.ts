@@ -17,7 +17,7 @@ export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   // Handle Vercel Analytics telemetry endpoints gracefully
-  if (pathname.startsWith('/_vercel/')) {
+  if (pathname === '/_vercel' || pathname.startsWith('/_vercel/')) {
     return new NextResponse(null, { status: 204 });
   }
 

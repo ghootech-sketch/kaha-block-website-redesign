@@ -1,4 +1,5 @@
 import "../globals.css";
+import type { Metadata } from "next";
 import { Poppins, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Locale, isValidLocale } from "@/lib/dictionary";
@@ -6,6 +7,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Analytics } from "@vercel/analytics/next";
+
+export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
+};
 
 const poppins = Poppins({
   subsets: ["latin"],

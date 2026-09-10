@@ -14,7 +14,9 @@ export default function JsonLd({ page = "home", lang = "id", post }: JsonLdProps
 
   return (
     <script
+      id={`json-ld-${page}`}
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
     />
   );
