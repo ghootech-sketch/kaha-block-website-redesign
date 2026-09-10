@@ -176,30 +176,6 @@ export default async function ProductionGalleryPage({
       title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
-      id: "prod-vid-14",
-      videoSrc: "/videos/factory/factory-production-14.mp4",
-      posterSrc: "/images/factory/factory-production-06.webp",
-      title: currentLang === 'en' ? "Hydraulic Machinery" : "Mesin Hidrolik Produksi",
-    },
-    {
-      id: "prod-vid-15",
-      videoSrc: "/videos/factory/factory-production-15.mp4",
-      posterSrc: "/images/factory/factory-production-01.webp",
-      title: currentLang === 'en' ? "Production Workflow" : "Alur Produksi Paving",
-    },
-    {
-      id: "prod-vid-16",
-      videoSrc: "/videos/factory/factory-production-16.mp4",
-      posterSrc: "/images/factory/factory-production-02.webp",
-      title: currentLang === 'en' ? "Factory Operations" : "Operasional Pabrik",
-    },
-    {
-      id: "prod-vid-17",
-      videoSrc: "/videos/factory/factory-production-17.mp4",
-      posterSrc: "/images/factory/factory-production-03.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-    {
       id: "prod-vid-18",
       videoSrc: "/videos/factory/factory-production-18.mp4",
       posterSrc: "/images/factory/factory-production-04.webp",
