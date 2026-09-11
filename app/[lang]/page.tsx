@@ -68,12 +68,6 @@ export default async function Home({
 
   const homepageVideos: FactoryVideoData[] = [
     {
-      id: "prod-01",
-      videoSrc: "/videos/factory/factory-production-01.mp4",
-      posterSrc: "/images/factory/factory-production-01.webp",
-      title: currentLang === "en" ? "Hydraulic Press Machine" : "Mesin Press Hidrolik Otomatis",
-    },
-    {
       id: "prod-07",
       videoSrc: "/videos/factory/factory-production-07.mp4",
       posterSrc: "/images/factory/factory-production-07.webp",
@@ -81,10 +75,17 @@ export default async function Home({
       tag: currentLang === "en" ? "Red Paving" : "Paving Merah",
     },
     {
-      id: "prod-03",
-      videoSrc: "/videos/factory/factory-production-03.mp4",
-      posterSrc: "/images/factory/factory-production-03.webp",
-      title: currentLang === "en" ? "Factory Curing & Operations" : "Operasional & Pengeringan Pabrik",
+      id: "prod-23",
+      videoSrc: "/videos/factory/factory-production-23.mp4",
+      posterSrc: "/images/factory/factory-production-23.webp",
+      title: currentLang === "en" ? "Red Paving Block Molding Cycle" : "Siklus Pencetakan Paving Block Merah",
+      tag: currentLang === "en" ? "Red Paving" : "Paving Merah",
+    },
+    {
+      id: "prod-12",
+      videoSrc: "/videos/factory/factory-production-12.mp4",
+      posterSrc: "/images/factory/factory-production-12.webp",
+      title: currentLang === "en" ? "Production Operations" : "Operasional Produksi",
     },
   ];
 
@@ -382,6 +383,23 @@ export default async function Home({
           videos={homepageVideos}
           variant="premium"
         />
+
+        {/* View More Production Videos CTA */}
+        <div className="bg-dark pb-12 sm:pb-16 -mt-4 sm:-mt-6 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Link
+              href={`/${currentLang}/projects/production#production-videos`}
+              className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3 rounded-xl font-bold text-sm sm:text-base transition-all duration-200 cursor-pointer min-h-[44px] bg-stone-800 hover:bg-stone-700 text-white border border-stone-700 hover:border-accent/60 font-heading shadow-xs hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <span>
+                {currentLang === "en"
+                  ? "View More Production Videos"
+                  : "Lihat Video Produksi Lainnya"}
+              </span>
+              <ArrowRight className="w-4 h-4 text-accent" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
 
         {/* =========================================================================
             SECTION 3: FEATURED PRODUCTS PREVIEW (5 Product Cards Balanced Grid)

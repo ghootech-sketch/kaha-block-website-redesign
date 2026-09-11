@@ -82,24 +82,14 @@ export default async function About({
 
   const aboutVideos: FactoryVideoData[] = [
     {
-      id: "prod-01",
-      videoSrc: "/videos/factory/factory-production-01.mp4",
-      posterSrc: "/images/factory/factory-production-01.webp",
+      id: "prod-07",
+      videoSrc: "/videos/factory/factory-production-07.mp4",
+      posterSrc: "/images/factory/factory-production-07.webp",
     },
     {
-      id: "prod-02",
-      videoSrc: "/videos/factory/factory-production-02.mp4",
-      posterSrc: "/images/factory/factory-production-02.webp",
-    },
-    {
-      id: "prod-03",
-      videoSrc: "/videos/factory/factory-production-03.mp4",
-      posterSrc: "/images/factory/factory-production-03.webp",
-    },
-    {
-      id: "prod-04",
-      videoSrc: "/videos/factory/factory-production-04.mp4",
-      posterSrc: "/images/factory/factory-production-04.webp",
+      id: "prod-23",
+      videoSrc: "/videos/factory/factory-production-23.mp4",
+      posterSrc: "/images/factory/factory-production-23.webp",
     },
     {
       id: "prod-05",
@@ -110,6 +100,16 @@ export default async function About({
       id: "prod-06",
       videoSrc: "/videos/factory/factory-production-06.mp4",
       posterSrc: "/images/factory/factory-production-06.webp",
+    },
+    {
+      id: "prod-12",
+      videoSrc: "/videos/factory/factory-production-12.mp4",
+      posterSrc: "/images/factory/factory-production-12.webp",
+    },
+    {
+      id: "prod-13",
+      videoSrc: "/videos/factory/factory-production-13.mp4",
+      posterSrc: "/images/factory/factory-production-13.webp",
     },
   ];
 

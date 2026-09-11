@@ -62,8 +62,8 @@ export default async function ProductionGalleryPage({
     }
   ];
 
-  // 23 production videos: 01-06 preserved, 07-23 added
-  // Videos 07 and 23 prioritized first (confirmed red paving block production)
+  // 15 unique production videos (01-04 duplicates removed)
+  // Recommended order: 07, 23, 05, 06, 12, 13, 19, 20, 21, 22, 08, 09, 10, 11, 18
   const productionVideos: FactoryVideoData[] = [
     {
       id: "prod-vid-07",
@@ -80,106 +80,82 @@ export default async function ProductionGalleryPage({
       tag: currentLang === 'en' ? "Red Paving" : "Paving Merah",
     },
     {
-      id: "prod-vid-01",
-      videoSrc: "/videos/factory/factory-production-01.mp4",
-      posterSrc: "/images/factory/factory-production-01.webp",
-      title: currentLang === 'en' ? "Automatic Hydraulic Press Machine" : "Mesin Press Hidrolik Otomatis",
-    },
-    {
       id: "prod-vid-05",
       videoSrc: "/videos/factory/factory-production-05.mp4",
       posterSrc: "/images/factory/factory-production-05.webp",
-      title: currentLang === 'en' ? "Automated Stacking & Curing Transit" : "Penataan Otomatis & Transit Curing",
+      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
       id: "prod-vid-06",
       videoSrc: "/videos/factory/factory-production-06.mp4",
       posterSrc: "/images/factory/factory-production-06.webp",
-      title: currentLang === 'en' ? "Production Floor & Heavy Machinery" : "Lantai Produksi & Alat Berat Pabrik",
-    },
-    {
-      id: "prod-vid-02",
-      videoSrc: "/videos/factory/factory-production-02.mp4",
-      posterSrc: "/images/factory/factory-production-02.webp",
-      title: currentLang === 'en' ? "High-Pressure Compaction Process" : "Proses Pemadatan Tekanan Tinggi",
+      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
     },
     {
       id: "prod-vid-12",
       videoSrc: "/videos/factory/factory-production-12.mp4",
       posterSrc: "/images/factory/factory-production-12.webp",
-      title: currentLang === 'en' ? "Production Process Documentation" : "Dokumentasi Proses Produksi",
+      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-13",
       videoSrc: "/videos/factory/factory-production-13.mp4",
       posterSrc: "/images/factory/factory-production-13.webp",
-      title: currentLang === 'en' ? "Hydraulic Unit Operation" : "Operasional Unit Hidrolik",
+      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
       id: "prod-vid-19",
       videoSrc: "/videos/factory/factory-production-19.mp4",
       posterSrc: "/images/factory/factory-production-19.webp",
-      title: currentLang === 'en' ? "Production Plant Overview" : "Dokumentasi Fasilitas Produksi",
+      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
     },
     {
       id: "prod-vid-20",
       videoSrc: "/videos/factory/factory-production-20.mp4",
       posterSrc: "/images/factory/factory-production-20.webp",
-      title: currentLang === 'en' ? "Conveyor & Material Handling" : "Konveyor & Distribusi Material",
+      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-21",
       videoSrc: "/videos/factory/factory-production-21.mp4",
       posterSrc: "/images/factory/factory-production-21.webp",
-      title: currentLang === 'en' ? "Continuous Molding Workflow" : "Alur Cetak Berkelanjutan",
+      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
       id: "prod-vid-22",
       videoSrc: "/videos/factory/factory-production-22.mp4",
       posterSrc: "/images/factory/factory-production-22.webp",
-      title: currentLang === 'en' ? "Quality Inspection & Stacking" : "Inspeksi & Penataan Produk Jadi",
-    },
-    {
-      id: "prod-vid-03",
-      videoSrc: "/videos/factory/factory-production-03.mp4",
-      posterSrc: "/images/factory/factory-production-03.webp",
-      title: currentLang === 'en' ? "Curing Area & Stock Management" : "Area Curing & Manajemen Stok",
-    },
-    {
-      id: "prod-vid-04",
-      videoSrc: "/videos/factory/factory-production-04.mp4",
-      posterSrc: "/images/factory/factory-production-04.webp",
-      title: currentLang === 'en' ? "Batching & Raw Material Loading" : "Pengisian Material & Batching Plant",
+      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
     },
     {
       id: "prod-vid-08",
       videoSrc: "/videos/factory/factory-production-08.mp4",
       posterSrc: "/images/factory/factory-production-02.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
+      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-09",
       videoSrc: "/videos/factory/factory-production-09.mp4",
       posterSrc: "/images/factory/factory-production-03.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
+      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
       id: "prod-vid-10",
       videoSrc: "/videos/factory/factory-production-10.mp4",
       posterSrc: "/images/factory/factory-production-04.webp",
-      title: currentLang === 'en' ? "Factory Operations" : "Operasional Pabrik",
+      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
     },
     {
       id: "prod-vid-11",
       videoSrc: "/videos/factory/factory-production-11.mp4",
       posterSrc: "/images/factory/factory-production-05.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
+      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-18",
       videoSrc: "/videos/factory/factory-production-18.mp4",
       posterSrc: "/images/factory/factory-production-04.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
+      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
   ];
 
@@ -296,7 +272,7 @@ export default async function ProductionGalleryPage({
       </section>
 
       {/* =========================================================================
-          4. PRODUCTION VIDEO GALLERY (23 Videos, 6 Initial, Load More)
+          4. PRODUCTION VIDEO GALLERY (15 Unique Videos, 6 Initial, Load More)
          ========================================================================= */}
       <FactoryVideoGallery
         eyebrow={dict.factoryVideos.eyebrow}
