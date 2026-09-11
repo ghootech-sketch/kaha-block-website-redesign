@@ -302,8 +302,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-truepave`,
         name: isEn ? "Truepave" : "Truepave",
         description: isEn
-          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Compressive Strength: K-250, K-300, and K-400. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Kuat Tekan: K-250, K-300, dan K-400. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
+          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
+          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -320,8 +320,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-half-tahu`,
         name: isEn ? "Half / Tahu" : "Half / Tahu",
         description: isEn
-          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Compressive Strength: K-250, K-300, and K-400. Function: Paving pattern lock & color boundary."
-          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Kuat Tekan: K-250, K-300, and K-400. Fungsi: Pengunci pola paving & pembatas warna.",
+          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Function: Paving pattern lock & color boundary."
+          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Fungsi: Pengunci pola paving & pembatas warna.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -338,8 +338,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-hexa`,
         name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
         description: isEn
-          ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
-          : "Keluarga produk: K-250, K-300, dan K-400. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
+          ? "Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
+          : "Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",
@@ -356,8 +356,8 @@ export function generateStructuredDataGraph({
         "@id": `${canonicalUrl}#product-ubin`,
         name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
         description: isEn
-          ? "Product family: K-250, K-300, and K-400. Thickness: 8 cm. Color Options: Grey, Red, Black."
-          : "Keluarga produk: K-250, K-300, dan K-400. Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
+          ? "Thickness: 8 cm. Color Options: Grey, Red, Black."
+          : "Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
         brand: {
           "@type": "Brand",
           name: "Kaha Block",

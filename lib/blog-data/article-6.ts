@@ -262,7 +262,7 @@ export const article6En: BlogPost = {
         caption: "Typical Cross-Sectional Layers for Industrial Concrete Block Pavements",
         headers: ["Structural Layer", "Specified Material", "Typical Depth", "Technical Purpose"],
         rows: [
-          ["Surface Course (Pavers)", "Truepave K-250/K-300/K-400 Grade (Hydraulic Press)", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
+          ["Surface Course (Pavers)", "Truepave (Hydraulic Press)", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
           ["Jointing Sand", "Dry silica sand (0.1 - 2.0 mm grading)", "2 - 4 mm joint gaps", "Transmits horizontal shear forces across blocks via mechanical wedge action."],
           ["Bedding Sand", "Clean sharp concrete sand (fines < 3%)", "3 - 5 cm (uncompacted)", "Provides a uniform seating layer for block bedding."],
           ["Base Course", "Class A dense-graded crushed stone aggregate", "15 - 25 cm (compacted)", "Primary load-spreading foundation distributing loads across the subgrade."],

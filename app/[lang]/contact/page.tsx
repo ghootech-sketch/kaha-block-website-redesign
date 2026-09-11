@@ -245,9 +245,7 @@ export default async function Contact({
                       {dict.infoStrip.secondaryContactLabel}
                     </span>
                     <a
-                      href={BUSINESS_FACTS.contact.secondaryWhatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`tel:${BUSINESS_FACTS.contact.secondaryPhoneE164}`}
                       className="text-sm sm:text-base font-bold text-slate-700 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
                     >
                       {dict.infoStrip.secondaryContactValue}

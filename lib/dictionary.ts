@@ -90,7 +90,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "PRODUK UNGGULAN",
           title: "Pilihan Produk Kaha Block",
-          highlightBadge: "Truepave • K-250 • K-300 • K-400",
+          highlightBadge: "K-250 • K-300 • K-400",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -410,11 +410,10 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-250 • K-300 • K-400",
+          badge: "Paving Bata",
           quickSpecs: [
             "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
             "Pilihan Tebal: 6 cm, 8 cm, 10 cm",
-            "Kuat Tekan: K-250, K-300, dan K-400",
             "Toleransi Ukuran: ± 2 mm & 2 kg",
           ],
           detailSpecs: [
@@ -434,7 +433,6 @@ export const dictionaries = {
             "Ukuran: 10,5 × 10,5 cm",
             "Pilihan Tebal: 6 cm, 8 cm",
             "Daya Tutup: 88 pcs/m²",
-            "Kuat Tekan: K-250, K-300, dan K-400",
             "Fungsi: Pengunci pola paving & pembatas warna",
           ],
           detailSpecs: [
@@ -584,7 +582,7 @@ export const dictionaries = {
         items: [
           {
             q: "Bagaimana menentukan produk yang sesuai dengan kebutuhan area?",
-            a: "Pemilihan produk disesuaikan dengan jenis lalu lintas beban dan fungsi lahan. Untuk area pejalan kaki atau taman, ketebalan 6 cm umumnya mencukupi. Untuk jalan lingkungan, area parkir, atau lintasan kendaraan sedang hingga berat, disarankan ketebalan 8 cm atau 10 cm dengan mutu beton K-300 ke atas. Tim kami siap membantu meninjau kebutuhan spesifik area Anda.",
+            a: "Pemilihan ketebalan dan mutu beton perlu disesuaikan dengan fungsi area, intensitas lalu lintas, dan kebutuhan proyek. Tim Kaha Block dapat membantu menentukan spesifikasi yang sesuai.",
           },
           {
             q: "Apakah tersedia pilihan warna dan ketebalan?",
@@ -813,7 +811,7 @@ export const dictionaries = {
         altContactLabel: "WhatsApp Utama",
         altContactValue: "0812 8381 2475",
         altContactDesc: "Kontak utama Kaha Block untuk informasi dan konsultasi",
-        secondaryContactLabel: "WhatsApp Lainnya",
+        secondaryContactLabel: "Telepon Lainnya",
         secondaryContactValue: "0855 889 3030",
         coverageLabel: "Jangkauan Layanan",
         coverageValue: "Jabodetabek",
@@ -984,7 +982,7 @@ export const dictionaries = {
         productNavigator: {
           eyebrow: "FEATURED RANGE",
           title: "Kaha Block Product Range",
-          highlightBadge: "Truepave • K-250 • K-300 • K-400",
+          highlightBadge: "K-250 • K-300 • K-400",
           products: [
             "Truepave",
             "Half / Tahu",
@@ -1304,11 +1302,10 @@ export const dictionaries = {
         truepave: {
           name: "Truepave",
           image: "/images/products/kaha-block-truepave.webp",
-          badge: "K-250, K-300, and K-400",
+          badge: "Standard Paver",
           quickSpecs: [
             "Color Options: Grey, Red, Black, Yellow",
             "Height Options: 6 cm, 8 cm, 10 cm",
-            "Compressive Strength: K-250, K-300, and K-400",
             "Size Tolerance: ± 2 mm & 2 kg",
           ],
           detailSpecs: [
@@ -1328,7 +1325,6 @@ export const dictionaries = {
             "Size: 10.5 × 10.5 cm",
             "Height Options: 6 cm, 8 cm",
             "Coverage: 88 pcs/m²",
-            "Compressive Strength: K-250, K-300, dan K-400",
             "Function: Paving pattern lock & border accent",
           ],
           detailSpecs: [
@@ -1478,7 +1474,7 @@ export const dictionaries = {
         items: [
           {
             q: "How do I determine the right product for site requirements?",
-            a: "Product selection depends on anticipated traffic load and site function. For pedestrian walkways or gardens, 6 cm thickness is generally suitable. For residential roads, parking lots, or medium-to-heavy vehicle traffic, 8 cm or 10 cm thickness with K-300 compressive strength or higher is recommended. Our team is ready to review your site requirements.",
+            a: "Thickness and concrete grade should be selected according to site function, traffic intensity, and project requirements. The Kaha Block team can help determine the appropriate specification.",
           },
           {
             q: "Are color and thickness options available?",
@@ -1711,7 +1707,7 @@ export const dictionaries = {
         altContactLabel: "Main WhatsApp",
         altContactValue: "0812 8381 2475",
         altContactDesc: "Kaha Block's main contact for information and consultation",
-        secondaryContactLabel: "Additional WhatsApp",
+        secondaryContactLabel: "Additional Phone",
         secondaryContactValue: "0855 889 3030",
         coverageLabel: "Service Coverage",
         coverageValue: "Greater Jakarta",

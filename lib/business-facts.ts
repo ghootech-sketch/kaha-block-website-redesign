@@ -40,7 +40,6 @@ export const BUSINESS_FACTS = {
     primaryPhoneE164: "+6281283812475",
     secondaryPhoneDisplay: "0855 889 3030",
     secondaryPhoneE164: "+628558893030",
-    secondaryWhatsappUrl: "https://wa.me/628558893030",
     altPhoneDisplay: "0855 889 3030",
     altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
