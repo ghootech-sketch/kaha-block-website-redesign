@@ -130,31 +130,31 @@ export default async function ProductionGalleryPage({
     {
       id: "prod-vid-08",
       videoSrc: "/videos/factory/factory-production-08.mp4",
-      posterSrc: "/images/factory/factory-production-02.webp",
+      posterSrc: "/images/factory/factory-production-08.webp",
       title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-09",
       videoSrc: "/videos/factory/factory-production-09.mp4",
-      posterSrc: "/images/factory/factory-production-03.webp",
+      posterSrc: "/images/factory/factory-production-09.webp",
       title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
     {
       id: "prod-vid-10",
       videoSrc: "/videos/factory/factory-production-10.mp4",
-      posterSrc: "/images/factory/factory-production-04.webp",
+      posterSrc: "/images/factory/factory-production-10.webp",
       title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
     },
     {
       id: "prod-vid-11",
       videoSrc: "/videos/factory/factory-production-11.mp4",
-      posterSrc: "/images/factory/factory-production-05.webp",
+      posterSrc: "/images/factory/factory-production-11.webp",
       title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
     },
     {
       id: "prod-vid-18",
       videoSrc: "/videos/factory/factory-production-18.mp4",
-      posterSrc: "/images/factory/factory-production-04.webp",
+      posterSrc: "/images/factory/factory-production-18.webp",
       title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
     },
   ];
