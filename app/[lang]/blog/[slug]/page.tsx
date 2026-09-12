@@ -1,3 +1,4 @@
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructBlogPostMetadata } from "@/lib/metadata";
 import {
@@ -82,7 +83,6 @@ export default async function BlogPostPage({
   const currentLang = lang as Locale;
   const isEn = currentLang === "en";
   const dict = dictionaries[currentLang].blog;
-  const contactDict = dictionaries[currentLang].contact;
 
   const post = getBlogPostBySlug(slug, currentLang);
   if (!post) {
@@ -572,15 +572,24 @@ export default async function BlogPostPage({
                 : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik."}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               <a
-                href={contactDict.whatsappUrl}
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                {isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}
+                WhatsApp 1
+              </a>
+              <a
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
+              >
+                <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
+                WhatsApp 2
               </a>
               <Link
                 href={`/${currentLang}/products`}

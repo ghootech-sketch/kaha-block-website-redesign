@@ -1,3 +1,4 @@
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -32,7 +33,6 @@ export default async function Projects({
   }
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].projects;
-  const contactDict = dictionaries[currentLang].contact;
 
   const featuredList = dict.featured
     ? [dict.featured.item1, dict.featured.item2, dict.featured.item3]
@@ -224,7 +224,7 @@ export default async function Projects({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href={contactDict.whatsappUrl} 
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent uppercase font-heading tracking-wide"

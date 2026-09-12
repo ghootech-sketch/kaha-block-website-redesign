@@ -1,3 +1,4 @@
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -43,7 +44,6 @@ export default async function Products({
   }
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].products;
-  const contactDict = dictionaries[currentLang].contact;
   
   const productKeys = Object.keys(dict.items) as Array<keyof typeof dict.items>;
 
@@ -224,7 +224,7 @@ export default async function Products({
                     {/* Bottom-Aligned WhatsApp CTA */}
                     <div className="mt-auto pt-2">
                       <a 
-                        href={contactDict.whatsappUrl} 
+                        href={index % 2 === 0 ? BUSINESS_FACTS.contact.whatsappPrimaryUrl : BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -361,7 +361,7 @@ export default async function Products({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href={contactDict.whatsappUrl} 
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

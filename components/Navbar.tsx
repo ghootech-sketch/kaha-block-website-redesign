@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { dictionaries, Locale } from "@/lib/dictionary";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { Menu, X, Phone, ChevronDown, MessageCircle } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar({ lang }: { lang: Locale }) {
@@ -15,6 +16,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
   const [desktopProjectsOpen, setDesktopProjectsOpen] = useState(false);
+  const [desktopWhatsappOpen, setDesktopWhatsappOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -217,20 +219,67 @@ export default function Navbar({ lang }: { lang: Locale }) {
               {/* Subtle vertical separator before WhatsApp CTA */}
               <div className="h-9 w-px bg-white/15" aria-hidden="true" />
 
-              <a
-                href={dict.contact.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={
-                  lang === "en"
-                    ? "Contact WhatsApp Kaha Block"
-                    : "Hubungi WhatsApp Kaha Block"
-                }
-                className="inline-flex items-center justify-center px-7 h-[54px] rounded-[16px] text-sm font-bold tracking-wider uppercase transition-all bg-[#B22222] hover:bg-[#991B1B] text-white border border-red-400/20 shadow-[0_4px_16px_rgba(178,34,34,0.35)] hover:shadow-[0_6px_20px_rgba(178,34,34,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading"
+              <div 
+                className="relative"
+                onMouseEnter={() => setDesktopWhatsappOpen(true)}
+                onMouseLeave={() => setDesktopWhatsappOpen(false)}
               >
-                <Phone className="w-4 h-4 mr-2.5 text-white" aria-hidden="true" />
-                WhatsApp
-              </a>
+                <button
+                  onClick={() => setDesktopWhatsappOpen(!desktopWhatsappOpen)}
+                  aria-expanded={desktopWhatsappOpen}
+                  aria-label={
+                    lang === "en"
+                      ? "Contact WhatsApp Kaha Block"
+                      : "Hubungi WhatsApp Kaha Block"
+                  }
+                  className={`inline-flex items-center justify-center px-7 h-[54px] rounded-[16px] text-sm font-bold tracking-wider uppercase transition-all border border-red-400/20 shadow-[0_4px_16px_rgba(178,34,34,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading ${
+                    desktopWhatsappOpen 
+                      ? "bg-[#991B1B] text-white shadow-[0_6px_20px_rgba(178,34,34,0.45)]" 
+                      : "bg-[#B22222] hover:bg-[#991B1B] text-white hover:shadow-[0_6px_20px_rgba(178,34,34,0.45)]"
+                  }`}
+                >
+                  <Phone className="w-4 h-4 mr-2.5 text-white" aria-hidden="true" />
+                  WhatsApp
+                  <ChevronDown className={`ml-2 h-4 w-4 transition-transform duration-200 ${desktopWhatsappOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                <div 
+                  className={`absolute right-0 top-full mt-2 w-64 rounded-xl shadow-xl bg-[#0F0F0F] border border-[#D4AF37]/30 transition-all duration-200 z-50 overflow-hidden ${
+                    desktopWhatsappOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                  }`}
+                >
+                  <div className="py-2 flex flex-col">
+                    <a
+                      href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-3 hover:bg-white/5 transition-colors flex items-center group focus-visible:bg-white/5 focus-visible:outline-none"
+                    >
+                      <div className="w-8 h-8 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-3 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <MessageCircle className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-0.5 font-heading">WhatsApp 1</p>
+                        <p className="text-sm font-semibold text-white">{BUSINESS_FACTS.contact.whatsappPrimaryDisplay}</p>
+                      </div>
+                    </a>
+                    <a
+                      href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-5 py-3 hover:bg-white/5 transition-colors flex items-center group focus-visible:bg-white/5 focus-visible:outline-none"
+                    >
+                      <div className="w-8 h-8 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-3 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <MessageCircle className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-0.5 font-heading">WhatsApp 2</p>
+                        <p className="text-sm font-semibold text-white">{BUSINESS_FACTS.contact.whatsappSecondaryDisplay}</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -338,16 +387,26 @@ export default function Navbar({ lang }: { lang: Locale }) {
             })}
 
             {/* Mobile Menu WhatsApp CTA */}
-            <div className="pt-4 mt-3 border-t border-white/10">
+            <div className="pt-4 mt-3 border-t border-white/10 space-y-3">
               <a
-                href={dict.contact.whatsappUrl}
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="w-full min-h-[48px] flex items-center justify-center px-5 py-3.5 rounded-[16px] text-sm font-bold tracking-wider uppercase transition-all bg-[#B22222] hover:bg-[#991B1B] text-white shadow-[0_4px_16px_rgba(178,34,34,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading"
               >
                 <Phone className="w-5 h-5 mr-2.5 text-white" aria-hidden="true" />
-                {dict.contact.whatsapp}
+                WhatsApp 1
+              </a>
+              <a
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="w-full min-h-[48px] flex items-center justify-center px-5 py-3.5 rounded-[16px] text-sm font-bold tracking-wider uppercase transition-all bg-white/10 hover:bg-white/20 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading"
+              >
+                <Phone className="w-5 h-5 mr-2.5 text-white" aria-hidden="true" />
+                WhatsApp 2
               </a>
             </div>
           </div>

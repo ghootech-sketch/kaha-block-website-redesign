@@ -43,7 +43,17 @@ export const BUSINESS_FACTS = {
     altPhoneDisplay: "0855 889 3030",
     altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
+    // Compatibility for existing code
     whatsappUrl: "https://wa.me/6281283812475",
+    
+    // Official WhatsApp contacts
+    whatsappPrimaryDisplay: "0812 8381 2475",
+    whatsappPrimaryE164: "+6281283812475",
+    whatsappPrimaryUrl: "https://wa.me/6281283812475",
+
+    whatsappSecondaryDisplay: "0855 889 3030",
+    whatsappSecondaryE164: "+628558893030",
+    whatsappSecondaryUrl: "https://wa.me/628558893030",
   },
 
   // Operational & Production Metrics (Verified First-Party Data)

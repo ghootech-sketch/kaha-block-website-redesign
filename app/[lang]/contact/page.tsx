@@ -54,15 +54,15 @@ export default async function Contact({
       />
 
       {/* =========================================================================
-          2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
+          2. FOUR QUICK CONTACT CARDS (WhatsApp 1, WhatsApp 2, Email, Instagram)
          ========================================================================= */}
       <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-14">
-            {/* Card 1: WhatsApp Utama */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10 sm:mb-14">
+            {/* Card 1: WhatsApp 1 */}
             <ScrollReveal delay={0.05} className="h-full">
               <a
-                href={dict.whatsappUrl}
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -74,8 +74,8 @@ export default async function Contact({
                   <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
                     {dict.quickActions.whatsappLabel}
                   </span>
-                  <p className="text-2xl font-bold font-heading text-slate-900 mb-2 tracking-tight">
-                    {dict.quickActions.whatsappNumber}
+                  <p className="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2 tracking-tight">
+                    {BUSINESS_FACTS.contact.whatsappPrimaryDisplay}
                   </p>
                   <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
                     {dict.quickActions.whatsappDesc}
@@ -88,7 +88,36 @@ export default async function Contact({
               </a>
             </ScrollReveal>
 
-            {/* Card 2: Email */}
+            {/* Card 2: WhatsApp 2 */}
+            <ScrollReveal delay={0.1} className="h-full">
+              <a
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                    <MessageSquare className="w-6 h-6" aria-hidden="true" />
+                  </div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
+                    {dict.quickActions.whatsapp2Label}
+                  </span>
+                  <p className="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2 tracking-tight">
+                    {BUSINESS_FACTS.contact.whatsappSecondaryDisplay}
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                    {dict.quickActions.whatsapp2Desc}
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-primary">
+                  <span>{dict.quickActions.whatsapp2Action}</span>
+                  <ExternalLink className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                </div>
+              </a>
+            </ScrollReveal>
+
+            {/* Card 3: Email */}
             <ScrollReveal delay={0.1} className="h-full">
               <a
                 href={`mailto:${dict.quickActions.emailAddress}`}
@@ -459,15 +488,24 @@ export default async function Contact({
               {dict.finalCta?.description || "Hubungi Kaha Block untuk membahas produk, volume, pengiriman, dan kebutuhan pemasangan."}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               <a 
-                href={dict.whatsappUrl} 
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                {dict.finalCta?.button || "Hubungi via WhatsApp"}
+                WhatsApp 1
+              </a>
+              <a 
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
+              >
+                <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
+                WhatsApp 2
               </a>
             </div>
           </ScrollReveal>

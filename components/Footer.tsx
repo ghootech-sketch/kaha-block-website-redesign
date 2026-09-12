@@ -150,14 +150,22 @@ export default function Footer({ lang }: { lang: Locale }) {
                 </div>
               </div>
             </div>
-            <div className="mt-5 sm:mt-6">
+            <div className="mt-5 sm:mt-6 space-y-3">
               <a
-                href={BUSINESS_FACTS.contact.whatsappUrl}
+                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center min-h-[44px] bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
-                {dict.contact.whatsapp}
+                WhatsApp 1
+              </a>
+              <a
+                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              >
+                WhatsApp 2
               </a>
             </div>
           </div>
