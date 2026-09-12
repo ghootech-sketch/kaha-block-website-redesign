@@ -170,17 +170,15 @@ export default async function ProductionGalleryPage({
         eyebrow={dict.heroEyebrow}
         title={dict.heroTitle}
         description={dict.heroDesc}
-        backgroundImage="/images/factory/factory-production-06.webp"
-        mobileBackgroundImage="/images/factory/factory-production-06.webp"
       />
 
       {/* =========================================================================
           2. PRODUCTION FACT & CAPABILITY STRIP
          ========================================================================= */}
-      <section className="bg-gradient-to-b from-white to-[#FAF9F6] border-b border-stone-200/80 py-12 sm:py-16">
+      <section className="bg-surface border-b border-slate-200/80 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x-0 md:divide-x md:divide-stone-200">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x-0 md:divide-x md:divide-slate-200">
               <div className="flex flex-col items-center text-center px-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Calendar className="w-6 h-6" />
@@ -217,7 +215,7 @@ export default async function ProductionGalleryPage({
       {/* =========================================================================
           3. FEATURED PRODUCTION HIGHLIGHTS
          ========================================================================= */}
-      <section className="bg-surface py-14 sm:py-18 md:py-24 border-b border-stone-200/80">
+      <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevealGroup>
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
@@ -240,7 +238,7 @@ export default async function ProductionGalleryPage({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {featuredList.map((item, index) => (
                 <Reveal key={index} staggerIndex={index} baseDelay={0.1}>
-                  <div className="text-left w-full bg-white rounded-xl sm:rounded-2xl border border-stone-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col h-full group">
+                  <div className="text-left w-full bg-surface-card rounded-xl sm:rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col h-full group">
                     <div className="relative aspect-[3/2] w-full bg-slate-100 overflow-hidden">
                       <Image
                         src={item.image}
@@ -254,7 +252,7 @@ export default async function ProductionGalleryPage({
                       </div>
                     </div>
 
-                    <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-white border-t border-stone-100">
+                    <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-surface-card border-t border-slate-100">
                       <div>
                         <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-accent mb-1.5 font-heading">
                           <CheckCircle2 className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
@@ -290,7 +288,7 @@ export default async function ProductionGalleryPage({
       {/* =========================================================================
           5. EXISTING 35-PHOTO PRODUCTION GALLERY (Unmixed, Pure Photo Documentation)
          ========================================================================= */}
-      <section className="bg-gradient-to-b from-surface to-white py-14 sm:py-18 md:py-24 border-t border-stone-200/80">
+      <section className="bg-white py-14 sm:py-18 md:py-24 border-t border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Gallery 
             images={productionImages} 
@@ -310,39 +308,35 @@ export default async function ProductionGalleryPage({
       {/* =========================================================================
           6. CTA SECTION
          ========================================================================= */}
-      <section className="bg-surface py-16 sm:py-24 border-t border-stone-200/80">
+      <section className="bg-surface py-16 sm:py-24 border-t border-slate-200/80">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white rounded-2xl p-8 sm:p-12 border-t-4 border-accent shadow-lg text-center relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
-            <div className="relative z-10">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {currentLang === 'en' ? "Factory Direct" : "Langsung Dari Pabrik"}
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white font-heading mb-4">
-                {dict.ctaHeading}
-              </h2>
-              <p className="text-base sm:text-lg text-slate-300 mb-8 max-w-2xl mx-auto font-sans">
-                {dict.ctaDesc}
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href={contactDict.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-white hover:bg-stone-100 text-primary shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading w-full sm:w-auto"
-                >
-                  <MessageSquare className="w-5 h-5 mr-2.5 text-primary" aria-hidden="true" />
-                  {dict.ctaButton}
-                </a>
-                <Link
-                  href={`/${currentLang}/contact`}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-transparent hover:bg-white/10 text-white border border-white/30 shadow-xs hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading w-full sm:w-auto"
-                >
-                  {currentLang === 'en' ? "Contact Us" : "Hubungi Kami"}
-                  <ArrowRight className="w-5 h-5 ml-2.5 text-white/70" aria-hidden="true" />
-                </Link>
-              </div>
+          <ScrollReveal className="bg-surface-card rounded-2xl p-8 sm:p-12 border border-slate-200/80 shadow-xs text-center">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
+              {currentLang === 'en' ? "Factory Direct" : "Langsung Dari Pabrik"}
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading mb-4">
+              {dict.ctaHeading}
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 mb-8 max-w-2xl mx-auto font-sans">
+              {dict.ctaDesc}
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href={contactDict.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-primary hover:bg-primary-hover text-white shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading w-full sm:w-auto"
+              >
+                <MessageSquare className="w-5 h-5 mr-2.5 text-white" aria-hidden="true" />
+                {dict.ctaButton}
+              </a>
+              <Link
+                href={`/${currentLang}/contact`}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 shadow-xs hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading w-full sm:w-auto"
+              >
+                {currentLang === 'en' ? "Contact Us" : "Hubungi Kami"}
+                <ArrowRight className="w-5 h-5 ml-2.5 text-slate-400" aria-hidden="true" />
+              </Link>
             </div>
           </ScrollReveal>
         </div>

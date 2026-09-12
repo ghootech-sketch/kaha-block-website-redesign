@@ -1,4 +1,3 @@
-import { getImageProps } from "next/image";
 import React from "react";
 
 interface PageHeroProps {
@@ -6,8 +5,6 @@ interface PageHeroProps {
   title: string | React.ReactNode;
   description?: string | React.ReactNode;
   children?: React.ReactNode;
-  backgroundImage?: string;
-  mobileBackgroundImage?: string;
 }
 
 export default function PageHero({
@@ -15,59 +12,30 @@ export default function PageHero({
   title,
   description,
   children,
-  backgroundImage = "/images/hero/hero-main.webp",
-  mobileBackgroundImage = "/images/hero/hero-mobile.webp",
 }: PageHeroProps) {
-  const common = { alt: "", fill: true, priority: true, className: "object-cover object-center" };
-  const {
-    props: { srcSet: desktopSrcSet },
-  } = getImageProps({ ...common, src: backgroundImage });
-  const {
-    props: { srcSet: mobileSrcSet, alt: mobileAlt, ...rest },
-  } = getImageProps({ ...common, src: mobileBackgroundImage });
-
   return (
-    <section data-navbar-hero="true" className="relative w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[400px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
-      {/* Background Images */}
-      <div className="absolute inset-0 z-0">
-        <picture>
-          <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
-          <img
-            alt={mobileAlt}
-            aria-hidden="true"
-            srcSet={mobileSrcSet}
-            {...rest}
-            className="object-cover object-center w-full h-full"
-          />
-        </picture>
-        {/* Overlay Gradients */}
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#8B0000]/25 via-transparent to-[#D4AF37]/20 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#0F0F0F]/90 pointer-events-none" />
-      </div>
-
-      {/* Content Container */}
-      <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 pb-12 sm:pb-16 lg:pb-20">
+    <section className="bg-primary pt-24 sm:pt-32 pb-12 sm:pb-20 border-b border-primary-hover relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
+      
+      <div className="w-full max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-10">
         <div className="max-w-3xl">
           {eyebrow && (
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="w-8 sm:w-12 h-px bg-accent/60" aria-hidden="true" />
-              <span className="text-accent font-heading font-bold text-xs sm:text-sm tracking-[0.15em] uppercase">
-                {eyebrow}
-              </span>
+            <span className="text-accent font-bold uppercase tracking-[0.2em] text-xs sm:text-sm block mb-4 font-heading">
+              {eyebrow}
+            </span>
+          )}
+          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-white leading-[1.15]">
+            {title}
+          </h1>
+          
+          {description && (
+            <div className="text-base sm:text-lg text-slate-200 font-sans leading-relaxed mb-8 max-w-2xl">
+              {description}
             </div>
           )}
           
-          <h1 className="text-white font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.12] sm:leading-[1.1] mb-6">
-            {title}
-          </h1>
-
-          {description && (
-            <p className="text-slate-200 text-base sm:text-lg lg:text-xl max-w-2xl leading-relaxed mb-8">
-              {description}
-            </p>
-          )}
-
           {children}
         </div>
       </div>
