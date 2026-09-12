@@ -241,7 +241,7 @@ export default async function ProductionGalleryPage({
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {featuredList.map((item, index) => (
                 <Reveal key={index} staggerIndex={index} baseDelay={0.1}>
-                  <div className="text-left w-full bg-surface-card rounded-xl sm:rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col h-full group">
+                  <div className="text-left w-full bg-white border border-stone-200/40 overflow-hidden hover:border-accent/40 transition-colors flex flex-col h-full group">
                     <div className="relative aspect-[3/2] w-full bg-slate-100 overflow-hidden">
                       <Image
                         src={item.image}
@@ -250,18 +250,18 @@ export default async function ProductionGalleryPage({
                         sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute top-3 right-3 bg-black/80 text-accent px-3 py-1 rounded-full text-xs font-mono font-bold shadow-sm backdrop-blur-xs border border-accent/30">
+                      <div className="absolute top-3 right-3 bg-dark/90 text-accent px-3 py-1 text-xs font-mono font-bold shadow-sm backdrop-blur-xs border border-accent/30">
                         {item.badge}
                       </div>
                     </div>
 
-                    <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-surface-card border-t border-slate-100">
+                    <div className="p-5 sm:p-6 flex-grow flex flex-col justify-between bg-white border-t border-stone-200/40">
                       <div>
-                        <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-accent mb-1.5 font-heading">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-accent" aria-hidden="true" />
+                        <div className="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-slate-500 mb-2 font-heading">
+                          <CheckCircle2 className="w-4 h-4 text-accent" aria-hidden="true" />
                           <span>{item.label}</span>
                         </div>
-                        <p className="text-sm sm:text-base text-slate-900 font-semibold font-sans leading-snug">
+                        <p className="text-sm sm:text-base text-slate-900 font-medium font-sans leading-relaxed">
                           {item.caption}
                         </p>
                       </div>

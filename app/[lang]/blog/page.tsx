@@ -13,7 +13,6 @@ import {
   ChevronRight,
   Home,
   Sparkles,
-  ShieldCheck,
   CheckCircle2,
   Layers,
   Phone,
@@ -48,6 +47,7 @@ export default async function BlogIndexPage({
   const currentLang = lang as Locale;
   const isEn = currentLang === "en";
   const dict = dictionaries[currentLang].blog;
+  const contactDict = dictionaries[currentLang].contact;
 
   const allPosts = getAllBlogPosts(currentLang);
   const featuredPost = allPosts[0];
@@ -113,21 +113,26 @@ export default async function BlogIndexPage({
                 </h2>
               </div>
 
-              <div className="relative rounded-xl bg-surface-card border border-slate-200/90 border-t-4 border-t-accent p-6 sm:p-8 lg:p-10 shadow-xs overflow-hidden hover:shadow-md transition-all duration-300 group">
+              <div className="relative bg-white border border-stone-200/40 p-6 sm:p-8 lg:p-10 transition-colors group">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10 group-hover:bg-accent/10 transition-all duration-500" />
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   <div className="lg:col-span-8">
                     {/* Badges & Meta */}
-                    <div className="flex flex-wrap items-center gap-3 mb-4">
-                      <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-accent/10 text-slate-900 border border-accent/30 font-heading">
-                        {featuredPost.category}
-                      </span>
-                      <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                    <div className="flex flex-wrap items-center gap-3 mb-6">
+                      <div className="flex items-center gap-2">
+                        <span className="w-6 h-px bg-accent" aria-hidden="true" />
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 font-heading">
+                          {featuredPost.category}
+                        </span>
+                      </div>
+                      <span className="text-slate-300 text-xs">|</span>
+                      <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium tracking-wide">
                         <Clock className="w-3.5 h-3.5 text-slate-400" />
                         <span>{featuredPost.readingTime}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                      <span className="text-slate-300 text-xs">|</span>
+                      <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium tracking-wide">
                         <Calendar className="w-3.5 h-3.5 text-slate-400" />
                         <span>
                           {new Date(featuredPost.publishedAt).toLocaleDateString(
@@ -139,37 +144,36 @@ export default async function BlogIndexPage({
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4 group-hover:text-accent transition-colors leading-snug font-heading">
+                    <h3 className="text-3xl md:text-4xl font-light text-slate-900 mb-6 group-hover:text-accent transition-colors leading-tight font-heading tracking-tight">
                       <Link href={`/${currentLang}/blog/${featuredPost.slug}`}>
                         {featuredPost.title}
                       </Link>
                     </h3>
 
                     {/* Excerpt */}
-                    <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-sans">
+                    <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-8 font-sans max-w-2xl">
                       {featuredPost.excerpt}
                     </p>
 
                     {/* CTA Button */}
                     <Link
                       href={`/${currentLang}/blog/${featuredPost.slug}`}
-                      className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary-hover transition-all duration-200 shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
                     >
                       <span>{dict.readMore}</span>
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className="w-4 h-4 ml-2.5" />
                     </Link>
                   </div>
 
                   {/* Highlights Summary Card */}
-                  <div className="lg:col-span-4 rounded-xl bg-accent/10 border border-accent/30 p-5 lg:p-6">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-accent mb-3 flex items-center gap-2 font-heading">
-                      <ShieldCheck className="w-4 h-4 text-accent" />
+                  <div className="lg:col-span-4 bg-surface/50 border border-stone-200/40 p-6">
+                    <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-4 flex items-center gap-2 font-heading">
                       <span>{featuredPost.summary.title}</span>
                     </h4>
-                    <ul className="space-y-2.5 text-xs text-slate-700">
+                    <ul className="space-y-3.5 text-sm text-slate-600 font-sans">
                       {featuredPost.summary.points.slice(0, 3).map((pt, i) => (
-                        <li key={i} className="flex items-start gap-2 leading-relaxed">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />
+                        <li key={i} className="flex items-start gap-3 leading-relaxed">
+                          <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                           <span>{pt}</span>
                         </li>
                       ))}
@@ -217,53 +221,51 @@ export default async function BlogIndexPage({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {remainingPosts.map((post, index) => (
               <ScrollReveal key={post.slug} direction="up" delay={index * 0.05}>
-                <article className="flex flex-col h-full rounded-xl bg-surface-card border border-slate-200/90 hover:border-accent/50 p-6 transition-all duration-300 hover:shadow-md group shadow-none">
+                <article className="flex flex-col h-full bg-white border border-stone-200/40 hover:border-accent/40 p-6 sm:p-8 transition-colors group">
                   {/* Category & Reading Time */}
-                  <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-accent/10 text-slate-900 border border-accent/30 font-heading">
-                      {post.category}
-                    </span>
-                    <div className="flex items-center gap-1 text-[11px] text-slate-500">
-                      <Clock className="w-3 h-3 text-slate-400" />
+                  <div className="flex items-center justify-between gap-2 mb-6">
+                    <div className="flex items-center gap-2">
+                      <span className="w-4 h-px bg-accent" aria-hidden="true" />
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 font-heading">
+                        {post.category}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium tracking-wide">
+                      <Clock className="w-3.5 h-3.5" />
                       <span>{post.readingTime}</span>
                     </div>
                   </div>
 
-                  {/* Date */}
-                  <div className="flex items-center gap-1 text-[11px] text-slate-400 mb-2">
-                    <Calendar className="w-3 h-3" />
-                    <span>
-                      {new Date(post.publishedAt).toLocaleDateString(
-                        isEn ? "en-US" : "id-ID",
-                        { year: "numeric", month: "short", day: "numeric" }
-                      )}
-                    </span>
-                  </div>
-
                   {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-accent transition-colors leading-snug mb-3 line-clamp-2 font-heading">
+                  <h3 className="text-xl md:text-2xl font-light text-slate-900 group-hover:text-accent transition-colors leading-snug mb-3 line-clamp-2 font-heading tracking-tight">
                     <Link href={`/${currentLang}/blog/${post.slug}`}>
                       {post.title}
                     </Link>
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 line-clamp-3 flex-grow font-sans">
+                  <p className="text-slate-500 text-sm leading-relaxed mb-8 line-clamp-3 flex-grow font-sans">
                     {post.excerpt}
                   </p>
 
                   {/* Card Bottom CTA Link */}
-                  <div className="pt-4 border-t border-slate-100 mt-auto flex items-center justify-between">
+                  <div className="pt-5 border-t border-stone-100 mt-auto flex items-center justify-between">
+                    <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium tracking-wide">
+                      <Calendar className="w-3.5 h-3.5" />
+                      <span>
+                        {new Date(post.publishedAt).toLocaleDateString(
+                          isEn ? "en-US" : "id-ID",
+                          { year: "numeric", month: "short", day: "numeric" }
+                        )}
+                      </span>
+                    </div>
                     <Link
                       href={`/${currentLang}/blog/${post.slug}`}
-                      className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-900 hover:text-accent transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-900 hover:text-accent transition-colors font-heading"
                     >
                       <span>{dict.readMore}</span>
                       <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                    <span className="text-[11px] text-slate-400 font-mono">
-                      #0{index + 2}
-                    </span>
                   </div>
                 </article>
               </ScrollReveal>
@@ -299,7 +301,7 @@ export default async function BlogIndexPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://wa.me/6281283812475"
+                href={contactDict.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

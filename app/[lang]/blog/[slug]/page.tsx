@@ -82,6 +82,7 @@ export default async function BlogPostPage({
   const currentLang = lang as Locale;
   const isEn = currentLang === "en";
   const dict = dictionaries[currentLang].blog;
+  const contactDict = dictionaries[currentLang].contact;
 
   const post = getBlogPostBySlug(slug, currentLang);
   if (!post) {
@@ -210,11 +211,11 @@ export default async function BlogPostPage({
       </PageHero>
 
       {/* Main Article Container */}
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Content Creation Process & Editorial Disclosure */}
         <aside
           aria-label="Editorial note"
-          className="mb-10 rounded-xl bg-surface-card border border-slate-200 p-4 sm:p-5 text-xs sm:text-sm text-slate-700 flex items-start gap-3.5 shadow-xs"
+          className="mb-12 bg-white border border-stone-200/40 p-5 sm:p-6 text-sm text-slate-700 flex items-start gap-4"
         >
           <FileCheck className="w-5 h-5 text-accent shrink-0 mt-0.5" />
           <div className="space-y-1">
@@ -231,18 +232,18 @@ export default async function BlogPostPage({
 
         {/* Table of Contents (Daftar Isi) */}
         {post.sections.length > 0 && (
-          <div className="rounded-xl bg-surface-card border border-slate-200 p-6 mb-12 shadow-xs">
-            <div className="flex items-center gap-2 text-accent text-sm font-bold uppercase tracking-wider mb-4 font-heading">
+          <div className="bg-white border border-stone-200/40 p-6 sm:p-8 mb-12">
+            <div className="flex items-center gap-2 text-slate-900 text-sm font-bold uppercase tracking-[0.2em] mb-6 font-heading">
               <ListOrdered className="w-4 h-4 text-accent" />
               <span>{dict.tableOfContents}</span>
             </div>
             <nav aria-label="Table of contents">
-              <ul className="space-y-2 text-sm text-slate-700">
+              <ul className="space-y-3 text-sm text-slate-700">
                 {post.sections.map((section, idx) => (
                   <li key={section.id}>
                     <a
                       href={`#${section.id}`}
-                      className="hover:text-accent transition-colors flex items-start gap-2.5"
+                      className="hover:text-accent transition-colors flex items-start gap-3"
                     >
                       <span className="text-accent font-mono text-xs mt-0.5 font-bold">
                         {String(idx + 1).padStart(2, "0")}.
@@ -258,7 +259,7 @@ export default async function BlogPostPage({
 
         {/* Intro Paragraphs */}
         {remainingIntro.length > 0 && (
-          <div className="space-y-5 text-slate-700 text-base sm:text-lg leading-relaxed mb-12 font-sans">
+          <div className="space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed mb-16 font-sans">
             {remainingIntro.map((p, i) => (
               <p key={i}>
                 <FormattedText text={p} />
@@ -268,16 +269,16 @@ export default async function BlogPostPage({
         )}
 
         {/* Dynamic Sections */}
-        <div className="space-y-16">
+        <div className="space-y-20">
           {post.sections.map((section) => (
             <section key={section.id} id={section.id} className="scroll-mt-28">
               {/* Section Heading */}
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5 pb-3 border-b border-slate-200 flex items-center gap-2 font-heading">
+              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-6 pb-4 border-b border-stone-200/40 flex items-center gap-2 font-heading">
                 <span>{section.heading}</span>
               </h2>
 
               {/* Section Paragraphs */}
-              <div className="space-y-4 text-slate-700 text-base leading-relaxed mb-6 font-sans">
+              <div className="space-y-5 text-slate-700 text-base leading-relaxed mb-8 font-sans">
                 {section.paragraphs.map((p, i) => (
                   <p key={i}>
                     <FormattedText text={p} />
@@ -287,14 +288,14 @@ export default async function BlogPostPage({
 
               {/* Optional Section List */}
               {section.list && (
-                <div className="my-6 rounded-xl bg-surface-card border border-slate-200 p-5 sm:p-6 shadow-xs">
+                <div className="my-8 bg-surface/50 border border-stone-200/40 p-6 sm:p-8">
                   {section.list.title && (
-                    <h4 className="text-sm font-bold text-slate-900 mb-3 flex items-center gap-2 font-heading">
+                    <h4 className="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2 font-heading">
                       <ShieldCheck className="w-4 h-4 text-accent" />
                       <span>{section.list.title}</span>
                     </h4>
                   )}
-                  <ul className="space-y-2.5 text-sm text-slate-700">
+                  <ul className="space-y-3 text-sm text-slate-700">
                     {section.list.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
@@ -420,12 +421,12 @@ export default async function BlogPostPage({
         </div>
 
         {/* Summary Box */}
-        <section className="mt-16 rounded-xl bg-accent/15 border border-accent/40 p-6 sm:p-8">
-          <div className="flex items-center gap-2.5 text-accent font-bold uppercase text-xs sm:text-sm tracking-wider mb-4 font-heading">
+        <section className="mt-20 bg-surface/50 border border-stone-200/40 p-6 sm:p-8">
+          <div className="flex items-center gap-2 text-slate-900 text-sm font-bold uppercase tracking-[0.2em] mb-6 font-heading">
             <ShieldCheck className="w-5 h-5 text-accent" />
             <span>{post.summary.title}</span>
           </div>
-          <ul className="space-y-3 text-sm text-slate-800 font-sans">
+          <ul className="space-y-4 text-sm text-slate-700 font-sans">
             {post.summary.points.map((pt, i) => (
               <li key={i} className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
@@ -439,25 +440,25 @@ export default async function BlogPostPage({
 
         {/* FAQ Section */}
         {post.faq && post.faq.items.length > 0 && (
-          <section className="mt-16 pt-12 border-t border-slate-200">
-            <div className="flex items-center gap-2 mb-8">
+          <section className="mt-20 pt-16 border-t border-stone-200/40">
+            <div className="flex items-center gap-2 mb-10">
               <HelpCircle className="w-5 h-5 text-accent" />
-              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight font-heading">
+              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight font-heading">
                 {post.faq.title}
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-0 border border-stone-200/40 bg-white">
               {post.faq.items.map((item, idx) => (
                 <div
                   key={idx}
-                  className="rounded-xl bg-surface-card border border-slate-200 p-5 sm:p-6 shadow-xs"
+                  className="p-6 border-b border-stone-200/40 last:border-b-0"
                 >
-                  <h3 className="text-base font-bold text-slate-900 mb-2 flex items-start gap-2.5 font-heading">
-                    <span className="text-accent font-mono text-sm font-bold">Q:</span>
+                  <h3 className="text-lg font-medium text-slate-900 mb-3 flex items-start gap-3 font-heading">
+                    <span className="text-accent font-mono text-sm font-bold mt-1">Q:</span>
                     <span>{item.question}</span>
                   </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed pl-6 font-sans">
+                  <p className="text-sm text-slate-600 leading-relaxed pl-7 font-sans">
                     <FormattedText text={item.answer} />
                   </p>
                 </div>
@@ -469,18 +470,18 @@ export default async function BlogPostPage({
         {/* Previous / Next Article Navigation */}
         <nav
           aria-label="Article navigation"
-          className="mt-16 pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4"
+          className="mt-20 pt-8 border-t border-stone-200/40 grid grid-cols-1 sm:grid-cols-2 gap-6"
         >
           {prevPost ? (
             <Link
               href={`/${currentLang}/blog/${prevPost.slug}`}
-              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-accent/60 transition-colors group text-left shadow-xs"
+              className="flex flex-col p-6 bg-white border border-stone-200/40 hover:border-accent/40 transition-colors group text-left"
             >
-              <span className="text-xs text-slate-500 flex items-center gap-1 mb-1">
-                <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2 mb-3 font-heading">
+                <ArrowLeft className="w-4 h-4 text-accent group-hover:-translate-x-1 transition-transform" />
                 <span>{dict.prevArticle}</span>
               </span>
-              <span className="text-sm font-semibold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
+              <span className="text-lg font-light text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
                 {prevPost.title}
               </span>
             </Link>
@@ -491,13 +492,13 @@ export default async function BlogPostPage({
           {nextPost ? (
             <Link
               href={`/${currentLang}/blog/${nextPost.slug}`}
-              className="flex flex-col p-4 rounded-xl bg-surface-card border border-slate-200 hover:border-accent/60 transition-colors group text-right sm:text-right shadow-xs"
+              className="flex flex-col p-6 bg-white border border-stone-200/40 hover:border-accent/40 transition-colors group text-right sm:text-right"
             >
-              <span className="text-xs text-slate-500 flex items-center justify-end gap-1 mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center justify-end gap-2 mb-3 font-heading">
                 <span>{dict.nextArticle}</span>
-                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-accent group-hover:translate-x-1 transition-transform" />
               </span>
-              <span className="text-sm font-semibold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
+              <span className="text-lg font-light text-slate-900 group-hover:text-accent transition-colors line-clamp-2 font-heading">
                 {nextPost.title}
               </span>
             </Link>
@@ -508,34 +509,37 @@ export default async function BlogPostPage({
 
         {/* Related Articles Section */}
         {relatedPosts.length > 0 && (
-          <section className="mt-20 pt-12 border-t border-slate-200">
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-8 font-heading">
+          <section className="mt-20 pt-16 border-t border-stone-200/40">
+            <h2 className="text-2xl sm:text-3xl font-light text-slate-900 tracking-tight mb-10 font-heading">
               {dict.relatedArticles}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((rPost) => (
                 <article
                   key={rPost.slug}
-                  className="flex flex-col rounded-xl bg-surface-card border border-slate-200 hover:border-accent/50 p-5 transition-all group shadow-xs"
+                  className="flex flex-col bg-white border border-stone-200/40 hover:border-accent/40 p-6 transition-colors group"
                 >
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-accent mb-2 font-heading">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-3 font-heading flex items-center gap-2">
+                    <span className="w-3 h-px bg-accent" aria-hidden="true" />
                     {rPost.category}
                   </span>
-                  <h3 className="text-sm font-bold text-slate-900 group-hover:text-accent transition-colors line-clamp-2 mb-2 font-heading">
+                  <h3 className="text-lg font-medium text-slate-900 group-hover:text-accent transition-colors line-clamp-2 mb-3 font-heading">
                     <Link href={`/${currentLang}/blog/${rPost.slug}`}>
                       {rPost.title}
                     </Link>
                   </h3>
-                  <p className="text-xs text-slate-600 line-clamp-2 mb-4 flex-grow font-sans">
+                  <p className="text-sm text-slate-500 line-clamp-2 mb-6 flex-grow font-sans">
                     {rPost.excerpt}
                   </p>
-                  <Link
-                    href={`/${currentLang}/blog/${rPost.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-slate-900 hover:text-accent mt-auto"
-                  >
-                    <span>{dict.readMore}</span>
-                    <ArrowRight className="w-3 h-3" />
-                  </Link>
+                  <div className="pt-4 border-t border-stone-100 mt-auto">
+                    <Link
+                      href={`/${currentLang}/blog/${rPost.slug}`}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-900 hover:text-accent transition-colors font-heading"
+                    >
+                      <span>{dict.readMore}</span>
+                      <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
                 </article>
               ))}
             </div>
@@ -570,7 +574,7 @@ export default async function BlogPostPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://wa.me/6281283812475"
+                href={contactDict.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
