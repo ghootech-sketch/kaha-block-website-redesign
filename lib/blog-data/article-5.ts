@@ -116,7 +116,7 @@ export const article5Id: BlogPost = {
       heading: "7. Layanan Jasa Pemasangan Profesional Kaha Block",
       paragraphs: [
         "Jika Anda ingin memastikan seluruh tahapan persiapan dan pemasangan berjalan sempurna tanpa kerumitan teknis, PT Kaha Sukses Mandiri menyediakan paket terpadu suplai material dan jasa pemasangan berpengalaman (supply & install).",
-        "Tim aplikator Kaha Block terbiasa menangani standar elevasi presisi, pemadatan berlapis, pemasangan kanstein kokoh, hingga pengisian nat silika bersih untuk berbagai proyek di Jabodetabek .",
+        "Tim aplikator Kaha Block terbiasa menangani standar elevasi presisi, pemadatan berlapis, pemasangan kanstein kokoh, hingga pengisian nat silika bersih untuk berbagai proyek di Jabodetabek.",
       ],
     },
     {
@@ -289,7 +289,7 @@ export const article5En: BlogPost = {
       heading: "7. Kaha Block Professional Installation Services",
       paragraphs: [
         "To ensure all site preparation and installation phases are executed to the highest engineering standards without logistical hassle, PT Kaha Sukses Mandiri provides complete turnkey supply-and-install packages.",
-        "Our skilled field application crews are experienced in executing accurate site grading, layered mechanical compaction, reinforced curb placement, and pristine joint finishing for civil and commercial developments throughout Greater Jakarta and beyond.",
+        "Our skilled field application crews are experienced in executing accurate site grading, layered mechanical compaction, reinforced curb placement, and pristine joint finishing for civil and commercial developments throughout Greater Jakarta (Jabodetabek).",
       ],
     },
     {

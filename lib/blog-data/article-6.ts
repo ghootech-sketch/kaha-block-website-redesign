@@ -118,8 +118,8 @@ export const article6Id: BlogPost = {
       id: "kemitraan-industri-kaha",
       heading: "6. Solusi Paving Industri dari PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri memproduksi paving block dengan mutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik di fasilitas modern seluas 9.080 m² di Cisauk, Tangerang.",
-        "Kaha Block siap melayani kebutuhan pengadaan material perkerasan dan layanan pemasangan (supply & install) untuk kawasan pergudangan, depo logistik, pelataran pabrik, dan pusat perbelanjaan di wilayah Jabodetabek dan sekitarnya.",
+        "PT Kaha Sukses Mandiri menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi paving block menggunakan mesin full otomatis hidrolik di fasilitas modern seluas 9.080 m² di Cisauk, Tangerang.",
+        "Kaha Block siap melayani kebutuhan pengadaan material perkerasan dan layanan pemasangan (supply & install) untuk kawasan pergudangan, depo logistik, pelataran pabrik, dan pusat perbelanjaan di wilayah Jabodetabek. Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -295,8 +295,8 @@ export const article6En: BlogPost = {
       id: "kaha-industrial-solutions",
       heading: "6. Kaha Block Industrial Pavement Solutions",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures concrete paving blocks with K-250, K-300, and K-400 compressive strength utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta (Jabodetabek).",
+        "PT Kaha Sukses Mandiri offers K-250, K-300, and K-400 concrete grade options across its paving block production line utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
+        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
       ],
     },
     {

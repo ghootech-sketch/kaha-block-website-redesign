@@ -598,7 +598,7 @@ export const dictionaries = {
           },
           {
             q: "Apakah tersedia jasa pengiriman dan pemasangan?",
-            a: "Ya, kami melayani suplai material saja maupun paket lengkap suplai beserta jasa pemasangan oleh tenaga berpengalaman untuk wilayah Jabodetabek dan sekitarnya sesuai kesepakatan.",
+            a: "Ya, kami melayani suplai material saja maupun paket lengkap suplai beserta jasa pemasangan oleh tenaga berpengalaman untuk wilayah Jabodetabek sesuai kesepakatan.",
           },
           {
             q: "Informasi apa yang diperlukan untuk meminta penawaran?",
@@ -1499,7 +1499,7 @@ export const dictionaries = {
           },
           {
             q: "Are delivery and installation services available?",
-            a: "Yes, we provide both material-only supply as well as full turnkey supply and installation by experienced crews across Greater Jakarta and surrounding areas as agreed.",
+            a: "Yes, we provide both material-only supply as well as full turnkey supply and installation by experienced crews across Greater Jakarta (Jabodetabek) as agreed.",
           },
           {
             q: "What information is required to request a quotation?",

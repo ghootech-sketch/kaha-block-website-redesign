@@ -22,12 +22,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "KAHA BLOCK - Pabrik Paving Block Berkualitas di Indonesia",
       description:
-        "Pabrik paving block dengan mesin full otomatis hidrolik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek dan sekitarnya.",
+        "Pabrik paving block dengan mesin full otomatis hidrolik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek.",
     },
     en: {
       title: "KAHA BLOCK - Premium Paving Block Factory in Indonesia",
       description:
-        "Paving block manufacturing with fully automatic hydraulic machinery. Solid infrastructure solutions across Greater Jakarta and beyond.",
+        "Paving block manufacturing with fully automatic hydraulic machinery. Solid infrastructure solutions across Greater Jakarta (Jabodetabek).",
     },
   },
   about: {

@@ -15,11 +15,6 @@ function applyVercelRobotsHeader(request: NextRequest, response: NextResponse): 
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  
-  // Handle Vercel Analytics telemetry endpoints gracefully
-  if (pathname === '/_vercel' || pathname.startsWith('/_vercel/')) {
-    return new NextResponse(null, { status: 204 });
-  }
 
   // Skip public files, next assets, videos, and api routes
   if (
@@ -76,6 +71,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/((?!_next/static|_next/image|favicon.ico|icon.png|images/|videos/).*)',
+    '/((?!_next/static|_next/image|_vercel|favicon.ico|icon.png|images/|videos/).*)',
   ],
 };

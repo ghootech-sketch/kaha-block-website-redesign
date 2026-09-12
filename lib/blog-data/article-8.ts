@@ -133,8 +133,8 @@ export const article8Id: BlogPost = {
       id: "keunggulan-kaha-block",
       heading: "6. Keunggulan Paving Presisi dari PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan mutu beton K-250, K-300, dan K-400 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
-        "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek dan sekitarnya.",
+        "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan opsi mutu beton K-250, K-300, dan K-400 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
+        "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek. Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -323,8 +323,8 @@ export const article8En: BlogPost = {
       id: "kaha-manufacturing-excellence",
       heading: "6. Precision Manufacturing by PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri manufactures high-precision concrete paving blocks meeting K-250, K-300, and K-400 compressive strength standards utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta (Jabodetabek).",
+        "PT Kaha Sukses Mandiri offers high-precision concrete paving blocks with K-250, K-300, and K-400 compressive strength options across its production line utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
+        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
       ],
     },
     {

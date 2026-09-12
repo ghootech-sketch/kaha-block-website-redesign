@@ -129,8 +129,8 @@ export const article4Id: BlogPost = {
       id: "konsultasi-teknis-kaha",
       heading: "6. Konsultasi Kebutuhan Bersama Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) yang memproduksi aneka paving block mesin full otomatis hidrolik di fasilitas seluas 9.080 m² di Cisauk, Tangerang, siap membantu Anda dalam melakukan perhitungan volume material secara profesional.",
-        "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan jasa pemasangan di Jabodetabek dan sekitarnya.",
+        "PT Kaha Sukses Mandiri (Kaha Block) yang memproduksi aneka paving block mesin full otomatis hidrolik di fasilitas seluas 9.080 m² di Cisauk, Tangerang, menyediakan opsi mutu beton K-250, K-300, dan K-400 pada lini produksinya dan siap membantu Anda dalam melakukan perhitungan volume material secara profesional.",
+        "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan jasa pemasangan di Jabodetabek. Ketersediaan mutu pada tiap jenis produk dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -316,8 +316,8 @@ export const article4En: BlogPost = {
       id: "kaha-block-technical-support",
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
-        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) produces precision-engineered hydraulic paving blocks with K-250, K-300, and K-400 concrete strength.",
-        "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta and surrounding regions.",
+        "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) offers K-250, K-300, and K-400 concrete grade options across its production line using full automatic hydraulic machinery.",
+        "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta (Jabodetabek). Grade availability for specific products is confirmed during technical consultation.",
       ],
     },
     {

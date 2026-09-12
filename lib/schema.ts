@@ -25,12 +25,15 @@ export function generateStructuredDataGraph({
 }: GenerateGraphParams) {
   const isEn = lang === "en";
   const baseUrl = BUSINESS_FACTS.domain;
-  const canonicalUrl =
+  const pagePath =
     page === "home"
-      ? `${baseUrl}/${lang}`
+      ? ""
+      : page === "projectsProduction"
+      ? "/projects/production"
       : page === "blogPost" && post
-      ? `${baseUrl}/${lang}/blog/${post.slug}`
-      : `${baseUrl}/${lang}/${page}`;
+      ? `/blog/${post.slug}`
+      : `/${page}`;
+  const canonicalUrl = `${baseUrl}/${lang}${pagePath}`;
 
   // 1. Organization Entity (Master Business Entity)
   const organizationEntity = {
@@ -69,17 +72,13 @@ export function generateStructuredDataGraph({
         "@type": "AdministrativeArea",
         name: isEn ? "Greater Jakarta (Jabodetabek)" : "Jabodetabek",
       },
-      {
-        "@type": "Country",
-        name: "Indonesia",
-      },
     ],
     contactPoint: [
       {
         "@type": "ContactPoint",
         telephone: BUSINESS_FACTS.contact.primaryPhoneE164,
         contactType: "sales and customer support",
-        areaServed: "ID",
+        areaServed: isEn ? "Greater Jakarta (Jabodetabek)" : "Jabodetabek",
         availableLanguage: ["id", "en"],
       },
     ],

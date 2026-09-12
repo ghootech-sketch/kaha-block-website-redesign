@@ -14,7 +14,7 @@ export const article1Id: BlogPost = {
   seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport, jalan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
   featured: true,
   intro: [
-    "Jawaban Langsung: Untuk memilih paving block yang tepat, pertimbangkan fungsi peruntukan area dan perkiraan beban lalu lintas: ketebalan 6 cm umumnya digunakan untuk trotoar pejalan kaki dan carport kendaraan pribadi; ketebalan 8 cm dengan mutu K-250, K-300, dan K-400 dan pola interlocking herringbone untuk jalan lingkungan perumahan serta area komersial; serta tebal 10 cm untuk kawasan industri dan logistik bertonase berat. Struktur lapisan pondasi dan spesifikasi akhir disesuaikan dengan kondisi tanah serta perencanaan teknis masing-masing proyek.",
+    "Jawaban Langsung: Untuk memilih paving block yang tepat, pertimbangkan fungsi peruntukan area dan perkiraan beban lalu lintas: ketebalan 6 cm umumnya digunakan untuk trotoar pejalan kaki dan carport kendaraan pribadi; ketebalan 8 cm dengan pola interlocking herringbone untuk jalan lingkungan perumahan serta area komersial; serta tebal 10 cm untuk kawasan industri dan logistik bertonase berat. Struktur lapisan pondasi dan spesifikasi akhir disesuaikan dengan kondisi tanah serta perencanaan teknis masing-masing proyek.",
     "Memilih perkerasan jalan atau pelataran luar ruangan memerlukan pertimbangan matang antara kekuatan struktural, fungsi drainase, dan estetika visual. Paving block (conblock) menjadi salah satu material favorit di Indonesia karena menawarkan fleksibilitas pemasangan, kemudahan perawatan jangka panjang, dan daya serap air yang baik pada celah nat antar-blok.",
     "Namun, keberhasilan pengaplikasian paving block sangat bergantung pada kesesuaian antara spesifikasi material yang dipilih dengan jenis beban yang akan melintas di atasnya. Menggunakan paving block yang terlalu tipis untuk area lalu lintas berat dapat memicu retak dini dan amblas, sementara menggunakan spesifikasi berlebih pada pedestrian santai dapat menyebabkan inefisiensi anggaran proyek.",
     "Dalam artikel ini, PT Kaha Sukses Mandiri (Kaha Block) menyusun panduan komprehensif untuk membantu pemilik hunian, arsitek, pengembang properti, dan kontraktor dalam menentukan jenis, ketebalan, serta mutu paving block yang paling proporsional untuk berbagai skala kebutuhan.",
@@ -156,8 +156,8 @@ export const article1Id: BlogPost = {
       id: "layanan-pengadaan-kaha-block",
       heading: "6. Solusi Terintegrasi Bersama Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di atas fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, memproduksi beragam pilihan paving block mutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik modern.",
-        "Selain memproduksi [katalog produk paving lengkap](/id/products) yang mencakup Truepave, Hexagonal, Ubin, Topi Uskup, dan Kanstein, Kaha Block juga melayani paket pengadaan material sekaligus jasa pemasangan profesional untuk memastikan perkerasan proyek Anda kokoh dan presisi. Lihat hasil pengerjaan kami di [Galeri Proyek Kaha Block](/id/projects).",
+        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak 2015 di atas fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang, menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi sesuai kebutuhan dan spesifikasi produk/proyek menggunakan mesin full otomatis hidrolik modern.",
+        "Kaha Block memproduksi aneka model paving presisi—termasuk Truepave, Hexagonal, Ubin, Topi Uskup (K-300), dan aneka Kanstein—serta melayani paket pengadaan material dan jasa pemasangan profesional untuk wilayah Jabodetabek. Ketersediaan mutu pada masing-masing produk dikonfirmasi saat konsultasi. Lihat hasil pengerjaan kami di [Galeri Proyek Kaha Block](/id/projects).",
       ],
     },
     {
@@ -191,7 +191,7 @@ export const article1Id: BlogPost = {
     items: [
       {
         question: "Apakah paving tebal 6 cm aman untuk carport mobil keluarga?",
-        answer: "Ya, paving block tebal 6 cm dengan mutu beton K-300 sangat aman dan ideal untuk carport rumah tinggal dengan beban kendaraan pribadi seperti mobil MPV, SUV, dan sedan harian.",
+        answer: "Paving block tebal 6 cm umumnya memadai untuk carport rumah tinggal dengan beban kendaraan pribadi seperti mobil MPV, SUV, dan sedan harian, asalkan didukung pondasi agregat yang padat dan rata serta pemilihan produk yang tepat.",
       },
       {
         question: "Mengapa pola tulang ikan (herringbone) sangat disarankan untuk area kendaraan?",
@@ -203,7 +203,7 @@ export const article1Id: BlogPost = {
       },
       {
         question: "Apakah Kaha Block melayani jasa pemasangan selain pengadaan material?",
-        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material paving block sekaligus jasa pemasangan oleh tenaga ahli berpengalaman untuk wilayah Jabodetabek dan sekitarnya.",
+        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material paving block sekaligus jasa pemasangan oleh tenaga ahli berpengalaman untuk wilayah Jabodetabek.",
       },
     ],
   },
@@ -228,7 +228,7 @@ export const article1En: BlogPost = {
   seoDescription: "Learn how to select the right paving blocks for residential carports, access roads, and commercial complexes with precision thickness and strength ratings.",
   featured: true,
   intro: [
-    "Direct Answer: To choose the appropriate paving block, match thickness and compressive strength to site requirements: 6 cm thickness is commonly applied for pedestrian walkways and private carports; 8 cm thickness (K-250, K-300, and K-400 grade) with herringbone interlocking for residential cluster roads and moderate commercial traffic; and 10 cm for heavy industrial freight areas. Final subbase thickness and specifications should be engineered according to soil conditions and project requirements.",
+    "Direct Answer: To choose the appropriate paving block, match thickness and compressive strength to site requirements: 6 cm thickness is commonly applied for pedestrian walkways and private carports; 8 cm thickness with herringbone interlocking for residential cluster roads and moderate commercial traffic; and 10 cm for heavy industrial freight areas. Final subbase thickness and specifications should be engineered according to soil conditions and project requirements.",
     "Choosing the right outdoor pavement requires balancing structural load capacity, drainage efficiency, and visual appeal. Interlocking concrete paving blocks (conblocks) have long been a premier surfacing solution across Indonesia because they provide modular flexibility, easy long-term maintenance, and effective rainwater infiltration through sand-filled joints.",
     "However, the structural longevity of any paved surface depends heavily on matching product specifications to the actual traffic loads that will traverse the area. Installing undersized pavers in high-traffic zones leads to premature rutting and edge breakage, while over-engineering pedestrian pathways introduces unnecessary project costs.",
     "In this comprehensive guide, PT Kaha Sukses Mandiri (Kaha Block) shares practical recommendations to help homeowners, architects, property developers, and civil contractors choose the ideal paving block type, thickness, and concrete compressive strength for any project scale.",
@@ -370,8 +370,8 @@ export const article1En: BlogPost = {
       id: "integrated-supply-and-install",
       heading: "6. Integrated Supply and Installation Solutions",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, supplies high-precision K-250, K-300, and K-400 paving blocks across Greater Jakarta (Jabodetabek).",
-        "In addition to manufacturing our complete [product catalog](/en/products)—including Truepave, Hexa, Square pavers, Bishop Hat (Topi Uskup), and diverse curb units—Kaha Block provides professional turnkey installation services. View completed project applications in our [Project Gallery](/en/projects), or reach out via our [contact page](/en/contact) for direct consultations.",
+        "PT Kaha Sukses Mandiri (Kaha Block), operating since 2015 from a modern 9,080 m² production facility in Cisauk, Tangerang, offers K-250, K-300, and K-400 concrete grade options across its production range using fully automated hydraulic machinery.",
+        "Kaha Block produces high-precision paving products—including Truepave, Hexa, Square pavers, Bishop Hat (Topi Uskup K-300), and diverse curb units—and provides supply-and-install options across Greater Jakarta (Jabodetabek). Grade availability for each specific product should be confirmed during consultation. View completed project applications in our [Project Gallery](/en/projects), or reach out via our [contact page](/en/contact) for direct consultations.",
       ],
     },
     {
@@ -405,7 +405,7 @@ export const article1En: BlogPost = {
     items: [
       {
         question: "Is 6 cm paving block strong enough for home carports?",
-        answer: "Yes, 6 cm thickness with K-300 concrete grade is perfectly suited and structurally safe for private home driveways accommodating passenger cars, SUVs, and family vehicles.",
+        answer: "A 6 cm paver thickness is generally suitable for private residential carports carrying normal passenger cars and family vehicles, provided the aggregate subbase is properly compacted and level.",
       },
       {
         question: "Why is the herringbone laying pattern recommended for vehicular driveways?",
