@@ -61,16 +61,18 @@ export default async function Products({
             <span className="text-accent font-bold block mt-2">{dict.availability}</span>
           </>
         }
+        backgroundImage="/images/hero/kaha-block-hero-paving.webp"
+        mobileBackgroundImage="/images/hero/kaha-block-hero-paving.webp"
       />
 
       {/* =========================================================================
-          2. PRODUCT NAVIGATOR (Warm White Canvas)
+          1. PRODUCT NAVIGATOR (Warm White Canvas)
          ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 py-10 sm:py-14">
+      <section className="bg-gradient-to-b from-white to-[#FAF9F6] border-b border-stone-200/80 py-10 sm:py-14">
         <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12">
           {/* Product Navigator Panel */}
           {dict.navigator && (
-            <ScrollReveal immediate className="max-w-4xl bg-white rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-slate-200 shadow-xs">
+            <ScrollReveal immediate className="max-w-4xl bg-white rounded-xl sm:rounded-2xl p-5 sm:p-7 border border-stone-200 shadow-xs">
               <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
                 <div className="flex items-center space-x-2 text-slate-900">
                   <ArrowDown className="w-4 h-4 text-accent" aria-hidden="true" />
@@ -125,7 +127,7 @@ export default async function Products({
       {/* =========================================================================
           2. PRODUCT GRID SECTION (Slate Background)
          ========================================================================= */}
-      <section className="bg-slate-50 py-12 sm:py-16 md:py-20">
+      <section className="bg-surface py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {productKeys.map((key, index) => {
@@ -137,7 +139,7 @@ export default async function Products({
                 <ScrollReveal
                   key={key}
                   delay={index * 0.03}
-                  className="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-md transition-all duration-300 group flex flex-col h-full scroll-mt-28"
+                  className="bg-white rounded-xl overflow-hidden shadow-xs border border-stone-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-md transition-all duration-300 group flex flex-col h-full scroll-mt-28"
                   id={anchorId}
                 >
                   {/* 3:2 Product Image Container */}
@@ -251,17 +253,17 @@ export default async function Products({
           3. BUYING CONSIDERATION SECTION (Warm Neutral Editorial Section)
          ========================================================================= */}
       {dict.beforeOrder && (
-        <section className="bg-surface border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
+        <section className="bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] border-y border-stone-900 py-14 sm:py-18 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.beforeOrder.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-white">
                 {dict.beforeOrder.title}
               </h2>
               <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-400 font-sans leading-relaxed">
                 {dict.beforeOrder.subtitle}
               </p>
             </ScrollReveal>
@@ -271,19 +273,19 @@ export default async function Products({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-sm transition-all"
+                  className="bg-[#1C1C1C] border border-white/10 border-t-2 border-t-accent/60 rounded-2xl p-6 flex flex-col justify-between hover:border-accent transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
                       <span className="w-8 h-8 rounded-lg bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center shadow-xs">
                         {item.number}
                       </span>
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" aria-hidden="true" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-white mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-400 font-sans leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -298,7 +300,7 @@ export default async function Products({
           4. PRODUCT FAQ (White Accordion Section)
          ========================================================================= */}
       {dict.faq && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-gradient-to-b from-white to-surface py-14 sm:py-18 md:py-24 border-b border-stone-200/80">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
@@ -316,7 +318,7 @@ export default async function Products({
             <div className="space-y-4">
               {dict.faq.items.map((item, idx) => (
                 <ScrollReveal key={idx} delay={idx * 0.03}>
-                  <details className="group rounded-xl bg-surface border border-slate-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-accent/40">
+                  <details className="group rounded-xl bg-white border border-stone-200/90 p-5 sm:p-6 transition-all duration-200 hover:border-accent/40">
                     <summary className="font-bold text-base sm:text-lg text-slate-900 cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded select-none">
                       <span className="pr-4 font-heading">{item.q}</span>
                       <ChevronDown className="w-5 h-5 text-slate-500 shrink-0 group-open:rotate-180 transition-transform duration-200" aria-hidden="true" />
@@ -335,7 +337,7 @@ export default async function Products({
       {/* =========================================================================
           5. FINAL CONSULTATION CTA (Venetian Red Background)
          ========================================================================= */}
-      <section className="bg-primary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
 

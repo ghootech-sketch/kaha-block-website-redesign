@@ -52,12 +52,14 @@ export default async function Contact({
         eyebrow={dict.eyebrow}
         title={dict.title}
         description={dict.description}
+        backgroundImage="/images/factory/factory-production-19.webp"
+        mobileBackgroundImage="/images/factory/factory-production-19.webp"
       />
 
       {/* =========================================================================
           2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
          ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 py-12 sm:py-16 md:py-20">
+      <section className="bg-gradient-to-b from-white to-[#FAF9F6] border-b border-stone-200/80 py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-14">
             {/* Card 1: WhatsApp Utama */}
@@ -303,17 +305,17 @@ export default async function Contact({
           5. CONSULTATION PREPARATION CHECKLIST (White Section)
          ========================================================================= */}
       {dict.prepChecklist && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] py-14 sm:py-18 md:py-24 border-y border-stone-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
                 {dict.prepChecklist.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-white">
                 {dict.prepChecklist.title}
               </h2>
               <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-400 font-sans leading-relaxed">
                 {dict.prepChecklist.subtitle}
               </p>
             </ScrollReveal>
@@ -323,19 +325,19 @@ export default async function Contact({
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
+                  className="bg-[#1C1C1C] border border-white/10 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
                       <span className="w-8 h-8 rounded-lg bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center shadow-xs">
                         {item.number}
                       </span>
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" aria-hidden="true" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
+                    <h3 className="text-base sm:text-lg font-bold font-heading text-white mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-400 font-sans leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -350,7 +352,7 @@ export default async function Contact({
           6. WHAT HAPPENS NEXT (Process Timeline on Warm Neutral Background)
          ========================================================================= */}
       {dict.processFlow && (
-        <section className="bg-surface py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-gradient-to-b from-white to-surface py-14 sm:py-18 md:py-24 border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
@@ -370,7 +372,7 @@ export default async function Contact({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="bg-white border border-stone-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
                 >
                   <div>
                     <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
@@ -394,7 +396,7 @@ export default async function Contact({
           7. CONTACT FAQ (Semantic Details & Summary on White Background)
          ========================================================================= */}
       {dict.faq && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-stone-200/80">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
@@ -413,15 +415,15 @@ export default async function Contact({
               {dict.faq.items.map((item, index) => (
                 <ScrollReveal key={index} delay={index * 0.03}>
                   <details
-                    className="group border-b border-slate-200/90 open:border-accent/40 transition-all duration-200 hover:border-accent/40"
+                    className="group border-b border-stone-200/90 open:border-accent/40 transition-all duration-200 hover:border-accent/40"
                   >
                     <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
                       <span className="pr-4">{item.q}</span>
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 group-hover:border-accent group-open:rotate-180 transition-transform duration-200">
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-slate-800 group-hover:border-accent group-open:rotate-180 transition-transform duration-200">
                         <ChevronDown className="w-4 h-4" aria-hidden="true" />
                       </span>
                     </summary>
-                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-xs sm:text-sm text-slate-700 font-sans leading-relaxed border-t border-slate-200/80">
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-xs sm:text-sm text-slate-700 font-sans leading-relaxed border-t border-stone-200/80">
                       {item.a}
                     </div>
                   </details>
@@ -435,7 +437,7 @@ export default async function Contact({
       {/* =========================================================================
           8. FINAL CONTACT CTA (Venetian Red Background)
          ========================================================================= */}
-      <section className="bg-primary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
 

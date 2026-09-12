@@ -125,12 +125,14 @@ export default async function About({
           eyebrow={dict.overview.eyebrow}
           title={dict.title}
           description={dict.subtitle}
+          backgroundImage="/images/factory/factory-production-01.webp"
+          mobileBackgroundImage="/images/factory/factory-production-01.webp"
         />
 
         {/* =========================================================
             2. COMPANY OVERVIEW
         ========================================================= */}
-        <section id="company-overview" className="py-12 sm:py-16 md:py-20 bg-white border-b border-stone-200/80">
+        <section id="company-overview" className="py-12 sm:py-16 md:py-20 bg-surface border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
               
@@ -151,7 +153,7 @@ export default async function About({
               </ScrollReveal>
 
               {/* Highlight Sidebar Card (5 cols) */}
-              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-surface rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-stone-200/80 border-t-4 border-t-accent shadow-xs">
+              <ScrollReveal direction="left" delay={0.15} className="lg:col-span-5 bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-stone-200/80 border-t-4 border-t-accent shadow-xs">
                 <div className="border-b border-stone-200/80 pb-5 mb-5">
                   <div className="text-xs font-bold uppercase tracking-widest text-slate-700 mb-1">
                     Brand & Badan Usaha
@@ -225,7 +227,7 @@ export default async function About({
         {/* =========================================================
             3. COMPANY FACTS
         ========================================================= */}
-        <section id="company-facts" className="py-12 sm:py-16 md:py-20 bg-surface border-b border-stone-200/80">
+        <section id="company-facts" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-white via-[#FAF9F6] to-surface border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
@@ -246,10 +248,10 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.05}
-                    className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
+                    className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-7 border border-stone-200/60 border-t-2 border-t-accent/60 shadow-2xs hover:shadow-md transition-shadow flex flex-col justify-between"
                   >
                     <div>
-                      <div className="w-12 h-12 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40">
+                      <div className="w-12 h-12 rounded-xl bg-accent/10 text-slate-900 flex items-center justify-center mb-4 border border-accent/20">
                         <IconComponent className="w-6 h-6 text-slate-900" aria-hidden="true" />
                       </div>
                       <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
@@ -272,23 +274,23 @@ export default async function About({
         {/* =========================================================
             4. VISION AND MISSION
         ========================================================= */}
-        <section id="vision-and-mission" className="py-12 sm:py-16 md:py-20 bg-white border-b border-stone-200/80">
+        <section id="vision-and-mission" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] border-b border-stone-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
                 {dict.visionMission.eyebrow}
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 font-heading tracking-tight mb-3">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-heading tracking-tight mb-3">
                 {dict.visionMission.heading}
               </h2>
-              <p className="text-sm sm:text-base text-slate-600">
+              <p className="text-sm sm:text-base text-slate-400">
                 {dict.visionMission.subtitle}
               </p>
             </ScrollReveal>
 
             {/* Vision Statement Card (Hero Banner Card) */}
-            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-primary to-primary-hover text-white rounded-xl sm:rounded-2xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
-              <div className="max-w-4xl">
+            <ScrollReveal className="mb-8 sm:mb-12 bg-gradient-to-br from-[#8B0000] to-[#5C0000] text-white rounded-xl sm:rounded-2xl p-8 sm:p-10 md:p-12 shadow-lg relative overflow-hidden border-t-4 border-accent">
+              <div className="max-w-4xl relative z-10">
                 <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold uppercase tracking-widest text-accent mb-3 sm:mb-4">
                   <Target className="w-4 h-4 sm:w-5 sm:h-5 text-accent" aria-hidden="true" />
                   {dict.visionMission.visionTitle}
@@ -301,7 +303,7 @@ export default async function About({
 
             {/* Mission Section (01, 02, 03 Numbered Steps) */}
             <div>
-              <div className="flex items-center gap-2 mb-6 text-sm sm:text-base font-bold text-slate-900 font-heading">
+              <div className="flex items-center gap-2 mb-6 text-sm sm:text-base font-bold text-white font-heading">
                 <Compass className="w-5 h-5 text-accent" aria-hidden="true" />
                 <span>{dict.visionMission.missionTitle}</span>
               </div>
@@ -311,19 +313,19 @@ export default async function About({
                   <ScrollReveal
                     key={index}
                     delay={index * 0.08}
-                    className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs relative flex flex-col justify-between hover:border-accent transition-colors"
+                    className="bg-[#1C1C1C] rounded-2xl p-6 sm:p-7 border border-white/10 border-t-2 border-t-accent/60 shadow-2xs relative flex flex-col justify-between hover:border-accent transition-colors"
                   >
                     <div>
                       <div className="w-10 h-10 rounded-xl bg-accent text-slate-900 font-extrabold font-mono text-sm flex items-center justify-center mb-3 shadow-xs">
                         {mission.number}
                       </div>
-                      <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-sans font-medium">
+                      <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans font-medium">
                         {mission.text}
                       </p>
                     </div>
-                    <div className="mt-4 pt-3 border-t border-stone-200/60 flex items-center justify-between text-xs text-slate-500">
+                    <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-500">
                       <span>Komitmen Misi</span>
-                      <CheckCircle2 className="w-4 h-4 text-emerald-700" aria-hidden="true" />
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" aria-hidden="true" />
                     </div>
                   </ScrollReveal>
                 ))}
@@ -360,7 +362,7 @@ export default async function About({
                     className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs flex flex-col justify-between hover:border-accent transition-colors"
                   >
                     <div>
-                      <div className="w-11 h-11 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40">
+                      <div className="w-11 h-11 rounded-xl bg-accent/10 text-slate-900 flex items-center justify-center mb-4 border border-accent/20">
                         <IconComponent className="w-5 h-5 text-slate-900" aria-hidden="true" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mb-2.5">
@@ -384,7 +386,7 @@ export default async function About({
         {/* =========================================================
             6. WHO WE SERVE
         ========================================================= */}
-        <section id="who-we-serve" className="py-12 sm:py-16 md:py-20 bg-white border-b border-stone-200/80">
+        <section id="who-we-serve" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-white via-white to-surface border-b border-stone-200/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
               <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent block mb-2 font-heading">
@@ -408,7 +410,7 @@ export default async function About({
                     className="bg-surface rounded-2xl p-6 sm:p-7 border border-stone-200/80 border-t-2 border-t-accent/60 shadow-2xs hover:border-accent transition-colors flex flex-col justify-between"
                   >
                     <div>
-                      <div className="w-11 h-11 rounded-xl bg-accent/20 text-slate-900 flex items-center justify-center mb-4 border border-accent/40 shadow-2xs">
+                      <div className="w-11 h-11 rounded-xl bg-accent/10 text-slate-900 flex items-center justify-center mb-4 border border-accent/20 shadow-2xs">
                         <IconComponent className="w-5 h-5 text-slate-900" aria-hidden="true" />
                       </div>
                       <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mb-2">
@@ -440,7 +442,7 @@ export default async function About({
         ========================================================= */}
         <section id="about-cta" className="py-12 sm:py-16 md:py-20 bg-surface">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="bg-primary text-white rounded-xl sm:rounded-2xl p-8 sm:p-12 md:p-16 text-center shadow-lg relative overflow-hidden">
+            <ScrollReveal className="bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white rounded-xl sm:rounded-2xl p-8 sm:p-12 md:p-16 text-center shadow-lg relative overflow-hidden border-t-4 border-accent">
               <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
 

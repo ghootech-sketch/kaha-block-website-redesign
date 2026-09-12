@@ -27,7 +27,7 @@ export default function PageHero({
   } = getImageProps({ ...common, src: mobileBackgroundImage });
 
   return (
-    <section data-navbar-hero="true" className="relative w-full min-h-[360px] sm:min-h-[420px] lg:min-h-[460px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
+    <section data-navbar-hero="true" className="relative w-full min-h-[280px] sm:min-h-[340px] lg:min-h-[400px] flex items-end overflow-hidden pt-24 lg:pt-[104px]">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
         <picture>
@@ -40,8 +40,10 @@ export default function PageHero({
             className="object-cover object-center w-full h-full"
           />
         </picture>
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/45 pointer-events-none" />
+        {/* Overlay Gradients */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#8B0000]/25 via-transparent to-[#D4AF37]/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-[#0F0F0F]/90 pointer-events-none" />
       </div>
 
       {/* Content Container */}

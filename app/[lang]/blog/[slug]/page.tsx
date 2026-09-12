@@ -110,7 +110,7 @@ export default async function BlogPostPage({
   const remainingIntro = isQuickAnswer ? post.intro.slice(1) : post.intro;
 
   return (
-    <div className="min-h-screen bg-surface text-slate-900 selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen bg-gradient-to-b from-white to-[#FAF9F6] text-slate-900 selection:bg-primary/20 selection:text-primary">
       {/* Unified JSON-LD Graph Injection */}
       <JsonLd page="blogPost" lang={currentLang} post={post} />
 
@@ -119,6 +119,8 @@ export default async function BlogPostPage({
         eyebrow={post.category}
         title={post.title}
         description={<FormattedText text={post.excerpt} />}
+        backgroundImage="/images/factory/factory-production-09.webp"
+        mobileBackgroundImage="/images/factory/factory-production-09.webp"
       >
         <div className="flex flex-col gap-6 mt-6 max-w-4xl">
           {/* Quick Answer Callout */}
@@ -542,8 +544,10 @@ export default async function BlogPostPage({
 
         {/* Bottom Consultation CTA */}
         <section className="mt-20">
-          <div className="rounded-xl bg-primary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-            <div>
+          <div className="rounded-xl bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg border-t-4 border-accent relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
+            <div className="relative z-10 flex-1">
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-heading">
                 {isEn
                   ? "Need Engineering Guidance for Your Project?"
@@ -555,7 +559,7 @@ export default async function BlogPostPage({
                   : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik."}
               </p>
             </div>
-            <div className="flex flex-wrap gap-3 shrink-0">
+            <div className="flex flex-wrap gap-3 shrink-0 relative z-10">
               <Link
                 href={`/${currentLang}/products`}
                 className="px-5 py-2.5 rounded-xl bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px] flex items-center justify-center"

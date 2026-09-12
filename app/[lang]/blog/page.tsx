@@ -73,7 +73,7 @@ export default async function BlogIndexPage({
       ];
 
   return (
-    <div className="min-h-screen bg-surface text-slate-900 selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen bg-gradient-to-b from-white to-[#FAF9F6] text-slate-900 selection:bg-primary/20 selection:text-primary">
       <JsonLd page="blog" lang={currentLang} />
 
       {/* Header Hero Section */}
@@ -81,6 +81,8 @@ export default async function BlogIndexPage({
         eyebrow={dict.eyebrow}
         title={dict.title}
         description={dict.subtitle}
+        backgroundImage="/images/factory/factory-production-03.webp"
+        mobileBackgroundImage="/images/factory/factory-production-03.webp"
       >
         <nav
           aria-label="Breadcrumb"
@@ -274,8 +276,10 @@ export default async function BlogIndexPage({
         {/* Bottom Consulting & Product Navigator CTA */}
         <section className="mt-24">
           <ScrollReveal direction="up">
-            <div className="rounded-xl bg-primary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-lg">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="rounded-xl bg-gradient-to-br from-[#0F0F0F] via-primary to-[#5C0000] text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-lg border-t-4 border-accent">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none transform translate-x-12 -translate-y-12" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none transform -translate-x-12 translate-y-12" />
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
                 <div className="lg:col-span-8">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-accent text-xs font-semibold uppercase tracking-wider mb-3 font-heading">
                     <Layers className="w-3.5 h-3.5" />
