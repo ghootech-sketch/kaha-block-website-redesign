@@ -12,12 +12,24 @@ interface FloatingWhatsAppProps {
 export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const firstOptionRef = useRef<HTMLAnchorElement>(null);
+  const triggerBtnRef = useRef<HTMLButtonElement>(null);
 
   const ariaLabel =
     lang === "en" ? "Open Kaha Block WhatsApp" : "Buka WhatsApp Kaha Block";
     
   const titleText =
     lang === "en" ? "Chat on WhatsApp" : "WhatsApp Kaha Block";
+
+  // Focus first option when opened
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        firstOptionRef.current?.focus();
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
 
   // Close on outside click
   useEffect(() => {
@@ -35,18 +47,19 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
     };
   }, []);
 
-  // Close on Escape
+  // Close on Escape & return focus to trigger button
   useEffect(() => {
     function handleEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") {
+      if (event.key === "Escape" && isOpen) {
         setIsOpen(false);
+        triggerBtnRef.current?.focus();
       }
     }
     document.addEventListener("keydown", handleEscape);
     return () => {
       document.removeEventListener("keydown", handleEscape);
     };
-  }, []);
+  }, [isOpen]);
 
   return (
     <aside
@@ -66,7 +79,10 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
             <span className="text-sm font-bold tracking-wide font-heading">{titleText}</span>
           </div>
           <button
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              triggerBtnRef.current?.focus();
+            }}
             className="text-slate-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
             aria-label="Close"
           >
@@ -76,6 +92,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         
         <div className="p-2 space-y-1">
           <a
+            ref={firstOptionRef}
             href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -112,6 +129,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
       </div>
 
       <button
+        ref={triggerBtnRef}
         id="floating-whatsapp-btn"
         onClick={() => setIsOpen(!isOpen)}
         aria-label={ariaLabel}

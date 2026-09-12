@@ -49,6 +49,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         setIsOpen(false);
         setMobileProjectsOpen(false);
         setDesktopProjectsOpen(false);
+        setDesktopWhatsappOpen(false);
       }
     };
     window.addEventListener("keydown", handleKeyDown);
