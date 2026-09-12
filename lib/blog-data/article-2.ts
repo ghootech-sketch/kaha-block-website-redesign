@@ -141,7 +141,7 @@ export const article2Id: BlogPost = {
       id: "jaminan-mutu-kaha",
       heading: "7. Kualitas Presisi Produksi Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri memproduksi varian paving block 6 cm dan 8 cm mutu K-250, K-300, dan K-400 menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang. Rincian spesifikasi produk dapat dilihat di [Katalog Produk Kaha Block](/id/products).",
+        "PT Kaha Sukses Mandiri memproduksi berbagai varian paving block dengan pilihan ketebalan termasuk 6 cm dan 8 cm menggunakan mesin full otomatis hidrolik di pabrik Cisauk, Tangerang. Kaha Block juga menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi sesuai jenis produk dan kebutuhan proyek. Ketersediaan mutu untuk setiap produk dikonfirmasi saat konsultasi. Rincian spesifikasi produk dapat dilihat di [Katalog Produk Kaha Block](/id/products).",
         "Dengan kontrol bahan baku yang ketat dan tekanan hidrolik tinggi yang konsisten, balok paving yang dihasilkan memiliki keseragaman ketebalan yang sangat presisi, meminimalisir deviasi elevasi saat dipasang berdampingan di lapangan. Untuk konsultasi volume dan pemesanan, kunjungi [Halaman Kontak Kaha Block](/id/contact).",
       ],
     },
@@ -334,7 +334,7 @@ export const article2En: BlogPost = {
       id: "kaha-manufacturing-standards",
       heading: "7. High-Precision Production at Kaha Block",
       paragraphs: [
-        "PT Kaha Sukses Mandiri produces high-grade 6 cm and 8 cm concrete pavers with K-250, K-300, and K-400 compressive ratings using fully automated hydraulic machinery at our Cisauk, Tangerang facility. Check full specifications in our [Product Catalog](/en/products).",
+        "PT Kaha Sukses Mandiri manufactures paving block variants with thickness options including 6 cm and 8 cm using fully automated hydraulic machinery at its Cisauk, Tangerang facility. Kaha Block also offers K-250, K-300, and K-400 concrete grade options across its production range depending on product and project requirements. Grade availability for each specific product is confirmed during consultation. Check full specifications in our [Product Catalog](/en/products).",
         "Rigorous quality control and synchronized hydraulic vibration guarantee consistent block density and millimetric height accuracy, ensuring seamless alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
       ],
     },

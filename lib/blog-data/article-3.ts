@@ -279,7 +279,7 @@ export const article3En: BlogPost = {
       id: "kaha-quality-assurance",
       heading: "6. PT Kaha Sukses Mandiri Quality Standards",
       paragraphs: [
-        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit)—with K-250, K-300, and K-400 compressive strength options.",
+        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit). Across its production range, Kaha Block offers K-250, K-300, and K-400 concrete grade options depending on product and project requirements, with specific grade availability confirmed during consultation.",
         "Through advanced hydraulic technology, rigorous aggregate quality control, and experienced turnkey installation teams, Kaha Block remains the trusted supplier for infrastructure across Greater Jakarta. View completed works in our [Project Gallery](/en/projects) or reach out via our [Contact Page](/en/contact).",
       ],
     },
