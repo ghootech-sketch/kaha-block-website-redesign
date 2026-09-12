@@ -6,7 +6,7 @@ import Gallery from "@/components/Gallery";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, MessageSquare, Layers } from "lucide-react";
+import { ArrowRight, CheckCircle2, MessageSquare } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -73,7 +73,7 @@ export default async function Projects({
       {/* =========================================================================
           2. GALLERY SECTION: FEATURED & ALL 33 DOCUMENTATION PHOTOS (White Canvas)
          ========================================================================= */}
-      <section className="bg-white py-14 sm:py-18 md:py-24">
+      <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Gallery 
             images={Array.from({ length: 33 }, (_, i) => `/images/projects/kaha-block-dokumentasi-${String(i + 1).padStart(2, '0')}.webp`)} 
@@ -97,42 +97,46 @@ export default async function Projects({
       </section>
 
       {/* =========================================================================
-          3. DOCUMENTATION SCOPE SECTION (Warm Neutral Background)
+          3. DOCUMENTATION SCOPE SECTION (Surface Background)
          ========================================================================= */}
       {dict.scope && (
-        <section className="bg-surface border-y border-slate-200/80 py-14 sm:py-18 md:py-24">
+        <section className="bg-surface py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {dict.scope.eyebrow}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.scope.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                 {dict.scope.title}
               </h2>
-              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-700 font-sans leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                 {dict.scope.subtitle}
               </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
               {dict.scope.items.map((item, idx) => (
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.05}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 sm:p-7 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
+                  className="flex flex-col group border border-stone-200/40 p-6 sm:p-8 hover:border-accent/40 transition-colors bg-white/50"
                 >
-                  <div>
-                    <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
+                  <div className="mb-4">
+                    <span className="text-3xl font-light font-heading text-slate-300 group-hover:text-accent transition-colors block mb-4">
                       {item.number}
                     </span>
-                    <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-2.5">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                      {item.desc}
-                    </p>
+                    <div className="h-px w-8 bg-accent" aria-hidden="true" />
                   </div>
+                  <h3 className="text-lg sm:text-xl font-medium text-slate-900 font-heading mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed">
+                    {item.desc}
+                  </p>
                 </ScrollReveal>
               ))}
             </div>
@@ -144,51 +148,52 @@ export default async function Projects({
           4. HOW WE SUPPORT PROJECT WORKFLOW (4 Steps)
          ========================================================================= */}
       {dict.projectSupport && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {dict.projectSupport.eyebrow}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.projectSupport.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                 {dict.projectSupport.title}
               </h2>
-              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-600 font-sans">
+              <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                 {dict.projectSupport.subtitle}
               </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {dict.projectSupport.steps.map((step, idx) => (
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/80 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="flex flex-col group border border-stone-200/40 p-6 sm:p-8 hover:border-accent/40 transition-colors bg-surface/50 text-center items-center"
                 >
-                  <div>
-                    <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
-                      {step.number}
-                    </span>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                      {step.desc}
-                    </p>
-                  </div>
+                  <span className="flex items-center justify-center w-12 h-12 rounded-full border border-accent text-slate-900 font-heading font-medium text-lg mb-6 group-hover:bg-accent transition-colors">
+                    {step.number}
+                  </span>
+                  <h3 className="text-lg sm:text-xl font-medium text-slate-900 font-heading mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed">
+                    {step.desc}
+                  </p>
                 </ScrollReveal>
               ))}
             </div>
 
             {/* Link to Contact */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 border-t border-slate-200/80">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href={`/${currentLang}/contact`}
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-dark hover:bg-slate-800 text-white px-8 py-3.5 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px] uppercase tracking-wide font-heading"
               >
                 <span>{currentLang === "id" ? "Lihat Kontak & Lokasi Pabrik" : "View Contact & Factory Location"}</span>
-                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -196,25 +201,24 @@ export default async function Projects({
       )}
 
       {/* =========================================================================
-          5. FINAL PROJECT CONSULTATION CTA (Venetian Red Background)
+          5. FINAL PROJECT CONSULTATION CTA (Dark Background)
          ========================================================================= */}
-      <section className="bg-primary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
-
+      <section className="bg-dark text-white py-16 sm:py-20 lg:py-28 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal direction="up">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
-              <Layers className="w-4 h-4 text-accent" aria-hidden="true" />
-              <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
+          <ScrollReveal direction="up" className="flex flex-col items-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
                 {dict.projectCta?.eyebrow || "Kebutuhan Proyek"}
               </span>
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5 font-heading">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white font-heading tracking-tight mb-6">
               {dict.projectCta?.heading || "Punya Area yang Ingin Dipasang Paving Block?"}
             </h2>
-            <p className="text-base sm:text-lg opacity-90 leading-relaxed font-sans max-w-2xl mx-auto mb-8 sm:mb-10">
+            <p className="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed mb-10 max-w-2xl mx-auto">
               {dict.projectCta?.description || "Kirimkan informasi lokasi, perkiraan luas area, dan kebutuhan pekerjaan untuk memulai konsultasi."}
             </p>
 
@@ -223,9 +227,9 @@ export default async function Projects({
                 href={contactDict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent uppercase font-heading tracking-wide"
               >
-                <MessageSquare className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
+                <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
                 {dict.projectCta?.button || "Diskusikan Proyek Anda"}
               </a>
             </div>

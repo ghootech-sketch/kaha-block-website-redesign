@@ -175,7 +175,7 @@ export default async function ProductionGalleryPage({
       {/* =========================================================================
           2. PRODUCTION FACT & CAPABILITY STRIP
          ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 py-12 sm:py-16">
+      <section className="bg-surface border-b border-stone-200/40 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x-0 md:divide-x md:divide-slate-200">
@@ -215,21 +215,24 @@ export default async function ProductionGalleryPage({
       {/* =========================================================================
           3. FEATURED PRODUCTION HIGHLIGHTS
          ========================================================================= */}
-      <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+      <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevealGroup>
-            <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 flex flex-col items-center">
               <Reveal delay={0}>
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                  {currentLang === 'en' ? "Production Highlights" : "Sorotan Produksi"}
-                </span>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+                <div className="flex items-center space-x-3 mb-4">
+                  <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                    {currentLang === 'en' ? "Production Highlights" : "Sorotan Produksi"}
+                  </span>
+                  <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                </div>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                   {currentLang === 'en' ? "Key Manufacturing Phases" : "Tahapan Utama Manufaktur"}
                 </h2>
-                <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
               </Reveal>
               <Reveal delay={0.08}>
-                <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                   {dict.heroDesc}
                 </p>
               </Reveal>
@@ -286,9 +289,9 @@ export default async function ProductionGalleryPage({
       />
 
       {/* =========================================================================
-          5. EXISTING 35-PHOTO PRODUCTION GALLERY (Unmixed, Pure Photo Documentation)
+          5. EXISTING 35-PHOTO PRODUCTION GALLERY (Surface Background)
          ========================================================================= */}
-      <section className="bg-white py-14 sm:py-18 md:py-24 border-t border-slate-200/80">
+      <section className="bg-surface py-16 sm:py-20 lg:py-28 border-t border-stone-200/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Gallery 
             images={productionImages} 
@@ -306,36 +309,43 @@ export default async function ProductionGalleryPage({
       </section>
 
       {/* =========================================================================
-          6. CTA SECTION
+          6. CTA SECTION (Dark Background)
          ========================================================================= */}
-      <section className="bg-surface py-16 sm:py-24 border-t border-slate-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="bg-surface-card rounded-2xl p-8 sm:p-12 border border-slate-200/80 shadow-xs text-center">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-              {currentLang === 'en' ? "Factory Direct" : "Langsung Dari Pabrik"}
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading mb-4">
+      <section className="bg-dark text-white relative overflow-hidden py-16 sm:py-20 lg:py-28">
+        <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal direction="up" className="flex flex-col items-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                {currentLang === 'en' ? "Factory Direct" : "Langsung Dari Pabrik"}
+              </span>
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+            </div>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white font-heading tracking-tight mb-6">
               {dict.ctaHeading}
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 mb-8 max-w-2xl mx-auto font-sans">
+            <p className="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed mb-10 max-w-2xl mx-auto">
               {dict.ctaDesc}
             </p>
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href={contactDict.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-primary hover:bg-primary-hover text-white shadow-md hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading w-full sm:w-auto"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
-                <MessageSquare className="w-5 h-5 mr-2.5 text-white" aria-hidden="true" />
+                <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
                 {dict.ctaButton}
               </a>
               <Link
                 href={`/${currentLang}/contact`}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold transition-all bg-white hover:bg-slate-50 text-slate-900 border border-slate-200 shadow-xs hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading w-full sm:w-auto"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase"
               >
                 {currentLang === 'en' ? "Contact Us" : "Hubungi Kami"}
-                <ArrowRight className="w-5 h-5 ml-2.5 text-slate-400" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 ml-2.5 text-accent" aria-hidden="true" />
               </Link>
             </div>
           </ScrollReveal>

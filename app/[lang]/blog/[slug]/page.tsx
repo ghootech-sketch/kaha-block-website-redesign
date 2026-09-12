@@ -11,6 +11,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import FormattedText from "@/components/FormattedText";
 import PageHero from "@/components/PageHero";
+import ScrollReveal from "@/components/ScrollReveal";
 import {
   Calendar,
   Clock,
@@ -27,6 +28,7 @@ import {
   HelpCircle,
   ListOrdered,
   FileCheck,
+  Layers,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -540,41 +542,53 @@ export default async function BlogPostPage({
           </section>
         )}
 
-        {/* Bottom Consultation CTA */}
-        <section className="mt-20">
-          <div className="rounded-xl bg-primary text-white p-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-heading">
-                {isEn
-                  ? "Need Engineering Guidance for Your Project?"
-                  : "Butuh Konsultasi Teknis untuk Proyek Anda?"}
-              </h3>
-              <p className="text-sm text-slate-100 max-w-xl leading-relaxed font-sans">
-                {isEn
-                  ? "Connect with PT Kaha Sukses Mandiri to discuss paving specifications, load calculations, and verified quotations."
-                  : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik."}
-              </p>
+        </main>
+
+      {/* Bottom Consultation CTA */}
+      <section className="bg-dark text-white relative overflow-hidden py-16 sm:py-20 lg:py-28 w-full mt-0">
+        <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal direction="up" className="flex flex-col items-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                PT Kaha Sukses Mandiri
+              </span>
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
             </div>
-            <div className="flex flex-wrap gap-3 shrink-0">
-              <Link
-                href={`/${currentLang}/products`}
-                className="px-5 py-2.5 rounded-xl bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px] flex items-center justify-center"
-              >
-                {isEn ? "View Products" : "Lihat Produk"}
-              </Link>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white font-heading tracking-tight mb-6">
+              {isEn
+                ? "Need Engineering Guidance for Your Project?"
+                : "Butuh Konsultasi Teknis untuk Proyek Anda?"}
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed mb-10 max-w-2xl mx-auto">
+              {isEn
+                ? "Connect with PT Kaha Sukses Mandiri to discuss paving specifications, load calculations, and verified quotations."
+                : "Hubungi PT Kaha Sukses Mandiri untuk konsultasi spesifikasi mutu paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik."}
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="https://wa.me/6281283812475"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 flex items-center gap-2 min-h-[44px] justify-center"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
-                <Phone className="w-4 h-4 text-emerald-400" />
-                <span>WhatsApp</span>
+                <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
+                {isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}
               </a>
+              <Link
+                href={`/${currentLang}/products`}
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase"
+              >
+                <Layers className="w-4 h-4 mr-2.5 text-accent" aria-hidden="true" />
+                {isEn ? "View Products" : "Lihat Produk"}
+              </Link>
             </div>
-          </div>
-        </section>
-      </main>
+          </ScrollReveal>
+        </div>
+      </section>
     </div>
   );
 }

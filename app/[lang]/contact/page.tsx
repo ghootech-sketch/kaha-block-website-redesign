@@ -15,7 +15,6 @@ import {
   ExternalLink,
   ChevronDown,
   CheckCircle2,
-  Layers,
   Truck,
 } from "lucide-react";
 import type { Metadata } from "next";
@@ -57,7 +56,7 @@ export default async function Contact({
       {/* =========================================================================
           2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
          ========================================================================= */}
-      <section className="bg-surface border-b border-slate-200/80 py-12 sm:py-16 md:py-20">
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-14">
             {/* Card 1: WhatsApp Utama */}
@@ -303,42 +302,44 @@ export default async function Contact({
           5. CONSULTATION PREPARATION CHECKLIST (White Section)
          ========================================================================= */}
       {dict.prepChecklist && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {dict.prepChecklist.eyebrow}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.prepChecklist.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                 {dict.prepChecklist.title}
               </h2>
-              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                 {dict.prepChecklist.subtitle}
               </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {dict.prepChecklist.items.map((item, idx) => (
                 <ScrollReveal
                   key={item.number}
                   delay={idx * 0.04}
-                  className="bg-surface border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-all"
+                  className="flex flex-col group border border-stone-200/40 p-6 sm:p-8 hover:border-accent/40 transition-colors bg-surface/50"
                 >
-                  <div>
-                    <div className="flex items-center justify-between mb-3.5">
-                      <span className="w-8 h-8 rounded-lg bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center shadow-xs">
-                        {item.number}
-                      </span>
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
-                    </div>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                      {item.desc}
-                    </p>
+                  <div className="mb-4 flex items-center justify-between">
+                    <span className="text-3xl font-light font-heading text-slate-300 group-hover:text-accent transition-colors block">
+                      {item.number}
+                    </span>
+                    <CheckCircle2 className="w-5 h-5 text-emerald-600/80" aria-hidden="true" />
                   </div>
+                  <div className="h-px w-8 bg-accent mb-4" aria-hidden="true" />
+                  <h3 className="text-lg sm:text-xl font-medium text-slate-900 font-heading mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed">
+                    {item.desc}
+                  </p>
                 </ScrollReveal>
               ))}
             </div>
@@ -347,20 +348,23 @@ export default async function Contact({
       )}
 
       {/* =========================================================================
-          6. WHAT HAPPENS NEXT (Process Timeline on Warm Neutral Background)
+          6. WHAT HAPPENS NEXT (Process Timeline on Surface Background)
          ========================================================================= */}
       {dict.processFlow && (
-        <section className="bg-surface py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-surface py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {dict.processFlow.eyebrow}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.processFlow.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                 {dict.processFlow.title}
               </h2>
-              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-600 font-sans">
+              <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                 {dict.processFlow.subtitle}
               </p>
             </ScrollReveal>
@@ -370,19 +374,17 @@ export default async function Contact({
                 <ScrollReveal
                   key={step.number}
                   delay={idx * 0.04}
-                  className="bg-white border border-slate-200/90 border-t-2 border-t-accent/60 rounded-xl p-6 flex flex-col justify-between hover:border-accent hover:shadow-xs transition-[border-color,box-shadow] duration-300"
+                  className="flex flex-col group border border-stone-200/40 p-6 sm:p-8 hover:border-accent/40 transition-colors bg-white/50 text-center items-center"
                 >
-                  <div>
-                    <span className="w-9 h-9 rounded-xl bg-accent text-slate-900 font-mono text-xs font-bold flex items-center justify-center mb-4 shadow-xs">
-                      {step.number}
-                    </span>
-                    <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                      {step.desc}
-                    </p>
-                  </div>
+                  <span className="flex items-center justify-center w-12 h-12 rounded-full border border-accent text-slate-900 font-heading font-medium text-lg mb-6 group-hover:bg-accent transition-colors">
+                    {step.number}
+                  </span>
+                  <h3 className="text-lg sm:text-xl font-medium text-slate-900 font-heading mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-slate-500 font-sans leading-relaxed">
+                    {step.desc}
+                  </p>
                 </ScrollReveal>
               ))}
             </div>
@@ -394,17 +396,20 @@ export default async function Contact({
           7. CONTACT FAQ (Semantic Details & Summary on White Background)
          ========================================================================= */}
       {dict.faq && (
-        <section className="bg-white py-14 sm:py-18 md:py-24 border-b border-slate-200/80">
+        <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-accent mb-2 block font-heading">
-                {dict.faq.eyebrow}
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-slate-900">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.faq.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
                 {dict.faq.title}
               </h2>
-              <div className="w-16 h-1 bg-accent mx-auto mt-4 mb-4 rounded-full" />
-              <p className="text-sm sm:text-base text-slate-600 font-sans">
+              <p className="text-sm sm:text-base text-slate-500 font-sans leading-relaxed">
                 {dict.faq.subtitle}
               </p>
             </ScrollReveal>
@@ -413,15 +418,15 @@ export default async function Contact({
               {dict.faq.items.map((item, index) => (
                 <ScrollReveal key={index} delay={index * 0.03}>
                   <details
-                    className="group border-b border-slate-200/90 open:border-accent/40 transition-all duration-200 hover:border-accent/40"
+                    className="group border border-stone-200/40 open:border-accent/40 transition-all duration-200 hover:border-accent/40 bg-white"
                   >
-                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-bold text-base sm:text-lg text-slate-900 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
+                    <summary className="flex items-center justify-between p-5 sm:p-6 cursor-pointer list-none select-none font-heading font-medium text-base sm:text-lg text-slate-900 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-none">
                       <span className="pr-4">{item.q}</span>
-                      <span className="shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-800 group-hover:border-accent group-open:rotate-180 transition-transform duration-200">
+                      <span className="shrink-0 w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-slate-800 group-hover:border-accent group-open:rotate-180 transition-transform duration-200">
                         <ChevronDown className="w-4 h-4" aria-hidden="true" />
                       </span>
                     </summary>
-                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-xs sm:text-sm text-slate-700 font-sans leading-relaxed border-t border-slate-200/80">
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-sm text-slate-600 font-sans leading-relaxed border-t border-stone-100">
                       {item.a}
                     </div>
                   </details>
@@ -433,25 +438,24 @@ export default async function Contact({
       )}
 
       {/* =========================================================================
-          8. FINAL CONTACT CTA (Venetian Red Background)
+          8. FINAL CONTACT CTA (Dark Background)
          ========================================================================= */}
-      <section className="bg-primary text-white py-16 sm:py-20 md:py-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-bl-full opacity-30 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-tr-full opacity-30 pointer-events-none" />
-
+      <section className="bg-dark text-white relative overflow-hidden py-16 sm:py-20 lg:py-28">
+        <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal direction="up">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 mb-4">
-              <Layers className="w-4 h-4 text-accent" aria-hidden="true" />
-              <span className="text-xs font-bold uppercase tracking-wider text-white font-heading">
+          <ScrollReveal direction="up" className="flex flex-col items-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
                 {dict.finalCta?.eyebrow || "Mulai Konsultasi"}
               </span>
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-5 font-heading">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white font-heading tracking-tight mb-6">
               {dict.finalCta?.heading || "Siap Mendiskusikan Kebutuhan Proyek Anda?"}
             </h2>
-            <p className="text-base sm:text-lg opacity-90 leading-relaxed font-sans max-w-2xl mx-auto mb-8 sm:mb-10">
+            <p className="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed mb-10 max-w-2xl mx-auto">
               {dict.finalCta?.description || "Hubungi Kaha Block untuk membahas produk, volume, pengiriman, dan kebutuhan pemasangan."}
             </p>
 
@@ -460,9 +464,9 @@ export default async function Contact({
                 href={dict.whatsappUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-white hover:bg-stone-100 text-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-base shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white min-h-[44px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
-                <MessageSquare className="w-4 h-4 mr-2 text-primary" aria-hidden="true" />
+                <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
                 {dict.finalCta?.button || "Hubungi via WhatsApp"}
               </a>
             </div>

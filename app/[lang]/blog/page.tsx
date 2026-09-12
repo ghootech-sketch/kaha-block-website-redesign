@@ -271,51 +271,53 @@ export default async function BlogIndexPage({
           </div>
         </section>
 
-        {/* Bottom Consulting & Product Navigator CTA */}
-        <section className="mt-24">
-          <ScrollReveal direction="up">
-            <div className="rounded-xl bg-primary text-white p-8 sm:p-10 lg:p-12 text-center lg:text-left relative overflow-hidden shadow-lg">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div className="lg:col-span-8">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-accent text-xs font-semibold uppercase tracking-wider mb-3 font-heading">
-                    <Layers className="w-3.5 h-3.5" />
-                    <span>PT Kaha Sukses Mandiri</span>
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3 tracking-tight font-heading">
-                    {isEn
-                      ? "Plan Your Paving Project with High Precision"
-                      : "Rencanakan Proyek Paving Anda Bersama Kaha Block"}
-                  </h3>
-                  <p className="text-slate-100 text-sm sm:text-base leading-relaxed max-w-2xl font-sans">
-                    {isEn
-                      ? "Consult on product choices, technical site preparation, and receive verified quotations for K-250, K-300, and K-400 paving blocks produced with fully automated hydraulic machinery."
-                      : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik untuk proyek Anda."}
-                  </p>
-                </div>
+        </div>
 
-                <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
-                  <Link
-                    href={`/${currentLang}/products`}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-stone-100 text-primary font-bold text-sm transition-colors shadow-md min-h-[44px]"
-                  >
-                    <Layers className="w-4 h-4 text-primary" />
-                    <span>{isEn ? "View Product Catalog" : "Lihat Katalog Produk"}</span>
-                  </Link>
-                  <a
-                    href="https://wa.me/6281283812475"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-sm transition-colors border border-white/20 min-h-[44px]"
-                  >
-                    <Phone className="w-4 h-4 text-emerald-400" />
-                    <span>{isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}</span>
-                  </a>
-                </div>
-              </div>
+      {/* Bottom Consulting & Product Navigator CTA */}
+      <section className="bg-dark text-white relative overflow-hidden py-16 sm:py-20 lg:py-28 w-full mt-0">
+        <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal direction="up" className="flex flex-col items-center">
+            <div className="flex items-center space-x-3 mb-4">
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                PT Kaha Sukses Mandiri
+              </span>
+              <span className="w-8 h-px bg-accent" aria-hidden="true" />
+            </div>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white font-heading tracking-tight mb-6">
+              {isEn
+                ? "Plan Your Paving Project with High Precision"
+                : "Rencanakan Proyek Paving Anda Bersama Kaha Block"}
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-slate-400 font-sans leading-relaxed mb-10 max-w-2xl mx-auto">
+              {isEn
+                ? "Consult on product choices, technical site preparation, and receive verified quotations for K-250, K-300, and K-400 paving blocks produced with fully automated hydraulic machinery."
+                : "Konsultasikan kebutuhan produk, persiapan lahan, dan dapatkan penawaran harga resmi paving block K-250, K-300, dan K-400 mesin full otomatis hidrolik untuk proyek Anda."}
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://wa.me/6281283812475"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
+              >
+                <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
+                {isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}
+              </a>
+              <Link
+                href={`/${currentLang}/products`}
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase"
+              >
+                <Layers className="w-4 h-4 mr-2.5 text-accent" aria-hidden="true" />
+                {isEn ? "View Product Catalog" : "Lihat Katalog Produk"}
+              </Link>
             </div>
           </ScrollReveal>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }
