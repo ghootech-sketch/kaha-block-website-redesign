@@ -8,7 +8,7 @@ export const article8Id: BlogPost = {
   category: "Panduan & Perbandingan",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "10 menit baca",
   seoTitle: "Paving Block vs Aspal vs Cor Beton",
   seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, peresapan air, dan fleksibilitas.",
@@ -104,7 +104,7 @@ export const article8Id: BlogPost = {
         caption: "Matriks Perbandingan Paving Block vs Aspal vs Cor Beton",
         headers: ["Kriteria Penilaian", "Paving Block", "Aspal Hotmix", "Cor Beton Rigid"],
         rows: [
-          ["Daya Dukung Beban", "Sangat Baik (K-250, K-300, dan K-400 tebal 6-10 cm)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
+          ["Daya Dukung Beban", "Sangat Baik (didukung opsi mutu K-250, K-300, atau K-400 tebal 6-10 cm serta pondasi yang memadai)", "Baik (tergantung tebal lapisan)", "Sangat Tinggi (Heavy Axle Loads)"],
           ["Kecepatan Siap Pakai", "Bisa langsung dilintasi setelah pemadatan nat", "Bisa dilintasi setelah dingin (beberapa jam)", "Menunggu masa curing 14–28 hari"],
           ["Perbaikan Utilitas Bawah Tanah", "Sangat Mudah (Bongkar-pasang reusable)", "Sulit (meninggalkan tambalan permanen)", "Sangat Sulit & Mahal (harus di-jackhammer)"],
           ["Manajemen Resapan Air", "Baik (meresap melalui celah nat)", "Kedap air total (resiko genangan tinggi)", "Kedap air total (perlu got drainase besar)"],
@@ -171,7 +171,7 @@ export const article8Id: BlogPost = {
       },
       {
         question: "Bisakah paving block menahan beban truk tangki air atau truk pemadam kebakaran?",
-        answer: "Ya, paving block dengan ketebalan 8 cm mutu K-250, K-300, dan K-400 yang dipasang dengan pola herringbone di atas pondasi batu pecah padat mampu menahan beban truk pemadam kebakaran dan kendaraan operasional bertonase berat.",
+        answer: "Kesesuaian perkerasan paving untuk kendaraan berat seperti mobil pemadam kebakaran atau truk tangki sangat bergantung pada struktur perkerasan secara menyeluruh, mencakup spesifikasi dan ketebalan paving (seperti 8 cm atau 10 cm dengan pola herringbone), ketebalan dan pemadatan pondasi agregat, daya dukung tanah dasar, serta sistem drainase.",
       },
       {
         question: "Mengapa kompleks perumahan modern lebih menyukai paving block daripada aspal?",
@@ -198,7 +198,7 @@ export const article8En: BlogPost = {
   category: "Guides & Comparisons",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "10 min read",
   seoTitle: "Concrete Pavers vs Asphalt vs Concrete Slabs",
   seoDescription: "Engineering comparison of concrete paving blocks, hotmix asphalt, and cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
@@ -294,7 +294,7 @@ export const article8En: BlogPost = {
         caption: "Comprehensive Comparison: Concrete Pavers vs. Asphalt vs. Rigid Concrete",
         headers: ["Evaluation Parameter", "Segmental Concrete Pavers", "Hotmix Asphalt", "Rigid Cast-in-Place Concrete"],
         rows: [
-          ["Structural Load Capacity", "Very High (K-250, K-300, dan K-400 in 6-10 cm)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
+          ["Structural Load Capacity", "High (supported by appropriate grade options K-250, K-300, and K-400 across 6–10 cm and designed foundation)", "Good (dependent on asphalt thickness)", "Very High (Heavy Freight Axles)"],
           ["Traffic Readiness Time", "Instantaneous after final joint compaction", "Fast (once cooled, a few hours)", "Slow (14–28 days mandatory curing)"],
           ["Underground Utility Access", "Effortless (reusable blocks, minimal scars)", "Difficult (leaves permanent trench patches)", "Extremely Difficult & Costly (destructive jackhammer)"],
           ["Stormwater Permeability", "High (infiltrates through joint voids)", "Impermeable (high runoff velocity)", "Impermeable (requires large drainage gutters)"],
@@ -361,7 +361,7 @@ export const article8En: BlogPost = {
       },
       {
         question: "Can concrete pavers support emergency fire trucks and water tanker vehicles?",
-        answer: "Yes, 8 cm K-250, K-300, and K-400 pavers laid in a 45° herringbone pattern over a compacted aggregate base are engineered to support fire engines and municipal heavy service vehicles safely.",
+        answer: "Suitability for heavy vehicles such as fire engines or water tankers depends on the complete pavement structure, including paver specification and thickness (such as 8 cm or 10 cm with herringbone interlocking), base and subbase compaction, subgrade capacity, drainage, and axle loading.",
       },
       {
         question: "Why do master-planned residential estates favor concrete pavers over asphalt?",

@@ -46,6 +46,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
+        if (desktopWhatsappOpen) {
+          document.getElementById("desktop-whatsapp-btn")?.focus();
+        }
         setIsOpen(false);
         setMobileProjectsOpen(false);
         setDesktopProjectsOpen(false);
@@ -54,6 +57,17 @@ export default function Navbar({ lang }: { lang: Locale }) {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [desktopWhatsappOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setDesktopProjectsOpen(false);
+        setDesktopWhatsappOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const links = [
@@ -226,8 +240,33 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 onMouseLeave={() => setDesktopWhatsappOpen(false)}
               >
                 <button
+                  id="desktop-whatsapp-btn"
                   onClick={() => setDesktopWhatsappOpen(!desktopWhatsappOpen)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      const nextState = !desktopWhatsappOpen;
+                      setDesktopWhatsappOpen(nextState);
+                      if (nextState) {
+                        setTimeout(() => {
+                          const menu = document.getElementById("desktop-whatsapp-menu");
+                          const firstLink = menu?.querySelector("a");
+                          firstLink?.focus();
+                        }, 0);
+                      }
+                    } else if (e.key === "ArrowDown") {
+                      e.preventDefault();
+                      setDesktopWhatsappOpen(true);
+                      setTimeout(() => {
+                        const menu = document.getElementById("desktop-whatsapp-menu");
+                        const firstLink = menu?.querySelector("a");
+                        firstLink?.focus();
+                      }, 0);
+                    }
+                  }}
                   aria-expanded={desktopWhatsappOpen}
+                  aria-haspopup="menu"
+                  aria-controls="desktop-whatsapp-menu"
                   aria-label={
                     lang === "en"
                       ? "Contact WhatsApp Kaha Block"
@@ -241,12 +280,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 >
                   <Phone className="w-4 h-4 mr-2.5 text-white" aria-hidden="true" />
                   WhatsApp
-                  <ChevronDown className={`ml-2 h-4 w-4 transition-transform duration-200 ${desktopWhatsappOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`ml-2 h-4 w-4 transition-transform duration-200 ${desktopWhatsappOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                 </button>
 
                 <div 
+                  id="desktop-whatsapp-menu"
+                  role="menu"
+                  aria-labelledby="desktop-whatsapp-btn"
                   className={`absolute right-0 top-full mt-2 w-64 rounded-xl shadow-xl bg-[#0F0F0F] border border-[#D4AF37]/30 transition-all duration-200 z-50 overflow-hidden ${
-                    desktopWhatsappOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
+                    desktopWhatsappOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2 pointer-events-none"
                   }`}
                 >
                   <div className="py-2 flex flex-col">
@@ -254,6 +296,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      role="menuitem"
+                      tabIndex={desktopWhatsappOpen ? 0 : -1}
+                      onClick={() => setDesktopWhatsappOpen(false)}
                       className="px-5 py-3 hover:bg-white/5 transition-colors flex items-center group focus-visible:bg-white/5 focus-visible:outline-none"
                     >
                       <div className="w-8 h-8 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-3 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
@@ -268,6 +313,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      role="menuitem"
+                      tabIndex={desktopWhatsappOpen ? 0 : -1}
+                      onClick={() => setDesktopWhatsappOpen(false)}
                       className="px-5 py-3 hover:bg-white/5 transition-colors flex items-center group focus-visible:bg-white/5 focus-visible:outline-none"
                     >
                       <div className="w-8 h-8 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center mr-3 group-hover:bg-[#25D366] group-hover:text-white transition-colors">

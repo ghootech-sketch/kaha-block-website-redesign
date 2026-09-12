@@ -8,7 +8,7 @@ export const article2Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "8 menit baca",
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami kapasitas beban kendaraan dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga perkerasan kawasan industri.",
@@ -39,7 +39,7 @@ export const article2Id: BlogPost = {
           id: "kapasitas-beban-6cm",
           heading: "Kapasitas Beban Paving 6 cm",
           paragraphs: [
-            "Dirancang untuk menahan beban lalu lintas ringan hingga sedang dengan perkiraan beban gandar kendaraan di bawah 2 hingga 3 ton. Sangat tahan terhadap lintasan mobil keluarga, sedan, SUV harian, dan sepeda motor.",
+            "Umumnya dipertimbangkan untuk area lalu lintas ringan seperti pedestrian, jalur sepeda, dan lintasan kendaraan pribadi ringan (mobil keluarga, sedan, SUV harian, dan sepeda motor). Perencanaan struktur akhir tetap bergantung pada daya dukung tanah dasar dan lapisan pondasi.",
           ],
         },
         {
@@ -63,7 +63,7 @@ export const article2Id: BlogPost = {
           id: "kapasitas-beban-8cm",
           heading: "Kapasitas Beban Paving 8 cm",
           paragraphs: [
-            "Mampu menahan beban lalu lintas sedang hingga berat, termasuk kendaraan niaga seperti mobil boks engkel, truk sampah perumahan, bus pariwisata, mobil pemadam kebakaran, serta truk tangki pengiriman.",
+            "Umumnya dipertimbangkan untuk jalan lingkungan perumahan, kawasan ruko komersial, dan area parkir yang dilalui kendaraan bertonase sedang. Kinerja perkerasan terhadap kendaraan yang lebih berat sangat ditentukan oleh ketebalan pondasi agregat, pemadatan tanah, dan desain struktur perkerasan secara menyeluruh.",
           ],
         },
         {
@@ -86,7 +86,7 @@ export const article2Id: BlogPost = {
           id: "kapasitas-beban-10cm",
           heading: "Kapasitas Beban Paving 10 cm",
           paragraphs: [
-            "Didesain untuk beban lalu lintas sangat berat (heavy duty) dengan muatan gandar di atas 10–20 ton, seperti truk tronton kontainer, articulated truck, trailer logistik, dan alat berat industri.",
+            "Umumnya dipertimbangkan untuk area dengan tuntutan beban berat (heavy duty) seperti kawasan industri, pergudangan, dan fasilitas logistik. Penentuan spesifikasi akhir harus melalui perhitungan desain perkerasan teknik sipil yang memperhitungkan repetisi beban gandar, kapasitas tanah dasar, dan perkuatan subbase.",
           ],
         },
         {
@@ -206,7 +206,7 @@ export const article2En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "8 min read",
   seoTitle: "6, 8, or 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
@@ -237,7 +237,7 @@ export const article2En: BlogPost = {
           id: "load-capacity-6cm",
           heading: "Load Capacity of 6 cm Pavers",
           paragraphs: [
-            "Designed for light to medium vehicular and pedestrian traffic with axle loads typically under 2 to 3 tons. Highly resilient against standard family sedans, MPVs, SUVs, and motorcycles.",
+            "Generally considered for light vehicular and pedestrian traffic, such as private carports, garden pathways, and light passenger vehicles (sedans, MPVs, and motorcycles). Final performance depends on subgrade preparation and foundation design.",
           ],
         },
         {
@@ -261,7 +261,7 @@ export const article2En: BlogPost = {
           id: "load-capacity-8cm",
           heading: "Load Capacity of 8 cm Pavers",
           paragraphs: [
-            "Engineered for medium to heavy traffic streams, including delivery trucks, municipal refuse vehicles, transit buses, fire engines, and commercial vans.",
+            "Generally considered for residential collector roads, commercial complexes, and parking zones with moderate traffic frequency. Pavement performance under occasional heavier service vehicles requires proper base-course thickness, subgrade compaction, and comprehensive engineering design.",
           ],
         },
         {
@@ -284,7 +284,7 @@ export const article2En: BlogPost = {
           id: "load-capacity-10cm",
           heading: "Load Capacity of 10 cm Pavers",
           paragraphs: [
-            "Designed for heavy-duty freight operations with axle loads exceeding 10–20 tons, including container transport trucks, semi-trailers, cargo reach stackers, and industrial heavy equipment.",
+            "Generally evaluated for heavy-duty demands such as industrial facilities, warehousing corridors, and freight-handling zones. Final pavement specifications must be determined through civil engineering design accounting for subgrade support, base reinforcement, and axle-load repetitions.",
           ],
         },
         {
@@ -335,7 +335,7 @@ export const article2En: BlogPost = {
       heading: "7. High-Precision Production at Kaha Block",
       paragraphs: [
         "PT Kaha Sukses Mandiri manufactures paving block variants with thickness options including 6 cm and 8 cm using fully automated hydraulic machinery at its Cisauk, Tangerang facility. Kaha Block also offers K-250, K-300, and K-400 concrete grade options across its production range depending on product and project requirements. Grade availability for each specific product is confirmed during consultation. Check full specifications in our [Product Catalog](/en/products).",
-        "Rigorous quality control and synchronized hydraulic vibration guarantee consistent block density and millimetric height accuracy, ensuring seamless alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
+        "Rigorous quality control and synchronized hydraulic vibration help maintain consistent block density and dimensional control, supporting uniform alignment on-site. For project quotations and volume consultations, visit our [Contact Page](/en/contact).",
       ],
     },
     {

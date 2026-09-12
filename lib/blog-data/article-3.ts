@@ -8,7 +8,7 @@ export const article3Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "9 menit baca",
   seoTitle: "Mengenal Mutu Beton K-250, K-300, dan K-400 Paving Block",
   seoDescription: "Pahami mutu beton K-250, K-300, dan K-400 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
@@ -152,7 +152,7 @@ export const article3Id: BlogPost = {
       },
       {
         question: "Apakah mutu K-300 sudah cukup untuk jalan komplek perumahan?",
-        answer: "Ya, mutu K-300 dengan ketebalan 8 cm sangat memadai dan ideal untuk jalan komplek perumahan yang dilintasi mobil keluarga, motor, dan sesekali mobil pengiriman barang atau truk sampah.",
+        answer: "K-300 dapat menjadi salah satu spesifikasi yang dipertimbangkan untuk jalan lingkungan, namun pemilihan akhir ketebalan dan mutu harus disesuaikan dengan kondisi tanah dasar, struktur pondasi, intensitas lalu lintas, beban kendaraan, jenis produk, dan desain proyek.",
       },
       {
         question: "Bagaimana cara membedakan paving block mutu tinggi secara visual di lapangan?",
@@ -179,7 +179,7 @@ export const article3En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "9 min read",
   seoTitle: "K-250, K-300, and K-400 Concrete Paving Block Strength",
   seoDescription: "Learn what K-250, K-300, and K-400 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
@@ -318,7 +318,7 @@ export const article3En: BlogPost = {
       },
       {
         question: "Is K-300 strength sufficient for residential neighborhood streets?",
-        answer: "Yes, 8 cm K-300 pavers provide ample structural strength for residential subdivision roads carrying passenger cars, delivery vans, and municipal collection vehicles.",
+        answer: "K-300 may be considered for certain residential-road applications, but final thickness and grade selection should account for subgrade conditions, pavement foundation, traffic intensity, vehicle loading, product type, and project design.",
       },
       {
         question: "How can high-grade pavers be identified visually on-site?",

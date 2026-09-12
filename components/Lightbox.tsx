@@ -73,28 +73,31 @@ export default function Lightbox({
     [isOpen, onClose, onNext, onPrev, currentIndex, images.length]
   );
 
+  // Open / Close lifecycle: capture trigger once on open, focus close button, restore trigger on close
   useEffect(() => {
-    let previousOverflow = "";
-    if (isOpen) {
-      triggerRef.current = document.activeElement as HTMLElement;
-      previousOverflow = document.body.style.overflow;
-      document.body.style.overflow = "hidden";
-      window.addEventListener("keydown", handleKeyDown);
-      
-      // Auto-focus the close button when opened
-      setTimeout(() => {
-        closeBtnRef.current?.focus();
-      }, 50);
-    } else {
-      document.body.style.overflow = previousOverflow;
-    }
-    
+    if (!isOpen) return;
+
+    triggerRef.current = document.activeElement as HTMLElement;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const timer = setTimeout(() => {
+      closeBtnRef.current?.focus();
+    }, 50);
+
     return () => {
-      if (isOpen) {
-        document.body.style.overflow = previousOverflow;
-        window.removeEventListener("keydown", handleKeyDown);
-        triggerRef.current?.focus();
-      }
+      clearTimeout(timer);
+      document.body.style.overflow = previousOverflow;
+      triggerRef.current?.focus();
+    };
+  }, [isOpen]);
+
+  // Keyboard navigation & focus trap (separated so index changes do not trigger focus restoration)
+  useEffect(() => {
+    if (!isOpen) return;
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen, handleKeyDown]);
 

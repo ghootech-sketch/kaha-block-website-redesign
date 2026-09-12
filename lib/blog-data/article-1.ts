@@ -8,7 +8,7 @@ export const article1Id: BlogPost = {
   category: "Panduan & Perencanaan",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "7 menit baca",
   seoTitle: "Panduan Memilih Paving Block Hunian & Proyek",
   seoDescription: "Pelajari cara memilih paving block yang tepat untuk carport, jalan perumahan, hingga area komersial dengan pertimbangan mutu dan ketebalan presisi.",
@@ -127,7 +127,7 @@ export const article1Id: BlogPost = {
       id: "peranan-drainase-dan-pondasi",
       heading: "5. Pentingnya Persiapan Pondasi dan Sistem Drainase",
       paragraphs: [
-        "Sebagus apa pun mutu paving block yang dibeli, ketahanan jalan paving 70% ditentukan oleh kualitas lapisan pondasi di bawahnya. Perkerasan paving block adalah struktur modular fleksibel yang mengikuti stabilitas tanah dasar. Pelajari panduan lengkapnya di [Tahapan Persiapan Lahan Sebelum Pemasangan Paving Block](/id/blog/persiapan-sebelum-pemasangan-paving-block).",
+        "Kinerja dan ketahanan jangka panjang perkerasan paving block sangat dipengaruhi oleh kualitas tanah dasar, lapisan pondasi, pemadatan, drainase, serta metode pemasangan. Perkerasan paving block adalah struktur modular fleksibel yang mengikuti stabilitas tanah dasar. Pelajari panduan lengkapnya di [Tahapan Persiapan Lahan Sebelum Pemasangan Paving Block](/id/blog/persiapan-sebelum-pemasangan-paving-block).",
       ],
       subsections: [
         {
@@ -222,7 +222,7 @@ export const article1En: BlogPost = {
   category: "Guides & Planning",
   categorySlug: "guide",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "7 min read",
   seoTitle: "How to Choose Paving Blocks for Homes & Projects",
   seoDescription: "Learn how to select the right paving blocks for residential carports, access roads, and commercial complexes with precision thickness and strength ratings.",
@@ -341,7 +341,7 @@ export const article1En: BlogPost = {
       id: "subbase-and-drainage",
       heading: "5. Subbase Preparation and Drainage Engineering",
       paragraphs: [
-        "Regardless of the paver's inherent compressive strength, approximately 70% of long-term pavement performance relies on the quality of the foundation layers beneath. Segmental paving is a flexible system that conforms to the stability of the subgrade. Follow our detailed [Site Preparation Guide Before Paving Installation](/en/blog/persiapan-sebelum-pemasangan-paving-block).",
+        "Long-term paving performance is strongly influenced by subgrade conditions, foundation quality, compaction, drainage, and installation practices. Segmental paving is a flexible system that conforms to the stability of the subgrade. Follow our detailed [Site Preparation Guide Before Paving Installation](/en/blog/persiapan-sebelum-pemasangan-paving-block).",
       ],
       subsections: [
         {

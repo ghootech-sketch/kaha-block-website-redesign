@@ -69,8 +69,13 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
     >
       {/* Chooser Dropdown */}
       <div
+        id="floating-whatsapp-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label={titleText}
+        aria-hidden={!isOpen}
         className={`absolute bottom-full right-0 mb-4 bg-white rounded-xl shadow-2xl border border-stone-200/50 overflow-hidden transition-all duration-300 origin-bottom-right w-64 ${
-          isOpen ? "scale-100 opacity-100 pointer-events-auto" : "scale-95 opacity-0 pointer-events-none"
+          isOpen ? "scale-100 opacity-100 pointer-events-auto visible" : "scale-95 opacity-0 pointer-events-none invisible"
         }`}
       >
         <div className="bg-dark text-white p-4 flex items-center justify-between">
@@ -83,7 +88,8 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
               setIsOpen(false);
               triggerBtnRef.current?.focus();
             }}
-            className="text-slate-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+            tabIndex={isOpen ? 0 : -1}
+            className="min-w-[44px] min-h-[44px] -mr-2 -my-2 flex items-center justify-center text-slate-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
             aria-label="Close"
           >
             <X className="w-4 h-4" />
@@ -96,6 +102,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
             href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
             target="_blank"
             rel="noopener noreferrer"
+            tabIndex={isOpen ? 0 : -1}
             onClick={() => setIsOpen(false)}
             id="floating-whatsapp-primary"
             className="flex items-center p-3 hover:bg-slate-50 rounded-lg transition-colors group focus-visible:outline-none focus-visible:bg-slate-50"
@@ -113,6 +120,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
             href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
             target="_blank"
             rel="noopener noreferrer"
+            tabIndex={isOpen ? 0 : -1}
             onClick={() => setIsOpen(false)}
             id="floating-whatsapp-secondary"
             className="flex items-center p-3 hover:bg-slate-50 rounded-lg transition-colors group focus-visible:outline-none focus-visible:bg-slate-50"
@@ -134,6 +142,8 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         onClick={() => setIsOpen(!isOpen)}
         aria-label={ariaLabel}
         aria-expanded={isOpen}
+        aria-haspopup="dialog"
+        aria-controls="floating-whatsapp-menu"
         className="group relative flex items-center justify-center bg-[#25D366] hover:bg-[#20ba59] active:bg-[#1da850] text-white rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-[58px] sm:h-[64px] min-w-[58px] sm:min-w-[64px] px-3.5 sm:px-4 hover:pl-5 focus-visible:pl-5"
       >
         {/* Subtle expanding label on desktop hover/focus (expands smoothly to the left) */}

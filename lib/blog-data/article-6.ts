@@ -8,7 +8,7 @@ export const article6Id: BlogPost = {
   category: "Aplikasi Khusus",
   categorySlug: "application",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "9 menit baca",
   seoTitle: "Paving Block Gudang & Kawasan Industri",
   seoDescription: "Panduan paving block heavy-duty untuk parkir komersial, depo logistik, dan kawasan industri: ketebalan 8-10 cm, mutu K-250, K-300, dan K-400, dan pola herringbone.",
@@ -79,13 +79,13 @@ export const article6Id: BlogPost = {
       id: "desain-struktur-pondasi-industri",
       heading: "4. Desain Struktur Pondasi Multi-Lapis",
       paragraphs: [
-        "Pondasi di bawah paving block kawasan industri dirancang untuk menunjang repetisi beban lalu lintas kendaraan selama masa layan:",
+        "Ketebalan pondasi dan detail lapisan tidak dapat ditentukan hanya dari ketebalan paving. Desain harus mempertimbangkan kondisi tanah dasar, beban gandar, frekuensi lalu lintas, drainase, dan kebutuhan teknis proyek. Berikut adalah contoh tipikal susunan lapisan struktur perkerasan sebagai referensi umum perencanaan:",
       ],
       table: {
-        caption: "Contoh Spesifikasi Lapisan Struktur Perkerasan Paving Kawasan Industri",
+        caption: "Contoh Tipikal Lapisan Struktur Perkerasan Paving Kawasan Industri (Sebagai Referensi Umum)",
         headers: ["Lapisan Struktur", "Material yang Direkomendasikan", "Ketebalan Tipikal", "Fungsi Teknis"],
         rows: [
-          ["Lapisan Permukaan (Wearing Course)", "Paving Truepave Mutu K-250/K-300/K-400 (Mesin Hidrolik)", "8 cm atau 10 cm", "Menahan beban kontak ban, abrasi gesek, dan tumpahan oli."],
+          ["Lapisan Permukaan (Wearing Course)", "Paving block sesuai spesifikasi mutu yang ditetapkan untuk kebutuhan proyek", "8 cm atau 10 cm", "Menahan beban kontak ban, abrasi gesek, dan tumpahan oli."],
           ["Pasir Pengisi Nat (Jointing Sand)", "Pasir silika kering berbutir 0,1 - 2,0 mm", "Celah nat 2 - 4 mm", "Menyalurkan gaya geser lateral antar-balok melalui efek baji (wedge effect)."],
           ["Pasir Alas (Bedding Sand)", "Pasir cor berbutir tajam kasar (kadar lumpur < 3%)", "3 - 5 cm (lepas)", "Bantalan perata tempat balok mengunci secara vertikal."],
           ["Pondasi Atas (Base Course)", "Batu agregat pecah kelas A (split + abu batu padat)", "15 - 25 cm (dipadatkan)", "Distributor utama beban gandar menuju tanah dasar."],
@@ -154,7 +154,7 @@ export const article6Id: BlogPost = {
     items: [
       {
         question: "Apakah paving block tebal 8 cm cukup kuat untuk dilintasi truk kontainer 40 kaki?",
-        answer: "Paving 8 cm mutu K-250/K-300/K-400 sangat kuat asalkan ditunjang dengan struktur pondasi base course agregat batu pecah yang tebal (15–20 cm) dan dipadatkan secara maksimal dengan roller compactor.",
+        answer: "Kinerja perkerasan paving 8 cm untuk kendaraan berat seperti truk kontainer sangat bergantung pada struktur pondasi di bawahnya (seperti subbase dan base course agregat batu pecah yang dipadatkan dengan baik), daya dukung tanah dasar (CBR), serta frekuensi perlintasan. Pada area dengan repetisi beban kontainer yang tinggi atau titik tumpu kaki trailer (landing gear), ketebalan 10 cm dengan mutu beton yang sesuai dan desain perkerasan teknik sipil umumnya lebih disarankan.",
       },
       {
         question: "Mengapa pola susun bata (stretcher bond) tidak dianjurkan untuk jalur lalu lintas truk?",
@@ -185,10 +185,10 @@ export const article6En: BlogPost = {
   category: "Specialized Applications",
   categorySlug: "application",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-01",
+  updatedAt: "2026-09-12",
   readingTime: "9 min read",
   seoTitle: "Heavy-Duty Paving Blocks for Industrial Estates",
-  seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-250, K-300, dan K-400, and herringbone.",
+  seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-250, K-300, and K-400, and herringbone.",
   intro: [
     "Direct Answer: For heavy-traffic applications such as commercial parking, logistics facilities, and industrial areas, concrete pavers are commonly specified in 8 cm or 10 cm thickness with K-250, K-300, and K-400 strength and interlocking patterns such as herringbone. The complete pavement structure—including aggregate base thickness and subgrade preparation—should be designed based on expected traffic volume, vehicle axle loads, and local subgrade conditions.",
     "Commercial parking fields, logistics distribution centers, freight forwarding yards, and manufacturing facilities subject pavement surfaces to substantial mechanical stresses compared to standard residential roads.",
@@ -229,7 +229,7 @@ export const article6En: BlogPost = {
         },
         {
           id: "k400-strength-standard",
-          heading: "K-250, K-300, dan K-400 Concrete Strength via Automated Hydraulic Machinery",
+          heading: "K-250, K-300, and K-400 Concrete Strength via Automated Hydraulic Machinery",
           paragraphs: [
             "Heavy-duty segmental pavers are typically produced with compressive strengths of K-250, K-300, and K-400 (up to 400 kg/cm² / ~33 MPa) using automated hydraulic vibro-press machinery.",
             "Adequate concrete matrix density supports resistance against dynamic loads and provides durable surface wear resistance under vehicular traffic.",
@@ -256,13 +256,13 @@ export const article6En: BlogPost = {
       id: "industrial-subbase-design",
       heading: "4. Multi-Layer Pavement Subbase Design",
       paragraphs: [
-        "The underlying foundation structure should be engineered to support projected traffic repetitions over the design life:",
+        "Foundation thickness and layer details cannot be determined from paver thickness alone. Pavement design must account for subgrade conditions, axle loading, traffic frequency, drainage, and technical project requirements. Below is a typical structural layer arrangement as a general design reference:",
       ],
       table: {
-        caption: "Typical Cross-Sectional Layers for Industrial Concrete Block Pavements",
+        caption: "Typical Cross-Sectional Layers for Industrial Concrete Block Pavements (General Reference Example)",
         headers: ["Structural Layer", "Specified Material", "Typical Depth", "Technical Purpose"],
         rows: [
-          ["Surface Course (Pavers)", "Truepave (Hydraulic Press)", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
+          ["Surface Course (Pavers)", "Concrete pavers meeting designated project strength specifications", "8 cm or 10 cm", "Resists direct tire contact stress, wheel abrasion, and fuel drippings."],
           ["Jointing Sand", "Dry silica sand (0.1 - 2.0 mm grading)", "2 - 4 mm joint gaps", "Transmits horizontal shear forces across blocks via mechanical wedge action."],
           ["Bedding Sand", "Clean sharp concrete sand (fines < 3%)", "3 - 5 cm (uncompacted)", "Provides a uniform seating layer for block bedding."],
           ["Base Course", "Class A dense-graded crushed stone aggregate", "15 - 25 cm (compacted)", "Primary load-spreading foundation distributing loads across the subgrade."],
@@ -331,7 +331,7 @@ export const article6En: BlogPost = {
     items: [
       {
         question: "Is 8 cm paver thickness sufficient for 40-foot container trucks?",
-        answer: "Yes, 8 cm K-250/K-300/K-400 paving blocks provide exceptional performance provided they rest on a well-compacted 15–20 cm dense-graded crushed stone base course.",
+        answer: "The performance of 8 cm paving for heavy vehicles such as container trucks depends heavily on the underlying foundation structure (such as well-compacted crushed aggregate base course and subbase), subgrade bearing capacity (CBR), and traffic frequency. For areas with high container repetition or static landing-gear point loads, 10 cm thickness with an appropriate concrete grade and formal civil pavement design is generally recommended.",
       },
       {
         question: "Why is a stretcher bond pattern discouraged on truck roadways?",

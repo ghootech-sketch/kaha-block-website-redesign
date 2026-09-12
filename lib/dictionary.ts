@@ -322,7 +322,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Menjaga mutu beton K-250, K-300, dan K-400 di setiap cetakan.",
+            text: "Menjaga konsistensi mutu beton sesuai spesifikasi K-250, K-300, atau K-400 yang ditetapkan untuk setiap produk dan kebutuhan proyek.",
           },
           {
             number: "03",
@@ -337,7 +337,7 @@ export const dictionaries = {
         items: [
           {
             title: "Konsistensi Kualitas",
-            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu K-250, K-300, dan K-400.",
+            desc: "Setiap cetakan paving block diproduksi dengan bahan baku pilihan dan mesin full otomatis hidrolik untuk memastikan kepadatan dan kekuatan sesuai spesifikasi mutu beton yang ditetapkan untuk produk atau kebutuhan proyek.",
           },
           {
             title: "Ketepatan Pengiriman",
@@ -1199,7 +1199,7 @@ export const dictionaries = {
           { label: "Operation", value: "Operating since 2015", desc: "Years of experience supplying quality concrete paving blocks." },
           { label: "Production Facility", value: "9,080 m²", desc: "Integrated factory facility equipped with fully automatic hydraulic machinery." },
           { label: "Plant Location", value: "Cisauk, Tangerang", desc: "Strategically located for Greater Jakarta supply chains." },
-          { label: "Product Strength", value: "K-250, K-300, dan K-400", desc: "Concrete compressive strength options tailored to product type and project needs." },
+          { label: "Product Strength", value: "K-250, K-300, and K-400", desc: "Concrete compressive strength options tailored to product type and project needs." },
           { label: "Raw Materials", value: "Holcim & SCG Cement, Bravo Stone Dust, Bangka Sand", desc: "Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand." },
           { label: "Coverage", value: "Greater Jakarta", desc: "Free delivery and unloading within Greater Jakarta (Jabodetabek)." },
           { label: "Services", value: "Supply & Installation", desc: "Integrated solutions from precision material supply to on-site installation." },
@@ -1219,7 +1219,7 @@ export const dictionaries = {
           },
           {
             number: "02",
-            text: "Maintain K-250, K-300, and K-400 concrete strength across every production batch.",
+            text: "Maintain consistent concrete strength according to the K-250, K-300, or K-400 specification selected for each product and project requirement.",
           },
           {
             number: "03",
@@ -1234,7 +1234,7 @@ export const dictionaries = {
         items: [
           {
             title: "Consistent Quality",
-            desc: "Every paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to ensure optimal density and compliance with K-250, K-300, and K-400 strength standards.",
+            desc: "Each paving block is manufactured using selected raw materials and fully automatic hydraulic machinery to achieve the concrete strength specification assigned to the product or project requirement.",
           },
           {
             title: "Dependable Delivery",
