@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Analytics } from "@vercel/analytics/next";
+import GoogleAdsTag from "@/components/GoogleAdsTag";
 
 export const metadata: Metadata = {
   icons: {
@@ -65,6 +66,7 @@ export default async function LangLayout({
         <Footer lang={currentLang} />
         <FloatingWhatsApp lang={currentLang} />
         <Analytics />
+        <GoogleAdsTag />
       </body>
     </html>
   );
