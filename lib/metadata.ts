@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Locale } from "./dictionary";
+import { SITE_URL } from "./site-config";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com";
+const BASE_URL = SITE_URL;
 const OG_IMAGE_URL = `${BASE_URL}/image-og.png`;
 
 interface PageMetaConfig {

@@ -3,12 +3,14 @@
  * All entity data, addresses, contacts, and operational facts must reference this file.
  */
 
+import { SITE_URL } from "./site-config";
+
 export const BUSINESS_FACTS = {
   brandName: "Kaha Block",
   legalName: "PT Kaha Sukses Mandiri",
   foundingYear: 2015,
   foundingDate: "2015",
-  domain: process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com",
+  domain: SITE_URL,
 
   // Factory & Office Physical Location
   address: {

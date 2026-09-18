@@ -1,11 +1,10 @@
 import { MetadataRoute } from "next";
 import { allArticlesId, allArticlesEn } from "@/lib/blog-data";
+import { SITE_URL } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kahablock.com";
   const locales = ["id", "en"] as const;
   const coreRoutes = ["", "/about", "/products", "/projects", "/projects/production", "/blog", "/contact"] as const;
-  const coreLastModified = new Date("2026-09-12T00:00:00.000Z");
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
@@ -13,15 +12,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   locales.forEach((locale) => {
     coreRoutes.forEach((route) => {
       sitemapEntries.push({
-        url: `${baseUrl}/${locale}${route}`,
-        lastModified: coreLastModified,
+        url: `${SITE_URL}/${locale}${route}`,
         changeFrequency: "monthly",
         priority: route === "" ? 1.0 : route === "/products" || route === "/blog" ? 0.9 : 0.8,
         alternates: {
           languages: {
-            "id-ID": `${baseUrl}/id${route}`,
-            en: `${baseUrl}/en${route}`,
-            "x-default": `${baseUrl}/id${route}`,
+            "id-ID": `${SITE_URL}/id${route}`,
+            en: `${SITE_URL}/en${route}`,
+            "x-default": `${SITE_URL}/id${route}`,
           },
         },
       });
@@ -31,15 +29,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Indonesian Blog Articles
   allArticlesId.forEach((article) => {
     sitemapEntries.push({
-      url: `${baseUrl}/id/blog/${article.slug}`,
+      url: `${SITE_URL}/id/blog/${article.slug}`,
       lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {
         languages: {
-          "id-ID": `${baseUrl}/id/blog/${article.slug}`,
-          en: `${baseUrl}/en/blog/${article.slug}`,
-          "x-default": `${baseUrl}/id/blog/${article.slug}`,
+          "id-ID": `${SITE_URL}/id/blog/${article.slug}`,
+          en: `${SITE_URL}/en/blog/${article.slug}`,
+          "x-default": `${SITE_URL}/id/blog/${article.slug}`,
         },
       },
     });
@@ -48,15 +46,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // English Blog Articles
   allArticlesEn.forEach((article) => {
     sitemapEntries.push({
-      url: `${baseUrl}/en/blog/${article.slug}`,
+      url: `${SITE_URL}/en/blog/${article.slug}`,
       lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {
         languages: {
-          "id-ID": `${baseUrl}/id/blog/${article.slug}`,
-          en: `${baseUrl}/en/blog/${article.slug}`,
-          "x-default": `${baseUrl}/id/blog/${article.slug}`,
+          "id-ID": `${SITE_URL}/id/blog/${article.slug}`,
+          en: `${SITE_URL}/en/blog/${article.slug}`,
+          "x-default": `${SITE_URL}/id/blog/${article.slug}`,
         },
       },
     });
