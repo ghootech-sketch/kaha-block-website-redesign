@@ -295,167 +295,41 @@ export function generateStructuredDataGraph({
 
   // A. Products Collection ItemList
   if (page === "products") {
-    const productsList = [
+    const productSections = [
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-truepave`,
-        name: isEn ? "Truepave" : "Truepave",
-        description: isEn
-          ? "Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm, 10 cm. Max water absorption 6%. Raw materials: Holcim Dynamix & SCG. Applications: Roads, parking, and industrial areas."
-          : "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm, 10 cm. Penyerapan air maks 6%. Material: Holcim Dynamix & SCG. Aplikasi: Jalan, parkir, dan area industri.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-truepave.webp`,
+        name: "Truepave",
         url: `${canonicalUrl}#product-truepave`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-half-tahu`,
-        name: isEn ? "Half / Tahu" : "Half / Tahu",
-        description: isEn
-          ? "Size: 10.5 × 10.5 cm. Color Options: Grey, Red, Black, Yellow. Thickness Options: 6 cm, 8 cm. Coverage: 88 pcs/m². Function: Paving pattern lock & color boundary."
-          : "Ukuran: 10,5 × 10,5 cm. Pilihan Warna: Abu-abu, Merah, Hitam, Kuning. Pilihan Tebal: 6 cm, 8 cm. Daya Tutup: 88 pcs/m². Fungsi: Pengunci pola paving & pembatas warna.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-half-tahu.webp`,
+        name: "Half / Tahu",
         url: `${canonicalUrl}#product-half-tahu`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-hexa`,
-        name: isEn ? "Hexa 8 cm" : "Hexa 8 cm",
-        description: isEn
-          ? "Thickness: 8 cm. Color Options: Grey, Red, Black. Application: Decorative areas and pedestrians."
-          : "Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam. Aplikasi: Area dekoratif dan pedestrian.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-hexa-8cm.webp`,
+        name: "Hexa 8 cm",
         url: `${canonicalUrl}#product-hexa`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-ubin`,
-        name: isEn ? "Ubin 8 cm" : "Ubin 8 cm",
-        description: isEn
-          ? "Thickness: 8 cm. Color Options: Grey, Red, Black."
-          : "Tebal: 8 cm. Pilihan Warna: Abu-abu, Merah, Hitam.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-ubin-8cm.webp`,
+        name: "Ubin 8 cm",
         url: `${canonicalUrl}#product-ubin`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-topi-uskup`,
-        name: isEn ? "Bishop Hat" : "Topi Uskup",
-        description: isEn
-          ? "Size: 30 × 21 cm. Height Options: 6 cm and 8 cm. Compressive Strength: K-300. Coverage: 3.3 pcs/m. Material: Concrete. Color Options: Grey. Weight: 6 cm: ≈ 5.5 kg | 8 cm: ≈ 7.4 kg. Function: Locks edges/corners, prevents shifting, maintains stable arrangement."
-          : "Ukuran: 30 × 21 cm. Pilihan Tebal: 6 cm dan 8 cm. Kuat Tekan: K-300. Daya Tutup: 3,3 pcs/m. Material: Beton. Pilihan Warna: Abu-abu. Berat: 6 cm: ≈ 5,5 kg | 8 cm: ≈ 7,4 kg. Fungsi: Mengunci sisi/sudut paving, mencegah pergeseran, menjaga susunan tetap rapi dan stabil.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Paving Blocks",
-        image: `${baseUrl}/images/products/kaha-block-topi-uskup.webp`,
+        name: "Topi Uskup",
         url: `${canonicalUrl}#product-topi-uskup`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-kanstin-jepit`,
-        name: isEn ? "Kanstein Jepit" : "Kanstein Jepit",
-        description: isEn
-          ? "Category: Paving border/lock curb. Function: Locks and secures paving edges."
-          : "Kategori: Produk pembatas/pengunci paving. Fungsi: Membantu mengunci tepi pemasangan paving.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Curb Stones",
-        image: `${baseUrl}/images/products/kaha-block-kanstein-jepit.webp`,
+        name: "Kanstein Jepit",
         url: `${canonicalUrl}#product-kanstin-jepit`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-kanstin-s`,
-        name: isEn ? "Kanstein S" : "Kanstein S",
-        description: isEn
-          ? "Category: S-type road curb product. Function: Water gutter & sidewalk border."
-          : "Kategori: Produk pembatas jalan tipe S. Fungsi: Saluran air tepi & pembatas trotoar.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Curb Stones",
-        image: `${baseUrl}/images/products/kaha-block-kanstein-s.webp`,
+        name: "Kanstein S",
         url: `${canonicalUrl}#product-kanstin-s`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-kanstin-b1`,
-        name: isEn ? "Kanstein B1" : "Kanstein B1",
-        description: isEn
-          ? "Category: Road curb / border product. Function: Road shoulder & pedestrian border."
-          : "Kategori: Produk pembatas jalan / kanstein. Fungsi: Pembatas bahu jalan & area pedestrian.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Curb Stones",
-        image: `${baseUrl}/images/products/kaha-block-kanstein-b1.webp`,
+        name: "Kanstein B1",
         url: `${canonicalUrl}#product-kanstin-b1`,
       },
       {
-        "@type": "Product",
-        "@id": `${canonicalUrl}#product-stoper`,
-        name: isEn ? "Stoper" : "Stoper",
-        description: isEn
-          ? "Category: Wheel stop / border product. Function: Vehicle parking boundary lock."
-          : "Kategori: Produk pembatas / penghenti roda. Fungsi: Pengaman batas parkir kendaraan.",
-        brand: {
-          "@type": "Brand",
-          name: "Kaha Block",
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-        category: "Concrete Curb Stones",
-        image: `${baseUrl}/images/products/kaha-block-stoper.webp`,
+        name: "Stoper",
         url: `${canonicalUrl}#product-stoper`,
       },
     ];
@@ -463,12 +337,13 @@ export function generateStructuredDataGraph({
     graph.push({
       "@type": "ItemList",
       "@id": `${canonicalUrl}#products`,
-      name: isEn ? "Kaha Block Product Catalog" : "Katalog Produk Kaha Block",
-      numberOfItems: productsList.length,
-      itemListElement: productsList.map((prod, idx) => ({
+      name: isEn ? "Kaha Block Product Catalogue" : "Katalog Produk Kaha Block",
+      numberOfItems: productSections.length,
+      itemListElement: productSections.map((section, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        item: prod,
+        name: section.name,
+        url: section.url,
       })),
     });
   }
