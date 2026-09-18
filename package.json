@@ -7,7 +7,8 @@
     "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "eslint .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "seo-check": "node scripts/seo-smoke-check.mjs"
   },
   "packageManager": "npm@10.9.8",
   "dependencies": {

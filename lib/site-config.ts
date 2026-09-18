@@ -1,33 +1,43 @@
 /**
  * Centralized Site URL Configuration
  * Single source of truth for the canonical production origin.
- * Prevents Vercel preview URLs from ever becoming canonical or indexable URLs.
+ * Strictly guarantees that the canonical production origin is https://kahablock.com.
+ * Only 'kahablock.com' and 'www.kahablock.com' are accepted hostnames, both
+ * normalizing strictly to 'https://kahablock.com' with HTTPS protocol.
+ * All other inputs (arbitrary domains, *.vercel.app preview URLs, invalid URLs, empty strings)
+ * safely fall back to the canonical production origin.
  */
 
-const DEFAULT_SITE_URL = "https://kahablock.com";
+const CANONICAL_ORIGIN = "https://kahablock.com";
+const ALLOWED_HOSTNAMES = new Set(["kahablock.com", "www.kahablock.com"]);
 
 function resolveSiteUrl(): string {
   const envUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
   if (!envUrl) {
-    return DEFAULT_SITE_URL;
+    return CANONICAL_ORIGIN;
   }
 
-  // Never allow a *.vercel.app preview URL to become the canonical production site URL
+  // Reject any *.vercel.app preview URL early
   if (envUrl.includes(".vercel.app")) {
-    return DEFAULT_SITE_URL;
+    return CANONICAL_ORIGIN;
   }
 
   try {
-    const parsed = new URL(envUrl);
-    // Ensure protocol is http or https
-    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
-      return DEFAULT_SITE_URL;
+    const urlToParse = envUrl.includes("://") ? envUrl : `https://${envUrl}`;
+    const parsed = new URL(urlToParse);
+    const hostname = parsed.hostname.toLowerCase();
+
+    // Only allow verified production hostnames: kahablock.com and www.kahablock.com
+    // Both normalize strictly to the canonical HTTPS origin: https://kahablock.com
+    if (ALLOWED_HOSTNAMES.has(hostname)) {
+      return CANONICAL_ORIGIN;
     }
-    // Remove trailing slash and normalize to origin
-    return parsed.origin;
+
+    // All unrelated domains fall back to the canonical production origin
+    return CANONICAL_ORIGIN;
   } catch {
-    return DEFAULT_SITE_URL;
+    return CANONICAL_ORIGIN;
   }
 }
 

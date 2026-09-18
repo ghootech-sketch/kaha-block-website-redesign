@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SITE_URL: https://kahablock.com
 
     steps:
     - uses: actions/checkout@v5
@@ -21,3 +23,25 @@ jobs:
     - run: npm run lint
     - run: npm run type-check
     - run: npm run build
+    - name: Run Production SEO Smoke Check
+      run: |
+        npm run start &
+        SERVER_PID=$!
+        trap "kill $SERVER_PID 2>/dev/null || true" EXIT
+
+        READY=0
+        for i in $(seq 1 30); do
+          if curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:3000/robots.txt | grep -q "200"; then
+            READY=1
+            break
+          fi
+          sleep 1
+        done
+
+        if [ "$READY" -ne 1 ]; then
+          echo "Next.js production server failed to start within timeout"
+          exit 1
+        fi
+
+        npm run seo-check http://127.0.0.1:3000
+
