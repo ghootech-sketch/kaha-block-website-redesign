@@ -7,6 +7,7 @@ import Image, { getImageProps } from "next/image";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
+import GoogleReviews from "@/components/GoogleReviews";
 import JsonLd from "@/components/JsonLd";
 import {
   ShieldCheck,
@@ -1022,6 +1023,11 @@ export default async function Home({
             </RevealGroup>
           </div>
         </section>
+
+        {/* =========================================================================
+            SECTION 6.5: GOOGLE CUSTOMER REVIEWS (6 Real Customer Reviews Grid)
+           ========================================================================= */}
+        <GoogleReviews dict={homeDict.reviews} />
 
         {/* =========================================================================
             SECTION 7: BENEFITS & PAYMENT SYSTEM

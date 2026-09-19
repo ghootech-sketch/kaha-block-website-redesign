@@ -262,6 +262,15 @@ export const dictionaries = {
         caption3Desc: "Penerapan pada jalan hunian, pelataran komersial, dan area industri.",
         cta: "Lihat Galeri Proyek",
       },
+      reviews: {
+        eyebrow: "ULASAN PELANGGAN",
+        title: "Dipercaya dari Pengalaman Nyata",
+        subtitle: "Beberapa pengalaman pelanggan Kaha Block yang dibagikan melalui Google.",
+        sourceLabel: "Google Review",
+        cta: "Lihat Semua Ulasan di Google",
+        ratingLabel: "Rating 5 dari 5 bintang",
+        viewReviewAria: "Lihat ulasan Google dari",
+      },
       benefits: {
         eyebrow: "Keunggulan Kami",
         title: "Keunggulan & Layanan Prima",
@@ -1158,6 +1167,15 @@ export const dictionaries = {
         caption3: "Field Application Results",
         caption3Desc: "Applied across residential roads, commercial plazas, and industrial estates.",
         cta: "View Project Gallery",
+      },
+      reviews: {
+        eyebrow: "CUSTOMER REVIEWS",
+        title: "Trusted Through Real Customer Experiences",
+        subtitle: "Selected customer experiences with Kaha Block shared through Google.",
+        sourceLabel: "Google Review",
+        cta: "View All Reviews on Google",
+        ratingLabel: "Rated 5 out of 5 stars",
+        viewReviewAria: "View Google review by",
       },
       benefits: {
         eyebrow: "Our Advantages",
