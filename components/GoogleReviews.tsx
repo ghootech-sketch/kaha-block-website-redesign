@@ -1,7 +1,6 @@
 import React from "react";
 import { Star, ExternalLink } from "lucide-react";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
-import { BUSINESS_FACTS } from "@/lib/business-facts";
 
 export interface GoogleReview {
   name: string;
@@ -12,12 +11,12 @@ export interface GoogleReview {
 
 /**
  * Configurable Google Reviews URL for Kaha Block.
- * Defaults to the verified Google Maps coordinate URL present in BUSINESS_FACTS.
- * TODO: Update with official Google Business Profile direct review dialog URL once Place ID is verified.
+ * Supports override via process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL.
+ * Verified official Google Maps listing URL for Paving Block Kaha:
  */
 export const GOOGLE_REVIEWS_URL =
   process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL ||
-  BUSINESS_FACTS.maps.googleMapsUrl;
+  "https://maps.google.com/?q=Paving+Block+Kaha+Suradita+Cisauk+Tangerang";
 
 /**
  * Verified real customer reviews from Google Maps / Google Reviews for Kaha Block.
