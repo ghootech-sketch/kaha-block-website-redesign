@@ -111,7 +111,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   alt="Kaha Block - PT Kaha Sukses Mandiri"
                   fill
                   className="object-contain object-left"
-                  priority
                   sizes="(max-width: 640px) 160px, (max-width: 1024px) 180px, 200px"
                 />
               </div>

@@ -95,12 +95,29 @@ export default async function Home({
   const {
     props: { srcSet: desktopSrcSet },
   } = getImageProps({ ...common, src: HERO_MAIN_IMAGE });
-  const {
-    props: { srcSet: mobileSrcSet, alt: mobileAlt, ...rest },
-  } = getImageProps({ ...common, src: HERO_MOBILE_IMAGE });
+  const { props: mobileProps } = getImageProps({ ...common, src: HERO_MOBILE_IMAGE });
+  const mobileFallbackSrc = "/_next/image?url=%2Fimages%2Fhero%2Fhero-mobile.webp&w=750&q=75";
 
   return (
     <>
+      {/* Early Responsive LCP Preload: Mobile (<768px) and Desktop (>=768px) */}
+      <link
+        rel="preload"
+        as="image"
+        media="(max-width: 767px)"
+        imageSrcSet={mobileProps.srcSet}
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        media="(min-width: 768px)"
+        imageSrcSet={desktopSrcSet}
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
+
       <JsonLd page="home" lang={currentLang} />
 
       <div className="flex flex-col min-h-screen bg-surface">
@@ -120,12 +137,17 @@ export default async function Home({
              ======================================================================= */}
           <div className="absolute inset-0 -z-30 pointer-events-none select-none">
             <picture>
-              <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+              <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
               <img
-                alt={mobileAlt}
+                alt={mobileProps.alt}
                 aria-hidden="true"
-                srcSet={mobileSrcSet}
-                {...rest}
+                srcSet={mobileProps.srcSet}
+                sizes="100vw"
+                src={mobileFallbackSrc}
+                fetchPriority="high"
+                loading="eager"
+                decoding={mobileProps.decoding}
+                style={mobileProps.style}
                 className="object-cover object-center w-full h-full"
               />
             </picture>

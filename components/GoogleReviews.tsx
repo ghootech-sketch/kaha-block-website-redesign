@@ -127,6 +127,7 @@ export default function GoogleReviews({ dict }: GoogleReviewsProps) {
                   {/* Card Header: 5 Stars + Google Review Source Indicator */}
                   <div className="flex items-center justify-between gap-2 mb-4">
                     <div
+                      role="img"
                       className="flex items-center gap-1 text-accent"
                       aria-label={dict.ratingLabel || `${review.rating} / 5`}
                     >

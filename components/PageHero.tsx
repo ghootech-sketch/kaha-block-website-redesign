@@ -21,27 +21,50 @@ export default function PageHero({
   const {
     props: { srcSet: desktopSrcSet },
   } = getImageProps({ ...common, src: "/images/hero/hero-main.webp" });
-  const {
-    props: { srcSet: mobileSrcSet, alt: mobileAlt, ...rest },
-  } = getImageProps({ ...common, src: "/images/hero/hero-mobile.webp" });
+  const { props: mobileProps } = getImageProps({ ...common, src: "/images/hero/hero-mobile.webp" });
+  const mobileFallbackSrc = "/_next/image?url=%2Fimages%2Fhero%2Fhero-mobile.webp&w=750&q=75";
 
   return (
-    <section
-      data-navbar-hero="true"
-      className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
-    >
-      {/* Background Images */}
-      <div className="absolute inset-0 -z-30 pointer-events-none select-none">
-        <picture>
-          <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
-          <img
-            alt={mobileAlt}
-            aria-hidden="true"
-            srcSet={mobileSrcSet}
-            {...rest}
-            className="object-cover object-center w-full h-full"
-          />
-        </picture>
+    <>
+      {/* Early Responsive LCP Preload: Mobile (<768px) and Desktop (>=768px) */}
+      <link
+        rel="preload"
+        as="image"
+        media="(max-width: 767px)"
+        imageSrcSet={mobileProps.srcSet}
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        media="(min-width: 768px)"
+        imageSrcSet={desktopSrcSet}
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
+
+      <section
+        data-navbar-hero="true"
+        className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
+      >
+        {/* Background Images */}
+        <div className="absolute inset-0 -z-30 pointer-events-none select-none">
+          <picture>
+            <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
+            <img
+              alt={mobileProps.alt}
+              aria-hidden="true"
+              srcSet={mobileProps.srcSet}
+              sizes="100vw"
+              src={mobileFallbackSrc}
+              fetchPriority="high"
+              loading="eager"
+              decoding={mobileProps.decoding}
+              style={mobileProps.style}
+              className="object-cover object-center w-full h-full"
+            />
+          </picture>
         {/* Exact Homepage Overlay */}
         <div className="absolute inset-0 bg-black/35 pointer-events-none" />
       </div>
@@ -72,5 +95,6 @@ export default function PageHero({
         </div>
       </div>
     </section>
+    </>
   );
 }
