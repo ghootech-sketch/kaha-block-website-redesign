@@ -4,6 +4,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image, { getImageProps } from "next/image";
+import { preload } from "react-dom";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
@@ -97,27 +98,26 @@ export default async function Home({
   } = getImageProps({ ...common, src: HERO_MAIN_IMAGE });
   const { props: mobileProps } = getImageProps({ ...common, src: HERO_MOBILE_IMAGE });
   const mobileFallbackSrc = "/_next/image?url=%2Fimages%2Fhero%2Fhero-mobile.webp&w=750&q=75";
+  const desktopFallbackSrc = "/_next/image?url=%2Fimages%2Fhero%2Fhero-main.webp&w=1920&q=75";
+
+  // Early Responsive LCP Preload via React DOM Resource Preloading
+  preload(mobileFallbackSrc, {
+    as: "image",
+    media: "(max-width: 767px)",
+    imageSrcSet: mobileProps.srcSet,
+    imageSizes: "100vw",
+    fetchPriority: "high",
+  });
+  preload(desktopFallbackSrc, {
+    as: "image",
+    media: "(min-width: 768px)",
+    imageSrcSet: desktopSrcSet,
+    imageSizes: "100vw",
+    fetchPriority: "high",
+  });
 
   return (
     <>
-      {/* Early Responsive LCP Preload: Mobile (<768px) and Desktop (>=768px) */}
-      <link
-        rel="preload"
-        as="image"
-        media="(max-width: 767px)"
-        imageSrcSet={mobileProps.srcSet}
-        imageSizes="100vw"
-        fetchPriority="high"
-      />
-      <link
-        rel="preload"
-        as="image"
-        media="(min-width: 768px)"
-        imageSrcSet={desktopSrcSet}
-        imageSizes="100vw"
-        fetchPriority="high"
-      />
-
       <JsonLd page="home" lang={currentLang} />
 
       <div className="flex flex-col min-h-screen bg-surface">
