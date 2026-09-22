@@ -128,14 +128,14 @@ export default async function Home({
           id="hero-section"
           data-navbar-hero="true"
           aria-labelledby="hero-title"
-          className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
+          className="relative overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
         >
           {/* =======================================================================
               RESPONSIVE HERO VISUAL SCENE
               Mobile (< 768px): hero-mobile.webp (9:16 portrait artwork)
               Desktop / Tablet (>= 768px): hero-main.webp (landscape artwork)
              ======================================================================= */}
-          <div className="absolute inset-0 -z-30 pointer-events-none select-none">
+          <div className="absolute inset-0 z-0 pointer-events-none select-none">
             <picture>
               <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
               <img
@@ -147,7 +147,11 @@ export default async function Home({
                 fetchPriority="high"
                 loading="eager"
                 decoding={mobileProps.decoding}
-                style={mobileProps.style}
+                style={{
+                  ...mobileProps.style,
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
                 className="object-cover object-center w-full h-full"
               />
             </picture>
@@ -157,7 +161,7 @@ export default async function Home({
           </div>
 
           {/* Main Centered Container - Left content constrained to ~40-45% of viewport */}
-          <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-20 w-full flex-1 flex flex-col justify-center">
+          <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-10 w-full flex-1 flex flex-col justify-center">
             {/* LEFT COLUMN: Hero Eyebrow, Master Headline, Supporting Copy, CTAs, Specification Trust Rail, Category Rail */}
             <div className="w-full max-w-[620px] xl:max-w-[680px] flex flex-col justify-center">
               {/* 1. Eyebrow: Small uppercase Royal Gold, wide letter spacing, thin Gold horizontal line */}
