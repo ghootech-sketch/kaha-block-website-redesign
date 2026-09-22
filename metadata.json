@@ -1,6 +1,6 @@
 {
   "name": "KAHA BLOCK",
-  "description": "Company profile website for KAHA BLOCK (PT Kaha Sukses Mandiri), manufacturer of high-quality concrete paving blocks and conblocks.",
+  "description": "Website resmi KAHA BLOCK (PT Kaha Sukses Mandiri), produsen dan supplier paving block berkualitas presisi.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

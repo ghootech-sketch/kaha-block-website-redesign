@@ -251,6 +251,43 @@ export default async function Products({
       </section>
 
       {/* =========================================================================
+          2B. FACTORY DIRECT DELIVERY & INSTALLATION BANNER (Local Geo Relevance)
+         ========================================================================= */}
+      {dict.deliveryService && (
+        <section id="delivery-installation" className="bg-stone-50 border-b border-stone-200/40 py-12 sm:py-16">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="bg-white border border-stone-200/80 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8">
+              <div className="flex-1 space-y-3">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary font-heading">
+                  {dict.deliveryService.eyebrow}
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-light text-slate-900 font-heading tracking-tight">
+                  {dict.deliveryService.title}
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+                  {dict.deliveryService.desc}
+                </p>
+                <p className="text-xs sm:text-sm text-slate-500 font-sans italic">
+                  {dict.deliveryService.installNote}
+                </p>
+              </div>
+              <div className="shrink-0 w-full md:w-auto">
+                <a
+                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase shadow-xs min-h-[44px]"
+                >
+                  <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
+                  {dict.deliveryService.ctaConsult}
+                </a>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
           3. BUYING CONSIDERATION SECTION (White Editorial Section)
          ========================================================================= */}
       {dict.beforeOrder && (

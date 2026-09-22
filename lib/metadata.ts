@@ -21,14 +21,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   home: {
     path: "",
     id: {
-      title: "KAHA BLOCK - Pabrik Paving Block Berkualitas di Indonesia",
+      title: "KAHA BLOCK - Pabrik Paving Block & Jasa Pemasangan Jabodetabek",
       description:
-        "Pabrik paving block dengan mesin full otomatis hidrolik. Solusi tepat untuk infrastruktur yang kokoh di Jabodetabek.",
+        "Pabrik paving block mesin full otomatis hidrolik di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk wilayah Jabodetabek.",
     },
     en: {
-      title: "KAHA BLOCK - Premium Paving Block Factory in Indonesia",
+      title: "KAHA BLOCK - Paving Block Factory & Installation Greater Jakarta",
       description:
-        "Paving block manufacturing with fully automatic hydraulic machinery. Solid infrastructure solutions across Greater Jakarta (Jabodetabek).",
+        "Hydraulic paving block manufacturer in Cisauk, Tangerang Regency. Supplying precision concrete blocks and installation services across Greater Jakarta (Jabodetabek).",
     },
   },
   about: {
@@ -36,12 +36,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Tentang Kami | KAHA BLOCK",
       description:
-        "Mulai beroperasi sejak tahun 2015, PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block dengan mesin full otomatis hidrolik dan pabrik seluas 9.080 m² di Tangerang.",
+        "Produsen paving block sejak 2015 dengan pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Melayani pengadaan dan pemasangan untuk seluruh Jabodetabek.",
     },
     en: {
       title: "About Us | KAHA BLOCK",
       description:
-        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) manufactures paving blocks using fully automatic hydraulic machinery at our 9,080 m² factory in Tangerang.",
+        "Operating since 2015, PT Kaha Sukses Mandiri (Kaha Block) produces precision paving blocks at its 9,080 m² factory in Cisauk, Tangerang Regency, serving Greater Jakarta.",
     },
   },
   products: {
@@ -49,12 +49,12 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Produk Paving Block & Conblock | KAHA BLOCK",
       description:
-        "Pilihan paving block: Truepave, Half, Hexagonal & Ubin, Uskup, dan Kanstein produksi PT Kaha Sukses Mandiri.",
+        "Katalog paving block presisi: Truepave, Half, Hexa, Ubin, dan Kanstein langsung dari pabrik. Pengadaan material dan gratis pengiriman wilayah Jabodetabek.",
     },
     en: {
       title: "Paving Block Products | KAHA BLOCK",
       description:
-        "Quality paving block products: Truepave, Half, Hexagonal & Tile, Uskup, and Kanstein by PT Kaha Sukses Mandiri.",
+        "Direct factory paving block products: Truepave, Half, Hexagonal, Tile, and Curb Stones. Material supply with free delivery across Greater Jakarta (Jabodetabek).",
     },
   },
   projects: {
@@ -62,38 +62,38 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Galeri Dokumentasi Proyek | KAHA BLOCK",
       description:
-        "Dokumentasi hasil aplikasi di lapangan dan proses distribusi paving block PT Kaha Sukses Mandiri untuk berbagai proyek infrastruktur.",
+        "Dokumentasi pengadaan material dan jasa pemasangan paving block PT Kaha Sukses Mandiri untuk berbagai proyek infrastruktur di wilayah Jabodetabek.",
     },
     en: {
       title: "Project Documentation Gallery | KAHA BLOCK",
       description:
-        "Field applications and distribution documentation gallery for paving block infrastructure projects by PT Kaha Sukses Mandiri.",
+        "Visual documentation of paving block material supply and installation projects across Greater Jakarta (Jabodetabek) by PT Kaha Sukses Mandiri.",
     },
   },
   projectsProduction: {
     path: "/projects/production",
     id: {
-      title: "Galeri Produksi Paving Block | KAHA BLOCK",
+      title: "Pabrik Paving Block di Cisauk Tangerang | KAHA BLOCK",
       description:
-        "Dokumentasi proses produksi paving block Kaha Block di Cisauk, Tangerang dengan mesin full otomatis hidrolik.",
+        "Fasilitas pabrik 9.080 m² PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang. Produksi paving block mesin otomatis hidrolik melayani wilayah Jabodetabek.",
     },
     en: {
-      title: "Paving Block Production Gallery | KAHA BLOCK",
+      title: "Paving Block Factory in Cisauk Tangerang | KAHA BLOCK",
       description:
-        "Production documentation from Kaha Block's paving block facility in Cisauk, Tangerang using full automatic hydraulic machinery.",
+        "Production documentation from Kaha Block's 9,080 m² manufacturing plant in Cisauk, Tangerang Regency, operating since 2015 with hydraulic machinery serving Jabodetabek.",
     },
   },
   contact: {
     path: "/contact",
     id: {
-      title: "Konsultasi & Pemesanan | KAHA BLOCK",
+      title: "Kontak & Area Layanan Jabodetabek | KAHA BLOCK",
       description:
-        "Hubungi PT Kaha Sukses Mandiri (Kaha Block) di Cisauk Tangerang untuk konsultasi proyek, ketersediaan produk conblock, dan jasa pemasangan.",
+        "Hubungi PT Kaha Sukses Mandiri (Kaha Block) di Cisauk, Kabupaten Tangerang untuk pengadaan material dan jasa pemasangan paving block di seluruh Jabodetabek.",
     },
     en: {
-      title: "Consultation & Ordering | KAHA BLOCK",
+      title: "Contact & Service Area Greater Jakarta | KAHA BLOCK",
       description:
-        "Contact PT Kaha Sukses Mandiri (Kaha Block) in Cisauk Tangerang for project consultation, paving block availability, and installation services.",
+        "Contact PT Kaha Sukses Mandiri (Kaha Block) in Cisauk, Tangerang Regency for paving block supply and installation services across Greater Jakarta.",
     },
   },
   blog: {
@@ -101,7 +101,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
       description:
-        "Kumpulan panduan teknis, tips perencanaan area, perbandingan ketebalan, mutu beton K-250, K-300, dan K-400, serta cara merawat paving block dari PT Kaha Sukses Mandiri.",
+        "Panduan teknis, tips perencanaan area, mutu beton K-250, K-300, K-400, serta metode pemasangan dan perawatan paving block dari PT Kaha Sukses Mandiri.",
     },
     en: {
       title: "Blog & Paving Block Guide Center | KAHA BLOCK",

@@ -330,6 +330,67 @@ export default async function Contact({
       </section>
 
       {/* =========================================================================
+          4B. SERVICE AREA & JABODETABEK COVERAGE (Clean Geo-Relevance)
+         ========================================================================= */}
+      {dict.serviceAreaSection && (
+        <section id="service-area" className="bg-stone-50/80 py-16 sm:py-20 lg:py-24 border-b border-stone-200/40">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="text-center max-w-3xl mx-auto mb-10 md:mb-14 flex flex-col items-center">
+              <div className="flex items-center space-x-3 mb-4">
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 font-heading">
+                  {dict.serviceAreaSection.eyebrow}
+                </span>
+                <span className="w-8 h-px bg-accent" aria-hidden="true" />
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 font-heading tracking-tight mb-4">
+                {dict.serviceAreaSection.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+                {dict.serviceAreaSection.intro}
+              </p>
+
+              <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
+                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200/60">
+                  <Truck className="w-3.5 h-3.5 text-emerald-600" aria-hidden="true" />
+                  {dict.serviceAreaSection.deliveryBadge}
+                </span>
+                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 border border-slate-200/80">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
+                  {dict.serviceAreaSection.installBadge}
+                </span>
+              </div>
+            </ScrollReveal>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 max-w-6xl mx-auto">
+              {dict.serviceAreaSection.groups.map((group, idx) => (
+                <ScrollReveal
+                  key={group.name}
+                  delay={idx * 0.04}
+                  className="bg-white border border-stone-200/70 rounded-xl p-5 shadow-2xs hover:shadow-xs transition-[border-color,box-shadow] flex flex-col"
+                >
+                  <div className="flex items-center gap-2 mb-3 pb-2.5 border-b border-stone-100">
+                    <MapPin className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                    <h3 className="font-heading font-semibold text-slate-900 text-sm sm:text-base tracking-tight">
+                      {group.name}
+                    </h3>
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-slate-600 font-sans flex-1">
+                    {group.cities.map((city) => (
+                      <li key={city} className="flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0" aria-hidden="true" />
+                        <span>{city}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
           5. CONSULTATION PREPARATION CHECKLIST (White Section)
          ========================================================================= */}
       {dict.prepChecklist && (

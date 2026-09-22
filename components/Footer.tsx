@@ -173,8 +173,13 @@ export default function Footer({ lang }: { lang: Locale }) {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-10 sm:mt-12 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-400 font-sans">
+        <div className="border-t border-gray-700 mt-10 sm:mt-12 pt-6 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left text-xs sm:text-sm text-gray-400 font-sans">
           <p>&copy; {currentYear} {dict.footer.rights}</p>
+          {dict.footer.serviceArea && (
+            <p className="text-gray-400 text-xs max-w-xl text-center md:text-right">
+              {dict.footer.serviceArea}
+            </p>
+          )}
         </div>
       </div>
     </footer>
