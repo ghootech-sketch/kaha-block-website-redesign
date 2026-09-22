@@ -6,7 +6,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
-import { Phone, ChevronDown, MessageSquare, ArrowDown } from "lucide-react";
+import Link from "next/link";
+import { Phone, ChevronDown, MessageSquare, ArrowDown, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -270,6 +271,23 @@ export default async function Products({
                 <p className="text-xs sm:text-sm text-slate-500 font-sans italic">
                   {dict.deliveryService.installNote}
                 </p>
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2 text-xs font-bold font-heading uppercase tracking-wider">
+                  <Link
+                    href={`/${currentLang}/jasa-pemasangan-paving-block`}
+                    className="inline-flex items-center text-primary hover:text-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+                  >
+                    <span>{currentLang === "id" ? "Info Jasa Pemasangan" : "Installation Info"}</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1" aria-hidden="true" />
+                  </Link>
+                  <span className="text-slate-300 hidden sm:inline" aria-hidden="true">|</span>
+                  <Link
+                    href={`/${currentLang}/area-layanan`}
+                    className="inline-flex items-center text-slate-700 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+                  >
+                    <span>{currentLang === "id" ? "Lihat Area Layanan" : "View Service Areas"}</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1" aria-hidden="true" />
+                  </Link>
+                </div>
               </div>
               <div className="shrink-0 w-full md:w-auto">
                 <a

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import Link from "next/link";
 import {
   Mail,
   Phone,
@@ -363,28 +364,47 @@ export default async function Contact({
             </ScrollReveal>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 max-w-6xl mx-auto">
-              {dict.serviceAreaSection.groups.map((group, idx) => (
-                <ScrollReveal
-                  key={group.name}
-                  delay={idx * 0.04}
-                  className="bg-white border border-stone-200/70 rounded-xl p-5 shadow-2xs hover:shadow-xs transition-[border-color,box-shadow] flex flex-col"
-                >
-                  <div className="flex items-center gap-2 mb-3 pb-2.5 border-b border-stone-100">
-                    <MapPin className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
-                    <h3 className="font-heading font-semibold text-slate-900 text-sm sm:text-base tracking-tight">
-                      {group.name}
-                    </h3>
-                  </div>
-                  <ul className="space-y-1.5 text-xs text-slate-600 font-sans flex-1">
-                    {group.cities.map((city) => (
-                      <li key={city} className="flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0" aria-hidden="true" />
-                        <span>{city}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollReveal>
-              ))}
+              {dict.serviceAreaSection.groups.map((group, idx) => {
+                const regionalSlugs = ["jakarta", "tangerang", "bekasi", "bogor", "depok"] as const;
+                const slug = regionalSlugs[idx] || "jakarta";
+
+                return (
+                  <ScrollReveal
+                    key={group.name}
+                    delay={idx * 0.04}
+                    className="bg-white border border-stone-200/70 rounded-xl p-5 shadow-2xs hover:shadow-xs transition-[border-color,box-shadow] flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center gap-2 mb-3 pb-2.5 border-b border-stone-100">
+                        <MapPin className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                        <h3 className="font-heading font-semibold text-slate-900 text-sm sm:text-base tracking-tight">
+                          {group.name}
+                        </h3>
+                      </div>
+                      <ul className="space-y-1.5 text-xs text-slate-600 font-sans">
+                        {group.cities.map((city) => (
+                          <li key={city} className="flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0" aria-hidden="true" />
+                            <span>{city}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="mt-4 pt-2.5 border-t border-stone-100">
+                      <Link
+                        href={`/${currentLang}/area-layanan/${slug}`}
+                        className="inline-flex items-center text-xs font-bold text-primary hover:text-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[32px] font-heading"
+                      >
+                        <span>
+                          {currentLang === "en"
+                            ? `View ${group.name} area →`
+                            : `Layanan ${group.name} →`}
+                        </span>
+                      </Link>
+                    </div>
+                  </ScrollReveal>
+                );
+              })}
             </div>
           </div>
         </section>

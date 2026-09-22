@@ -93,15 +93,15 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       },
       {
         title: "Tim Pemasangan Berpengalaman",
-        desc: "Dikerjakan oleh tenaga ahli lapangan berpengalaman yang memahami teknis fondasi pasir abu batu, pemadatan stamper, hingga kunci kanstein penahan.",
+        desc: "Dikerjakan oleh tim pemasangan berpengalaman yang memahami teknis fondasi pasir abu batu, pemadatan stamper, hingga kunci kanstein penahan.",
       },
       {
         title: "Dukungan Pengiriman & Penurunan Barang",
-        desc: "Pengiriman material menggunakan armada truk Kaha Block dengan jaminan gratis pengiriman dan penurunan barang di lokasi proyek wilayah Jabodetabek.",
+        desc: "Pengiriman material menggunakan armada pengiriman Kaha Block dengan jaminan gratis pengiriman dan penurunan barang di lokasi proyek wilayah Jabodetabek.",
       },
       {
-        title: "Transparansi Penawaran & Garansi Kerapian",
-        desc: "Perhitungan estimasi kebutuhan volume m² dan spesifikasi mutu beton (K-250, K-300, K-400) dituangkan dalam penawaran resmi tanpa biaya tersembunyi.",
+        title: "Transparansi Penawaran & Standar Pemasangan",
+        desc: "Perhitungan estimasi kebutuhan volume m², penentuan spesifikasi mutu beton (K-250, K-300, K-400), serta alur kerja pengerjaan dituangkan secara jelas dalam penawaran resmi tanpa biaya tersembunyi.",
       },
     ],
     scopeTitle: "Cakupan Peruntukan Pemasangan Paving Block",
@@ -159,7 +159,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       {
         step: "06",
         title: "Pengisian Nut & Compacting Akhir",
-        desc: "Pengisian celah antar paving dengan abu batu halus lalu dipadatkan menggunakan baby roller / stamper kodok hingga terkunci sempurna.",
+        desc: "Pengisian celah antar paving dengan abu batu halus lalu dipadatkan menggunakan baby roller / stamper kodok untuk kerapian dan kepadatan ikatan.",
       },
     ],
     materialsTitle: "Pilihan Material Paving Block & Kanstein",
@@ -251,8 +251,8 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
         desc: "Transported via Kaha Block truck fleets with guaranteed free delivery and material lowering included across Greater Jakarta project sites.",
       },
       {
-        title: "Transparent Quotations & Quality Finishing",
-        desc: "Volume estimations (m²) and concrete grade selections (K-250, K-300, K-400) are itemized in official written proposals with no hidden fees.",
+        title: "Transparent Quotations & Installation Standards",
+        desc: "Volume estimations (m²), concrete grade specifications (K-250, K-300, K-400), and execution workflows are itemized in official written proposals with no hidden fees.",
       },
     ],
     scopeTitle: "Paving Block Installation Project Scope",
@@ -310,7 +310,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       {
         step: "06",
         title: "Joint Sand Filling & Final Compaction",
-        desc: "Sweeping fine stone dust into joints and compacting with a plate compactor for total interlocking integrity.",
+        desc: "Sweeping fine stone dust into joints and compacting with a plate compactor for uniform joint filling and interlocking stability.",
       },
     ],
     materialsTitle: "Paving Block & Concrete Curb Options",
@@ -433,9 +433,9 @@ export const AREA_HUB_DATA: Record<Locale, AreaHubContent> = {
       },
     ],
     deliveryStatement:
-      "Seluruh pengiriman material ke wilayah Jabodetabek tidak dikenakan biaya ongkos kirim (Gratis Pengiriman) dan sudah termasuk layanan penurunan barang oleh armada resmi Kaha Block.",
+      "Seluruh pengiriman material ke wilayah Jabodetabek tidak dikenakan biaya ongkos kirim (Gratis Pengiriman) dan sudah termasuk layanan penurunan barang oleh pengiriman Kaha Block.",
     installationStatement:
-      "Tersedia pilihan pembelian material saja maupun pengadaan lengkap dengan jasa pemasangan oleh tim ahli Kaha Block.",
+      "Tersedia pilihan pembelian material saja maupun pengadaan lengkap dengan jasa pemasangan oleh tim lapangan Kaha Block yang berpengalaman.",
     faqs: [
       {
         q: "Di mana lokasi fasilitas produksi utama Kaha Block?",
@@ -600,11 +600,11 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           title: "Pergudangan & Fasilitas Logistik",
-          desc: "Paving tebal 8 cm mutu K-400 khusus untuk menahan tonase kendaraan muatan dan lalu lintas kontainer.",
+          desc: "Paving tebal 8 cm mutu K-400 untuk kebutuhan area pergudangan, operasional, dan kendaraan berat.",
         },
       ],
       deliveryNotice:
-        "Pengiriman ke Jakarta mendapat fasilitas Gratis Pengiriman dan Penurunan Barang oleh armada resmi Kaha Block.",
+        "Pengiriman ke Jakarta mendapat fasilitas Gratis Pengiriman dan Penurunan Barang oleh pengiriman Kaha Block.",
       installationNotice:
         "Dapatkan opsi paket pengadaan material sekaligus jasa pemasangan oleh tim terampil Kaha Block.",
       trustFactsTitle: "Identitas Pabrik & Layanan Kaha Block",
@@ -704,11 +704,11 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           title: "Logistics Facilities & Warehouses",
-          desc: "Heavy-duty 8 cm pavers in K-400 grade designed to withstand heavy truck traffic and container loads.",
+          desc: "Heavy-duty 8 cm pavers in K-400 grade suited for warehouse operations, logistics aprons, and heavy vehicle areas.",
         },
       ],
       deliveryNotice:
-        "All deliveries to Jakarta include Free Delivery and Material Offloading by official Kaha Block trucks.",
+        "All deliveries to Jakarta include Free Delivery and Material Offloading by Kaha Block delivery trucks.",
       installationNotice:
         "Turnkey packages combining material supply and professional laying services are available.",
       trustFactsTitle: "Kaha Block Manufacturing & Identity",
@@ -793,7 +793,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCases: [
         {
           title: "Kawasan Industri & Pergudangan Tangerang",
-          desc: "Perkerasan pelataran pabrik dan tempat muat barang menggunakan paving tebal 8 cm mutu K-400 yang tahan lalu lintas berat.",
+          desc: "Perkerasan pelataran pabrik dan tempat muat barang menggunakan paving tebal 8 cm mutu K-400 yang disesuaikan untuk area operasional dan lalu lintas kendaraan berat.",
         },
         {
           title: "Cluster Perumahan & Pemukiman Warga",
@@ -887,7 +887,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCases: [
         {
           title: "Tangerang Industrial Parks & Warehouses",
-          desc: "Heavy-duty paving for factory aprons and cargo loading yards using 8 cm K-400 pavers engineered for heavy tonnage.",
+          desc: "Heavy-duty paving for factory aprons and cargo loading yards using 8 cm K-400 pavers suited for industrial vehicle movement.",
         },
         {
           title: "Residential Estates & Community Roads",
@@ -957,7 +957,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           title: "Tersedia Jasa Pemasangan Berpengalaman",
-          desc: "Solusi lengkap mencakup penyediaan material, peralatan, dan tenaga ahli pemasangan.",
+          desc: "Solusi lengkap mencakup penyediaan material, peralatan, dan tim pemasangan berpengalaman.",
         },
       ],
       subregionsTitle: "Cakupan Wilayah Layanan Bekasi",
@@ -1064,7 +1064,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCases: [
         {
           title: "Bekasi Industrial Parks & Warehouses",
-          desc: "8 cm K-400 heavy-duty pavers engineered to endure heavy cargo trucks, container maneuvers, and warehouse yards.",
+          desc: "8 cm K-400 heavy-duty pavers suited for heavy cargo trucks, container maneuvering, and warehouse yard operations.",
         },
         {
           title: "Residential Estates & Housing Communities",

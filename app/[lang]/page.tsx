@@ -770,15 +770,29 @@ export default async function Home({
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <span className="text-xs sm:text-sm text-slate-300 font-sans text-center sm:text-left">
-                      {dict.products.availability}
-                    </span>
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-bold font-heading uppercase tracking-wider">
+                      <Link
+                        href={`/${currentLang}/jasa-pemasangan-paving-block`}
+                        className="inline-flex items-center text-accent hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+                      >
+                        <span>{currentLang === "id" ? "Jasa Pemasangan Paving Block" : "Paving Installation Services"}</span>
+                        <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
+                      </Link>
+                      <span className="text-white/20 hidden sm:inline" aria-hidden="true">|</span>
+                      <Link
+                        href={`/${currentLang}/area-layanan`}
+                        className="inline-flex items-center text-slate-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+                      >
+                        <span>{currentLang === "id" ? "Lihat Area Layanan" : "View Service Areas"}</span>
+                        <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
+                      </Link>
+                    </div>
                     <a
                       id="installation-consult-btn"
                       href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
                     >
                       <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                       {homeDict.installation.cta}

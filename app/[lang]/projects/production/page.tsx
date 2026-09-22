@@ -208,6 +208,20 @@ export default async function ProductionGalleryPage({
                 <p className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">{dict.stripGradeValue}</p>
               </div>
             </div>
+
+            <div className="mt-8 pt-6 border-t border-slate-200/80 text-center">
+              <Link
+                href={`/${currentLang}/area-layanan/tangerang`}
+                className="inline-flex items-center text-xs sm:text-sm font-bold text-primary hover:text-primary-hover transition-colors font-heading focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+              >
+                <span>
+                  {currentLang === "en"
+                    ? "Main Plant Location: Cisauk, Tangerang Regency — View Tangerang Area Services"
+                    : "Pabrik Utama: Cisauk, Kabupaten Tangerang — Lihat Layanan Area Tangerang"}
+                </span>
+                <ArrowRight className="w-4 h-4 ml-1.5 text-accent" aria-hidden="true" />
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>

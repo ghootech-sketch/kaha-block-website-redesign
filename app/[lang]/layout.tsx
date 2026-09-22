@@ -22,6 +22,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
+  fallback: ["system-ui", "sans-serif"],
 });
 
 const montserrat = Montserrat({
@@ -29,6 +30,7 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-montserrat",
   display: "swap",
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export const dynamicParams = false;

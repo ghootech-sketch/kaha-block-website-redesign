@@ -139,7 +139,7 @@ export default function RegionalPageTemplate({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs font-semibold uppercase tracking-wider text-accent block mb-2 font-heading">
-              {isEn ? "Subregion Coverage" : "Cakupan Kecamatan"}
+              {isEn ? "Subregion Coverage" : "Cakupan Wilayah"}
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
               {data.subregionsTitle}
