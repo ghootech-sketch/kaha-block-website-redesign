@@ -46,14 +46,10 @@ export default function PageHero({
 
       <section
         data-navbar-hero="true"
-        className="relative overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
-        style={{ minHeight: "580px" }}
+        className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
       >
         {/* Background Images */}
-        <div
-          className="absolute inset-0 z-0 pointer-events-none select-none"
-          style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
-        >
+        <div className="absolute inset-0 -z-30 pointer-events-none select-none">
           <picture>
             <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
             <img
@@ -65,23 +61,16 @@ export default function PageHero({
               fetchPriority="high"
               loading="eager"
               decoding={mobileProps.decoding}
-              style={{
-                ...mobileProps.style,
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
+              style={mobileProps.style}
               className="object-cover object-center w-full h-full"
             />
           </picture>
           {/* Exact Homepage Overlay */}
-          <div
-            className="absolute inset-0 bg-black/35 pointer-events-none"
-            style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
-          />
+          <div className="absolute inset-0 bg-black/35 pointer-events-none" />
         </div>
 
         {/* Content Container */}
-        <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-10 w-full flex-1 flex flex-col justify-center">
+        <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12 relative z-20 w-full flex-1 flex flex-col justify-center">
         <div className="w-full max-w-[620px] xl:max-w-[680px] flex flex-col justify-center">
           {eyebrow && (
             <div className="flex items-center space-x-3 mb-3 lg:mb-4">
