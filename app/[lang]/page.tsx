@@ -498,6 +498,8 @@ export default async function Home({
                           src={product.image}
                           alt={`${dict.products.imageAltPrefix} ${product.name}`}
                           fill
+                          loading="lazy"
+                          fetchPriority="low"
                           sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                           className="object-contain p-4 sm:p-6 group-hover:scale-105 transition-transform duration-700 ease-out"
                         />
@@ -962,6 +964,8 @@ export default async function Home({
                       src="/images/projects/kaha-block-dokumentasi-25.webp"
                       alt={homeDict.gallery.caption1}
                       fill
+                      loading="lazy"
+                      fetchPriority="low"
                       className="object-cover object-[center_40%] group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
@@ -990,6 +994,8 @@ export default async function Home({
                       src="/images/projects/kaha-block-dokumentasi-24.webp"
                       alt={homeDict.gallery.caption2}
                       fill
+                      loading="lazy"
+                      fetchPriority="low"
                       className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />
@@ -1018,6 +1024,8 @@ export default async function Home({
                       src="/images/projects/kaha-block-dokumentasi-03.webp"
                       alt={homeDict.gallery.caption3}
                       fill
+                      loading="lazy"
+                      fetchPriority="low"
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                       sizes="(max-width: 768px) 100vw, 33vw"
                     />

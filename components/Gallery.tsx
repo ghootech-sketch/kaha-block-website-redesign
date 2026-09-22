@@ -107,6 +107,8 @@ export default function Gallery({
                     src={item.image}
                     alt={item.label}
                     fill
+                    loading="lazy"
+                    fetchPriority="low"
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -166,6 +168,8 @@ export default function Gallery({
                 src={src}
                 alt={`${dict.imageAlt} ${index + 1}`}
                 fill
+                loading="lazy"
+                fetchPriority="low"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />

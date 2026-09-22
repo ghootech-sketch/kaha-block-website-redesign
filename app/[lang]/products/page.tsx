@@ -147,6 +147,8 @@ export default async function Products({
                       src={product.image}
                       alt={`${dict.imageAltPrefix} ${product.name}`}
                       fill
+                      loading="lazy"
+                      fetchPriority="low"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />

@@ -24,6 +24,8 @@ export default function Footer({ lang }: { lang: Locale }) {
                   src="/footer-logo.png"
                   alt={`${BUSINESS_FACTS.brandName} - ${BUSINESS_FACTS.legalName}`}
                   fill
+                  loading="lazy"
+                  fetchPriority="low"
                   className="object-contain object-left"
                   sizes="(max-width: 768px) 180px, 220px"
                 />

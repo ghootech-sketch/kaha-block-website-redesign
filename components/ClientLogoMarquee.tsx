@@ -129,6 +129,8 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
                       alt={altText}
                       fill
                       sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
+                      loading="lazy"
+                      fetchPriority="low"
                       className="object-contain p-2 max-h-[60px] sm:max-h-[70px] max-w-[80%] m-auto"
                     />
                   </div>
