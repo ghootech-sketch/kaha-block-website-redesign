@@ -2,7 +2,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 import { Poppins, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
-import { Locale, isValidLocale } from "@/lib/dictionary";
+import { dictionaries, Locale, isValidLocale } from "@/lib/dictionary";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -49,6 +49,7 @@ export default async function LangLayout({
     notFound();
   }
   const currentLang = lang as Locale;
+  const navDictionary = dictionaries[currentLang].nav;
 
   return (
     <html lang={currentLang} className={`${poppins.variable} ${montserrat.variable}`}>
@@ -59,7 +60,7 @@ export default async function LangLayout({
         >
           {currentLang === "en" ? "Skip to content" : "Lewati ke konten"}
         </a>
-        <Navbar lang={currentLang} />
+        <Navbar lang={currentLang} nav={navDictionary} />
         <main id="main-content" className="flex-grow">
           {children}
         </main>

@@ -4,13 +4,29 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { dictionaries, Locale } from "@/lib/dictionary";
+import type { Locale } from "@/lib/dictionary";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { Menu, X, Phone, ChevronDown, MessageCircle } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-export default function Navbar({ lang }: { lang: Locale }) {
-  const dict = dictionaries[lang];
+export interface NavbarDictionary {
+  home: string;
+  about: string;
+  products: string;
+  projects: string;
+  projectsInstall: string;
+  projectsProduction: string;
+  blog: string;
+  contact: string;
+}
+
+export default function Navbar({
+  lang,
+  nav,
+}: {
+  lang: Locale;
+  nav: NavbarDictionary;
+}) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,19 +87,19 @@ export default function Navbar({ lang }: { lang: Locale }) {
   }, []);
 
   const links = [
-    { href: `/${lang}`, label: dict.nav.home },
-    { href: `/${lang}/about`, label: dict.nav.about },
-    { href: `/${lang}/products`, label: dict.nav.products },
+    { href: `/${lang}`, label: nav.home },
+    { href: `/${lang}/about`, label: nav.about },
+    { href: `/${lang}/products`, label: nav.products },
     { 
       href: `/${lang}/projects`, 
-      label: dict.nav.projects,
+      label: nav.projects,
       subLinks: [
-        { href: `/${lang}/projects`, label: dict.nav.projectsInstall },
-        { href: `/${lang}/projects/production`, label: dict.nav.projectsProduction }
+        { href: `/${lang}/projects`, label: nav.projectsInstall },
+        { href: `/${lang}/projects/production`, label: nav.projectsProduction }
       ]
     },
-    { href: `/${lang}/blog`, label: dict.nav.blog },
-    { href: `/${lang}/contact`, label: dict.nav.contact },
+    { href: `/${lang}/blog`, label: nav.blog },
+    { href: `/${lang}/contact`, label: nav.contact },
   ];
 
   return (
