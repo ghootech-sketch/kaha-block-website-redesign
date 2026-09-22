@@ -10,7 +10,14 @@ export type SchemaPageType =
   | "projectsProduction"
   | "contact"
   | "blog"
-  | "blogPost";
+  | "blogPost"
+  | "jasaPemasangan"
+  | "areaLayanan"
+  | "areaJakarta"
+  | "areaTangerang"
+  | "areaBekasi"
+  | "areaDepok"
+  | "areaBogor";
 
 interface GenerateGraphParams {
   page: SchemaPageType;
@@ -32,6 +39,20 @@ export function generateStructuredDataGraph({
       ? "/projects/production"
       : page === "blogPost" && post
       ? `/blog/${post.slug}`
+      : page === "jasaPemasangan"
+      ? "/jasa-pemasangan-paving-block"
+      : page === "areaLayanan"
+      ? "/area-layanan"
+      : page === "areaJakarta"
+      ? "/area-layanan/jakarta"
+      : page === "areaTangerang"
+      ? "/area-layanan/tangerang"
+      : page === "areaBekasi"
+      ? "/area-layanan/bekasi"
+      : page === "areaDepok"
+      ? "/area-layanan/depok"
+      : page === "areaBogor"
+      ? "/area-layanan/bogor"
       : `/${page}`;
   const canonicalUrl = `${baseUrl}/${lang}${pagePath}`;
 
@@ -229,6 +250,49 @@ export function generateStructuredDataGraph({
         name: post.title,
         item: canonicalUrl,
       });
+    } else if (page === "jasaPemasangan") {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Installation Services" : "Jasa Pemasangan",
+        item: canonicalUrl,
+      });
+    } else if (page === "areaLayanan") {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Service Areas" : "Area Layanan",
+        item: canonicalUrl,
+      });
+    } else if (
+      page === "areaJakarta" ||
+      page === "areaTangerang" ||
+      page === "areaBekasi" ||
+      page === "areaDepok" ||
+      page === "areaBogor"
+    ) {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Service Areas" : "Area Layanan",
+        item: `${baseUrl}/${lang}/area-layanan`,
+      });
+      const regionName =
+        page === "areaJakarta"
+          ? "DKI Jakarta"
+          : page === "areaTangerang"
+          ? "Tangerang"
+          : page === "areaBekasi"
+          ? "Bekasi"
+          : page === "areaDepok"
+          ? "Depok"
+          : "Bogor";
+      items.push({
+        "@type": "ListItem",
+        position: 3,
+        name: regionName,
+        item: canonicalUrl,
+      });
     }
 
     breadcrumbEntity = {
@@ -313,6 +377,69 @@ export function generateStructuredDataGraph({
         pageName = post.title;
         pageDescription = post.seoDescription;
       }
+      break;
+    case "jasaPemasangan":
+      pageType = "ItemPage";
+      pageName = isEn
+        ? "Paving Block Installation Services Jabodetabek | Kaha Block"
+        : "Jasa Pemasangan Paving Block Jabodetabek | Kaha Block";
+      pageDescription = isEn
+        ? "Material supply and experienced installation services across Greater Jakarta (Jabodetabek) by PT Kaha Sukses Mandiri."
+        : "Pengadaan material dan jasa pemasangan paving block presisi di seluruh wilayah Jabodetabek oleh tim berpengalaman PT Kaha Sukses Mandiri.";
+      break;
+    case "areaLayanan":
+      pageType = "CollectionPage";
+      pageName = isEn
+        ? "Paving Block Service Areas Greater Jakarta | Kaha Block"
+        : "Area Layanan Paving Block Jabodetabek | Kaha Block";
+      pageDescription = isEn
+        ? "Service area coverage across Greater Jakarta including Jakarta, Tangerang, Bekasi, Depok, and Bogor."
+        : "Cakupan wilayah pengadaan material dan jasa pemasangan paving block Kaha Block di Jabodetabek.";
+      break;
+    case "areaJakarta":
+      pageType = "WebPage";
+      pageName = isEn
+        ? "Paving Block Supplier for Jakarta & Installation | Kaha Block"
+        : "Produsen Paving Block untuk Jakarta & Jasa Pemasangan | Kaha Block";
+      pageDescription = isEn
+        ? "Direct factory paving block supply and installation across South, East, West, North, and Central Jakarta."
+        : "Pengadaan material paving block presisi dan jasa pemasangan untuk seluruh wilayah DKI Jakarta.";
+      break;
+    case "areaTangerang":
+      pageType = "WebPage";
+      pageName = isEn
+        ? "Paving Block Factory Cisauk Tangerang & Installation | Kaha Block"
+        : "Pabrik Paving Block Cisauk Tangerang & Jasa Pemasangan | Kaha Block";
+      pageDescription = isEn
+        ? "Primary manufacturing facility in Cisauk, Tangerang Regency, supplying pavers and installation teams across Tangerang Region."
+        : "Fasilitas pabrik utama Kaha Block di Cisauk, Kabupaten Tangerang, melayani pengadaan dan pemasangan di seluruh Tangerang Raya.";
+      break;
+    case "areaBekasi":
+      pageType = "WebPage";
+      pageName = isEn
+        ? "Paving Block Supplier for Bekasi & Installation | Kaha Block"
+        : "Produsen Paving Block untuk Bekasi & Jasa Pemasangan | Kaha Block";
+      pageDescription = isEn
+        ? "Precision paving block supply and installation for Bekasi City and Bekasi Regency."
+        : "Pengadaan material paving block presisi dan jasa pemasangan untuk Kota Bekasi dan Kabupaten Bekasi.";
+      break;
+    case "areaDepok":
+      pageType = "WebPage";
+      pageName = isEn
+        ? "Paving Block Supplier for Depok & Installation | Kaha Block"
+        : "Produsen Paving Block untuk Depok & Jasa Pemasangan | Kaha Block";
+      pageDescription = isEn
+        ? "Paving block material supply and installation services for Depok City."
+        : "Pengadaan material paving block presisi dan jasa pemasangan untuk wilayah Kota Depok.";
+      break;
+    case "areaBogor":
+      pageType = "WebPage";
+      pageName = isEn
+        ? "Paving Block Supplier for Bogor & Installation | Kaha Block"
+        : "Produsen Paving Block untuk Bogor & Jasa Pemasangan | Kaha Block";
+      pageDescription = isEn
+        ? "Precision paving block supply and installation services for Bogor City and Bogor Regency."
+        : "Pengadaan material paving block presisi dan jasa pemasangan untuk Kota dan Kabupaten Bogor.";
       break;
   }
 
@@ -446,6 +573,33 @@ export function generateStructuredDataGraph({
       };
       graph.push(faqEntity);
     }
+  }
+
+  // C. Installation Service Entity
+  if (page === "jasaPemasangan") {
+    graph.push({
+      "@type": "Service",
+      "@id": `${canonicalUrl}#service`,
+      name: isEn
+        ? "Paving Block Installation Service"
+        : "Jasa Pemasangan Paving Block",
+      description: isEn
+        ? "Professional concrete paving block installation services across Greater Jakarta (Jabodetabek) by experienced field crews."
+        : "Pengadaan dan jasa pemasangan paving block presisi di seluruh Jabodetabek oleh tim pemasangan berpengalaman.",
+      provider: {
+        "@id": `${baseUrl}/#organization`,
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: isEn ? "Greater Jakarta (Jabodetabek)" : "Jabodetabek",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: isEn
+          ? "Paving Block Installation Services"
+          : "Layanan Pemasangan Paving Block",
+      },
+    });
   }
 
   return {

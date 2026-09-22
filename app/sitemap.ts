@@ -4,7 +4,22 @@ import { SITE_URL } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["id", "en"] as const;
-  const coreRoutes = ["", "/about", "/products", "/projects", "/projects/production", "/blog", "/contact"] as const;
+  const coreRoutes = [
+    "",
+    "/about",
+    "/products",
+    "/projects",
+    "/projects/production",
+    "/blog",
+    "/contact",
+    "/jasa-pemasangan-paving-block",
+    "/area-layanan",
+    "/area-layanan/jakarta",
+    "/area-layanan/tangerang",
+    "/area-layanan/bekasi",
+    "/area-layanan/depok",
+    "/area-layanan/bogor",
+  ] as const;
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 

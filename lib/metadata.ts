@@ -6,7 +6,21 @@ const BASE_URL = SITE_URL;
 const OG_IMAGE_URL = `${BASE_URL}/image-og.png`;
 
 interface PageMetaConfig {
-  path: "" | "/about" | "/products" | "/projects" | "/projects/production" | "/contact" | "/blog";
+  path:
+    | ""
+    | "/about"
+    | "/products"
+    | "/projects"
+    | "/projects/production"
+    | "/contact"
+    | "/blog"
+    | "/jasa-pemasangan-paving-block"
+    | "/area-layanan"
+    | "/area-layanan/jakarta"
+    | "/area-layanan/tangerang"
+    | "/area-layanan/bekasi"
+    | "/area-layanan/depok"
+    | "/area-layanan/bogor";
   id: {
     title: string;
     description: string;
@@ -109,10 +123,115 @@ const PAGE_META: Record<string, PageMetaConfig> = {
         "Technical guides, area planning tips, thickness comparisons, K-250, K-300, and K-400 concrete grades insights, and maintenance practices from PT Kaha Sukses Mandiri.",
     },
   },
+  jasaPemasangan: {
+    path: "/jasa-pemasangan-paving-block",
+    id: {
+      title: "Jasa Pemasangan Paving Block Jabodetabek | KAHA BLOCK",
+      description:
+        "Kaha Block melayani pengadaan sekaligus jasa pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, Bogor dan Jabodetabek oleh tim berpengalaman.",
+    },
+    en: {
+      title: "Paving Block Installation Services Jabodetabek | KAHA BLOCK",
+      description:
+        "Kaha Block supplies and installs concrete paving blocks across Greater Jakarta (Jakarta, Tangerang, Bekasi, Depok, Bogor) with experienced crews.",
+    },
+  },
+  areaLayanan: {
+    path: "/area-layanan",
+    id: {
+      title: "Area Layanan Paving Block Jabodetabek | KAHA BLOCK",
+      description:
+        "Area layanan pengadaan dan jasa pemasangan paving block Kaha Block mencakup DKI Jakarta, Tangerang Raya, Bekasi, Depok, dan Bogor (Jabodetabek).",
+    },
+    en: {
+      title: "Paving Block Service Areas Greater Jakarta | KAHA BLOCK",
+      description:
+        "Kaha Block supply and installation service coverage across Greater Jakarta including Jakarta, Tangerang, Bekasi, Depok, and Bogor municipalities.",
+    },
+  },
+  areaJakarta: {
+    path: "/area-layanan/jakarta",
+    id: {
+      title: "Paving Block Jakarta & Jasa Pemasangan | KAHA BLOCK",
+      description:
+        "Pengadaan material paving block presisi dan jasa pemasangan untuk wilayah Jakarta Selatan, Timur, Barat, Utara, dan Pusat. Gratis ongkir & penurunan.",
+    },
+    en: {
+      title: "Paving Block Supplier Jakarta & Installation | KAHA BLOCK",
+      description:
+        "Direct factory paving block supply and installation across South, East, West, North, and Central Jakarta. Free delivery and offloading included.",
+    },
+  },
+  areaTangerang: {
+    path: "/area-layanan/tangerang",
+    id: {
+      title: "Pabrik Paving Block Tangerang & Jasa Pemasangan | KAHA BLOCK",
+      description:
+        "Pabrik paving block Kaha Block di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk seluruh wilayah Tangerang Raya.",
+    },
+    en: {
+      title: "Paving Block Factory Tangerang & Installation | KAHA BLOCK",
+      description:
+        "Direct factory paving block plant in Cisauk, Tangerang Regency. Supplying pavers and installation crews across the entire Tangerang region.",
+    },
+  },
+  areaBekasi: {
+    path: "/area-layanan/bekasi",
+    id: {
+      title: "Paving Block Bekasi & Jasa Pemasangan | KAHA BLOCK",
+      description:
+        "Pasokan paving block presisi langsung dari pabrik Cisauk untuk proyek di Kota dan Kabupaten Bekasi. Lengkap dengan jasa pasang & gratis ongkir.",
+    },
+    en: {
+      title: "Paving Block Supplier Bekasi & Installation | KAHA BLOCK",
+      description:
+        "Direct factory paving block supply and professional installation services for Bekasi City and Bekasi Regency. Free delivery and offloading.",
+    },
+  },
+  areaDepok: {
+    path: "/area-layanan/depok",
+    id: {
+      title: "Paving Block Depok & Jasa Pemasangan | KAHA BLOCK",
+      description:
+        "Pengadaan paving block mutu K-250, K-300, K-400 dan jasa pemasangan untuk wilayah Kota Depok. Dikirim langsung dari pabrik Cisauk tanpa ongkir.",
+    },
+    en: {
+      title: "Paving Block Supplier Depok & Installation | KAHA BLOCK",
+      description:
+        "Paving block supply (K-250, K-300, K-400) and laying services for Depok City. Direct factory shipments from Cisauk with free delivery included.",
+    },
+  },
+  areaBogor: {
+    path: "/area-layanan/bogor",
+    id: {
+      title: "Paving Block Bogor & Jasa Pemasangan | KAHA BLOCK",
+      description:
+        "Pengadaan material conblock presisi dan jasa pemasangan untuk Kota dan Kabupaten Bogor. Pengiriman langsung dari pabrik Cisauk dengan gratis ongkir.",
+    },
+    en: {
+      title: "Paving Block Supplier Bogor & Installation | KAHA BLOCK",
+      description:
+        "Precision paving block supply and installation services for Bogor City and Bogor Regency. Direct factory dispatches from Cisauk with free delivery.",
+    },
+  },
 };
 
 export function constructPageMetadata(
-  pageKey: "home" | "about" | "products" | "projects" | "projectsProduction" | "contact" | "blog",
+  pageKey:
+    | "home"
+    | "about"
+    | "products"
+    | "projects"
+    | "projectsProduction"
+    | "contact"
+    | "blog"
+    | "jasaPemasangan"
+    | "areaLayanan"
+    | "areaJakarta"
+    | "areaTangerang"
+    | "areaBekasi"
+    | "areaDepok"
+    | "areaBogor",
   lang: Locale
 ): Metadata {
   const config = PAGE_META[pageKey];

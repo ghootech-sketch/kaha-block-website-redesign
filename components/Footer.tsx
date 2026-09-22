@@ -47,6 +47,14 @@ export default function Footer({ lang }: { lang: Locale }) {
                 { href: `/${lang}`, label: dict.nav.home },
                 { href: `/${lang}/about`, label: dict.nav.about },
                 { href: `/${lang}/products`, label: dict.nav.products },
+                {
+                  href: `/${lang}/jasa-pemasangan-paving-block`,
+                  label: lang === "en" ? "Installation Services" : "Jasa Pemasangan",
+                },
+                {
+                  href: `/${lang}/area-layanan`,
+                  label: lang === "en" ? "Service Areas" : "Area Layanan",
+                },
                 { href: `/${lang}/projects`, label: dict.nav.projects },
                 { href: `/${lang}/blog`, label: dict.nav.blog },
                 { href: `/${lang}/contact`, label: dict.nav.contact },
