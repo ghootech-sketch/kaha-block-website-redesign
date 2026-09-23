@@ -61,14 +61,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   products: {
     path: "/products",
     id: {
-      title: "Produk Paving Block & Conblock | KAHA BLOCK",
+      title: "Jual Paving Block Langsung Produsen | KAHA BLOCK",
       description:
-        "Katalog paving block presisi: Truepave, Half, Hexa, Ubin, dan Kanstein langsung dari pabrik. Pengadaan material dan gratis pengiriman wilayah Jabodetabek.",
+        "Jual paving block presisi dan supplier conblock langsung dari produsen PT Kaha Sukses Mandiri (pabrik Cisauk). Pilihan mutu K-250, K-300, K-400 dengan gratis pengiriman Jabodetabek.",
     },
     en: {
-      title: "Paving Block Products | KAHA BLOCK",
+      title: "Direct Factory Paving Block Supplier | KAHA BLOCK",
       description:
-        "Direct factory paving block products: Truepave, Half, Hexagonal, Tile, and Curb Stones. Material supply with free delivery across Greater Jakarta (Jabodetabek).",
+        "Direct factory paving block supplier and manufacturer in Cisauk, Tangerang Regency. Truepave, Hexagonal, and Curb Stones with free delivery across Greater Jakarta.",
     },
   },
   projects: {
@@ -126,14 +126,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   jasaPemasangan: {
     path: "/jasa-pemasangan-paving-block",
     id: {
-      title: "Jasa Pemasangan Paving Block Jabodetabek | KAHA BLOCK",
+      title: "Kontraktor & Jasa Pemasangan Paving Block Jabodetabek | KAHA BLOCK",
       description:
-        "Kaha Block melayani pengadaan sekaligus jasa pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, Bogor dan Jabodetabek oleh tim berpengalaman.",
+        "Kaha Block melayani pengadaan material dan pekerjaan kontraktor pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, dan Bogor oleh tim profesional.",
     },
     en: {
-      title: "Paving Block Installation Services Jabodetabek | KAHA BLOCK",
+      title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",
       description:
-        "Kaha Block supplies and installs concrete paving blocks across Greater Jakarta (Jakarta, Tangerang, Bekasi, Depok, Bogor) with experienced crews.",
+        "Kaha Block supplies paving blocks and serves as an installation contractor across Greater Jakarta (Jakarta, Tangerang, Bekasi, Depok, Bogor) with experienced crews.",
     },
   },
   areaLayanan: {

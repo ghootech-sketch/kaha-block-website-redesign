@@ -94,6 +94,23 @@ export default async function JasaPemasanganPage({
         </div>
       </section>
 
+      {/* Contractor Focus Banner */}
+      {data.contractorSectionTitle && (
+        <section className="bg-white border-b border-stone-200/40 py-12 sm:py-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-surface border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xs">
+            <div className="flex items-center gap-3 mb-3">
+              <HardHat className="w-6 h-6 text-primary shrink-0" aria-hidden="true" />
+              <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">
+                {data.contractorSectionTitle}
+              </h2>
+            </div>
+            <p className="text-slate-600 text-sm sm:text-base font-sans leading-relaxed">
+              {data.contractorSectionDesc}
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* Scope of Work */}
       <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

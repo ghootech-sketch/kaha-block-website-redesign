@@ -252,7 +252,28 @@ export default async function Products({
       </section>
 
       {/* =========================================================================
-          2B. FACTORY DIRECT DELIVERY & INSTALLATION BANNER (Local Geo Relevance)
+          2B. COMMERCIAL INTENT & DIRECT PRODUCER SECTION
+         ========================================================================= */}
+      {dict.commercialSection && (
+        <section className="bg-white border-b border-stone-200/40 py-12 sm:py-16">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal className="bg-surface border border-stone-200/80 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xs">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary font-heading block mb-2">
+                {dict.commercialSection.eyebrow}
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-light text-slate-900 font-heading tracking-tight mb-3">
+                {dict.commercialSection.title}
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+                {dict.commercialSection.desc}
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
+          2C. FACTORY DIRECT DELIVERY & INSTALLATION BANNER (Local Geo Relevance)
          ========================================================================= */}
       {dict.deliveryService && (
         <section id="delivery-installation" className="bg-stone-50 border-b border-stone-200/40 py-12 sm:py-16">

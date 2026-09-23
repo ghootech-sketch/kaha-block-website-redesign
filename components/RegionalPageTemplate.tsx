@@ -204,17 +204,17 @@ export default function RegionalPageTemplate({
         </div>
       </section>
 
-      {/* Installation Service Context Notice */}
+      {/* Installation Service Context Notice / Commercial Contractor Focus */}
       <section className="bg-surface border-b border-stone-200/40 py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8">
           <div className="flex items-center gap-3 mb-3">
-            <HardHat className="w-6 h-6 text-primary" aria-hidden="true" />
-            <h2 className="text-xl font-bold font-heading text-slate-900">
-              {isEn ? "Professional Laying & Sub-Base Preparation" : "Layanan Pemasangan Paving Block Presisi"}
+            <HardHat className="w-6 h-6 text-primary shrink-0" aria-hidden="true" />
+            <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">
+              {data.contractorSectionTitle || (isEn ? "Professional Laying & Sub-Base Preparation" : "Layanan Pemasangan Paving Block Presisi")}
             </h2>
           </div>
           <p className="text-slate-600 text-sm sm:text-base font-sans leading-relaxed">
-            {data.installationNotice}
+            {data.contractorSectionDesc || data.installationNotice}
           </p>
         </div>
       </section>

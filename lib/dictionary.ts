@@ -207,7 +207,7 @@ export const dictionaries = {
         title: "Layanan Jasa Pemasangan",
         subtitle: "Solusi terpadu pengadaan material sekaligus pengerjaan pemasangan paving block profesional.",
         point1Title: "Pengadaan Sekaligus Pemasangan",
-        point1Desc: "Melayani satu paket pengadaan material paving block berkualitas dan tenaga pasang berpengalaman.",
+        point1Desc: "Melayani satu paket pengadaan material paving block berkualitas dan pengerjaan sebagai kontraktor pemasangan paving block berpengalaman.",
         point2Title: "Tim Pemasangan Berpengalaman",
         point2Desc: "Dikerjakan oleh tim pemasangan berpengalaman Kaha Block untuk hasil yang rapi, padat, dan presisi.",
         point3Title: "Layanan Wilayah Jabodetabek",
@@ -529,6 +529,11 @@ export const dictionaries = {
       },
       installation: "Layanan Jasa Pemasangan Lengkap",
       installationDesc: "Kaha Block melayani pengadaan sekaligus jasa pemasangan paving. Tahapan pekerjaan disesuaikan dengan kondisi area dan kebutuhan proyek.",
+      commercialSection: {
+        eyebrow: "PENJUAL & PRODUSEN LANGSUNG",
+        title: "Jual Paving Block Langsung dari Produsen",
+        desc: "Kaha Block melayani pembelian dan pengadaan paving block langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block adalah supplier paving block terpercaya dengan pilihan mutu K-250, K-300, dan K-400 untuk berbagai kebutuhan hunian, komersial, pergudangan, kawasan industri, dan proyek infrastruktur.",
+      },
       deliveryService: {
         eyebrow: "PENGIRIMAN & PEMASANGAN",
         title: "Layanan Pengadaan Langsung Pabrik & Pemasangan Jabodetabek",
@@ -596,6 +601,10 @@ export const dictionaries = {
         title: "Pertanyaan Seputar Produk & Spesifikasi",
         subtitle: "Jawaban atas pertanyaan umum seputar pemilihan produk, mutu, ukuran, dan pemesanan.",
         items: [
+          {
+            q: "Apakah Kaha Block penjual paving block atau produsen langsung?",
+            a: "Kaha Block adalah produsen langsung paving block melalui PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Selain penjualan dan pengadaan material supplier paving block, Kaha Block juga melayani pengiriman gratis dan jasa kontraktor pemasangan untuk wilayah Jabodetabek.",
+          },
           {
             q: "Bagaimana menentukan produk yang sesuai dengan kebutuhan area?",
             a: "Pemilihan ketebalan dan mutu beton perlu disesuaikan dengan fungsi area, intensitas lalu lintas, dan kebutuhan proyek. Tim Kaha Block dapat membantu menentukan spesifikasi yang sesuai.",
@@ -1472,6 +1481,11 @@ export const dictionaries = {
       },
       installation: "Comprehensive Installation Services",
       installationDesc: "Kaha Block provides paving supply and installation services. The work stages are adjusted to site conditions and project requirements.",
+      commercialSection: {
+        eyebrow: "DIRECT MANUFACTURER & SUPPLIER",
+        title: "Direct Factory Paving Block Sales & Supply",
+        desc: "Kaha Block provides direct factory sales and procurement of precision paving blocks manufactured by PT Kaha Sukses Mandiri at our Cisauk plant in Tangerang Regency. Operating since 2015, we supply K-250, K-300, and K-400 concrete grades for residential, commercial, industrial, and infrastructure developments.",
+      },
       deliveryService: {
         eyebrow: "DELIVERY & INSTALLATION",
         title: "Factory-Direct Supply & Installation Across Greater Jakarta",
@@ -1539,6 +1553,10 @@ export const dictionaries = {
         title: "Frequently Asked Product Questions",
         subtitle: "Answers to common questions regarding product selection, quality, dimensions, and ordering.",
         items: [
+          {
+            q: "Is Kaha Block a paving block seller or a direct manufacturer?",
+            a: "Kaha Block is a direct paving block manufacturer operating under PT Kaha Sukses Mandiri with production facilities in Cisauk, Tangerang Regency. In addition to material sales and procurement, Kaha Block provides logistics delivery and professional installation services across Greater Jakarta.",
+          },
           {
             q: "How do I determine the right product for site requirements?",
             a: "Thickness and concrete grade should be selected according to site function, traffic intensity, and project requirements. The Kaha Block team can help determine the appropriate specification.",
