@@ -834,7 +834,7 @@ export const REGIONAL_PAGES_DATA: Record<
         "Konsultasikan pengadaan material beserta tim pasang untuk pengerjaan perkerasan lahan di Tangerang.",
       trustFactsTitle: "Fakta Fasilitas Pabrik Kaha Block Cisauk",
       trustFacts: [
-        { label: "Lokasi Alamat Pabrik", value: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Kab. Tangerang" },
+        { label: "Lokasi Alamat Pabrik", value: "Jl. Cibadak No.7, Suradita, Cisauk, Kab. Tangerang" },
         { label: "Luas Area Fasilitas", value: "9.080 m² (Sejak 2015)" },
         { label: "Teknologi Produksi", value: "Mesin Full Otomatis Hidrolik" },
         { label: "Status Wilayah Pabrik", value: "Kabupaten Tangerang, Banten" },
@@ -932,7 +932,7 @@ export const REGIONAL_PAGES_DATA: Record<
         "Consult material supply together with our laying crew for site paving projects in Tangerang.",
       trustFactsTitle: "Kaha Block Cisauk Plant Facts",
       trustFacts: [
-        { label: "Plant Address", value: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang Regency" },
+        { label: "Plant Address", value: "Jl. Cibadak No.7, Suradita, Cisauk, Tangerang Regency" },
         { label: "Facility Area", value: "9,080 m² (Operating Since 2015)" },
         { label: "Production Line", value: "Fully Automatic Hydraulic Press" },
         { label: "Administrative Location", value: "Tangerang Regency, Banten" },

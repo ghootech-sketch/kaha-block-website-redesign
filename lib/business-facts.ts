@@ -14,7 +14,7 @@ export const BUSINESS_FACTS = {
 
   // Factory & Office Physical Location
   address: {
-    street: "Jl. Raya Cibadak No. 7, Suradita",
+    street: "Jl. Cibadak No.7, Suradita",
     locality: "Cisauk",
     city: "Kabupaten Tangerang",
     cityEn: "Tangerang Regency",
@@ -22,8 +22,8 @@ export const BUSINESS_FACTS = {
     postalCode: "15343",
     country: "Indonesia",
     countryCode: "ID",
-    formatted: "Jl. Raya Cibadak No. 7, Suradita, Kec. Cisauk, Kabupaten Tangerang, Banten 15343",
-    formattedEn: "Jl. Raya Cibadak No. 7, Suradita, Cisauk, Tangerang Regency, Banten 15343",
+    formatted: "Jl. Cibadak No.7, Suradita, Kec. Cisauk, Kabupaten Tangerang, Banten 15343",
+    formattedEn: "Jl. Cibadak No.7, Suradita, Cisauk, Tangerang Regency, Banten 15343",
   },
 
   // Geographic Coordinates & Map Reference
