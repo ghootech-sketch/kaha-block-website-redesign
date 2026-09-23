@@ -1,11 +1,18 @@
 "use client";
 
+import { useEffect } from "react";
+
 export default function GlobalError({
+  error,
   reset,
 }: {
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  useEffect(() => {
+    console.error("Global error boundary caught:", error);
+  }, [error]);
+
   return (
     <html lang="id">
       <body className="min-h-screen flex flex-col items-center justify-center bg-surface text-slate-900 font-sans p-4">
