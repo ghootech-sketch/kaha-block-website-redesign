@@ -532,7 +532,7 @@ export const dictionaries = {
       commercialSection: {
         eyebrow: "PENJUAL & PRODUSEN LANGSUNG",
         title: "Jual Paving Block Langsung dari Produsen",
-        desc: "Kaha Block melayani pembelian dan pengadaan paving block langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block adalah supplier paving block terpercaya dengan pilihan mutu K-250, K-300, dan K-400 untuk berbagai kebutuhan hunian, komersial, pergudangan, kawasan industri, dan proyek infrastruktur.",
+        desc: "Kaha Block melayani pembelian dan pengadaan paving block langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block memproduksi dan memasok paving block dengan pilihan mutu K-250, K-300, dan K-400 untuk kebutuhan hunian, komersial, pergudangan, kawasan industri, dan proyek infrastruktur.",
       },
       deliveryService: {
         eyebrow: "PENGIRIMAN & PEMASANGAN",
@@ -603,7 +603,7 @@ export const dictionaries = {
         items: [
           {
             q: "Apakah Kaha Block penjual paving block atau produsen langsung?",
-            a: "Kaha Block adalah produsen langsung paving block melalui PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Selain penjualan dan pengadaan material supplier paving block, Kaha Block juga melayani pengiriman gratis dan jasa kontraktor pemasangan untuk wilayah Jabodetabek.",
+            a: "Kaha Block adalah produsen langsung paving block melalui PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Selain penjualan dan pengadaan paving block, Kaha Block juga melayani pengiriman gratis serta jasa kontraktor pemasangan untuk wilayah Jabodetabek.",
           },
           {
             q: "Bagaimana menentukan produk yang sesuai dengan kebutuhan area?",

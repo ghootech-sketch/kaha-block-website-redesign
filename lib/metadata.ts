@@ -63,7 +63,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Jual Paving Block Langsung Produsen | KAHA BLOCK",
       description:
-        "Jual paving block presisi dan supplier conblock langsung dari produsen PT Kaha Sukses Mandiri (pabrik Cisauk). Pilihan mutu K-250, K-300, K-400 dengan gratis pengiriman Jabodetabek.",
+        "Jual paving block dan conblock langsung dari produsen PT Kaha Sukses Mandiri di Cisauk. Tersedia mutu K-250, K-300, K-400 dan gratis pengiriman Jabodetabek.",
     },
     en: {
       title: "Direct Factory Paving Block Supplier | KAHA BLOCK",
@@ -128,7 +128,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Kontraktor & Jasa Pemasangan Paving Block Jabodetabek | KAHA BLOCK",
       description:
-        "Kaha Block melayani pengadaan material dan pekerjaan kontraktor pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, dan Bogor oleh tim profesional.",
+        "Kaha Block melayani pengadaan material dan pekerjaan kontraktor pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, dan Bogor oleh tim berpengalaman.",
     },
     en: {
       title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",

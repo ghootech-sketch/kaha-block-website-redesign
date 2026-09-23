@@ -601,7 +601,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCaseSectionTitle: "Aplikasi Paving Block untuk Proyek Jakarta",
       contractorSectionTitle: "Kontraktor Paving Block untuk Jakarta",
       contractorSectionDesc:
-        "Kaha Block melayani pengadaan material supplier paving block sekaligus pekerjaan kontraktor pemasangan paving block untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Tim kami berpengalaman dalam menangani lokasi padat kota dan area komersial.",
+        "Kaha Block melayani pengadaan paving block sekaligus pekerjaan kontraktor pemasangan paving block untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Tim kami berpengalaman dalam menangani lokasi padat kota dan area komersial.",
       useCases: [
         {
           title: "Perumahan & Properti Residensial",
@@ -813,7 +813,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCaseSectionTitle: "Aplikasi Paving Block di Wilayah Tangerang",
       contractorSectionTitle: "Produsen & Kontraktor Paving Block Tangerang",
       contractorSectionDesc:
-        "Sebagai produsen paving block dengan fasilitas pabrik di Cisauk, Kabupaten Tangerang, Kaha Block melayani jual dan pengadaan material supplier paving block sekaligus jasa kontraktor pemasangan paving block untuk wilayah Tangerang Raya (Kabupaten Tangerang, Kota Tangerang, dan Tangerang Selatan).",
+        "Sebagai produsen paving block dengan fasilitas pabrik di Cisauk, Kabupaten Tangerang, Kaha Block melayani penjualan dan pengadaan paving block sekaligus jasa kontraktor pemasangan untuk wilayah Tangerang Raya (Kabupaten Tangerang, Kota Tangerang, dan Tangerang Selatan).",
       useCases: [
         {
           title: "Kawasan Industri & Pergudangan Tangerang",
@@ -1006,7 +1006,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCaseSectionTitle: "Aplikasi Paving Block untuk Proyek Bekasi",
       contractorSectionTitle: "Kontraktor & Pengadaan Paving Block Bekasi",
       contractorSectionDesc:
-        "Kaha Block melayani jual dan pengadaan material supplier paving block serta pekerjaan kontraktor pemasangan paving block untuk Kota Bekasi dan Kabupaten Bekasi (Cikarang, Tambun, Cibitung, Mustikajaya).",
+        "Kaha Block melayani penjualan dan pengadaan paving block serta pekerjaan kontraktor pemasangan untuk Kota Bekasi dan Kabupaten Bekasi (Cikarang, Tambun, Cibitung, Mustikajaya).",
       useCases: [
         {
           title: "Pergudangan & Area Industri Bekasi",
@@ -1185,7 +1185,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCaseSectionTitle: "Aplikasi Paving Block untuk Proyek Depok",
       contractorSectionTitle: "Kontraktor & Pengadaan Paving Block Depok",
       contractorSectionDesc:
-        "Kaha Block melayani jual dan pengadaan material supplier paving block serta pekerjaan kontraktor pemasangan paving block untuk Kota Depok (Margonda, Cinere, Cimanggis, Sawangan, Tapos, Bojongsari).",
+        "Kaha Block melayani penjualan dan pengadaan paving block serta pekerjaan kontraktor pemasangan untuk Kota Depok (Margonda, Cinere, Cimanggis, Sawangan, Tapos, Bojongsari).",
       useCases: [
         {
           title: "Halaman Garasi & Perumahan Depok",
@@ -1364,7 +1364,7 @@ export const REGIONAL_PAGES_DATA: Record<
       useCaseSectionTitle: "Aplikasi Paving Block untuk Proyek Bogor",
       contractorSectionTitle: "Kontraktor & Pengadaan Paving Block Bogor",
       contractorSectionDesc:
-        "Kaha Block melayani pengadaan material supplier paving block dan pekerjaan kontraktor pemasangan paving block untuk Kota Bogor dan Kabupaten Bogor (Cibinong, Sentul, Cileungsi, Parung).",
+        "Kaha Block melayani pengadaan paving block dan pekerjaan kontraktor pemasangan untuk Kota Bogor dan Kabupaten Bogor (Cibinong, Sentul, Cileungsi, Parung).",
       useCases: [
         {
           title: "Perumahan, Villa & Hunian Bogor",
