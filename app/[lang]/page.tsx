@@ -135,8 +135,8 @@ export default async function Home({
               Mobile (< 768px): hero-mobile.webp (9:16 portrait artwork)
               Desktop / Tablet (>= 768px): hero-main.webp (landscape artwork)
              ======================================================================= */}
-          <div className="absolute inset-0 -z-30 pointer-events-none select-none">
-            <picture>
+          <div className="absolute inset-0 z-0 pointer-events-none select-none">
+            <picture className="block w-full h-full">
               <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
               <img
                 alt={mobileProps.alt}
@@ -146,7 +146,7 @@ export default async function Home({
                 src={mobileFallbackSrc}
                 fetchPriority="high"
                 loading="eager"
-                decoding={mobileProps.decoding}
+                decoding="sync"
                 style={mobileProps.style}
                 className="object-cover object-center w-full h-full"
               />
