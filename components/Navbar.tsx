@@ -382,7 +382,7 @@ export default function Navbar({
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className="lg:hidden shadow-xl animate-in fade-in slide-in-from-top-2 duration-200 border-t border-white/10 bg-black/95 backdrop-blur-none"
+          className="lg:hidden shadow-xl mobile-menu-enter border-t border-white/10 bg-black/95 backdrop-blur-none"
           id="mobile-menu"
         >
           <div className="px-4 pt-3 pb-5 space-y-1">
