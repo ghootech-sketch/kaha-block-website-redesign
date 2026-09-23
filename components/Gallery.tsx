@@ -30,6 +30,7 @@ interface GalleryProps {
     prevImage: string;
     imageAlt: string;
   };
+  galleryType?: "projects" | "production";
 }
 
 export default function Gallery({
@@ -39,6 +40,7 @@ export default function Gallery({
   completeGalleryHeading,
   completeGallerySubheading,
   dict,
+  galleryType = "projects",
 }: GalleryProps) {
   const INITIAL_COUNT = 12;
   const LOAD_MORE_COUNT = 8;
@@ -51,12 +53,20 @@ export default function Gallery({
 
   const getPhotoTitle = (index: number) => {
     const numStr = String(index + 1).padStart(2, "0");
+    const isProd = galleryType === "production";
+
     if (isEn) {
+      if (isProd) {
+        return `Paving Block Production Documentation #${numStr}`;
+      }
       if (index === 24) return "Kaha Block Truepave / Brick Paving Product";
       if (index === 23) return "Paving Block Installation Site Preparation";
       if (index === 2) return "Paving Block Completed Field Results";
       return `Paving Block Installation Documentation #${numStr}`;
     } else {
+      if (isProd) {
+        return `Dokumentasi Produksi Paving Block #${numStr}`;
+      }
       if (index === 24) return "Produk Paving Block Truepave / Bata Kaha Block";
       if (index === 23) return "Persiapan Lahan Pemasangan Paving Block";
       if (index === 2) return "Hasil Jadi Pemasangan Paving Block";
@@ -66,9 +76,17 @@ export default function Gallery({
 
   const getPhotoAlt = (index: number) => {
     const numStr = String(index + 1).padStart(2, "0");
+    const isProd = galleryType === "production";
+
     if (isEn) {
+      if (isProd) {
+        return `Kaha Block paving block manufacturing process - factory photo ${numStr}`;
+      }
       return `Kaha Block paving block installation services - project photo ${numStr}`;
     } else {
+      if (isProd) {
+        return `Dokumentasi proses produksi paving block Kaha Block - foto pabrik ${numStr}`;
+      }
       return `Dokumentasi jasa pemasangan paving block Kaha Block - foto proyek ${numStr}`;
     }
   };

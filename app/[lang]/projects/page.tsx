@@ -93,6 +93,7 @@ export default async function Projects({
               prevImage: dict.prevImage,
               imageAlt: dict.imageAlt
             }} 
+            galleryType="projects"
           />
         </div>
       </section>

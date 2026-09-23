@@ -355,6 +355,7 @@ export default async function ProductionGalleryPage({
               prevImage: projectDict.prevImage,
               imageAlt: dict.heroTitle
             }} 
+            galleryType="production"
           />
         </div>
       </section>
