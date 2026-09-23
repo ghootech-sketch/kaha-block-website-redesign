@@ -232,9 +232,9 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
         a: "Untuk garasi dan jalan mobil perumahan disarankan tebal 6 cm (K-300). Sedangkan untuk pelataran parkir truk, industri, atau pergudangan disarankan tebal 8 cm (K-400).",
       },
     ],
-    ctaHeading: "Konsultasikan Pemasangan Paving Block Proyek Anda",
+    ctaHeading: "Butuh Harga Material atau Biaya Pasang? Tanya Langsung Kaha Block",
     ctaDesc:
-      "Hubungi tim teknis Kaha Block via WhatsApp untuk survey lokasi, estimasi kebutuhan volume, dan penerbitan penawaran harga resmi.",
+      "Kirim lokasi proyek, perkiraan luas area, jenis paving, dan kebutuhan penggunaannya. Tim Kaha Block akan membantu estimasi material, rekomendasi mutu, dan penawaran harga terbaik sesuai kebutuhan proyek.",
   },
   en: {
     eyebrow: "CONTRACTOR SERVICES & PARTNERSHIP",
@@ -386,9 +386,9 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
         a: "For residential car porches and driveways, 6 cm pavers (K-300) are recommended. For heavy commercial trucks, industrial plants, or warehouse yards, 8 cm pavers (K-400) are ideal.",
       },
     ],
-    ctaHeading: "Consult Your Paving Project Requirements",
+    ctaHeading: "Need Material Prices or Installation Cost? Ask Kaha Block Directly",
     ctaDesc:
-      "Contact the Kaha Block technical team via WhatsApp for site evaluation, volume estimation, and an official written proposal.",
+      "Send your project location, estimated area size, paving model, and planned application. The Kaha Block team will help with material estimations, concrete grade recommendations, and provide the best pricing offer tailored to your project requirements.",
   },
 };
 

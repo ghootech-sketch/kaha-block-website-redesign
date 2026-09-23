@@ -1,4 +1,5 @@
 import { Locale } from "@/lib/dictionary";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SchemaPageType } from "@/lib/schema";
 import { REGIONAL_PAGES_DATA, RegionalSlug } from "@/lib/local-service-data";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
@@ -36,6 +37,74 @@ export default function RegionalPageTemplate({
   const otherRegions = (
     Object.keys(REGIONAL_PAGES_DATA) as RegionalSlug[]
   ).filter((s) => s !== slug);
+
+  const regionName = slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1);
+
+  const customFaqsId = [
+    {
+      q: `Berapa estimasi harga paving block per meter di ${regionName} 2026?`,
+      a: `Harga paving block per meter di ${regionName} pada 2026 bersifat kustom dan tidak memiliki tarif tunggal. Biaya ditentukan oleh beberapa variabel fisik seperti model paving conblock, ketebalan (6 cm, 8 cm, atau 10 cm), mutu beton (K-250, K-300, atau K-400), volume pemesanan, dan lokasi pengiriman. Pengiriman material dikirim langsung dari pabrik utama kami di Cisauk, Kabupaten Tangerang.`,
+    },
+    {
+      q: `Berapa biaya pasang paving block per meter di ${regionName}?`,
+      a: `Biaya pemasangan paving block per meter di ${regionName} bervariasi bergantung pada beberapa faktor kondisi lapangan, meliputi luas area keseluruhan (m²), kondisi tanah dasar, kebutuhan pemadatan tanah, penggunaan lapisan pasir abu batu, kanstein pengunci, pola pemasangan conblock, serta tingkat kemudahan akses lokasi proyek.`,
+    },
+    {
+      q: `Mencari kontraktor pasang paving block untuk proyek di ${regionName}?`,
+      a: `Kaha Block menyediakan layanan kontraktor pemasangan paving block terintegrasi untuk wilayah ${regionName}. Kami menggarap seluruh tahapan pengerjaan mulai dari perataan tanah, pemadatan tanah dasar, pengisian pasir abu batu, penyusunan paving block presisi, hingga penguncian dengan kanstein dan pemadatan akhir. Hubungi kami untuk penawaran harga terbaik paket material dan jasa pasang.`,
+    },
+  ];
+
+  const customFaqsEn = [
+    {
+      q: `What is the estimated paving block price per meter in ${regionName} for 2026?`,
+      a: `The paving block price per square meter in ${regionName} for 2026 is highly customized without a single fixed rate. Pricing is determined by physical variables including the paving model, thickness (6 cm / 8 cm / 10 cm), concrete grade (K-250, K-300, or K-400), order volume, and delivery site. All materials are dispatched directly from our primary manufacturing plant in Cisauk, Tangerang Regency.`,
+    },
+    {
+      q: `How much does paving block installation cost per meter in ${regionName}?`,
+      a: `Paving block installation costs per square meter in ${regionName} vary depending on several site conditions, including total area size (m²), subgrade soil conditions, compaction needs, stone dust bedding (pasir abu batu), edge curb (kanstein) locks, paving layout pattern, and accessibility of the project site.`,
+    },
+    {
+      q: `Looking for a paving block installation contractor for a project in ${regionName}?`,
+      a: `Kaha Block provides professional turnkey paving block contractor services across the ${regionName} area. We manage all phases from site grading, subgrade soil compaction, bedding sand application, precision paver laying, up to curbstone lock installation and final vibration compaction. Contact us to receive a complete material and installation package quote.`,
+    },
+  ];
+
+  const baseCustomFaqs = isEn ? customFaqsEn : customFaqsId;
+  const faqsToRender = [...baseCustomFaqs];
+
+  // Append other baseline FAQs, skipping any that duplicate the questions we just added
+  data.faqs.forEach((bf) => {
+    const q = bf.q.toLowerCase();
+
+    const isCommercialDuplicate =
+      q.includes("estimasi harga") ||
+      q.includes("biaya pasang") ||
+      q.includes("biaya pemasangan") ||
+      q.includes("estimated paving block price") ||
+      q.includes("installation cost") ||
+      q.includes("paving block price per") ||
+      q.includes("biaya per meter") ||
+      q.includes("harga per meter");
+
+    if (!isCommercialDuplicate) {
+      faqsToRender.push(bf);
+    }
+  });
+
+  if (slug === "tangerang") {
+    if (lang === "id") {
+      faqsToRender.push({
+        q: "Di mana pabrik paving block K-300 press hidrolik di Tangerang?",
+        a: "Pabrik utama kami yang memproduksi paving block press hidrolik berlokasi di Cisauk, Kabupaten Tangerang. Di fasilitas seluas 9.080 m² ini, PT Kaha Sukses Mandiri menggunakan mesin cetak press hidrolik full otomatis. Kami memproduksi conblock berkualitas dengan pilihan mutu beton K-250, K-300, dan K-400 sesuai dengan jenis produk dan kebutuhan spesifikasi proyek Anda.",
+      });
+    } else {
+      faqsToRender.push({
+        q: "Where is the K-300 hydraulic press paving block factory in Tangerang?",
+        a: "Our primary manufacturing plant producing hydraulic press paving blocks is located in Cisauk, Tangerang Regency. Within this 9,080 m² facility, PT Kaha Sukses Mandiri operates fully automatic hydraulic press machinery. We manufacture quality concrete pavers with compressive strength options of K-250, K-300, and K-400 depending on the specific product type and project requirements.",
+      });
+    }
+  }
 
   return (
     <>
@@ -84,7 +153,7 @@ export default function RegionalPageTemplate({
 
               <div className="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3">
                 <a
-                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={getWhatsAppUrl("primary", slug, lang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary-hover text-white font-bold px-6 py-3.5 rounded-xl inline-flex items-center justify-center gap-2 text-sm transition-colors min-h-[44px]"
@@ -251,6 +320,46 @@ export default function RegionalPageTemplate({
         </div>
       </section>
 
+      {/* =========================================================================
+          7B. REGIONAL AIO OPERATIONS BLOCK (Answer-First Section)
+         ========================================================================= */}
+      <section className="bg-white py-16 sm:py-20 border-b border-stone-200/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col gap-6">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {isEn ? (
+                slug === "tangerang" ? (
+                  "Paving Block Factory Operations & Installation Services in Tangerang"
+                ) : (
+                  `Paving Block Delivery Operations & Installation Services in ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}`
+                )
+              ) : (
+                slug === "tangerang" ? (
+                  "Operasi Pabrik & Jasa Pemasangan Paving Block Tangerang"
+                ) : (
+                  `Operasi Pengiriman & Jasa Pemasangan Paving Block ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}`
+                )
+              )}
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
+              {isEn ? (
+                slug === "tangerang" ? (
+                  "Kaha Block provides direct manufacturer supply and professional installation services in Tangerang Regency, Tangerang City, and South Tangerang directly from our plant in Cisauk, Tangerang Regency. Operating since 2015, we manufacture K-250, K-300, and K-400 concrete grade paving blocks using fully automatic hydraulic press machinery. We guarantee direct plant shipments and expert contractor support from ground preparation to final compacting."
+                ) : (
+                  `To serve your paving needs in ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}, all shipments are dispatched directly from our primary manufacturing plant in Cisauk, Tangerang Regency. Kaha Block offers free shipping across the Jabodetabek region with material offloading included, along with turnkey paving block installation services led by our highly experienced team. We ensure consistent high-quality concrete pavers and professional laying standards across all districts in ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`
+                )
+              ) : (
+                slug === "tangerang" ? (
+                  "Kaha Block melayani pengadaan conblock dan jasa pemasangan paving block di Tangerang Raya secara langsung dari fasilitas pabrik kami di Cisauk, Kabupaten Tangerang. Proses produksi menggunakan mesin otomatis hidrolik untuk mutu beton K-250, K-300, dan K-400. Kami melayani pengiriman langsung ke lokasi proyek dengan fasilitas gratis ongkos kirim serta tim kontraktor berpengalaman yang siap menggarap persiapan lahan hingga finishing perkerasan jalan."
+                ) : (
+                  `Untuk melayani kebutuhan di wilayah ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}, kami melakukan pengiriman langsung dari pabrik utama kami di Cisauk, Kabupaten Tangerang. Pengiriman material ke wilayah Jabodetabek gratis dan sudah termasuk penurunan barang. Kami juga menyediakan layanan kontraktor pemasangan paving block terpadu oleh tim berpengalaman untuk memastikan pasokan conblock berkualitas tinggi dan pengerjaan yang presisi di seluruh kecamatan di ${slug === "jakarta" ? "DKI Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`
+                )
+              )}
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* City Specific FAQs */}
       <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -263,7 +372,7 @@ export default function RegionalPageTemplate({
           </div>
 
           <div className="space-y-4">
-            {data.faqs.map((item, idx) => (
+            {faqsToRender.map((item, idx) => (
               <details
                 key={idx}
                 className="bg-white border border-slate-200 rounded-xl p-6 group [&_summary::-webkit-details-marker]:hidden"
@@ -324,7 +433,7 @@ export default function RegionalPageTemplate({
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+              href={getWhatsAppUrl("secondary", slug, lang)}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent hover:bg-accent-hover text-slate-900 font-bold px-7 py-3.5 rounded-xl inline-flex items-center gap-2.5 transition-colors text-sm sm:text-base shadow-sm min-h-[44px]"

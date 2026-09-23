@@ -84,6 +84,7 @@ export default async function Projects({
               subtitle: dict.featured.subtitle,
             } : undefined}
             completeGalleryHeading={dict.completeGalleryHeading}
+            completeGallerySubheading={dict.completeGallerySubheading}
             dict={{
               loadMore: dict.loadMore,
               showLess: dict.showLess,

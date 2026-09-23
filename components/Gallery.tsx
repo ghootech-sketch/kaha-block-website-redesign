@@ -21,6 +21,7 @@ interface GalleryProps {
     subtitle: string;
   };
   completeGalleryHeading?: string;
+  completeGallerySubheading?: string;
   dict: {
     loadMore: string;
     showLess: string;
@@ -36,6 +37,7 @@ export default function Gallery({
   featuredItems,
   featuredHeader,
   completeGalleryHeading,
+  completeGallerySubheading,
   dict,
 }: GalleryProps) {
   const INITIAL_COUNT = 12;
@@ -44,6 +46,32 @@ export default function Gallery({
   
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const isEn = dict.imageAlt.toLowerCase().includes("project") || dict.imageAlt.toLowerCase().includes("documentation");
+
+  const getPhotoTitle = (index: number) => {
+    const numStr = String(index + 1).padStart(2, "0");
+    if (isEn) {
+      if (index === 24) return "Kaha Block Truepave / Brick Paving Product";
+      if (index === 23) return "Paving Block Installation Site Preparation";
+      if (index === 2) return "Paving Block Completed Field Results";
+      return `Paving Block Installation Documentation #${numStr}`;
+    } else {
+      if (index === 24) return "Produk Paving Block Truepave / Bata Kaha Block";
+      if (index === 23) return "Persiapan Lahan Pemasangan Paving Block";
+      if (index === 2) return "Hasil Jadi Pemasangan Paving Block";
+      return `Dokumentasi Pemasangan Paving Block #${numStr}`;
+    }
+  };
+
+  const getPhotoAlt = (index: number) => {
+    const numStr = String(index + 1).padStart(2, "0");
+    if (isEn) {
+      return `Kaha Block paving block installation services - project photo ${numStr}`;
+    } else {
+      return `Dokumentasi jasa pemasangan paving block Kaha Block - foto proyek ${numStr}`;
+    }
+  };
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => Math.min(prev + LOAD_MORE_COUNT, images.length));
@@ -145,13 +173,20 @@ export default function Gallery({
          ========================================================================= */}
       <div>
         {completeGalleryHeading && (
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-slate-200/80">
-            <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">
-              {completeGalleryHeading}
-            </h2>
-            <span className="text-xs sm:text-sm font-mono text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full">
-              {images.length} {dict.imageAlt.toLowerCase()}
-            </span>
+          <div className="mb-8 pb-4 border-b border-slate-200/80">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">
+                {completeGalleryHeading}
+              </h2>
+              <span className="text-xs sm:text-sm font-mono text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full w-fit">
+                {images.length} {dict.imageAlt.toLowerCase()}
+              </span>
+            </div>
+            {completeGallerySubheading && (
+              <p className="text-sm text-slate-600 mt-2 font-sans leading-relaxed max-w-4xl">
+                {completeGallerySubheading}
+              </p>
+            )}
           </div>
         )}
 
@@ -160,26 +195,33 @@ export default function Gallery({
             <button
               type="button"
               key={src}
-              className="text-left w-full block group relative rounded-xl overflow-hidden shadow-none hover:shadow-md transition-all duration-300 border border-gray-200/80 cursor-pointer aspect-[3/2] bg-slate-100"
+              className="text-left w-full bg-white rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 border border-slate-200/80 cursor-pointer flex flex-col h-full group"
               onClick={() => openLightboxByIndex(index)}
-              aria-label={`${dict.imageAlt} ${index + 1}`}
+              aria-label={getPhotoTitle(index)}
             >
-              <Image
-                src={src}
-                alt={`${dict.imageAlt} ${index + 1}`}
-                fill
-                loading="lazy"
-                fetchPriority="low"
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-black/75 border border-accent/30 text-accent flex items-center justify-center shadow-lg">
-                  <ZoomIn className="w-5 h-5" aria-hidden="true" />
-                </span>
+              <div className="relative aspect-[3/2] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src={src}
+                  alt={getPhotoAlt(index)}
+                  fill
+                  loading="lazy"
+                  fetchPriority="low"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-10 h-10 rounded-full bg-black/75 border border-accent/30 text-accent flex items-center justify-center shadow-lg">
+                    <ZoomIn className="w-5 h-5" aria-hidden="true" />
+                  </span>
+                </div>
+                <div className="absolute bottom-2 right-2 bg-black/60 text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-xs">
+                  #{String(index + 1).padStart(2, "0")}
+                </div>
               </div>
-              <div className="absolute bottom-2 right-2 bg-black/60 text-white font-mono text-[10px] px-2 py-0.5 rounded backdrop-blur-xs">
-                #{String(index + 1).padStart(2, "0")}
+              <div className="p-4 bg-white border-t border-slate-100 flex-grow">
+                <p className="text-sm font-semibold text-slate-800 line-clamp-1">
+                  {getPhotoTitle(index)}
+                </p>
               </div>
             </button>
           ))}

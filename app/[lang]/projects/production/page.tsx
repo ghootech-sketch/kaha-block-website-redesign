@@ -1,4 +1,4 @@
-import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -227,8 +227,43 @@ export default async function ProductionGalleryPage({
       </section>
 
       {/* =========================================================================
-          3. FEATURED PRODUCTION HIGHLIGHTS
+          2B. HYDRAULIC PRESS PRODUCTION AUTHORITY (Answer-First Section)
          ========================================================================= */}
+      <section className="bg-white py-16 sm:py-20 lg:py-24 border-b border-stone-200/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col gap-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight mb-4">
+                {currentLang === "en"
+                  ? "K-250, K-300 & K-400 Paving Block Factory with Fully Automatic Hydraulic Press Machine"
+                  : "Pabrik Paving Block K-250, K-300 & K-400 dengan Mesin Press Hidrolik Full Otomatis"}
+              </h2>
+              <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
+                {currentLang === "en"
+                  ? "Kaha Block manufactures paving blocks at PT Kaha Sukses Mandiri's 9,080 m² facility in Cisauk, Tangerang Regency. The molding process uses fully automatic hydraulic press machines to help maintain density, compressive strength, and dimensional consistency according to product specifications."
+                  : "Kaha Block memproduksi paving block di fasilitas PT Kaha Sukses Mandiri seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Proses pencetakan menggunakan mesin press hidrolik full otomatis untuk membantu menjaga kepadatan, kuat tekan, dan konsistensi dimensi sesuai spesifikasi produk."}
+              </p>
+            </div>
+
+            <div className="bg-surface p-6 sm:p-8 rounded-xl border border-slate-200/80">
+              <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-3">
+                {currentLang === "en"
+                  ? "Are Kaha Block paving blocks produced using hydraulic press machines?"
+                  : "Apakah paving block Kaha Block diproduksi menggunakan mesin press hidrolik?"}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+                {currentLang === "en"
+                  ? "Yes. The Kaha Block production process at the Cisauk plant utilizes fully automatic hydraulic machines. Products are available in K-250, K-300, and K-400 concrete grades according to product type and project requirements."
+                  : "Ya. Proses produksi Kaha Block di pabrik Cisauk menggunakan mesin full otomatis hidrolik. Produk tersedia dengan pilihan mutu K-250, K-300, dan K-400 sesuai jenis produk dan kebutuhan proyek."}
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          3. FEATURED PRODUCTION HIGHLIGHTS
+          ========================================================================= */}
       <section className="bg-white py-16 sm:py-20 lg:py-28 border-b border-stone-200/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <RevealGroup>
@@ -348,7 +383,7 @@ export default async function ProductionGalleryPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={getWhatsAppUrl("secondary", "production", currentLang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

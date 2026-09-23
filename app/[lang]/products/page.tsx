@@ -1,4 +1,4 @@
-import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -227,7 +227,7 @@ export default async function Products({
                     {/* Bottom-Aligned WhatsApp CTA */}
                     <div className="mt-auto pt-2">
                       <a 
-                        href={index % 2 === 0 ? BUSINESS_FACTS.contact.whatsappPrimaryUrl : BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
+                        href={getWhatsAppUrl(index % 2 === 0 ? "primary" : "secondary", "products", currentLang)} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -248,6 +248,67 @@ export default async function Products({
               {dict.disclaimer}
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          2A-PRICING. PANDUAN HARGA PAVING BLOCK PER METER 2026 (Answer-First Section)
+         ========================================================================= */}
+      <section className="bg-white py-16 sm:py-20 border-b border-stone-200/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col gap-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight mb-4">
+                {currentLang === "en"
+                  ? "2026 Paving Block Price per Square Meter Guide"
+                  : "Panduan Harga Paving Block per Meter 2026"}
+              </h2>
+              <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
+                {currentLang === "en"
+                  ? "Paving block prices per square meter in 2026 adapt to the specific model, thickness, concrete grade, order volume, and project location. Kaha Block provides direct manufacturer sales from Cisauk and delivery across Greater Jakarta (Jabodetabek). For actual pricing, please send your desired product type, estimated surface area, and project location via WhatsApp."
+                  : "Harga paving block per meter pada 2026 menyesuaikan model, ketebalan, mutu beton, volume pemesanan, dan lokasi proyek. Kaha Block melayani penjualan langsung dari produsen di Cisauk serta pengiriman Jabodetabek. Untuk harga aktual, kirim tipe produk, estimasi luas area, dan lokasi proyek melalui WhatsApp."}
+              </p>
+            </div>
+
+            <div className="bg-surface p-6 sm:p-8 rounded-xl border border-slate-200/80">
+              <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-3">
+                {currentLang === "en"
+                  ? "How much does paving block cost per square meter in 2026?"
+                  : "Berapa harga paving block per meter 2026?"}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed mb-4">
+                {currentLang === "en"
+                  ? "The price of paving blocks per square meter is determined by several specific factors rather than a single flat rate:"
+                  : "Harga paving block per meter ditentukan oleh beberapa faktor spesifik berikut, sehingga tidak ada satu tarif tunggal yang universal:"}
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Paving Model & Design" : "Model & Pola Paving Block"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Thickness (6cm / 8cm / 10cm)" : "Ketebalan (6 cm / 8 cm / 10 cm)"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Concrete Grade (K-250 / K-300 / K-400)" : "Mutu Beton (K-250 / K-300 / K-400)"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Total Order Volume (m²)" : "Volume Pemesanan Keseluruhan"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Project Delivery Location" : "Lokasi Pengiriman Proyek"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{currentLang === "en" ? "Material Only vs Full Installation Package" : "Paket Material Saja vs Jasa Pemasangan Lengkap"}</span>
+                </li>
+              </ul>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -312,7 +373,7 @@ export default async function Products({
               </div>
               <div className="shrink-0 w-full md:w-auto">
                 <a
-                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={getWhatsAppUrl("primary", "products", currentLang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full md:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase shadow-xs min-h-[44px]"
@@ -439,7 +500,7 @@ export default async function Products({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
+                href={getWhatsAppUrl("secondary", "products", currentLang)} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

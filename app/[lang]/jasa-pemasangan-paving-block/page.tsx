@@ -1,7 +1,7 @@
 import { isValidLocale, Locale } from "@/lib/dictionary";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { constructPageMetadata } from "@/lib/metadata";
 import { INSTALLATION_DATA } from "@/lib/local-service-data";
-import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -110,6 +110,63 @@ export default async function JasaPemasanganPage({
           </div>
         </section>
       )}
+
+      {/* =========================================================================
+          2B-INSTALLATION. ESTIMASI BIAYA PASANG PAVING BLOCK PER METER 2026 (Answer-First)
+         ========================================================================= */}
+      <section className="bg-white py-16 sm:py-20 border-b border-stone-200/40">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="flex flex-col gap-8">
+            <div>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight mb-4">
+                {isEn
+                  ? "2026 Paving Block Installation Cost Estimation Guide"
+                  : "Estimasi Biaya Pasang Paving Block per Meter 2026"}
+              </h2>
+              <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
+                {isEn
+                  ? "Paving block installation costs per square meter in 2026 vary depending on soil/site preparation, sub-base materials used, paving block model, total area volume, and project location. Kaha Block provides integrated paving block contractor services in the Greater Jakarta area (Jabodetabek) with an experienced team. Consult your area details with us to get an official formal price quotation."
+                  : "Biaya pasang paving block per meter pada 2026 bervariasi bergantung pada persiapan lahan, sub-base material yang digunakan, tipe paving block, total volume area, dan lokasi proyek. Kaha Block melayani jasa kontraktor pemasangan paving block terintegrasi di Jabodetabek dengan tim berpengalaman. Konsultasikan rincian area Anda untuk mendapatkan estimasi penawaran harga resmi."}
+              </p>
+            </div>
+
+            <div className="bg-surface p-6 sm:p-8 rounded-xl border border-slate-200/80">
+              <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-3">
+                {isEn
+                  ? "How much does paving block installation cost per square meter in 2026?"
+                  : "Berapa estimasi biaya pasang paving block per meter 2026?"}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed mb-4">
+                {isEn
+                  ? "The actual installation cost is highly customized because it depends on several distinct physical factors:"
+                  : "Biaya pemasangan riil bersifat sangat kustom karena dipengaruhi oleh beberapa faktor kondisi fisik berikut:"}
+              </p>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{isEn ? "Total Area Size & Installation Volume (m²)" : "Luas Area & Volume Pemasangan (m²)"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{isEn ? "Subgrade Soil Condition & Compaction Requirements" : "Kondisi Tanah Dasar & Kebutuhan Pemadatan"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{isEn ? "Use of Bedding Sand (Pasir Abu Batu) & Edge Curb (Kanstein)" : "Penggunaan Pasir Abu Batu & Kanstein Pengunci"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{isEn ? "Paving Pattern & Project Site Access" : "Pola Pemasangan & Akses Lokasi Proyek"}</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                  <span>{isEn ? "Paving Block Specifications (model, thickness, and concrete grade K-250/K-300/K-400)" : "Jenis / Spesifikasi Paving (model, ketebalan, dan mutu beton K-250/K-300/K-400)"}</span>
+                </li>
+              </ul>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
 
       {/* Scope of Work */}
       <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
@@ -263,14 +320,14 @@ export default async function JasaPemasanganPage({
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+              href={getWhatsAppUrl("primary", "installation", currentLang)}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent hover:bg-accent-hover text-slate-900 font-bold px-7 py-3.5 rounded-xl inline-flex items-center gap-2.5 transition-colors text-sm sm:text-base shadow-sm min-h-[44px]"
             >
               <MessageSquare className="w-5 h-5" aria-hidden="true" />
               <span>
-                {isEn ? "WhatsApp Consultation" : "Konsultasi WhatsApp"}
+                {isEn ? "Inquire Price via WhatsApp" : "Tanya Harga via WhatsApp"}
               </span>
             </a>
             <Link
