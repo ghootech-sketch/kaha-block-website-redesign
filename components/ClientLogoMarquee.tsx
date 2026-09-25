@@ -31,6 +31,9 @@ export const CLIENT_LOGOS: ClientLogo[] = [
   { id: 12, label: "KAHA BLOCK client logo 12", logo: "/images/clients/client-12.webp" },
 ];
 
+// Pre-allocate continuous marquee array once at module load
+const DISPLAY_LOGOS = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
+
 interface ClientLogoMarqueeProps {
   dict: {
     eyebrow: string;
@@ -45,8 +48,6 @@ interface ClientLogoMarqueeProps {
 
 export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
   const [isPaused, setIsPaused] = useState(false);
-  // Render array twice for seamless continuous horizontal marquee animation loop
-  const displayLogos = [...CLIENT_LOGOS, ...CLIENT_LOGOS];
 
   return (
     <section
@@ -110,7 +111,7 @@ export default function ClientLogoMarquee({ dict }: ClientLogoMarqueeProps) {
             className="flex w-max animate-marquee gap-4 sm:gap-6 lg:gap-8 motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:w-full motion-reduce:px-4"
             style={{ animationPlayState: isPaused ? 'paused' : undefined }}
           >
-            {displayLogos.map((client, index) => {
+            {DISPLAY_LOGOS.map((client, index) => {
               const isDuplicate = index >= CLIENT_LOGOS.length;
               const paddedId = String(client.id).padStart(2, "0");
               const altText = `KAHA BLOCK client logo ${paddedId}`;

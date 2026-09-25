@@ -104,8 +104,13 @@ export function RevealGroup({
     });
   }, []);
 
+  const contextValue = React.useMemo(
+    () => ({ isVisible, staggerInterval }),
+    [isVisible, staggerInterval]
+  );
+
   return (
-    <RevealGroupContext.Provider value={{ isVisible, staggerInterval }}>
+    <RevealGroupContext.Provider value={contextValue}>
       <Component id={id} ref={groupRef} className={className}>
         {children}
       </Component>
@@ -127,7 +132,12 @@ export interface RevealProps {
   as?: React.ElementType;
 }
 
-export function Reveal({
+/**
+ * Pure hook-free grouped reveal item.
+ * Skips useState, useRef, and useEffect entirely when controlled by RevealGroup.
+ * Saves 50+ hook lifecycle overhead calls during critical page hydration.
+ */
+function GroupedReveal({
   children,
   className = "",
   delay,
@@ -139,34 +149,16 @@ export function Reveal({
   id,
   immediate = false,
   as: Component = "div",
-}: RevealProps) {
-  const groupContext = useContext(RevealGroupContext);
-  const [localIsVisible, setLocalIsVisible] = useState(immediate);
-  const domRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (immediate || groupContext) return;
-
-    const currentElem = domRef.current;
-    if (!currentElem) return;
-
-    return observeElement(currentElem, () => {
-      setLocalIsVisible(true);
-    });
-  }, [immediate, groupContext]);
-
-  const isVisible = immediate
-    ? true
-    : groupContext
-    ? groupContext.isVisible
-    : localIsVisible;
+  groupContext,
+}: RevealProps & { groupContext: RevealGroupContextValue }) {
+  const isVisible = immediate || groupContext.isVisible;
 
   let computedDelay = 0;
   if (delay !== undefined) {
     computedDelay = delay;
   } else if (staggerIndex !== undefined) {
     const interval =
-      staggerInterval ?? groupContext?.staggerInterval ?? 0.08;
+      staggerInterval ?? groupContext.staggerInterval ?? 0.08;
     computedDelay = baseDelay + staggerIndex * interval;
   } else {
     computedDelay = baseDelay;
@@ -202,7 +194,6 @@ export function Reveal({
   return (
     <Component
       id={id}
-      ref={groupContext ? undefined : domRef}
       style={{
         transitionDelay: `${computedDelay}s`,
         transitionDuration: `${duration}s`,
@@ -213,6 +204,101 @@ export function Reveal({
       {children}
     </Component>
   );
+}
+
+/**
+ * Standalone reveal item for components not wrapped in RevealGroup.
+ */
+function StandaloneReveal({
+  children,
+  className = "",
+  delay,
+  staggerIndex,
+  staggerInterval,
+  baseDelay = 0,
+  direction = "up",
+  duration = 0.6,
+  id,
+  immediate = false,
+  as: Component = "div",
+}: RevealProps) {
+  const [localIsVisible, setLocalIsVisible] = useState(immediate);
+  const domRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (immediate) return;
+
+    const currentElem = domRef.current;
+    if (!currentElem) return;
+
+    return observeElement(currentElem, () => {
+      setLocalIsVisible(true);
+    });
+  }, [immediate]);
+
+  const isVisible = immediate || localIsVisible;
+
+  let computedDelay = 0;
+  if (delay !== undefined) {
+    computedDelay = delay;
+  } else if (staggerIndex !== undefined) {
+    const interval = staggerInterval ?? 0.08;
+    computedDelay = baseDelay + staggerIndex * interval;
+  } else {
+    computedDelay = baseDelay;
+  }
+
+  const getDirectionClasses = () => {
+    if (immediate) {
+      return "opacity-100 translate-y-0";
+    }
+
+    switch (direction) {
+      case "up":
+        return isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-6";
+      case "down":
+        return isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 -translate-y-6";
+      case "left":
+        return isVisible
+          ? "opacity-100 translate-x-0"
+          : "opacity-0 translate-x-6";
+      case "right":
+        return isVisible
+          ? "opacity-100 translate-x-0"
+          : "opacity-0 -translate-x-6";
+      case "none":
+        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-[0.98]";
+    }
+  };
+
+  return (
+    <Component
+      id={id}
+      ref={domRef}
+      style={{
+        transitionDelay: `${computedDelay}s`,
+        transitionDuration: `${duration}s`,
+        transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+      }}
+      className={`transition-[opacity,transform] ease-out motion-reduce:transform-none motion-reduce:transition-none motion-reduce:opacity-100 ${getDirectionClasses()} ${className}`}
+    >
+      {children}
+    </Component>
+  );
+}
+
+export function Reveal(props: RevealProps) {
+  const groupContext = useContext(RevealGroupContext);
+
+  if (groupContext) {
+    return <GroupedReveal {...props} groupContext={groupContext} />;
+  }
+
+  return <StandaloneReveal {...props} />;
 }
 
 export default function ScrollReveal(props: RevealProps) {

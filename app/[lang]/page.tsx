@@ -7,14 +7,22 @@ import Image, { getImageProps } from "next/image";
 import { preload } from "react-dom";
 import dynamic from "next/dynamic";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
-import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 import type { FactoryVideoData } from "@/components/FactoryVideoGallery";
+
+const ClientLogoMarquee = dynamic(
+  () => import("@/components/ClientLogoMarquee"),
+  { ssr: true }
+);
 
 const FactoryVideoGallery = dynamic(
   () => import("@/components/FactoryVideoGallery"),
   { ssr: true }
 );
-import GoogleReviews from "@/components/GoogleReviews";
+
+const GoogleReviews = dynamic(
+  () => import("@/components/GoogleReviews"),
+  { ssr: true }
+);
 import JsonLd from "@/components/JsonLd";
 import {
   ShieldCheck,

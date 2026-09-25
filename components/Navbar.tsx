@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -68,6 +68,9 @@ export default function Navbar({
   }, []);
 
   useEffect(() => {
+    const isAnyMenuOpen = isOpen || mobileProjectsOpen || desktopProjectsOpen || desktopWhatsappOpen;
+    if (!isAnyMenuOpen) return;
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         if (desktopWhatsappOpen) {
@@ -81,7 +84,7 @@ export default function Navbar({
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [desktopWhatsappOpen]);
+  }, [isOpen, mobileProjectsOpen, desktopProjectsOpen, desktopWhatsappOpen]);
 
   useEffect(() => {
     if (!desktopProjectsOpen && !desktopWhatsappOpen) return;
@@ -96,21 +99,24 @@ export default function Navbar({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [desktopProjectsOpen, desktopWhatsappOpen]);
 
-  const links = [
-    { href: `/${lang}`, label: nav.home },
-    { href: `/${lang}/about`, label: nav.about },
-    { href: `/${lang}/products`, label: nav.products },
-    { 
-      href: `/${lang}/projects`, 
-      label: nav.projects,
-      subLinks: [
-        { href: `/${lang}/projects`, label: nav.projectsInstall },
-        { href: `/${lang}/projects/production`, label: nav.projectsProduction }
-      ]
-    },
-    { href: `/${lang}/blog`, label: nav.blog },
-    { href: `/${lang}/contact`, label: nav.contact },
-  ];
+  const links = useMemo(
+    () => [
+      { href: `/${lang}`, label: nav.home },
+      { href: `/${lang}/about`, label: nav.about },
+      { href: `/${lang}/products`, label: nav.products },
+      { 
+        href: `/${lang}/projects`, 
+        label: nav.projects,
+        subLinks: [
+          { href: `/${lang}/projects`, label: nav.projectsInstall },
+          { href: `/${lang}/projects/production`, label: nav.projectsProduction }
+        ]
+      },
+      { href: `/${lang}/blog`, label: nav.blog },
+      { href: `/${lang}/contact`, label: nav.contact },
+    ],
+    [lang, nav]
+  );
 
   return (
     <nav
