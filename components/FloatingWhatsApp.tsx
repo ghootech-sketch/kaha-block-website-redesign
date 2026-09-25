@@ -33,6 +33,8 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
 
   // Close on outside click
   useEffect(() => {
+    if (!isOpen) return;
+
     function handleClickOutside(event: MouseEvent) {
       if (
         containerRef.current &&
@@ -45,12 +47,14 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isOpen]);
 
   // Close on Escape & return focus to trigger button
   useEffect(() => {
+    if (!isOpen) return;
+
     function handleEscape(event: KeyboardEvent) {
-      if (event.key === "Escape" && isOpen) {
+      if (event.key === "Escape") {
         setIsOpen(false);
         triggerBtnRef.current?.focus();
       }

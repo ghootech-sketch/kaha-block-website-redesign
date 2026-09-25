@@ -16,6 +16,66 @@ interface RevealGroupContextValue {
 
 const RevealGroupContext = createContext<RevealGroupContextValue | null>(null);
 
+// =============================================================================
+// SHARED OBSERVER & REDUCED MOTION CACHE
+// Eliminates instantiating dozens of IntersectionObserver instances and repeated
+// window.matchMedia queries during hydration, directly reducing Total Blocking Time.
+// =============================================================================
+let cachedReducedMotion: boolean | null = null;
+
+function isReducedMotion(): boolean {
+  if (cachedReducedMotion === null && typeof window !== "undefined") {
+    cachedReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+  return cachedReducedMotion ?? false;
+}
+
+type ObserverCallback = () => void;
+const observerCallbacks = new Map<Element, ObserverCallback>();
+let sharedObserver: IntersectionObserver | null = null;
+
+function getSharedObserver(): IntersectionObserver | null {
+  if (!sharedObserver && typeof window !== "undefined" && "IntersectionObserver" in window) {
+    sharedObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const cb = observerCallbacks.get(entry.target);
+            if (cb) {
+              cb();
+              observerCallbacks.delete(entry.target);
+            }
+            sharedObserver?.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+    );
+  }
+  return sharedObserver;
+}
+
+function observeElement(elem: Element, callback: ObserverCallback): () => void {
+  if (isReducedMotion() || typeof IntersectionObserver === "undefined") {
+    callback();
+    return () => {};
+  }
+
+  const observer = getSharedObserver();
+  if (!observer) {
+    callback();
+    return () => {};
+  }
+
+  observerCallbacks.set(elem, callback);
+  observer.observe(elem);
+
+  return () => {
+    observerCallbacks.delete(elem);
+    observer.unobserve(elem);
+  };
+}
+
 export interface RevealGroupProps {
   children: ReactNode;
   className?: string;
@@ -30,8 +90,6 @@ export function RevealGroup({
   children,
   className = "",
   staggerInterval = 0.08,
-  threshold = 0.1,
-  rootMargin = "0px 0px -40px 0px",
   id,
   as: Component = "div",
 }: RevealGroupProps) {
@@ -39,41 +97,12 @@ export function RevealGroup({
   const groupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Accessibility check: prefers-reduced-motion
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      setIsVisible(true);
-      return;
-    }
-
     const currentElem = groupRef.current;
     if (!currentElem) return;
-
-    if (typeof IntersectionObserver === "undefined") {
+    return observeElement(currentElem, () => {
       setIsVisible(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold, rootMargin }
-    );
-
-    observer.observe(currentElem);
-
-    return () => {
-      if (currentElem) observer.unobserve(currentElem);
-    };
-  }, [threshold, rootMargin]);
+    });
+  }, []);
 
   return (
     <RevealGroupContext.Provider value={{ isVisible, staggerInterval }}>
@@ -118,39 +147,12 @@ export function Reveal({
   useEffect(() => {
     if (immediate || groupContext) return;
 
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      setLocalIsVisible(true);
-      return;
-    }
-
     const currentElem = domRef.current;
     if (!currentElem) return;
 
-    if (typeof IntersectionObserver === "undefined") {
+    return observeElement(currentElem, () => {
       setLocalIsVisible(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setLocalIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
-    );
-
-    observer.observe(currentElem);
-
-    return () => {
-      if (currentElem) observer.unobserve(currentElem);
-    };
+    });
   }, [immediate, groupContext]);
 
   const isVisible = immediate

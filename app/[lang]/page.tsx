@@ -5,9 +5,15 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image, { getImageProps } from "next/image";
 import { preload } from "react-dom";
+import dynamic from "next/dynamic";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
-import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
+import type { FactoryVideoData } from "@/components/FactoryVideoGallery";
+
+const FactoryVideoGallery = dynamic(
+  () => import("@/components/FactoryVideoGallery"),
+  { ssr: true }
+);
 import GoogleReviews from "@/components/GoogleReviews";
 import JsonLd from "@/components/JsonLd";
 import {

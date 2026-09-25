@@ -41,20 +41,28 @@ export default function Navbar({
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          const hero = document.querySelector("[data-navbar-hero]");
-          const navbarHeight = navRef.current?.getBoundingClientRect().height ?? 80;
-          if (hero) {
-            const rect = hero.getBoundingClientRect();
-            setIsScrolled(rect.bottom <= navbarHeight);
+          if (window.scrollY === 0) {
+            setIsScrolled(false);
           } else {
-            setIsScrolled(window.scrollY > 80);
+            const hero = document.querySelector("[data-navbar-hero]");
+            const navbarHeight = navRef.current?.getBoundingClientRect().height ?? 80;
+            if (hero) {
+              const rect = hero.getBoundingClientRect();
+              setIsScrolled(rect.bottom <= navbarHeight);
+            } else {
+              setIsScrolled(window.scrollY > 80);
+            }
           }
           ticking = false;
         });
         ticking = true;
       }
     };
-    handleScroll();
+
+    if (window.scrollY > 0) {
+      handleScroll();
+    }
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -76,6 +84,8 @@ export default function Navbar({
   }, [desktopWhatsappOpen]);
 
   useEffect(() => {
+    if (!desktopProjectsOpen && !desktopWhatsappOpen) return;
+
     const handleClickOutside = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setDesktopProjectsOpen(false);
@@ -84,7 +94,7 @@ export default function Navbar({
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [desktopProjectsOpen, desktopWhatsappOpen]);
 
   const links = [
     { href: `/${lang}`, label: nav.home },

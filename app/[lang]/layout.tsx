@@ -5,7 +5,11 @@ import { notFound } from "next/navigation";
 import { dictionaries, Locale, isValidLocale } from "@/lib/dictionary";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import dynamic from "next/dynamic";
+
+const FloatingWhatsApp = dynamic(() => import("@/components/FloatingWhatsApp"), {
+  ssr: true,
+});
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAdsTag from "@/components/GoogleAdsTag";
 
