@@ -8,7 +8,7 @@ export const article2Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "8 menit baca",
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami kapasitas beban kendaraan dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga perkerasan kawasan industri.",
@@ -174,6 +174,10 @@ export const article2Id: BlogPost = {
     title: "Pertanyaan yang Sering Diajukan Seputar Ketebalan Paving",
     items: [
       {
+        question: "Bagaimana cara memilih ukuran paving block dan ketebalan yang tepat untuk proyek?",
+        answer: "Pemilihan ukuran paving block dan ketebalannya disesuaikan dengan fungsi lahan: paving block 6 cm dirancang untuk area pejalan kaki, trotoar, dan carport mobil keluarga; paving block 8 cm adalah standar emas jalan lingkungan perumahan, pelataran parkir ruko, dan kendaraan bertonase sedang; sedangkan paving block 10 cm diaplikasikan khusus kawasan industri berat, depo kontainer, dan area manuver alat berat.",
+      },
+      {
         question: "Apakah carport rumah mewah boleh menggunakan paving 8 cm?",
         answer: "Tentu boleh. Meskipun 6 cm sudah cukup untuk mobil pribadi, penggunaan 8 cm di carport rumah akan memberikan margin kekuatan ekstra yang sangat kokoh dan tahan lama apabila sesekali dilewati kendaraan pengiriman barang berat.",
       },
@@ -206,7 +210,7 @@ export const article2En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "8 min read",
   seoTitle: "6, 8, or 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",

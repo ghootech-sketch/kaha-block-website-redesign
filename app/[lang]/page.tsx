@@ -260,9 +260,12 @@ export default async function Home({
                     <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
                       {currentLang === "id" ? "AREA PABRIK" : "FACILITY SIZE"}
                     </div>
-                    <div className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap">
+                    <Link
+                      href={`/${currentLang}/area-layanan/tangerang`}
+                      className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                    >
                       9.080 m²
-                    </div>
+                    </Link>
                   </div>
                 </div>
 
@@ -273,9 +276,12 @@ export default async function Home({
                     <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
                       {currentLang === "id" ? "MUTU BETON" : "CONCRETE GRADE"}
                     </div>
-                    <div className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap">
+                    <Link
+                      href={`/${currentLang}/blog/mutu-beton-k250-k300-k400-paving-block`}
+                      className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                    >
                       K-250 • K-300 • K-400
-                    </div>
+                    </Link>
                   </div>
                 </div>
 
@@ -286,9 +292,12 @@ export default async function Home({
                     <div className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-slate-400 font-heading">
                       {currentLang === "id" ? "LAYANAN" : "SERVICE AREA"}
                     </div>
-                    <div className="text-xs sm:text-sm font-bold text-white font-heading">
+                    <Link
+                      href={`/${currentLang}/area-layanan`}
+                      className="text-xs sm:text-sm font-bold text-white font-heading hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                    >
                       {currentLang === "id" ? "Jabodetabek" : "Greater Jakarta"}
-                    </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -625,10 +634,12 @@ export default async function Home({
                       </p>
 
                       <Link
-                        href={item.href}
+                        href={item.id === "industrial" ? `/${currentLang}/blog/paving-block-parkir-pergudangan-kawasan-industri` : item.href}
                         className="inline-flex items-center text-[11px] uppercase tracking-widest font-bold text-slate-900 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent mt-auto"
                       >
-                        <span className="border-b border-transparent group-hover:border-primary pb-0.5">{item.linkText}</span>
+                        <span className="border-b border-transparent group-hover:border-primary pb-0.5">
+                          {item.id === "industrial" ? (currentLang === "id" ? "Panduan Perkerasan Industri" : "Industrial Paving Guide") : item.linkText}
+                        </span>
                         <ArrowRight className="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                       </Link>
                     </Reveal>

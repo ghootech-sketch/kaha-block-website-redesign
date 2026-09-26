@@ -314,8 +314,8 @@ export function generateStructuredDataGraph({
         ? "Kaha Block | Precision Paving Block Manufacturer"
         : "Kaha Block | Pabrik Paving Block Berkualitas Mesin Hidrolik";
       pageDescription = isEn
-        ? "Direct manufacturer of hydraulic concrete paving blocks, Truepave, Hexagonal, and curb stones in Cisauk, Tangerang Regency, serving Greater Jakarta (Jabodetabek)."
-        : "Pabrik produsen paving block presisi mesin hidrolik otomatis mutu K-250, K-300, dan K-400 di Cisauk, Kabupaten Tangerang, melayani Jabodetabek.";
+        ? "Direct manufacturer and supplier of hydraulic concrete paving blocks, Truepave, Hexagonal, and curb stones in Cisauk, Tangerang Regency, serving Greater Jakarta (Jabodetabek)."
+        : "Pabrik produsen dan supplier conblock serta paving block presisi mesin hidrolik otomatis mutu K-250, K-300, dan K-400 di Cisauk, Kabupaten Tangerang, melayani Jabodetabek.";
       break;
     case "about":
       pageType = "AboutPage";
@@ -332,8 +332,8 @@ export function generateStructuredDataGraph({
         ? "Paving Block & Curb Stone Products | Kaha Block"
         : "Produk Paving Block & Kanstein Beton | Kaha Block";
       pageDescription = isEn
-        ? "Explore Kaha Block concrete paving product specifications: Truepave, Hexagonal, Bishop Hat, and Curb Stones with delivery across Greater Jakarta."
-        : "Katalog spesifikasi paving block Truepave, Hexagonal, Ubin, Topi Uskup, dan Kanstein beton mesin hidrolik otomatis dengan pengiriman Jabodetabek.";
+        ? "Explore Kaha Block concrete paving product specifications: Truepave, Half, Hexagonal, Bishop Hat, and Curb Stones with delivery across Greater Jakarta."
+        : "Jual paving block langsung produsen: spesifikasi Truepave bata, paving tahu, hexagon, ubin, topi uskup, dan kanstein beton dengan pengiriman gratis Jabodetabek.";
       break;
     case "projects":
       pageType = "CollectionPage";
@@ -350,8 +350,8 @@ export function generateStructuredDataGraph({
         ? "Paving Block Production Gallery | Kaha Block"
         : "Galeri Produksi Paving Block | Kaha Block";
       pageDescription = isEn
-        ? "Production documentation from Kaha Block's 9,080 m² paving block facility in Cisauk, Tangerang Regency using full automatic hydraulic machinery."
-        : "Dokumentasi proses produksi paving block fasilitas 9.080 m² Kaha Block di Cisauk, Kabupaten Tangerang dengan mesin full otomatis hidrolik.";
+        ? "Production documentation from Kaha Block's 9,080 m² paving plant in Cisauk, Tangerang Regency with automated hydraulic machinery."
+        : "Dokumentasi fasilitas pabrik paving block Cisauk seluas 9.080 m² PT Kaha Sukses Mandiri di Tangerang dengan mesin paving block otomatis hidrolik.";
       break;
     case "contact":
       pageType = "ContactPage";

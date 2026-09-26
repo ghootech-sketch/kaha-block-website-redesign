@@ -8,7 +8,7 @@ export const article6Id: BlogPost = {
   category: "Aplikasi Khusus",
   categorySlug: "application",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "9 menit baca",
   seoTitle: "Paving Block Gudang & Kawasan Industri",
   seoDescription: "Panduan paving block heavy-duty untuk parkir komersial, depo logistik, dan kawasan industri: ketebalan 8-10 cm, mutu K-250, K-300, dan K-400, dan pola herringbone.",
@@ -153,6 +153,10 @@ export const article6Id: BlogPost = {
     title: "Tanya Jawab Seputar Paving Kawasan Industri & Pergudangan",
     items: [
       {
+        question: "Mengapa paving block parkiran, gudang, dan pabrik harus menggunakan spesifikasi paving block kendaraan berat?",
+        answer: "Pelataran pabrik, area gudang logistik, dan area parkir komersial menghadapi beban dinamis berulang dari perlintasan truk tronton, kontainer, dan manuver roda forklift bermuatan. Penggunaan spesifikasi paving block kendaraan berat (tebal 8 cm hingga 10 cm dengan mutu beton K-300 atau K-400 serta pola pasang herringbone) menjamin perkerasan paving block kawasan industri tidak mudah amblas, bergelombang, atau retak.",
+      },
+      {
         question: "Apakah paving block tebal 8 cm cukup kuat untuk dilintasi truk kontainer 40 kaki?",
         answer: "Kinerja perkerasan paving 8 cm untuk kendaraan berat seperti truk kontainer sangat bergantung pada struktur pondasi di bawahnya (seperti subbase dan base course agregat batu pecah yang dipadatkan dengan baik), daya dukung tanah dasar (CBR), serta frekuensi perlintasan. Pada area dengan repetisi beban kontainer yang tinggi atau titik tumpu kaki trailer (landing gear), ketebalan 10 cm dengan mutu beton yang sesuai dan desain perkerasan teknik sipil umumnya lebih disarankan.",
       },
@@ -185,7 +189,7 @@ export const article6En: BlogPost = {
   category: "Specialized Applications",
   categorySlug: "application",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "9 min read",
   seoTitle: "Heavy-Duty Paving Blocks for Industrial Estates",
   seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-250, K-300, and K-400, and herringbone.",

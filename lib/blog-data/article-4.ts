@@ -27,6 +27,14 @@ export const article4Id: BlogPost = {
       ],
       subsections: [
         {
+          id: "cara-menghitung-paving-per-m2",
+          heading: "Cara Menghitung Kebutuhan Paving Block per Meter Persegi (m²)",
+          paragraphs: [
+            "Banyak pemilik lahan dan kontraktor menanyakan berapa paving untuk 1 m² serta bagaimana cara menghitung paving per m2 secara akurat. Langkah pertama adalah menghitung luas area paving (panjang x lebar dalam meter persegi). Selanjutnya, kebutuhan jumlah unit paving block dihitung berdasarkan dimensi model paving yang dipilih. Sebagai contoh, paving model Half / Tahu membutuhkan daya tutup sekitar 88 pcs/m², sedangkan model Truepave bata standar umumnya berkisar 44–45 pcs/m² bergantung ukuran cetakan pabrik.",
+            "Untuk estimasi jumlah paving untuk halaman rumah atau area carport, kalikan total luas meter persegi dengan indeks kebutuhan paving per meter persegi, lalu tambahkan faktor cadangan potongan (waste factor 3%–8%) agar tidak kekurangan material saat pengerjaan tepian.",
+          ],
+        },
+        {
           id: "bentuk-geometris-sederhana",
           heading: "Area Berbentuk Persegi atau Persegi Panjang Standar",
           paragraphs: [
@@ -162,6 +170,10 @@ export const article4Id: BlogPost = {
   faq: {
     title: "Pertanyaan yang Sering Diajukan Seputar Perhitungan Kebutuhan",
     items: [
+      {
+        question: "Bagaimana cara menghitung kebutuhan paving block dan berapa paving untuk 1 m²?",
+        answer: "Cara menghitung paving per m2 adalah dengan mengukur total luas area (panjang x lebar dalam meter persegi) lalu mengalikannya dengan indeks daya tutup produk per meter persegi. Misalnya, paving Half / Tahu membutuhkan sekitar 88 pcs/m², sedangkan paving bata Truepave rata-rata berkisar 44–45 pcs/m². Selalu tambahkan cadangan waste factor 3%–5% untuk pola lurus atau 5%–8% untuk pola herringbone diagonal guna mengakomodasi pemotongan balok di sepanjang tepian.",
+      },
       {
         question: "Mengapa harus selalu menambahkan cadangan ekstra (waste factor) saat memesan paving?",
         answer: "Cadangan ekstra sangat penting untuk menutup kebutuhan potongan balok di bagian tepi batas perkerasan, mengantisipasi balok yang pecah akibat penanganan di lokasi proyek, serta menyimpan stok cadangan dari batch warna yang sama untuk perbaikan utilitas di masa depan.",

@@ -23,11 +23,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
+  // Core static routes updated in the current SEO pass with stable recrawl signal date
+  const UPDATED_CORE_ROUTES: Record<string, string> = {
+    "": "2026-09-27T00:00:00.000Z",
+    "/products": "2026-09-27T00:00:00.000Z",
+    "/projects/production": "2026-09-27T00:00:00.000Z",
+    "/jasa-pemasangan-paving-block": "2026-09-27T00:00:00.000Z",
+    "/area-layanan/tangerang": "2026-09-27T00:00:00.000Z",
+    "/area-layanan/jakarta": "2026-09-27T00:00:00.000Z",
+    "/area-layanan/bekasi": "2026-09-27T00:00:00.000Z",
+    "/area-layanan/depok": "2026-09-27T00:00:00.000Z",
+    "/area-layanan/bogor": "2026-09-27T00:00:00.000Z",
+  };
+
   // Core static pages
   locales.forEach((locale) => {
     coreRoutes.forEach((route) => {
+      const lastModifiedDate = UPDATED_CORE_ROUTES[route]
+        ? new Date(UPDATED_CORE_ROUTES[route])
+        : undefined;
+
       sitemapEntries.push({
         url: `${SITE_URL}/${locale}${route}`,
+        ...(lastModifiedDate ? { lastModified: lastModifiedDate } : {}),
         changeFrequency: "monthly",
         priority: route === "" ? 1.0 : route === "/products" || route === "/blog" ? 0.9 : 0.8,
         alternates: {

@@ -190,6 +190,10 @@ export const article1Id: BlogPost = {
     title: "Pertanyaan Populer Seputar Pemilihan Paving Block",
     items: [
       {
+        question: "Apa itu paving block atau conblock?",
+        answer: "Paving block, yang juga dikenal luas sebagai conblock atau konblok (bata beton perkerasan), adalah material modular pracetak yang terbuat dari campuran semen, agregat pasir/abu batu, dan air yang dipadatkan dengan mesin bertekanan hidrolik tinggi. Material ini digunakan untuk perkerasan jalan lingkungan, carport garasi perumahan, pelataran parkir ruko, hingga kawasan industri karena kuat menahan beban, mudah dirawat, dan memiliki rongga nat yang mendukung resapan air ke dalam tanah.",
+      },
+      {
         question: "Apakah paving tebal 6 cm aman untuk carport mobil keluarga?",
         answer: "Paving block tebal 6 cm umumnya memadai untuk carport rumah tinggal dengan beban kendaraan pribadi seperti mobil MPV, SUV, dan sedan harian, asalkan didukung pondasi agregat yang padat dan rata serta pemilihan produk yang tepat.",
       },

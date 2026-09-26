@@ -62,7 +62,7 @@ export const dictionaries = {
       heroSubheadline: "Paving block mesin full otomatis hidrolik. Solusi tepat untuk infrastruktur yang kokoh.",
       cta: "Hubungi WhatsApp",
       heroImageAlt: "Dokumentasi fasilitas pabrik dan produk paving block Kaha Block",
-      companyBrief: "PT Kaha Sukses Mandiri (Kaha Block) adalah produsen paving block yang beroperasi sejak 2015 dengan fasilitas pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Kami memproduksi paving block berkualitas dengan mesin full otomatis hidrolik untuk kebutuhan proyek di seluruh wilayah Jabodetabek.",
+      companyBrief: "Kaha Block merupakan brand paving block dari PT Kaha Sukses Mandiri, pabrik produsen dan supplier conblock (konblok) presisi yang beroperasi sejak 2015 dengan fasilitas pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Sebagai salah satu pabrik paving block Tangerang dan supplier conblock terdekat yang melayani wilayah Jabodetabek, kami menyediakan solusi jual paving block langsung dari pabrik dengan gratis ongkir sekaligus jasa pemasangan profesional.",
       whyChooseUs: "Mengapa Memilih Kaha Block?",
       integrity: "Integritas & Kualitas",
       integrityDesc: "Produk terjamin mutunya sesuai dengan spesifikasi proyek.",
@@ -159,6 +159,10 @@ export const dictionaries = {
           {
             q: "Wilayah mana saja yang dapat dilayani oleh Kaha Block?",
             a: "Kaha Block melayani seluruh wilayah Jabodetabek, meliputi Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, Jakarta Pusat, Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, Bekasi, Depok, dan Bogor. Untuk wilayah Jabodetabek, pengiriman gratis dan sudah termasuk penurunan barang.",
+          },
+          {
+            q: "Apakah Kaha Block merupakan pabrik atau supplier conblock terdekat yang melayani Jabodetabek?",
+            a: "Pabrik paving block Kaha Block berlokasi di Cisauk, Kabupaten Tangerang dengan armada distribusi sendiri yang melayani seluruh wilayah Jakarta, Tangerang, Bekasi, Depok, dan Bogor. Untuk Anda yang mencari supplier conblock atau pabrik paving block terdekat dengan pasokan stabil, mutu K-250, K-300, K-400, dan fasilitas gratis ongkir di Jabodetabek, kami siap melayani pesanan proyek hunian, komersial, maupun infrastruktur industri.",
           },
           {
             q: "Bagaimana menentukan jenis paving yang sesuai?",
@@ -532,7 +536,7 @@ export const dictionaries = {
       commercialSection: {
         eyebrow: "PENJUAL & PRODUSEN LANGSUNG",
         title: "Jual Paving Block Langsung dari Produsen",
-        desc: "Kaha Block melayani pembelian dan pengadaan paving block langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block memproduksi dan memasok paving block dengan pilihan mutu K-250, K-300, dan K-400 untuk kebutuhan hunian, komersial, pergudangan, kawasan industri, dan proyek infrastruktur.",
+        desc: "Kaha Block melayani pembelian dan pengadaan paving block, yang juga dikenal sebagai conblock atau konblok, langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block memproduksi dan memasok paving block mutu K-250, K-300, dan K-400 untuk kebutuhan hunian, jalan perumahan, konblok jalan lingkungan, area parkir, pergudangan, kawasan industri, dan proyek infrastruktur. Untuk kebutuhan estimasi harga paving block per m2 atau harga paving block per meter, tim kami siap menyusun penawaran resmi yang disesuaikan dengan volume kebutuhan, pilihan model (seperti Truepave bata, paving tahu / Half, paving block hexagon, ubin paving, topi uskup, kanstein beton, dan stoper paving), serta ketebalan paving block 6 cm, 8 cm, hingga 10 cm.",
       },
       deliveryService: {
         eyebrow: "PENGIRIMAN & PEMASANGAN",
@@ -604,6 +608,10 @@ export const dictionaries = {
           {
             q: "Apakah Kaha Block penjual paving block atau produsen langsung?",
             a: "Kaha Block adalah produsen langsung paving block melalui PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Selain penjualan dan pengadaan paving block, Kaha Block juga melayani pengiriman gratis serta jasa kontraktor pemasangan untuk wilayah Jabodetabek.",
+          },
+          {
+            q: "Bagaimana cara mengetahui harga paving block per m2 atau per meter di Kaha Block?",
+            a: "Estimasi harga paving block per m2 dihitung berdasarkan model produk (seperti Truepave bata, paving tahu Half, paving hexagon, atau ubin paving), pilihan ketebalan (paving block 6 cm, 8 cm, atau 10 cm), spesifikasi mutu beton (paving K250, K300, atau K400), volume total luas m², dan lokasi proyek di Jabodetabek. Karena Anda membeli langsung dari pabrik produsen, penawaran harga dari Kaha Block lebih kompetitif dan sudah termasuk gratis pengiriman serta penurunan barang di Jabodetabek. Hubungi tim sales via WhatsApp untuk mendapatkan surat penawaran harga resmi.",
           },
           {
             q: "Bagaimana menentukan produk yang sesuai dengan kebutuhan area?",
@@ -757,7 +765,7 @@ export const dictionaries = {
     productionGallery: {
       heroEyebrow: "PABRIK PAVING BLOCK",
       heroTitle: "Pabrik Paving Block di Cisauk, Kabupaten Tangerang",
-      heroDesc: "Dokumentasi fasilitas pabrik seluas 9.080 m² PT Kaha Sukses Mandiri (Kaha Block) di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015 memproduksi paving block presisi dengan mesin full otomatis hidrolik untuk melayani pengadaan proyek di seluruh wilayah Jabodetabek.",
+      heroDesc: "Dokumentasi fasilitas pabrik paving block Cisauk seluas 9.080 m² milik PT Kaha Sukses Mandiri di Kabupaten Tangerang. Sebagai produsen paving block Tangerang dan pabrik conblock (konblok) berteknologi mesin paving block otomatis hidrolik bertekanan tinggi sejak 2015, kami memastikan setiap siklus produksi menghasilkan balok beton presisi, padat, dan kokoh dengan pilihan mutu K-250, K-300, dan K-400 untuk kebutuhan paving jalan lingkungan, akses kawasan komersial, pergudangan industri, serta pengadaan proyek di seluruh wilayah Jabodetabek.",
       galleryHeading: "Dokumentasi Produksi",
       stripSince: "Sejak",
       stripSinceValue: "2015",

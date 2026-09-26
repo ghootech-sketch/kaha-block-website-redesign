@@ -8,7 +8,7 @@ export const article3Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "9 menit baca",
   seoTitle: "Mengenal Mutu Beton K-250, K-300, dan K-400 Paving Block",
   seoDescription: "Pahami mutu beton K-250, K-300, dan K-400 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
@@ -30,7 +30,9 @@ export const article3Id: BlogPost = {
       list: {
         title: "Penjelasan Nilai Kuat Tekan Karakteristik:",
         items: [
-          "Mutu K-300: Menunjukkan bahwa beton mampu menahan kuat tekan karakteristik benda uji kubus sebesar 300 kg/cm² pada umur 28 hari, standar ideal jalan lingkungan dan carport.",
+          "Paving K250: Kuat tekan karakteristik 250 kg/cm², merupakan mutu paving block standar untuk area beban ringan, pedestrian, trotoar, dan carport rumah tinggal.",
+          "Paving K300: Kuat tekan karakteristik 300 kg/cm², standar ideal untuk jalan lingkungan cluster perumahan, pelataran ruko, dan area parkir mobil harian.",
+          "Paving K400: Kuat tekan karakteristik 400 kg/cm², mutu beton paving block kelas berat untuk area pergudangan logistik, kawasan industri, dan lintasan kendaraan berat.",
         ],
       },
     },
@@ -91,7 +93,9 @@ export const article3Id: BlogPost = {
         caption: "Matriks Aplikasi Mutu Beton Paving Block",
         headers: ["Tingkat Mutu", "Karakteristik Tekan", "Beban Kendaraan", "Peruntukan Rekomendasi"],
         rows: [
-          ["K-300", "300 kg/cm² (~25 MPa)", "Mobil Penumpang, Minivan, Kendaraan Pribadi", "Carport rumah tinggal, jalan lingkungan cluster perumahan, area parkir mobil."],
+          ["Paving K250", "250 kg/cm² (~21 MPa)", "Pejalan Kaki, Sepeda Motor, Mobil Ringan", "Jalur pedestrian taman, trotoar, dan carport rumah tinggal."],
+          ["Paving K300", "300 kg/cm² (~25 MPa)", "Mobil Penumpang, Minivan, Kendaraan Niaga Ringan", "Carport rumah tinggal, jalan lingkungan cluster perumahan, area parkir ruko dan kantor."],
+          ["Paving K400", "400 kg/cm² (~33 MPa)", "Truk Bertonase Berat, Kontainer, Bus, Forklift", "Pelataran pergudangan logistik, loading dock, depo kargo, dan perkerasan kawasan industri."],
         ],
       },
       callout: {
@@ -155,6 +159,10 @@ export const article3Id: BlogPost = {
         answer: "K-300 dapat menjadi salah satu spesifikasi yang dipertimbangkan untuk jalan lingkungan, namun pemilihan akhir ketebalan dan mutu harus disesuaikan dengan kondisi tanah dasar, struktur pondasi, intensitas lalu lintas, beban kendaraan, jenis produk, dan desain proyek.",
       },
       {
+        question: "Kapan sebaiknya memilih mutu paving K250 dibanding paving K300 atau K400?",
+        answer: "Paving K250 tepat untuk area pejalan kaki, trotoar, taman, dan carport rumah tinggal dengan beban kendaraan ringan harian. Untuk jalan lingkungan komplek perumahan dan pelataran parkir ruko komersial, pilihan ideal adalah paving K300. Sementara untuk area pergudangan logistik, loading dock, dan lintasan kendaraan berat bertonase tinggi, wajib menggunakan paving K400. Menentukan mutu beton paving block yang sesuai menjamin keawetan perkerasan jangka panjang tanpa pembengkakan anggaran.",
+      },
+      {
         question: "Bagaimana cara membedakan paving block mutu tinggi secara visual di lapangan?",
         answer: "Paving mutu tinggi dari mesin otomatis hidrolik memiliki sudut tepi yang tegas dan tajam presisi, tekstur permukaan yang padat dan rapat tanpa rongga udara besar, serta mengeluarkan suara denting padat yang solid saat dua balok saling diketukkan.",
       },
@@ -179,7 +187,7 @@ export const article3En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-12",
+  updatedAt: "2026-09-27",
   readingTime: "9 min read",
   seoTitle: "K-250, K-300, and K-400 Concrete Paving Block Strength",
   seoDescription: "Learn what K-250, K-300, and K-400 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
