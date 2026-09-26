@@ -42,7 +42,26 @@ export default function GoogleAdsTag() {
               window.__google_ads_tag_initialized = true;
               gtag('js', new Date());
               gtag('config', '${GOOGLE_ADS_ID}');
-              gtag('config', '${GOOGLE_ANALYTICS_ID}');
+
+              function initGA4() {
+                if (window.__ga4_tag_initialized) return;
+                window.__ga4_tag_initialized = true;
+                gtag('config', '${GOOGLE_ANALYTICS_ID}');
+              }
+
+              function scheduleGA4() {
+                if ('requestIdleCallback' in window) {
+                  requestIdleCallback(function() { initGA4(); }, { timeout: 3000 });
+                } else {
+                  setTimeout(initGA4, 1500);
+                }
+              }
+
+              if (document.readyState === 'complete') {
+                scheduleGA4();
+              } else {
+                window.addEventListener('load', scheduleGA4, { once: true });
+              }
             }
           `,
         }}
