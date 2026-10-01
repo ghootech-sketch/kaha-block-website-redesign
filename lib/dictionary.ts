@@ -278,7 +278,7 @@ export const dictionaries = {
       benefits: {
         eyebrow: "Keunggulan Kami",
         title: "Keunggulan & Layanan Prima",
-        subtitle: "Prinsip kerja profesional PT Kaha Sukses Mandiri dalam menghadirkan layanan terbaik.",
+        subtitle: "Prinsip kerja profesional PT Kaha Sukses Mandiri dalam menghadirkan layanan yang presisi.",
         item1Title: "Presisi & Kualitas",
         item1Desc: "Material pilihan dan ukuran akurat. Produk terjamin mutunya sesuai dengan spesifikasi proyek yang disepakati.",
         item2Title: "Mesin Full Otomatis Hidrolik",
@@ -331,7 +331,7 @@ export const dictionaries = {
         missions: [
           {
             number: "01",
-            text: "Menggunakan bahan baku pilihan terbaik dan mesin full otomatis hidrolik.",
+            text: "Menggunakan bahan baku pilihan dan mesin full otomatis hidrolik.",
           },
           {
             number: "02",
@@ -783,7 +783,7 @@ export const dictionaries = {
         loadMore: "Lihat Video Lainnya",
       },
       ctaHeading: "Butuh Harga Material atau Biaya Pasang? Tanya Langsung Kaha Block",
-      ctaDesc: "Kirim lokasi proyek, perkiraan luas area, jenis paving, dan kebutuhan penggunaannya. Tim Kaha Block akan membantu estimasi material, rekomendasi mutu, dan penawaran harga terbaik sesuai kebutuhan proyek.",
+      ctaDesc: "Kirim lokasi proyek, perkiraan luas area, jenis paving, dan kebutuhan penggunaannya. Tim Kaha Block akan membantu estimasi material, rekomendasi mutu, dan surat penawaran harga resmi sesuai kebutuhan proyek.",
       ctaButton: "Tanya Harga via WhatsApp",
     },
     contact: {

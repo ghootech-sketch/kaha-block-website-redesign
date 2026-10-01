@@ -51,7 +51,7 @@ export default function RegionalPageTemplate({
     },
     {
       q: `Mencari kontraktor pasang paving block untuk proyek di ${regionName}?`,
-      a: `Kaha Block menyediakan layanan kontraktor pemasangan paving block terintegrasi untuk wilayah ${regionName}. Kami menggarap seluruh tahapan pengerjaan mulai dari perataan tanah, pemadatan tanah dasar, pengisian pasir abu batu, penyusunan paving block presisi, hingga penguncian dengan kanstein dan pemadatan akhir. Hubungi kami untuk penawaran harga terbaik paket material dan jasa pasang.`,
+      a: `Kaha Block menyediakan layanan kontraktor pemasangan paving block terintegrasi untuk wilayah ${regionName}. Kami menggarap seluruh tahapan pengerjaan mulai dari perataan tanah, pemadatan tanah dasar, pengisian pasir abu batu, penyusunan paving block presisi, hingga penguncian dengan kanstein dan pemadatan akhir. Hubungi kami untuk penawaran harga resmi paket material dan jasa pasang.`,
     },
   ];
 

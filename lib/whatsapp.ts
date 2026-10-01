@@ -61,7 +61,7 @@ export function getWhatsAppUrl(
       message = "Halo Kaha Block, saya tertarik dengan produk paving block press hidrolik. Mohon informasi katalog, spesifikasi mutu beton K-250, K-300, dan K-400 serta penawaran harga.";
     } else if (topic && ["jakarta", "tangerang", "bekasi", "depok", "bogor"].includes(topic.toLowerCase())) {
       const region = getRegionName(topic.toLowerCase());
-      message = `Halo Kaha Block, saya ingin meminta estimasi harga paving block dan biaya pemasangan untuk area ${region}. Perkiraan luas ± ___ m². Jenis paving: ___. Mohon rekomendasi mutu dan penawaran harga terbaik.`;
+      message = `Halo Kaha Block, saya ingin meminta estimasi harga paving block dan biaya pemasangan untuk area ${region}. Perkiraan luas ± ___ m². Jenis paving: ___. Mohon rekomendasi mutu dan penawaran harga resmi.`;
     } else if (topic === "contact") {
       message = "Halo Kaha Block, saya ingin bertanya tentang produk conblock dan jasa pasang Kaha Block.";
     } else if (typeof topic === "string") {

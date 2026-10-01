@@ -238,7 +238,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
     ],
     ctaHeading: "Butuh Harga Material atau Biaya Pasang? Tanya Langsung Kaha Block",
     ctaDesc:
-      "Kirim lokasi proyek, perkiraan luas area, jenis paving, dan kebutuhan penggunaannya. Tim Kaha Block akan membantu estimasi material, rekomendasi mutu, dan penawaran harga terbaik sesuai kebutuhan proyek.",
+      "Kirim lokasi proyek, perkiraan luas area, jenis paving, dan kebutuhan penggunaannya. Tim Kaha Block akan membantu estimasi material, rekomendasi mutu, dan surat penawaran harga resmi sesuai kebutuhan proyek.",
   },
   en: {
     eyebrow: "CONTRACTOR SERVICES & PARTNERSHIP",
@@ -879,7 +879,7 @@ export const REGIONAL_PAGES_DATA: Record<
       ],
       ctaHeading: "Hubungi Pabrik Paving Block Kaha di Cisauk",
       ctaDesc:
-        "Diskusi kebutuhan proyek Anda langsung dengan tim pabrik Kaha Block untuk mendapatkan harga terbaik dan jadwal ketersediaan material.",
+        "Diskusi kebutuhan proyek Anda langsung dengan tim pabrik Kaha Block untuk mendapatkan surat penawaran harga resmi dan jadwal ketersediaan material.",
     },
     en: {
       slug: "tangerang",
