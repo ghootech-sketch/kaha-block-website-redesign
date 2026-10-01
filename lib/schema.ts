@@ -1,7 +1,7 @@
 import { BUSINESS_FACTS } from "./business-facts";
 import { Locale } from "./dictionary";
 import { BlogPost } from "./blog-types";
-import { ProductData } from "./products-data";
+import { ProductData, getAllProducts } from "./products-data";
 
 export type SchemaPageType =
   | "home"
@@ -488,6 +488,16 @@ export function generateStructuredDataGraph({
     };
   }
 
+  if (page === "products") {
+    webPageEntity.mainEntity = {
+      "@id": `${canonicalUrl}#products`,
+    };
+  } else if (page === "productDetail") {
+    webPageEntity.mainEntity = {
+      "@id": `${canonicalUrl}#product`,
+    };
+  }
+
   const graph: Array<Record<string, unknown>> = [
     organizationEntity,
     websiteEntity,
@@ -502,55 +512,18 @@ export function generateStructuredDataGraph({
 
   // A. Products Collection ItemList
   if (page === "products") {
-    const productSections = [
-      {
-        name: "Truepave",
-        url: `${canonicalUrl}#product-truepave`,
-      },
-      {
-        name: "Half / Tahu",
-        url: `${canonicalUrl}#product-half-tahu`,
-      },
-      {
-        name: "Hexa 8 cm",
-        url: `${canonicalUrl}#product-hexa`,
-      },
-      {
-        name: "Ubin 8 cm",
-        url: `${canonicalUrl}#product-ubin`,
-      },
-      {
-        name: "Topi Uskup",
-        url: `${canonicalUrl}#product-topi-uskup`,
-      },
-      {
-        name: "Kanstein Jepit",
-        url: `${canonicalUrl}#product-kanstin-jepit`,
-      },
-      {
-        name: "Kanstein S",
-        url: `${canonicalUrl}#product-kanstin-s`,
-      },
-      {
-        name: "Kanstein B1",
-        url: `${canonicalUrl}#product-kanstin-b1`,
-      },
-      {
-        name: "Stoper",
-        url: `${canonicalUrl}#product-stoper`,
-      },
-    ];
+    const products = getAllProducts(lang);
 
     graph.push({
       "@type": "ItemList",
       "@id": `${canonicalUrl}#products`,
       name: isEn ? "Kaha Block Product Catalogue" : "Katalog Produk Kaha Block",
-      numberOfItems: productSections.length,
-      itemListElement: productSections.map((section, idx) => ({
+      numberOfItems: products.length,
+      itemListElement: products.map((prod, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        name: section.name,
-        url: section.url,
+        name: prod.name,
+        url: `${baseUrl}/${lang}/products/${prod.slug}`,
       })),
     });
   }
@@ -560,6 +533,7 @@ export function generateStructuredDataGraph({
     const productEntity: Record<string, unknown> = {
       "@type": "Product",
       "@id": `${canonicalUrl}#product`,
+      url: canonicalUrl,
       name: product.name,
       description: product.intro,
       image: `${baseUrl}${product.image}`,
@@ -569,6 +543,9 @@ export function generateStructuredDataGraph({
       },
       manufacturer: {
         "@id": `${baseUrl}/#organization`,
+      },
+      mainEntityOfPage: {
+        "@id": `${canonicalUrl}#webpage`,
       },
     };
 
