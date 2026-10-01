@@ -79,7 +79,7 @@ export const dictionaries = {
       hero: {
         eyebrow: "Produsen Paving Block Sejak 2015",
         h1: "Paving Block Berkualitas untuk Kebutuhan Hunian dan Proyek",
-        description: "Pabrik produsen dan supplier paving block berkualitas presisi dengan mesin full otomatis hidrolik di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk wilayah Jabodetabek.",
+        description: "Pabrik produsen, supplier, dan pemasok paving block berkualitas presisi dengan mesin full otomatis hidrolik di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk wilayah Jabodetabek.",
         ctaPrimary: "Konsultasi via WhatsApp",
         ctaSecondary: "Lihat Produk",
         trustNote: "Presisi • Kuat • Mutu Terjamin • Produksi Modern",
@@ -536,7 +536,7 @@ export const dictionaries = {
       commercialSection: {
         eyebrow: "PENJUAL & PRODUSEN LANGSUNG",
         title: "Jual Paving Block Langsung dari Produsen",
-        desc: "Kaha Block melayani pembelian dan pengadaan paving block, yang juga dikenal sebagai conblock atau konblok, langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015, Kaha Block memproduksi dan memasok paving block mutu K-250, K-300, dan K-400 untuk kebutuhan hunian, jalan perumahan, konblok jalan lingkungan, area parkir, pergudangan, kawasan industri, dan proyek infrastruktur. Untuk kebutuhan estimasi harga paving block per m2 atau harga paving block per meter, tim kami siap menyusun penawaran resmi yang disesuaikan dengan volume kebutuhan, pilihan model (seperti Truepave bata, paving tahu / Half, paving block hexagon, ubin paving, topi uskup, kanstein beton, dan stoper paving), serta ketebalan paving block 6 cm, 8 cm, hingga 10 cm.",
+        desc: "Kaha Block melayani pembelian dan pengadaan paving block, yang juga dikenal sebagai conblock atau konblok, langsung dari produsen PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Sebagai produsen, supplier, dan pemasok paving block mutu K-250, K-300, dan K-400 yang beroperasi sejak 2015, Kaha Block siap memenuhi kebutuhan hunian, jalan perumahan, konblok jalan lingkungan, area parkir, pergudangan, kawasan industri, dan proyek infrastruktur. Untuk kebutuhan estimasi harga paving block per m2 atau harga paving block per meter, tim kami siap menyusun penawaran resmi yang disesuaikan dengan volume kebutuhan, pilihan model (seperti Truepave bata, paving tahu / Half, paving block hexagon, ubin paving, topi uskup, kanstein beton, dan stoper paving), serta ketebalan paving block 6 cm, 8 cm, hingga 10 cm.",
       },
       deliveryService: {
         eyebrow: "PENGIRIMAN & PEMASANGAN",
@@ -606,8 +606,8 @@ export const dictionaries = {
         subtitle: "Jawaban atas pertanyaan umum seputar pemilihan produk, mutu, ukuran, dan pemesanan.",
         items: [
           {
-            q: "Apakah Kaha Block penjual paving block atau produsen langsung?",
-            a: "Kaha Block adalah produsen langsung paving block melalui PT Kaha Sukses Mandiri dengan fasilitas produksi di Cisauk, Kabupaten Tangerang. Selain penjualan dan pengadaan paving block, Kaha Block juga melayani pengiriman gratis serta jasa kontraktor pemasangan untuk wilayah Jabodetabek.",
+            q: "Bagaimana alur jika ingin beli paving block langsung dari pabrik Kaha Block?",
+            a: "Untuk beli paving block langsung dari pabrik PT Kaha Sukses Mandiri di Cisauk, Anda dapat langsung menghubungi tim sales via WhatsApp dengan menginformasikan pilihan model, ketebalan, dan estimasi luas kebutuhan. Layanan ini juga memudahkan konsumen yang ingin beli conblock presisi langsung dari produsen dengan fasilitas gratis pengiriman serta penurunan barang di wilayah Jabodetabek.",
           },
           {
             q: "Bagaimana cara mengetahui harga paving block per m2 atau per meter di Kaha Block?",

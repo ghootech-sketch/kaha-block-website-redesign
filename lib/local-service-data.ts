@@ -104,7 +104,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       },
       {
         title: "Dukungan Pengiriman & Penurunan Barang",
-        desc: "Pengiriman material menggunakan armada pengiriman Kaha Block dengan jaminan gratis pengiriman dan penurunan barang di lokasi proyek wilayah Jabodetabek.",
+        desc: "Pengiriman material menggunakan armada pengiriman Kaha Block dengan fasilitas gratis pengiriman dan penurunan barang di lokasi proyek wilayah Jabodetabek.",
       },
       {
         title: "Transparansi Penawaran & Standar Pemasangan",
@@ -553,7 +553,7 @@ export const REGIONAL_PAGES_DATA: Record<
       heroDesc:
         "Kaha Block memproduksi paving block presisi mesin full otomatis hidrolik di fasilitas pabrik Cisauk, Kabupaten Tangerang, untuk melayani kebutuhan pengadaan material dan jasa pemasangan di seluruh wilayah DKI Jakarta (Jakarta Selatan, Timur, Barat, Utara, dan Pusat).",
       factoryContextNotice:
-        "Pengiriman material ke wilayah Jakarta dilakukan langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan jaminan gratis ongkos kirim dan termasuk penurunan barang.",
+        "Pengiriman material ke wilayah Jakarta dilakukan langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan termasuk penurunan barang.",
       keyBenefits: [
         {
           title: "Pengadaan Langsung Pabrik",
@@ -777,7 +777,7 @@ export const REGIONAL_PAGES_DATA: Record<
       eyebrow: "PABRIK UTAMA & SUPPLIER DIRECT",
       h1: "Pabrik Paving Block Cisauk, Tangerang & Jasa Pemasangan",
       heroDesc:
-        "PT Kaha Sukses Mandiri (Kaha Block) berlokasi di fasilitas pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Sebagai pabrik conblock Tangerang, produsen conblock, dan supplier conblock terdekat terkemuka, kami melayani jual paving block Tangerang langsung produsen, estimasi harga paving block Tangerang kompetitif, serta jasa pasang paving block Tangerang untuk wilayah Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
+        "PT Kaha Sukses Mandiri (Kaha Block) berlokasi di fasilitas pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Sebagai pabrik conblock Tangerang, produsen conblock, dan supplier conblock terdekat, kami melayani jual paving block Tangerang langsung produsen, estimasi harga paving block Tangerang kompetitif, serta jasa pasang paving block Tangerang untuk wilayah Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
       factoryContextNotice:
         "Pabrik fisik Kaha Block berada di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015 memproduksi paving mutu K-250, K-300, dan K-400 untuk pengadaan langsung pabrik dan jasa pemasangan di Tangerang Raya.",
       keyBenefits: [
@@ -837,7 +837,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
       ],
       deliveryNotice:
-        "Pengiriman ke seluruh Tangerang Raya dijamin Gratis Ongkir dan termasuk fasilitas Penurunan Barang.",
+        "Pengiriman ke seluruh Tangerang Raya mencakup fasilitas gratis ongkir dan penurunan barang.",
       installationNotice:
         "Konsultasikan pengadaan material beserta tim pasang untuk pengerjaan perkerasan lahan di Tangerang.",
       trustFactsTitle: "Fakta Fasilitas Pabrik Kaha Block Cisauk",
@@ -1038,7 +1038,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
       ],
       deliveryNotice:
-        "Pengiriman ke Kota dan Kabupaten Bekasi dilengkapi jaminan Gratis Pengiriman dan Penurunan Barang.",
+        "Pengiriman ke Kota dan Kabupaten Bekasi dilengkapi fasilitas gratis pengiriman dan penurunan barang.",
       installationNotice:
         "Tersedia layanan jasa pasang berpengalaman dari Kaha Block untuk wilayah Bekasi.",
       trustFactsTitle: "Identitas Produsen Kaha Block",
@@ -1173,7 +1173,7 @@ export const REGIONAL_PAGES_DATA: Record<
       heroDesc:
         "Kaha Block menyediakan pengadaan paving block presisi langsung dari fasilitas pabrik di Cisauk, Kabupaten Tangerang, untuk melayani kebutuhan proyek perumahan, ruko komersial, dan jalan lingkungan di wilayah Kota Depok.",
       factoryContextNotice:
-        "Pengiriman paving block ke lokasi proyek di Depok dipasok langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan jaminan gratis pengiriman dan penurunan barang.",
+        "Pengiriman paving block ke lokasi proyek di Depok dipasok langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan penurunan barang.",
       keyBenefits: [
         {
           title: "Material Presisi Hidrolik",
@@ -1221,7 +1221,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
       ],
       deliveryNotice:
-        "Pengiriman ke Kota Depok dijamin Gratis Ongkir dan termasuk penurunan barang.",
+        "Pengiriman ke Kota Depok mencakup fasilitas gratis ongkir dan penurunan barang.",
       installationNotice:
         "Dapatkan kemudahan layanan pasang paving block profesional oleh tim terampil Kaha Block.",
       trustFactsTitle: "Identitas Produsen Kaha Block",
@@ -1351,7 +1351,7 @@ export const REGIONAL_PAGES_DATA: Record<
       heroDesc:
         "Kaha Block memproduksi paving block presisi di Cisauk, Kabupaten Tangerang, untuk melayani pengadaan material dan jasa pemasangan di Kota Bogor dan Kabupaten Bogor.",
       factoryContextNotice:
-        "Pengiriman paving block ke lokasi proyek di Bogor dipasok langsung dari fasilitas pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan jaminan gratis pengiriman dan penurunan barang.",
+        "Pengiriman paving block ke lokasi proyek di Bogor dipasok langsung dari fasilitas pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan penurunan barang.",
       keyBenefits: [
         {
           title: "Produsen Langsung Mesin Otomatis",
@@ -1362,7 +1362,7 @@ export const REGIONAL_PAGES_DATA: Record<
           desc: "Fasilitas pengiriman tanpa biaya ongkos kirim ke lokasi proyek Anda di Bogor.",
         },
         {
-          title: "Penurunan Barang Terjamin",
+          title: "Fasilitas Penurunan Barang",
           desc: "Armada pengiriman Kaha Block dilengkapi petugas untuk proses penurunan barang di tempat.",
         },
         {
