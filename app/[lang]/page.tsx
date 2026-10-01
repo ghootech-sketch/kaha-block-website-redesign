@@ -1,6 +1,7 @@
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
+import { PRODUCT_KEY_TO_SLUG } from "@/lib/products-data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image, { getImageProps } from "next/image";
@@ -499,6 +500,10 @@ export default async function Home({
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-x-8 gap-y-12">
                 {featuredKeys.map((key, index) => {
                   const product = dict.products.items[key];
+                  const productSlug = PRODUCT_KEY_TO_SLUG[key];
+                  const productDetailUrl = productSlug
+                    ? `/${currentLang}/products/${productSlug}`
+                    : `/${currentLang}/products`;
                   const colSpanClass =
                     index === 3
                       ? "lg:col-span-2 lg:col-start-2"
@@ -512,7 +517,10 @@ export default async function Home({
                       className={`${colSpanClass} group flex flex-col h-full`}
                     >
                       {/* Visual Image */}
-                      <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-100 mb-5 flex items-center justify-center">
+                      <Link
+                        href={productDetailUrl}
+                        className="relative aspect-[4/3] w-full overflow-hidden bg-stone-100 mb-5 flex items-center justify-center block focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                      >
                         <Image
                           src={product.image}
                           alt={`${dict.products.imageAltPrefix} ${product.name}`}
@@ -526,14 +534,19 @@ export default async function Home({
                         <div className="absolute top-4 right-4 bg-accent text-dark px-3 py-1.5 text-[10px] uppercase tracking-widest font-heading font-bold shadow-sm">
                           {product.badge}
                         </div>
-                      </div>
+                      </Link>
 
                       {/* Content Area - Minimal */}
                       <div className="flex flex-col flex-grow">
                         <div className="flex items-center space-x-2 mb-3">
                           <span className="w-4 h-px bg-accent" aria-hidden="true" />
                           <h3 className="text-xl font-medium font-heading text-slate-900">
-                            {product.name}
+                            <Link
+                              href={productDetailUrl}
+                              className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                            >
+                              {product.name}
+                            </Link>
                           </h3>
                         </div>
                         <ul className="space-y-2 text-xs text-slate-500 font-sans mb-6 pl-6 border-l border-stone-200 ml-2">
@@ -546,7 +559,7 @@ export default async function Home({
                       {/* Card Action Link */}
                       <div className="mt-auto pl-6 ml-2">
                         <Link
-                          href={`/${currentLang}/products`}
+                          href={productDetailUrl}
                           className="inline-flex items-center text-[10px] uppercase tracking-widest font-bold text-slate-900 hover:text-primary transition-colors group/link focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
                         >
                           <span className="border-b border-slate-900 group-hover/link:border-primary pb-0.5">{homeDict.featuredProducts.viewSpecs}</span>

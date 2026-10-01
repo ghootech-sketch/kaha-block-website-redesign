@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Core static routes updated in the current SEO pass with stable recrawl signal date
   const UPDATED_CORE_ROUTES: Record<string, string> = {
     "": "2026-09-27T00:00:00.000Z",
-    "/products": "2026-09-27T00:00:00.000Z",
+    "/products": "2026-10-01T00:00:00.000Z",
     "/projects/production": "2026-09-27T00:00:00.000Z",
     "/jasa-pemasangan-paving-block": "2026-09-27T00:00:00.000Z",
     "/area-layanan/tangerang": "2026-09-27T00:00:00.000Z",

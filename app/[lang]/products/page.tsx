@@ -1,7 +1,7 @@
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
-import { PRODUCT_KEY_TO_SLUG } from "@/lib/products-data";
+import { getAllProducts } from "@/lib/products-data";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
@@ -23,18 +23,6 @@ export async function generateMetadata({
   return constructPageMetadata("products", lang as Locale);
 }
 
-const PRODUCT_ANCHOR_MAP: Record<string, string> = {
-  truepave: "product-truepave",
-  half: "product-half-tahu",
-  hexagonal: "product-hexa",
-  ubin: "product-ubin",
-  topiUskup: "product-topi-uskup",
-  kanstein: "product-kanstin-jepit",
-  kansteinB1: "product-kanstin-b1",
-  kansteinS: "product-kanstin-s",
-  stoper: "product-stoper",
-};
-
 export default async function Products({
   params,
 }: {
@@ -46,8 +34,7 @@ export default async function Products({
   }
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].products;
-  
-  const productKeys = Object.keys(dict.items) as Array<keyof typeof dict.items>;
+  const products = getAllProducts(currentLang);
 
   return (
     <>
@@ -131,15 +118,13 @@ export default async function Products({
       <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-            {productKeys.map((key, index) => {
-              const product = dict.items[key];
-              const productSlug = PRODUCT_KEY_TO_SLUG[key];
-              const productDetailUrl = `/${currentLang}/products/${productSlug}`;
-              const anchorId = PRODUCT_ANCHOR_MAP[key] || `product-${key}`;
+            {products.map((product, index) => {
+              const productDetailUrl = `/${currentLang}/products/${product.slug}`;
+              const anchorId = product.anchorId;
 
               return (
                 <ScrollReveal
-                  key={key}
+                  key={product.slug}
                   delay={index * 0.03}
                   className="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-200/80 border-t-2 border-t-accent/60 hover:border-accent hover:shadow-md transition-all duration-300 group flex flex-col h-full scroll-mt-28"
                   id={anchorId}
