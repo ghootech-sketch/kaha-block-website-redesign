@@ -209,15 +209,39 @@ export default async function ProductionGalleryPage({
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-slate-200/80 text-center">
+            <div className="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-bold font-heading">
               <Link
-                href={`/${currentLang}/area-layanan/tangerang`}
-                className="inline-flex items-center text-xs sm:text-sm font-bold text-primary hover:text-primary-hover transition-colors font-heading focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+                href={`/${currentLang}/about`}
+                className="inline-flex items-center text-slate-800 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
               >
                 <span>
                   {currentLang === "en"
-                    ? "Main Plant Location: Cisauk, Tangerang Regency — View Tangerang Area Services"
-                    : "Pabrik Utama: Cisauk, Kabupaten Tangerang — Lihat Layanan Area Tangerang"}
+                    ? "Learn about PT Kaha Sukses Mandiri"
+                    : "Pelajari profil PT Kaha Sukses Mandiri"}
+                </span>
+                <ArrowRight className="w-4 h-4 ml-1.5 text-accent" aria-hidden="true" />
+              </Link>
+
+              <Link
+                href={`/${currentLang}/products`}
+                className="inline-flex items-center text-primary hover:text-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+              >
+                <span>
+                  {currentLang === "en"
+                    ? "View Kaha Block products"
+                    : "Lihat katalog produk Kaha Block"}
+                </span>
+                <ArrowRight className="w-4 h-4 ml-1.5 text-accent" aria-hidden="true" />
+              </Link>
+
+              <Link
+                href={`/${currentLang}/area-layanan/tangerang`}
+                className="inline-flex items-center text-slate-600 hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent min-h-[36px]"
+              >
+                <span>
+                  {currentLang === "en"
+                    ? "Main Plant Location: Cisauk, Tangerang Regency"
+                    : "Pabrik Utama: Cisauk, Kabupaten Tangerang"}
                 </span>
                 <ArrowRight className="w-4 h-4 ml-1.5 text-accent" aria-hidden="true" />
               </Link>

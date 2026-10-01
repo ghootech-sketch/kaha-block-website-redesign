@@ -227,6 +227,22 @@ export default async function BlogPostPage({
                 ? "This article is prepared by the Kaha Block team based on hands-on practical experience in hydraulic concrete paving block manufacturing, material supply, and on-site installations across residential, commercial, and industrial projects since 2015."
                 : "Artikel ini disusun oleh tim Kaha Block berdasarkan pengalaman praktis pabrikasi, pengadaan material, dan pengerjaan pemasangan paving block di berbagai proyek hunian, komersial, dan industri sejak 2015."}
             </p>
+            <div className="pt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs font-medium">
+              <Link
+                href={`/${currentLang}/about`}
+                className="text-primary hover:underline inline-flex items-center gap-1 font-semibold"
+              >
+                <span>{isEn ? "Learn about PT Kaha Sukses Mandiri" : "Pelajari profil PT Kaha Sukses Mandiri"}</span>
+                <ArrowRight className="w-3 h-3 text-accent" aria-hidden="true" />
+              </Link>
+              <Link
+                href={`/${currentLang}/projects/production`}
+                className="text-slate-700 hover:text-primary hover:underline inline-flex items-center gap-1"
+              >
+                <span>{isEn ? "View factory production gallery" : "Lihat galeri produksi pabrik"}</span>
+                <ArrowRight className="w-3 h-3 text-accent" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </aside>
 

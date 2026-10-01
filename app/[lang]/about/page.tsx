@@ -185,6 +185,13 @@ export default async function About({
                     <div>
                       <strong className="text-slate-900 block">{dict.facts.items[1].label}</strong>
                       <span className="text-slate-600">{dict.facts.items[1].value} ({dict.facts.items[2].value})</span>
+                      <Link
+                        href={`/${currentLang}/projects/production`}
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary-hover hover:underline mt-1"
+                      >
+                        <span>{currentLang === "en" ? "View factory production documentation" : "Lihat dokumentasi produksi pabrik"}</span>
+                        <ArrowRight className="w-3 h-3 text-accent" aria-hidden="true" />
+                      </Link>
                     </div>
                   </div>
 

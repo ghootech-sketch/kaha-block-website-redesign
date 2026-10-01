@@ -166,7 +166,7 @@ export default async function ProductDetailPage({
                 </div>
 
                 {/* Factory Trust Note under Image */}
-                <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 space-y-2 text-xs text-slate-600 font-sans">
+                <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200/70 space-y-2.5 text-xs text-slate-600 font-sans">
                   <div className="flex items-center gap-2 font-medium text-slate-900">
                     <Building2 className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
                     <span>PT Kaha Sukses Mandiri • Cisauk, Kab. Tangerang</span>
@@ -178,6 +178,22 @@ export default async function ProductDetailPage({
                         ? "Direct delivery across Greater Jakarta (Jabodetabek) with offloading"
                         : "Pengiriman langsung ke Jabodetabek gratis ongkir & penurunan barang"}
                     </span>
+                  </div>
+                  <div className="pt-2 border-t border-slate-200/60 flex flex-wrap gap-x-4 gap-y-1 font-medium">
+                    <Link
+                      href={`/${currentLang}/projects/production`}
+                      className="text-primary hover:underline inline-flex items-center gap-1 font-semibold"
+                    >
+                      <span>{isEn ? "Factory Production Documentation" : "Dokumentasi Produksi Pabrik"}</span>
+                      <ArrowRight className="w-3 h-3 text-accent" aria-hidden="true" />
+                    </Link>
+                    <Link
+                      href={`/${currentLang}/about`}
+                      className="text-slate-700 hover:text-primary hover:underline inline-flex items-center gap-1"
+                    >
+                      <span>{isEn ? "Company Profile" : "Profil PT Kaha Sukses Mandiri"}</span>
+                      <ArrowRight className="w-3 h-3 text-accent" aria-hidden="true" />
+                    </Link>
                   </div>
                 </div>
               </div>
