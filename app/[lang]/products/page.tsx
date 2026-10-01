@@ -1,6 +1,7 @@
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
+import { PRODUCT_KEY_TO_SLUG } from "@/lib/products-data";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
@@ -132,7 +133,8 @@ export default async function Products({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {productKeys.map((key, index) => {
               const product = dict.items[key];
-              const hasDetails = 'detailSpecs' in product && Array.isArray(product.detailSpecs) && product.detailSpecs.length > 0;
+              const productSlug = PRODUCT_KEY_TO_SLUG[key];
+              const productDetailUrl = `/${currentLang}/products/${productSlug}`;
               const anchorId = PRODUCT_ANCHOR_MAP[key] || `product-${key}`;
 
               return (
@@ -143,7 +145,10 @@ export default async function Products({
                   id={anchorId}
                 >
                   {/* 3:2 Product Image Container */}
-                  <div className="relative aspect-[3/2] w-full bg-gray-100 overflow-hidden">
+                  <Link
+                    href={productDetailUrl}
+                    className="relative aspect-[3/2] w-full bg-gray-100 overflow-hidden block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
                     <Image
                       src={product.image}
                       alt={`${dict.imageAltPrefix} ${product.name}`}
@@ -156,13 +161,18 @@ export default async function Products({
                     <div className="absolute top-3 right-3 bg-accent text-slate-900 px-3 py-1 rounded-full text-xs font-mono font-bold shadow-xs">
                       {product.badge}
                     </div>
-                  </div>
+                  </Link>
 
                   {/* Card Content */}
                   <div className="p-6 sm:p-7 flex-grow flex flex-col justify-between">
                     <div>
                       <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3.5 font-heading">
-                        {product.name}
+                        <Link
+                          href={productDetailUrl}
+                          className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
+                        >
+                          {product.name}
+                        </Link>
                       </h2>
 
                       {/* Normalized 3-Line Quick Specifications */}
@@ -192,45 +202,22 @@ export default async function Products({
                           );
                         })}
                       </ul>
-
-                      {/* Collapsible Detail Section (Only if extra verified data exists) */}
-                      {hasDetails && product.detailSpecs && (
-                        <details className="mb-4 group/detail rounded-xl bg-slate-50 border border-slate-200/80 p-3 text-xs sm:text-sm">
-                          <summary className="font-semibold text-slate-900 cursor-pointer hover:text-accent transition-colors list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded select-none">
-                            <span>{dict.detailsLabel}</span>
-                            <ChevronDown className="w-4 h-4 text-slate-500 group-open/detail:rotate-180 transition-transform duration-200" aria-hidden="true" />
-                          </summary>
-                          <ul className="mt-2.5 pt-2.5 border-t border-slate-200/80 space-y-1.5">
-                            {product.detailSpecs.map((detail, idx) => {
-                              const parts = detail.split(":");
-                              return (
-                                <li key={idx} className="flex items-start text-xs text-slate-600">
-                                  <span className="inline-block w-1 h-1 rounded-full bg-slate-400 mt-1.5 mr-2 shrink-0" aria-hidden="true" />
-                                  <span className="leading-snug">
-                                    {parts.length > 1 ? (
-                                      <>
-                                        <strong className="text-slate-900 font-semibold">{parts[0]}:</strong>{" "}
-                                        {parts.slice(1).join(":")}
-                                      </>
-                                    ) : (
-                                      detail
-                                    )}
-                                  </span>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </details>
-                      )}
                     </div>
 
-                    {/* Bottom-Aligned WhatsApp CTA */}
-                    <div className="mt-auto pt-2">
+                    {/* Bottom-Aligned CTAs: Detail Specs Link + WhatsApp Order */}
+                    <div className="mt-auto pt-3 space-y-2.5">
+                      <Link
+                        href={productDetailUrl}
+                        className="inline-flex items-center justify-center w-full min-h-[40px] bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200/90 rounded-xl font-semibold text-xs sm:text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading"
+                      >
+                        <span>{dict.detailsLabel}</span>
+                        <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-accent" aria-hidden="true" />
+                      </Link>
                       <a 
                         href={getWhatsAppUrl(index % 2 === 0 ? "primary" : "secondary", "products", currentLang)} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading uppercase tracking-wide shadow-xs"
                       >
                         <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                         {dict.orderCta}

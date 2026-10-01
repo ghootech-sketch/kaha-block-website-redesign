@@ -1,11 +1,13 @@
 import { BUSINESS_FACTS } from "./business-facts";
 import { Locale } from "./dictionary";
 import { BlogPost } from "./blog-types";
+import { ProductData } from "./products-data";
 
 export type SchemaPageType =
   | "home"
   | "about"
   | "products"
+  | "productDetail"
   | "projects"
   | "projectsProduction"
   | "contact"
@@ -23,12 +25,14 @@ interface GenerateGraphParams {
   page: SchemaPageType;
   lang: Locale;
   post?: BlogPost;
+  product?: ProductData;
 }
 
 export function generateStructuredDataGraph({
   page,
   lang,
   post,
+  product,
 }: GenerateGraphParams) {
   const isEn = lang === "en";
   const baseUrl = BUSINESS_FACTS.domain;
@@ -39,6 +43,8 @@ export function generateStructuredDataGraph({
       ? "/projects/production"
       : page === "blogPost" && post
       ? `/blog/${post.slug}`
+      : page === "productDetail" && product
+      ? `/products/${product.slug}`
       : page === "jasaPemasangan"
       ? "/jasa-pemasangan-paving-block"
       : page === "areaLayanan"
@@ -209,6 +215,19 @@ export function generateStructuredDataGraph({
         name: isEn ? "Products" : "Produk",
         item: canonicalUrl,
       });
+    } else if (page === "productDetail" && product) {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Products" : "Produk",
+        item: `${baseUrl}/${lang}/products`,
+      });
+      items.push({
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: canonicalUrl,
+      });
     } else if (page === "projects") {
       items.push({
         "@type": "ListItem",
@@ -334,6 +353,11 @@ export function generateStructuredDataGraph({
       pageDescription = isEn
         ? "Explore Kaha Block concrete paving product specifications: Truepave, Half, Hexagonal, Bishop Hat, and Curb Stones with delivery across Greater Jakarta."
         : "Jual paving block langsung produsen: spesifikasi Truepave bata, paving tahu, hexagon, ubin, topi uskup, dan kanstein beton dengan pengiriman gratis Jabodetabek.";
+      break;
+    case "productDetail":
+      pageType = "ItemPage";
+      pageName = product ? product.metaTitle : isEn ? "Product | Kaha Block" : "Produk | Kaha Block";
+      pageDescription = product ? product.metaDescription : "";
       break;
     case "projects":
       pageType = "CollectionPage";
@@ -529,6 +553,26 @@ export function generateStructuredDataGraph({
         url: section.url,
       })),
     });
+  }
+
+  // A2. Single Product Detail Entity
+  if (page === "productDetail" && product) {
+    const productEntity: Record<string, unknown> = {
+      "@type": "Product",
+      "@id": `${canonicalUrl}#product`,
+      name: product.name,
+      description: product.intro,
+      image: `${baseUrl}${product.image}`,
+      brand: {
+        "@type": "Brand",
+        name: "Kaha Block",
+      },
+      manufacturer: {
+        "@id": `${baseUrl}/#organization`,
+      },
+    };
+
+    graph.push(productEntity);
   }
 
   // B. Single Blog Article Posting & FAQ

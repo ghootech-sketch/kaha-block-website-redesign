@@ -79,28 +79,28 @@ export const article1Id: BlogPost = {
           id: "bentuk-bata-truepave",
           heading: "Bentuk Bata Persegi Panjang (Truepave)",
           paragraphs: [
-            "Model [Paving Truepave (Bata)](/id/products#product-truepave) adalah bentuk paling populer dan fleksibel di dunia konstruksi. Bentuk persegi panjang standar (seperti ukuran 10,5 x 21 cm) dapat disusun dalam pola anyaman tulang ikan (herringbone 45° atau 90°). Pola tulang ikan memberikan kekuatan interlocking paling tinggi terhadap gaya pengereman dan akselerasi kendaraan.",
+            "Model [Paving Truepave (Bata)](/id/products/truepave) adalah bentuk paling populer dan fleksibel di dunia konstruksi. Bentuk persegi panjang standar (seperti ukuran 10,5 x 21 cm) dapat disusun dalam pola anyaman tulang ikan (herringbone 45° atau 90°). Pola tulang ikan memberikan kekuatan interlocking paling tinggi terhadap gaya pengereman dan akselerasi kendaraan.",
           ],
         },
         {
           id: "bentuk-segi-enam-hexa",
           heading: "Bentuk Segi Enam (Hexagonal / Hexa)",
           paragraphs: [
-            "Bentuk [Paving Hexagonal (Segi Enam)](/id/products#product-hexa) memiliki enam sisi pengunci yang memberikan distribusi beban simetris ke segala arah. Model ini sangat cocok untuk jalan lingkungan perumahan dan pelataran luas karena menghasilkan tampilan estetis geometris yang rapi sekaligus kokoh.",
+            "Bentuk [Paving Hexagonal (Segi Enam)](/id/products/paving-hexagonal) memiliki enam sisi pengunci yang memberikan distribusi beban simetris ke segala arah. Model ini sangat cocok untuk jalan lingkungan perumahan dan pelataran luas karena menghasilkan tampilan estetis geometris yang rapi sekaligus kokoh.",
           ],
         },
         {
           id: "bentuk-ubin-persegi",
           heading: "Bentuk Ubin (Square / Kotak)",
           paragraphs: [
-            "Paving model [Ubin Persegi](/id/products#product-ubin) menghasilkan kesan modern, lapang, dan minimalis. Model ini sangat digemari pada pedestrian perkotaan, pelataran plaza gedung pertemuan, dan teras hunian kontemporer.",
+            "Paving model [Ubin Persegi](/id/products/ubin) menghasilkan kesan modern, lapang, dan minimalis. Model ini sangat digemari pada pedestrian perkotaan, pelataran plaza gedung pertemuan, dan teras hunian kontemporer.",
           ],
         },
         {
           id: "produk-pendukung-uskup-kanstein",
           heading: "Produk Pembatas: Topi Uskup dan Kanstein",
           paragraphs: [
-            "Pemasangan paving block pada pola herringbone memerlukan penutup tepi khusus bernama [Topi Uskup](/id/products#product-topi-uskup) agar susunan samping terkunci rapi tanpa perlu pemotongan manual yang boros bahan. Selain itu, pemasangan [Kanstein Beton](/id/products#product-kanstin-jepit) di sepanjang batas luar perkerasan bersifat wajib untuk mencegah pergeseran lateral susunan paving.",
+            "Pemasangan paving block pada pola herringbone memerlukan penutup tepi khusus bernama [Topi Uskup](/id/products/topi-uskup) agar susunan samping terkunci rapi tanpa perlu pemotongan manual yang boros bahan. Selain itu, pemasangan [Kanstein Beton](/id/products/kanstein-jepit) di sepanjang batas luar perkerasan bersifat wajib untuk mencegah pergeseran lateral susunan paving.",
           ],
         },
       ],
@@ -297,28 +297,28 @@ export const article1En: BlogPost = {
           id: "rectangular-truepave",
           heading: "Rectangular Block (Truepave)",
           paragraphs: [
-            "The rectangular [Truepave Model (Brick Shape)](/en/products#product-truepave) (standard 10.5 x 21 cm) remains the industry benchmark for versatile civil paving. When laid in a 45° or 90° herringbone pattern, Truepave creates maximum multidirectional interlocking resistance against vehicular braking and turning forces.",
+            "The rectangular [Truepave Model (Brick Shape)](/en/products/truepave) (standard 10.5 x 21 cm) remains the industry benchmark for versatile civil paving. When laid in a 45° or 90° herringbone pattern, Truepave creates maximum multidirectional interlocking resistance against vehicular braking and turning forces.",
           ],
         },
         {
           id: "hexagonal-shape",
           heading: "Hexagonal Block (Hexa)",
           paragraphs: [
-            "Featuring six interlocking boundary faces, the [Hexagonal Paving Block](/en/products#product-hexa) offers symmetrical stress distribution across all directions. It is widely specified for residential boulevards and expansive parking plazas where clean geometric lines and structural reliability are required.",
+            "Featuring six interlocking boundary faces, the [Hexagonal Paving Block](/en/products/paving-hexagonal) offers symmetrical stress distribution across all directions. It is widely specified for residential boulevards and expansive parking plazas where clean geometric lines and structural reliability are required.",
           ],
         },
         {
           id: "square-tile-shape",
           heading: "Square Paver (Tile / Ubin)",
           paragraphs: [
-            "The [Square Tile Paver](/en/products#product-ubin) produces a clean, contemporary, and architectural aesthetic. They are particularly popular for pedestrian esplanades, public plazas, and modern architectural courtyards.",
+            "The [Square Tile Paver](/en/products/ubin) produces a clean, contemporary, and architectural aesthetic. They are particularly popular for pedestrian esplanades, public plazas, and modern architectural courtyards.",
           ],
         },
         {
           id: "edge-restraints-and-curbs",
           heading: "Edge Components: Topi Uskup and Concrete Curbs (Kanstein)",
           paragraphs: [
-            "When laying herringbone patterns, specialized edge pavers known as [Topi Uskup (Bishop Hat)](/en/products#product-topi-uskup) eliminate excessive manual cutting along perimeters. Furthermore, installing solid [Concrete Curbs (Kanstein)](/en/products#product-kanstin-jepit) along all unconfined edges is strictly mandatory to prevent lateral shifting of the pavement system.",
+            "When laying herringbone patterns, specialized edge pavers known as [Topi Uskup (Bishop Hat)](/en/products/topi-uskup) eliminate excessive manual cutting along perimeters. Furthermore, installing solid [Concrete Curbs (Kanstein)](/en/products/kanstein-jepit) along all unconfined edges is strictly mandatory to prevent lateral shifting of the pavement system.",
           ],
         },
       ],

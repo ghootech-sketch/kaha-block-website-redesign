@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { allArticlesId, allArticlesEn } from "@/lib/blog-data";
+import { PRODUCT_SLUGS } from "@/lib/products-data";
 import { SITE_URL } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -53,6 +54,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             "id-ID": `${SITE_URL}/id${route}`,
             en: `${SITE_URL}/en${route}`,
             "x-default": `${SITE_URL}/id${route}`,
+          },
+        },
+      });
+    });
+  });
+
+  // Individual Product Pages
+  locales.forEach((locale) => {
+    PRODUCT_SLUGS.forEach((slug) => {
+      sitemapEntries.push({
+        url: `${SITE_URL}/${locale}/products/${slug}`,
+        changeFrequency: "monthly",
+        priority: 0.8,
+        alternates: {
+          languages: {
+            "id-ID": `${SITE_URL}/id/products/${slug}`,
+            en: `${SITE_URL}/en/products/${slug}`,
+            "x-default": `${SITE_URL}/id/products/${slug}`,
           },
         },
       });

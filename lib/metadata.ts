@@ -343,3 +343,58 @@ export function constructBlogPostMetadata({
     },
   };
 }
+
+export function constructProductMetadata({
+  slug,
+  lang,
+  title,
+  description,
+  image,
+}: {
+  slug: string;
+  lang: Locale;
+  title: string;
+  description: string;
+  image?: string;
+}): Metadata {
+  const canonicalUrl = `${BASE_URL}/${lang}/products/${slug}`;
+  const idUrl = `${BASE_URL}/id/products/${slug}`;
+  const enUrl = `${BASE_URL}/en/products/${slug}`;
+  const ogImage = image ? `${BASE_URL}${image}` : OG_IMAGE_URL;
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(BASE_URL),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        "id-ID": idUrl,
+        en: enUrl,
+        "x-default": idUrl,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "KAHA BLOCK",
+      locale: lang === "id" ? "id_ID" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
+  };
+}

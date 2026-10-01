@@ -117,7 +117,7 @@ export const article3Id: BlogPost = {
       id: "komitmen-kaha-block",
       heading: "6. Komitmen Kualitas PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak tahun 2015 memproduksi aneka ragam paving block—termasuk [Paving Truepave](/id/products#product-truepave), [Hexagonal](/id/products#product-hexa), [Ubin](/id/products#product-ubin), [Topi Uskup](/id/products#product-topi-uskup), dan aneka [Kanstein Pembatas](/id/products#product-kanstin-jepit)—dengan standar mutu presisi di fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang.",
+        "PT Kaha Sukses Mandiri (Kaha Block) yang beroperasi sejak tahun 2015 memproduksi aneka ragam paving block—termasuk [Paving Truepave](/id/products/truepave), [Hexagonal](/id/products/paving-hexagonal), [Ubin](/id/products/ubin), [Topi Uskup](/id/products/topi-uskup), dan aneka [Kanstein Pembatas](/id/products/kanstein-jepit)—dengan standar mutu presisi di fasilitas pabrik seluas 9.080 m² di Cisauk, Tangerang.",
         "Dengan integrasi mesin full otomatis hidrolik modern, seleksi bahan baku agregat bermutu tinggi, dan pengawasan mutu yang ketat, Kaha Block siap menjadi mitra terpercaya dalam pengadaan material perkerasan berkualitas tinggi. Lihat dokumentasi pengerjaan di [Galeri Proyek Kaha Block](/id/projects) atau hubungi kami di [Halaman Kontak](/id/contact).",
       ],
     },
@@ -287,7 +287,7 @@ export const article3En: BlogPost = {
       id: "kaha-quality-assurance",
       heading: "6. PT Kaha Sukses Mandiri Quality Standards",
       paragraphs: [
-        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products#product-truepave), [Hexagonal](/en/products#product-hexa), [Tile](/en/products#product-ubin), [Bishop Hat](/en/products#product-topi-uskup), and [Curbs](/en/products#product-kanstin-jepit). Across its production range, Kaha Block offers K-250, K-300, and K-400 concrete grade options depending on product and project requirements, with specific grade availability confirmed during consultation.",
+        "Operating since 2015, PT Kaha Sukses Mandiri manufactures an extensive product range—including [Truepave](/en/products/truepave), [Hexagonal](/en/products/paving-hexagonal), [Tile](/en/products/ubin), [Bishop Hat](/en/products/topi-uskup), and [Curbs](/en/products/kanstein-jepit). Across its production range, Kaha Block offers K-250, K-300, and K-400 concrete grade options depending on product and project requirements, with specific grade availability confirmed during consultation.",
         "Through advanced hydraulic technology, rigorous aggregate quality control, and experienced turnkey installation teams, Kaha Block remains the trusted supplier for infrastructure across Greater Jakarta. View completed works in our [Project Gallery](/en/projects) or reach out via our [Contact Page](/en/contact).",
       ],
     },

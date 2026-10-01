@@ -32,7 +32,7 @@ export const article2Id: BlogPost = {
       heading: "2. Paving Block Ketebalan 6 cm: Karakteristik dan Aplikasi",
       paragraphs: [
         "Paving block dengan ketebalan 6 cm merupakan standar paling populer untuk proyek skala hunian pribadi, perumahan kelompok, dan area pedestrian.",
-        "Dengan bobot yang relatif lebih ringan dibanding varian yang lebih tebal, varian 6 cm seperti [Paving Truepave 6 cm](/id/products#product-truepave) atau [Paving Hexagonal 6 cm](/id/products#product-hexa) sangat efisien dalam proses transportasi logistik dan mempermudah tukang saat proses pemasangan manual di halaman rumah.",
+        "Dengan bobot yang relatif lebih ringan dibanding varian yang lebih tebal, varian 6 cm seperti [Paving Truepave 6 cm](/id/products/truepave) atau [Paving Hexagonal 6 cm](/id/products/paving-hexagonal) sangat efisien dalam proses transportasi logistik dan mempermudah tukang saat proses pemasangan manual di halaman rumah.",
       ],
       subsections: [
         {
@@ -56,7 +56,7 @@ export const article2Id: BlogPost = {
       heading: "3. Paving Block Ketebalan 8 cm: Standar Proyek dan Komersial",
       paragraphs: [
         "Paving block 8 cm adalah standar emas (gold standard) untuk jalan lingkungan, perumahan skala menengah ke atas, kawasan ruko komersial, dan area publik yang sering dilalui kendaraan bertonase sedang.",
-        "Ketebalan 8 cm pada model [Truepave 8 cm](/id/products#product-truepave) maupun [Hexagonal 8 cm](/id/products#product-hexa) memberikan keseimbangan optimal antara kekuatan geser tinggi, stabilitas interlocking lateral, dan efisiensi biaya material.",
+        "Ketebalan 8 cm pada model [Truepave 8 cm](/id/products/truepave) maupun [Hexagonal 8 cm](/id/products/paving-hexagonal) memberikan keseimbangan optimal antara kekuatan geser tinggi, stabilitas interlocking lateral, dan efisiensi biaya material.",
       ],
       subsections: [
         {
@@ -132,7 +132,7 @@ export const article2Id: BlogPost = {
         items: [
           "Menggunakan paving 6 cm pada jalan akses perumahan yang sering dilewati truk material atau truk tangki air, sehingga terjadi patah sudut balok.",
           "Mengurangi ketebalan pondasi agregat demi menghemat biaya saat memakai paving 8 cm, yang berujung pada jalan bergelombang.",
-          "Tidak memasang [Kanstein Beton](/id/products#product-kanstin-jepit) pengunci yang cukup dalam saat menggunakan paving 8 cm atau 10 cm, menyebabkan blok samping bergeser lepas.",
+          "Tidak memasang [Kanstein Beton](/id/products/kanstein-jepit) pengunci yang cukup dalam saat menggunakan paving 8 cm atau 10 cm, menyebabkan blok samping bergeser lepas.",
           "Mengabaikan jenis pola susunan: memaksakan pola lurus pada area manuver putar kendaraan berat ketimbang pola herringbone yang saling mengunci.",
         ],
       },
@@ -234,7 +234,7 @@ export const article2En: BlogPost = {
       heading: "2. 6 cm Concrete Pavers: Applications and Properties",
       paragraphs: [
         "The 6 cm paver is the standard choice for private residential applications, garden landscaping, and municipal pedestrian sidewalks.",
-        "Being lighter than thicker models, variants like the [6 cm Truepave Paver](/en/products#product-truepave) or [6 cm Hexagonal Paver](/en/products#product-hexa) reduce transportation freight costs and enable fast manual handling for installers.",
+        "Being lighter than thicker models, variants like the [6 cm Truepave Paver](/en/products/truepave) or [6 cm Hexagonal Paver](/en/products/paving-hexagonal) reduce transportation freight costs and enable fast manual handling for installers.",
       ],
       subsections: [
         {
@@ -258,7 +258,7 @@ export const article2En: BlogPost = {
       heading: "3. 8 cm Concrete Pavers: The Commercial and Infrastructure Standard",
       paragraphs: [
         "The 8 cm paver represents the industry gold standard for neighborhood collector roads, commercial complexes, and public parking lots accommodating medium-to-heavy traffic.",
-        "An 8 cm thickness—such as our [8 cm Truepave](/en/products#product-truepave) or [8 cm Hexagonal Pavers](/en/products#product-hexa)—delivers the optimal balance between high shear capacity, lateral interlock stability, and cost-effective material efficiency.",
+        "An 8 cm thickness—such as our [8 cm Truepave](/en/products/truepave) or [8 cm Hexagonal Pavers](/en/products/paving-hexagonal)—delivers the optimal balance between high shear capacity, lateral interlock stability, and cost-effective material efficiency.",
       ],
       subsections: [
         {
@@ -329,7 +329,7 @@ export const article2En: BlogPost = {
         items: [
           "Installing 6 cm pavers on residential access roads that receive regular heavy material delivery or water tanker trucks, leading to corner chipping.",
           "Reducing base aggregate depth to cut costs when installing 8 cm pavers, resulting in surface waviness over time.",
-          "Failing to install deep [Concrete Edge Curbs (Kanstein)](/en/products#product-kanstin-jepit) along unconfined edges, allowing outer blocks to shift laterally.",
+          "Failing to install deep [Concrete Edge Curbs (Kanstein)](/en/products/kanstein-jepit) along unconfined edges, allowing outer blocks to shift laterally.",
           "Using linear running bond patterns in tight vehicle turning zones instead of multidirectional herringbone arrangements.",
         ],
       },
