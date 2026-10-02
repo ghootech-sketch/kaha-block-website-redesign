@@ -176,7 +176,7 @@ export const article7Id: BlogPost = {
       },
       {
         question: "Apakah Kaha Block melayani konsultasi perbaikan perkerasan paving yang rusak?",
-        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material pengganti dan [jasa pemasangan](/id/jasa-pemasangan-paving-block) untuk proyek perbaikan dan perawatan paving block.",
+        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material pengganti untuk proyek perbaikan dan perawatan paving block.",
       },
     ],
   },
