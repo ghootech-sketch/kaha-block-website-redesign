@@ -54,7 +54,7 @@ export const article16Id: BlogPost = {
       heading: "3. Pertimbangan Aksesibilitas dan Pengiriman di Kota Bogor",
       paragraphs: [
         "Wilayah Kota Bogor memiliki variasi akses jalan, mulai dari jalan protokol hingga jalan lingkungan perumahan bertingkat dengan belokan sempit.",
-        "Menyampaikan informasi titik penurunan barang dan lebar jalan akses kepada tim logistik Kaha Block memastikan pengiriman material berjalan lancar dan tepat waktu.",
+        "Menyampaikan informasi titik penurunan barang dan lebar jalan akses kepada tim logistik Kaha Block membantu perencanaan dan koordinasi pengiriman material ke lokasi proyek.",
       ],
     },
     {
@@ -172,7 +172,7 @@ export const article16En: BlogPost = {
       heading: "3. Site Accessibility and Logistics in Bogor City",
       paragraphs: [
         "Urban access routes across Bogor City—from major commercial corridors to narrow residential neighborhood streets—require coordinated delivery and offloading arrangements.",
-        "Sharing accurate site access details with our logistics team ensures transport vehicles reach your project site smoothly and on schedule.",
+        "Sharing accurate site access details with our logistics team helps coordinate transport planning and material delivery to the project site.",
       ],
     },
     {

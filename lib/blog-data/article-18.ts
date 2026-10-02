@@ -54,7 +54,7 @@ export const article18Id: BlogPost = {
       heading: "3. Jangkauan Pengiriman di Kabupaten Tangerang",
       paragraphs: [
         "Jaringan distribusi Kaha Block menjangkau seluruh kecamatan di Kabupaten Tangerang, meliputi Cisauk, Legok, Curug, Kelapa Dua, Cikupa, Balaraja, Pasar Kemis, Rajeg, Sepatan, Tigaraksa, hingga Teluknaga.",
-        "Komunikasi mengenai titik penurunan barang dan akses jalan masuk proyek memungkinkan penjadwalan pengiriman armada berjalan tertib dan tepat waktu.",
+        "Komunikasi mengenai titik penurunan barang dan akses jalan masuk proyek membantu koordinasi jadwal dan proses pengiriman armada.",
       ],
     },
     {
@@ -172,7 +172,7 @@ export const article18En: BlogPost = {
       heading: "3. Delivery Coverage Across Tangerang Regency",
       paragraphs: [
         "Kaha Block's logistics network serves all sub-districts across Tangerang Regency, including Cisauk, Legok, Curug, Kelapa Dua, Cikupa, Balaraja, Pasar Kemis, Rajeg, Sepatan, Tigaraksa, and Teluknaga.",
-        "Clear communication regarding entry road dimensions and site offloading locations ensures delivery vehicles arrive smoothly and on schedule.",
+        "Clear communication regarding entry road dimensions and site offloading locations helps coordinate delivery planning and site access.",
       ],
     },
     {

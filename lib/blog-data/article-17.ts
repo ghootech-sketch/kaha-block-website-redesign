@@ -54,7 +54,7 @@ export const article17Id: BlogPost = {
       heading: "3. Jangkauan Pengiriman di Kawasan Kabupaten Bogor",
       paragraphs: [
         "Kabupaten Bogor mencakup sub-kawasan yang luas, mulai dari Cibinong, Sentul, Gunung Putri, Cileungsi, Parung, Klapanunggal, hingga koridor Parung Panjang.",
-        "Menginformasikan titik lokasi proyek secara detail memudahkan tim logistik Kaha Block dalam merencanakan jalur pengiriman material yang efisien dan tepat waktu.",
+        "Menginformasikan titik lokasi proyek secara detail membantu tim logistik Kaha Block merencanakan jalur dan koordinasi pengiriman material.",
       ],
     },
     {
