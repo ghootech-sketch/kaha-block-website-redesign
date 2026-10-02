@@ -322,10 +322,10 @@ export default async function BlogPostPage({
               {section.list && (
                 <div className="my-8 bg-surface/50 border border-stone-200/40 p-6 sm:p-8">
                   {section.list.title && (
-                    <h4 className="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2 font-heading">
+                    <h3 className="text-sm font-bold text-slate-900 mb-4 flex items-center gap-2 font-heading">
                       <ShieldCheck className="w-4 h-4 text-accent" />
                       <span>{section.list.title}</span>
-                    </h4>
+                    </h3>
                   )}
                   <ul className="space-y-3 text-sm text-slate-700">
                     {section.list.items.map((item, i) => (
@@ -398,9 +398,9 @@ export default async function BlogPostPage({
                   )}
                   <div>
                     {section.callout.title && (
-                      <h4 className="font-bold text-sm text-slate-900 mb-1 font-heading">
+                      <h3 className="font-bold text-sm text-slate-900 mb-1 font-heading">
                         {section.callout.title}
-                      </h4>
+                      </h3>
                     )}
                     <p className="text-xs sm:text-sm leading-relaxed text-slate-700 font-sans">
                       <FormattedText text={section.callout.text} />
@@ -428,9 +428,9 @@ export default async function BlogPostPage({
                       {sub.list && (
                         <div className="my-4 rounded-lg bg-surface-card border border-slate-200 p-4">
                           {sub.list.title && (
-                            <h5 className="text-xs font-bold text-slate-900 mb-2 font-heading">
+                            <h4 className="text-xs font-bold text-slate-900 mb-2 font-heading">
                               {sub.list.title}
-                            </h5>
+                            </h4>
                           )}
                           <ul className="space-y-1.5 text-xs sm:text-sm text-slate-700">
                             {sub.list.items.map((item, i) => (

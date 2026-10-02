@@ -102,28 +102,28 @@ export default async function ProductionGalleryPage({
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Calendar className="w-6 h-6" />
                 </div>
-                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripSince}</h3>
+                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripSince}</p>
                 <p className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading">{dict.stripSinceValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Move className="w-6 h-6" />
                 </div>
-                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripArea}</h3>
+                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripArea}</p>
                 <p className="text-2xl sm:text-3xl font-bold text-slate-900 font-heading">{dict.stripAreaValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Factory className="w-6 h-6" />
                 </div>
-                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripMachine}</h3>
+                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripMachine}</p>
                 <p className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">{dict.stripMachineValue}</p>
               </div>
               <div className="flex flex-col items-center text-center px-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/25 flex items-center justify-center mb-4 text-slate-900">
                   <Award className="w-6 h-6" />
                 </div>
-                <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripGrade}</h3>
+                <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1 font-heading">{dict.stripGrade}</p>
                 <p className="text-xl sm:text-2xl font-bold text-slate-900 font-heading">{dict.stripGradeValue}</p>
               </div>
             </div>
