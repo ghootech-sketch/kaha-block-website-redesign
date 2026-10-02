@@ -26,6 +26,7 @@ export function middleware(request: NextRequest) {
     pathname === '/robots.txt' ||
     pathname === '/sitemap.xml' ||
     pathname === '/video-sitemap.xml' ||
+    pathname === '/image-sitemap.xml' ||
     pathname === '/icon.png' ||
     pathname === '/favicon.ico' ||
     pathname.match(/\.(.*)$/)

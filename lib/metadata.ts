@@ -240,6 +240,15 @@ export function constructPageMetadata(
   const idUrl = `${BASE_URL}/id${config.path}`;
   const enUrl = `${BASE_URL}/en${config.path}`;
 
+  let pageOgImage = OG_IMAGE_URL;
+  if (pageKey === "home") {
+    pageOgImage = `${BASE_URL}/images/hero/hero-main.webp`;
+  } else if (pageKey === "projects") {
+    pageOgImage = `${BASE_URL}/images/projects/kaha-block-dokumentasi-03.webp`;
+  } else if (pageKey === "projectsProduction") {
+    pageOgImage = `${BASE_URL}/images/production/kaha-block-produksi-02.webp`;
+  }
+
   return {
     title: langMeta.title,
     description: langMeta.description,
@@ -261,11 +270,10 @@ export function constructPageMetadata(
       type: "website",
       images: [
         {
-          url: OG_IMAGE_URL,
+          url: pageOgImage,
           width: 1200,
           height: 630,
-          alt: "Kaha Block - Paving Block Berkualitas",
-          type: "image/png",
+          alt: langMeta.title,
         },
       ],
     },
@@ -273,7 +281,7 @@ export function constructPageMetadata(
       card: "summary_large_image",
       title: langMeta.title,
       description: langMeta.description,
-      images: [OG_IMAGE_URL],
+      images: [pageOgImage],
     },
   };
 }

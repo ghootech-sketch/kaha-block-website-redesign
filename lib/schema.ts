@@ -528,6 +528,28 @@ export function generateStructuredDataGraph({
     };
   }
 
+  if (page === "home") {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
+  } else if (page === "productDetail" && product) {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
+  } else if (page === "projects") {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
+  } else if (page === "projectsProduction") {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
+  } else if (page === "videoWatch" && videoItem) {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
+  }
+
   const graph: Array<Record<string, unknown>> = [
     organizationEntity,
     websiteEntity,
@@ -536,6 +558,49 @@ export function generateStructuredDataGraph({
 
   if (breadcrumbEntity) {
     graph.push(breadcrumbEntity);
+  }
+
+  // Primary ImageObject Entities
+  if (page === "home") {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}/images/hero/hero-main.webp`,
+      url: `${baseUrl}/images/hero/hero-main.webp`,
+      caption: isEn ? "Kaha Block Paving Plant & Products" : "Pabrik & Produk Paving Block Kaha Block",
+    });
+  } else if (page === "productDetail" && product) {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}${product.image}`,
+      url: `${baseUrl}${product.image}`,
+      caption: product.imageAlt,
+    });
+  } else if (page === "projects") {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}/images/projects/kaha-block-dokumentasi-03.webp`,
+      url: `${baseUrl}/images/projects/kaha-block-dokumentasi-03.webp`,
+      caption: isEn ? "Paving Block Completed Field Results" : "Hasil Jadi Pemasangan Paving Block",
+    });
+  } else if (page === "projectsProduction") {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}/images/production/kaha-block-produksi-02.webp`,
+      url: `${baseUrl}/images/production/kaha-block-produksi-02.webp`,
+      caption: isEn ? "Hydraulic Process" : "Proses Hidrolik",
+    });
+  } else if (page === "videoWatch" && videoItem) {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}${videoItem.posterSrc}`,
+      url: `${baseUrl}${videoItem.posterSrc}`,
+      caption: isEn ? videoItem.title.en : videoItem.title.id,
+    });
   }
 
   // 5. Page-Specific Entities
@@ -579,7 +644,6 @@ export function generateStructuredDataGraph({
       },
       inLanguage: lang,
       articleSection: post.category,
-      image: `${baseUrl}/image-og.png`,
     };
 
     graph.push(articleEntity);

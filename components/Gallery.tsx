@@ -80,13 +80,25 @@ export default function Gallery({
 
     if (isEn) {
       if (isProd) {
+        if (index === 0) return "Kaha Block paving block curing area - factory photo 01";
+        if (index === 1) return "Kaha Block hydraulic press molding process - factory photo 02";
+        if (index === 25) return "Kaha Block finished paving blocks ready for dispatch - factory photo 26";
         return `Kaha Block paving block manufacturing process - factory photo ${numStr}`;
       }
+      if (index === 2) return "Paving Block Completed Field Results - Kaha Block project photo 03";
+      if (index === 23) return "Paving Block Installation Site Preparation - Kaha Block project photo 24";
+      if (index === 24) return "Kaha Block Truepave / Brick Paving Product - project photo 25";
       return `Kaha Block paving block installation services - project photo ${numStr}`;
     } else {
       if (isProd) {
+        if (index === 0) return "Area Pengeringan Paving Block Kaha Block - foto pabrik 01";
+        if (index === 1) return "Proses Hidrolik Pencetakan Paving Block Kaha Block - foto pabrik 02";
+        if (index === 25) return "Paving Block Siap Kirim Ke Lokasi Proyek - foto pabrik 26";
         return `Dokumentasi proses produksi paving block Kaha Block - foto pabrik ${numStr}`;
       }
+      if (index === 2) return "Hasil Jadi Pemasangan Paving Block - foto proyek 03";
+      if (index === 23) return "Persiapan Lahan Pemasangan Paving Block - foto proyek 24";
+      if (index === 24) return "Produk Paving Block Truepave / Bata Kaha Block - foto proyek 25";
       return `Dokumentasi jasa pemasangan paving block Kaha Block - foto proyek ${numStr}`;
     }
   };
