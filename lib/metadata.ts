@@ -113,14 +113,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   blog: {
     path: "/blog",
     id: {
-      title: "Blog & Pusat Panduan Paving Block | KAHA BLOCK",
+      title: "Info Harga & Artikel Paving Block | KAHA BLOCK",
       description:
-        "Panduan teknis, tips perencanaan area, mutu beton K-250, K-300, K-400, serta metode pemasangan dan perawatan paving block dari PT Kaha Sukses Mandiri.",
+        "Temukan informasi harga paving block, panduan memilih produk, mutu beton K-250, K-300, K-400, pemasangan, serta referensi proyek dari PT Kaha Sukses Mandiri.",
     },
     en: {
-      title: "Blog & Paving Block Guide Center | KAHA BLOCK",
+      title: "Paving Block Pricing Info & Articles | KAHA BLOCK",
       description:
-        "Technical guides, area planning tips, thickness comparisons, K-250, K-300, and K-400 concrete grades insights, and maintenance practices from PT Kaha Sukses Mandiri.",
+        "Explore paving block pricing information, product selection guides, concrete grades K-250/K-300/K-400, installation methods, and project references from Kaha Block.",
     },
   },
   jasaPemasangan: {

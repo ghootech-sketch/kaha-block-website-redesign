@@ -47,6 +47,7 @@ export interface BlogPost {
   excerpt: string;
   category: string;
   categorySlug:
+    | "pricing"
     | "guide"
     | "spec"
     | "standards"

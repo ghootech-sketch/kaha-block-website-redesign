@@ -161,7 +161,7 @@ export default async function BlogPostPage({
                 href={`/${currentLang}/blog`}
                 className="hover:text-white transition-colors"
               >
-                {isEn ? "Insights & Articles" : "Artikel & Wawasan"}
+                {isEn ? "Pricing Info & Articles" : "Info Harga & Artikel"}
               </Link>
               <ChevronRight className="w-3.5 h-3.5 text-white/50" />
               <span className="text-white font-semibold truncate max-w-xs sm:max-w-sm">

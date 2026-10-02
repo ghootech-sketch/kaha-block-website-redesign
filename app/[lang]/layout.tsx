@@ -1,6 +1,5 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import { Poppins, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { dictionaries, Locale, isValidLocale } from "@/lib/dictionary";
 import Navbar from "@/components/Navbar";
@@ -20,22 +19,6 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
 };
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-  display: "swap",
-  fallback: ["system-ui", "sans-serif"],
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-montserrat",
-  display: "swap",
-  fallback: ["system-ui", "sans-serif"],
-});
 
 export const dynamicParams = false;
 
@@ -58,7 +41,7 @@ export default async function LangLayout({
   const navDictionary = dictionaries[currentLang].nav;
 
   return (
-    <html lang={currentLang} className={`${poppins.variable} ${montserrat.variable}`}>
+    <html lang={currentLang}>
       <body suppressHydrationWarning className="min-h-screen flex flex-col bg-surface font-sans text-slate-900">
         <a
           href="#main-content"

@@ -272,14 +272,14 @@ export function generateStructuredDataGraph({
       items.push({
         "@type": "ListItem",
         position: 2,
-        name: isEn ? "Insights & Articles" : "Artikel & Wawasan",
+        name: isEn ? "Pricing Info & Articles" : "Info Harga & Artikel",
         item: canonicalUrl,
       });
     } else if (page === "blogPost" && post) {
       items.push({
         "@type": "ListItem",
         position: 2,
-        name: isEn ? "Insights & Articles" : "Artikel & Wawasan",
+        name: isEn ? "Pricing Info & Articles" : "Info Harga & Artikel",
         item: `${baseUrl}/${lang}/blog`,
       });
       items.push({
@@ -408,11 +408,11 @@ export function generateStructuredDataGraph({
     case "blog":
       pageType = "CollectionPage";
       pageName = isEn
-        ? "Paving Block Insights & Guides | Kaha Block"
-        : "Artikel & Panduan Teknis Paving Block | Kaha Block";
+        ? "Paving Block Pricing Info & Articles | Kaha Block"
+        : "Info Harga & Artikel Paving Block | Kaha Block";
       pageDescription = isEn
-        ? "Technical guides, thickness selection, concrete strength grades, and installation methods from Kaha Block."
-        : "Kumpulan artikel teknis, panduan ketebalan, mutu beton K-250, K-300, dan K-400, serta tips pemasangan paving block presisi.";
+        ? "Explore paving block pricing information, product selection guides, concrete grades, installation guidance, and project references from Kaha Block."
+        : "Temukan informasi harga paving block, panduan memilih produk, mutu beton, pemasangan, serta referensi kebutuhan proyek dari Kaha Block.";
       break;
     case "blogPost":
       if (post) {

@@ -53,23 +53,23 @@ export default async function BlogIndexPage({
   const featuredPost = allPosts[0];
   const remainingPosts = allPosts.slice(1);
 
-  // Group categories
+  // Topic categories
   const categories = isEn
     ? [
-        { id: "all", label: "All Insights" },
-        { id: "guide", label: "Guides & Selection" },
-        { id: "standards", label: "Quality & Concrete" },
-        { id: "technical", label: "Installation & Technical" },
-        { id: "application", label: "Specialized Applications" },
-        { id: "sustainability", label: "Sustainability & Drainage" },
+        { id: "all", label: "All Topics" },
+        { id: "pricing", label: "Price Update" },
+        { id: "guide", label: "Product Guides" },
+        { id: "technical", label: "Technical" },
+        { id: "installation", label: "Installation" },
+        { id: "application", label: "Projects" },
       ]
     : [
-        { id: "all", label: "Semua Artikel" },
-        { id: "guide", label: "Panduan & Pemilihan" },
-        { id: "standards", label: "Mutu & Standar" },
-        { id: "technical", label: "Pemasangan & Teknis" },
-        { id: "application", label: "Aplikasi Khusus" },
-        { id: "sustainability", label: "Keberlanjutan & Drainase" },
+        { id: "all", label: "Semua Topik" },
+        { id: "pricing", label: "Update Harga" },
+        { id: "guide", label: "Panduan Produk" },
+        { id: "technical", label: "Teknis" },
+        { id: "installation", label: "Pemasangan" },
+        { id: "application", label: "Proyek" },
       ];
 
   return (
@@ -95,7 +95,7 @@ export default async function BlogIndexPage({
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-white/50" />
           <span className="text-white font-semibold">
-            {isEn ? "Blog & Insights" : "Blog & Wawasan"}
+            {isEn ? "Pricing Info & Articles" : "Info Harga & Artikel"}
           </span>
         </nav>
       </PageHero>
@@ -191,24 +191,24 @@ export default async function BlogIndexPage({
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-4 border-b border-slate-200/80">
               <div>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
-                  {isEn ? "All Technical Articles" : "Daftar Artikel & Panduan"}
+                  {isEn ? "Articles & Pricing Guides" : "Daftar Artikel & Panduan Harga"}
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-500 mt-1 font-sans">
                   {isEn
-                    ? `Showing ${allPosts.length} comprehensive technical articles`
-                    : `Menampilkan ${allPosts.length} artikel wawasan teknis mendalam`}
+                    ? `Showing ${allPosts.length} comprehensive articles and guides`
+                    : `Menampilkan ${allPosts.length} artikel wawasan dan panduan harga`}
                 </p>
               </div>
 
               {/* Categories badge summary */}
               <div className="flex flex-wrap items-center gap-2">
-                <span className="text-xs text-slate-500 mr-1 font-medium">
-                  {isEn ? "Categories:" : "Kategori:"}
+                <span className="text-xs text-slate-500 mr-1 font-medium font-heading">
+                  {isEn ? "Topics:" : "Topik:"}
                 </span>
-                {categories.slice(1, 4).map((c) => (
+                {categories.slice(1).map((c) => (
                   <span
                     key={c.id}
-                    className="px-2.5 py-1 rounded-md text-[11px] font-medium bg-white border border-slate-200 text-slate-700 shadow-xs"
+                    className="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white border border-stone-200/60 text-slate-700 shadow-xs font-heading"
                   >
                     {c.label}
                   </span>
