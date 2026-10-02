@@ -8,7 +8,7 @@ export const article17Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-11.webp",
   imageAlt: "Dokumentasi proyek pengadaan paving block untuk kawasan Kabupaten Bogor oleh Kaha Block",
@@ -42,8 +42,8 @@ export const article17Id: BlogPost = {
       list: {
         title: "Pertimbangan Pengadaan Kawasan:",
         items: [
-          "**Jalan Utama Kawasan (Boulevard)**: Membutuhkan paving block tebal 8 cm dengan mutu beton K-300 atau K-400 untuk menahan beban sirkulasi bus penghubung dan truk suplai material bangunan.",
-          "**Jalan Lingkungan Klaster**: Menggunakan tebal 6 cm atau 8 cm dengan mutu beton K-250 atau K-300 yang efisien untuk akses mobil penghuni.",
+          "**Jalan Utama Kawasan (Boulevard)**: Pilihan paving block tebal 8 cm dengan mutu beton K-300 atau K-400 dapat dipertimbangkan untuk sirkulasi kendaraan kawasan yang lebih padat.",
+          "**Jalan Lingkungan Klaster**: Umumnya menggunakan tebal 6 cm atau 8 cm dengan mutu beton K-250 atau K-300 untuk akses mobil penghuni.",
           "**Jadwal Kirim Bertahap**: Mengatur pengiriman per klaster pembangunan agar material pracetak tidak mengendap lama di tepi jalan sebelum dipasang.",
         ],
       },
@@ -53,7 +53,7 @@ export const article17Id: BlogPost = {
       heading: "3. Jangkauan Pengiriman di Kawasan Kabupaten Bogor",
       paragraphs: [
         "Kabupaten Bogor memiliki rentang jarak antar-kecamatan yang cukup jauh, dari Cibinong dan Sentul hingga koridor Parung Panjang dan Cileungsi.",
-        "Menginformasikan titik lokasi proyek secara detail membantu tim logistik Kaha Block merencanakan jalur dan koordinasi pengiriman material agar armada angkut tiba sesuai jadwal pekerjaan.",
+        "Menginformasikan titik lokasi proyek secara detail membantu tim logistik Kaha Block merencanakan jalur dan koordinasi pengiriman armada material.",
       ],
     },
     {
@@ -61,7 +61,7 @@ export const article17Id: BlogPost = {
       heading: "4. Pengadaan Material Pabrik dan Dukungan Jasa Pasang",
       paragraphs: [
         "Kontraktor kawasan di Kabupaten Bogor dapat memesan material saja jika tim pelaksana proyek telah tersedia di lokasi.",
-        "Namun untuk pekerjaan jalan utama yang memerlukan kerataan elevasi dan daya kunci interlock yang tinggi, paket pekerjaan terpasang membantu menjamin pemadatan tanah dasar, pasir alas, dan balok paving dilakukan dengan prosedur konstruksi yang tepat.",
+        "Namun untuk pekerjaan jalan utama yang memerlukan kerataan elevasi dan daya kunci interlock yang tinggi, paket pekerjaan terpasang dapat mencakup pemadatan tanah dasar, pasir alas, dan penataan balok paving sesuai prosedur teknis.",
       ],
     },
     {
@@ -86,7 +86,7 @@ export const article17Id: BlogPost = {
     title: "Pokok Anggaran Paving Kabupaten Bogor",
     points: [
       "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
-      "Jalan utama kawasan perumahan umumnya menggunakan tebal 8 cm K-300/K-400; jalan klaster menggunakan 6–8 cm K-250/K-300.",
+      "Jalan utama kawasan perumahan sering mengevaluasi tebal 8 cm K-300/K-400; jalan klaster umumnya 6–8 cm K-250/K-300.",
       "Pengadaan skala luas didukung penjadwalan bertahap per klaster pembangunan.",
       "Kejelasan titik lokasi kecamatan di Kabupaten Bogor membantu optimalisasi rute armada logistik.",
     ],
@@ -108,7 +108,7 @@ export const article17Id: BlogPost = {
       },
       {
         question: "Berapa spesifikasi paving yang direkomendasikan untuk jalan utama kawasan di Kabupaten Bogor?",
-        answer: "Untuk jalan utama perumahan yang dilintasi kendaraan niaga dan bus klaster, direkomendasikan menggunakan paving block tebal 8 cm dengan mutu beton K-300 atau K-400.",
+        answer: "Untuk jalan utama perumahan yang dilintasi kendaraan niaga dan bus klaster, paving block tebal 8 cm dengan mutu beton K-300 atau K-400 sering dipertimbangkan.",
       },
     ],
   },
@@ -127,7 +127,7 @@ export const article17En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-11.webp",
   imageAlt: "Documentation of paving block procurement in Bogor Regency by Kaha Block",
@@ -161,8 +161,8 @@ export const article17En: BlogPost = {
       list: {
         title: "Township Infrastructure Considerations:",
         items: [
-          "**Main Township Boulevards**: Require 8 cm thickness with concrete grades K-300 or K-400 to support community shuttle buses and delivery vehicles.",
-          "**Cluster Neighborhood Streets**: Utilize 6 cm or 8 cm thickness with concrete grades K-250 or K-300 for resident passenger cars.",
+          "**Main Township Boulevards**: 8 cm thickness with concrete grades K-300 or K-400 can be evaluated for heavier community traffic.",
+          "**Cluster Neighborhood Streets**: Commonly consider 6 cm or 8 cm thickness with concrete grades K-250 or K-300 for resident passenger cars.",
           "**Staged Cluster Dispatches**: Coordinating deliveries in stages prevents materials from sitting exposed on road shoulders prior to placement.",
         ],
       },
@@ -172,7 +172,7 @@ export const article17En: BlogPost = {
       heading: "3. Delivery Coordination Across Bogor Regency",
       paragraphs: [
         "Distances between subdistricts in Bogor Regency are extensive, spanning from Cibinong and Sentul to Parung Panjang and Cileungsi.",
-        "Communicating exact project coordinates enables our logistics team to plan dispatch routes and offloading milestones efficiently, ensuring transport vehicles arrive on schedule.",
+        "Communicating exact project coordinates helps the logistics team plan dispatch routes and offloading arrangements.",
       ],
     },
     {
@@ -180,7 +180,7 @@ export const article17En: BlogPost = {
       heading: "4. Material Supply and Turnkey Installation Services",
       paragraphs: [
         "Contractors in Bogor Regency can order factory material delivery if their own civil site crews are available.",
-        "For main township roads that require rigorous surface leveling and joint interlock stability, turnkey installation ensures subgrade leveling, bedding sand spreading, and mechanical compaction are performed to engineering standards.",
+        "For main township roads that require rigorous surface leveling and joint interlock stability, a turnkey installation package can cover subgrade leveling, bedding sand spreading, and mechanical compaction performed to standard civil specifications.",
       ],
     },
     {
@@ -205,7 +205,7 @@ export const article17En: BlogPost = {
     title: "Bogor Regency Paving Key Points",
     points: [
       "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
-      "Main township boulevards typically require 8 cm K-300/K-400; cluster streets utilize 6–8 cm K-250/K-300.",
+      "Main township boulevards often evaluate 8 cm K-300/K-400; cluster streets commonly utilize 6–8 cm K-250/K-300.",
       "Large-scale procurements benefit from staged delivery schedules aligned with cluster construction milestones.",
       "Clear subdistrict coordinates in Bogor Regency help optimize logistics dispatch routes.",
     ],

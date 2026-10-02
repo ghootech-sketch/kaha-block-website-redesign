@@ -8,7 +8,7 @@ export const article11Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-07.webp",
   imageAlt: "Dokumentasi perkerasan paving block area perkotaan Jakarta oleh Kaha Block",
@@ -127,7 +127,7 @@ export const article11En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-07.webp",
   imageAlt: "Documentation of urban paving block installation in Jakarta by Kaha Block",
@@ -219,7 +219,7 @@ export const article11En: BlogPost = {
       },
       {
         question: "Why should access road conditions be shared when requesting a quotation?",
-        answer: "Street width details determine the appropriate transport vehicle size. Narrow neighborhood streets require compact delivery trucks to ensure safe, orderly offloading.",
+        answer: "Street width details determine the appropriate transport vehicle size. Narrow neighborhood streets require compact delivery trucks to support safe, orderly offloading.",
       },
       {
         question: "How much cutting allowance should be factored in for a Jakarta property?",

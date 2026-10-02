@@ -8,7 +8,7 @@ export const article18Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-13.webp",
   imageAlt: "Dokumentasi pengadaan paving block di kawasan industri dan perumahan Kabupaten Tangerang oleh Kaha Block",
@@ -37,8 +37,8 @@ export const article18Id: BlogPost = {
       id: "keunggulan-pabrik-cisauk-hidrolik",
       heading: "2. Fasilitas Pabrik Cisauk: Presisi Mesin Hidrolik Otomatis",
       paragraphs: [
-        "Fasilitas produksi PT Kaha Sukses Mandiri berlokasi di Cisauk, Kabupaten Tangerang, berdiri di atas lahan seluas 9.080 m² dan telah beroperasi sejak 2015. Fasilitas ini mengoperasikan mesin pres otomatis hidrolik untuk memastikan keseragaman dimensi balok dan kepadatan beton yang konsisten.",
-        "Bagi kontraktor di Kabupaten Tangerang, pengadaan material dari fasilitas resmi memastikan setiap pengiriman memenuhi toleransi dimensi yang seragam, sehingga penataan pola interlocking di lapangan berjalan lancar. Profil perusahaan dan katalog produk dapat dipelajari pada halaman [tentang kami](/id/about) serta [katalog produk](/id/products).",
+        "Fasilitas produksi PT Kaha Sukses Mandiri berlokasi di Cisauk, Kabupaten Tangerang, berdiri di atas lahan seluas 9.080 m² dan telah beroperasi sejak 2015. Fasilitas ini mengoperasikan mesin pres otomatis hidrolik untuk menghasilkan keseragaman dimensi balok dan kepadatan beton yang terjaga.",
+        "Bagi kontraktor di Kabupaten Tangerang, pengadaan material dari fasilitas resmi memberikan akses ke unit beton dengan toleransi dimensi yang konsisten untuk mempermudah penataan pola interlocking di lapangan. Profil perusahaan dan katalog produk dapat dipelajari pada halaman [tentang kami](/id/about) serta [katalog produk](/id/products).",
       ],
     },
     {
@@ -125,7 +125,7 @@ export const article18En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-13.webp",
   imageAlt: "Documentation of paving block procurement in industrial and residential zones of Tangerang Regency by Kaha Block",
@@ -154,8 +154,8 @@ export const article18En: BlogPost = {
       id: "cisauk-hydraulic-press-manufacturing",
       heading: "2. The Cisauk Production Plant: Automated Hydraulic Press Precision",
       paragraphs: [
-        "PT Kaha Sukses Mandiri operates an established 9,080 m² manufacturing plant in Cisauk, Tangerang Regency, active since 2015. The facility utilizes automated hydraulic compression equipment to ensure consistent block density and tight dimensional tolerances.",
-        "For civil contractors in Tangerang Regency, sourcing directly from an established plant ensures consistent unit geometry that facilitates rapid, uniform interlocking on site. Corporate background and product specifications can be explored on our [about us](/en/about) page and in our [product catalog](/en/products).",
+        "PT Kaha Sukses Mandiri operates an established 9,080 m² manufacturing plant in Cisauk, Tangerang Regency, active since 2015. The facility utilizes automated hydraulic compression equipment to support consistent block density and tight dimensional tolerances.",
+        "For civil contractors in Tangerang Regency, sourcing directly from an established plant provides consistent unit geometry that supports orderly, uniform interlocking on site. Corporate background and product specifications can be explored on our [about us](/en/about) page and in our [product catalog](/en/products).",
       ],
     },
     {
@@ -177,7 +177,7 @@ export const article18En: BlogPost = {
       heading: "4. Logistics Planning and Access Coordination",
       paragraphs: [
         "While the production plant is located in Tangerang Regency, transit distances to outer subdistricts such as Teluknaga or Western Balaraja require coordinated transport dispatching.",
-        "Clear communication regarding entry road dimensions and site offloading locations helps coordinate delivery planning and site access, ensuring the transport fleet aligns with local bridge capacities and gate clearances.",
+        "Clear communication regarding entry road dimensions and site offloading locations helps coordinate delivery planning and site access, aligning transport vehicles with local bridge capacities and gate clearances.",
       ],
     },
     {

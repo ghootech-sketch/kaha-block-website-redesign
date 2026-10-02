@@ -8,7 +8,7 @@ export const article15Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-14.webp",
   imageAlt: "Dokumentasi perkerasan paving block jalan perumahan dan halaman hunian di Kota Depok",
@@ -53,8 +53,8 @@ export const article15Id: BlogPost = {
       heading: "3. Memilih Ketebalan yang Tepat: Tebal 6 cm atau 8 cm?",
       paragraphs: [
         "Salah satu keputusan penting bagi konsumen di Depok adalah memilih ketebalan balok beton yang pas agar anggaran efisien namun perkerasan tetap kokoh:",
-        "**Ketebalan 6 cm (Mutu K-250)**: Sangat ideal untuk halaman rumah, carport garasi mobil keluarga, teras santai, dan jalur pedestrian pejalan kaki. Menahan beban mobil pribadi dengan efisiensi biaya yang baik.",
-        "**Ketebalan 8 cm (Mutu K-300)**: Direkomendasikan untuk jalan bersama klaster townhouse, jalur akses mobil sampah lingkungan, atau pelataran parkir ruko yang sering dilintasi kendaraan niaga ringan.",
+        "**Ketebalan 6 cm (Mutu K-250)**: Umumnya dipertimbangkan untuk halaman rumah, carport garasi mobil keluarga, teras santai, dan jalur pedestrian pejalan kaki.",
+        "**Ketebalan 8 cm (Mutu K-300)**: Sering dievaluasi untuk jalan bersama klaster townhouse, jalur akses kendaraan lingkungan, atau pelataran parkir ruko.",
       ],
     },
     {
@@ -62,7 +62,7 @@ export const article15Id: BlogPost = {
       heading: "4. Beli Material Saja atau Ambil Paket Pemasangan?",
       paragraphs: [
         "Paving block yang kuat membutuhkan lapisan dasar tanah (subgrade) yang dipadatkan dengan benar serta pasir alas (bedding sand) yang rata. Jika dipasang di atas tanah yang masih gembur tanpa pemadatan mesin, paving akan mudah bergelombang setelah terkena hujan deras.",
-        "Jika Anda telah memiliki tukang langganan, Anda cukup memesan material pabrik saja. Namun jika menginginkan hasil yang rata dan bergaransi kerapian, memilih paket pengadaan beserta jasa pemasangan menghemat waktu karena tim aplikator membawa stamper compactor sendiri.",
+        "Jika Anda telah memiliki tukang langganan, Anda cukup memesan material pabrik saja. Namun jika menginginkan dukungan pengerjaan, paket pemasangan dapat mencakup penyiapan pasir alas dan pemadatan compactor.",
       ],
     },
     {
@@ -86,7 +86,7 @@ export const article15Id: BlogPost = {
     title: "Pokok Anggaran Paving Kota Depok",
     points: [
       "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar pengadaan material pracetak pabrik.",
-      "Tebal 6 cm (K-250) cocok untuk carport dan halaman rumah; tebal 8 cm (K-300) untuk jalan klaster perumahan.",
+      "Tebal 6 cm (K-250) umum untuk carport hunian; tebal 8 cm (K-300) sering dievaluasi untuk jalan klaster perumahan.",
       "Hitung luas bersih dan tambahkan 3–5% cadangan pemotongan tepi.",
       "Menyampaikan lokasi kecamatan dan peruntukan beban membantu tim menyusun estimasi biaya yang sesuai.",
     ],
@@ -127,7 +127,7 @@ export const article15En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-14.webp",
   imageAlt: "Documentation of residential paving block driveway and cluster roads in Depok City",
@@ -172,8 +172,8 @@ export const article15En: BlogPost = {
       heading: "3. Choosing the Appropriate Thickness: 6 cm or 8 cm?",
       paragraphs: [
         "Selecting the correct block thickness balances budget optimization with long-term pavement durability:",
-        "**6 cm Thickness (Grade K-250)**: Ideal for private residential carports, garden pathways, and pedestrian courtyards. It supports passenger family cars reliably at a cost-effective material volume.",
-        "**8 cm Thickness (Grade K-300)**: Recommended for shared cluster access streets, waste collection truck routes, or retail commercial plazas supporting recurring daily delivery vehicles.",
+        "**6 cm Thickness (Grade K-250)**: Commonly considered for private residential carports, garden pathways, and pedestrian courtyards with passenger family cars.",
+        "**8 cm Thickness (Grade K-300)**: Frequently evaluated for shared cluster access streets, neighborhood utility routes, or retail commercial plazas.",
       ],
     },
     {
@@ -181,7 +181,7 @@ export const article15En: BlogPost = {
       heading: "4. Material Supply Only vs Turnkey Installation Services",
       paragraphs: [
         "Interlocking pavement stability depends directly on compacted subgrade preparation and properly leveled bedding sand. If laid over uncompacted soil, paving blocks can develop uneven depressions after heavy monsoon rains.",
-        "If you already have trusted site labor, direct material supply is sufficient. For guaranteed surface alignment and proper mechanical compaction, a turnkey installation package saves time and ensures consistent civil standards.",
+        "If you already have trusted site labor, direct material supply is sufficient. If installation support is required, the installation package can cover bedding preparation, mechanical compaction, and alignment of the finished surface.",
       ],
     },
     {
@@ -205,7 +205,7 @@ export const article15En: BlogPost = {
     title: "Depok Paving Key Points",
     points: [
       "The starting price of Rp80,000/m²* provides an initial factory-direct benchmark prior to volume and specification tailoring.",
-      "6 cm thickness (K-250) is designed for carports and homes; 8 cm (K-300) is specified for shared cluster streets.",
+      "6 cm thickness (K-250) is common for residential carports; 8 cm (K-300) is frequently evaluated for cluster streets.",
       "Calculate net square meters and include a 3–5% cutting allowance for edge trimming.",
       "Sharing your specific subdistrict and traffic demands helps formulate a prompt, accurate quotation.",
     ],

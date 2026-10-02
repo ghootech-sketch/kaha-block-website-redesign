@@ -8,7 +8,7 @@ export const article10Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-06.webp",
   imageAlt: "Dokumentasi pengadaan dan pemasangan paving block proyek Jabodetabek Kaha Block",
@@ -89,7 +89,7 @@ export const article10Id: BlogPost = {
     title: "Pokok Pedoman Harga Jabodetabek",
     points: [
       "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pabrik sebelum penyesuaian volume dan spesifikasi.",
-      "Kuat tekan beton (K-250, K-300, K-400) dan ketebalan (6, 8, 10 cm) wajib disesuaikan dengan jenis kendaraan yang melintas.",
+      "Kuat tekan beton (K-250, K-300, K-400) dan ketebalan (6, 8, 10 cm) perlu disesuaikan dengan jenis kendaraan yang melintas.",
       "Penawaran resmi memerlukan kejelasan luas area, titik pengiriman Jabodetabek, dan pilihan skema suplai atau terpasang.",
       "Evaluasi penawaran harus mencakup mutu produk, elemen kanstein pembatas, dan kesiapan akses bongkar di lapangan.",
     ],
@@ -106,7 +106,7 @@ export const article10Id: BlogPost = {
         answer: "Tidak. Angka dasar tersebut berlaku untuk pengadaan material paving saja. Layanan pemasangan terpadu dihitung terpisah tergantung kondisi tanah, kebutuhan pasir alas, dan luasan area kerja.",
       },
       {
-        question: "Informasi apa saja yang wajib disiapkan sebelum meminta penawaran harga resmi?",
+        question: "Informasi apa saja yang perlu disiapkan sebelum meminta penawaran harga resmi?",
         answer: "Siapkan perkiraan luas area (m²), lokasi proyek di Jabodetabek, jenis beban kendaraan yang akan melintas, serta pilihan apakah membutuhkan suplai material saja atau paket lengkap pemasangan.",
       },
       {
@@ -130,7 +130,7 @@ export const article10En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-06.webp",
   imageAlt: "Documentation of paving block procurement and installation in Greater Jakarta by Kaha Block",
@@ -185,7 +185,7 @@ export const article10En: BlogPost = {
       id: "project-quotation-checklist",
       heading: "4. Information Checklist Before Requesting a Quotation",
       paragraphs: [
-        "To ensure the sales engineering team can issue an accurate, transparent proposal, prepare the following project data:",
+        "To help our sales engineering team issue an accurate, transparent proposal, prepare the following project data:",
       ],
       list: {
         title: "Project Preparation Checklist:",
@@ -211,7 +211,7 @@ export const article10En: BlogPost = {
     title: "Greater Jakarta Pricing Key Points",
     points: [
       "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to order volume and specification adjustments.",
-      "Concrete strength grades (K-250 to K-400) and thickness (6, 8, 10 cm) must align with planned vehicular axle weights.",
+      "Concrete strength grades (K-250 to K-400) and thickness (6, 8, 10 cm) are selected to correspond with planned vehicular axle weights.",
       "Accurate proposals require clear square meter measurements, site location in Greater Jakarta, and scope definition.",
       "Thorough evaluation must assess product compressive ratings, curb restraints, and site offloading logistics.",
     ],
@@ -233,7 +233,7 @@ export const article10En: BlogPost = {
       },
       {
         question: "How do I determine whether my project needs 6 cm, 8 cm, or 10 cm thickness?",
-        answer: "A thickness of 6 cm is suitable for pedestrian pathways and residential carports, 8 cm is standard for residential cluster roads and commercial parking areas, and 10 cm is specified for heavy industrial logistics corridors.",
+        answer: "A thickness of 6 cm is suitable for pedestrian pathways and residential carports, 8 cm is standard for residential cluster roads and commercial parking areas, and 10 cm is commonly evaluated for heavy industrial logistics corridors.",
       },
     ],
   },

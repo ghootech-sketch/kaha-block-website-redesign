@@ -8,7 +8,7 @@ export const article13Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-10.webp",
   imageAlt: "Dokumentasi pemasangan paving block untuk perumahan dan area komersial di Kota Bekasi",
@@ -42,8 +42,8 @@ export const article13Id: BlogPost = {
       list: {
         title: "Kategori Penggunaan di Kota Bekasi:",
         items: [
-          "**Pelataran Parkir Ruko Komersial**: Memerlukan paving block tebal 8 cm dengan mutu beton K-300 agar tahan terhadap putaran roda kendaraan niaga ringan dan sirkulasi mobil pengunjung.",
-          "**Jalan Lingkungan dan Halaman Hunian**: Menggunakan tebal 6 cm atau 8 cm dengan mutu beton K-250, memberikan perkerasan yang kokoh dengan tampilan rapi untuk kendaraan pribadi.",
+          "**Pelataran Parkir Ruko Komersial**: Paving block tebal 8 cm dengan mutu beton K-300 sering dipertimbangkan agar tahan terhadap putaran roda kendaraan niaga ringan dan sirkulasi mobil pengunjung.",
+          "**Jalan Lingkungan dan Halaman Hunian**: Ketebalan 6 cm atau 8 cm dengan mutu beton K-250 umumnya dievaluasi untuk kendaraan pribadi.",
         ],
       },
     },
@@ -60,7 +60,7 @@ export const article13Id: BlogPost = {
       heading: "4. Menentukan Kebutuhan: Suplai Saja atau Berikut Pemasangan",
       paragraphs: [
         "Pemilik proyek di Kota Bekasi dapat menentukan skema kerja sesuai ketersediaan tenaga kerja di lapangan:",
-        "Jika Anda telah memiliki mandor atau tukang batu sendiri, opsi pemesanan material saja dapat dipilih. Namun jika menginginkan penataan yang rata dengan kemiringan drainase yang presisi, paket suplai beserta pemasangan memastikan perataan pasir alas dan pemadatan compactor ditangani dengan standar teknis yang baik.",
+        "Jika Anda telah memiliki mandor atau tukang batu sendiri, opsi pemesanan material saja dapat dipilih. Namun jika membutuhkan dukungan teknis, paket pemasangan dapat mencakup perataan pasir alas dan pemadatan compactor.",
       ],
     },
     {
@@ -125,7 +125,7 @@ export const article13En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-10.webp",
   imageAlt: "Documentation of paving block installation for residential and commercial spaces in Bekasi City",
@@ -159,8 +159,8 @@ export const article13En: BlogPost = {
       list: {
         title: "Common Urban Applications in Bekasi City:",
         items: [
-          "**Commercial Shop-House Parking**: Requires 8 cm thickness with concrete grade K-300 to withstand recurring light commercial traffic and customer vehicle turning forces.",
-          "**Residential Neighborhood Streets and Driveways**: Utilizes 6 cm or 8 cm thickness with grade K-250, providing a neat, durable surface for private passenger cars.",
+          "**Commercial Shop-House Parking**: Commonly considers 8 cm thickness with concrete grade K-300 to withstand recurring light commercial traffic and customer vehicle turning forces.",
+          "**Residential Neighborhood Streets and Driveways**: Commonly evaluates 6 cm or 8 cm thickness with grade K-250 for private passenger cars.",
         ],
       },
     },
@@ -177,14 +177,14 @@ export const article13En: BlogPost = {
       heading: "4. Scope Choice: Material Supply Only vs Turnkey Installation",
       paragraphs: [
         "Project owners in Bekasi City can tailor the contract scope to their site capabilities:",
-        "If you already retain masonry labor, material-only supply is suitable. However, for guaranteed surface leveling, correct bedding sand depth, and drainage slope alignment, turnkey installation ensures work is executed with specialized plate compactors.",
+        "If you already retain masonry labor, material-only supply is suitable. If installation support is required, the turnkey option can include bedding preparation, mechanical compaction, and surface-leveling work.",
       ],
     },
     {
       id: "bekasi-city-quote-inputs",
       heading: "5. Information Checklist for Bekasi City Quotation Requests",
       paragraphs: [
-        "To ensure a fast and accurate proposal, prepare four core details:",
+        "To facilitate a fast and accurate proposal, prepare four core details:",
       ],
       list: {
         title: "Bekasi City Project Details:",

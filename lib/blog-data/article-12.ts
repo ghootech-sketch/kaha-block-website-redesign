@@ -8,7 +8,7 @@ export const article12Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-08.webp",
   imageAlt: "Dokumentasi perkerasan jalan perumahan dan komersial di Tangerang oleh Kaha Block",
@@ -50,9 +50,9 @@ export const article12Id: BlogPost = {
       list: {
         title: "Kategori Peruntukan Beban:",
         items: [
-          "**Jalan Klaster dan Jalur Lingkungan**: Menggunakan ketebalan 6 cm atau 8 cm dengan mutu beton K-250 atau K-300 untuk lalu lintas mobil pribadi dan kendaraan utilitas ringan.",
-          "**Pelataran Parkir Ruko dan Koridor Usaha**: Menggunakan ketebalan 8 cm dengan mutu beton K-300 untuk menahan beban sirkulasi kendaraan niaga harian secara konsisten.",
-          "**Jalur Bongkar Muat dan Logistik**: Membutuhkan ketebalan 8 cm atau 10 cm dengan mutu beton K-400 untuk menahan tekanan gandar truk barang.",
+          "**Jalan Klaster dan Jalur Lingkungan**: Umumnya mempertimbangkan ketebalan 6 cm atau 8 cm dengan mutu beton K-250 atau K-300 untuk lalu lintas mobil pribadi dan kendaraan utilitas ringan.",
+          "**Pelataran Parkir Ruko dan Koridor Usaha**: Sering mengevaluasi ketebalan 8 cm dengan mutu beton K-300 untuk sirkulasi kendaraan niaga harian.",
+          "**Jalur Bongkar Muat dan Logistik**: Pilihan ketebalan 8 cm atau 10 cm dengan mutu beton K-400 dapat dipertimbangkan berdasarkan beban gandar kendaraan yang direncanakan.",
         ],
       },
     },
@@ -61,7 +61,7 @@ export const article12Id: BlogPost = {
       heading: "4. Mengapa Jarak Dekat Tetap Memerlukan Rincian Titik Proyek",
       paragraphs: [
         "Meskipun pengiriman berada di wilayah Tangerang, kalkulasi resmi tetap memperhitungkan volume pesanan dan kemudahan akses jalan ke titik penurunan.",
-        "Jalan lingkungan di kawasan perumahan mandiri sering menerapkan pembatasan tonase atau portal lingkungan. Mengetahui batasan tersebut sejak awal membantu tim penjadwalan armada menentukan jenis truk yang paling efisien.",
+        "Jika lokasi proyek memiliki batas akses kendaraan, portal, atau ruang bongkar yang terbatas, informasi tersebut perlu disampaikan saat meminta penawaran.",
       ],
     },
     {
@@ -126,7 +126,7 @@ export const article12En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-08.webp",
   imageAlt: "Documentation of residential and commercial paving block projects in Tangerang by Kaha Block",
@@ -168,9 +168,9 @@ export const article12En: BlogPost = {
       list: {
         title: "Pavement Application Categories:",
         items: [
-          "**Residential Cluster Streets and Driveways**: 6 cm or 8 cm thickness with concrete grades K-250 or K-300 for private cars and light utility vans.",
-          "**Commercial Parking Plazas and Shop-House Frontages**: 8 cm thickness with concrete grade K-300 to sustain recurring daily commercial traffic.",
-          "**Freight Access Corridors and Logistics Yards**: 8 cm or 10 cm thickness with grade K-400 engineered for heavy wheel axle loads.",
+          "**Residential Cluster Streets and Driveways**: Commonly evaluate 6 cm or 8 cm thickness with concrete grades K-250 or K-300 for private cars and light utility vans.",
+          "**Commercial Parking Plazas and Shop-House Frontages**: Frequently consider 8 cm thickness with concrete grade K-300 for daily commercial traffic.",
+          "**Freight Access Corridors and Logistics Yards**: Thickness options of 8 cm or 10 cm with grade K-400 can be evaluated based on anticipated axle loads.",
         ],
       },
     },
@@ -179,7 +179,7 @@ export const article12En: BlogPost = {
       heading: "4. Why Precise Site Details Matter Despite Short Haul Distances",
       paragraphs: [
         "Even when dispatch origins are located nearby, logistics calculations account for order volume and site access conditions.",
-        "Residential township gates often enforce height limits or weight restrictions. Knowing these site constraints early allows our logistics team to deploy suitable transport vehicles.",
+        "If the project site has vehicle-access limits, entrance barriers, or restricted offloading space, include those details when requesting a quotation.",
       ],
     },
     {
@@ -221,7 +221,7 @@ export const article12En: BlogPost = {
       },
       {
         question: "Why are specific site details needed even for local deliveries in Tangerang?",
-        answer: "Street width, neighborhood portal restrictions, and available offloading space dictate vehicle sizing and ensure safe, orderly material delivery.",
+        answer: "Street width, neighborhood portal restrictions, and available offloading space dictate vehicle sizing and support safe, orderly material delivery.",
       },
       {
         question: "Does Kaha Block provide turnkey supply and installation services in Tangerang?",

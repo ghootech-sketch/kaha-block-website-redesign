@@ -8,7 +8,7 @@ export const article14Id: BlogPost = {
   category: "Update Harga",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 menit baca",
   image: "/images/projects/kaha-block-dokumentasi-12.webp",
   imageAlt: "Dokumentasi pengadaan paving block kawasan industri dan pergudangan Kabupaten Bekasi oleh Kaha Block",
@@ -17,7 +17,7 @@ export const article14Id: BlogPost = {
   intro: [
     "Untuk proyek skala kawasan di Kabupaten Bekasi, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Pada pengadaan volume besar di sentra industri dan logistik, kalkulasi penawaran menuntut perencanaan bertahap yang matang.",
     "Kabupaten Bekasi mencakup koridor industri dan pergudangan yang sangat luas, meliputi Cikarang, Cibitung, Tambun, hingga kawasan manufaktur di sekitarnya. Karakteristik proyek di wilayah ini didominasi oleh perkerasan heavy duty yang dirancang menahan lalu lintas armada logistik bermuatan tinggi.",
-    "Artikel ini mengulas bagaimana volume pesanan skala besar dikalkulasi, spesifikasi mutu beton apa yang wajib disiapkan untuk area industri, serta bagaimana penjadwalan pengiriman bertahap (phased delivery) diatur agar tidak menimbulkan penumpukan material di lokasi kerja.",
+    "Artikel ini mengulas bagaimana volume pesanan skala besar dikalkulasi, spesifikasi mutu beton apa yang disarankan untuk area industri, serta bagaimana penjadwalan pengiriman bertahap (phased delivery) diatur agar tidak menimbulkan penumpukan material di lokasi kerja.",
   ],
   sections: [
     {
@@ -42,26 +42,26 @@ export const article14Id: BlogPost = {
       list: {
         title: "Spesifikasi Berdasarkan Fungsi Area:",
         items: [
-          "**Jalur Manuver Truk Logistik dan Kontainer**: Menggunakan paving block tebal 10 cm dengan mutu beton K-400 agar mampu menahan beban statis dan dinamis roda berat secara berulang.",
-          "**Pelataran Parkir Truk dan Area Bongkar Muat**: Menggunakan tebal 8 cm atau 10 cm dengan mutu beton K-300 atau K-400 untuk mencegah keretakan akibat getaran armada niaga.",
-          "**Jalan Akses Lingkungan Kawasan**: Menggunakan tebal 8 cm dengan mutu beton K-300 untuk kendaraan operasional harian kawasan industri.",
+          "**Jalur Manuver Truk Logistik dan Kontainer**: Opsi paving block tebal 10 cm dengan mutu beton K-400 dapat dipertimbangkan untuk perkerasan dengan frekuensi beban berat yang tinggi.",
+          "**Pelataran Parkir Truk dan Area Bongkar Muat**: Tebal 8 cm atau 10 cm dengan mutu beton K-300 atau K-400 sering dievaluasi untuk area penumpukan muatan.",
+          "**Jalan Akses Lingkungan Kawasan**: Tebal 8 cm dengan mutu beton K-300 dapat menjadi salah satu opsi untuk jalur operasional harian.",
         ],
       },
     },
     {
       id: "pengiriman-bertahap-phased-delivery",
-      heading: "3. Manajemen Pengiriman Bertahap (Phased Delivery)",
+      heading: "3. Perencanaan Pengiriman Berdasarkan Tahapan Pekerjaan",
       paragraphs: [
-        "Pada pengadaan paving block berskala ribuan meter persegi, mendatangkan seluruh material sekaligus sering kali menimbulkan masalah keterbatasan ruang penyimpanan dan menghambat manuver alat berat di lapangan.",
-        "Kaha Block menyediakan koordinasi pengiriman bertahap sesuai progres penghamparan di lapangan. Material dikirim secara terjadwal per zona pekerjaan, sehingga palet paving dapat langsung ditata tanpa risiko kerusakan akibat perpindahan ganda (double handling).",
+        "Pada pengadaan paving block berskala besar, mendatangkan seluruh material sekaligus dapat membebani ruang penyimpanan sementara di lapangan.",
+        "Untuk proyek dengan volume besar, kebutuhan pengiriman dapat direncanakan berdasarkan tahapan pekerjaan dan kondisi penerimaan material di lokasi.",
       ],
     },
     {
       id: "faktor-logistik-dan-gerbang-pabrik",
-      heading: "4. Informasi Akses dan Koordinat Gerbang yang Menentukan Penawaran",
+      heading: "4. Informasi Akses dan Koordinat Lokasi Proyek",
       paragraphs: [
-        "Kawasan industri di Cikarang, Cibitung, dan sekitarnya memiliki aturan gerbang akses, izin masuk kendaraan berat, dan jam operasional penurunan barang yang ketat.",
-        "Menginformasikan titik koordinat gerbang proyek (gate number), batasan jam kerja, serta ketersediaan forklift atau crane untuk menurunkan palet membantu tim logistik menyusun penawaran biaya angkut yang transparan.",
+        "Informasi mengenai akses masuk kawasan, titik bongkar, dan koordinat lokasi membantu penyusunan rencana pengiriman.",
+        "Menyampaikan kejelasan titik penurunan dan ketersediaan alat bantu bongkar membantu tim logistik merencanakan pengiriman secara lebih terarah.",
       ],
     },
     {
@@ -86,9 +86,9 @@ export const article14Id: BlogPost = {
     title: "Pokok Pengadaan Paving Kabupaten Bekasi",
     points: [
       "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
-      "Kawasan industri dan pergudangan umumnya mensyaratkan mutu K-300 hingga K-400 dengan ketebalan 8 cm atau 10 cm.",
-      "Pengadaan volume besar didukung skema pengiriman bertahap (phased delivery) sesuai progres kerja lapangan.",
-      "Informasikan izin akses gerbang kawasan, jadwal kerja, dan spesifikasi beban untuk mendapatkan penawaran resmi yang terperinci.",
+      "Kawasan industri dan pergudangan umumnya mengevaluasi mutu K-300 hingga K-400 dengan ketebalan 8 cm atau 10 cm.",
+      "Pengadaan volume besar dapat direncanakan pengirimannya sesuai tahapan pekerjaan di lokasi.",
+      "Informasikan akses masuk, titik bongkar, dan spesifikasi beban untuk mendapatkan penawaran resmi yang terperinci.",
     ],
   },
   faq: {
@@ -96,15 +96,15 @@ export const article14Id: BlogPost = {
     items: [
       {
         question: "Informasi apa yang dibutuhkan untuk menyusun penawaran paving volume besar di Kabupaten Bekasi?",
-        answer: "Siapkan total volume luasan (m²), target mutu kuat tekan beton (K-300 atau K-400), ketebalan balok, lokasi kawasan industri di Kabupaten Bekasi, dan jadwal pengiriman yang direncanakan.",
+        answer: "Siapkan total volume luasan (m²), perkiraan mutu beton dan ketebalan yang dipertimbangkan, lokasi proyek di Kabupaten Bekasi, dan rencana tahapan penerimaan material.",
       },
       {
-        question: "Apakah Kaha Block melayani pengiriman bertahap untuk proyek kawasan industri?",
-        answer: "Ya, pengadaan skala besar dapat dijadwalkan secara bertahap per zona pekerjaan untuk menghindari penumpukan material di lokasi proyek.",
+        question: "Apakah pengiriman material volume besar dapat disesuaikan dengan tahapan pekerjaan?",
+        answer: "Ya, jadwal pengiriman dapat dikoordinasikan secara bertahap menyesuaikan kesiapan area penataan dan kapasitas penerimaan di lokasi proyek.",
       },
       {
-        question: "Berapa mutu kuat tekan beton yang disarankan untuk area manuver truk dan gudang di Cikarang/Cibitung?",
-        answer: "Untuk area manuver truk tronton, kontainer, dan forklift berat, direkomendasikan menggunakan paving block mutu K-300 atau K-400 dengan ketebalan 8 cm atau 10 cm.",
+        question: "Mutu kuat tekan apa yang umum dipertimbangkan untuk area muatan berat di Cikarang/Cibitung?",
+        answer: "Untuk area dengan lalu lintas kendaraan berat dan logistik, mutu beton K-300 atau K-400 dengan ketebalan 8 cm atau 10 cm sering dievaluasi berdasarkan perkiraan beban gandar.",
       },
       {
         question: "Apakah penawaran harga sudah mencakup penurunan material dengan crane atau forklift?",
@@ -127,7 +127,7 @@ export const article14En: BlogPost = {
   category: "Price Update",
   categorySlug: "pricing",
   publishedAt: "2026-10-02",
-  updatedAt: "2026-10-02",
+  updatedAt: "2026-10-03",
   readingTime: "7 min read",
   image: "/images/projects/kaha-block-dokumentasi-12.webp",
   imageAlt: "Documentation of industrial and warehouse paving block procurement in Bekasi Regency by Kaha Block",
@@ -136,7 +136,7 @@ export const article14En: BlogPost = {
   intro: [
     "For large-scale infrastructure projects across Bekasi Regency, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). In major manufacturing and logistics corridors, volume procurement requires structured phased planning.",
     "Bekasi Regency encompasses expansive industrial zones across Cikarang, Cibitung, and Tambun. Pavement projects throughout this area primarily demand heavy-duty surfaces engineered to sustain high wheel axle loads from commercial freight fleets.",
-    "This guide examines how large-scale orders are calculated, which compressive concrete grades are mandatory for industrial applications, and how staged dispatch schedules prevent material congestion on active construction sites.",
+    "This guide examines how large-scale orders are calculated, which compressive concrete grades are commonly specified for industrial applications, and how staged dispatch schedules prevent material congestion on active construction sites.",
   ],
   sections: [
     {
@@ -161,26 +161,26 @@ export const article14En: BlogPost = {
       list: {
         title: "Industrial Application Criteria:",
         items: [
-          "**Logistics Truck Maneuvering and Container Aprons**: Requires 10 cm thickness with concrete grade K-400 to support recurring static and dynamic heavy freight axle loads.",
-          "**Trailer Parking Plazas and Loading Docks**: Utilizes 8 cm or 10 cm thickness with concrete grades K-300 or K-400 to resist surface rutting and vibration.",
-          "**Industrial Estate Secondary Access Roads**: Specified at 8 cm thickness with concrete grade K-300 for daily operational utility vehicles.",
+          "**Logistics Truck Maneuvering and Container Aprons**: 10 cm thickness with concrete grade K-400 may be considered for areas subjected to recurring heavy wheel loads.",
+          "**Trailer Parking Plazas and Loading Docks**: 8 cm or 10 cm thickness with concrete grades K-300 or K-400 is commonly evaluated for staging zones.",
+          "**Industrial Estate Secondary Access Roads**: 8 cm thickness with concrete grade K-300 is frequently considered for operational utility traffic.",
         ],
       },
     },
     {
       id: "phased-delivery-management",
-      heading: "3. Staged Delivery Management (Phased Dispatch)",
+      heading: "3. Delivery Planning Based on Site Work Stages",
       paragraphs: [
-        "When procuring several thousand square meters of modular paving blocks, delivering the entire volume simultaneously can crowd available staging space and obstruct heavy machinery movement.",
-        "Kaha Block coordinates scheduled phased deliveries aligned with laying milestones. Palletized materials arrive on site by pre-agreed zones, allowing units to be laid immediately without the risk of double-handling damage.",
+        "When procuring large volumes of modular paving blocks, delivering the entire volume at once can crowd available staging space on site.",
+        "For larger projects, delivery requirements can be planned around project stages and the site's ability to receive materials.",
       ],
     },
     {
       id: "gate-clearances-and-offloading",
-      heading: "4. Site Access Coordinates and Industrial Gate Protocol",
+      heading: "4. Access Details and Project Coordinates",
       paragraphs: [
-        "Manufacturing zones across Cikarang and Cibitung enforce strict security gate procedures, heavy vehicle time slots, and formal offloading protocols.",
-        "Sharing exact gate numbers, site operational hours, and the availability of on-site forklifts or cranes allows our logistics team to calculate accurate, transparent freight and handling arrangements.",
+        "Access details, offloading points, and exact project coordinates help with delivery planning.",
+        "Providing clear receiving points and details regarding offloading equipment helps the logistics team organize transport arrangements effectively.",
       ],
     },
     {
@@ -205,9 +205,9 @@ export const article14En: BlogPost = {
     title: "Bekasi Regency Paving Key Points",
     points: [
       "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
-      "Industrial and logistics yards generally require concrete grades K-300 to K-400 with 8 cm or 10 cm thickness.",
-      "Large-scale procurements are supported by staged phased delivery schedules matched to site progress.",
-      "Provide gate coordinates, receiving hours, and load requirements for an itemized project proposal.",
+      "Industrial and logistics yards generally evaluate concrete grades K-300 to K-400 with 8 cm or 10 cm thickness.",
+      "Large-scale procurements can plan delivery schedules around project stages and receiving capacity.",
+      "Provide access details, offloading points, and load requirements for an itemized project proposal.",
     ],
   },
   faq: {
@@ -215,15 +215,15 @@ export const article14En: BlogPost = {
     items: [
       {
         question: "What details are required to quote large-volume paving projects in Bekasi Regency?",
-        answer: "Prepare the total area in square meters (m²), target concrete compressive rating (K-300 or K-400), block thickness, specific industrial estate location, and planned delivery timeline.",
+        answer: "Prepare the total area in square meters (m²), evaluated concrete compressive rating, block thickness, specific site location, and planned delivery timeline.",
       },
       {
-        question: "Does Kaha Block support phased deliveries for industrial development sites?",
-        answer: "Yes, large-scale orders can be scheduled in staged shipments matched to laying progress to prevent site congestion.",
+        question: "Can large-volume deliveries be scheduled in stages?",
+        answer: "Yes, delivery schedules can be planned in stages based on the site's progress and receiving capacity.",
       },
       {
-        question: "Which concrete grade is specified for heavy logistics and warehouse aprons in Cikarang/Cibitung?",
-        answer: "For heavy trailer maneuvers, container parking, and forklift corridors, 8 cm or 10 cm blocks with concrete grades K-300 or K-400 are standard industry recommendations.",
+        question: "Which concrete grade is commonly evaluated for heavy logistics areas in Cikarang/Cibitung?",
+        answer: "For heavy trailer maneuvers and logistics corridors, 8 cm or 10 cm blocks with concrete grades K-300 or K-400 are commonly evaluated based on expected axle loads.",
       },
       {
         question: "Does the quotation include pallet offloading with a crane or forklift?",
