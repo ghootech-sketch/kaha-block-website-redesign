@@ -1,4 +1,5 @@
 import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { PRODUCT_KEY_TO_SLUG } from "@/lib/products-data";
@@ -30,6 +31,7 @@ import {
   Truck,
   ArrowRight,
   Phone,
+  MessageSquare,
   Layers,
   Sparkles,
   Award,
@@ -580,6 +582,75 @@ export default async function Home({
                   {homeDict.featuredProducts.viewAll}
                   <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
                 </Link>
+              </Reveal>
+            </RevealGroup>
+          </div>
+        </section>
+
+        {/* =========================================================================
+            SECTION 3.2: PRICING & PROJECT ESTIMATION CONVERSION BLOCK
+           ========================================================================= */}
+        <section
+          id="pricing-conversion-section"
+          aria-labelledby="pricing-heading"
+          className="bg-dark text-white py-16 sm:py-20 lg:py-24 border-b border-stone-800 relative overflow-hidden"
+        >
+          <div className="absolute top-0 left-0 w-full h-1 bg-accent" />
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <RevealGroup>
+              <Reveal delay={0}>
+                <div className="flex items-center justify-center space-x-3 mb-4">
+                  <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading">
+                    {homeDict.pricingConversion.eyebrow}
+                  </span>
+                  <span className="w-8 h-px bg-accent" aria-hidden="true" />
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.08}>
+                <h2
+                  id="pricing-heading"
+                  className="text-3xl sm:text-4xl md:text-5xl font-light font-heading text-white tracking-tight mb-4"
+                >
+                  {homeDict.pricingConversion.title}
+                </h2>
+              </Reveal>
+
+              <Reveal delay={0.16}>
+                <p className="text-base sm:text-lg text-slate-300 font-sans max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
+                  {homeDict.pricingConversion.subtitle}
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.24}>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto mb-6">
+                  <a
+                    href={getWhatsAppUrl("primary", "pricing", currentLang)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-sm sm:text-base transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[48px]"
+                  >
+                    <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
+                    <span>{homeDict.pricingConversion.primaryCta}</span>
+                  </a>
+
+                  <a
+                    href={getWhatsAppUrl("secondary", "project-estimate", currentLang)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-8 py-4 rounded-xl font-bold text-sm sm:text-base border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[48px]"
+                  >
+                    <MessageSquare className="w-4 h-4 mr-2.5 text-accent" aria-hidden="true" />
+                    <span>{homeDict.pricingConversion.secondaryCta}</span>
+                  </a>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.32}>
+                <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
+                  {homeDict.pricingConversion.disclaimer}
+                </p>
               </Reveal>
             </RevealGroup>
           </div>

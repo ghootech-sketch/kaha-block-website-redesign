@@ -17,6 +17,7 @@ import {
   MessageSquare,
   ArrowRight,
   Wrench,
+  Phone,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -163,6 +164,48 @@ export default async function JasaPemasanganPage({
                   <span>{isEn ? "Paving Block Specifications (model, thickness, and concrete grade K-250/K-300/K-400)" : "Jenis / Spesifikasi Paving (model, ketebalan, dan mutu beton K-250/K-300/K-400)"}</span>
                 </li>
               </ul>
+            </div>
+
+            {/* Direct Pricing & Project Estimate CTA Card */}
+            <div className="bg-dark text-white rounded-2xl p-6 sm:p-8 lg:p-10 border border-stone-800 shadow-md text-center">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-accent font-heading block mb-2">
+                {isEn ? "PROJECT ESTIMATE & PRICING" : "ESTIMASI PROYEK & HARGA"}
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-light font-heading text-white tracking-tight mb-3">
+                {isEn
+                  ? "Paving Block Prices Starting from Rp80,000/m²*"
+                  : "Harga Paving Block Mulai Rp80.000/m²*"}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
+                {isEn
+                  ? "Planning a project? Share your location, estimated area, and project scope to receive a material and installation estimate."
+                  : "Sedang merencanakan proyek? Kirim lokasi, luas area, dan kebutuhan Anda untuk mendapatkan estimasi material maupun layanan pemasangan."}
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
+                <a
+                  href={getWhatsAppUrl("primary", "project-estimate", currentLang)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[44px]"
+                >
+                  <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
+                  <span>{isEn ? "Request Project Estimate" : "Minta Estimasi Biaya Proyek"}</span>
+                </a>
+                <a
+                  href={getWhatsAppUrl("secondary", "pricing", currentLang)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
+                >
+                  <Phone className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
+                  <span>{isEn ? "Ask About Project Pricing" : "Tanya Harga Terbaik"}</span>
+                </a>
+              </div>
+              <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
+                {isEn
+                  ? "*Final pricing may vary based on specifications, order volume, project location, and service requirements."
+                  : "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan."}
+              </p>
             </div>
           </ScrollReveal>
         </div>

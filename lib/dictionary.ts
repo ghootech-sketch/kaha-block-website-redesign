@@ -206,6 +206,14 @@ export const dictionaries = {
         viewAll: "Lihat Semua Produk",
         viewSpecs: "Lihat Spesifikasi",
       },
+      pricingConversion: {
+        eyebrow: "Harga Pabrik & Estimasi Proyek",
+        title: "Harga Paving Block Mulai Rp80.000/m²*",
+        subtitle: "Dapatkan penawaran sesuai kebutuhan, volume, spesifikasi, dan lokasi proyek Anda.",
+        primaryCta: "Cek Harga via WhatsApp",
+        secondaryCta: "Minta Estimasi Biaya Proyek",
+        disclaimer: "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan.",
+      },
       installation: {
         eyebrow: "Solusi Terintegrasi",
         title: "Layanan Jasa Pemasangan",
@@ -544,6 +552,14 @@ export const dictionaries = {
         desc: "Produk Kaha Block diproduksi langsung dari fasilitas kami di Cisauk, Kabupaten Tangerang untuk melayani pengadaan proyek di Jakarta, Tangerang, Bekasi, Depok, Bogor, serta seluruh wilayah Jabodetabek. Untuk wilayah Jabodetabek, pengiriman gratis dan sudah termasuk penurunan barang.",
         installNote: "Tersedia pula layanan jasa pemasangan oleh tim pemasangan berpengalaman Kaha Block untuk memastikan hasil akhir yang presisi dan rapi.",
         ctaConsult: "Konsultasi Pengadaan & Pemasangan",
+      },
+      pricingBlock: {
+        eyebrow: "PENAWARAN HARGA LANGSUNG PABRIK",
+        title: "Harga Paving Block Tersedia Mulai Rp80.000/m²*",
+        subtitle: "Untuk harga sesuai model, volume, dan lokasi proyek, konsultasikan kebutuhan Anda langsung dengan tim Kaha Block.",
+        primaryCta: "Minta Harga Terbaik",
+        secondaryCta: "Cek Harga via WhatsApp",
+        disclaimer: "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan.",
       },
       navigator: {
         title: "Temukan Produk Berdasarkan Kategori",
@@ -1163,6 +1179,14 @@ export const dictionaries = {
         viewAll: "View All Products",
         viewSpecs: "View Specifications",
       },
+      pricingConversion: {
+        eyebrow: "Factory Direct Pricing & Project Estimation",
+        title: "Paving Block Prices Starting from Rp80,000/m²*",
+        subtitle: "Get a quotation based on your project requirements, volume, specifications, and delivery location.",
+        primaryCta: "Check Price via WhatsApp",
+        secondaryCta: "Request Project Estimate",
+        disclaimer: "*Final pricing may vary based on specifications, order volume, project location, and service requirements.",
+      },
       installation: {
         eyebrow: "Integrated Solutions",
         title: "Installation Services",
@@ -1501,6 +1525,14 @@ export const dictionaries = {
         desc: "Kaha Block products are manufactured directly at our facility in Cisauk, Tangerang Regency to supply projects in Jakarta, Tangerang, Bekasi, Depok, Bogor, and across Greater Jakarta. For Greater Jakarta (Jabodetabek), delivery is free and includes on-site unloading.",
         installNote: "Comprehensive installation services by Kaha Block's experienced crew are also available to ensure dense, precise interlocking results.",
         ctaConsult: "Consult Supply & Installation",
+      },
+      pricingBlock: {
+        eyebrow: "DIRECT FACTORY QUOTATION",
+        title: "Paving Block Prices Available Starting from Rp80,000/m²*",
+        subtitle: "For pricing based on specific models, volume, and project location, consult your requirements directly with the Kaha Block team.",
+        primaryCta: "Request Best Project Price",
+        secondaryCta: "Check Price via WhatsApp",
+        disclaimer: "*Final pricing may vary based on specifications, order volume, project location, and service requirements.",
       },
       navigator: {
         title: "Explore Products by Category",
