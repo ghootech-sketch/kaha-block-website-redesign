@@ -10,6 +10,8 @@ export const article5Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
+  image: "/images/projects/kaha-block-dokumentasi-24.webp",
+  imageAlt: "Dokumentasi persiapan lahan untuk pemasangan paving block Kaha Block",
   seoTitle: "Persiapan Sebelum Pemasangan Paving Block",
   seoDescription: "Ketahui tahapan persiapan lahan sebelum pasang paving block: pemadatan tanah dasar, base course, pemasangan kanstein tepi, dan screeding pasir alas.",
   intro: [
@@ -183,6 +185,8 @@ export const article5En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
+  image: "/images/projects/kaha-block-dokumentasi-24.webp",
+  imageAlt: "Documented site preparation for Kaha Block paving block installation",
   seoTitle: "Site Preparation for Paving Installation",
   seoDescription: "Learn essential site preparation steps before installing concrete pavers: subgrade soil compaction, base course grading, edge restraints, and sand screeding.",
   intro: [

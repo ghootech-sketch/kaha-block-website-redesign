@@ -9,6 +9,7 @@ import {
 } from "@/lib/blog-data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import FormattedText from "@/components/FormattedText";
 import PageHero from "@/components/PageHero";
@@ -68,6 +69,8 @@ export async function generateMetadata({
     description: post.seoDescription || post.excerpt,
     publishedAt: post.publishedAt,
     updatedAt: post.updatedAt,
+    image: post.image,
+    imageAlt: post.imageAlt,
   });
 }
 
@@ -212,6 +215,19 @@ export default async function BlogPostPage({
 
       {/* Main Article Container */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Article Primary Image */}
+        <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-sm mb-12">
+          <Image
+            src={post.image}
+            alt={post.imageAlt}
+            fill
+            priority
+            sizes="(max-width: 896px) 100vw, 896px"
+            className="object-cover"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+
         {/* Content Creation Process & Editorial Disclosure */}
         <aside
           aria-label="Editorial note"

@@ -10,6 +10,8 @@ export const article6Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "9 menit baca",
+  image: "/images/products/kaha-block-truepave.webp",
+  imageAlt: "Paving block Truepave Kaha Block untuk aplikasi perkerasan area parkir dan kawasan industri",
   seoTitle: "Paving Block Gudang & Kawasan Industri",
   seoDescription: "Panduan paving block heavy-duty untuk parkir komersial, depo logistik, dan kawasan industri: ketebalan 8-10 cm, mutu K-250, K-300, dan K-400, dan pola herringbone.",
   intro: [
@@ -191,6 +193,8 @@ export const article6En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "9 min read",
+  image: "/images/products/kaha-block-truepave.webp",
+  imageAlt: "Kaha Block Truepave paving block for parking and industrial pavement applications",
   seoTitle: "Heavy-Duty Paving Blocks for Industrial Estates",
   seoDescription: "Engineering guide to heavy-duty concrete pavers for commercial parking, logistics hubs, and industrial zones: 8-10 cm thickness, K-250, K-300, and K-400, and herringbone.",
   intro: [

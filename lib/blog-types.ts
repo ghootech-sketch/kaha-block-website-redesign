@@ -58,6 +58,8 @@ export interface BlogPost {
   publishedAt: string; // ISO date string e.g. "2025-01-20"
   updatedAt: string;
   readingTime: string;
+  image: string;
+  imageAlt: string;
   seoTitle: string;
   seoDescription: string;
   featured?: boolean;

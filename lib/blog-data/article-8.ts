@@ -10,6 +10,8 @@ export const article8Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-12",
   readingTime: "10 menit baca",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Dokumentasi hasil pemasangan paving block Kaha Block",
   seoTitle: "Paving Block vs Aspal vs Cor Beton",
   seoDescription: "Perbandingan lengkap perkerasan paving block, aspal hotmix, dan cor beton rigid: analisis daya tahan, biaya perawatan, peresapan air, dan fleksibilitas.",
   intro: [
@@ -200,6 +202,8 @@ export const article8En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-12",
   readingTime: "10 min read",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Kaha Block completed paving block installation documentation",
   seoTitle: "Concrete Pavers vs Asphalt vs Concrete Slabs",
   seoDescription: "Engineering comparison of concrete paving blocks, hotmix asphalt, and cast-in-place concrete: durability, maintenance costs, permeability, and aesthetics.",
   intro: [

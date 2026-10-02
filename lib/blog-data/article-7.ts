@@ -10,6 +10,8 @@ export const article7Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-12",
   readingTime: "9 menit baca",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Hasil jadi pemasangan paving block Kaha Block",
   seoTitle: "Tips Merawat Paving Block Bersih & Bebas Lumut",
   seoDescription: "Cara efektif merawat paving block agar tahan lama, bebas lumut, rumput liar, dan noda minyak: pembersihan rutin, cuci bertekanan, dan pengisian pasir nat.",
   intro: [
@@ -195,6 +197,8 @@ export const article7En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-12",
   readingTime: "9 min read",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Completed Kaha Block paving block installation",
   seoTitle: "Concrete Paver Maintenance & Cleaning Guide",
   seoDescription: "Practical guide to maintaining concrete paving blocks: removing moss, preventing weeds, joint sand replenishment, and high-pressure washing best practices.",
   intro: [

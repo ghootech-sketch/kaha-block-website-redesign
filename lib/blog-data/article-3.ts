@@ -10,6 +10,8 @@ export const article3Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "9 menit baca",
+  image: "/images/production/kaha-block-produksi-02.webp",
+  imageAlt: "Proses hidrolik produksi paving block di pabrik Kaha Block",
   seoTitle: "Mengenal Mutu Beton K-250, K-300, dan K-400 Paving Block",
   seoDescription: "Pahami mutu beton K-250, K-300, dan K-400 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
   intro: [
@@ -189,6 +191,8 @@ export const article3En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "9 min read",
+  image: "/images/production/kaha-block-produksi-02.webp",
+  imageAlt: "Hydraulic paving block production process at the Kaha Block factory",
   seoTitle: "K-250, K-300, and K-400 Concrete Paving Block Strength",
   seoDescription: "Learn what K-250, K-300, and K-400 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
   intro: [

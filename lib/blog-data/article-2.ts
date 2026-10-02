@@ -10,6 +10,8 @@ export const article2Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "8 menit baca",
+  image: "/images/products/kaha-block-truepave.webp",
+  imageAlt: "Produk paving block Truepave Kaha Block dengan pilihan ketebalan 6 cm, 8 cm, dan 10 cm",
   seoTitle: "Perbedaan Paving Block 6 cm, 8 cm, 10 cm",
   seoDescription: "Pahami kapasitas beban kendaraan dan aplikasi ideal paving block tebal 6 cm, 8 cm, dan 10 cm untuk proyek perumahan hingga perkerasan kawasan industri.",
   intro: [
@@ -212,6 +214,8 @@ export const article2En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-27",
   readingTime: "8 min read",
+  image: "/images/products/kaha-block-truepave.webp",
+  imageAlt: "Kaha Block Truepave paving block available in 6 cm, 8 cm, and 10 cm thickness options",
   seoTitle: "6, 8, or 10 cm Paving Block Thickness Guide",
   seoDescription: "Explore the technical differences in load tolerance, application scenarios, and base foundation requirements between 6 cm, 8 cm, and 10 cm paving blocks.",
   intro: [

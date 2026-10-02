@@ -10,6 +10,8 @@ export const article9Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "10 menit baca",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Hasil pemasangan paving block Kaha Block pada area proyek",
   seoTitle: "Paving Block Ramah Lingkungan & Resapan Air",
   seoDescription: "Pelajari perbedaan paving block konvensional dan Permeable Interlocking Concrete Pavement (PICP), termasuk resapan, drainase, dan pengelolaan air hujan.",
   intro: [
@@ -175,6 +177,8 @@ export const article9En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "10 min read",
+  image: "/images/projects/kaha-block-dokumentasi-03.webp",
+  imageAlt: "Kaha Block paving block installation at a project area",
   seoTitle: "Eco-Friendly Pavers & Stormwater Control",
   seoDescription: "Learn how conventional concrete paving differs from permeable interlocking concrete pavement (PICP), including drainage, infiltration, and stormwater design considerations.",
   intro: [

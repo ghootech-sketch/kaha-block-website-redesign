@@ -548,6 +548,10 @@ export function generateStructuredDataGraph({
     webPageEntity.primaryImageOfPage = {
       "@id": `${canonicalUrl}#primaryimage`,
     };
+  } else if (page === "blogPost" && post) {
+    webPageEntity.primaryImageOfPage = {
+      "@id": `${canonicalUrl}#primaryimage`,
+    };
   }
 
   const graph: Array<Record<string, unknown>> = [
@@ -601,6 +605,14 @@ export function generateStructuredDataGraph({
       url: `${baseUrl}${videoItem.posterSrc}`,
       caption: isEn ? videoItem.title.en : videoItem.title.id,
     });
+  } else if (page === "blogPost" && post) {
+    graph.push({
+      "@type": "ImageObject",
+      "@id": `${canonicalUrl}#primaryimage`,
+      contentUrl: `${baseUrl}${post.image}`,
+      url: `${baseUrl}${post.image}`,
+      caption: post.imageAlt,
+    });
   }
 
   // 5. Page-Specific Entities
@@ -644,6 +656,7 @@ export function generateStructuredDataGraph({
       },
       inLanguage: lang,
       articleSection: post.category,
+      image: `${baseUrl}${post.image}`,
     };
 
     graph.push(articleEntity);

@@ -293,6 +293,8 @@ export function constructBlogPostMetadata({
   description,
   publishedAt,
   updatedAt,
+  image,
+  imageAlt,
 }: {
   slug: string;
   lang: Locale;
@@ -300,6 +302,8 @@ export function constructBlogPostMetadata({
   description: string;
   publishedAt: string;
   updatedAt: string;
+  image?: string;
+  imageAlt?: string;
 }): Metadata {
   // Strip any existing brand suffixes from title to prevent double-branding
   const cleanTitle = title
@@ -310,6 +314,7 @@ export function constructBlogPostMetadata({
   const canonicalUrl = `${BASE_URL}/${lang}/blog/${slug}`;
   const idUrl = `${BASE_URL}/id/blog/${slug}`;
   const enUrl = `${BASE_URL}/en/blog/${slug}`;
+  const ogImage = image ? `${BASE_URL}${image}` : OG_IMAGE_URL;
 
   return {
     title: finalTitle,
@@ -335,11 +340,10 @@ export function constructBlogPostMetadata({
       authors: ["PT Kaha Sukses Mandiri"],
       images: [
         {
-          url: OG_IMAGE_URL,
+          url: ogImage,
           width: 1200,
           height: 630,
-          alt: cleanTitle,
-          type: "image/png",
+          alt: imageAlt || cleanTitle,
         },
       ],
     },
@@ -347,7 +351,7 @@ export function constructBlogPostMetadata({
       card: "summary_large_image",
       title: finalTitle,
       description,
-      images: [OG_IMAGE_URL],
+      images: [ogImage],
     },
   };
 }

@@ -10,6 +10,8 @@ export const article4Id: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 menit baca",
+  image: "/images/projects/kaha-block-dokumentasi-24.webp",
+  imageAlt: "Persiapan lahan sebelum pemasangan paving block Kaha Block",
   seoTitle: "Cara Menghitung Kebutuhan Paving Block",
   seoDescription: "Pelajari cara menghitung luas area, volume paving block per m², faktor cadangan potongan (waste), kebutuhan kanstein tepi, dan pasir alas secara akurat.",
   intro: [
@@ -209,6 +211,8 @@ export const article4En: BlogPost = {
   publishedAt: "2026-08-31",
   updatedAt: "2026-09-01",
   readingTime: "9 min read",
+  image: "/images/projects/kaha-block-dokumentasi-24.webp",
+  imageAlt: "Site preparation before Kaha Block paving block installation",
   seoTitle: "How to Calculate Paving Block Volumes",
   seoDescription: "Step-by-step guide to calculating pavement area, estimating paver quantities, cutting allowances, and determining subbase aggregate and sand volumes.",
   intro: [

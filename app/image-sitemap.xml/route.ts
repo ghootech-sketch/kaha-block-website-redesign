@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAllProducts } from "@/lib/products-data";
 import { getAllVideos } from "@/lib/video-data";
+import { allArticlesId, allArticlesEn } from "@/lib/blog-data";
 import { SITE_URL } from "@/lib/site-config";
 import { Locale } from "@/lib/dictionary";
 
@@ -92,6 +93,15 @@ export async function GET() {
       entries.push({
         pageUrl: `${baseUrl}/${lang}/videos/${vid.slug}`,
         imageUrls: [vid.posterSrc],
+      });
+    });
+
+    // 7. Blog Article Pages (9 articles per locale)
+    const blogPosts = lang === "id" ? allArticlesId : allArticlesEn;
+    blogPosts.forEach((post) => {
+      entries.push({
+        pageUrl: `${baseUrl}/${lang}/blog/${post.slug}`,
+        imageUrls: [post.image],
       });
     });
   });
