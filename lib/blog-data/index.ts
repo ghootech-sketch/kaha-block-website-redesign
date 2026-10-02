@@ -13,6 +13,12 @@ import { article9Id, article9En } from "./article-9";
 import { article10Id, article10En } from "./article-10";
 import { article11Id, article11En } from "./article-11";
 import { article12Id, article12En } from "./article-12";
+import { article13Id, article13En } from "./article-13";
+import { article14Id, article14En } from "./article-14";
+import { article15Id, article15En } from "./article-15";
+import { article16Id, article16En } from "./article-16";
+import { article17Id, article17En } from "./article-17";
+import { article18Id, article18En } from "./article-18";
 
 export const allArticlesId: BlogPost[] = [
   article1Id,
@@ -27,6 +33,12 @@ export const allArticlesId: BlogPost[] = [
   article10Id,
   article11Id,
   article12Id,
+  article13Id,
+  article14Id,
+  article15Id,
+  article16Id,
+  article17Id,
+  article18Id,
 ];
 
 export const allArticlesEn: BlogPost[] = [
@@ -42,6 +54,12 @@ export const allArticlesEn: BlogPost[] = [
   article10En,
   article11En,
   article12En,
+  article13En,
+  article14En,
+  article15En,
+  article16En,
+  article17En,
+  article18En,
 ];
 
 export function getAllBlogPosts(lang: Locale): BlogPost[] {
