@@ -47,7 +47,6 @@ export interface BlogPost {
   excerpt: string;
   category: string;
   categorySlug:
-    | "pricing"
     | "guide"
     | "spec"
     | "standards"
@@ -55,7 +54,8 @@ export interface BlogPost {
     | "technical"
     | "industrial"
     | "application"
-    | "sustainability";
+    | "sustainability"
+    | "pricing";
   publishedAt: string; // ISO date string e.g. "2025-01-20"
   updatedAt: string;
   readingTime: string;
