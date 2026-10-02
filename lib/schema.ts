@@ -492,10 +492,6 @@ export function generateStructuredDataGraph({
     webPageEntity.mainEntity = {
       "@id": `${canonicalUrl}#products`,
     };
-  } else if (page === "productDetail") {
-    webPageEntity.mainEntity = {
-      "@id": `${canonicalUrl}#product`,
-    };
   }
 
   const graph: Array<Record<string, unknown>> = [
@@ -526,43 +522,6 @@ export function generateStructuredDataGraph({
         url: `${baseUrl}/${lang}/products/${prod.slug}`,
       })),
     });
-  }
-
-  // A2. Single Product Detail Entity
-  if (page === "productDetail" && product) {
-    const productEntity: Record<string, unknown> = {
-      "@type": "Product",
-      "@id": `${canonicalUrl}#product`,
-      url: canonicalUrl,
-      name: product.name,
-      description: product.intro,
-      image: `${baseUrl}${product.image}`,
-      brand: {
-        "@type": "Brand",
-        name: "Kaha Block",
-      },
-      manufacturer: {
-        "@id": `${baseUrl}/#organization`,
-      },
-      offers: {
-        "@type": "Offer",
-        "@id": `${canonicalUrl}#offer`,
-        url: canonicalUrl,
-        priceCurrency: "IDR",
-        price: "0",
-        priceValidUntil: "2027-12-31",
-        availability: "https://schema.org/InStock",
-        itemCondition: "https://schema.org/NewCondition",
-        seller: {
-          "@id": `${baseUrl}/#organization`,
-        },
-      },
-      mainEntityOfPage: {
-        "@id": `${canonicalUrl}#webpage`,
-      },
-    };
-
-    graph.push(productEntity);
   }
 
   // B. Single Blog Article Posting & FAQ
