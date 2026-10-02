@@ -115,7 +115,7 @@ export const article11Id: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-jabodetabek-2026",
     "harga-paving-block-conblock-tangerang-2026",
-    "standar-sni-paving-block-mutu-beton",
+    "mutu-beton-k250-k300-k400-paving-block",
   ],
 };
 
@@ -234,6 +234,6 @@ export const article11En: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-jabodetabek-2026",
     "harga-paving-block-conblock-tangerang-2026",
-    "standar-sni-paving-block-mutu-beton",
+    "mutu-beton-k250-k300-k400-paving-block",
   ],
 };
