@@ -544,6 +544,19 @@ export function generateStructuredDataGraph({
       manufacturer: {
         "@id": `${baseUrl}/#organization`,
       },
+      offers: {
+        "@type": "Offer",
+        "@id": `${canonicalUrl}#offer`,
+        url: canonicalUrl,
+        priceCurrency: "IDR",
+        price: "0",
+        priceValidUntil: "2027-12-31",
+        availability: "https://schema.org/InStock",
+        itemCondition: "https://schema.org/NewCondition",
+        seller: {
+          "@id": `${baseUrl}/#organization`,
+        },
+      },
       mainEntityOfPage: {
         "@id": `${canonicalUrl}#webpage`,
       },
