@@ -68,7 +68,7 @@ export const article5Id: BlogPost = {
       id: "pemasangan-kanstein-dini",
       heading: "4. Pemasangan Kanstein Pengunci Tepi Sebelum Penghamparan Pasir",
       paragraphs: [
-        "Salah satu kaidah teknis yang paling sering diabaikan adalah urutan pemasangan kanstein (kerb beton). Kanstein pengunci tepi HARUS dipasang dan dikunci dengan adukan beton semen (backing concrete / concrete haunching) SEBELUM pasir alas dihamparkan dan paving dipasang.",
+        "Salah satu kaidah teknis yang paling sering diabaikan adalah urutan pemasangan [kanstein](/id/products/kanstein-jepit) (kerb beton). Kanstein pengunci tepi HARUS dipasang dan dikunci dengan adukan beton semen (backing concrete / concrete haunching) SEBELUM pasir alas dihamparkan dan paving dipasang.",
         "Jika kanstein baru dipasang belakangan setelah paving selesai, balok paving tepi akan sangat mudah bergeser saat dipadatkan dengan mesin stamper dan tidak memiliki penahan lateral yang kokoh terhadap gaya geser ban mobil.",
       ],
       callout: {
@@ -117,8 +117,8 @@ export const article5Id: BlogPost = {
       id: "solusi-pemasangan-kaha",
       heading: "7. Layanan Jasa Pemasangan Profesional Kaha Block",
       paragraphs: [
-        "Jika Anda ingin memastikan seluruh tahapan persiapan dan pemasangan berjalan sempurna tanpa kerumitan teknis, PT Kaha Sukses Mandiri menyediakan paket terpadu suplai material dan jasa pemasangan berpengalaman (supply & install).",
-        "Tim aplikator Kaha Block terbiasa menangani standar elevasi presisi, pemadatan berlapis, pemasangan kanstein kokoh, hingga pengisian nat silika bersih untuk berbagai proyek di Jabodetabek.",
+        "Jika Anda ingin memastikan seluruh tahapan persiapan dan pemasangan berjalan sempurna tanpa kerumitan teknis, PT Kaha Sukses Mandiri menyediakan paket terpadu suplai material dan [jasa pemasangan](/id/jasa-pemasangan-paving-block) berpengalaman (supply & install).",
+        "Tim aplikator Kaha Block terbiasa menangani standar elevasi presisi, pemadatan berlapis, pemasangan kanstein kokoh, hingga pengisian nat silika bersih untuk berbagai proyek di [Jabodetabek](/id/area-layanan).",
       ],
     },
     {
@@ -190,7 +190,7 @@ export const article5En: BlogPost = {
   seoTitle: "Site Preparation for Paving Installation",
   seoDescription: "Learn essential site preparation steps before installing concrete pavers: subgrade soil compaction, base course grading, edge restraints, and sand screeding.",
   intro: [
-    "Direct Answer: Mandatory site preparation before laying concrete pavers involves: (1) subgrade excavation to structural depth (base course + 3–5 cm bedding sand + paver thickness), (2) thorough mechanical subgrade soil compaction, (3) spreading and compacting the crushed stone base course, (4) installing concrete edge restraint curbs (Kanstein) with concrete haunch backing prior to sand screeding, and (5) screeding sharp, coarse uncompacted bedding sand (3–5 cm) without foot traffic.",
+    "Direct Answer: Mandatory site preparation before laying concrete pavers involves: (1) subgrade excavation to structural depth (base course + 3–5 cm bedding sand + paver thickness), (2) thorough mechanical subgrade soil compaction, (3) spreading and compacting the crushed stone base course, (4) installing concrete edge restraint curbs ([Kanstein](/en/products/kanstein-jepit)) with concrete haunch backing prior to sand screeding, and (5) screeding sharp, coarse uncompacted bedding sand (3–5 cm) without foot traffic.",
     "The fundamental determinant of a smooth, durable, long-lasting, and rut-free segmental concrete pavement is not solely the quality of the individual pavers, but the rigorous engineering of the foundation layers beneath.",
     "The vast majority of pavement failures—such as undulating surfaces following heavy tropical downpours, ponding water, and outward spreading of perimeter blocks—stem directly from rushed subgrade preparation, inadequate compaction, or skipped foundation steps.",
     "In this comprehensive engineering guide, PT Kaha Sukses Mandiri (Kaha Block) details the critical site preparation prerequisites required before placing the first concrete paver onto the bedding sand layer.",
@@ -292,8 +292,8 @@ export const article5En: BlogPost = {
       id: "kaha-block-installation-services",
       heading: "7. Kaha Block Professional Installation Services",
       paragraphs: [
-        "To ensure all site preparation and installation phases are executed to the highest engineering standards without logistical hassle, PT Kaha Sukses Mandiri provides complete turnkey supply-and-install packages.",
-        "Our skilled field application crews are experienced in executing accurate site grading, layered mechanical compaction, reinforced curb placement, and pristine joint finishing for civil and commercial developments throughout Greater Jakarta (Jabodetabek).",
+        "To ensure all site preparation and installation phases are executed to the highest engineering standards without logistical hassle, PT Kaha Sukses Mandiri provides complete turnkey [supply-and-install](/en/jasa-pemasangan-paving-block) packages.",
+        "Our skilled field application crews are experienced in executing accurate site grading, layered mechanical compaction, reinforced curb placement, and pristine joint finishing for civil and commercial developments throughout [Greater Jakarta](/en/area-layanan) (Jabodetabek).",
       ],
     },
     {

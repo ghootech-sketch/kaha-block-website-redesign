@@ -32,7 +32,7 @@ export const article8Id: BlogPost = {
         items: [
           "Kemudahan Akses Perbaikan Utilitas Bawah Tanah: Jika di kemudian hari perlu dilakukan penggalian pipa air PDAM, kabel optik internet, kabel PLN, atau pipa gas, paving block dapat dibongkar secara selektif per bagian tanpa merusak keseluruhan struktur dan umumnya dapat dipasang kembali menggunakan balok yang sama tanpa meninggalkan bekas tambalan mencolok.",
           "Daya Serap Air Melalui Garis Nat: Celah nat antar-balok memungkinkan sebagian air hujan meresap alami ke dalam tanah dasar, membantu menjaga konservasi air tanah dan mengurangi beban debit limpasan saluran drainase permukaan.",
-          "Estetika Visual dan Fleksibilitas Pola Desain: Tersedia dalam aneka bentuk geometris (Truepave bata, Hexagonal, Topi Uskup, Ubin) serta pilihan warna (Abu-abu natural, Merah, Hitam) yang meningkatkan nilai arsitektur lanskap properti.",
+          "Estetika Visual dan Fleksibilitas Pola Desain: Tersedia dalam aneka bentuk geometris ( [Truepave](/id/products/truepave) bata, [Hexagonal](/id/products/paving-hexagonal), [Topi Uskup](/id/products/topi-uskup), [Ubin](/id/products/ubin) ) serta pilihan warna (Abu-abu natural, Merah, Hitam) yang meningkatkan nilai arsitektur lanskap properti.",
           "Tahan Terhadap Tumpahan Oli & Bahan Kimia: Beton paving tidak larut atau melunak saat terpapar tetesan bahan bakar solar atau oli mesin kendaraan.",
         ],
       },
@@ -136,7 +136,7 @@ export const article8Id: BlogPost = {
       heading: "6. Keunggulan Paving Presisi dari PT Kaha Sukses Mandiri",
       paragraphs: [
         "PT Kaha Sukses Mandiri menghadirkan produk paving block berkualitas prima dengan opsi mutu beton K-250, K-300, dan K-400 yang diproduksi secara modern menggunakan mesin full otomatis hidrolik di pabrik seluas 9.080 m² di Cisauk, Tangerang.",
-        "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di Jabodetabek. Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
+        "Dengan tingkat presisi dimensi yang konsisten, sudut siku yang rapi, serta kepadatan material yang teruji, Kaha Block siap menjadi mitra terpercaya penyedia solusi perkerasan jalan untuk proyek perumahan, komersial, dan kawasan industri Anda di [Jabodetabek](/id/area-layanan). Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -224,7 +224,7 @@ export const article8En: BlogPost = {
         items: [
           "Effortless Underground Utility Access: When subterranean water mains, fiber optic cables, or gas pipelines require maintenance, individual blocks can be lifted selectively without heavy machinery and generally re-laid with original units, leaving minimal trench scars.",
           "Surface Rainwater Infiltration: Sand-filled joints allow partial rainwater infiltration into the subbase, reducing stormwater runoff peaks and mitigating urban localized flooding.",
-          "Architectural Aesthetics & Design Versatility: Available in varied geometric shapes (Truepave rectangular, Hexagonal, Bishop-Hat / Topi Uskup, Square Tile) and earthy mineral pigments (Natural Grey, Terracotta Red, Charcoal Black).",
+          "Architectural Aesthetics & Design Versatility: Available in varied geometric shapes ( [Truepave](/en/products/truepave) rectangular, [Hexagonal](/en/products/paving-hexagonal), Bishop-Hat / [Topi Uskup](/en/products/topi-uskup), Square [Tile / Ubin](/en/products/ubin) ) and earthy mineral pigments (Natural Grey, Terracotta Red, Charcoal Black).",
           "Chemical & Hydrocarbon Resistance: Dense hydraulic concrete does not dissolve, soften, or rut when exposed to diesel spills, motor oils, or automotive lubricants.",
         ],
       },
@@ -328,7 +328,7 @@ export const article8En: BlogPost = {
       heading: "6. Precision Manufacturing by PT Kaha Sukses Mandiri",
       paragraphs: [
         "PT Kaha Sukses Mandiri offers high-precision concrete paving blocks with K-250, K-300, and K-400 compressive strength options across its production line utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across Greater Jakarta (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
+        "Delivering consistent dimensional tolerances, sharp chamfered profiles, and high concrete density, Kaha Block is the trusted manufacturing partner for residential developers, civil engineering contractors, and industrial builders across [Greater Jakarta](/en/area-layanan) (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
       ],
     },
     {

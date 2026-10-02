@@ -108,9 +108,9 @@ export const article9Id: BlogPost = {
       id: "peran-kaha-block-keberlanjutan",
       heading: "6. Produksi Paving Block PT Kaha Sukses Mandiri",
       paragraphs: [
-        "PT Kaha Sukses Mandiri (Kaha Block) menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi paving block menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di Cisauk, Kabupaten Tangerang.",
+        "PT Kaha Sukses Mandiri (Kaha Block) menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi paving block menggunakan mesin full otomatis hidrolik di pabrik modern seluas 9.080 m² di [Cisauk, Kabupaten Tangerang](/id/area-layanan/tangerang).",
         "PT Kaha Sukses Mandiri menggunakan bahan baku pilihan berupa semen curah Holcim Dynamix, semen zak SCG, abu batu Bravo Cilegon, dan Pasir Bangka dalam proses produksi paving block Kaha Block. Secara umum, komposisi dan karakteristik material penyusun beton merupakan salah satu faktor yang memengaruhi kepadatan dan performa produk beton.",
-        "Kaha Block siap melayani kebutuhan material paving block untuk pembangunan infrastruktur perumahan, komersial, dan industri di wilayah Jabodetabek. Ketersediaan mutu pada masing-masing produk dikonfirmasi saat konsultasi teknis.",
+        "Kaha Block siap melayani kebutuhan material paving block untuk pembangunan infrastruktur perumahan, komersial, dan industri di wilayah [Jabodetabek](/id/area-layanan). Ketersediaan mutu pada masing-masing produk dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -275,9 +275,9 @@ export const article9En: BlogPost = {
       id: "kaha-sustainability-commitment",
       heading: "6. PT Kaha Sukses Mandiri Segmental Paving Production",
       paragraphs: [
-        "PT Kaha Sukses Mandiri offers K-250, K-300, and K-400 concrete grade options across its paving block production lines using fully automated hydraulic machinery at our modern 9,080 m² production facility in Cisauk, Tangerang Regency.",
+        "PT Kaha Sukses Mandiri offers K-250, K-300, and K-400 concrete grade options across its paving block production lines using fully automated hydraulic machinery at our modern 9,080 m² production facility in [Cisauk, Tangerang Regency](/en/area-layanan/tangerang).",
         "Kaha Block uses Holcim Dynamix bulk cement, SCG bag cement, Bravo Cilegon stone dust, and Bangka sand in its paving block production. The characteristics and proportioning of concrete constituents generally influence the density and engineering performance of precast concrete products.",
-        "Kaha Block is ready to supply segmental paving solutions for residential, commercial, and industrial developments throughout Greater Jakarta (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
+        "Kaha Block is ready to supply segmental paving solutions for residential, commercial, and industrial developments throughout [Greater Jakarta](/en/area-layanan) (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
       ],
     },
     {

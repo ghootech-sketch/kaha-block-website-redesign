@@ -66,7 +66,7 @@ export const article6Id: BlogPost = {
       id: "keunggulan-pola-herringbone",
       heading: "3. Keunggulan Pola Herringbone 45° dan 90° untuk Jalur Industri",
       paragraphs: [
-        "Dalam aplikasi perkerasan industri, bentuk Truepave persegi panjang yang dipasang dengan pola anyaman tulang ikan (Herringbone 45° atau 90°) merupakan pola susunan yang banyak direkomendasikan dalam pedoman teknis perkerasan blok beton.",
+        "Dalam aplikasi perkerasan industri, bentuk [Truepave](/id/products/truepave) persegi panjang yang dipasang dengan pola anyaman tulang ikan (Herringbone 45° atau 90°) merupakan pola susunan yang banyak direkomendasikan dalam pedoman teknis perkerasan blok beton.",
       ],
       list: {
         title: "Alasan Mekanis Keunggulan Pola Herringbone:",
@@ -121,7 +121,7 @@ export const article6Id: BlogPost = {
       heading: "6. Solusi Paving Industri dari PT Kaha Sukses Mandiri",
       paragraphs: [
         "PT Kaha Sukses Mandiri menyediakan pilihan mutu beton K-250, K-300, dan K-400 pada lini produksi paving block menggunakan mesin full otomatis hidrolik di fasilitas modern seluas 9.080 m² di Cisauk, Tangerang.",
-        "Kaha Block siap melayani kebutuhan pengadaan material perkerasan dan layanan pemasangan (supply & install) untuk kawasan pergudangan, depo logistik, pelataran pabrik, dan pusat perbelanjaan di wilayah Jabodetabek. Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
+        "Kaha Block siap melayani kebutuhan pengadaan material perkerasan dan layanan pemasangan (supply & install) untuk kawasan pergudangan, depo logistik, pelataran pabrik, dan pusat perbelanjaan di wilayah [Jabodetabek](/id/area-layanan). Ketersediaan mutu pada tiap model paving dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -249,7 +249,7 @@ export const article6En: BlogPost = {
       id: "herringbone-mechanics",
       heading: "3. The Structural Advantages of 45° and 90° Herringbone Interlocking Patterns",
       paragraphs: [
-        "For industrial traffic applications, rectangular Truepave units laid in a 45° or 90° herringbone bond configuration are widely recommended in technical pavement guidelines.",
+        "For industrial traffic applications, rectangular [Truepave](/en/products/truepave) units laid in a 45° or 90° herringbone bond configuration are widely recommended in technical pavement guidelines.",
       ],
       list: {
         title: "Key Structural Advantages of Herringbone Bonding:",
@@ -304,7 +304,7 @@ export const article6En: BlogPost = {
       heading: "6. Kaha Block Industrial Pavement Solutions",
       paragraphs: [
         "PT Kaha Sukses Mandiri offers K-250, K-300, and K-400 concrete grade options across its paving block production line utilizing fully automated hydraulic machinery at our 9,080 m² facility in Cisauk, Tangerang.",
-        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across Greater Jakarta (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
+        "Kaha Block provides supply-and-install options for logistics hubs, manufacturing compounds, and commercial centers across [Greater Jakarta](/en/area-layanan) (Jabodetabek). Specific grade availability is confirmed during technical consultation.",
       ],
     },
     {

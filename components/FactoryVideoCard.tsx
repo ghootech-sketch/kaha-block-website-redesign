@@ -96,7 +96,8 @@ export default function FactoryVideoCard({
               <Link
                 href={watchUrl}
                 className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold text-white bg-slate-900/80 hover:bg-slate-900 backdrop-blur-md border border-white/20 shadow-md transition-all font-heading"
-                title={watchLabel}
+                title={title ? `${watchLabel}: ${title}` : watchLabel}
+                aria-label={title ? `${watchLabel}: ${title}` : watchLabel}
               >
                 <span>{watchLabel}</span>
                 <ExternalLink className="w-3 h-3 ml-1 text-accent" aria-hidden="true" />
@@ -120,6 +121,8 @@ export default function FactoryVideoCard({
               <Link
                 href={watchUrl}
                 className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-bold text-white bg-slate-900/80 hover:bg-slate-900 backdrop-blur-md border border-white/20 shadow-md transition-all font-heading"
+                title={title ? `${watchLabel}: ${title}` : watchLabel}
+                aria-label={title ? `${watchLabel}: ${title}` : watchLabel}
               >
                 <span>{watchLabel}</span>
                 <ExternalLink className="w-3 h-3 ml-1 text-accent" aria-hidden="true" />

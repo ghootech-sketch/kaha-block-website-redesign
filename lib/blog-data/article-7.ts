@@ -129,7 +129,7 @@ export const article7Id: BlogPost = {
       id: "kualitas-paving-kaha",
       heading: "7. Kualitas Produk Kaha Block Mempermudah Pemeliharaan",
       paragraphs: [
-        "Paving block hasil cetakan mesin full otomatis hidrolik dari PT Kaha Sukses Mandiri (Kaha Block) didukung pilihan opsi mutu K-250, K-300, dan K-400 pada lini produksinya sesuai kebutuhan jenis produk dan proyek dengan kepadatan beton yang baik.",
+        "Paving block hasil cetakan mesin full otomatis hidrolik dari [PT Kaha Sukses Mandiri](/id/about) (Kaha Block) didukung pilihan opsi mutu K-250, K-300, dan K-400 pada lini produksinya sesuai kebutuhan jenis produk dan proyek dengan kepadatan beton yang baik.",
         "Kepadatan matriks beton yang rapat ini membantu membatasi peresapan air ke dalam balok, mempermudah proses pembersihan, dan menjaga tampilan perkerasan.",
       ],
     },
@@ -176,7 +176,7 @@ export const article7Id: BlogPost = {
       },
       {
         question: "Apakah Kaha Block melayani konsultasi perbaikan perkerasan paving yang rusak?",
-        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material pengganti untuk proyek perbaikan dan perawatan paving block.",
+        answer: "Ya, PT Kaha Sukses Mandiri menyediakan layanan suplai material pengganti dan [jasa pemasangan](/id/jasa-pemasangan-paving-block) untuk proyek perbaikan dan perawatan paving block.",
       },
     ],
   },
@@ -316,7 +316,7 @@ export const article7En: BlogPost = {
       id: "kaha-block-durability",
       heading: "7. How Kaha Block Quality Supports Maintenance",
       paragraphs: [
-        "Paving blocks produced with automated hydraulic machinery by PT Kaha Sukses Mandiri (Kaha Block) offer K-250, K-300, and K-400 grade options across the production range depending on product and project requirements, supported by solid concrete matrices with good density.",
+        "Paving blocks produced with automated hydraulic machinery by [PT Kaha Sukses Mandiri](/en/about) (Kaha Block) offer K-250, K-300, and K-400 grade options across the production range depending on product and project requirements, supported by solid concrete matrices with good density.",
         "This structural density limits water ingress, which helps reduce moss penetration, makes cleaning easier, and preserves color tones over its service life.",
       ],
     },
@@ -363,7 +363,7 @@ export const article7En: BlogPost = {
       },
       {
         question: "Does Kaha Block offer technical advice for repairing existing paved areas?",
-        answer: "Yes, PT Kaha Sukses Mandiri supplies replacement paving materials for maintenance and restoration projects across Greater Jakarta (Jabodetabek).",
+        answer: "Yes, PT Kaha Sukses Mandiri supplies replacement paving materials for maintenance and restoration projects across [Greater Jakarta](/en/area-layanan) (Jabodetabek).",
       },
     ],
   },

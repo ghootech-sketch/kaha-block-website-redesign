@@ -32,7 +32,7 @@ export const article4Id: BlogPost = {
           id: "cara-menghitung-paving-per-m2",
           heading: "Cara Menghitung Kebutuhan Paving Block per Meter Persegi (m²)",
           paragraphs: [
-            "Banyak pemilik lahan dan kontraktor menanyakan berapa paving untuk 1 m² serta bagaimana cara menghitung paving per m2 secara akurat. Langkah pertama adalah menghitung luas area paving (panjang x lebar dalam meter persegi). Selanjutnya, kebutuhan jumlah unit paving block dihitung berdasarkan dimensi model paving yang dipilih. Sebagai contoh, paving model Half / Tahu membutuhkan daya tutup sekitar 88 pcs/m², sedangkan model Truepave bata standar umumnya berkisar 44–45 pcs/m² bergantung ukuran cetakan pabrik.",
+            "Banyak pemilik lahan dan kontraktor menanyakan berapa paving untuk 1 m² serta bagaimana cara menghitung paving per m2 secara akurat. Langkah pertama adalah menghitung luas area paving (panjang x lebar dalam meter persegi). Selanjutnya, kebutuhan jumlah unit paving block dihitung berdasarkan dimensi model paving yang dipilih. Sebagai contoh, paving model [Half / Tahu](/id/products/half-tahu) membutuhkan daya tutup sekitar 88 pcs/m², sedangkan model [Truepave](/id/products/truepave) bata standar umumnya berkisar 44–45 pcs/m² bergantung ukuran cetakan pabrik.",
             "Untuk estimasi jumlah paving untuk halaman rumah atau area carport, kalikan total luas meter persegi dengan indeks kebutuhan paving per meter persegi, lalu tambahkan faktor cadangan potongan (waste factor 3%–8%) agar tidak kekurangan material saat pengerjaan tepian.",
           ],
         },
@@ -95,7 +95,7 @@ export const article4Id: BlogPost = {
           id: "kebutuhan-topi-uskup",
           heading: "Perhitungan Unit Topi Uskup (Untuk Pola Truepave Herringbone)",
           paragraphs: [
-            "Jika Anda memilih paving Truepave dengan pola herringbone 45°, penggunaan Topi Uskup di sepanjang garis tepi lurus akan sangat mempercepat pekerjaan tukang dan menghasilkan garis tepi yang rapi tanpa perlu pemotongan manual.",
+            "Jika Anda memilih paving Truepave dengan pola herringbone 45°, penggunaan [Topi Uskup](/id/products/topi-uskup) di sepanjang garis tepi lurus akan sangat mempercepat pekerjaan tukang dan menghasilkan garis tepi yang rapi tanpa perlu pemotongan manual.",
             "Kebutuhan Topi Uskup dihitung berdasarkan panjang meter lari tepi jalan yang berbatasan dengan kanstein.",
           ],
         },
@@ -140,7 +140,7 @@ export const article4Id: BlogPost = {
       heading: "6. Konsultasi Kebutuhan Bersama Kaha Block",
       paragraphs: [
         "PT Kaha Sukses Mandiri (Kaha Block) yang memproduksi aneka paving block mesin full otomatis hidrolik di fasilitas seluas 9.080 m² di Cisauk, Tangerang, menyediakan opsi mutu beton K-250, K-300, dan K-400 pada lini produksinya dan siap membantu Anda dalam melakukan perhitungan volume material secara profesional.",
-        "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan jasa pemasangan di Jabodetabek. Ketersediaan mutu pada tiap jenis produk dikonfirmasi saat konsultasi teknis.",
+        "PT Kaha Sukses Mandiri melayani konsultasi produk, estimasi kebutuhan material berdasarkan data ukuran proyek Anda, hingga paket penyediaan material dan [jasa pemasangan](/id/jasa-pemasangan-paving-block) di Jabodetabek. Ketersediaan mutu pada tiap jenis produk dikonfirmasi saat konsultasi teknis.",
       ],
     },
     {
@@ -288,7 +288,7 @@ export const article4En: BlogPost = {
           id: "topi-uskup-units",
           heading: "Topi Uskup Units (For Truepave Herringbone Layouts)",
           paragraphs: [
-            "When laying rectangular Truepave units in a 45° herringbone pattern, utilizing precast Topi Uskup (Bishop Hat shape) edge pieces along straight boundaries eliminates extensive on-site saw cuts and ensures pristine border alignment.",
+            "When laying rectangular [Truepave](/en/products/truepave) units in a 45° herringbone pattern, utilizing precast [Topi Uskup](/en/products/topi-uskup) (Bishop Hat shape) edge pieces along straight boundaries eliminates extensive on-site saw cuts and ensures pristine border alignment.",
             "Topi Uskup requirements are calculated based on the total linear perimeter of herringbone edges interfacing with the curb line.",
           ],
         },
@@ -333,7 +333,7 @@ export const article4En: BlogPost = {
       heading: "6. Consult Your Project with Kaha Block Specialists",
       paragraphs: [
         "Operating from our modern 9,080 m² manufacturing plant in Cisauk, Tangerang, PT Kaha Sukses Mandiri (Kaha Block) offers K-250, K-300, and K-400 concrete grade options across its production line using full automatic hydraulic machinery.",
-        "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across Greater Jakarta (Jabodetabek). Grade availability for specific products is confirmed during technical consultation.",
+        "PT Kaha Sukses Mandiri is ready to assist you with product recommendations, volume estimates based on your plans, and supply-and-install options across [Greater Jakarta](/en/area-layanan) (Jabodetabek). Grade availability for specific products is confirmed during technical consultation.",
       ],
     },
     {

@@ -80,9 +80,19 @@ export default async function VideoWatchPage({
   const isEn = currentLang === "en";
   const localized = getLocalizedVideoData(videoItem, currentLang);
   const allVideos = getAllVideos();
-  const otherVideos = allVideos
-    .filter((v) => v.slug !== videoItem.slug)
-    .slice(0, 3);
+  const currentIndex = allVideos.findIndex((v) => v.slug === videoItem.slug);
+  const totalVideos = allVideos.length;
+
+  // Deterministic neighboring ring links: previous, next, next+1
+  const prevIdx = (currentIndex - 1 + totalVideos) % totalVideos;
+  const next1Idx = (currentIndex + 1) % totalVideos;
+  const next2Idx = (currentIndex + 2) % totalVideos;
+
+  const otherVideos = [
+    allVideos[prevIdx],
+    allVideos[next1Idx],
+    allVideos[next2Idx],
+  ];
 
   const waUrl = getWhatsAppUrl(
     "primary",
