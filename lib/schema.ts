@@ -2,6 +2,7 @@ import { BUSINESS_FACTS } from "./business-facts";
 import { Locale } from "./dictionary";
 import { BlogPost } from "./blog-types";
 import { ProductData, getAllProducts } from "./products-data";
+import { VideoItem } from "./video-data";
 
 export type SchemaPageType =
   | "home"
@@ -19,13 +20,15 @@ export type SchemaPageType =
   | "areaTangerang"
   | "areaBekasi"
   | "areaDepok"
-  | "areaBogor";
+  | "areaBogor"
+  | "videoWatch";
 
 interface GenerateGraphParams {
   page: SchemaPageType;
   lang: Locale;
   post?: BlogPost;
   product?: ProductData;
+  videoItem?: VideoItem;
 }
 
 export function generateStructuredDataGraph({
@@ -33,6 +36,7 @@ export function generateStructuredDataGraph({
   lang,
   post,
   product,
+  videoItem,
 }: GenerateGraphParams) {
   const isEn = lang === "en";
   const baseUrl = BUSINESS_FACTS.domain;
@@ -45,6 +49,8 @@ export function generateStructuredDataGraph({
       ? `/blog/${post.slug}`
       : page === "productDetail" && product
       ? `/products/${product.slug}`
+      : page === "videoWatch" && videoItem
+      ? `/videos/${videoItem.slug}`
       : page === "jasaPemasangan"
       ? "/jasa-pemasangan-paving-block"
       : page === "areaLayanan"
@@ -240,6 +246,19 @@ export function generateStructuredDataGraph({
         "@type": "ListItem",
         position: 2,
         name: isEn ? "Production Gallery" : "Galeri Produksi",
+        item: canonicalUrl,
+      });
+    } else if (page === "videoWatch" && videoItem) {
+      items.push({
+        "@type": "ListItem",
+        position: 2,
+        name: isEn ? "Production Gallery" : "Galeri Produksi",
+        item: `${baseUrl}/${lang}/projects/production`,
+      });
+      items.push({
+        "@type": "ListItem",
+        position: 3,
+        name: isEn ? videoItem.title.en : videoItem.title.id,
         item: canonicalUrl,
       });
     } else if (page === "contact") {
@@ -465,6 +484,17 @@ export function generateStructuredDataGraph({
         ? "Precision paving block supply and installation services for Bogor City and Bogor Regency."
         : "Pengadaan material paving block presisi dan jasa pemasangan untuk Kota dan Kabupaten Bogor.";
       break;
+    case "videoWatch":
+      pageType = "ItemPage";
+      pageName = videoItem
+        ? `${isEn ? videoItem.title.en : videoItem.title.id} | Kaha Block`
+        : "Video | Kaha Block";
+      pageDescription = videoItem
+        ? isEn
+          ? videoItem.description.en
+          : videoItem.description.id
+        : "";
+      break;
   }
 
   const webPageEntity: Record<string, unknown> = {
@@ -491,6 +521,10 @@ export function generateStructuredDataGraph({
   if (page === "products") {
     webPageEntity.mainEntity = {
       "@id": `${canonicalUrl}#products`,
+    };
+  } else if (page === "videoWatch") {
+    webPageEntity.mainEntity = {
+      "@id": `${canonicalUrl}#video`,
     };
   }
 
@@ -593,6 +627,31 @@ export function generateStructuredDataGraph({
           : "Layanan Pemasangan Paving Block",
       },
     });
+  }
+
+  // D. Video Watch Page VideoObject
+  if (page === "videoWatch" && videoItem) {
+    const localizedTitle = isEn ? videoItem.title.en : videoItem.title.id;
+    const localizedDesc = isEn ? videoItem.description.en : videoItem.description.id;
+
+    const videoEntity: Record<string, unknown> = {
+      "@type": "VideoObject",
+      "@id": `${canonicalUrl}#video`,
+      name: localizedTitle,
+      description: localizedDesc,
+      thumbnailUrl: [`${baseUrl}${videoItem.posterSrc}`],
+      uploadDate: videoItem.publishedAt,
+      contentUrl: `${baseUrl}${videoItem.videoSrc}`,
+      duration: videoItem.isoDuration,
+      creator: {
+        "@id": `${baseUrl}/#organization`,
+      },
+      mainEntityOfPage: {
+        "@id": `${canonicalUrl}#webpage`,
+      },
+    };
+
+    graph.push(videoEntity);
   }
 
   return {

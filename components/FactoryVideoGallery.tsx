@@ -3,14 +3,16 @@
 import { useState } from "react";
 import { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import FactoryVideoCard from "@/components/FactoryVideoCard";
-import { ChevronDown, Film } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export interface FactoryVideoData {
   id: string;
+  slug?: string;
   videoSrc: string;
   posterSrc: string;
   title?: string;
   tag?: string;
+  watchUrl?: string;
 }
 
 interface FactoryVideoGalleryProps {
@@ -23,6 +25,7 @@ interface FactoryVideoGalleryProps {
   initialCount?: number;
   batchSize?: number;
   loadMoreLabel?: string;
+  watchLabel?: string;
 }
 
 export default function FactoryVideoGallery({
@@ -35,6 +38,7 @@ export default function FactoryVideoGallery({
   initialCount = 6,
   batchSize = 6,
   loadMoreLabel = "Lihat Video Lainnya",
+  watchLabel = "Halaman Video",
 }: FactoryVideoGalleryProps) {
   const isPremium = variant === "premium";
   const [visibleCount, setVisibleCount] = useState(
@@ -96,6 +100,8 @@ export default function FactoryVideoGallery({
                   posterSrc={video.posterSrc}
                   title={video.title}
                   tag={video.tag}
+                  watchUrl={video.watchUrl}
+                  watchLabel={watchLabel}
                   accessibleLabel={`${playLabelPrefix} ${video.title ? `: ${video.title}` : index + 1}`}
                 />
               </Reveal>
@@ -103,21 +109,22 @@ export default function FactoryVideoGallery({
           </div>
 
           {hasMore && (
-            <div className="mt-10 sm:mt-14 text-center">
-              <button
-                type="button"
-                onClick={handleLoadMore}
-                className={`inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-bold text-sm sm:text-base transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading shadow-xs hover:shadow-sm min-h-[44px] ${
-                  isPremium
-                    ? "bg-stone-800 hover:bg-stone-700 text-white border border-stone-700"
-                    : "bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 hover:border-accent"
-                }`}
-              >
-                <Film className="w-4 h-4 text-accent" aria-hidden="true" />
-                <span>{loadMoreLabel}</span>
-                <ChevronDown className="w-4 h-4 text-slate-400" aria-hidden="true" />
-              </button>
-            </div>
+            <Reveal delay={0.15}>
+              <div className="mt-12 sm:mt-16 text-center">
+                <button
+                  type="button"
+                  onClick={handleLoadMore}
+                  className={`inline-flex items-center justify-center px-8 py-4 rounded-xl text-sm font-bold font-heading transition-all shadow-sm active:scale-95 ${
+                    isPremium
+                      ? "bg-stone-800 hover:bg-stone-700 text-white border border-stone-700/80 hover:border-stone-600 focus-visible:ring-accent"
+                      : "bg-white hover:bg-slate-50 text-slate-900 border border-stone-300/80 hover:border-slate-400 focus-visible:ring-primary"
+                  }`}
+                >
+                  <span>{loadMoreLabel}</span>
+                  <ChevronDown className="w-4 h-4 ml-2 text-accent" aria-hidden="true" />
+                </button>
+              </div>
+            </Reveal>
           )}
         </RevealGroup>
       </div>

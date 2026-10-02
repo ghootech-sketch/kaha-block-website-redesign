@@ -6,6 +6,7 @@ import Image from "next/image";
 import ScrollReveal, { Reveal, RevealGroup } from "@/components/ScrollReveal";
 import Gallery from "@/components/Gallery";
 import FactoryVideoGallery, { FactoryVideoData } from "@/components/FactoryVideoGallery";
+import { getAllVideos, getLocalizedVideoData } from "@/lib/video-data";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
@@ -62,102 +63,20 @@ export default async function ProductionGalleryPage({
     }
   ];
 
-  // 15 unique production videos (01-04 duplicates removed)
-  // Recommended order: 07, 23, 05, 06, 12, 13, 19, 20, 21, 22, 08, 09, 10, 11, 18
-  const productionVideos: FactoryVideoData[] = [
-    {
-      id: "prod-vid-07",
-      videoSrc: "/videos/factory/factory-production-07.mp4",
-      posterSrc: "/images/factory/factory-production-07.webp",
-      title: currentLang === 'en' ? "Red Paving Block Press & Production" : "Pencetakan & Produksi Paving Block Merah",
-      tag: currentLang === 'en' ? "Red Paving" : "Paving Merah",
-    },
-    {
-      id: "prod-vid-23",
-      videoSrc: "/videos/factory/factory-production-23.mp4",
-      posterSrc: "/images/factory/factory-production-23.webp",
-      title: currentLang === 'en' ? "Red Paving Block Molding Cycle" : "Siklus Pencetakan Paving Block Merah",
-      tag: currentLang === 'en' ? "Red Paving" : "Paving Merah",
-    },
-    {
-      id: "prod-vid-05",
-      videoSrc: "/videos/factory/factory-production-05.mp4",
-      posterSrc: "/images/factory/factory-production-05.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-    {
-      id: "prod-vid-06",
-      videoSrc: "/videos/factory/factory-production-06.mp4",
-      posterSrc: "/images/factory/factory-production-06.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
-    },
-    {
-      id: "prod-vid-12",
-      videoSrc: "/videos/factory/factory-production-12.mp4",
-      posterSrc: "/images/factory/factory-production-12.webp",
-      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
-    },
-    {
-      id: "prod-vid-13",
-      videoSrc: "/videos/factory/factory-production-13.mp4",
-      posterSrc: "/images/factory/factory-production-13.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-    {
-      id: "prod-vid-19",
-      videoSrc: "/videos/factory/factory-production-19.mp4",
-      posterSrc: "/images/factory/factory-production-19.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
-    },
-    {
-      id: "prod-vid-20",
-      videoSrc: "/videos/factory/factory-production-20.mp4",
-      posterSrc: "/images/factory/factory-production-20.webp",
-      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
-    },
-    {
-      id: "prod-vid-21",
-      videoSrc: "/videos/factory/factory-production-21.mp4",
-      posterSrc: "/images/factory/factory-production-21.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-    {
-      id: "prod-vid-22",
-      videoSrc: "/videos/factory/factory-production-22.mp4",
-      posterSrc: "/images/factory/factory-production-22.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
-    },
-    {
-      id: "prod-vid-08",
-      videoSrc: "/videos/factory/factory-production-08.mp4",
-      posterSrc: "/images/factory/factory-production-08.webp",
-      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
-    },
-    {
-      id: "prod-vid-09",
-      videoSrc: "/videos/factory/factory-production-09.mp4",
-      posterSrc: "/images/factory/factory-production-09.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-    {
-      id: "prod-vid-10",
-      videoSrc: "/videos/factory/factory-production-10.mp4",
-      posterSrc: "/images/factory/factory-production-10.webp",
-      title: currentLang === 'en' ? "Production Process" : "Proses Produksi",
-    },
-    {
-      id: "prod-vid-11",
-      videoSrc: "/videos/factory/factory-production-11.mp4",
-      posterSrc: "/images/factory/factory-production-11.webp",
-      title: currentLang === 'en' ? "Production Operations" : "Operasional Produksi",
-    },
-    {
-      id: "prod-vid-18",
-      videoSrc: "/videos/factory/factory-production-18.mp4",
-      posterSrc: "/images/factory/factory-production-18.webp",
-      title: currentLang === 'en' ? "Production Documentation" : "Dokumentasi Produksi",
-    },
-  ];
+  // 15 unique production videos reading from central lib/video-data.ts
+  const allVideoItems = getAllVideos();
+  const productionVideos: FactoryVideoData[] = allVideoItems.map((video) => {
+    const loc = getLocalizedVideoData(video, currentLang);
+    return {
+      id: video.id,
+      slug: video.slug,
+      videoSrc: video.videoSrc,
+      posterSrc: video.posterSrc,
+      title: loc.localizedTitle,
+      tag: loc.localizedTag,
+      watchUrl: `/${currentLang}/videos/${video.slug}`,
+    };
+  });
 
   return (
     <>
@@ -358,6 +277,7 @@ export default async function ProductionGalleryPage({
         subtitle={dict.factoryVideos.subtitle}
         playLabelPrefix={dict.factoryVideos.playLabel}
         loadMoreLabel={dict.factoryVideos.loadMore}
+        watchLabel={currentLang === "en" ? "Watch Video Page" : "Halaman Video"}
         videos={productionVideos}
         initialCount={6}
         batchSize={6}

@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { allArticlesId, allArticlesEn } from "@/lib/blog-data";
 import { PRODUCT_SLUGS } from "@/lib/products-data";
+import { getAllVideos } from "@/lib/video-data";
 import { SITE_URL } from "@/lib/site-config";
 
 /**
@@ -149,6 +150,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
           "x-default": `${SITE_URL}/id/blog/${article.slug}`,
         },
       },
+    });
+  });
+
+  // 5. Video Watch Pages (15 videos x 2 locales = 30 URLs)
+  const videoItems = getAllVideos();
+  locales.forEach((locale) => {
+    videoItems.forEach((video) => {
+      sitemapEntries.push({
+        url: `${SITE_URL}/${locale}/videos/${video.slug}`,
+        lastModified: new Date(video.publishedAt),
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: {
+          languages: {
+            "id-ID": `${SITE_URL}/id/videos/${video.slug}`,
+            en: `${SITE_URL}/en/videos/${video.slug}`,
+            "x-default": `${SITE_URL}/id/videos/${video.slug}`,
+          },
+        },
+      });
     });
   });
 

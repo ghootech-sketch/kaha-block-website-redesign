@@ -398,3 +398,59 @@ export function constructProductMetadata({
     },
   };
 }
+
+export function constructVideoMetadata({
+  slug,
+  lang,
+  title,
+  description,
+  posterImage,
+}: {
+  slug: string;
+  lang: Locale;
+  title: string;
+  description: string;
+  posterImage?: string;
+}): Metadata {
+  const canonicalUrl = `${BASE_URL}/${lang}/videos/${slug}`;
+  const idUrl = `${BASE_URL}/id/videos/${slug}`;
+  const enUrl = `${BASE_URL}/en/videos/${slug}`;
+  const ogImage = posterImage ? `${BASE_URL}${posterImage}` : OG_IMAGE_URL;
+  const pageTitle = `${title} | KAHA BLOCK`;
+
+  return {
+    title: pageTitle,
+    description,
+    metadataBase: new URL(BASE_URL),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        "id-ID": idUrl,
+        en: enUrl,
+        "x-default": idUrl,
+      },
+    },
+    openGraph: {
+      title: pageTitle,
+      description,
+      url: canonicalUrl,
+      siteName: "KAHA BLOCK",
+      locale: lang === "id" ? "id_ID" : "en_US",
+      type: "website",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description,
+      images: [ogImage],
+    },
+  };
+}
