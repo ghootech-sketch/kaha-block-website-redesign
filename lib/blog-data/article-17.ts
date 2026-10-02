@@ -114,7 +114,7 @@ export const article17Id: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-bogor-2026",
     "harga-paving-block-conblock-jabodetabek-2026",
-    "tahapan-pemasangan-paving-block-standar-konstruksi",
+    "persiapan-sebelum-pemasangan-paving-block",
   ],
 };
 
@@ -232,6 +232,6 @@ export const article17En: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-bogor-2026",
     "harga-paving-block-conblock-jabodetabek-2026",
-    "tahapan-pemasangan-paving-block-standar-konstruksi",
+    "persiapan-sebelum-pemasangan-paving-block",
   ],
 };

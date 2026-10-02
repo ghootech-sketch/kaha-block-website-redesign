@@ -114,7 +114,7 @@ export const article14Id: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-bekasi-2026",
     "harga-paving-block-conblock-jabodetabek-2026",
-    "paving-block-heavy-duty-kawasan-industri-pergudangan",
+    "paving-block-parkir-pergudangan-kawasan-industri",
   ],
 };
 
@@ -232,6 +232,6 @@ export const article14En: BlogPost = {
   relatedSlugs: [
     "harga-paving-block-conblock-bekasi-2026",
     "harga-paving-block-conblock-jabodetabek-2026",
-    "paving-block-heavy-duty-kawasan-industri-pergudangan",
+    "paving-block-parkir-pergudangan-kawasan-industri",
   ],
 };
