@@ -43,6 +43,7 @@ export default async function Contact({
   }
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].contact;
+  const isEn = currentLang === "en";
 
   return (
     <>
@@ -63,7 +64,7 @@ export default async function Contact({
             {/* Card 1: WhatsApp 1 */}
             <ScrollReveal delay={0.05} className="h-full">
               <a
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -92,7 +93,7 @@ export default async function Contact({
             {/* Card 2: WhatsApp 2 */}
             <ScrollReveal delay={0.1} className="h-full">
               <a
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -274,7 +275,7 @@ export default async function Contact({
                       {dict.infoStrip.secondaryContactLabel}
                     </span>
                     <a
-                      href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm sm:text-base font-bold text-slate-700 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
@@ -573,7 +574,7 @@ export default async function Contact({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               <a 
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl} 
+                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
@@ -582,7 +583,7 @@ export default async function Contact({
                 WhatsApp 1
               </a>
               <a 
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
+                href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

@@ -606,7 +606,7 @@ export default async function BlogPostPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               <a
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
@@ -615,7 +615,7 @@ export default async function BlogPostPage({
                 WhatsApp 1
               </a>
               <a
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

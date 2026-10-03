@@ -89,7 +89,7 @@ export default async function AreaLayananHubPage({
 
               <div className="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3">
                 <a
-                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary-hover text-white font-bold px-6 py-3.5 rounded-xl inline-flex items-center justify-center gap-2 text-sm transition-colors min-h-[44px]"
@@ -257,7 +257,7 @@ export default async function AreaLayananHubPage({
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+              href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent hover:bg-accent-hover text-slate-900 font-bold px-7 py-3.5 rounded-xl inline-flex items-center gap-2.5 transition-colors text-sm sm:text-base shadow-sm min-h-[44px]"

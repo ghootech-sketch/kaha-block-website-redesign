@@ -8,6 +8,15 @@ export default function Footer({ lang }: { lang: Locale }) {
   const dict = dictionaries[lang];
   const currentYear = new Date().getFullYear();
 
+  const primaryWaUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappPrimaryUrl;
+  const secondaryWaUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappSecondaryUrl;
+
   return (
     <footer aria-label="Site Footer" className="bg-footer text-white py-12 sm:py-14 md:py-16 border-t-[6px] border-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,7 +171,7 @@ export default function Footer({ lang }: { lang: Locale }) {
             </div>
             <div className="mt-5 sm:mt-6 space-y-3">
               <a
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={primaryWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -170,7 +179,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 WhatsApp 1
               </a>
               <a
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={secondaryWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"

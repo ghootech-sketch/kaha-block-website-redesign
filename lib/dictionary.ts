@@ -1,3 +1,5 @@
+import { BUSINESS_FACTS } from "./business-facts";
+
 export const supportedLocales = ['id', 'en'] as const;
 export type Locale = (typeof supportedLocales)[number];
 
@@ -941,7 +943,7 @@ export const dictionaries = {
         button: "Hubungi via WhatsApp",
       },
       whatsapp: "WhatsApp Kaha Block",
-      whatsappUrl: "https://wa.me/6281283812475?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
+      whatsappUrl: BUSINESS_FACTS.contact.whatsappPrimaryUrl,
       googleMapsUrl: "https://maps.google.com/?q=Paving+Block+Kaha+Suradita+Cisauk+Tangerang",
       faq: {
         eyebrow: "Bantuan & Informasi",
@@ -1917,7 +1919,7 @@ export const dictionaries = {
         button: "Contact via WhatsApp",
       },
       whatsapp: "Chat on WhatsApp",
-      whatsappUrl: "https://wa.me/6281283812475?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
+      whatsappUrl: BUSINESS_FACTS.contact.whatsappPrimaryUrlEn,
       googleMapsUrl: "https://maps.google.com/?q=Paving+Block+Kaha+Suradita+Cisauk+Tangerang",
       faq: {
         eyebrow: "Help & Information",

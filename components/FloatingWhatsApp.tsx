@@ -21,6 +21,15 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
   const titleText =
     lang === "en" ? "Chat on WhatsApp" : "WhatsApp Kaha Block";
 
+  const primaryUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappPrimaryUrl;
+  const secondaryUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappSecondaryUrl;
+
   // Focus first option when opened
   useEffect(() => {
     if (isOpen) {
@@ -103,7 +112,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         <div className="p-2 space-y-1">
           <a
             ref={firstOptionRef}
-            href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+            href={primaryUrl}
             target="_blank"
             rel="noopener noreferrer"
             tabIndex={isOpen ? 0 : -1}
@@ -121,7 +130,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
           </a>
           
           <a
-            href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+            href={secondaryUrl}
             target="_blank"
             rel="noopener noreferrer"
             tabIndex={isOpen ? 0 : -1}

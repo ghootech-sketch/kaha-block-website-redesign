@@ -1,4 +1,19 @@
 import { BUSINESS_FACTS } from "./business-facts";
+import {
+  WEBSITE_SOURCE_MARKER,
+  WEBSITE_SOURCE_MARKER_ID,
+  WEBSITE_SOURCE_MARKER_EN,
+  getWebsiteSourceMarker,
+  appendWebsiteSourceMarker,
+} from "./whatsapp-constants";
+
+export {
+  WEBSITE_SOURCE_MARKER,
+  WEBSITE_SOURCE_MARKER_ID,
+  WEBSITE_SOURCE_MARKER_EN,
+  getWebsiteSourceMarker,
+  appendWebsiteSourceMarker,
+};
 
 export type WhatsAppTopic =
   | "products"
@@ -93,5 +108,6 @@ export function getWhatsAppUrl(
     }
   }
 
-  return `https://wa.me/${phoneE164}?text=${encodeURIComponent(message)}`;
+  const fullMessage = appendWebsiteSourceMarker(message, lang);
+  return `https://wa.me/${phoneE164}?text=${encodeURIComponent(fullMessage)}`;
 }

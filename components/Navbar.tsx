@@ -35,6 +35,15 @@ export default function Navbar({
   const [desktopWhatsappOpen, setDesktopWhatsappOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
 
+  const primaryWaUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappPrimaryUrl;
+  const secondaryWaUrl =
+    lang === "en"
+      ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn
+      : BUSINESS_FACTS.contact.whatsappSecondaryUrl;
+
   useEffect(() => {
     let ticking = false;
 
@@ -324,7 +333,7 @@ export default function Navbar({
                 >
                   <div className="py-2 flex flex-col">
                     <a
-                      href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                      href={primaryWaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       role="menuitem"
@@ -341,7 +350,7 @@ export default function Navbar({
                       </div>
                     </a>
                     <a
-                      href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      href={secondaryWaUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       role="menuitem"
@@ -469,7 +478,7 @@ export default function Navbar({
             {/* Mobile Menu WhatsApp CTA */}
             <div className="pt-4 mt-3 border-t border-white/10 space-y-3">
               <a
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={primaryWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
@@ -479,7 +488,7 @@ export default function Navbar({
                 WhatsApp 1
               </a>
               <a
-                href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={secondaryWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}

@@ -4,6 +4,16 @@
  */
 
 import { SITE_URL } from "./site-config";
+import { appendWebsiteSourceMarker } from "./whatsapp-constants";
+
+const defaultConsultationMessageId = appendWebsiteSourceMarker(
+  "Halo Kaha Block, saya ingin konsultasi kebutuhan paving block.",
+  "id"
+);
+const defaultConsultationMessageEn = appendWebsiteSourceMarker(
+  "Hello Kaha Block, I would like to consult on paving block requirements.",
+  "en"
+);
 
 export const BUSINESS_FACTS = {
   brandName: "Kaha Block",
@@ -46,19 +56,22 @@ export const BUSINESS_FACTS = {
     altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
     // Compatibility for existing code
-    whatsappUrl: "https://wa.me/6281283812475?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
+    whatsappUrl: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageId)}`,
     
     // Official WhatsApp contacts with consistent prefilled message
-    whatsappConsultationMessage: "Halo Kaha Block, saya ingin konsultasi kebutuhan paving block.",
+    whatsappConsultationMessage: defaultConsultationMessageId,
+    whatsappConsultationMessageEn: defaultConsultationMessageEn,
     whatsappPrimaryDisplay: "0812 8381 2475",
     whatsappPrimaryE164: "+6281283812475",
     whatsappPrimaryBaseUrl: "https://wa.me/6281283812475",
-    whatsappPrimaryUrl: "https://wa.me/6281283812475?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
+    whatsappPrimaryUrl: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappPrimaryUrlEn: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
 
     whatsappSecondaryDisplay: "0855 889 3030",
     whatsappSecondaryE164: "+628558893030",
     whatsappSecondaryBaseUrl: "https://wa.me/628558893030",
-    whatsappSecondaryUrl: "https://wa.me/628558893030?text=Halo%20Kaha%20Block%2C%20saya%20ingin%20konsultasi%20kebutuhan%20paving%20block.",
+    whatsappSecondaryUrl: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappSecondaryUrlEn: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
   },
 
   // Operational & Production Metrics (Verified First-Party Data)

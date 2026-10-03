@@ -54,6 +54,7 @@ export default async function About({
   }
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].about;
+  const isEn = currentLang === "en";
 
   const factIcons = [
     Calendar,
@@ -218,7 +219,7 @@ export default async function About({
 
                 <div className="mt-6 pt-5 border-t border-stone-200/80">
                   <a
-                    href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                    href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center w-full min-h-[44px] bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -469,7 +470,7 @@ export default async function About({
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full sm:w-auto min-h-[48px] bg-primary hover:bg-primary-hover text-white font-bold px-8 py-3.5 rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent text-sm sm:text-base font-heading tracking-wide uppercase"

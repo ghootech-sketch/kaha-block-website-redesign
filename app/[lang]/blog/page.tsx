@@ -301,7 +301,7 @@ export default async function BlogIndexPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"

@@ -213,7 +213,7 @@ export default async function Home({
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-5 lg:mb-6">
                 <a
                   id="hero-primary-cta"
-                  href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-6 sm:px-7 h-[56px] lg:h-[60px] font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-xs font-heading group"
@@ -898,7 +898,7 @@ export default async function Home({
                     </div>
                     <a
                       id="installation-consult-btn"
-                      href={BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -1386,7 +1386,7 @@ export default async function Home({
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
                   <a
                     id="final-whatsapp-btn"
-                    href={BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                    href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-10 py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
