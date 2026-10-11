@@ -156,7 +156,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       {
         step: "04",
         title: "Persiapan Lahan & Leveling",
-        desc: "Pembersihan tanah dasar, pemadatan subgrade, serta penggelapan lapisan pasir levelling abu batu setebal 3–5 cm.",
+        desc: "Pembersihan tanah dasar, pemadatan subgrade, serta penghamparan lapisan pasir levelling abu batu setebal 3–5 cm.",
       },
       {
         step: "05",
@@ -380,6 +380,10 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       {
         q: "What details are needed to request a cost estimate?",
         a: "Provide your project location, estimated area in m², intended load type (residential yard, driveway, or industrial warehouse), and preferred paver model.",
+      },
+      {
+        q: "How much does paving block installation cost per square meter in Greater Jakarta?",
+        a: "Installation cost per square meter depends on site preparation, sub-base requirements, paving pattern, total area, site access, and project location. Material pricing and installation labor are quoted separately unless combined into one official project proposal.",
       },
       {
         q: "Are delivery and offloading fees charged extra?",
@@ -777,7 +781,7 @@ export const REGIONAL_PAGES_DATA: Record<
       eyebrow: "PABRIK UTAMA & SUPPLIER DIRECT",
       h1: "Pabrik Paving Block Cisauk, Tangerang & Jasa Pemasangan",
       heroDesc:
-        "PT Kaha Sukses Mandiri (Kaha Block) berlokasi di fasilitas pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Sebagai pabrik conblock Tangerang, produsen conblock, dan supplier conblock terdekat, kami melayani jual paving block Tangerang langsung produsen, estimasi harga paving block Tangerang kompetitif, serta jasa pasang paving block Tangerang untuk wilayah Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
+        "PT Kaha Sukses Mandiri (Kaha Block) mengoperasikan fasilitas produksi seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Kami melayani pengadaan paving block langsung dari pabrik, konsultasi harga sesuai spesifikasi dan volume, pengiriman material, serta jasa pemasangan untuk Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
       factoryContextNotice:
         "Pabrik fisik Kaha Block berada di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015 memproduksi paving mutu K-250, K-300, dan K-400 untuk pengadaan langsung pabrik dan jasa pemasangan di Tangerang Raya.",
       keyBenefits: [
@@ -790,8 +794,8 @@ export const REGIONAL_PAGES_DATA: Record<
           desc: "Kedekatan jarak lokasi pabrik memberikan kemudahan koordinasi, peninjauan stok, dan jadwal pengiriman cepat.",
         },
         {
-          title: "Harga Produsen Langsung",
-          desc: "Mendapatkan jaminan kualitas material dan kepastian spesifikasi langsung dari tangan pertama.",
+          title: "Harga & Spesifikasi Langsung Pabrik",
+          desc: "Informasi harga dan spesifikasi disesuaikan dengan model, mutu, volume, serta lokasi proyek melalui tim Kaha Block.",
         },
         {
           title: "Tim Pasang & Peralatan Lengkap",
@@ -837,7 +841,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
       ],
       deliveryNotice:
-        "Pengiriman ke seluruh Tangerang Raya mencakup fasilitas gratis ongkir dan penurunan barang.",
+        "Untuk proyek di Tangerang Raya yang berada dalam wilayah Jabodetabek, pengiriman material gratis dan sudah termasuk penurunan barang.",
       installationNotice:
         "Konsultasikan pengadaan material beserta tim pasang untuk pengerjaan perkerasan lahan di Tangerang.",
       trustFactsTitle: "Fakta Fasilitas Pabrik Kaha Block Cisauk",
@@ -849,16 +853,16 @@ export const REGIONAL_PAGES_DATA: Record<
       ],
       faqs: [
         {
-          q: "Apakah Kaha Block melayani pabrik conblock terdekat dan pengadaan untuk Tangerang?",
-          a: "Ya. Bagi Anda yang mencari pabrik conblock terdekat atau produsen konblok di Tangerang, pabrik kami yang seluas 9.080 m² berlokasi di Cisauk, Kabupaten Tangerang. Kami melayani penjualan material conblock berkualitas maupun paket jasa pemasangan dengan armada pengiriman langsung ke seluruh wilayah Tangerang Raya.",
+          q: "Apakah Kaha Block melayani pengadaan paving block untuk wilayah Tangerang?",
+          a: "Ya. Pabrik Kaha Block seluas 9.080 m² berada di Cisauk, Kabupaten Tangerang. Kami melayani pengadaan material paving block langsung dari pabrik serta jasa pemasangan untuk Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
         },
         {
           q: "Apakah Kaha Block melayani jual dan jasa kontraktor pemasangan paving block di Tangerang?",
           a: "Ya. Kaha Block melayani penjualan material paving block langsung dari pabrik Cisauk maupun paket jasa kontraktor pemasangan lengkap untuk wilayah Kabupaten Tangerang, Kota Tangerang, dan Tangerang Selatan.",
         },
         {
-          q: "Bagaimana cara mendapatkan informasi harga paving block Tangerang langsung dari pabrik?",
-          a: "Untuk mendapatkan estimasi harga paving block Tangerang (per m² atau total volume), hubungi tim sales Kaha Block via WhatsApp dengan menginformasikan tipe paving (Truepave bata, paving tahu, hexagon), ketebalan (6 cm atau 8 cm), serta lokasi proyek Anda di Tangerang. Kami akan menerbitkan penawaran harga resmi langsung produsen dengan fasilitas gratis pengiriman dan penurunan barang.",
+          q: "Bagaimana cara mendapatkan harga paving block untuk proyek di Tangerang?",
+          a: `Kirim tipe atau model paving, ketebalan, estimasi luas area, volume kebutuhan, dan lokasi proyek melalui WhatsApp. Harga material tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id} dan penawaran final disesuaikan dengan spesifikasi serta volume. ${BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading.id}`,
         },
         {
           q: "Di mana alamat pasti pabrik paving block Kaha Block?",
@@ -900,7 +904,7 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           title: "Direct First-Hand Pricing",
-          desc: "Benefit from manufacturer pricing and verified product specifications directly from the source.",
+          desc: "Benefit from manufacturer pricing and product specifications directly from the production source.",
         },
         {
           title: "Full Laying Crew & Equipment Support",

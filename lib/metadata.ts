@@ -61,14 +61,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   products: {
     path: "/products",
     id: {
-      title: "Jual Paving Block Langsung Produsen | KAHA BLOCK",
+      title: "Harga Paving Block & Jual Langsung Produsen | KAHA BLOCK",
       description:
-        "Jual paving block dan conblock langsung dari produsen PT Kaha Sukses Mandiri di Cisauk. Tersedia mutu K-250, K-300, K-400 dan gratis pengiriman Jabodetabek.",
+        "Harga material paving block mulai Rp80.000/m²*. Jual langsung dari produsen di Cisauk dengan mutu K-250, K-300, K-400 dan gratis pengiriman khusus Jabodetabek.",
     },
     en: {
-      title: "Direct Factory Paving Block Supplier | KAHA BLOCK",
+      title: "Paving Block Prices & Direct Factory Supplier | KAHA BLOCK",
       description:
-        "Direct factory paving block supplier and manufacturer in Cisauk, Tangerang Regency. Truepave, Hexagonal, and Curb Stones with free delivery across Greater Jakarta.",
+        "Paving block material prices start from Rp80,000/m²*. Direct factory supply from Cisauk with K-250, K-300, K-400 grades and free delivery only within Greater Jakarta.",
     },
   },
   projects: {

@@ -2,6 +2,7 @@ import { isValidLocale, Locale } from "@/lib/dictionary";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { constructPageMetadata } from "@/lib/metadata";
 import { INSTALLATION_DATA } from "@/lib/local-service-data";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -122,12 +123,12 @@ export default async function JasaPemasanganPage({
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight mb-4">
                 {isEn
                   ? "2026 Paving Block Installation Cost Estimation Guide"
-                  : "Estimasi Biaya Pasang Paving Block per Meter 2026"}
+                  : "Estimasi Biaya Pemasangan Paving Block per m² 2026"}
               </h2>
               <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
                 {isEn
-                  ? "Paving block installation costs per square meter in 2026 vary depending on soil/site preparation, sub-base materials used, paving block model, total area volume, and project location. Kaha Block provides integrated paving block contractor services in the Greater Jakarta area (Jabodetabek) with an experienced team. Consult your area details with us to get an official formal price quotation."
-                  : "Biaya pasang paving block per meter pada 2026 bervariasi bergantung pada persiapan lahan, sub-base material yang digunakan, tipe paving block, total volume area, dan lokasi proyek. Kaha Block melayani jasa kontraktor pemasangan paving block terintegrasi di Jabodetabek dengan tim berpengalaman. Konsultasikan rincian area Anda untuk mendapatkan estimasi penawaran harga resmi."}
+                  ? "Paving block installation cost per square meter in 2026 varies by site preparation, sub-base requirements, paving model, total area, access, and project location. Material pricing and installation labor are calculated separately unless combined in one project quotation."
+                  : "Biaya pemasangan paving block per m² pada 2026 menyesuaikan persiapan lahan, kebutuhan sub-base, tipe paving, luas area, akses lokasi, dan wilayah proyek. Harga material dan biaya jasa pemasangan dihitung terpisah kecuali digabungkan dalam satu penawaran proyek."}
               </p>
             </div>
 
@@ -135,7 +136,7 @@ export default async function JasaPemasanganPage({
               <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-3">
                 {isEn
                   ? "How much does paving block installation cost per square meter in 2026?"
-                  : "Berapa estimasi biaya pasang paving block per meter 2026?"}
+                  : "Berapa estimasi biaya pemasangan paving block per m² pada 2026?"}
               </h3>
               <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed mb-4">
                 {isEn
@@ -173,13 +174,13 @@ export default async function JasaPemasanganPage({
               </span>
               <h3 className="text-2xl sm:text-3xl font-light font-heading text-white tracking-tight mb-3">
                 {isEn
-                  ? "Paving Block Prices Starting from Rp80,000/m²*"
-                  : "Harga Paving Block Mulai Rp80.000/m²*"}
+                  ? "Installation Cost Is Quoted Based on Project Conditions"
+                  : "Biaya Jasa Pemasangan Disesuaikan Kondisi Proyek"}
               </h3>
               <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
                 {isEn
-                  ? "Planning a project? Share your location, estimated area, and project scope to receive a material and installation estimate."
-                  : "Sedang merencanakan proyek? Kirim lokasi, luas area, dan kebutuhan Anda untuk mendapatkan estimasi material maupun layanan pemasangan."}
+                  ? `Paving block material starts from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}*. That figure is for material, not installation labor. Send the location, estimated area, and site conditions for a separate installation estimate or a combined project quotation.`
+                  : `Harga material paving block tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*. Angka tersebut adalah harga material, bukan tarif jasa pemasangan. Kirim lokasi, luas area, dan kondisi lahan untuk estimasi jasa pasang atau penawaran proyek terpadu.`}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
                 <a
@@ -189,7 +190,7 @@ export default async function JasaPemasanganPage({
                   className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[44px]"
                 >
                   <MessageSquare className="w-4 h-4 mr-2" aria-hidden="true" />
-                  <span>{isEn ? "Request Project Estimate" : "Minta Estimasi Biaya Proyek"}</span>
+                  <span>{isEn ? "Request Installation Estimate" : "Minta Estimasi Jasa Pasang"}</span>
                 </a>
                 <a
                   href={getWhatsAppUrl("secondary", "pricing", currentLang)}
@@ -198,13 +199,13 @@ export default async function JasaPemasanganPage({
                   className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
                 >
                   <Phone className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
-                  <span>{isEn ? "Ask About Project Pricing" : "Tanya Harga Terbaik"}</span>
+                  <span>{isEn ? "Check Material Price" : "Cek Harga Material"}</span>
                 </a>
               </div>
               <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
                 {isEn
-                  ? "*Final pricing may vary based on specifications, order volume, project location, and service requirements."
-                  : "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan."}
+                  ? `*${BUSINESS_FACTS.pricing.scope.en}`
+                  : `*${BUSINESS_FACTS.pricing.scope.id}`}
               </p>
             </div>
           </ScrollReveal>
@@ -265,7 +266,7 @@ export default async function JasaPemasanganPage({
               <ScrollReveal key={idx} delay={0.05 * idx} className="h-full">
                 <div className="bg-white border border-slate-200 rounded-xl p-6 h-full flex flex-col relative shadow-xs">
                   <span className="text-3xl font-black font-heading text-primary/20 mb-3 block">
-                    0{step.step}
+                    {step.step}
                   </span>
                   <h3 className="text-base font-bold font-heading text-slate-900 mb-2">
                     {step.title}
@@ -276,6 +277,48 @@ export default async function JasaPemasanganPage({
                 </div>
               </ScrollReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Material Options & Business Facts */}
+      <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+            <ScrollReveal className="bg-surface border border-slate-200 rounded-2xl p-6 sm:p-8">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+                <Layers className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight mb-3">
+                {data.materialsTitle}
+              </h2>
+              <p className="text-slate-600 text-sm sm:text-base font-sans leading-relaxed mb-6">
+                {data.materialsDesc}
+              </p>
+              <Link
+                href={`/${currentLang}/products`}
+                className="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline min-h-[44px]"
+              >
+                <span>{isEn ? "View Product Specifications" : "Lihat Spesifikasi Produk"}</span>
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+            </ScrollReveal>
+
+            <ScrollReveal className="bg-surface border border-slate-200 rounded-2xl p-6 sm:p-8" delay={0.05}>
+              <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight mb-6">
+                {data.trustTitle}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {data.trustFacts.map((fact) => (
+                  <div key={fact.label} className="bg-white border border-slate-200 rounded-xl p-4">
+                    <p className="text-xs uppercase tracking-wider text-slate-500 font-bold mb-1">
+                      {fact.label}
+                    </p>
+                    <p className="text-sm font-semibold text-slate-900">{fact.value}</p>
+                  </div>
+                ))}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>

@@ -612,7 +612,7 @@ export default async function BlogPostPage({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                WhatsApp 1
+                {isEn ? "Primary WhatsApp" : "WhatsApp Utama"}
               </a>
               <a
                 href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
@@ -621,7 +621,7 @@ export default async function BlogPostPage({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                WhatsApp 2
+                {isEn ? "Alternative WhatsApp" : "WhatsApp Alternatif"}
               </a>
               <Link
                 href={`/${currentLang}/products`}

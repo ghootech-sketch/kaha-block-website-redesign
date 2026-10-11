@@ -2,6 +2,7 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { getAllProducts } from "@/lib/products-data";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
@@ -233,12 +234,12 @@ export default async function Products({
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight mb-4">
                 {currentLang === "en"
                   ? "2026 Paving Block Price per Square Meter Guide"
-                  : "Panduan Harga Paving Block per Meter 2026"}
+                  : "Panduan Harga Paving Block per m² 2026"}
               </h2>
               <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
                 {currentLang === "en"
-                  ? "Paving block prices per square meter in 2026 adapt to the specific model, thickness, concrete grade, order volume, and project location. Kaha Block provides direct manufacturer sales from Cisauk and delivery across Greater Jakarta (Jabodetabek). For actual pricing, please send your desired product type, estimated surface area, and project location via WhatsApp."
-                  : "Harga paving block per meter pada 2026 menyesuaikan model, ketebalan, mutu beton, volume pemesanan, dan lokasi proyek. Kaha Block melayani penjualan langsung dari produsen di Cisauk serta pengiriman Jabodetabek. Untuk harga aktual, kirim tipe produk, estimasi luas area, dan lokasi proyek melalui WhatsApp."}
+                  ? `Paving block material prices in 2026 start from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}* and vary by model, thickness, concrete grade, order volume, and project location. Kaha Block supplies directly from its Cisauk factory. Send the product type, estimated area, and project location via WhatsApp for current pricing and stock availability.`
+                  : `Harga material paving block pada 2026 tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}* dan menyesuaikan model, ketebalan, mutu beton, volume pemesanan, serta lokasi proyek. Kaha Block melayani penjualan langsung dari pabrik Cisauk. Kirim tipe produk, estimasi luas area, dan lokasi proyek melalui WhatsApp untuk harga dan stok terkini.`}
               </p>
             </div>
 
@@ -246,12 +247,12 @@ export default async function Products({
               <h3 className="text-lg sm:text-xl font-bold font-heading text-slate-900 mb-3">
                 {currentLang === "en"
                   ? "How much does paving block cost per square meter in 2026?"
-                  : "Berapa harga paving block per meter 2026?"}
+                  : "Berapa harga material paving block per m² pada 2026?"}
               </h3>
               <p className="text-sm sm:text-base text-slate-600 font-sans leading-relaxed mb-4">
                 {currentLang === "en"
-                  ? "The price of paving blocks per square meter is determined by several specific factors rather than a single flat rate:"
-                  : "Harga paving block per meter ditentukan oleh beberapa faktor spesifik berikut, sehingga tidak ada satu tarif tunggal yang universal:"}
+                  ? `Paving block material starts from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}*. The final price is determined by the following factors:`
+                  : `Harga material paving block tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*. Harga akhir ditentukan oleh faktor-faktor berikut:`}
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
                 <li className="flex items-center gap-2">
@@ -279,6 +280,18 @@ export default async function Products({
                   <span>{currentLang === "en" ? "Material Only vs Full Installation Package" : "Paket Material Saja vs Jasa Pemasangan Lengkap"}</span>
                 </li>
               </ul>
+              <p className="mt-5 text-xs sm:text-sm text-slate-500 font-sans italic">
+                {currentLang === "en" ? BUSINESS_FACTS.pricing.scope.en : BUSINESS_FACTS.pricing.scope.id}
+              </p>
+              <a
+                href={getWhatsAppUrl("primary", "pricing", currentLang)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              >
+                <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
+                <span>{currentLang === "en" ? "Check Current Price & Stock" : "Cek Harga & Stok Terkini"}</span>
+              </a>
             </div>
           </ScrollReveal>
         </div>
@@ -294,12 +307,14 @@ export default async function Products({
               {dict.pricingBlock?.eyebrow || (currentLang === "en" ? "DIRECT FACTORY QUOTATION" : "PENAWARAN HARGA LANGSUNG PABRIK")}
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white font-heading tracking-tight mb-3">
-              {dict.pricingBlock?.title || (currentLang === "en" ? "Paving Block Prices Available Starting from Rp80,000/m²*" : "Harga Paving Block Tersedia Mulai Rp80.000/m²*")}
+              {dict.pricingBlock?.title || (currentLang === "en"
+                ? `Paving Block Material Prices Starting from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}*`
+                : `Harga Material Paving Block Mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*`)}
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               {dict.pricingBlock?.subtitle || (currentLang === "en" ? "For pricing based on specific models, volume, and project location, consult your requirements directly with the Kaha Block team." : "Untuk harga sesuai model, volume, dan lokasi proyek, konsultasikan kebutuhan Anda langsung dengan tim Kaha Block.")}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
+            <div className="flex items-center justify-center max-w-md mx-auto mb-4">
               <a
                 href={getWhatsAppUrl("primary", "pricing", currentLang)}
                 target="_blank"
@@ -309,18 +324,9 @@ export default async function Products({
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 <span>{dict.pricingBlock?.primaryCta || (currentLang === "en" ? "Request Best Project Price" : "Minta Harga Terbaik")}</span>
               </a>
-              <a
-                href={getWhatsAppUrl("secondary", "pricing", currentLang)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
-              >
-                <MessageSquare className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
-                <span>{dict.pricingBlock?.secondaryCta || (currentLang === "en" ? "Check Price via WhatsApp" : "Cek Harga via WhatsApp")}</span>
-              </a>
             </div>
             <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
-              {dict.pricingBlock?.disclaimer || (currentLang === "en" ? "*Final pricing may vary based on specifications, order volume, project location, and service requirements." : "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan.")}
+              {dict.pricingBlock?.disclaimer || `*${currentLang === "en" ? BUSINESS_FACTS.pricing.scope.en : BUSINESS_FACTS.pricing.scope.id}`}
             </p>
           </ScrollReveal>
         </div>

@@ -156,7 +156,7 @@ export default async function AreaLayananHubPage({
                     className="bg-primary group-hover:bg-primary-hover text-white font-bold py-3 px-5 rounded-xl flex items-center justify-between text-sm transition-colors min-h-[44px]"
                   >
                     <span>
-                      {isEn ? `Paving Block ${card.name}` : `Paving Block ${card.name}`}
+                      {isEn ? `Paving Services in ${card.name}` : `Paving Block ${card.name}`}
                     </span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -178,13 +178,13 @@ export default async function AreaLayananHubPage({
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white font-heading tracking-tight mb-3">
               {isEn
-                ? "Greater Jakarta Paving Block Prices Starting from Rp80,000/m²*"
-                : "Harga Paving Block Jabodetabek Mulai Rp80.000/m²*"}
+                ? `Greater Jakarta Paving Block Material Prices Starting from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}*`
+                : `Harga Material Paving Block Jabodetabek Mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*`}
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               {isEn
-                ? "Final pricing varies based on specifications, order volume, delivery location, and project requirements."
-                : "Harga akhir menyesuaikan spesifikasi, volume pemesanan, lokasi pengiriman, dan kebutuhan proyek."}
+                ? "Material pricing varies by specification, order volume, and delivery location. Installation is quoted separately based on site conditions and scope."
+                : "Harga material menyesuaikan spesifikasi, volume pemesanan, dan lokasi pengiriman. Biaya pemasangan dihitung terpisah berdasarkan kondisi lapangan dan lingkup pekerjaan."}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
               <a
@@ -194,7 +194,7 @@ export default async function AreaLayananHubPage({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[44px]"
               >
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-                <span>{isEn ? "Check Price for My Location" : "Cek Harga untuk Lokasi Saya"}</span>
+                <span>{isEn ? "Check Material Price for My Location" : "Cek Harga Material untuk Lokasi Saya"}</span>
               </a>
               <a
                 href={getWhatsAppUrl("secondary", "project-estimate", currentLang)}
@@ -208,8 +208,8 @@ export default async function AreaLayananHubPage({
             </div>
             <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
               {isEn
-                ? "*Final pricing may vary based on specifications, order volume, project location, and service requirements."
-                : "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan."}
+                ? `*${BUSINESS_FACTS.pricing.scope.en}`
+                : `*${BUSINESS_FACTS.pricing.scope.id}`}
             </p>
           </ScrollReveal>
         </div>

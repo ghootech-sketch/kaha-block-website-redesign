@@ -21,6 +21,11 @@ export default function GoogleAdsTag() {
   }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const hostname = window.location.hostname.toLowerCase();
+    if (!ALLOWED_HOSTNAMES.includes(hostname)) return;
+
     const processedEvents = new WeakSet<Event>();
     let lastTrackedTime = 0;
     let lastTrackedHref = "";
@@ -36,9 +41,11 @@ export default function GoogleAdsTag() {
       if (!rawHref) return;
 
       let isWaLink = false;
+      let whatsappUrl: URL | null = null;
       try {
-        const url = new URL(anchor.href, window.location.href);
-        isWaLink = url.hostname === "wa.me" || url.hostname.endsWith(".wa.me");
+        whatsappUrl = new URL(anchor.href, window.location.href);
+        isWaLink =
+          whatsappUrl.hostname === "wa.me" || whatsappUrl.hostname.endsWith(".wa.me");
       } catch {
         isWaLink = rawHref.startsWith("https://wa.me/") || rawHref.startsWith("http://wa.me/");
       }
@@ -55,17 +62,28 @@ export default function GoogleAdsTag() {
       lastTrackedHref = rawHref;
 
       try {
-        if (
-          typeof window !== "undefined" &&
-          typeof (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag === "function"
-        ) {
-          (window as unknown as { gtag: (...args: unknown[]) => void }).gtag(
-            "event",
-            "conversion",
-            {
-              send_to: WHATSAPP_CONVERSION_SEND_TO,
-            }
-          );
+        const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+        if (typeof gtag === "function") {
+          const linkText =
+            anchor.textContent?.replace(/\s+/g, " ").trim().slice(0, 120) || "WhatsApp";
+          const whatsappPhone =
+            whatsappUrl?.pathname.replace(/\D/g, "") ||
+            rawHref.replace(/^https?:\/\/wa\.me\//, "").split("?")[0].replace(/\D/g, "");
+
+          // GA4 diagnostic event: this measures a click toward WhatsApp, not a sent message.
+          gtag("event", "whatsapp_click", {
+            send_to: GOOGLE_ANALYTICS_ID,
+            page_path: window.location.pathname,
+            link_url: rawHref,
+            link_text: linkText,
+            cta_id: anchor.id || "unlabeled_whatsapp_link",
+            whatsapp_phone: whatsappPhone,
+          });
+
+          // Google Ads conversion remains a click-to-WhatsApp action.
+          gtag("event", "conversion", {
+            send_to: WHATSAPP_CONVERSION_SEND_TO,
+          });
         }
       } catch {
         // Do not block navigation if gtag is unavailable

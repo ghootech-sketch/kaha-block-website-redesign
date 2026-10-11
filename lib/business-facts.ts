@@ -22,6 +22,19 @@ export const BUSINESS_FACTS = {
   foundingDate: "2015",
   domain: SITE_URL,
 
+  // Public commercial facts
+  pricing: {
+    materialStartingPricePerM2: 80000,
+    materialStartingPriceDisplay: {
+      id: "Rp80.000/m²",
+      en: "Rp80,000/m²",
+    },
+    scope: {
+      id: "Harga mulai berlaku untuk material paving block; biaya pemasangan dihitung terpisah berdasarkan kondisi lapangan dan lingkup pekerjaan.",
+      en: "The starting price applies to paving block material; installation is quoted separately based on site conditions and scope of work.",
+    },
+  },
+
   // Factory & Office Physical Location
   address: {
     street: "Jl. Cibadak No.7, Suradita",
@@ -81,6 +94,12 @@ export const BUSINESS_FACTS = {
     serviceArea: {
       id: "Jabodetabek",
       en: "Greater Jakarta (Jabodetabek)",
+    },
+    deliveryPolicy: {
+      freeDeliveryAndOffloading: {
+        id: "Gratis pengiriman dan penurunan barang khusus wilayah Jabodetabek.",
+        en: "Free delivery and material offloading are available only within Greater Jakarta (Jabodetabek).",
+      },
     },
     machineryType: {
       id: "Mesin full otomatis hidrolik",

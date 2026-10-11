@@ -264,10 +264,10 @@ export default async function Home({
                       {currentLang === "id" ? "AREA PABRIK" : "FACILITY SIZE"}
                     </div>
                     <Link
-                      href={`/${currentLang}/area-layanan/tangerang`}
+                      href={`/${currentLang}/projects/production`}
                       className="text-xs sm:text-sm font-bold text-white font-heading whitespace-nowrap hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent"
                     >
-                      9.080 m²
+                      {BUSINESS_FACTS.operations.facilityAreaDisplay}
                     </Link>
                   </div>
                 </div>

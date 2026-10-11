@@ -6,6 +6,7 @@ import { isValidLocale, Locale } from "@/lib/dictionary";
 import { getProductData, PRODUCT_SLUGS } from "@/lib/products-data";
 import { constructProductMetadata } from "@/lib/metadata";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { BUSINESS_FACTS } from "@/lib/business-facts";
 import JsonLd from "@/components/JsonLd";
 import ScrollReveal from "@/components/ScrollReveal";
 import {
@@ -84,8 +85,8 @@ export default async function ProductDetailPage({
     ? "Factory-Direct Consultation & Quotation"
     : "Konsultasi Pengadaan Langsung Pabrik";
   const consultationDesc = isEn
-    ? "Connect with Kaha Block's sales team directly to request an official quotation tailored to your model, thickness, color, and area volume (m²). Deliveries across Greater Jakarta (Jabodetabek) include free shipping and material offloading."
-    : "Hubungi tim sales Kaha Block via WhatsApp untuk mendapatkan surat penawaran harga resmi yang disesuaikan dengan tipe model, ketebalan, pilihan warna, dan volume luas area (m²). Pengiriman ke seluruh Jabodetabek dilengkapi fasilitas gratis pengiriman dan penurunan barang.";
+    ? `Connect with Kaha Block's sales team directly to request an official quotation tailored to your model, thickness, color, and area volume (m²). ${BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading.en}`
+    : `Hubungi tim sales Kaha Block via WhatsApp untuk mendapatkan surat penawaran harga resmi yang disesuaikan dengan tipe model, ketebalan, pilihan warna, dan volume luas area (m²). ${BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading.id}`;
   const specsTitle = isEn ? "Technical Specifications" : "Spesifikasi Teknis";
   const applicationsTitle = isEn ? "Applications & Use Cases" : "Peruntukan & Aplikasi Lapangan";
   const functionsTitle = isEn ? "Key Characteristics & Functions" : "Karakteristik & Fungsi Produk";
@@ -175,8 +176,8 @@ export default async function ProductDetailPage({
                     <Truck className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
                     <span>
                       {isEn
-                        ? "Direct delivery across Greater Jakarta (Jabodetabek) with offloading"
-                        : "Pengiriman langsung ke Jabodetabek gratis ongkir & penurunan barang"}
+                        ? BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading.en
+                        : BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading.id}
                     </span>
                   </div>
                   <div className="pt-2 border-t border-slate-200/60 flex flex-wrap gap-x-4 gap-y-1 font-medium">
@@ -271,15 +272,15 @@ export default async function ProductDetailPage({
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal className="text-center max-w-2xl mx-auto mb-10">
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary font-heading block mb-2">
-                {isEn ? "VERIFIED SPECIFICATIONS" : "DATA SPESIFIKASI"}
+                {isEn ? "PRODUCT SPECIFICATIONS" : "SPESIFIKASI PRODUK"}
               </span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light text-slate-900 font-heading tracking-tight mb-3">
                 {specsTitle}
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-sans">
                 {isEn
-                  ? "Standard technical data verified directly from PT Kaha Sukses Mandiri's production facility in Cisauk, Tangerang Regency."
-                  : "Data teknis spesifikasi faktual langsung dari fasilitas produksi PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang."}
+                  ? "Technical product specifications supplied from PT Kaha Sukses Mandiri's production facility in Cisauk, Tangerang Regency."
+                  : "Data teknis produk dari fasilitas produksi PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang."}
               </p>
             </ScrollReveal>
 

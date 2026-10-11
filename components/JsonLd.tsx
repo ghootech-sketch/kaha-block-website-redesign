@@ -15,13 +15,14 @@ interface JsonLdProps {
 
 export default function JsonLd({ page = "home", lang = "id", post, product, videoItem }: JsonLdProps) {
   const structuredData = generateStructuredDataGraph({ page, lang, post, product, videoItem });
+  const serializedStructuredData = JSON.stringify(structuredData).replace(/</g, "\\u003c");
 
   return (
     <script
       id={`json-ld-${page}${product ? `-${product.slug}` : ""}${videoItem ? `-${videoItem.slug}` : ""}`}
       type="application/ld+json"
       suppressHydrationWarning
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      dangerouslySetInnerHTML={{ __html: serializedStructuredData }}
     />
   );
 }

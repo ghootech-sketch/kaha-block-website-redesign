@@ -84,7 +84,6 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
       <div
         id="floating-whatsapp-menu"
         role="dialog"
-        aria-modal="true"
         aria-label={titleText}
         aria-hidden={!isOpen}
         className={`absolute bottom-full right-0 mb-4 bg-white rounded-xl shadow-2xl border border-stone-200/50 overflow-hidden transition-all duration-300 origin-bottom-right w-64 ${
@@ -103,7 +102,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
             }}
             tabIndex={isOpen ? 0 : -1}
             className="min-w-[44px] min-h-[44px] -mr-2 -my-2 flex items-center justify-center text-slate-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
-            aria-label="Close"
+            aria-label={lang === "en" ? "Close" : "Tutup"}
           >
             <X className="w-4 h-4" />
           </button>
@@ -124,7 +123,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">WhatsApp 1</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Primary WhatsApp" : "WhatsApp Utama"}</p>
               <p className="text-sm font-bold text-slate-900">{BUSINESS_FACTS.contact.whatsappPrimaryDisplay}</p>
             </div>
           </a>
@@ -142,7 +141,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">WhatsApp 2</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Alternative WhatsApp" : "WhatsApp Alternatif"}</p>
               <p className="text-sm font-bold text-slate-900">{BUSINESS_FACTS.contact.whatsappSecondaryDisplay}</p>
             </div>
           </a>
