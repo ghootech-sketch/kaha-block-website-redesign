@@ -81,12 +81,12 @@ export const PRODUCTS_DATA_ID: Record<ProductSlug, ProductData> = {
     quickSpecs: [
       "Pilihan Warna: Abu-abu, Merah, Hitam, Kuning",
       "Pilihan Tebal: 6 cm, 8 cm, 10 cm",
-      "Toleransi Ukuran: ± 2 mm & 2 kg",
+      "Toleransi Ukuran: ± 2 mm",
     ],
     specs: [
       { label: "Pilihan Warna", value: "Abu-abu, Merah, Hitam, Kuning" },
       { label: "Pilihan Tebal", value: "6 cm, 8 cm, 10 cm" },
-      { label: "Toleransi Ukuran", value: "± 2 mm & 2 kg" },
+      { label: "Toleransi Ukuran", value: "± 2 mm" },
       { label: "Bahan Baku", value: "Semen curah Holcim Dynamix dan semen zak SCG" },
       { label: "Penyerapan Air", value: "Maksimal 6%" },
       { label: "Karakteristik Permukaan", value: "Halus, tidak licin, warna tahan lama" },
@@ -438,12 +438,12 @@ export const PRODUCTS_DATA_EN: Record<ProductSlug, ProductData> = {
     quickSpecs: [
       "Color Options: Grey, Red, Black, Yellow",
       "Thickness Options: 6 cm, 8 cm, 10 cm",
-      "Size Tolerance: ± 2 mm & 2 kg",
+      "Size Tolerance: ± 2 mm",
     ],
     specs: [
       { label: "Color Options", value: "Grey, Red, Black, Yellow" },
       { label: "Thickness Options", value: "6 cm, 8 cm, 10 cm" },
-      { label: "Size Tolerance", value: "± 2 mm & 2 kg" },
+      { label: "Size Tolerance", value: "± 2 mm" },
       { label: "Raw Materials", value: "Holcim Dynamix bulk cement and SCG bag cement" },
       { label: "Water Absorption", value: "Max 6%" },
       { label: "Surface Characteristics", value: "Smooth, non-slip, durable coloration" },
