@@ -44,24 +44,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * These timestamps are intentionally stable and must ONLY change when a route receives a meaningful
    * content or architecture update. Do NOT use request/build time (new Date() or Date.now()).
    * 
-   * - Homepage "": 2026-10-01T10:50:24.000Z (commit b532f51b - homepage product-link correction)
-   * - About "/about": 2026-10-01T17:18:11.000Z (commit 838afe61 - Phase 3 first-party evidence pass)
-   * - Products Hub "/products": 2026-10-01T10:50:24.000Z (commit b532f51b - products catalog single source of truth)
+   * - Homepage "": 2026-10-18 (metadata CTR + intent segmentation update)
+   * - About "/about": 2026-10-18 (brand/legal metadata update)
+   * - Products Hub "/products": 2026-10-18 (price-intent metadata update)
    * - Production Gallery "/projects/production": 2026-10-01T17:18:11.000Z (commit 838afe61 - Phase 3 first-party evidence pass)
-   * - Installation Service "/jasa-pemasangan-paving-block": 2026-10-01T11:39:19.000Z (commit e60e2d3c - service copy cleanup)
-   * - Regional Pages "/area-layanan/*": 2026-10-01T11:39:19.000Z (commit e60e2d3c - regional template copy cleanup)
+   * - Installation Service "/jasa-pemasangan-paving-block": 2026-10-18 (contractor intent + metadata update)
+   * - Jakarta & Tangerang regional pages: 2026-10-18 (CTR metadata update)
    * 
    * Note: Routes without established material modification dates (e.g., /projects, /contact, /area-layanan)
    * intentionally omit lastModified rather than fabricating an arbitrary date.
    */
   const CORE_ROUTE_LAST_MODIFIED: Record<string, string> = {
-    "": "2026-10-01T10:50:24.000Z",
-    "/about": "2026-10-01T17:18:11.000Z",
-    "/products": "2026-10-01T10:50:24.000Z",
+    "": "2026-10-18T00:00:00.000Z",
+    "/about": "2026-10-18T00:00:00.000Z",
+    "/products": "2026-10-18T00:00:00.000Z",
     "/projects/production": "2026-10-01T17:18:11.000Z",
-    "/jasa-pemasangan-paving-block": "2026-10-01T11:39:19.000Z",
-    "/area-layanan/jakarta": "2026-10-01T11:39:19.000Z",
-    "/area-layanan/tangerang": "2026-10-01T11:39:19.000Z",
+    "/jasa-pemasangan-paving-block": "2026-10-18T00:00:00.000Z",
+    "/area-layanan/jakarta": "2026-10-18T00:00:00.000Z",
+    "/area-layanan/tangerang": "2026-10-18T00:00:00.000Z",
     "/area-layanan/bekasi": "2026-10-01T11:39:19.000Z",
     "/area-layanan/depok": "2026-10-01T11:39:19.000Z",
     "/area-layanan/bogor": "2026-10-01T11:39:19.000Z",
@@ -69,6 +69,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Shared product page template timestamp (commit 838afe61 - shared product detail page evidence update)
   const SHARED_PRODUCT_PAGE_LASTMOD = new Date("2026-10-01T17:18:11.000Z");
+  // Only these individual product pages received metadata/content changes on 2026-10-18.
+  const PRODUCT_PAGE_LAST_MODIFIED: Record<string, string> = {
+    "truepave": "2026-10-18T00:00:00.000Z",
+    "topi-uskup": "2026-10-18T00:00:00.000Z",
+  };
 
   // 1. Core static pages
   locales.forEach((locale) => {
@@ -105,7 +110,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     PRODUCT_SLUGS.forEach((slug) => {
       sitemapEntries.push({
         url: `${SITE_URL}/${locale}/products/${slug}`,
-        lastModified: SHARED_PRODUCT_PAGE_LASTMOD,
+        lastModified: PRODUCT_PAGE_LAST_MODIFIED[slug]
+          ? new Date(PRODUCT_PAGE_LAST_MODIFIED[slug])
+          : SHARED_PRODUCT_PAGE_LASTMOD,
         changeFrequency: "monthly",
         priority: 0.8,
         alternates: {

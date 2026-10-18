@@ -35,6 +35,7 @@ export const legacyRedirects: Record<string, string> = {
 
   // Legacy WordPress tag archives still visible in Search Console
   "/tag/jual-paving-block-tangerang": "/id/area-layanan/tangerang",
+  "/tag/jual-paving-block-terdekat": "/id/products",
   "/tag/jual-paving-block-bekasi": "/id/area-layanan/bekasi",
   "/tag/paving-block-tangerang": "/id/area-layanan/tangerang",
   "/tag/jual-paving-block-jakarta": "/id/area-layanan/jakarta",
