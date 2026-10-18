@@ -200,7 +200,7 @@ export default async function Products({
                         <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-accent" aria-hidden="true" />
                       </Link>
                       <a 
-                        href={getWhatsAppUrl(index % 2 === 0 ? "primary" : "secondary", "products", currentLang)} 
+                        href={getWhatsAppUrl("primary", `product:${product.name}`, currentLang)} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-full min-h-[44px] bg-primary text-white py-3 px-4 rounded-xl font-bold text-sm hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading uppercase tracking-wide shadow-xs"
@@ -393,7 +393,7 @@ export default async function Products({
               </div>
               <div className="shrink-0 w-full md:w-auto">
                 <a
-                  href={getWhatsAppUrl("primary", "products", currentLang)}
+                  href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full md:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase shadow-xs min-h-[44px]"

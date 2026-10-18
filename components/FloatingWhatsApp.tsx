@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Locale } from "@/lib/dictionary";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { X, MessageCircle } from "lucide-react";
 
 interface FloatingWhatsAppProps {
@@ -16,19 +17,13 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
   const triggerBtnRef = useRef<HTMLButtonElement>(null);
 
   const ariaLabel =
-    lang === "en" ? "Open Kaha Block WhatsApp" : "Buka WhatsApp Kaha Block";
-    
-  const titleText =
-    lang === "en" ? "Chat on WhatsApp" : "WhatsApp Kaha Block";
+    lang === "en" ? "Open WhatsApp price and stock options" : "Buka opsi WhatsApp untuk cek harga dan stok";
 
-  const primaryUrl =
-    lang === "en"
-      ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn
-      : BUSINESS_FACTS.contact.whatsappPrimaryUrl;
-  const secondaryUrl =
-    lang === "en"
-      ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn
-      : BUSINESS_FACTS.contact.whatsappSecondaryUrl;
+  const titleText =
+    lang === "en" ? "Check Price & Stock" : "Cek Harga & Stok";
+
+  const primaryUrl = getWhatsAppUrl("primary", "quick-quote", lang);
+  const secondaryUrl = getWhatsAppUrl("secondary", "installation", lang);
 
   // Focus first option when opened
   useEffect(() => {
@@ -123,7 +118,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Primary WhatsApp" : "WhatsApp Utama"}</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Main Sales" : "Sales Utama"}</p>
               <p className="text-sm font-bold text-slate-900">{BUSINESS_FACTS.contact.whatsappPrimaryDisplay}</p>
             </div>
           </a>
@@ -141,7 +136,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
               <MessageCircle className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Alternative WhatsApp" : "WhatsApp Alternatif"}</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">{lang === "en" ? "Installation Estimate" : "Estimasi Jasa Pasang"}</p>
               <p className="text-sm font-bold text-slate-900">{BUSINESS_FACTS.contact.whatsappSecondaryDisplay}</p>
             </div>
           </a>

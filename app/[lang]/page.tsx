@@ -213,7 +213,7 @@ export default async function Home({
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4 mb-5 lg:mb-6">
                 <a
                   id="hero-primary-cta"
-                  href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                  href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-dark px-6 sm:px-7 h-[56px] lg:h-[60px] font-bold text-xs sm:text-sm tracking-widest uppercase transition-all shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded-xs font-heading group"
@@ -221,8 +221,8 @@ export default async function Home({
                   <Phone className="w-4 h-4 mr-2.5 text-dark fill-dark/20 flex-shrink-0" aria-hidden="true" />
                   <span>
                     {currentLang === "id"
-                      ? "KONSULTASI VIA WHATSAPP"
-                      : "CONSULT VIA WHATSAPP"}
+                      ? "CEK HARGA & STOK"
+                      : "CHECK PRICE & STOCK"}
                   </span>
                   <ArrowRight className="w-4 h-4 ml-2.5 text-dark group-hover:translate-x-1 transition-transform flex-shrink-0" aria-hidden="true" />
                 </a>
@@ -240,6 +240,11 @@ export default async function Home({
                   <ArrowRight className="w-4 h-4 ml-2.5 text-accent group-hover:translate-x-1 transition-transform flex-shrink-0" aria-hidden="true" />
                 </Link>
               </div>
+              <p className="text-[11px] sm:text-xs text-slate-300/90 font-sans mb-5 lg:mb-6 -mt-1">
+                {currentLang === "id"
+                  ? "Untuk pengecekan lebih cepat, cukup siapkan lokasi proyek + perkiraan luas area."
+                  : "For a faster check, simply prepare your project location + estimated area."}
+              </p>
 
               {/* 5. Trust / Fact Rail - Architectural Specification Strip Directly Below CTAs */}
               <div className="pt-3.5 lg:pt-4 pb-2.5 sm:pb-3 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 lg:gap-0 lg:flex lg:items-center lg:divide-x lg:divide-white/15">
@@ -898,7 +903,7 @@ export default async function Home({
                     </div>
                     <a
                       id="installation-consult-btn"
-                      href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      href={getWhatsAppUrl("secondary", "installation", currentLang)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -1386,7 +1391,7 @@ export default async function Home({
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
                   <a
                     id="final-whatsapp-btn"
-                    href={currentLang === "en" ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                    href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-10 py-4 font-bold text-xs uppercase tracking-widest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"

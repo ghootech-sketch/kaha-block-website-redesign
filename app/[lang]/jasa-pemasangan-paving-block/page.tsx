@@ -413,14 +413,14 @@ export default async function JasaPemasanganPage({
             >
               <MessageSquare className="w-5 h-5" aria-hidden="true" />
               <span>
-                {isEn ? "Inquire Price via WhatsApp" : "Tanya Harga via WhatsApp"}
+                {isEn ? "Request Installation Estimate" : "Minta Estimasi Jasa Pasang"}
               </span>
             </a>
             <Link
               href={`/${currentLang}/contact`}
               className="bg-white/10 hover:bg-white/20 text-white font-semibold px-7 py-3.5 rounded-xl inline-flex items-center gap-2 transition-colors text-sm sm:text-base border border-white/20 min-h-[44px]"
             >
-              <span>{isEn ? "Contact Page" : "Halaman Kontak"}</span>
+              <span>{isEn ? "View Contact Options" : "Lihat Kontak Lengkap"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

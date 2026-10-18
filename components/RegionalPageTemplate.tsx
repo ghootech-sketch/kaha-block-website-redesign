@@ -161,7 +161,7 @@ export default function RegionalPageTemplate({
                 >
                   <MessageSquare className="w-4 h-4" aria-hidden="true" />
                   <span>
-                    {isEn ? "Request Quote" : "Minta Penawaran Harga"}
+                    {isEn ? "Check Price & Delivery" : "Cek Harga & Pengiriman"}
                   </span>
                 </a>
                 <Link
@@ -390,18 +390,18 @@ export default function RegionalPageTemplate({
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 <span>
                   {isEn
-                    ? `Check Price for ${slug.charAt(0).toUpperCase() + slug.slice(1)}`
-                    : `Cek Harga untuk ${slug.charAt(0).toUpperCase() + slug.slice(1)}`}
+                    ? "Check Price & Delivery"
+                    : "Cek Harga & Pengiriman"}
                 </span>
               </a>
               <a
-                href={getWhatsAppUrl("secondary", "project-estimate", lang)}
+                href={getWhatsAppUrl("secondary", `regional-installation:${slug}`, lang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
-                <span>{isEn ? "Request Project Estimate" : "Minta Estimasi Biaya Proyek"}</span>
+                <span>{isEn ? "Request Installation Estimate" : "Minta Estimasi Jasa Pasang"}</span>
               </a>
             </div>
             <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">

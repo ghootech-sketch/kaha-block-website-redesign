@@ -1,4 +1,5 @@
 import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -301,13 +302,13 @@ export default async function BlogIndexPage({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <Phone className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                {isEn ? "Chat via WhatsApp" : "Hubungi via WhatsApp"}
+                {isEn ? "Check Price & Stock" : "Cek Harga & Stok"}
               </a>
               <Link
                 href={`/${currentLang}/products`}

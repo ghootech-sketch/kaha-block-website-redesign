@@ -1,5 +1,6 @@
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -64,7 +65,7 @@ export default async function Contact({
             {/* Card 1: WhatsApp 1 */}
             <ScrollReveal delay={0.05} className="h-full">
               <a
-                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl}
+                href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -93,7 +94,7 @@ export default async function Contact({
             {/* Card 2: WhatsApp 2 */}
             <ScrollReveal delay={0.1} className="h-full">
               <a
-                href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                href={getWhatsAppUrl("secondary", "installation", currentLang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
@@ -260,7 +261,7 @@ export default async function Contact({
                     {dict.infoStrip.altContactLabel}
                   </span>
                   <a
-                    href={dict.whatsappUrl}
+                    href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base sm:text-lg font-bold text-slate-900 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
@@ -275,7 +276,7 @@ export default async function Contact({
                       {dict.infoStrip.secondaryContactLabel}
                     </span>
                     <a
-                      href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl}
+                      href={getWhatsAppUrl("secondary", "installation", currentLang)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm sm:text-base font-bold text-slate-700 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
@@ -574,22 +575,22 @@ export default async function Contact({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
               <a 
-                href={isEn ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn : BUSINESS_FACTS.contact.whatsappPrimaryUrl} 
+                href={getWhatsAppUrl("primary", "quick-quote", currentLang)} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                WhatsApp 1
+                {isEn ? "Check Price & Stock" : "Cek Harga & Stok"}
               </a>
               <a 
-                href={isEn ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn : BUSINESS_FACTS.contact.whatsappSecondaryUrl} 
+                href={getWhatsAppUrl("secondary", "installation", currentLang)} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase"
               >
                 <MessageSquare className="w-4 h-4 mr-2.5" aria-hidden="true" />
-                WhatsApp 2
+                {isEn ? "Request Installation Estimate" : "Minta Estimasi Jasa Pasang"}
               </a>
             </div>
           </ScrollReveal>

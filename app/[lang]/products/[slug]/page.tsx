@@ -80,7 +80,7 @@ export default async function ProductDetailPage({
   const homeLabel = isEn ? "Home" : "Beranda";
   const productsLabel = isEn ? "Products" : "Produk";
   const catalogCtaLabel = isEn ? "View Complete Catalog" : "Lihat Semua Katalog";
-  const orderCtaLabel = isEn ? "Order / Inquire via WhatsApp" : "Pesan via WhatsApp";
+  const orderCtaLabel = isEn ? "Check Price & Stock on WhatsApp" : "Cek Harga & Stok via WhatsApp";
   const consultationTitle = isEn
     ? "Factory-Direct Consultation & Quotation"
     : "Konsultasi Pengadaan Langsung Pabrik";
@@ -244,7 +244,7 @@ export default async function ProductDetailPage({
                 {/* Primary CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <a
-                    href={getWhatsAppUrl("primary", "products", currentLang)}
+                    href={getWhatsAppUrl("primary", `product:${product.name}`, currentLang)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 sm:px-8 py-3.5 rounded-xl font-bold text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading uppercase tracking-wide min-h-[44px] shadow-xs"
@@ -405,7 +405,7 @@ export default async function ProductDetailPage({
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                 <a
-                  href={getWhatsAppUrl("secondary", "products", currentLang)}
+                  href={getWhatsAppUrl("primary", `product:${product.name}`, currentLang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-8 sm:px-10 py-3.5 rounded-xl font-bold text-sm sm:text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[44px]"

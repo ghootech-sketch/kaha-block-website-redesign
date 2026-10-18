@@ -55,56 +55,72 @@ export function getWhatsAppUrl(
   };
 
   if (isEn) {
-    if (topic === "pricing" || topic === "pricing-starting") {
-      message = "Hello Kaha Block, I would like to check paving block pricing starting from Rp80,000/sq m. Please provide a quotation based on my project requirements.";
+    if (topic === "quick-quote") {
+      message = "Hello Kaha Block, I would like to check paving block price and stock.\n\nProject location:\nEstimated area size:\nRequirements: materials only / materials + installation\nPaving type (if known):";
+    } else if (topic === "pricing" || topic === "pricing-starting") {
+      message = "Hello Kaha Block, I would like to check paving block pricing.\n\nProject location:\nEstimated area size:\nPaving type (if known):\nRequirements: materials only / materials + installation";
     } else if (topic === "project-estimate") {
-      message = "Hello Kaha Block, I would like to request a project cost estimate for paving blocks.\n\nProject location:\nEstimated area size:\nRequirements: materials only / materials + installation";
+      message = "Hello Kaha Block, I would like to request a paving block project estimate.\n\nProject location:\nEstimated area size:\nPaving type (if known):\nRequirements: materials only / materials + installation";
     } else if (topic === "area-layanan") {
-      message = "Hello Kaha Block, I would like to check paving block pricing for a project in Greater Jakarta. Please provide a quotation based on my project requirements and volume.";
+      message = "Hello Kaha Block, I would like to check paving block pricing for a project in Greater Jakarta.\n\nProject location:\nEstimated area size:\nRequirements: materials only / materials + installation";
     } else if (topic && topic.startsWith("regional-pricing:")) {
       const region = getRegionName(topic);
-      message = `Hello Kaha Block, I would like to check paving block pricing for a project in ${region}. Please provide a quotation based on my project requirements and volume.`;
+      message = `Hello Kaha Block, I would like to check paving block price and delivery for a project in ${region}.\n\nProject location: ${region} / ___\nEstimated area size:\nPaving type (if known):\nRequirements: materials only / materials + installation`;
+    } else if (topic && topic.startsWith("regional-installation:")) {
+      const region = getRegionName(topic.replace(/^regional-installation:/, ""));
+      message = `Hello Kaha Block, I would like to request a paving block installation estimate in ${region}.\n\nProject location: ${region} / ___\nEstimated area size:\nSite condition:\nPaving type (if known):`;
+    } else if (topic && topic.startsWith("product:")) {
+      const productName = topic.replace(/^product:/, "").trim();
+      message = `Hello Kaha Block, I would like to check price and stock for ${productName}.\n\nProject location:\nEstimated area size:\nRequirements: materials only / materials + installation`;
     } else if (topic === "products") {
-      message = "Hello Kaha Block, I would like to request a paving block price quote. Products of interest: ___. Estimated volume ± ___ sq m. Project location: ___.";
+      message = "Hello Kaha Block, I would like to check paving block price and stock.\n\nProduct of interest:\nEstimated area size:\nProject location:\nRequirements: materials only / materials + installation";
     } else if (topic === "installation") {
-      message = "Hello Kaha Block, I would like to request a paving block installation cost estimate. Project location: ___. Area size ± ___ sq m. Planned application: ___.";
+      message = "Hello Kaha Block, I would like to request a paving block installation estimate.\n\nProject location:\nEstimated area size:\nSite condition:\nRequirements: installation only / materials + installation";
     } else if (topic === "production") {
-      message = "Hello Kaha Block, I am interested in your hydraulic press paving blocks. Please provide product catalogs and specifications for K-250, K-300, and K-400 grades.";
+      message = "Hello Kaha Block, I have viewed your production documentation and would like to check product specifications, price, and stock.\n\nProject location:\nEstimated area size:\nRequired grade/type (if known):";
     } else if (topic && ["jakarta", "tangerang", "bekasi", "depok", "bogor"].includes(topic.toLowerCase())) {
       const region = getRegionName(topic.toLowerCase());
-      message = `Hello Kaha Block, I would like to request a paving block price estimate and installation cost for the ${region} area. Estimated area ± ___ sq m. Paving model: ___. Please provide concrete grade recommendations and the best price quote.`;
+      message = `Hello Kaha Block, I would like to check paving block price and installation options for ${region}.\n\nProject location: ${region} / ___\nEstimated area size:\nPaving type (if known):`;
     } else if (topic === "contact") {
-      message = "Hello Kaha Block, I would like to inquire about your paving block products and installation contractor services.";
+      message = "Hello Kaha Block, I would like to inquire about paving block products and installation services.\n\nProject location:\nEstimated area size:\nRequirements:";
     } else if (typeof topic === "string") {
       message = `Hello Kaha Block, I am inquiring about ${topic}.`;
     } else {
-      message = "Hello Kaha Block, I would like to request more information about your paving block materials and installation services.";
+      message = "Hello Kaha Block, I would like to check paving block price and stock.\n\nProject location:\nEstimated area size:\nRequirements:";
     }
   } else {
-    if (topic === "pricing" || topic === "pricing-starting") {
-      message = "Halo Kaha Block, saya ingin cek harga paving block mulai Rp80.000/m². Mohon info penawaran sesuai kebutuhan proyek saya.";
+    if (topic === "quick-quote") {
+      message = "Halo Kaha Block, saya ingin cek harga & stok paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan: material saja / material + pemasangan\nJenis paving (jika sudah tahu):";
+    } else if (topic === "pricing" || topic === "pricing-starting") {
+      message = "Halo Kaha Block, saya ingin cek harga paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nJenis paving (jika sudah tahu):\nKebutuhan: material saja / material + pemasangan";
     } else if (topic === "project-estimate") {
-      message = "Halo Kaha Block, saya ingin minta estimasi biaya proyek paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan: material saja / material + pemasangan";
+      message = "Halo Kaha Block, saya ingin minta estimasi biaya proyek paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nJenis paving (jika sudah tahu):\nKebutuhan: material saja / material + pemasangan";
     } else if (topic === "area-layanan") {
-      message = "Halo Kaha Block, saya ingin cek harga paving block untuk proyek di Jabodetabek. Mohon info penawaran sesuai kebutuhan dan volume proyek saya.";
+      message = "Halo Kaha Block, saya ingin cek harga paving block untuk proyek di Jabodetabek.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan: material saja / material + pemasangan";
     } else if (topic && topic.startsWith("regional-pricing:")) {
       const region = getRegionName(topic);
-      message = `Halo Kaha Block, saya ingin cek harga paving block untuk proyek di ${region}. Mohon info penawaran sesuai kebutuhan dan volume proyek saya.`;
+      message = `Halo Kaha Block, saya ingin cek harga & pengiriman paving block untuk proyek di ${region}.\n\nLokasi proyek: ${region} / ___\nPerkiraan luas area:\nJenis paving (jika sudah tahu):\nKebutuhan: material saja / material + pemasangan`;
+    } else if (topic && topic.startsWith("regional-installation:")) {
+      const region = getRegionName(topic.replace(/^regional-installation:/, ""));
+      message = `Halo Kaha Block, saya ingin minta estimasi jasa pemasangan paving block di ${region}.\n\nLokasi proyek: ${region} / ___\nPerkiraan luas area:\nKondisi lahan:\nJenis paving (jika sudah tahu):`;
+    } else if (topic && topic.startsWith("product:")) {
+      const productName = topic.replace(/^product:/, "").trim();
+      message = `Halo Kaha Block, saya ingin cek harga & stok ${productName}.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan: material saja / material + pemasangan`;
     } else if (topic === "products") {
-      message = "Halo Kaha Block, saya ingin meminta harga paving block. Produk yang diminati: ___. Estimasi kebutuhan ± ___ m². Lokasi proyek: ___.";
+      message = "Halo Kaha Block, saya ingin cek harga & stok paving block.\n\nProduk yang diminati:\nPerkiraan luas area:\nLokasi proyek:\nKebutuhan: material saja / material + pemasangan";
     } else if (topic === "installation") {
-      message = "Halo Kaha Block, saya ingin meminta estimasi biaya pemasangan paving block. Lokasi proyek: ___. Luas area ± ___ m². Penggunaan area: ___.";
+      message = "Halo Kaha Block, saya ingin minta estimasi jasa pemasangan paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nKondisi lahan:\nKebutuhan: jasa pasang saja / material + pemasangan";
     } else if (topic === "production") {
-      message = "Halo Kaha Block, saya tertarik dengan produk paving block press hidrolik. Mohon informasi katalog, spesifikasi mutu beton K-250, K-300, dan K-400 serta penawaran harga.";
+      message = "Halo Kaha Block, saya sudah melihat dokumentasi produksi Kaha Block dan ingin cek spesifikasi, harga & stok produk.\n\nLokasi proyek:\nPerkiraan luas area:\nMutu/jenis paving yang dibutuhkan (jika sudah tahu):";
     } else if (topic && ["jakarta", "tangerang", "bekasi", "depok", "bogor"].includes(topic.toLowerCase())) {
       const region = getRegionName(topic.toLowerCase());
-      message = `Halo Kaha Block, saya ingin meminta estimasi harga paving block dan biaya pemasangan untuk area ${region}. Perkiraan luas ± ___ m². Jenis paving: ___. Mohon rekomendasi mutu dan penawaran harga resmi.`;
+      message = `Halo Kaha Block, saya ingin cek harga paving block dan opsi pemasangan untuk area ${region}.\n\nLokasi proyek: ${region} / ___\nPerkiraan luas area:\nJenis paving (jika sudah tahu):`;
     } else if (topic === "contact") {
-      message = "Halo Kaha Block, saya ingin bertanya tentang produk conblock dan jasa pasang Kaha Block.";
+      message = "Halo Kaha Block, saya ingin bertanya tentang produk paving block dan jasa pemasangan.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan:";
     } else if (typeof topic === "string") {
       message = `Halo Kaha Block, saya ingin bertanya tentang ${topic}.`;
     } else {
-      message = "Halo Kaha Block, saya ingin meminta informasi lebih lanjut tentang produk paving block dan jasa pemasangan.";
+      message = "Halo Kaha Block, saya ingin cek harga & stok paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan:";
     }
   }
 
