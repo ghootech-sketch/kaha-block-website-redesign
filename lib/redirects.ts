@@ -14,7 +14,7 @@ export const legacyRedirects: Record<string, string> = {
   "/cara-menghitung-kebutuhan-paving-block-per-meter-persegi": "/id/blog/cara-merencanakan-kebutuhan-paving-block",
   "/paving-block-aman-dan-estetik-untuk-sekolah-dan-fasilitas-umum": "/id/blog/panduan-memilih-paving-block-hunian-proyek",
   "/paving-block-untuk-drainase-manfaat-dan-cara-kerjanya": "/id/blog/paving-block-ramah-lingkungan-resapan-air",
-  "/cara-memilih-kontraktor-pemasangan-paving-block-terpercaya": "/id/contact",
+  "/cara-memilih-kontraktor-pemasangan-paving-block-terpercaya": "/id/jasa-pemasangan-paving-block",
   "/paving-block-custom-untuk-tampilan-halaman-lebih-estetik": "/id/projects",
   "/tren-desain-paving-block-tahun-ini-minimalis-dan-elegan": "/id/projects",
   "/mengapa-paving-block-ramah-lingkungan-ini-penjelasannya": "/id/blog/paving-block-ramah-lingkungan-resapan-air",
@@ -32,5 +32,14 @@ export const legacyRedirects: Record<string, string> = {
 
   "/id/blog/mutu-beton-k300-k350-paving-block": "/id/blog/mutu-beton-k250-k300-k400-paving-block",
   "/en/blog/mutu-beton-k300-k350-paving-block": "/en/blog/mutu-beton-k250-k300-k400-paving-block",
+
+  // Legacy WordPress tag archives still visible in Search Console
+  "/tag/jual-paving-block-tangerang": "/id/area-layanan/tangerang",
+  "/tag/jual-paving-block-bekasi": "/id/area-layanan/bekasi",
+  "/tag/paving-block-tangerang": "/id/area-layanan/tangerang",
+  "/tag/jual-paving-block-jakarta": "/id/area-layanan/jakarta",
+  "/tag/harga-paving-block": "/id/products",
+  "/tag/pabrik-paving-block": "/id/projects/production",
+  "/tag/bahan-paving-beton": "/id/blog/mutu-beton-k250-k300-k400-paving-block",
 };
 

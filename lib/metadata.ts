@@ -35,9 +35,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   home: {
     path: "",
     id: {
-      title: "KAHA BLOCK - Pabrik Paving Block & Jasa Pemasangan Jabodetabek",
+      title: "KAHA BLOCK | Pabrik Paving Block Cisauk, Tangerang",
       description:
-        "Pabrik paving block mesin full otomatis hidrolik di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk wilayah Jabodetabek.",
+        "PT Kaha Sukses Mandiri (Kaha Block), produsen paving block sejak 2015 di Cisauk, Tangerang. Melayani pengadaan material dan jasa pemasangan untuk Jabodetabek.",
     },
     en: {
       title: "KAHA BLOCK - Paving Block Factory & Installation Greater Jakarta",
@@ -48,9 +48,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   about: {
     path: "/about",
     id: {
-      title: "Tentang Kami | KAHA BLOCK",
+      title: "PT Kaha Sukses Mandiri (KAHA BLOCK) | Pabrik Paving Block",
       description:
-        "Produsen paving block sejak 2015 dengan pabrik seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Melayani pengadaan dan pemasangan untuk seluruh Jabodetabek.",
+        "Profil PT Kaha Sukses Mandiri (Kaha Block), produsen paving block sejak 2015 dengan fasilitas produksi 9.080 m² di Cisauk, Kabupaten Tangerang.",
     },
     en: {
       title: "About Us | KAHA BLOCK",
@@ -61,9 +61,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   products: {
     path: "/products",
     id: {
-      title: "Harga Paving Block & Jual Langsung Produsen | KAHA BLOCK",
+      title: "Harga Paving Block Mulai Rp80.000/m² | KAHA BLOCK",
       description:
-        "Harga material paving block mulai Rp80.000/m²*. Jual langsung dari produsen di Cisauk dengan mutu K-250, K-300, K-400 dan gratis pengiriman khusus Jabodetabek.",
+        "Cek harga dan stok paving block langsung dari pabrik Cisauk. Pilihan mutu K-250, K-300, K-400 serta gratis pengiriman dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Prices & Direct Factory Supplier | KAHA BLOCK",
@@ -126,9 +126,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   jasaPemasangan: {
     path: "/jasa-pemasangan-paving-block",
     id: {
-      title: "Kontraktor & Jasa Pemasangan Paving Block Jabodetabek | KAHA BLOCK",
+      title: "Kontraktor Paving Block & Jasa Pasang Jabodetabek | KAHA BLOCK",
       description:
-        "Kaha Block melayani pengadaan material dan pekerjaan kontraktor pemasangan paving block di Jakarta, Tangerang, Bekasi, Depok, dan Bogor oleh tim berpengalaman.",
+        "Kontraktor dan jasa pemasangan paving block untuk Jakarta, Tangerang, Bekasi, Depok, dan Bogor. Kirim luas area dan lokasi proyek untuk estimasi via WhatsApp.",
     },
     en: {
       title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",
@@ -152,9 +152,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaJakarta: {
     path: "/area-layanan/jakarta",
     id: {
-      title: "Paving Block Jakarta & Jasa Pemasangan | KAHA BLOCK",
+      title: "Paving Block Jakarta | Harga & Jasa Pemasangan | KAHA BLOCK",
       description:
-        "Pengadaan material paving block presisi dan jasa pemasangan untuk wilayah Jakarta Selatan, Timur, Barat, Utara, dan Pusat. Gratis ongkir & penurunan.",
+        "Paving block Jakarta langsung dari pabrik Cisauk. Harga mulai Rp80.000/m², jasa pemasangan, gratis pengiriman dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Supplier Jakarta & Installation | KAHA BLOCK",
@@ -165,9 +165,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaTangerang: {
     path: "/area-layanan/tangerang",
     id: {
-      title: "Pabrik Paving Block Tangerang & Jasa Pemasangan | KAHA BLOCK",
+      title: "Pabrik Paving Block Tangerang | Harga & Jasa Pasang | KAHA BLOCK",
       description:
-        "Pabrik paving block Kaha Block di Cisauk, Kabupaten Tangerang. Melayani pengadaan material dan jasa pemasangan untuk seluruh wilayah Tangerang Raya.",
+        "Pabrik paving block di Cisauk, Tangerang. Harga mulai Rp80.000/m², mutu K-250/K-300/K-400, jasa pemasangan, gratis kirim dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Factory Tangerang & Installation | KAHA BLOCK",

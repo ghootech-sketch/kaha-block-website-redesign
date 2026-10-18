@@ -84,9 +84,9 @@ export interface AreaHubContent {
 export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
   id: {
     eyebrow: "LAYANAN KONTRAKTOR & KEMITRAAN",
-    h1: "Jasa Pemasangan Paving Block Jabodetabek",
+    h1: "Kontraktor & Jasa Pemasangan Paving Block Jabodetabek",
     heroDesc:
-      "PT Kaha Sukses Mandiri (Kaha Block) melayani pengadaan material paving block presisi sekaligus jasa pemasangan profesional oleh tim pemasangan berpengalaman untuk kawasan perumahan, area komersial, pergudangan, dan jalan lingkungan di seluruh wilayah Jabodetabek.",
+      "PT Kaha Sukses Mandiri (Kaha Block) melayani pekerjaan kontraktor dan jasa pemasangan paving block sekaligus pengadaan material untuk perumahan, area komersial, pergudangan, kawasan industri, area parkir, dan jalan lingkungan di seluruh Jabodetabek.",
     advantagesTitle: "Keunggulan Layanan Pemasangan Terintegrasi",
     advantagesIntro:
       "Memilih layanan terintegrasi langsung dari produsen memastikan kualitas material dan presisi pemasangan berada dalam satu standar mutu.",
@@ -564,7 +564,7 @@ export const REGIONAL_PAGES_DATA: Record<
           desc: "Mendapatkan harga kompetitif langsung dari produsen tanpa rantai perantara berlebih.",
         },
         {
-          title: "Mutu Teruji K-250 hingga K-400",
+          title: "Pilihan Mutu K-250 hingga K-400",
           desc: "Pilihan spesifikasi kuat tekan beton sesuai peruntukan halaman perumahan hingga area komersial berbeban tinggi.",
         },
         {

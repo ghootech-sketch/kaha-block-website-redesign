@@ -104,9 +104,9 @@ export const PRODUCTS_DATA_ID: Record<ProductSlug, ProductData> = {
       "Dapat dipasang dengan pola susun bata maupun herringbone",
     ],
     relatedProductSlugs: ["half-tahu", "topi-uskup", "paving-hexagonal", "kanstein-jepit"],
-    metaTitle: "Truepave | Paving Block Kaha Block",
+    metaTitle: "Paving Block Truepave | Ukuran & Spesifikasi | KAHA BLOCK",
     metaDescription:
-      "Paving block Truepave (bata) presisi tebal 6 cm, 8 cm, dan 10 cm produksi pabrik PT Kaha Sukses Mandiri Cisauk. Pengiriman langsung ke seluruh wilayah Jabodetabek.",
+      "Lihat ukuran dan spesifikasi paving block Truepave model bata, tersedia tebal 6 cm, 8 cm, dan 10 cm dari pabrik Kaha Block Cisauk. Cek kebutuhan dan stok via WhatsApp.",
   },
 
   "half-tahu": {
@@ -263,9 +263,9 @@ export const PRODUCTS_DATA_ID: Record<ProductSlug, ProductData> = {
       "Mengurangi kebutuhan pemotongan balok paving manual di tepi",
     ],
     relatedProductSlugs: ["truepave", "half-tahu", "kanstein-jepit", "kanstein-b1"],
-    metaTitle: "Paving Topi Uskup | Spesifikasi Mutu K-300 | Kaha Block",
+    metaTitle: "Topi Uskup Paving K-300 | Pengunci Tepi | KAHA BLOCK",
     metaDescription:
-      "Paving Topi Uskup ukuran 30 × 21 cm mutu K-300 tebal 6 cm dan 8 cm daya tutup 3,3 pcs/m untuk pengunci tepi pola herringbone dari pabrik Kaha Block Cisauk.",
+      "Topi Uskup paving ukuran 30 × 21 cm mutu K-300, tebal 6 cm dan 8 cm, untuk pengunci tepi pola herringbone. Lihat spesifikasi produk Kaha Block Cisauk.",
   },
 
   "kanstein-jepit": {
