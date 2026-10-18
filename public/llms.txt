@@ -1,0 +1,61 @@
+# Kaha Block
+
+> Kaha Block adalah brand PT Kaha Sukses Mandiri, produsen dan supplier paving block yang beroperasi sejak 2015 dari fasilitas produksi di Cisauk, Kabupaten Tangerang, Banten, Indonesia.
+
+Situs resmi ini menyediakan informasi produk paving block, spesifikasi produk, pengadaan material, jasa pemasangan, dokumentasi proyek dan produksi, serta area layanan Jabodetabek. Konten utama tersedia dalam Bahasa Indonesia dan Bahasa Inggris.
+
+## Halaman Utama
+
+- [Beranda Indonesia](https://kahablock.com/id)
+- [Tentang Kaha Block](https://kahablock.com/id/about)
+- [Katalog Produk](https://kahablock.com/id/products)
+- [Jasa Pemasangan Paving Block](https://kahablock.com/id/jasa-pemasangan-paving-block)
+- [Area Layanan](https://kahablock.com/id/area-layanan)
+- [Galeri Proyek](https://kahablock.com/id/projects)
+- [Galeri Produksi](https://kahablock.com/id/projects/production)
+- [Blog dan Panduan](https://kahablock.com/id/blog)
+- [Kontak](https://kahablock.com/id/contact)
+
+## Produk Utama
+
+- [Truepave](https://kahablock.com/id/products/truepave)
+- [Half / Tahu](https://kahablock.com/id/products/half-tahu)
+- [Paving Hexagonal](https://kahablock.com/id/products/paving-hexagonal)
+- [Ubin](https://kahablock.com/id/products/ubin)
+- [Topi Uskup](https://kahablock.com/id/products/topi-uskup)
+- [Kanstein Jepit](https://kahablock.com/id/products/kanstein-jepit)
+- [Kanstein B1](https://kahablock.com/id/products/kanstein-b1)
+- [Kanstein S](https://kahablock.com/id/products/kanstein-s)
+- [Stoper](https://kahablock.com/id/products/stoper)
+
+## Area Layanan
+
+- [Jakarta](https://kahablock.com/id/area-layanan/jakarta)
+- [Tangerang](https://kahablock.com/id/area-layanan/tangerang)
+- [Bekasi](https://kahablock.com/id/area-layanan/bekasi)
+- [Depok](https://kahablock.com/id/area-layanan/depok)
+- [Bogor](https://kahablock.com/id/area-layanan/bogor)
+
+## English
+
+- [English Home](https://kahablock.com/en)
+- [Products](https://kahablock.com/en/products)
+- [Installation Services](https://kahablock.com/en/jasa-pemasangan-paving-block)
+- [Service Areas](https://kahablock.com/en/area-layanan)
+- [About](https://kahablock.com/en/about)
+- [Contact](https://kahablock.com/en/contact)
+
+## Technical Discovery
+
+- [XML Sitemap](https://kahablock.com/sitemap.xml)
+- [Image Sitemap](https://kahablock.com/image-sitemap.xml)
+- [Video Sitemap](https://kahablock.com/video-sitemap.xml)
+- [Robots.txt](https://kahablock.com/robots.txt)
+
+## Entity
+
+- Brand: Kaha Block
+- Legal entity: PT Kaha Sukses Mandiri
+- Established: 2015
+- Production location: Cisauk, Kabupaten Tangerang, Banten, Indonesia
+- Official website: https://kahablock.com
