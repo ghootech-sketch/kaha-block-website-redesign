@@ -1,5 +1,5 @@
 import { BUSINESS_FACTS } from "./business-facts";
-import { Locale } from "./dictionary";
+import { dictionaries, Locale } from "./dictionary";
 import { BlogPost } from "./blog-types";
 import { ProductData, getAllProducts } from "./products-data";
 import { VideoItem } from "./video-data";
@@ -329,7 +329,13 @@ export function generateStructuredDataGraph({
     webPageEntity.mainEntity = { "@id": `${canonicalUrl}#video` };
   }
 
-  if (
+  if (page === "home") {
+    webPageEntity.hasPart = [
+      { "@id": `${canonicalUrl}#featured-products` },
+      { "@id": `${canonicalUrl}#installation-service` },
+      { "@id": `${canonicalUrl}#faq` },
+    ];
+  } else if (
     page === "jasaPemasangan" || page === "areaLayanan" || page === "areaJakarta" || page === "areaTangerang" || page === "areaBekasi" || page === "areaDepok" || page === "areaBogor"
   ) {
     webPageEntity.hasPart = { "@id": `${canonicalUrl}#faq` };
@@ -354,6 +360,98 @@ export function generateStructuredDataGraph({
     graph.push({ "@type": "ImageObject", "@id": `${canonicalUrl}#primaryimage`, contentUrl: `${baseUrl}${videoItem.posterSrc}`, url: `${baseUrl}${videoItem.posterSrc}`, caption: isEn ? videoItem.title.en : videoItem.title.id });
   } else if (page === "blogPost" && post) {
     graph.push({ "@type": "ImageObject", "@id": `${canonicalUrl}#primaryimage`, contentUrl: `${baseUrl}${post.image}`, url: `${baseUrl}${post.image}`, caption: post.imageAlt });
+  }
+
+  // Homepage semantic sections: visible featured products, installation service, and FAQ.
+  if (page === "home") {
+    const homeDictionary = dictionaries[lang].home;
+    const featuredSlugs = [
+      "truepave",
+      "half-tahu",
+      "paving-hexagonal",
+      "topi-uskup",
+      "kanstein-jepit",
+    ];
+    const featuredProducts = getAllProducts(lang).filter((product) =>
+      featuredSlugs.includes(product.slug)
+    );
+
+    graph.push({
+      "@type": "ItemList",
+      "@id": `${canonicalUrl}#featured-products`,
+      name: homeDictionary.featuredProducts.title,
+      numberOfItems: featuredProducts.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: featuredProducts.map((product, index) => {
+        const productUrl = `${baseUrl}/${lang}/products/${product.slug}`;
+        return {
+          "@type": "ListItem",
+          position: index + 1,
+          name: product.name,
+          url: productUrl,
+          item: {
+            "@id": `${productUrl}#product`,
+          },
+        };
+      }),
+    });
+
+    featuredProducts.forEach((product) => {
+      const productUrl = `${baseUrl}/${lang}/products/${product.slug}`;
+      graph.push({
+        "@type": "Product",
+        "@id": `${productUrl}#product`,
+        url: productUrl,
+        name: product.name,
+        ...(product.alternateName ? { alternateName: product.alternateName } : {}),
+        image: [`${baseUrl}${product.image}`],
+        category: product.badge,
+        brand: {
+          "@type": "Brand",
+          name: BUSINESS_FACTS.brandName,
+        },
+        manufacturer: {
+          "@id": `${baseUrl}/#organization`,
+        },
+      });
+    });
+
+    graph.push({
+      "@type": "Service",
+      "@id": `${canonicalUrl}#installation-service`,
+      name: homeDictionary.installation.title,
+      serviceType: isEn
+        ? "Paving block material supply and installation"
+        : "Pengadaan material dan jasa pemasangan paving block",
+      description: homeDictionary.installation.subtitle,
+      url: `${baseUrl}/${lang}/jasa-pemasangan-paving-block`,
+      provider: {
+        "@id": `${baseUrl}/#organization`,
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: isEn ? "Greater Jakarta (Jabodetabek)" : "Jabodetabek",
+      },
+    });
+
+    if (homeDictionary.faq.items.length > 0) {
+      graph.push({
+        "@type": "FAQPage",
+        "@id": `${canonicalUrl}#faq`,
+        url: canonicalUrl,
+        isPartOf: {
+          "@id": `${canonicalUrl}#webpage`,
+        },
+        mainEntity: homeDictionary.faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.a,
+          },
+        })),
+      });
+    }
   }
 
   if (page === "products") {
@@ -490,3 +588,4 @@ export function generateStructuredDataGraph({
 
   return { "@context": "https://schema.org", "@graph": graph };
 }
+
