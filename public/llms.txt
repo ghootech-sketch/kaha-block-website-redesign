@@ -45,6 +45,12 @@ Situs resmi ini menyediakan informasi produk paving block, spesifikasi produk, p
 - [About](https://kahablock.com/en/about)
 - [Contact](https://kahablock.com/en/contact)
 
+## Panduan Teknis Terbaru
+
+- [Topi Uskup sebagai Pengunci Paving Block: Fungsi, Posisi, dan Aplikasi Jalan Lingkungan](https://kahablock.com/id/blog/topi-uskup-pengunci-paving-block-jalan-lingkungan) — diterbitkan 22 Oktober 2026; membahas fungsi pengunci tepi, perbedaan dengan kanstin, posisi pemasangan, acuan teknis, dan spesifikasi first-party Kaha Block.
+- [Memahami Mutu Beton K-250, K-300, dan K-400](https://kahablock.com/id/blog/mutu-beton-k250-k300-k400-paving-block)
+- [Persiapan Sebelum Pemasangan Paving Block](https://kahablock.com/id/blog/persiapan-sebelum-pemasangan-paving-block)
+
 ## Technical Discovery
 
 - [XML Sitemap](https://kahablock.com/sitemap.xml)

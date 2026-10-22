@@ -169,6 +169,7 @@ export const article5Id: BlogPost = {
     ],
   },
   relatedSlugs: [
+    "topi-uskup-pengunci-paving-block-jalan-lingkungan",
     "cara-merencanakan-kebutuhan-paving-block",
     "panduan-memilih-paving-block-hunian-proyek",
     "tips-merawat-paving-block",
@@ -344,6 +345,7 @@ export const article5En: BlogPost = {
     ],
   },
   relatedSlugs: [
+    "topi-uskup-pengunci-paving-block-jalan-lingkungan",
     "cara-merencanakan-kebutuhan-paving-block",
     "panduan-memilih-paving-block-hunian-proyek",
     "tips-merawat-paving-block",

@@ -18,7 +18,8 @@ import { article14Id, article14En } from "./article-14";
 import { article15Id, article15En } from "./article-15";
 import { article16Id, article16En } from "./article-16";
 import { article17Id, article17En } from "./article-17";
-import { article18Id, article18En } from "./article-18";\nimport { article19Id, article19En } from "./article-19";
+import { article18Id, article18En } from "./article-18";
+import { article19Id, article19En } from "./article-19";
 
 export const allArticlesId: BlogPost[] = [
   article1Id,
@@ -39,6 +40,7 @@ export const allArticlesId: BlogPost[] = [
   article16Id,
   article17Id,
   article18Id,
+  article19Id,
 ];
 
 export const allArticlesEn: BlogPost[] = [
@@ -60,10 +62,17 @@ export const allArticlesEn: BlogPost[] = [
   article16En,
   article17En,
   article18En,
+  article19En,
 ];
 
 export function getAllBlogPosts(lang: Locale): BlogPost[] {
-  return lang === "id" ? allArticlesId : allArticlesEn;
+  const posts = lang === "id" ? allArticlesId : allArticlesEn;
+  return [...posts].sort((a, b) => {
+    const publishedDiff =
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+    if (publishedDiff !== 0) return publishedDiff;
+    return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+  });
 }
 
 export function getBlogPostBySlug(slug: string, lang: Locale): BlogPost | undefined {
