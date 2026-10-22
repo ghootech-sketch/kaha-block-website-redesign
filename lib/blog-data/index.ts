@@ -18,7 +18,7 @@ import { article14Id, article14En } from "./article-14";
 import { article15Id, article15En } from "./article-15";
 import { article16Id, article16En } from "./article-16";
 import { article17Id, article17En } from "./article-17";
-import { article18Id, article18En } from "./article-18";
+import { article18Id, article18En } from "./article-18";\nimport { article19Id, article19En } from "./article-19";
 
 export const allArticlesId: BlogPost[] = [
   article1Id,

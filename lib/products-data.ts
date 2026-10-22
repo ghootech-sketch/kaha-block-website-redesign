@@ -265,7 +265,7 @@ export const PRODUCTS_DATA_ID: Record<ProductSlug, ProductData> = {
     relatedProductSlugs: ["truepave", "half-tahu", "kanstein-jepit", "kanstein-b1"],
     metaTitle: "Topi Uskup Paving K-300 | Pengunci Tepi | KAHA BLOCK",
     metaDescription:
-      "Topi Uskup paving ukuran 30 × 21 cm mutu K-300, tebal 6 cm dan 8 cm, untuk pengunci tepi pola herringbone. Lihat spesifikasi produk Kaha Block Cisauk.",
+      "Topi Uskup paving K-300 ukuran 30 × 21 cm, tebal 6/8 cm, sebagai pengunci tepi paving block untuk pola herringbone dan jalan lingkungan.",
   },
 
   "kanstein-jepit": {
