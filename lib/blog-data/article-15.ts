@@ -15,7 +15,7 @@ export const article15Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Depok 2026",
   seoDescription: "Estimasi harga paving block per m2 di Depok 2026. Panduan bagi pemilik rumah dan pengembang: cara hitung luas, pilih tebal 6 cm atau 8 cm, dan minta penawaran resmi.",
   intro: [
-    "Bagi pemilik rumah, pengembang klaster hunian (townhouse), maupun pemilik usaha di Kota Depok, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka dasar ini menjadi titik tolak perencanaan biaya sebelum memperhitungkan luas riil dan pilihan ketebalan produk.",
+    "Bagi pemilik rumah, pengembang klaster hunian (townhouse), maupun pemilik usaha di Kota Depok, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka dasar ini menjadi titik tolak perencanaan biaya sebelum memperhitungkan luas riil dan pilihan ketebalan produk.",
     "Kebutuhan perkerasan modular di wilayah Depok—seperti di Margonda, Cinere, Sawangan, Cimanggis, Beji, dan Tapos—sebagian besar berupa carport pribadi, jalan lingkungan perumahan klaster, dan pelataran parkir ruko.",
     "Sebagai konsumen atau pemilik proyek mandiri, tantangan terbesar biasanya bukan pada ketersediaan material, melainkan bagaimana menghitung luas tapak secara akurat, menentukan apakah cukup menggunakan tebal 6 cm atau harus 8 cm, serta memutuskan apakah perlu mengambil paket pemasangan lengkap.",
   ],
@@ -24,7 +24,7 @@ export const article15Id: BlogPost = {
       id: "acuan-anggaran-depok",
       heading: "1. Patokan Anggaran Awal Paving di Wilayah Depok",
       paragraphs: [
-        "Angka dasar **Harga paving block mulai Rp80.000/m²*** merupakan nilai pengadaan material beton standar dari pabrik. Angka ini membantu pemilik properti membuat estimasi biaya kasar sebelum survei pengukuran fisik dilakukan.",
+        "Angka dasar **Harga paving block mulai Rp90.000/m²*** merupakan nilai pengadaan material beton standar dari pabrik. Angka ini membantu pemilik properti membuat estimasi biaya kasar sebelum survei pengukuran fisik dilakukan.",
         "Informasi detail mengenai cakupan pengiriman ke berbagai kecamatan di Depok dapat dilihat pada halaman [layanan paving block Depok](/id/area-layanan/depok) serta panduan umum [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -85,7 +85,7 @@ export const article15Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Kota Depok",
     points: [
-      "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar pengadaan material pracetak pabrik.",
+      "Harga awal Rp90.000/m²* berfungsi sebagai acuan dasar pengadaan material pracetak pabrik.",
       "Tebal 6 cm (K-250) umum untuk carport hunian; tebal 8 cm (K-300) sering dievaluasi untuk jalan klaster perumahan.",
       "Hitung luas bersih dan tambahkan 3–5% cadangan pemotongan tepi.",
       "Menyampaikan lokasi kecamatan dan peruntukan beban membantu tim menyusun estimasi biaya yang sesuai.",
@@ -134,7 +134,7 @@ export const article15En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Depok 2026",
   seoDescription: "Estimate paving block costs per m2 in Depok for 2026. Practical guide for homeowners and developers: calculate square meters, choose 6 cm vs 8 cm, and request a quote.",
   intro: [
-    "For homeowners, townhouse cluster developers, and small business owners in Depok City, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This starting figure helps evaluate project costs prior to taking on-site tape measurements.",
+    "For homeowners, townhouse cluster developers, and small business owners in Depok City, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This starting figure helps evaluate project costs prior to taking on-site tape measurements.",
     "Modular pavement requirements across Depok—including Margonda, Cinere, Sawangan, Cimanggis, Beji, and Tapos—predominantly consist of private carports, townhouse cluster access driveways, and retail shop-house aprons.",
     "For property owners, the primary practical questions involve how to calculate net surface area accurately, whether 6 cm thickness is sufficient or if 8 cm is required, and whether to purchase materials directly or contract a complete installation package.",
   ],
@@ -143,7 +143,7 @@ export const article15En: BlogPost = {
       id: "depok-budget-benchmark",
       heading: "1. Baseline Budgeting for Residential Projects in Depok",
       paragraphs: [
-        "The baseline **Paving block prices starting from Rp80,000/m²*** represents standard factory-gate precast units. It provides a reliable benchmark before measuring precise surface boundaries.",
+        "The baseline **Paving block prices starting from Rp90,000/m²*** represents standard factory-gate precast units. It provides a reliable benchmark before measuring precise surface boundaries.",
         "For regional coverage information, visit our [Depok paving block service](/en/area-layanan/depok) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -204,7 +204,7 @@ export const article15En: BlogPost = {
   summary: {
     title: "Depok Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* provides an initial factory-direct benchmark prior to volume and specification tailoring.",
+      "The starting price of Rp90,000/m²* provides an initial factory-direct benchmark prior to volume and specification tailoring.",
       "6 cm thickness (K-250) is common for residential carports; 8 cm (K-300) is frequently evaluated for cluster streets.",
       "Calculate net square meters and include a 3–5% cutting allowance for edge trimming.",
       "Sharing your specific subdistrict and traffic demands helps formulate a prompt, accurate quotation.",

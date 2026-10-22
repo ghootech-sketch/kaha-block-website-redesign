@@ -15,7 +15,7 @@ export const article16Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Bogor 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kota Bogor 2026. Tinjau pilihan spesifikasi kafe, ruko, jalan permukiman, dan panduan data penawaran resmi.",
   intro: [
-    "Untuk proyek di wilayah Kota Bogor, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar di gerbang pabrik sebelum penyesuaian volume dan kondisi teknis tapak lahan.",
+    "Untuk proyek di wilayah Kota Bogor, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar di gerbang pabrik sebelum penyesuaian volume dan kondisi teknis tapak lahan.",
     "Karakteristik pekerjaan perkerasan di Kota Bogor mencakup penataan pelataran usaha kuliner dan kafe di koridor Pajajaran, area parkir ruko, hingga perbaikan jalan lingkungan perumahan di Bogor Tengah, Bogor Barat, Bogor Selatan, dan Tanah Sareal.",
     "Menyusun anggaran yang realistis untuk Kota Bogor memerlukan pertimbangan cermat pada pemilihan profil paving yang estetis sekaligus kokoh, serta kejelasan akses jalan masuk armada pengangkut material.",
   ],
@@ -24,7 +24,7 @@ export const article16Id: BlogPost = {
       id: "patokan-anggaran-kota-bogor",
       heading: "1. Acuan Anggaran Paving di Wilayah Kota Bogor",
       paragraphs: [
-        "Angka dasar **Harga paving block mulai Rp80.000/m²*** berfungsi sebagai baseline awal perencanaan material. Nilai ini menjadi titik tolak kalkulasi sebelum disesuaikan dengan volume total meter persegi dan mutu kuat tekan beton yang dibutuhkan.",
+        "Angka dasar **Harga paving block mulai Rp90.000/m²*** berfungsi sebagai baseline awal perencanaan material. Nilai ini menjadi titik tolak kalkulasi sebelum disesuaikan dengan volume total meter persegi dan mutu kuat tekan beton yang dibutuhkan.",
         "Untuk informasi mengenai jangkauan pengiriman di wilayah Bogor, silakan kunjungi halaman [layanan paving block Bogor](/id/area-layanan/bogor) serta ulasan umum [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -83,7 +83,7 @@ export const article16Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Kota Bogor",
     points: [
-      "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
+      "Harga awal Rp90.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
       "Profil Truepave bata ideal untuk jalan lingkungan, sedangkan Hexagonal dan Ubin populer untuk pelataran komersial.",
       "Informasi lebar jalan masuk membantu penentuan jenis armada pengangkut material yang tepat.",
       "Penawaran resmi memerlukan kejelasan luas area, titik proyek Kota Bogor, dan pilihan skema pengerjaan.",
@@ -94,7 +94,7 @@ export const article16Id: BlogPost = {
     items: [
       {
         question: "Berapa patokan awal harga paving block untuk area komersial dan hunian di Kota Bogor?",
-        answer: "Harga paving block mulai Rp80.000/m²* untuk pengadaan material dasar pabrik (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Penawaran resmi disesuaikan dengan volume luas area dan spesifikasi mutu beton.",
+        answer: "Harga paving block mulai Rp90.000/m²* untuk pengadaan material dasar pabrik (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Penawaran resmi disesuaikan dengan volume luas area dan spesifikasi mutu beton.",
       },
       {
         question: "Model paving block apa yang banyak dipilih untuk pelataran usaha di Kota Bogor?",
@@ -132,7 +132,7 @@ export const article16En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bogor City 2026",
   seoDescription: "Estimate paving block costs per m2 in Bogor City for 2026. Explore specifications for retail courtyards, residential streets, and how to request an official quote.",
   intro: [
-    "For projects in Bogor City, paving block prices starting from Rp80,000/m²* for standard factory precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This figure provides a practical starting point prior to evaluating surface area and physical site characteristics.",
+    "For projects in Bogor City, paving block prices starting from Rp90,000/m²* for standard factory precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This figure provides a practical starting point prior to evaluating surface area and physical site characteristics.",
     "Modular pavement installations across Bogor City frequently involve outdoor dining courtyards along Pajajaran commercial avenues, retail parking plazas, and residential neighborhood street upgrades in Central, East, West, South Bogor, and Tanah Sareal.",
     "Establishing a dependable budget requires balancing visual aesthetics with compressive load ratings, while sharing clear site access data with dispatch planners.",
   ],
@@ -141,7 +141,7 @@ export const article16En: BlogPost = {
       id: "bogor-city-budget-benchmark",
       heading: "1. Baseline Budgeting for Projects in Bogor City",
       paragraphs: [
-        "The starting price of **Paving block prices starting from Rp80,000/m²*** represents factory-direct precast units. It acts as an objective baseline before factoring in total order volume and target concrete compressive ratings.",
+        "The starting price of **Paving block prices starting from Rp90,000/m²*** represents factory-direct precast units. It acts as an objective baseline before factoring in total order volume and target concrete compressive ratings.",
         "For regional delivery details, review our [Bogor paving block service](/en/area-layanan/bogor) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -200,7 +200,7 @@ export const article16En: BlogPost = {
   summary: {
     title: "Bogor City Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
       "Truepave rectangular units are suited for neighborhood streets, while Hexagonal and Tile profiles enhance commercial courtyards.",
       "Providing street access dimensions helps determine appropriate delivery vehicle sizing.",
       "Formal proposals require clear square meter estimates, project location in Bogor City, and scope definition.",
@@ -211,7 +211,7 @@ export const article16En: BlogPost = {
     items: [
       {
         question: "What is the initial baseline price for paving blocks in Bogor City?",
-        answer: "Paving block prices starting from Rp80,000/m²* for standard factory precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Formal proposals reflect total surface area and concrete strength specifications.",
+        answer: "Paving block prices starting from Rp90,000/m²* for standard factory precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Formal proposals reflect total surface area and concrete strength specifications.",
       },
       {
         question: "Which block profiles are popular for commercial outdoor spaces in Bogor?",

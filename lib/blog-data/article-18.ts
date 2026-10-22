@@ -15,7 +15,7 @@ export const article18Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Tangerang 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Tangerang 2026. Tinjau pabrik Cisauk, mutu K-250 hingga K-400 untuk industri Cikupa/Balaraja, dan penawaran resmi.",
   intro: [
-    "Untuk pengadaan proyek di wilayah Kabupaten Tangerang, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Diproduksi langsung dari fasilitas PT Kaha Sukses Mandiri di Cisauk, angka dasar ini merupakan acuan pengadaan material pracetak sebelum penyesuaian volume dan jarak tempuh lapangan.",
+    "Untuk pengadaan proyek di wilayah Kabupaten Tangerang, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Diproduksi langsung dari fasilitas PT Kaha Sukses Mandiri di Cisauk, angka dasar ini merupakan acuan pengadaan material pracetak sebelum penyesuaian volume dan jarak tempuh lapangan.",
     "Kabupaten Tangerang memiliki kontur pembangunan yang sangat dinamis: dari kawasan industri manufaktur dan pergudangan di Balaraja, Cikupa, Pasar Kemis, dan Curug, hingga pemukiman kota mandiri di Cisauk, Legok, Kelapa Dua, dan Tigaraksa.",
     "Berada di wilayah yang sama dengan pusat produksi Kaha Block memberikan transparansi langsung terhadap proses pencetakan hidrolik. Namun, surat penawaran harga resmi tetap memerlukan rincian teknis mengenai mutu kuat tekan beton, volume meter persegi, dan kesiapan akses jalan masuk lokasi proyek.",
   ],
@@ -24,7 +24,7 @@ export const article18Id: BlogPost = {
       id: "acuan-anggaran-kabupaten-tangerang",
       heading: "1. Acuan Anggaran Pengadaan di Kabupaten Tangerang",
       paragraphs: [
-        "Patokan **Harga paving block mulai Rp80.000/m²*** berfungsi sebagai acuan dasar material beton pracetak standar di gerbang pabrik. Angka ini mempermudah estimasi anggaran awal sebelum gambar teknis dan kebutuhan beban diverifikasi.",
+        "Patokan **Harga paving block mulai Rp90.000/m²*** berfungsi sebagai acuan dasar material beton pracetak standar di gerbang pabrik. Angka ini mempermudah estimasi anggaran awal sebelum gambar teknis dan kebutuhan beban diverifikasi.",
         "Untuk referensi cakupan wilayah layanan dan panduan regional, silakan kunjungi halaman [layanan paving block Tangerang](/id/area-layanan/tangerang), ulasan [harga paving block Tangerang 2026](/id/blog/harga-paving-block-conblock-tangerang-2026), serta panduan induk [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -83,7 +83,7 @@ export const article18Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Kabupaten Tangerang",
     points: [
-      "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak pabrik sebelum penyesuaian volume dan spesifikasi.",
+      "Harga awal Rp90.000/m²* berfungsi sebagai acuan dasar material pracetak pabrik sebelum penyesuaian volume dan spesifikasi.",
       "Diproduksi langsung di pabrik PT Kaha Sukses Mandiri seluas 9.080 m² di Cisauk menggunakan mesin cetak hidrolik otomatis.",
       "Kawasan industri mensyaratkan mutu K-300/K-400 (8–10 cm); klaster perumahan menggunakan mutu K-250/K-300 (6–8 cm).",
       "Perhitungan penawaran tetap mempertimbangkan jarak tempuh antarkecamatan dan kondisi jalan akses menuju lokasi bongkar.",
@@ -132,7 +132,7 @@ export const article18En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Tangerang Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Tangerang Regency for 2026. Explore our Cisauk plant, heavy-duty K-300 K-400 grades for Cikupa/Balaraja, and quotation steps.",
   intro: [
-    "For projects across Tangerang Regency, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Produced directly at PT Kaha Sukses Mandiri's facility in Cisauk, this baseline provides a factory-gate reference before factoring in project volumes and delivery distances.",
+    "For projects across Tangerang Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Produced directly at PT Kaha Sukses Mandiri's facility in Cisauk, this baseline provides a factory-gate reference before factoring in project volumes and delivery distances.",
     "Tangerang Regency combines intensive manufacturing and logistics hubs in Balaraja, Cikupa, Pasar Kemis, and Curug with planned residential developments across Cisauk, Legok, Kelapa Dua, and Tigaraksa.",
     "Being in the home territory of Kaha Block's production base provides direct transparency into hydraulic press manufacturing standards. However, preparing a formal project proposal still requires clear data regarding compressive strength, square meter area, and site offloading conditions.",
   ],
@@ -141,7 +141,7 @@ export const article18En: BlogPost = {
       id: "tangerang-regency-budget-benchmark",
       heading: "1. Baseline Budgeting for Projects in Tangerang Regency",
       paragraphs: [
-        "The starting price of **Paving block prices starting from Rp80,000/m²*** represents factory-direct precast units. It offers an objective baseline for initial cost models before detailed site drawings and wheel load requirements are finalized.",
+        "The starting price of **Paving block prices starting from Rp90,000/m²*** represents factory-direct precast units. It offers an objective baseline for initial cost models before detailed site drawings and wheel load requirements are finalized.",
         "For regional service information and general price guides, review our [Tangerang paving block service](/en/area-layanan/tangerang) page, the [Tangerang regional price guide 2026](/en/blog/harga-paving-block-conblock-tangerang-2026), and the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -200,7 +200,7 @@ export const article18En: BlogPost = {
   summary: {
     title: "Tangerang Regency Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
       "Manufactured at PT Kaha Sukses Mandiri's 9,080 m² Cisauk plant with automated hydraulic pressing equipment.",
       "Industrial estates specify concrete grades K-300/K-400 (8–10 cm); residential clusters utilize K-250/K-300 (6–8 cm).",
       "Quotations reflect inter-subdistrict transport distances and receiving site access conditions.",

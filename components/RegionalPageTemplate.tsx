@@ -372,8 +372,8 @@ export default function RegionalPageTemplate({
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white font-heading tracking-tight mb-3">
               {isEn
-                ? `${slug.charAt(0).toUpperCase() + slug.slice(1)} Paving Block Prices Starting from Rp80,000/m²*`
-                : `Harga Paving Block ${slug.charAt(0).toUpperCase() + slug.slice(1)} Mulai Rp80.000/m²*`}
+                ? `${slug.charAt(0).toUpperCase() + slug.slice(1)} Paving Block Prices Starting from Rp90,000/m²*`
+                : `Harga Paving Block ${slug.charAt(0).toUpperCase() + slug.slice(1)} Mulai Rp90.000/m²*`}
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               {isEn

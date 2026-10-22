@@ -15,7 +15,7 @@ export const article11Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Jakarta 2026",
   seoDescription: "Estimasi harga paving block per m2 di Jakarta 2026. Pelajari bagaimana akses lokasi, pengukuran area, dan spesifikasi beban mempengaruhi penawaran proyek Anda.",
   intro: [
-    "Untuk proyek di wilayah DKI Jakarta, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Di lingkungan perkotaan yang padat, biaya akhir pekerjaan perkerasan sangat ditentukan oleh ketepatan informasi lapangan yang disiapkan pemilik proyek sejak awal.",
+    "Untuk proyek di wilayah DKI Jakarta, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Di lingkungan perkotaan yang padat, biaya akhir pekerjaan perkerasan sangat ditentukan oleh ketepatan informasi lapangan yang disiapkan pemilik proyek sejak awal.",
     "Banyak pengembang dan pemilik bangunan di Jakarta mengalami selisih anggaran antara perkiraan kasar dan penawaran resmi. Perbedaan tersebut umumnya bukan berasal dari fluktuasi harga bahan mentah semata, melainkan dari kondisi akses jalan masuk armada, ketersediaan area bongkar material, serta penyesuaian mutu beton terhadap beban kendaraan nyata.",
     "Artikel ini berfokus pada data praktis apa saja yang perlu disiapkan sebelum meminta penawaran harga paving block untuk area Jakarta Pusat, Jakarta Selatan, Jakarta Barat, Jakarta Timur, maupun Jakarta Utara.",
   ],
@@ -24,7 +24,7 @@ export const article11Id: BlogPost = {
       id: "acuan-anggaran-jakarta",
       heading: "1. Patokan Anggaran Paving di Wilayah Jakarta",
       paragraphs: [
-        "Angka acuan **Harga paving block mulai Rp80.000/m²*** merupakan tolok ukur pengadaan material standar dari pabrik. Angka ini menjadi dasar perhitungan awal sebelum memperhitungkan faktor transportasi dan teknis lapangan di Jakarta.",
+        "Angka acuan **Harga paving block mulai Rp90.000/m²*** merupakan tolok ukur pengadaan material standar dari pabrik. Angka ini menjadi dasar perhitungan awal sebelum memperhitungkan faktor transportasi dan teknis lapangan di Jakarta.",
         "Untuk meninjau cakupan wilayah layanan secara terperinci, Anda dapat membaca halaman [layanan paving block Jakarta](/id/area-layanan/jakarta) serta gambaran umum pada [panduan harga Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -85,7 +85,7 @@ export const article11Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Jakarta",
     points: [
-      "Harga mulai Rp80.000/m²* berfungsi sebagai acuan pengadaan material dasar pabrik.",
+      "Harga mulai Rp90.000/m²* berfungsi sebagai acuan pengadaan material dasar pabrik.",
       "Kondisi lebar jalan masuk dan titik bongkar di Jakarta berpengaruh langsung pada kalkulasi logistik.",
       "Siapkan cadangan material 3–5% untuk mengantisipasi pemotongan paving di sudut tapak lahan.",
       "Kejelasan data lokasi dan beban kendaraan mempercepat penerbitan surat penawaran resmi yang akurat.",
@@ -134,7 +134,7 @@ export const article11En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Jakarta 2026",
   seoDescription: "Estimate paving block prices per m2 in Jakarta for 2026. Learn how site access, area measurement, and vehicle loads shape your official project quotation.",
   intro: [
-    "For projects across DKI Jakarta, paving block prices starting from Rp80,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). In densely built urban areas, the final cost of an outdoor pavement project depends heavily on the accuracy of site data prepared by project owners at the outset.",
+    "For projects across DKI Jakarta, paving block prices starting from Rp90,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). In densely built urban areas, the final cost of an outdoor pavement project depends heavily on the accuracy of site data prepared by project owners at the outset.",
     "Many property owners and contractors in Jakarta notice discrepancies between initial rule-of-thumb estimates and formal proposals. These variances typically stem not from material index shifts alone, but from real site conditions—such as entry lane clearances, pallet staging space, and required concrete strength ratings.",
     "This guide highlights the key information project managers should organize before requesting a formal quotation across Central, South, West, East, and North Jakarta.",
   ],
@@ -143,7 +143,7 @@ export const article11En: BlogPost = {
       id: "jakarta-budget-benchmark",
       heading: "1. Baseline Budgeting for Jakarta Pavement Projects",
       paragraphs: [
-        "The baseline **Paving block prices starting from Rp80,000/m²*** represents standard factory-direct precast units. It provides an objective commercial starting point before calculating transport logistics and technical site requirements across Jakarta.",
+        "The baseline **Paving block prices starting from Rp90,000/m²*** represents standard factory-direct precast units. It provides an objective commercial starting point before calculating transport logistics and technical site requirements across Jakarta.",
         "For detailed regional service coverage, review our [Jakarta paving block service](/en/area-layanan/jakarta) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -204,7 +204,7 @@ export const article11En: BlogPost = {
   summary: {
     title: "Jakarta Paving Budget Summary",
     points: [
-      "The starting price of Rp80,000/m²* serves as a benchmark for factory-gate materials.",
+      "The starting price of Rp90,000/m²* serves as a benchmark for factory-gate materials.",
       "Urban street width and staging space in Jakarta directly influence transport logistics calculations.",
       "Include a 3–5% cutting allowance to account for perimeter edging and irregular plot corners.",
       "Providing specific site location and vehicle load details accelerates the delivery of an accurate quotation.",

@@ -24,10 +24,10 @@ export const BUSINESS_FACTS = {
 
   // Public commercial facts
   pricing: {
-    materialStartingPricePerM2: 80000,
+    materialStartingPricePerM2: 90000,
     materialStartingPriceDisplay: {
-      id: "Rp80.000/m²",
-      en: "Rp80,000/m²",
+      id: "Rp90.000/m²",
+      en: "Rp90,000/m²",
     },
     scope: {
       id: "Harga mulai berlaku untuk material paving block; biaya pemasangan dihitung terpisah berdasarkan kondisi lapangan dan lingkup pekerjaan.",

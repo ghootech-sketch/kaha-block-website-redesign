@@ -15,7 +15,7 @@ export const article12Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Tangerang 2026",
   seoDescription: "Estimasi harga paving block per m2 di Tangerang 2026. Pelajari pengaruh fasilitas produksi Cisauk, standar pres hidrolik, dan panduan penawaran proyek Anda.",
   intro: [
-    "Untuk proyek di kawasan Tangerang Kota dan Tangerang Selatan, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Keberadaan fasilitas produksi di wilayah Tangerang memberikan keuntungan signifikan dalam kemudahan koordinasi teknis dan konsistensi suplai material.",
+    "Untuk proyek di kawasan Tangerang Kota dan Tangerang Selatan, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Keberadaan fasilitas produksi di wilayah Tangerang memberikan keuntungan signifikan dalam kemudahan koordinasi teknis dan konsistensi suplai material.",
     "Proyek-proyek di koridor Tangerang Raya—seperti BSD City, Gading Serpong, Bintaro, Alam Sutera, Ciledug, dan Cipondoh—memiliki spektrum kebutuhan yang luas, mulai dari pelataran ruko komersial, jalan klaster perumahan modern, hingga fasilitas publik.",
     "Meskipun lokasi pengiriman relatif dekat dengan pusat produksi, surat penawaran harga resmi tetap memerlukan rincian teknis yang jelas mengenai volume luasan, mutu kuat tekan beton, dan skema pengadaan yang diinginkan.",
   ],
@@ -24,7 +24,7 @@ export const article12Id: BlogPost = {
       id: "patokan-anggaran-tangerang",
       heading: "1. Patokan Anggaran Paving di Kawasan Tangerang Raya",
       paragraphs: [
-        "Angka dasar **Harga paving block mulai Rp80.000/m²*** mencerminkan nilai material pracetak standar di pintu pabrik. Angka ini berlaku sebagai baseline kalkulasi sebelum disesuaikan dengan volume total meter persegi dan mutu beton yang dipilih.",
+        "Angka dasar **Harga paving block mulai Rp90.000/m²*** mencerminkan nilai material pracetak standar di pintu pabrik. Angka ini berlaku sebagai baseline kalkulasi sebelum disesuaikan dengan volume total meter persegi dan mutu beton yang dipilih.",
         "Informasi detail mengenai cakupan layanan di wilayah Tangerang dapat ditinjau pada halaman [layanan paving block Tangerang](/id/area-layanan/tangerang) serta panduan induk [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -84,7 +84,7 @@ export const article12Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Tangerang",
     points: [
-      "Harga awal Rp80.000/m²* adalah patokan dasar material di pabrik sebelum penyesuaian volume dan spesifikasi.",
+      "Harga awal Rp90.000/m²* adalah patokan dasar material di pabrik sebelum penyesuaian volume dan spesifikasi.",
       "Didukung fasilitas produksi PT Kaha Sukses Mandiri seluas 9.080 m² di Cisauk dengan mesin pres otomatis hidrolik.",
       "Kebutuhan mutu beton bervariasi antara K-250 (lingkungan), K-300 (ruko/komersial), hingga K-400 (beban berat).",
       "Rincian titik proyek dan akses jalan diperlukan untuk mengoptimalkan pemilihan armada pengiriman.",
@@ -133,7 +133,7 @@ export const article12En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Tangerang 2026",
   seoDescription: "Estimate paving block costs per m2 in Tangerang for 2026. Explore our Cisauk production facility context, automated hydraulic standards, and quote preparation steps.",
   intro: [
-    "For projects across Tangerang City and South Tangerang, paving block prices starting from Rp80,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). Operating close to established production facilities offers significant advantages in technical coordination and batch consistency.",
+    "For projects across Tangerang City and South Tangerang, paving block prices starting from Rp90,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). Operating close to established production facilities offers significant advantages in technical coordination and batch consistency.",
     "Developments across Greater Tangerang—including BSD City, Gading Serpong, Bintaro, Alam Sutera, Ciledug, and Cipondoh—encompass diverse pavement applications: commercial shop-house courtyards, modern residential clusters, and civic pedestrian spaces.",
     "Even with geographic proximity to manufacturing facilities, preparing an accurate proposal requires clear specifications regarding square meter volume, target compressive strength, and required service scope.",
   ],
@@ -142,7 +142,7 @@ export const article12En: BlogPost = {
       id: "tangerang-budget-benchmark",
       heading: "1. Baseline Budgeting for Greater Tangerang Projects",
       paragraphs: [
-        "The starting figure of **Paving block prices starting from Rp80,000/m²*** represents standard precast units at the plant gate. It acts as an objective calculation baseline prior to adjustments for total volume and concrete compressive ratings.",
+        "The starting figure of **Paving block prices starting from Rp90,000/m²*** represents standard precast units at the plant gate. It acts as an objective calculation baseline prior to adjustments for total volume and concrete compressive ratings.",
         "For localized service details, review our [Tangerang paving block service](/en/area-layanan/tangerang) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -202,7 +202,7 @@ export const article12En: BlogPost = {
   summary: {
     title: "Tangerang Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
       "Backed by PT Kaha Sukses Mandiri's 9,080 m² Cisauk manufacturing facility with automated hydraulic machinery.",
       "Concrete grades range from K-250 (residential) to K-300 (commercial plazas) and K-400 (heavy loading).",
       "Clear delivery coordinates and gate clearances help optimize transport vehicle selection.",

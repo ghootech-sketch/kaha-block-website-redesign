@@ -15,7 +15,7 @@ export const article17Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Bogor 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Bogor 2026. Pelajari pengadaan kawasan perumahan di Sentul, Cibinong, Cileungsi, dan persiapan data penawaran resmi.",
   intro: [
-    "Untuk proyek di kawasan Kabupaten Bogor, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Mengingat luasnya bentang geografis Kabupaten Bogor, penyusunan anggaran pengadaan menuntut ketelitian dalam menentukan titik koordinat proyek dan volume bertahap.",
+    "Untuk proyek di kawasan Kabupaten Bogor, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Mengingat luasnya bentang geografis Kabupaten Bogor, penyusunan anggaran pengadaan menuntut ketelitian dalam menentukan titik koordinat proyek dan volume bertahap.",
     "Wilayah Kabupaten Bogor mencakup kawasan pengembangan kota mandiri dan perumahan skala luas seperti di Sentul, Cibinong, Bojonggede, Babakan Madang, dan Parung Panjang, hingga koridor industri pergudangan di Gunung Putri dan Cileungsi.",
     "Bagi kontraktor kawasan dan pengembang properti, memahami bagaimana volume skala luas dikalkulasi dan bagaimana rute pengiriman direncanakan merupakan kunci agar anggaran tetap terkontrol serta pelaksanaan di lapangan berjalan tertib.",
   ],
@@ -24,7 +24,7 @@ export const article17Id: BlogPost = {
       id: "acuan-anggaran-kabupaten-bogor",
       heading: "1. Acuan Anggaran Pengadaan di Wilayah Kabupaten Bogor",
       paragraphs: [
-        "Nilai dasar **Harga paving block mulai Rp80.000/m²*** merupakan patokan pengadaan material pracetak standar di gerbang pabrik. Untuk proyek perumahan berskala luas, penawaran resmi dikalkulasi berdasarkan volume kumulatif dan mutu beton yang dipilih.",
+        "Nilai dasar **Harga paving block mulai Rp90.000/m²*** merupakan patokan pengadaan material pracetak standar di gerbang pabrik. Untuk proyek perumahan berskala luas, penawaran resmi dikalkulasi berdasarkan volume kumulatif dan mutu beton yang dipilih.",
         "Untuk referensi perbandingan wilayah, Anda dapat membaca ulasan [harga paving block Kota Bogor 2026](/id/blog/harga-paving-block-conblock-bogor-2026), informasi jangkauan [layanan paving block Bogor](/id/area-layanan/bogor), serta panduan induk [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -85,7 +85,7 @@ export const article17Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Kabupaten Bogor",
     points: [
-      "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
+      "Harga awal Rp90.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
       "Jalan utama kawasan perumahan sering mengevaluasi tebal 8 cm K-300/K-400; jalan klaster umumnya 6–8 cm K-250/K-300.",
       "Pengadaan skala luas didukung penjadwalan bertahap per klaster pembangunan.",
       "Kejelasan titik lokasi kecamatan di Kabupaten Bogor membantu optimalisasi rute armada logistik.",
@@ -134,7 +134,7 @@ export const article17En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bogor Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Bogor Regency for 2026. Explore township volume planning across Sentul, Cibinong, and Cileungsi, with quotation preparation steps.",
   intro: [
-    "For projects in Bogor Regency, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Given the expansive geographic territory of Bogor Regency, budgeting requires careful planning of project coordinates and staged volume schedules.",
+    "For projects in Bogor Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Given the expansive geographic territory of Bogor Regency, budgeting requires careful planning of project coordinates and staged volume schedules.",
     "Bogor Regency features prominent master-planned townships and growing residential developments across Sentul, Cibinong, Bojonggede, Babakan Madang, and Parung Panjang, alongside industrial corridors in Gunung Putri and Cileungsi.",
     "For civil contractors and township developers, understanding how large-scale volumes are budgeted and how delivery routes are scheduled is essential for keeping project timelines and costs under control.",
   ],
@@ -143,7 +143,7 @@ export const article17En: BlogPost = {
       id: "bogor-regency-budget-benchmark",
       heading: "1. Baseline Budgeting for Projects in Bogor Regency",
       paragraphs: [
-        "The starting figure of **Paving block prices starting from Rp80,000/m²*** represents factory-direct precast units. For large-scale residential projects, formal proposals reflect cumulative volume economies and specified concrete compressive strength grades.",
+        "The starting figure of **Paving block prices starting from Rp90,000/m²*** represents factory-direct precast units. For large-scale residential projects, formal proposals reflect cumulative volume economies and specified concrete compressive strength grades.",
         "For regional comparisons, review our [Bogor City price overview 2026](/en/blog/harga-paving-block-conblock-bogor-2026), our [Bogor paving block service](/en/area-layanan/bogor) page, and the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -204,7 +204,7 @@ export const article17En: BlogPost = {
   summary: {
     title: "Bogor Regency Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification tailoring.",
       "Main township boulevards often evaluate 8 cm K-300/K-400; cluster streets commonly utilize 6–8 cm K-250/K-300.",
       "Large-scale procurements benefit from staged delivery schedules aligned with cluster construction milestones.",
       "Clear subdistrict coordinates in Bogor Regency help optimize logistics dispatch routes.",

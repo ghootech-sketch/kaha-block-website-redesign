@@ -15,7 +15,7 @@ export const article14Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Bekasi 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Bekasi 2026. Pelajari spesifikasi mutu K-300 K-400 untuk pergudangan, alur pengiriman bertahap, dan penawaran proyek industri.",
   intro: [
-    "Untuk proyek skala kawasan di Kabupaten Bekasi, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Pada pengadaan volume besar di sentra industri dan logistik, kalkulasi penawaran menuntut perencanaan bertahap yang matang.",
+    "Untuk proyek skala kawasan di Kabupaten Bekasi, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Pada pengadaan volume besar di sentra industri dan logistik, kalkulasi penawaran menuntut perencanaan bertahap yang matang.",
     "Kabupaten Bekasi mencakup koridor industri dan pergudangan yang sangat luas, meliputi Cikarang, Cibitung, Tambun, hingga kawasan manufaktur di sekitarnya. Karakteristik proyek di wilayah ini didominasi oleh perkerasan heavy duty yang dirancang menahan lalu lintas armada logistik bermuatan tinggi.",
     "Artikel ini mengulas bagaimana volume pesanan skala besar dikalkulasi, spesifikasi mutu beton apa yang disarankan untuk area industri, serta bagaimana penjadwalan pengiriman bertahap (phased delivery) diatur agar tidak menimbulkan penumpukan material di lokasi kerja.",
   ],
@@ -24,7 +24,7 @@ export const article14Id: BlogPost = {
       id: "acuan-anggaran-volume-besar",
       heading: "1. Acuan Anggaran Pengadaan Skala Besar di Kabupaten Bekasi",
       paragraphs: [
-        "Angka dasar **Harga paving block mulai Rp80.000/m²*** berfungsi sebagai acuan material pracetak standar dari pabrik. Pada proyek berskala ribuan meter persegi, efisiensi batch produksi pabrik berpengaruh langsung pada struktur penawaran komersial yang diterbitkan.",
+        "Angka dasar **Harga paving block mulai Rp90.000/m²*** berfungsi sebagai acuan material pracetak standar dari pabrik. Pada proyek berskala ribuan meter persegi, efisiensi batch produksi pabrik berpengaruh langsung pada struktur penawaran komersial yang diterbitkan.",
         "Untuk referensi cakupan pengiriman di area Kabupaten Bekasi, Anda dapat membaca halaman [layanan paving block Bekasi](/id/area-layanan/bekasi) serta panduan induk [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -85,7 +85,7 @@ export const article14Id: BlogPost = {
   summary: {
     title: "Pokok Pengadaan Paving Kabupaten Bekasi",
     points: [
-      "Harga awal Rp80.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
+      "Harga awal Rp90.000/m²* berfungsi sebagai acuan dasar material pracetak sebelum penyesuaian volume dan spesifikasi.",
       "Kawasan industri dan pergudangan umumnya mengevaluasi mutu K-300 hingga K-400 dengan ketebalan 8 cm atau 10 cm.",
       "Pengadaan volume besar dapat direncanakan pengirimannya sesuai tahapan pekerjaan di lokasi.",
       "Informasikan akses masuk, titik bongkar, dan spesifikasi beban untuk mendapatkan penawaran resmi yang terperinci.",
@@ -134,7 +134,7 @@ export const article14En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bekasi Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Bekasi Regency for 2026. Explore heavy-duty concrete grades K-300 K-400, phased site deliveries, and industrial quotations.",
   intro: [
-    "For large-scale infrastructure projects across Bekasi Regency, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). In major manufacturing and logistics corridors, volume procurement requires structured phased planning.",
+    "For large-scale infrastructure projects across Bekasi Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). In major manufacturing and logistics corridors, volume procurement requires structured phased planning.",
     "Bekasi Regency encompasses expansive industrial zones across Cikarang, Cibitung, and Tambun. Pavement projects throughout this area primarily demand heavy-duty surfaces engineered to sustain high wheel axle loads from commercial freight fleets.",
     "This guide examines how large-scale orders are calculated, which compressive concrete grades are commonly specified for industrial applications, and how staged dispatch schedules prevent material congestion on active construction sites.",
   ],
@@ -143,7 +143,7 @@ export const article14En: BlogPost = {
       id: "large-scale-procurement-benchmark",
       heading: "1. Baseline Budgeting for Large-Scale Procurement in Bekasi Regency",
       paragraphs: [
-        "The starting price of **Paving block prices starting from Rp80,000/m²*** represents factory-direct precast units. For projects spanning thousands of square meters, production batch efficiency directly shapes the final commercial proposal.",
+        "The starting price of **Paving block prices starting from Rp90,000/m²*** represents factory-direct precast units. For projects spanning thousands of square meters, production batch efficiency directly shapes the final commercial proposal.",
         "For regional delivery coverage information, visit our [Bekasi paving block service](/en/area-layanan/bekasi) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -204,7 +204,7 @@ export const article14En: BlogPost = {
   summary: {
     title: "Bekasi Regency Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
       "Industrial and logistics yards generally evaluate concrete grades K-300 to K-400 with 8 cm or 10 cm thickness.",
       "Large-scale procurements can plan delivery schedules around project stages and receiving capacity.",
       "Provide access details, offloading points, and load requirements for an itemized project proposal.",

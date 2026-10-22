@@ -61,14 +61,14 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   products: {
     path: "/products",
     id: {
-      title: "Harga Paving Block Mulai Rp80.000/m² | KAHA BLOCK",
+      title: "Harga Paving Block Mulai Rp90.000/m² | KAHA BLOCK",
       description:
         "Cek harga dan stok paving block langsung dari pabrik Cisauk. Pilihan mutu K-250, K-300, K-400 serta gratis pengiriman dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Prices & Direct Factory Supplier | KAHA BLOCK",
       description:
-        "Paving block material prices start from Rp80,000/m²*. Direct factory supply from Cisauk with K-250, K-300, K-400 grades and free delivery only within Greater Jakarta.",
+        "Paving block material prices start from Rp90,000/m²*. Direct factory supply from Cisauk with K-250, K-300, K-400 grades and free delivery only within Greater Jakarta.",
     },
   },
   projects: {
@@ -154,7 +154,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Paving Block Jakarta | Harga & Jasa Pemasangan | KAHA BLOCK",
       description:
-        "Paving block Jakarta langsung dari pabrik Cisauk. Harga mulai Rp80.000/m², jasa pemasangan, gratis pengiriman dan penurunan khusus Jabodetabek.",
+        "Paving block Jakarta langsung dari pabrik Cisauk. Harga mulai Rp90.000/m², jasa pemasangan, gratis pengiriman dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Supplier Jakarta & Installation | KAHA BLOCK",
@@ -167,7 +167,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Pabrik Paving Block Tangerang | KAHA BLOCK",
       description:
-        "Pabrik paving block di Cisauk, Tangerang. Harga mulai Rp80.000/m², mutu K-250/K-300/K-400, jasa pemasangan, gratis kirim dan penurunan khusus Jabodetabek.",
+        "Pabrik paving block di Cisauk, Tangerang. Harga mulai Rp90.000/m², mutu K-250/K-300/K-400, jasa pemasangan, gratis kirim dan penurunan khusus Jabodetabek.",
     },
     en: {
       title: "Paving Block Factory Tangerang & Installation | KAHA BLOCK",

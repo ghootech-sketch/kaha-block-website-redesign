@@ -15,7 +15,7 @@ export const article13Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Bekasi 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kota Bekasi 2026. Pelajari cara menghitung kebutuhan ruko, jalan perumahan, dan cara meminta penawaran harga resmi.",
   intro: [
-    "Untuk proyek di wilayah Kota Bekasi, estimasi harga paving block mulai Rp80.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar sebelum penyesuaian volume dan kebutuhan pekerjaan lapangan.",
+    "Untuk proyek di wilayah Kota Bekasi, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar sebelum penyesuaian volume dan kebutuhan pekerjaan lapangan.",
     "Karakteristik proyek di Kota Bekasi didominasi oleh perkerasan lingkungan perkotaan: pelataran parkir ruko di sepanjang koridor usaha, jalan klaster perumahan di Bekasi Selatan dan Barat, hingga penataan halaman komersial di Jatiasih dan Pondok Gede.",
     "Bagi pemilik properti maupun pelaksana proyek skala kota, menyusun anggaran yang akurat membutuhkan pemahaman mengenai cara menghitung luas area bersih, memilih profil paving yang efisien, dan memisahkan biaya pengadaan material dari upah kerja penataan.",
   ],
@@ -24,7 +24,7 @@ export const article13Id: BlogPost = {
       id: "acuan-anggaran-bekasi-kota",
       heading: "1. Acuan Anggaran Paving untuk Proyek Skala Kota di Bekasi",
       paragraphs: [
-        "Patokan **Harga paving block mulai Rp80.000/m²*** berfungsi sebagai acuan dasar material di pintu pabrik. Angka ini mempermudah penyusunan estimasi kasar sebelum gambar kerja lapangan diverifikasi.",
+        "Patokan **Harga paving block mulai Rp90.000/m²*** berfungsi sebagai acuan dasar material di pintu pabrik. Angka ini mempermudah penyusunan estimasi kasar sebelum gambar kerja lapangan diverifikasi.",
         "Untuk referensi cakupan wilayah di Kota Bekasi, silakan tinjau halaman [layanan paving block Bekasi](/id/area-layanan/bekasi) serta panduan induk [harga paving block Jabodetabek 2026](/id/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -83,7 +83,7 @@ export const article13Id: BlogPost = {
   summary: {
     title: "Pokok Anggaran Paving Kota Bekasi",
     points: [
-      "Harga awal Rp80.000/m²* merupakan titik tolak material pracetak sebelum penyesuaian teknis lapangan.",
+      "Harga awal Rp90.000/m²* merupakan titik tolak material pracetak sebelum penyesuaian teknis lapangan.",
       "Proyek ruko komersial umumnya menggunakan tebal 8 cm K-300, sedangkan jalan lingkungan menggunakan 6–8 cm K-250.",
       "Hitung luas bersih dan tambahkan 3–5% cadangan pemotongan balok di sepanjang perimeter.",
       "Sampaikan perkiraan luas, lokasi kecamatan di Kota Bekasi, dan jenis peruntukan beban untuk memperoleh penawaran resmi.",
@@ -94,7 +94,7 @@ export const article13Id: BlogPost = {
     items: [
       {
         question: "Berapa acuan harga awal paving block untuk proyek ruko atau perumahan di Kota Bekasi?",
-        answer: "Harga paving block mulai Rp80.000/m²* untuk pengadaan material dasar pabrik (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Penawaran resmi disesuaikan dengan volume total luasan dan mutu kuat tekan beton yang dipilih.",
+        answer: "Harga paving block mulai Rp90.000/m²* untuk pengadaan material dasar pabrik (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Penawaran resmi disesuaikan dengan volume total luasan dan mutu kuat tekan beton yang dipilih.",
       },
       {
         question: "Bagaimana cara menghitung kebutuhan meter persegi paving agar tidak kurang saat pengerjaan?",
@@ -132,7 +132,7 @@ export const article13En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bekasi City 2026",
   seoDescription: "Estimate paving block costs per m2 in Bekasi City for 2026. Learn how to calculate requirements for shop-houses, housing clusters, and request an actionable quote.",
   intro: [
-    "For projects across Bekasi City, paving block prices starting from Rp80,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This baseline provides a practical starting figure prior to volume and site installation adjustments.",
+    "For projects across Bekasi City, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This baseline provides a practical starting figure prior to volume and site installation adjustments.",
     "Projects in Bekasi City primarily revolve around urban commercial corridors and residential developments: shop-house parking aprons, cluster access streets across South and West Bekasi, and retail courtyards in Jatiasih and Pondok Gede.",
     "Developing an accurate pavement budget requires knowing how to calculate net surface area, selecting the right block thickness for commercial versus residential use, and choosing between material-only delivery and turnkey installation.",
   ],
@@ -141,7 +141,7 @@ export const article13En: BlogPost = {
       id: "bekasi-city-benchmark",
       heading: "1. Baseline Budgeting for City-Scale Projects in Bekasi",
       paragraphs: [
-        "The starting price of **Paving block prices starting from Rp80,000/m²*** represents factory-direct precast units. It facilitates early cost estimates before civil layout drawings are finalized.",
+        "The starting price of **Paving block prices starting from Rp90,000/m²*** represents factory-direct precast units. It facilitates early cost estimates before civil layout drawings are finalized.",
         "For regional service information, visit our [Bekasi paving block service](/en/area-layanan/bekasi) page and consult the master [Greater Jakarta price guide 2026](/en/blog/harga-paving-block-conblock-jabodetabek-2026).",
       ],
       callout: {
@@ -200,7 +200,7 @@ export const article13En: BlogPost = {
   summary: {
     title: "Bekasi City Paving Key Points",
     points: [
-      "The starting price of Rp80,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
+      "The starting price of Rp90,000/m²* serves as a factory-gate baseline prior to volume and specification adjustments.",
       "Commercial shop-houses typically specify 8 cm K-300, while residential cluster streets utilize 6–8 cm K-250.",
       "Calculate net square meters and include a 3–5% cutting allowance for edge trimming.",
       "Providing clear location details and vehicle traffic types accelerates official proposal generation.",
@@ -211,7 +211,7 @@ export const article13En: BlogPost = {
     items: [
       {
         question: "What is the baseline paving block price for commercial or residential sites in Bekasi City?",
-        answer: "Paving block prices start from Rp80,000/m²* for standard factory materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Formal proposals are tailored to total square meters and selected concrete compressive grades.",
+        answer: "Paving block prices start from Rp90,000/m²* for standard factory materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Formal proposals are tailored to total square meters and selected concrete compressive grades.",
       },
       {
         question: "How do I calculate total square meter requirements to avoid running short during installation?",
