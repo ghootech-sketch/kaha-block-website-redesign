@@ -389,31 +389,9 @@ export function generateStructuredDataGraph({
           position: index + 1,
           name: product.name,
           url: productUrl,
-          item: {
-            "@id": `${productUrl}#product`,
-          },
+          item: productUrl,
         };
       }),
-    });
-
-    featuredProducts.forEach((product) => {
-      const productUrl = `${baseUrl}/${lang}/products/${product.slug}`;
-      graph.push({
-        "@type": "Product",
-        "@id": `${productUrl}#product`,
-        url: productUrl,
-        name: product.name,
-        ...(product.alternateName ? { alternateName: product.alternateName } : {}),
-        image: [`${baseUrl}${product.image}`],
-        category: product.badge,
-        brand: {
-          "@type": "Brand",
-          name: BUSINESS_FACTS.brandName,
-        },
-        manufacturer: {
-          "@id": `${baseUrl}/#organization`,
-        },
-      });
     });
 
     graph.push({
@@ -463,7 +441,7 @@ export function generateStructuredDataGraph({
       numberOfItems: products.length,
       itemListElement: products.map((prod, idx) => {
         const productUrl = `${baseUrl}/${lang}/products/${prod.slug}`;
-        return { "@type": "ListItem", position: idx + 1, name: prod.name, url: productUrl, item: { "@id": `${productUrl}#product` } };
+        return { "@type": "ListItem", position: idx + 1, name: prod.name, url: productUrl, item: productUrl };
       }),
     });
   }
