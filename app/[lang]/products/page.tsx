@@ -238,8 +238,8 @@ export default async function Products({
               </h2>
               <p className="text-base sm:text-lg text-slate-600 font-sans leading-relaxed">
                 {currentLang === "en"
-                  ? `Paving block material prices in 2026 start from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}* and vary by model, thickness, concrete grade, order volume, and project location. Kaha Block supplies directly from its Cisauk factory. Send the product type, estimated area, and project location via WhatsApp for current pricing and stock availability.`
-                  : `Harga material paving block pada 2026 tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}* dan menyesuaikan model, ketebalan, mutu beton, volume pemesanan, serta lokasi proyek. Kaha Block melayani penjualan langsung dari pabrik Cisauk. Kirim tipe produk, estimasi luas area, dan lokasi proyek melalui WhatsApp untuk harga dan stok terkini.`}
+                  ? `Paving blocks in 2026 start from ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en}*. Kaha Block supplies directly from its Cisauk factory, with K-250/K-300/K-400 options and free delivery & offloading across Greater Jakarta. Send the product type, estimated area, and project location via WhatsApp for current stock and a project-specific quote.`
+                  : `Harga paving block 2026 tersedia mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*. Kaha Block memasok langsung dari pabrik Cisauk, tersedia pilihan mutu K-250/K-300/K-400 serta gratis pengiriman & penurunan untuk Jabodetabek. Kirim tipe produk, perkiraan luas area, dan lokasi proyek via WhatsApp untuk cek stok dan estimasi harga sesuai proyek.`}
               </p>
             </div>
 
@@ -290,7 +290,7 @@ export default async function Products({
                 className="mt-6 inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-xl font-bold text-sm transition-colors min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-                <span>{currentLang === "en" ? "Check Current Price & Stock" : "Cek Harga & Stok Terkini"}</span>
+                <span>{currentLang === "en" ? "Check Price for My Project" : "Cek Harga Sesuai Luas Proyek"}</span>
               </a>
             </div>
           </ScrollReveal>

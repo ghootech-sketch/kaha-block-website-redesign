@@ -161,7 +161,7 @@ export default function RegionalPageTemplate({
                 >
                   <MessageSquare className="w-4 h-4" aria-hidden="true" />
                   <span>
-                    {isEn ? "Check Price & Delivery" : "Cek Harga & Pengiriman"}
+                    {isEn ? "Check Price for My Location & Area" : "Cek Harga Sesuai Lokasi & Luas"}
                   </span>
                 </a>
                 <Link
@@ -377,8 +377,8 @@ export default function RegionalPageTemplate({
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               {isEn
-                ? `Get a quotation based on your project requirements, volume, specifications, and delivery location in ${slug === "jakarta" ? "Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`
-                : `Dapatkan penawaran sesuai kebutuhan, volume, spesifikasi, dan lokasi proyek Anda di ${slug === "jakarta" ? "Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`}
+                ? `Direct from the Cisauk factory with free delivery & offloading across Greater Jakarta. Send your project location + estimated area in ${slug === "jakarta" ? "Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`
+                : `Langsung dari pabrik Cisauk dengan gratis pengiriman & penurunan untuk Jabodetabek. Kirim lokasi + perkiraan luas proyek di ${slug === "jakarta" ? "Jakarta" : slug.charAt(0).toUpperCase() + slug.slice(1)}.`}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
               <a
@@ -390,8 +390,8 @@ export default function RegionalPageTemplate({
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
                 <span>
                   {isEn
-                    ? "Check Price & Delivery"
-                    : "Cek Harga & Pengiriman"}
+                    ? "Check Price for My Location & Area"
+                    : "Cek Harga Sesuai Lokasi & Luas"}
                 </span>
               </a>
               <a
@@ -401,7 +401,7 @@ export default function RegionalPageTemplate({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
-                <span>{isEn ? "Request Installation Estimate" : "Minta Estimasi Jasa Pasang"}</span>
+                <span>{isEn ? "Estimate Materials + Installation" : "Estimasi Material + Pasang"}</span>
               </a>
             </div>
             <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">

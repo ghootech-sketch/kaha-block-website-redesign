@@ -183,8 +183,8 @@ export default async function AreaLayananHubPage({
             </h2>
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
               {isEn
-                ? "Material pricing varies by specification, order volume, and delivery location. Installation is quoted separately based on site conditions and scope."
-                : "Harga material menyesuaikan spesifikasi, volume pemesanan, dan lokasi pengiriman. Biaya pemasangan dihitung terpisah berdasarkan kondisi lapangan dan lingkup pekerjaan."}
+                ? "Direct from the Cisauk factory with free delivery & offloading across Greater Jakarta. Send your location + estimated area to check the right material, stock, and project price. Installation is quoted separately."
+                : "Langsung dari pabrik Cisauk dengan gratis pengiriman & penurunan untuk Jabodetabek. Kirim lokasi + perkiraan luas area untuk cek material, stok, dan estimasi harga sesuai proyek. Biaya pemasangan dihitung terpisah."}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-4">
               <a
@@ -194,7 +194,7 @@ export default async function AreaLayananHubPage({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent font-heading tracking-wide uppercase min-h-[44px]"
               >
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-                <span>{isEn ? "Check Material Price for My Location" : "Cek Harga Material untuk Lokasi Saya"}</span>
+                <span>{isEn ? "Check Price for My Location & Area" : "Cek Harga Sesuai Lokasi & Luas"}</span>
               </a>
               <a
                 href={getWhatsAppUrl("secondary", "project-estimate", currentLang)}
@@ -203,7 +203,7 @@ export default async function AreaLayananHubPage({
                 className="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-white px-7 py-3.5 rounded-xl font-bold text-sm border border-white/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white font-heading tracking-wide uppercase min-h-[44px]"
               >
                 <MessageSquare className="w-4 h-4 mr-2 text-accent" aria-hidden="true" />
-                <span>{isEn ? "Request Project Estimate" : "Minta Estimasi Biaya Proyek"}</span>
+                <span>{isEn ? "Request Project Estimate" : "Estimasi Material + Pasang"}</span>
               </a>
             </div>
             <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
