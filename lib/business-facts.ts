@@ -61,24 +61,24 @@ export const BUSINESS_FACTS = {
 
   // Contact Channels
   contact: {
-    primaryPhoneDisplay: "0812 8381 2475",
-    primaryPhoneE164: "+6281283812475",
+    primaryPhoneDisplay: "0855 889 3030",
+    primaryPhoneE164: "+628558893030",
     secondaryPhoneDisplay: "0855 889 3030",
     secondaryPhoneE164: "+628558893030",
     altPhoneDisplay: "0855 889 3030",
     altPhoneE164: "+628558893030",
     email: "sanliong68@gmail.com",
     // Compatibility for existing code
-    whatsappUrl: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappUrl: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
     
     // Official WhatsApp contacts with consistent prefilled message
     whatsappConsultationMessage: defaultConsultationMessageId,
     whatsappConsultationMessageEn: defaultConsultationMessageEn,
-    whatsappPrimaryDisplay: "0812 8381 2475",
-    whatsappPrimaryE164: "+6281283812475",
-    whatsappPrimaryBaseUrl: "https://wa.me/6281283812475",
-    whatsappPrimaryUrl: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageId)}`,
-    whatsappPrimaryUrlEn: `https://wa.me/6281283812475?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
+    whatsappPrimaryDisplay: "0855 889 3030",
+    whatsappPrimaryE164: "+628558893030",
+    whatsappPrimaryBaseUrl: "https://wa.me/628558893030",
+    whatsappPrimaryUrl: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappPrimaryUrlEn: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
 
     whatsappSecondaryDisplay: "0855 889 3030",
     whatsappSecondaryE164: "+628558893030",

@@ -813,7 +813,7 @@ export const dictionaries = {
       description: "Hubungi tim Kaha Block untuk konsultasi produk, kebutuhan volume, pengiriman, dan jasa pemasangan paving block.",
       quickActions: {
         whatsappLabel: "WhatsApp 1",
-        whatsappNumber: "0812 8381 2475",
+        whatsappNumber: "0855 889 3030",
         whatsappDesc: "Konsultasi produk dan kebutuhan pemesanan",
         whatsappAction: "Cek Harga Produk Ini",
         whatsapp2Label: "WhatsApp 2",
@@ -868,7 +868,7 @@ export const dictionaries = {
       mapIframeTitle: "Lokasi Pabrik Kaha Block",
       infoStrip: {
         altContactLabel: "WhatsApp 1",
-        altContactValue: "0812 8381 2475",
+        altContactValue: "0855 889 3030",
         altContactDesc: "Kontak utama Kaha Block untuk informasi dan konsultasi",
         secondaryContactLabel: "WhatsApp 2",
         secondaryContactValue: "0855 889 3030",
@@ -1789,7 +1789,7 @@ export const dictionaries = {
       description: "Contact Kaha Block for product consultation, volume estimations, delivery, and paving block installation services.",
       quickActions: {
         whatsappLabel: "WhatsApp 1",
-        whatsappNumber: "0812 8381 2475",
+        whatsappNumber: "0855 889 3030",
         whatsappDesc: "Product and order consultation",
         whatsappAction: "Check Price & Stock",
         whatsapp2Label: "WhatsApp 2",
@@ -1844,7 +1844,7 @@ export const dictionaries = {
       mapIframeTitle: "Kaha Block Factory Location",
       infoStrip: {
         altContactLabel: "WhatsApp 1",
-        altContactValue: "0812 8381 2475",
+        altContactValue: "0855 889 3030",
         altContactDesc: "Kaha Block's main contact for information and consultation",
         secondaryContactLabel: "WhatsApp 2",
         secondaryContactValue: "0855 889 3030",
