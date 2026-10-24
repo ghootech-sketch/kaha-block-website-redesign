@@ -12,10 +12,6 @@ export default function Footer({ lang }: { lang: Locale }) {
     lang === "en"
       ? BUSINESS_FACTS.contact.whatsappPrimaryUrlEn
       : BUSINESS_FACTS.contact.whatsappPrimaryUrl;
-  const secondaryWaUrl =
-    lang === "en"
-      ? BUSINESS_FACTS.contact.whatsappSecondaryUrlEn
-      : BUSINESS_FACTS.contact.whatsappSecondaryUrl;
 
   return (
     <footer aria-label="Site Footer" className="bg-footer text-white py-12 sm:py-14 md:py-16 border-t-[6px] border-primary">
@@ -100,15 +96,6 @@ export default function Footer({ lang }: { lang: Locale }) {
                 </a>
               </li>
               <li className="flex items-center">
-                <Phone className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
-                <a
-                  href={`tel:${BUSINESS_FACTS.contact.secondaryPhoneE164}`}
-                  className="text-gray-300 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded break-words py-1 min-h-[44px] inline-flex items-center"
-                >
-                  {BUSINESS_FACTS.contact.secondaryPhoneDisplay}
-                </a>
-              </li>
-              <li className="flex items-center">
                 <Mail className="w-5 h-5 text-accent mr-3 flex-shrink-0" aria-hidden="true" />
                 <a
                   href={`mailto:${BUSINESS_FACTS.contact.email}`}
@@ -169,22 +156,14 @@ export default function Footer({ lang }: { lang: Locale }) {
                 </div>
               </div>
             </div>
-            <div className="mt-5 sm:mt-6 space-y-3">
+            <div className="mt-5 sm:mt-6">
               <a
                 href={primaryWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
-                WhatsApp 1
-              </a>
-              <a
-                href={secondaryWaUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center min-h-[44px] w-full sm:w-auto bg-[#25D366] text-white px-5 sm:px-6 py-2.5 rounded-full font-bold text-sm hover:bg-green-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              >
-                WhatsApp 2
+                WhatsApp
               </a>
             </div>
           </div>

@@ -57,12 +57,12 @@ export default async function Contact({
       />
 
       {/* =========================================================================
-          2. FOUR QUICK CONTACT CARDS (WhatsApp 1, WhatsApp 2, Email, Instagram)
+          2. THREE QUICK CONTACT CARDS (WhatsApp, Email, Instagram)
          ========================================================================= */}
       <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 mb-10 sm:mb-14">
-            {/* Card 1: WhatsApp 1 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-10 sm:mb-14">
+            {/* Card 1: WhatsApp */}
             <ScrollReveal delay={0.05} className="h-full">
               <a
                 href={getWhatsAppUrl("primary", "quick-quote", currentLang)}
@@ -91,36 +91,8 @@ export default async function Contact({
               </a>
             </ScrollReveal>
 
-            {/* Card 2: WhatsApp 2 */}
-            <ScrollReveal delay={0.1} className="h-full">
-              <a
-                href={getWhatsAppUrl("secondary", "installation", currentLang)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white border border-slate-200 hover:border-primary rounded-xl p-6 sm:p-7 flex flex-col justify-between h-full shadow-xs hover:shadow-md transition-[border-color,box-shadow] duration-200 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[44px]"
-              >
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
-                    <MessageSquare className="w-6 h-6" aria-hidden="true" />
-                  </div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 block mb-1 font-heading">
-                    {dict.quickActions.whatsapp2Label}
-                  </span>
-                  <p className="text-xl sm:text-2xl font-bold font-heading text-slate-900 mb-2 tracking-tight">
-                    {BUSINESS_FACTS.contact.whatsappSecondaryDisplay}
-                  </p>
-                  <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
-                    {dict.quickActions.whatsapp2Desc}
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm font-bold text-primary">
-                  <span>{dict.quickActions.whatsapp2Action}</span>
-                  <ExternalLink className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
-                </div>
-              </a>
-            </ScrollReveal>
 
-            {/* Card 3: Email */}
+            {/* Card 2: Email */}
             <ScrollReveal delay={0.1} className="h-full">
               <a
                 href={`mailto:${dict.quickActions.emailAddress}`}
@@ -271,19 +243,6 @@ export default async function Contact({
                   <p className="text-xs sm:text-sm text-slate-600 font-sans mt-1 leading-relaxed">
                     {dict.infoStrip.altContactDesc}
                   </p>
-                  <div className="pt-2.5 mt-2.5 border-t border-slate-100">
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 block mb-0.5 font-heading">
-                      {dict.infoStrip.secondaryContactLabel}
-                    </span>
-                    <a
-                      href={getWhatsAppUrl("secondary", "installation", currentLang)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm sm:text-base font-bold text-slate-700 hover:text-primary transition-colors inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
-                    >
-                      {dict.infoStrip.secondaryContactValue}
-                    </a>
-                  </div>
                 </div>
               </div>
 
@@ -483,7 +442,7 @@ export default async function Contact({
               </p>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {dict.processFlow.steps.map((step, idx) => (
                 <ScrollReveal
                   key={step.number}
