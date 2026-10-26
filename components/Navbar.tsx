@@ -103,6 +103,7 @@ export default function Navbar({
       { href: `/${lang}`, label: nav.home },
       { href: `/${lang}/about`, label: nav.about },
       { href: `/${lang}/products`, label: nav.products },
+      { href: `/${lang}/harga-paving-block`, label: lang === "en" ? "Prices" : "Harga" },
       { 
         href: `/${lang}/projects`, 
         label: nav.projects,

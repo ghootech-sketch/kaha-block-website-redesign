@@ -15,6 +15,7 @@ export const article14Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Bekasi 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Bekasi 2026. Pelajari spesifikasi mutu K-300 K-400 untuk pergudangan, alur pengiriman bertahap, dan penawaran proyek industri.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek skala kawasan di Kabupaten Bekasi, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Pada pengadaan volume besar di sentra industri dan logistik, kalkulasi penawaran menuntut perencanaan bertahap yang matang.",
     "Kabupaten Bekasi mencakup koridor industri dan pergudangan yang sangat luas, meliputi Cikarang, Cibitung, Tambun, hingga kawasan manufaktur di sekitarnya. Karakteristik proyek di wilayah ini didominasi oleh perkerasan heavy duty yang dirancang menahan lalu lintas armada logistik bermuatan tinggi.",
     "Artikel ini mengulas bagaimana volume pesanan skala besar dikalkulasi, spesifikasi mutu beton apa yang disarankan untuk area industri, serta bagaimana penjadwalan pengiriman bertahap (phased delivery) diatur agar tidak menimbulkan penumpukan material di lokasi kerja.",
@@ -134,6 +135,7 @@ export const article14En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bekasi Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Bekasi Regency for 2026. Explore heavy-duty concrete grades K-300 K-400, phased site deliveries, and industrial quotations.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For large-scale infrastructure projects across Bekasi Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). In major manufacturing and logistics corridors, volume procurement requires structured phased planning.",
     "Bekasi Regency encompasses expansive industrial zones across Cikarang, Cibitung, and Tambun. Pavement projects throughout this area primarily demand heavy-duty surfaces engineered to sustain high wheel axle loads from commercial freight fleets.",
     "This guide examines how large-scale orders are calculated, which compressive concrete grades are commonly specified for industrial applications, and how staged dispatch schedules prevent material congestion on active construction sites.",

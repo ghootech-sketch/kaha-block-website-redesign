@@ -15,6 +15,7 @@ export const article15Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Depok 2026",
   seoDescription: "Estimasi harga paving block per m2 di Depok 2026. Panduan bagi pemilik rumah dan pengembang: cara hitung luas, pilih tebal 6 cm atau 8 cm, dan minta penawaran resmi.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Bagi pemilik rumah, pengembang klaster hunian (townhouse), maupun pemilik usaha di Kota Depok, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka dasar ini menjadi titik tolak perencanaan biaya sebelum memperhitungkan luas riil dan pilihan ketebalan produk.",
     "Kebutuhan perkerasan modular di wilayah Depok—seperti di Margonda, Cinere, Sawangan, Cimanggis, Beji, dan Tapos—sebagian besar berupa carport pribadi, jalan lingkungan perumahan klaster, dan pelataran parkir ruko.",
     "Sebagai konsumen atau pemilik proyek mandiri, tantangan terbesar biasanya bukan pada ketersediaan material, melainkan bagaimana menghitung luas tapak secara akurat, menentukan apakah cukup menggunakan tebal 6 cm atau harus 8 cm, serta memutuskan apakah perlu mengambil paket pemasangan lengkap.",
@@ -134,6 +135,7 @@ export const article15En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Depok 2026",
   seoDescription: "Estimate paving block costs per m2 in Depok for 2026. Practical guide for homeowners and developers: calculate square meters, choose 6 cm vs 8 cm, and request a quote.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For homeowners, townhouse cluster developers, and small business owners in Depok City, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This starting figure helps evaluate project costs prior to taking on-site tape measurements.",
     "Modular pavement requirements across Depok—including Margonda, Cinere, Sawangan, Cimanggis, Beji, and Tapos—predominantly consist of private carports, townhouse cluster access driveways, and retail shop-house aprons.",
     "For property owners, the primary practical questions involve how to calculate net surface area accurately, whether 6 cm thickness is sufficient or if 8 cm is required, and whether to purchase materials directly or contract a complete installation package.",

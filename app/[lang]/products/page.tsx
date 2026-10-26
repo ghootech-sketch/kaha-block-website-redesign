@@ -54,6 +54,36 @@ export default async function Products({
 
       />
 
+
+      <section className="bg-dark text-white border-b border-stone-800 py-8 sm:py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+            <div>
+              <span className="text-xs font-bold tracking-[0.18em] uppercase text-accent font-heading">
+                {currentLang === "id" ? "HARGA & PERHITUNGAN PROYEK" : "PRICING & PROJECT ESTIMATE"}
+              </span>
+              <h2 className="mt-2 text-xl sm:text-2xl font-bold font-heading">
+                {currentLang === "id"
+                  ? "Cari harga per m², per biji, mutu atau biaya pasang?"
+                  : "Looking for price per m², unit, grade or installation cost?"}
+              </h2>
+              <p className="mt-2 text-sm text-slate-300">
+                {currentLang === "id"
+                  ? "Material mulai " + BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id + "*. Bandingkan harga dengan model, ketebalan, mutu dan ruang lingkup yang sama."
+                  : "Material starts from " + BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en + "*. Compare quotations using the same model, thickness, grade and work scope."}
+              </p>
+            </div>
+            <Link
+              href={"/" + currentLang + "/harga-paving-block"}
+              className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-primary px-6 py-3 font-bold text-white hover:bg-primary-hover transition-colors shrink-0"
+            >
+              {currentLang === "id" ? "Lihat Panduan Harga" : "View Pricing Guide"}
+              <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* =========================================================================
           1. PRODUCT NAVIGATOR (White Canvas)
          ========================================================================= */}

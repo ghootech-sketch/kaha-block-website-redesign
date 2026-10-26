@@ -15,6 +15,7 @@ export const article16Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Bogor 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kota Bogor 2026. Tinjau pilihan spesifikasi kafe, ruko, jalan permukiman, dan panduan data penawaran resmi.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek di wilayah Kota Bogor, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar di gerbang pabrik sebelum penyesuaian volume dan kondisi teknis tapak lahan.",
     "Karakteristik pekerjaan perkerasan di Kota Bogor mencakup penataan pelataran usaha kuliner dan kafe di koridor Pajajaran, area parkir ruko, hingga perbaikan jalan lingkungan perumahan di Bogor Tengah, Bogor Barat, Bogor Selatan, dan Tanah Sareal.",
     "Menyusun anggaran yang realistis untuk Kota Bogor memerlukan pertimbangan cermat pada pemilihan profil paving yang estetis sekaligus kokoh, serta kejelasan akses jalan masuk armada pengangkut material.",
@@ -132,6 +133,7 @@ export const article16En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bogor City 2026",
   seoDescription: "Estimate paving block costs per m2 in Bogor City for 2026. Explore specifications for retail courtyards, residential streets, and how to request an official quote.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects in Bogor City, paving block prices starting from Rp90,000/m²* for standard factory precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This figure provides a practical starting point prior to evaluating surface area and physical site characteristics.",
     "Modular pavement installations across Bogor City frequently involve outdoor dining courtyards along Pajajaran commercial avenues, retail parking plazas, and residential neighborhood street upgrades in Central, East, West, South Bogor, and Tanah Sareal.",
     "Establishing a dependable budget requires balancing visual aesthetics with compressive load ratings, while sharing clear site access data with dispatch planners.",

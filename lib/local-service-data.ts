@@ -84,9 +84,9 @@ export interface AreaHubContent {
 export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
   id: {
     eyebrow: "LAYANAN KONTRAKTOR & KEMITRAAN",
-    h1: "Kontraktor & Jasa Pemasangan Paving Block Jabodetabek",
+    h1: "Jasa Pasang & Kontraktor Paving Block Jabodetabek",
     heroDesc:
-      "PT Kaha Sukses Mandiri (Kaha Block) melayani pekerjaan kontraktor dan jasa pemasangan paving block sekaligus pengadaan material untuk perumahan, area komersial, pergudangan, kawasan industri, area parkir, dan jalan lingkungan di seluruh Jabodetabek.",
+      "PT Kaha Sukses Mandiri (Kaha Block) melayani jasa pasang, borongan pemasangan, aplikator/kontraktor paving block sekaligus pengadaan material untuk carport, halaman rumah, perumahan, area komersial, pergudangan, kawasan industri, parkir, dan jalan lingkungan di seluruh Jabodetabek.",
     advantagesTitle: "Keunggulan Layanan Pemasangan Terintegrasi",
     advantagesIntro:
       "Memilih layanan terintegrasi langsung dari produsen memastikan kualitas material dan presisi pemasangan berada dalam satu standar mutu.",
@@ -116,8 +116,8 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       "Kami melayani pekerjaan pemasangan konblock dan paving block untuk berbagai tipe infrastruktur darat dan properti:",
     scopes: [
       {
-        title: "Halaman & Garasi Perumahan",
-        desc: "Penataan halaman rumah tinggal, garasi mobil, serta akses jalan komplek perumahan agar bebas becek dan tampak rapi estetis.",
+        title: "Carport, Halaman Rumah & Garasi",
+        desc: "Pemasangan paving block untuk carport, halaman rumah, garasi mobil, teras luar, serta akses jalan komplek perumahan sesuai kondisi lahan dan kebutuhan beban.",
       },
       {
         title: "Jalan Lingkungan & Kawasan Pemukiman",
@@ -132,8 +132,8 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
         desc: "Perkerasan area operasional pabrik, pelataran maneuver truk kargo, serta apron gudang menggunakan paving tebal 8 cm mutu K-400.",
       },
       {
-        title: "Pedestrian & Fasilitas Umum",
-        desc: "Jalur pejalan kaki, trotoar jalan, lapangan olahraga, area taman kota, serta halaman tempat ibadah dan sekolah.",
+        title: "Pedestrian, Taman & Fasilitas Umum",
+        desc: "Jalur pejalan kaki, trotoar, taman, lapangan olahraga, fasilitas umum, serta halaman tempat ibadah dan sekolah.",
       },
     ],
     workflowTitle: "Alur Kerja Pemasangan Paving Block",
@@ -553,9 +553,9 @@ export const REGIONAL_PAGES_DATA: Record<
     id: {
       slug: "jakarta",
       eyebrow: "PRODUSEN & SUPPLIER PAVING BLOCK",
-      h1: "Produsen Paving Block untuk Jakarta & Jasa Pemasangan",
+      h1: "Supplier Paving Block Jakarta & Jasa Pemasangan",
       heroDesc:
-        "Kaha Block memproduksi paving block presisi mesin full otomatis hidrolik di fasilitas pabrik Cisauk, Kabupaten Tangerang, untuk melayani kebutuhan pengadaan material dan jasa pemasangan di seluruh wilayah DKI Jakarta (Jakarta Selatan, Timur, Barat, Utara, dan Pusat).",
+        "Kaha Block melayani supplier/jual paving block dan conblock untuk Jakarta langsung dari fasilitas pabrik Cisauk, Kabupaten Tangerang, sekaligus jasa pemasangan untuk Jakarta Selatan, Timur, Barat, Utara, dan Pusat.",
       factoryContextNotice:
         "Pengiriman material ke wilayah Jakarta dilakukan langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan termasuk penurunan barang.",
       keyBenefits: [
@@ -779,9 +779,9 @@ export const REGIONAL_PAGES_DATA: Record<
     id: {
       slug: "tangerang",
       eyebrow: "PABRIK UTAMA & SUPPLIER DIRECT",
-      h1: "Pabrik Paving Block Cisauk, Tangerang & Jasa Pemasangan",
+      h1: "Pabrik & Supplier Paving Block Tangerang + Jasa Pasang",
       heroDesc:
-        "PT Kaha Sukses Mandiri (Kaha Block) mengoperasikan fasilitas produksi seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Kami melayani pengadaan paving block langsung dari pabrik, konsultasi harga sesuai spesifikasi dan volume, pengiriman material, serta jasa pemasangan untuk Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
+        "PT Kaha Sukses Mandiri (Kaha Block) mengoperasikan fasilitas produksi seluas 9.080 m² di Cisauk, Kabupaten Tangerang. Kami melayani pabrik/supplier, jual dan pengadaan paving block/conblock, konsultasi harga sesuai spesifikasi dan volume, pengiriman, serta jasa pasang untuk Kabupaten Tangerang, Kota Tangerang, Tangerang Selatan, dan Cisauk.",
       factoryContextNotice:
         "Pabrik fisik Kaha Block berada di Cisauk, Kabupaten Tangerang. Beroperasi sejak 2015 memproduksi paving mutu K-250, K-300, dan K-400 untuk pengadaan langsung pabrik dan jasa pemasangan di Tangerang Raya.",
       keyBenefits: [
@@ -985,9 +985,9 @@ export const REGIONAL_PAGES_DATA: Record<
     id: {
       slug: "bekasi",
       eyebrow: "PRODUSEN & SUPPLIER PAVING BLOCK",
-      h1: "Produsen Paving Block untuk Bekasi & Jasa Pemasangan",
+      h1: "Supplier Paving Block Bekasi & Jasa Pemasangan",
       heroDesc:
-        "Mencari produsen atau pabrik paving block untuk kebutuhan proyek di Bekasi? Kaha Block memproduksi paving block presisi di Cisauk, Kabupaten Tangerang, dan melayani pengadaan material serta jasa pemasangan untuk wilayah Kota Bekasi dan Kabupaten Bekasi.",
+        "Mencari supplier, tempat jual, atau pabrik paving block/conblock untuk proyek Bekasi dan Cikarang? Kaha Block memasok langsung dari Cisauk, Kabupaten Tangerang, serta melayani pengadaan material dan jasa pemasangan untuk Kota Bekasi dan Kabupaten Bekasi.",
       factoryContextNotice:
         "Pasokan material untuk proyek di Bekasi dikirim langsung dari pabrik utama Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan penurunan barang di lokasi.",
       keyBenefits: [
@@ -1173,7 +1173,7 @@ export const REGIONAL_PAGES_DATA: Record<
     id: {
       slug: "depok",
       eyebrow: "PRODUSEN & SUPPLIER PAVING BLOCK",
-      h1: "Produsen Paving Block untuk Depok & Jasa Pemasangan",
+      h1: "Supplier Paving Block Depok & Jasa Pemasangan",
       heroDesc:
         "Kaha Block menyediakan pengadaan paving block presisi langsung dari fasilitas pabrik di Cisauk, Kabupaten Tangerang, untuk melayani kebutuhan proyek perumahan, ruko komersial, dan jalan lingkungan di wilayah Kota Depok.",
       factoryContextNotice:
@@ -1351,7 +1351,7 @@ export const REGIONAL_PAGES_DATA: Record<
     id: {
       slug: "bogor",
       eyebrow: "PRODUSEN & SUPPLIER PAVING BLOCK",
-      h1: "Produsen Paving Block untuk Bogor & Jasa Pemasangan",
+      h1: "Supplier Paving Block Bogor & Jasa Pemasangan",
       heroDesc:
         "Kaha Block memproduksi paving block presisi di Cisauk, Kabupaten Tangerang, untuk melayani pengadaan material dan jasa pemasangan di Kota Bogor dan Kabupaten Bogor.",
       factoryContextNotice:

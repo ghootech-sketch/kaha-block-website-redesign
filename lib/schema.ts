@@ -4,6 +4,7 @@ import { BlogPost } from "./blog-types";
 import { ProductData, getAllProducts } from "./products-data";
 import { VideoItem } from "./video-data";
 import { AREA_HUB_DATA, INSTALLATION_DATA, REGIONAL_PAGES_DATA } from "./local-service-data";
+import { PRICE_PAGE_DATA } from "./price-page-data";
 
 export type SchemaPageType =
   | "home"
@@ -16,6 +17,7 @@ export type SchemaPageType =
   | "blog"
   | "blogPost"
   | "jasaPemasangan"
+  | "hargaPaving"
   | "areaLayanan"
   | "areaJakarta"
   | "areaTangerang"
@@ -54,6 +56,8 @@ export function generateStructuredDataGraph({
       ? `/videos/${videoItem.slug}`
       : page === "jasaPemasangan"
       ? "/jasa-pemasangan-paving-block"
+      : page === "hargaPaving"
+      ? "/harga-paving-block"
       : page === "areaLayanan"
       ? "/area-layanan"
       : page === "areaJakarta"
@@ -174,6 +178,8 @@ export function generateStructuredDataGraph({
       items.push({ "@type": "ListItem", position: 3, name: post.title, item: canonicalUrl });
     } else if (page === "jasaPemasangan") {
       items.push({ "@type": "ListItem", position: 2, name: isEn ? "Installation Services" : "Jasa Pemasangan", item: canonicalUrl });
+    } else if (page === "hargaPaving") {
+      items.push({ "@type": "ListItem", position: 2, name: isEn ? "Paving Block Prices" : "Harga Paving Block", item: canonicalUrl });
     } else if (page === "areaLayanan") {
       items.push({ "@type": "ListItem", position: 2, name: isEn ? "Service Areas" : "Area Layanan", item: canonicalUrl });
     } else if (
@@ -253,6 +259,13 @@ export function generateStructuredDataGraph({
         pageName = post.title;
         pageDescription = post.seoDescription;
       }
+      break;
+    case "hargaPaving":
+      pageType = "WebPage";
+      pageName = isEn ? "Paving Block Price per m², Unit & Installation | Kaha Block" : "Harga Paving Block per m², Satuan & Jasa Pasang | Kaha Block";
+      pageDescription = isEn
+        ? "Commercial paving block pricing guide covering price per m², unit pricing, concrete grades, thickness options and installation estimates across Greater Jakarta."
+        : "Panduan harga paving block per m²/meter persegi, per biji/satuan, mutu K-250/K-300/K-400, ketebalan 6/8/10 cm dan estimasi jasa pasang Jabodetabek.";
       break;
     case "jasaPemasangan":
       pageType = "ItemPage";
@@ -535,7 +548,16 @@ export function generateStructuredDataGraph({
     });
   }
 
-  const serviceFaqs = page === "jasaPemasangan" ? INSTALLATION_DATA[lang].faqs : page === "areaLayanan" ? AREA_HUB_DATA[lang].faqs : regionalSlug ? REGIONAL_PAGES_DATA[regionalSlug][lang].faqs : [];
+  const serviceFaqs =
+    page === "hargaPaving"
+      ? PRICE_PAGE_DATA[lang].faqs
+      : page === "jasaPemasangan"
+      ? INSTALLATION_DATA[lang].faqs
+      : page === "areaLayanan"
+      ? AREA_HUB_DATA[lang].faqs
+      : regionalSlug
+      ? REGIONAL_PAGES_DATA[regionalSlug][lang].faqs
+      : [];
 
   if (serviceFaqs.length > 0) {
     graph.push({

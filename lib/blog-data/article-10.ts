@@ -15,6 +15,7 @@ export const article10Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Jabodetabek 2026",
   seoDescription: "Panduan estimasi harga paving block per m2 di Jabodetabek 2026. Pahami variabel mutu beton, volume pemesanan, dan cara mengevaluasi penawaran resmi pabrik.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Harga paving block mulai Rp90.000/m²* untuk pengadaan material di kawasan Jabodetabek (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka dasar ini merupakan titik tolak komersial untuk kebutuhan perencanaan awal, bukan harga tunggal yang berlaku mutlak untuk semua skenario.",
     "Dalam penyusunan rencana anggaran biaya (RAB) infrastruktur luar ruangan, perkerasan paving block modular memerlukan perhitungan terperinci. Estimasi akhir sangat bergantung pada kombinasi spesifikasi teknis kuat tekan beton, ketebalan balok, luas area efektif, serta ruang lingkup pekerjaan yang dibutuhkan di lapangan.",
     "Artikel panduan induk ini menguraikan bagaimana struktur penawaran harga di wilayah Jabodetabek dibentuk, parameter apa saja yang menentukan perubahan biaya, serta langkah sistematis bagi pemilik proyek dan kontraktor dalam mengevaluasi penawaran produsen.",
@@ -137,6 +138,7 @@ export const article10En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Greater Jakarta 2026",
   seoDescription: "Explore paving block price factors per m2 across Greater Jakarta for 2026. Understand concrete grades, order quantities, and how to evaluate formal factory quotations.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "Paving block prices starting from Rp90,000/m²* for material procurement across Greater Jakarta (*final pricing may vary based on specifications, order volume, project location, and service requirements). This initial figure provides a commercial baseline for early budget planning rather than a uniform price across every project scenario.",
     "When preparing a bill of quantities (BoQ) for outdoor pavements, modular concrete blocks require a structured calculation. The final project proposal depends on concrete compressive strength ratings, block thickness, net square meters, and whether site works require material supply only or a turnkey civil installation package.",
     "This master regional guide outlines how quotations are structured across Jakarta, Bogor, Depok, Tangerang, and Bekasi, what technical variables drive cost adjustments, and how project owners can systematically evaluate supplier proposals.",

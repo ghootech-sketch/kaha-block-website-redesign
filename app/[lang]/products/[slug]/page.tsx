@@ -345,6 +345,13 @@ export default async function ProductDetailPage({
                     <span>{installationLabel}</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
                   </Link>
+                  <Link
+                    href={"/" + currentLang + "/harga-paving-block"}
+                    className="mt-3 inline-flex items-center text-xs sm:text-sm font-bold text-slate-700 hover:text-primary font-heading uppercase tracking-wide transition-colors"
+                  >
+                    <span>{isEn ? "View Price per m² & Unit Guide" : "Lihat Harga per m² & Satuan"}</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1.5" aria-hidden="true" />
+                  </Link>
                 </div>
               </ScrollReveal>
 

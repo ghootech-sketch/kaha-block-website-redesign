@@ -52,6 +52,7 @@ export default function Footer({ lang }: { lang: Locale }) {
                 { href: `/${lang}`, label: dict.nav.home },
                 { href: `/${lang}/about`, label: dict.nav.about },
                 { href: `/${lang}/products`, label: dict.nav.products },
+                { href: `/${lang}/harga-paving-block`, label: lang === "en" ? "Paving Block Prices" : "Harga Paving Block" },
                 {
                   href: `/${lang}/jasa-pemasangan-paving-block`,
                   label: lang === "en" ? "Installation Services" : "Jasa Pemasangan",

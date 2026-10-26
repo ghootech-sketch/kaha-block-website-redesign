@@ -15,6 +15,7 @@ export const article12Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Tangerang 2026",
   seoDescription: "Estimasi harga paving block per m2 di Tangerang 2026. Pelajari pengaruh fasilitas produksi Cisauk, standar pres hidrolik, dan panduan penawaran proyek Anda.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek di kawasan Tangerang Kota dan Tangerang Selatan, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Keberadaan fasilitas produksi di wilayah Tangerang memberikan keuntungan signifikan dalam kemudahan koordinasi teknis dan konsistensi suplai material.",
     "Proyek-proyek di koridor Tangerang Raya—seperti BSD City, Gading Serpong, Bintaro, Alam Sutera, Ciledug, dan Cipondoh—memiliki spektrum kebutuhan yang luas, mulai dari pelataran ruko komersial, jalan klaster perumahan modern, hingga fasilitas publik.",
     "Meskipun lokasi pengiriman relatif dekat dengan pusat produksi, surat penawaran harga resmi tetap memerlukan rincian teknis yang jelas mengenai volume luasan, mutu kuat tekan beton, dan skema pengadaan yang diinginkan.",
@@ -133,6 +134,7 @@ export const article12En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Tangerang 2026",
   seoDescription: "Estimate paving block costs per m2 in Tangerang for 2026. Explore our Cisauk production facility context, automated hydraulic standards, and quote preparation steps.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects across Tangerang City and South Tangerang, paving block prices starting from Rp90,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). Operating close to established production facilities offers significant advantages in technical coordination and batch consistency.",
     "Developments across Greater Tangerang—including BSD City, Gading Serpong, Bintaro, Alam Sutera, Ciledug, and Cipondoh—encompass diverse pavement applications: commercial shop-house courtyards, modern residential clusters, and civic pedestrian spaces.",
     "Even with geographic proximity to manufacturing facilities, preparing an accurate proposal requires clear specifications regarding square meter volume, target compressive strength, and required service scope.",

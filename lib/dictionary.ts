@@ -214,14 +214,14 @@ export const dictionaries = {
       pricingConversion: {
         eyebrow: "Harga Langsung Pabrik Cisauk",
         title: `Paving Block Mulai ${BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id}*`,
-        subtitle: "Gratis pengiriman & penurunan untuk Jabodetabek. Tersedia mutu K-250, K-300, dan K-400. Kirim lokasi proyek + perkiraan luas area untuk cek tipe, stok, dan estimasi harga sesuai kebutuhan.",
+        subtitle: "Acuan harga material per m² langsung pabrik Cisauk. Gratis pengiriman & penurunan untuk Jabodetabek, tersedia mutu K-250, K-300, dan K-400. Kirim lokasi + luas area untuk cek tipe, stok, harga material, atau paket jasa pasang.",
         primaryCta: "Cek Harga Sesuai Luas Proyek",
         secondaryCta: "Estimasi Material + Pasang",
         disclaimer: `*${BUSINESS_FACTS.pricing.scope.id}`,
       },
       installation: {
         eyebrow: "Solusi Terintegrasi",
-        title: "Layanan Jasa Pemasangan",
+        title: "Jasa Pasang & Kontraktor Paving Block",
         subtitle: "Solusi terpadu pengadaan material sekaligus pengerjaan pemasangan paving block profesional.",
         point1Title: "Pengadaan Sekaligus Pemasangan",
         point1Desc: "Melayani satu paket pengadaan material paving block berkualitas dan pengerjaan sebagai kontraktor pemasangan paving block berpengalaman.",
@@ -424,8 +424,8 @@ export const dictionaries = {
     },
     products: {
       eyebrow: "PRODUK KAHA BLOCK",
-      title: "Produk Unggulan",
-      specs: "Mutu Terjamin: Material Bahan Baku Pilihan",
+      title: "Jual Paving Block, Conblock & Kanstein",
+      specs: "Katalog produk langsung pabrik: pilih model, spesifikasi, ketebalan dan kebutuhan proyek",
       availability: "Stok banyak dan volume besar tersedia.",
       orderCta: "Cek Harga Produk Ini",
       consultCta: "Minta Estimasi Jasa Pasang",

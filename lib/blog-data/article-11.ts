@@ -15,6 +15,7 @@ export const article11Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Jakarta 2026",
   seoDescription: "Estimasi harga paving block per m2 di Jakarta 2026. Pelajari bagaimana akses lokasi, pengukuran area, dan spesifikasi beban mempengaruhi penawaran proyek Anda.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek di wilayah DKI Jakarta, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Di lingkungan perkotaan yang padat, biaya akhir pekerjaan perkerasan sangat ditentukan oleh ketepatan informasi lapangan yang disiapkan pemilik proyek sejak awal.",
     "Banyak pengembang dan pemilik bangunan di Jakarta mengalami selisih anggaran antara perkiraan kasar dan penawaran resmi. Perbedaan tersebut umumnya bukan berasal dari fluktuasi harga bahan mentah semata, melainkan dari kondisi akses jalan masuk armada, ketersediaan area bongkar material, serta penyesuaian mutu beton terhadap beban kendaraan nyata.",
     "Artikel ini berfokus pada data praktis apa saja yang perlu disiapkan sebelum meminta penawaran harga paving block untuk area Jakarta Pusat, Jakarta Selatan, Jakarta Barat, Jakarta Timur, maupun Jakarta Utara.",
@@ -134,6 +135,7 @@ export const article11En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Jakarta 2026",
   seoDescription: "Estimate paving block prices per m2 in Jakarta for 2026. Learn how site access, area measurement, and vehicle loads shape your official project quotation.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects across DKI Jakarta, paving block prices starting from Rp90,000/m²* for base material procurement (*final pricing may vary based on specifications, order volume, project location, and service requirements). In densely built urban areas, the final cost of an outdoor pavement project depends heavily on the accuracy of site data prepared by project owners at the outset.",
     "Many property owners and contractors in Jakarta notice discrepancies between initial rule-of-thumb estimates and formal proposals. These variances typically stem not from material index shifts alone, but from real site conditions—such as entry lane clearances, pallet staging space, and required concrete strength ratings.",
     "This guide highlights the key information project managers should organize before requesting a formal quotation across Central, South, West, East, and North Jakarta.",

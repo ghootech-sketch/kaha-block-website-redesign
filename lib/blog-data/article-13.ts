@@ -15,6 +15,7 @@ export const article13Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Bekasi 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kota Bekasi 2026. Pelajari cara menghitung kebutuhan ruko, jalan perumahan, dan cara meminta penawaran harga resmi.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek di wilayah Kota Bekasi, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Angka awal ini merupakan acuan pengadaan material beton pracetak standar sebelum penyesuaian volume dan kebutuhan pekerjaan lapangan.",
     "Karakteristik proyek di Kota Bekasi didominasi oleh perkerasan lingkungan perkotaan: pelataran parkir ruko di sepanjang koridor usaha, jalan klaster perumahan di Bekasi Selatan dan Barat, hingga penataan halaman komersial di Jatiasih dan Pondok Gede.",
     "Bagi pemilik properti maupun pelaksana proyek skala kota, menyusun anggaran yang akurat membutuhkan pemahaman mengenai cara menghitung luas area bersih, memilih profil paving yang efisien, dan memisahkan biaya pengadaan material dari upah kerja penataan.",
@@ -132,6 +133,7 @@ export const article13En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bekasi City 2026",
   seoDescription: "Estimate paving block costs per m2 in Bekasi City for 2026. Learn how to calculate requirements for shop-houses, housing clusters, and request an actionable quote.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects across Bekasi City, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). This baseline provides a practical starting figure prior to volume and site installation adjustments.",
     "Projects in Bekasi City primarily revolve around urban commercial corridors and residential developments: shop-house parking aprons, cluster access streets across South and West Bekasi, and retail courtyards in Jatiasih and Pondok Gede.",
     "Developing an accurate pavement budget requires knowing how to calculate net surface area, selecting the right block thickness for commercial versus residential use, and choosing between material-only delivery and turnkey installation.",

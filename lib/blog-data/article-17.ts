@@ -15,6 +15,7 @@ export const article17Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Bogor 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Bogor 2026. Pelajari pengadaan kawasan perumahan di Sentul, Cibinong, Cileungsi, dan persiapan data penawaran resmi.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk proyek di kawasan Kabupaten Bogor, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Mengingat luasnya bentang geografis Kabupaten Bogor, penyusunan anggaran pengadaan menuntut ketelitian dalam menentukan titik koordinat proyek dan volume bertahap.",
     "Wilayah Kabupaten Bogor mencakup kawasan pengembangan kota mandiri dan perumahan skala luas seperti di Sentul, Cibinong, Bojonggede, Babakan Madang, dan Parung Panjang, hingga koridor industri pergudangan di Gunung Putri dan Cileungsi.",
     "Bagi kontraktor kawasan dan pengembang properti, memahami bagaimana volume skala luas dikalkulasi dan bagaimana rute pengiriman direncanakan merupakan kunci agar anggaran tetap terkontrol serta pelaksanaan di lapangan berjalan tertib.",
@@ -134,6 +135,7 @@ export const article17En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Bogor Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Bogor Regency for 2026. Explore township volume planning across Sentul, Cibinong, and Cileungsi, with quotation preparation steps.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects in Bogor Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Given the expansive geographic territory of Bogor Regency, budgeting requires careful planning of project coordinates and staged volume schedules.",
     "Bogor Regency features prominent master-planned townships and growing residential developments across Sentul, Cibinong, Bojonggede, Babakan Madang, and Parung Panjang, alongside industrial corridors in Gunung Putri and Cileungsi.",
     "For civil contractors and township developers, understanding how large-scale volumes are budgeted and how delivery routes are scheduled is essential for keeping project timelines and costs under control.",

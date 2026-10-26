@@ -207,6 +207,13 @@ export default async function JasaPemasanganPage({
                   ? `*${BUSINESS_FACTS.pricing.scope.en}`
                   : `*${BUSINESS_FACTS.pricing.scope.id}`}
               </p>
+              <Link
+                href={"/" + currentLang + "/harga-paving-block"}
+                className="mt-4 inline-flex items-center text-sm font-bold text-accent hover:text-white transition-colors"
+              >
+                <span>{isEn ? "Price per m², Unit & Installation Guide" : "Panduan Harga per m², Satuan & Biaya Pasang"}</span>
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
             </div>
           </ScrollReveal>
         </div>

@@ -656,6 +656,17 @@ export default async function Home({
                 <p className="text-xs text-slate-400 font-sans italic max-w-xl mx-auto">
                   {homeDict.pricingConversion.disclaimer}
                 </p>
+                <Link
+                  href={"/" + currentLang + "/harga-paving-block"}
+                  className="mt-4 inline-flex items-center text-sm font-bold text-accent hover:text-white transition-colors"
+                >
+                  <span>
+                    {currentLang === "id"
+                      ? "Lihat Panduan Harga per m², Satuan & Jasa Pasang"
+                      : "View Price per m², Unit & Installation Guide"}
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+                </Link>
               </Reveal>
             </RevealGroup>
           </div>

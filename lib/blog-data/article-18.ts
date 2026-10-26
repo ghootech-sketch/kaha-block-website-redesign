@@ -15,6 +15,7 @@ export const article18Id: BlogPost = {
   seoTitle: "Harga Paving Block / Conblock Kabupaten Tangerang 2026",
   seoDescription: "Estimasi harga paving block per m2 di Kabupaten Tangerang 2026. Tinjau pabrik Cisauk, mutu K-250 hingga K-400 untuk industri Cikupa/Balaraja, dan penawaran resmi.",
   intro: [
+    "Untuk acuan komersial harga per m², per biji/satuan, mutu/ketebalan, dan estimasi jasa pasang, lihat [halaman harga paving block](/id/harga-paving-block).",
     "Untuk pengadaan proyek di wilayah Kabupaten Tangerang, estimasi harga paving block mulai Rp90.000/m²* (*harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan). Diproduksi langsung dari fasilitas PT Kaha Sukses Mandiri di Cisauk, angka dasar ini merupakan acuan pengadaan material pracetak sebelum penyesuaian volume dan jarak tempuh lapangan.",
     "Kabupaten Tangerang memiliki kontur pembangunan yang sangat dinamis: dari kawasan industri manufaktur dan pergudangan di Balaraja, Cikupa, Pasar Kemis, dan Curug, hingga pemukiman kota mandiri di Cisauk, Legok, Kelapa Dua, dan Tigaraksa.",
     "Berada di wilayah yang sama dengan pusat produksi Kaha Block memberikan transparansi langsung terhadap proses pencetakan hidrolik. Namun, surat penawaran harga resmi tetap memerlukan rincian teknis mengenai mutu kuat tekan beton, volume meter persegi, dan kesiapan akses jalan masuk lokasi proyek.",
@@ -132,6 +133,7 @@ export const article18En: BlogPost = {
   seoTitle: "Paving Block / Conblock Prices in Tangerang Regency 2026",
   seoDescription: "Estimate paving block costs per m2 in Tangerang Regency for 2026. Explore our Cisauk plant, heavy-duty K-300 K-400 grades for Cikupa/Balaraja, and quotation steps.",
   intro: [
+    "For current commercial pricing, unit-price context, and installation estimates, see the [paving block pricing page](/en/harga-paving-block).",
     "For projects across Tangerang Regency, paving block prices starting from Rp90,000/m²* for standard precast materials (*final pricing may vary based on specifications, order volume, project location, and service requirements). Produced directly at PT Kaha Sukses Mandiri's facility in Cisauk, this baseline provides a factory-gate reference before factoring in project volumes and delivery distances.",
     "Tangerang Regency combines intensive manufacturing and logistics hubs in Balaraja, Cikupa, Pasar Kemis, and Curug with planned residential developments across Cisauk, Legok, Kelapa Dua, and Tigaraksa.",
     "Being in the home territory of Kaha Block's production base provides direct transparency into hydraulic press manufacturing standards. However, preparing a formal project proposal still requires clear data regarding compressive strength, square meter area, and site offloading conditions.",

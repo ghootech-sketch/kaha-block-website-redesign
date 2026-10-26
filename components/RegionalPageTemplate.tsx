@@ -93,6 +93,20 @@ export default function RegionalPageTemplate({
     }
   });
 
+  if (slug === "bekasi") {
+    if (lang === "id") {
+      faqsToRender.push({
+        q: "Apakah Kaha Block melayani jual paving block dan jasa pasang di Cikarang?",
+        a: "Ya. Cikarang termasuk wilayah Kabupaten Bekasi yang dilayani Kaha Block untuk pengadaan paving block/conblock langsung dari pabrik Cisauk serta jasa pemasangan. Kirim lokasi proyek di Cikarang, perkiraan luas area, dan kebutuhan material saja atau material + pemasangan untuk estimasi.",
+      });
+    } else {
+      faqsToRender.push({
+        q: "Does Kaha Block supply and install paving blocks in Cikarang?",
+        a: "Yes. Cikarang is within Bekasi Regency service coverage for direct factory paving block supply from Cisauk and installation services. Send the project location, estimated area, and required scope for a quotation.",
+      });
+    }
+  }
+
   if (slug === "tangerang") {
     if (lang === "id") {
       faqsToRender.push({
@@ -409,6 +423,13 @@ export default function RegionalPageTemplate({
                 ? "*Final pricing may vary based on specifications, order volume, project location, and service requirements."
                 : "*Harga dapat menyesuaikan spesifikasi, jumlah pemesanan, lokasi proyek, dan kebutuhan layanan."}
             </p>
+            <Link
+              href={"/" + lang + "/harga-paving-block"}
+              className="mt-4 inline-flex items-center text-sm font-bold text-accent hover:text-white transition-colors"
+            >
+              <span>{isEn ? "View Price per m² & Unit Guide" : "Lihat Harga per m², Satuan & Biaya Pasang"}</span>
+              <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+            </Link>
           </ScrollReveal>
         </div>
       </section>
