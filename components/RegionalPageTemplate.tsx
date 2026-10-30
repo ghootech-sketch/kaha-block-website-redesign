@@ -2,6 +2,7 @@ import { Locale } from "@/lib/dictionary";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { SchemaPageType } from "@/lib/schema";
 import { REGIONAL_PAGES_DATA, RegionalSlug } from "@/lib/local-service-data";
+import { REGIONAL_SEO_EXPANSION } from "@/lib/service-seo-expansion";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -33,6 +34,7 @@ export default function RegionalPageTemplate({
 }: RegionalPageTemplateProps) {
   const isEn = lang === "en";
   const data = REGIONAL_PAGES_DATA[slug][lang];
+  const seo = REGIONAL_SEO_EXPANSION[slug][lang];
 
   // Get other regional slugs for cross-linking
   const otherRegions = (
@@ -193,6 +195,74 @@ export default function RegionalPageTemplate({
         </div>
       </section>
 
+
+      {/* Long-form commercial intent content */}
+      <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-accent font-heading">
+              {isEn ? "SUPPLY • SALES • INSTALLATION" : "SUPPLIER • JUAL • JASA PASANG"}
+            </span>
+            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.introTitle}
+            </h2>
+            <div className="mt-5 space-y-4 text-sm sm:text-base text-slate-600 font-sans leading-relaxed">
+              {seo.introParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                href={"/" + lang + "/products"}
+                className="inline-flex items-center rounded-lg border border-slate-200 bg-surface px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-primary hover:text-primary transition-colors"
+              >
+                {isEn ? "View Paving Products" : "Lihat Produk Paving Block"}
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
+              <Link
+                href={"/" + lang + "/harga-paving-block"}
+                className="inline-flex items-center rounded-lg border border-slate-200 bg-surface px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-primary hover:text-primary transition-colors"
+              >
+                {isEn ? "Price per m² & Unit" : "Harga per m² & Satuan"}
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
+              <Link
+                href={"/" + lang + "/jasa-pemasangan-paving-block"}
+                className="inline-flex items-center rounded-lg border border-slate-200 bg-surface px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-primary hover:text-primary transition-colors"
+              >
+                {isEn ? "Installation & Contractor" : "Jasa Pasang & Kontraktor"}
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.intentTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+              {seo.intentIntro}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {seo.intentCards.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.035} className="h-full">
+                <article className="h-full bg-white border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Key Benefits Grid */}
       <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -282,6 +352,33 @@ export default function RegionalPageTemplate({
                     </p>
                   </div>
                 </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.projectTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+              {seo.projectIntro}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {seo.projectCards.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.04} className="h-full">
+                <article className="h-full bg-white border border-slate-200 rounded-xl p-6">
+                  <Building2 className="w-5 h-5 text-primary mb-3" aria-hidden="true" />
+                  <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
               </ScrollReveal>
             ))}
           </div>
@@ -431,6 +528,35 @@ export default function RegionalPageTemplate({
               <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
             </Link>
           </ScrollReveal>
+        </div>
+      </section>
+
+
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-accent font-heading">
+              {isEn ? "PRICE & PROJECT SCOPE" : "HARGA & RUANG LINGKUP PROYEK"}
+            </span>
+            <h2 className="mt-3 text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.costTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+              {seo.costIntro}
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {seo.costFactors.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.035} className="h-full">
+                <article className="h-full bg-white border border-slate-200 rounded-xl p-6">
+                  <h3 className="text-base font-bold font-heading text-slate-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 

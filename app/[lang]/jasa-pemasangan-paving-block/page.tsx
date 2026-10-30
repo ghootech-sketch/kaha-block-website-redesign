@@ -2,6 +2,7 @@ import { isValidLocale, Locale } from "@/lib/dictionary";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { constructPageMetadata } from "@/lib/metadata";
 import { INSTALLATION_DATA } from "@/lib/local-service-data";
+import { INSTALLATION_SEO_EXPANSION } from "@/lib/service-seo-expansion";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -46,6 +47,7 @@ export default async function JasaPemasanganPage({
   const currentLang = lang as Locale;
   const isEn = currentLang === "en";
   const data = INSTALLATION_DATA[currentLang];
+  const seo = INSTALLATION_SEO_EXPANSION[currentLang];
 
   const advantageIcons = [ShieldCheck, HardHat, Ruler, Layers];
 
@@ -112,6 +114,63 @@ export default async function JasaPemasanganPage({
           </div>
         </section>
       )}
+
+
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-accent font-heading">
+              {isEn ? "INSTALLER • CONTRACTOR • TURNKEY" : "JASA PASANG • BORONGAN • KONTRAKTOR"}
+            </span>
+            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.introTitle}
+            </h2>
+            <div className="mt-5 space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+              {seo.introParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                href={"/" + currentLang + "/harga-paving-block"}
+                className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-primary hover:text-primary transition-colors"
+              >
+                {isEn ? "Price & Installation Cost" : "Harga Material & Biaya Pasang"}
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
+              <Link
+                href={"/" + currentLang + "/products"}
+                className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-primary hover:text-primary transition-colors"
+              >
+                {isEn ? "Paving Product Catalog" : "Katalog Paving Block"}
+                <ArrowRight className="w-4 h-4 ml-1.5" aria-hidden="true" />
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.intentTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">{seo.intentIntro}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {seo.intentCards.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.035} className="h-full">
+                <article className="h-full bg-surface border border-slate-200 rounded-xl p-6">
+                  <HardHat className="w-5 h-5 text-primary mb-3" aria-hidden="true" />
+                  <h3 className="text-lg font-bold font-heading text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* =========================================================================
           2B-INSTALLATION. ESTIMASI BIAYA PASANG PAVING BLOCK PER METER 2026 (Answer-First)
@@ -219,6 +278,29 @@ export default async function JasaPemasanganPage({
         </div>
       </section>
 
+
+      <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.costTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">{seo.costIntro}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {seo.costFactors.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.035} className="h-full">
+                <article className="h-full bg-white border border-slate-200 rounded-xl p-6">
+                  <Ruler className="w-5 h-5 text-accent mb-3" aria-hidden="true" />
+                  <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Scope of Work */}
       <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -250,6 +332,29 @@ export default async function JasaPemasanganPage({
                     </p>
                   </div>
                 </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <section className="bg-white border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-heading text-slate-900 tracking-tight">
+              {seo.projectTitle}
+            </h2>
+            <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">{seo.projectIntro}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {seo.projectCards.map((item, idx) => (
+              <ScrollReveal key={item.title} delay={idx * 0.04} className="h-full">
+                <article className="h-full bg-surface border border-slate-200 rounded-xl p-6">
+                  <Wrench className="w-5 h-5 text-primary mb-3" aria-hidden="true" />
+                  <h3 className="text-base sm:text-lg font-bold font-heading text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                </article>
               </ScrollReveal>
             ))}
           </div>
