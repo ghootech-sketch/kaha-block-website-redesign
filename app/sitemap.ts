@@ -56,17 +56,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * intentionally omit lastModified rather than fabricating an arbitrary date.
    */
   const CORE_ROUTE_LAST_MODIFIED: Record<string, string> = {
-    "": "2026-10-18T00:00:00.000Z",
+    "": "2026-10-31T00:00:00.000Z",
     "/about": "2026-10-18T00:00:00.000Z",
-    "/products": "2026-10-26T00:00:00.000Z",
+    "/products": "2026-10-31T00:00:00.000Z",
     "/projects/production": "2026-10-01T17:18:11.000Z",
-    "/jasa-pemasangan-paving-block": "2026-10-30T00:00:00.000Z",
-    "/harga-paving-block": "2026-10-26T00:00:00.000Z",
-    "/area-layanan/jakarta": "2026-10-30T00:00:00.000Z",
-    "/area-layanan/tangerang": "2026-10-30T00:00:00.000Z",
-    "/area-layanan/bekasi": "2026-10-30T00:00:00.000Z",
-    "/area-layanan/depok": "2026-10-30T00:00:00.000Z",
-    "/area-layanan/bogor": "2026-10-30T00:00:00.000Z",
+    "/jasa-pemasangan-paving-block": "2026-10-31T00:00:00.000Z",
+    "/harga-paving-block": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/jakarta": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/tangerang": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/bekasi": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/depok": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/bogor": "2026-10-31T00:00:00.000Z",
   };
 
   // Shared product page template timestamp (commit 838afe61 - shared product detail page evidence update)

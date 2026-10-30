@@ -75,9 +75,9 @@ export const PRICE_PAGE_DATA: Record<Locale, PricePageContent> = {
       "Material saja atau paket material + jasa pemasangan.",
       "Kondisi lahan, kebutuhan pemadatan, kanstein pengunci, dan pekerjaan pendukung.",
     ],
-    buyerTitle: "Beli Paving Block Langsung dari Pabrik & Supplier",
+    buyerTitle: "Beli dari Pabrik, Supplier & Vendor Paving Block Proyek",
     buyerDesc:
-      "Untuk kebutuhan jual/beli paving block, conblock atau konblok, Kaha Block melayani pengadaan langsung dari fasilitas PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang. Tersedia material saja atau estimasi paket material sekaligus pemasangan untuk Jakarta, Tangerang, Bekasi, Depok, dan Bogor.",
+      "Untuk kebutuhan jual/beli dan pengadaan vendor paving block, conblock atau konblok, Kaha Block melayani langsung dari fasilitas PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang. Kontraktor, pengembang, perusahaan, dan pemilik proyek dapat meminta penawaran material saja atau paket material + pemasangan untuk Jakarta, Tangerang, Bekasi, Depok, dan Bogor.",
     specTitle: "Harga Menurut Model, Ketebalan & Mutu",
     specDesc:
       "Buka spesifikasi produk sebelum membandingkan harga. Paving bata/Truepave, Half/Tahu 10,5 × 10,5 cm, Hexagonal/Segi Enam, Ubin, Topi Uskup, dan kanstein memiliki spesifikasi serta kebutuhan material yang berbeda.",
@@ -111,6 +111,11 @@ export const PRICE_PAGE_DATA: Record<Locale, PricePageContent> = {
         q: "Apakah Kaha Block melayani harga material sekaligus borongan pemasangan?",
         a:
           "Ya. Kaha Block melayani pengadaan material saja maupun paket material + jasa pemasangan/kontraktor paving block untuk wilayah Jabodetabek.",
+      },
+      {
+        q: "Bagaimana meminta penawaran sebagai vendor paving block proyek?",
+        a:
+          "Kirim lokasi proyek, jenis atau spesifikasi paving yang dibutuhkan, mutu/ketebalan bila sudah ditentukan, perkiraan luas atau volume, serta kebutuhan material saja atau material + pemasangan. Kaha Block dapat menyiapkan penawaran vendor proyek berdasarkan data tersebut.",
       },
       {
         q: "Apakah pengiriman ke Jakarta, Tangerang, Bekasi, Depok, dan Bogor dikenakan ongkir?",
@@ -173,7 +178,7 @@ export const PRICE_PAGE_DATA: Record<Locale, PricePageContent> = {
       "Material-only supply or material + installation package.",
       "Ground preparation, compaction, edge restraints, and supporting works.",
     ],
-    buyerTitle: "Buy Direct from the Paving Block Factory & Supplier",
+    buyerTitle: "Buy Direct from the Paving Block Factory, Supplier & Project Vendor",
     buyerDesc:
       "Kaha Block supplies concrete pavers directly from PT Kaha Sukses Mandiri's facility in Cisauk, Tangerang Regency. Material-only procurement and integrated installation packages are available across Greater Jakarta.",
     specTitle: "Pricing by Model, Thickness & Grade",

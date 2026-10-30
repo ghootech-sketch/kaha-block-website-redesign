@@ -36,9 +36,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   home: {
     path: "",
     id: {
-      title: "Pabrik & Supplier Paving Block Jabodetabek | KAHA BLOCK",
+      title: "Pabrik, Supplier & Vendor Paving Block Jabodetabek | KAHA BLOCK",
       description:
-        "PT Kaha Sukses Mandiri (Kaha Block), pabrik, produsen dan supplier paving block/conblock di Cisauk Tangerang. Melayani jual/pengadaan material dan jasa pasang Jabodetabek.",
+        "PT Kaha Sukses Mandiri (Kaha Block), pabrik, produsen, supplier dan vendor paving block/conblock di Cisauk Tangerang. Melayani pengadaan material proyek dan jasa pasang Jabodetabek.",
     },
     en: {
       title: "KAHA BLOCK - Paving Block Factory & Installation Greater Jakarta",
@@ -64,7 +64,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Jual Paving Block & Conblock Langsung Pabrik | KAHA BLOCK",
       description:
-        "Katalog paving block, conblock dan kanstein langsung dari pabrik Kaha Block Cisauk. Pilih model, ketebalan, mutu, warna dan cek stok untuk proyek Jabodetabek.",
+        "Katalog paving block, conblock dan kanstein langsung pabrik Kaha Block Cisauk. Supplier/vendor proyek untuk pengadaan material, spesifikasi, stok dan kebutuhan Jabodetabek.",
     },
     en: {
       title: "Paving Block Prices & Direct Factory Supplier | KAHA BLOCK",
@@ -77,7 +77,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Harga Paving Block per m², Satuan & Jasa Pasang 2026 | KAHA BLOCK",
       description:
-        "Cek acuan harga paving block per m²/meter persegi, per biji/satuan, mutu K-250/K-300/K-400, tebal 6/8/10 cm dan estimasi jasa pasang Jabodetabek.",
+        "Cek harga paving block per m²/satuan, K-250/K-300/K-400, tebal 6/8/10 cm, penawaran vendor proyek dan estimasi jasa pasang Jabodetabek.",
     },
     en: {
       title: "Paving Block Price per m², Unit & Installation 2026 | KAHA BLOCK",
@@ -142,7 +142,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Jasa Pasang & Kontraktor Paving Block Jabodetabek | KAHA BLOCK",
       description:
-        "Jasa pasang, borongan dan kontraktor paving block untuk Jakarta, Tangerang, Bekasi, Depok dan Bogor. Estimasi material + pemasangan berdasarkan luas dan kondisi lahan.",
+        "Vendor paving block, jasa pasang, borongan dan kontraktor untuk Jakarta, Tangerang, Bekasi, Depok dan Bogor. Material + pemasangan sesuai kebutuhan proyek.",
     },
     en: {
       title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",
@@ -166,9 +166,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaJakarta: {
     path: "/area-layanan/jakarta",
     id: {
-      title: "Supplier Paving Block Jakarta & Jasa Pasang | KAHA BLOCK",
+      title: "Supplier & Vendor Paving Block Jakarta + Jasa Pasang | KAHA BLOCK",
       description:
-        "Supplier dan jual paving block/conblock untuk Jakarta langsung dari pabrik Cisauk. Melayani pengadaan material, harga proyek, jasa pasang, pengiriman dan penurunan Jabodetabek.",
+        "Supplier dan vendor paving block/conblock untuk proyek Jakarta langsung dari pabrik Cisauk. Melayani pengadaan material, harga proyek, jasa pasang, pengiriman dan penurunan.",
     },
     en: {
       title: "Paving Block Supplier Jakarta & Installation | KAHA BLOCK",
@@ -179,9 +179,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaTangerang: {
     path: "/area-layanan/tangerang",
     id: {
-      title: "Pabrik & Supplier Paving Block Tangerang | KAHA BLOCK",
+      title: "Pabrik, Supplier & Vendor Paving Block Tangerang | KAHA BLOCK",
       description:
-        "Pabrik dan supplier paving block/conblock di Cisauk Tangerang. Melayani jual/pengadaan, mutu K-250/K-300/K-400, harga proyek dan jasa pasang untuk Tangerang Raya.",
+        "Pabrik, supplier dan vendor paving block/conblock di Cisauk Tangerang. Melayani pengadaan proyek, mutu K-250/K-300/K-400, harga material dan jasa pasang Tangerang Raya.",
     },
     en: {
       title: "Paving Block Factory Tangerang & Installation | KAHA BLOCK",
@@ -192,9 +192,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaBekasi: {
     path: "/area-layanan/bekasi",
     id: {
-      title: "Supplier Paving Block Bekasi & Jasa Pasang | KAHA BLOCK",
+      title: "Supplier & Vendor Paving Block Bekasi + Jasa Pasang | KAHA BLOCK",
       description:
-        "Supplier paving block/conblock untuk Kota dan Kabupaten Bekasi termasuk Cikarang. Pengadaan langsung pabrik Cisauk, jasa pasang dan pengiriman Jabodetabek.",
+        "Supplier dan vendor paving block/conblock untuk Bekasi termasuk Cikarang. Pengadaan proyek langsung pabrik Cisauk, jasa pasang dan pengiriman Jabodetabek.",
     },
     en: {
       title: "Paving Block Supplier Bekasi & Installation | KAHA BLOCK",
@@ -205,9 +205,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaDepok: {
     path: "/area-layanan/depok",
     id: {
-      title: "Supplier Paving Block Depok & Jasa Pasang | KAHA BLOCK",
+      title: "Supplier & Vendor Paving Block Depok + Jasa Pasang | KAHA BLOCK",
       description:
-        "Supplier dan pengadaan paving block/conblock untuk Depok, pilihan mutu K-250/K-300/K-400, jasa pasang, serta pengiriman langsung dari pabrik Cisauk.",
+        "Supplier dan vendor paving block/conblock untuk proyek Depok, pilihan mutu K-250/K-300/K-400, jasa pasang, serta pengiriman langsung dari pabrik Cisauk.",
     },
     en: {
       title: "Paving Block Supplier Depok & Installation | KAHA BLOCK",
@@ -218,9 +218,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   areaBogor: {
     path: "/area-layanan/bogor",
     id: {
-      title: "Supplier Paving Block Bogor & Jasa Pasang | KAHA BLOCK",
+      title: "Supplier & Vendor Paving Block Bogor + Jasa Pasang | KAHA BLOCK",
       description:
-        "Supplier dan pengadaan paving block/conblock untuk Kota dan Kabupaten Bogor, lengkap dengan jasa pasang serta pengiriman langsung dari pabrik Cisauk.",
+        "Supplier dan vendor paving block/conblock untuk proyek Kota/Kabupaten Bogor, lengkap dengan jasa pasang serta pengiriman langsung dari pabrik Cisauk.",
     },
     en: {
       title: "Paving Block Supplier Bogor & Installation | KAHA BLOCK",

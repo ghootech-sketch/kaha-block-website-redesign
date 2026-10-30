@@ -8,7 +8,7 @@ Real search language is treated as demand evidence, not pasted verbatim across e
 
 | Intent cluster | Real search language observed | Primary target |
 |---|---|---|
-| Factory / producer / supplier | pabrik paving block, produsen paving block terdekat, supplier paving block, produksi paving block | /id + /id/projects/production |
+| Factory / producer / supplier / vendor | pabrik paving block, produsen paving block terdekat, supplier paving block, produksi paving block + supplemental procurement term: vendor paving block | /id + /id/products + regional pages |
 | Buy / sell / shop | jual paving block, beli paving block, toko paving block terdekat, tempat jual paving block terdekat, penjual paving block | /id/products |
 | Price | harga paving block, harga per m², per meter persegi, per biji, satuan, K-300, 6 cm, 8 cm, 10 cm | /id/harga-paving-block |
 | Installation / contractor | jasa pasang paving block, pemasangan paving block per m², tukang paving, borongan pasang, kontraktor paving block | /id/jasa-pemasangan-paving-block |
@@ -25,13 +25,15 @@ Real search language is treated as demand evidence, not pasted verbatim across e
 ## Search-language variants used naturally
 
 - paving block / paving blok / conblock / konblok
-- pabrik / produsen / supplier
+- pabrik / produsen / supplier / pemasok / vendor
 - jual / beli / toko
 - terdekat
 - jasa pasang / pemasangan / tukang paving / borongan / kontraktor
 - harga per m² / meter persegi / satuan / per biji
 
 These variants are distributed according to user intent. They must not be repeated mechanically.
+
+Note: vendor paving block did not appear in the 269-row Google Ads search-term export. It is tracked separately as a supplemental procurement/project term based on external market usage, and is therefore used selectively on commercial/project pages rather than represented as an Ads-derived query.
 
 ## Terms not targeted on commercial pages
 
