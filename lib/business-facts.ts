@@ -61,30 +61,30 @@ export const BUSINESS_FACTS = {
 
   // Contact Channels
   contact: {
-    primaryPhoneDisplay: "0813 1894 8968",
-    primaryPhoneE164: "+6281318948968",
-    secondaryPhoneDisplay: "0813 1894 8968",
-    secondaryPhoneE164: "+6281318948968",
-    altPhoneDisplay: "0813 1894 8968",
-    altPhoneE164: "+6281318948968",
-    email: "sanliong68@gmail.com",
+    primaryPhoneDisplay: "0855 889 3030",
+    primaryPhoneE164: "+628558893030",
+    secondaryPhoneDisplay: "0811 975 3030",
+    secondaryPhoneE164: "+628119753030",
+    altPhoneDisplay: "0811 975 3030",
+    altPhoneE164: "+628119753030",
+    email: "kahablock400@gmail.com",
     // Compatibility for existing code
-    whatsappUrl: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappUrl: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
     
     // Official WhatsApp contacts with consistent prefilled message
     whatsappConsultationMessage: defaultConsultationMessageId,
     whatsappConsultationMessageEn: defaultConsultationMessageEn,
-    whatsappPrimaryDisplay: "0813 1894 8968",
-    whatsappPrimaryE164: "+6281318948968",
-    whatsappPrimaryBaseUrl: "https://wa.me/6281318948968",
-    whatsappPrimaryUrl: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageId)}`,
-    whatsappPrimaryUrlEn: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
+    whatsappPrimaryDisplay: "0855 889 3030",
+    whatsappPrimaryE164: "+628558893030",
+    whatsappPrimaryBaseUrl: "https://wa.me/628558893030",
+    whatsappPrimaryUrl: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappPrimaryUrlEn: `https://wa.me/628558893030?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
 
-    whatsappSecondaryDisplay: "0813 1894 8968",
-    whatsappSecondaryE164: "+6281318948968",
-    whatsappSecondaryBaseUrl: "https://wa.me/6281318948968",
-    whatsappSecondaryUrl: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageId)}`,
-    whatsappSecondaryUrlEn: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
+    whatsappSecondaryDisplay: "0811 975 3030",
+    whatsappSecondaryE164: "+628119753030",
+    whatsappSecondaryBaseUrl: "https://wa.me/628119753030",
+    whatsappSecondaryUrl: `https://wa.me/628119753030?text=${encodeURIComponent(defaultConsultationMessageId)}`,
+    whatsappSecondaryUrlEn: `https://wa.me/628119753030?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
   },
 
   // Operational & Production Metrics (Verified First-Party Data)
