@@ -129,7 +129,7 @@ export default function Navbar({
       }`}
     >
       <div className="max-w-[1500px] mx-auto px-6 sm:px-8 xl:px-12">
-        <div className="flex items-center justify-between h-20 lg:h-[104px]">
+        <div className="flex items-center justify-between h-20 xl:h-[104px]">
           {/* Brand Identity */}
           <div className="flex items-center min-w-0 pr-1 sm:pr-2">
             <Link
@@ -137,20 +137,20 @@ export default function Navbar({
               aria-label={lang === "en" ? "KAHA BLOCK - Home" : "KAHA BLOCK - Beranda"}
               className="flex-shrink-0 flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded py-2 min-h-[44px]"
             >
-              <div className="relative h-[42px] sm:h-[46px] lg:h-[50px] w-[160px] sm:w-[180px] lg:w-[200px]">
+              <div className="relative h-[42px] sm:h-[46px] xl:h-[50px] w-[160px] sm:w-[180px] xl:w-[200px]">
                 <Image
                   src="/footer-logo.png"
                   alt="Kaha Block - PT Kaha Sukses Mandiri"
                   fill
                   className="object-contain object-left"
-                  sizes="(max-width: 640px) 160px, (max-width: 1024px) 180px, 200px"
+                  sizes="(max-width: 640px) 160px, (max-width: 1280px) 180px, 200px"
                 />
               </div>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-7 xl:space-x-9">
+          <div className="hidden xl:flex items-center space-x-7 xl:space-x-9">
             <div className="flex items-center gap-7 xl:gap-9">
               {links.map((link) => {
                 // Determine if a link is active based on exact or prefix matching (for projects)
@@ -284,7 +284,7 @@ export default function Navbar({
           </div>
 
           {/* Mobile Actions (Language Switcher + Hamburger with 44px min touch targets) */}
-          <div className="flex items-center lg:hidden space-x-1.5 sm:space-x-2 flex-shrink-0">
+          <div className="flex items-center xl:hidden space-x-1.5 sm:space-x-2 flex-shrink-0">
             <LanguageSwitcher
               currentLang={lang}
               variant="dark"
@@ -318,7 +318,7 @@ export default function Navbar({
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
-          className="lg:hidden shadow-xl mobile-menu-enter border-t border-white/10 bg-black/95 backdrop-blur-none"
+          className="xl:hidden shadow-xl mobile-menu-enter border-t border-white/10 bg-black/95 backdrop-blur-none"
           id="mobile-menu"
         >
           <div className="px-4 pt-3 pb-5 space-y-1">
