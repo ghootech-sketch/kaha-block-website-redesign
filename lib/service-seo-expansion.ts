@@ -24,9 +24,11 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
   id: {
     introTitle: "Vendor Paving Block, Jasa Pasang, Borongan & Kontraktor Jabodetabek",
     introParagraphs: [
-      "Kaha Block melayani sebagai vendor paving block sekaligus penyedia jasa pasang untuk proyek rumah tinggal, carport, halaman, jalan lingkungan, area parkir, ruko, pergudangan, kawasan industri, fasilitas umum, dan pekerjaan perkerasan lainnya di Jabodetabek. Layanan dapat berupa pengadaan material, jasa pemasangan saja, maupun paket material + pemasangan sesuai kebutuhan proyek.",
-      "Istilah yang digunakan pelanggan berbeda-beda: jasa pasang paving block, tukang paving, borongan paving, kontraktor paving block, aplikator paving block, pemasangan conblock, atau material + pasang. Seluruh istilah tersebut mengarah pada kebutuhan yang sama: memilih material yang sesuai, menyiapkan dasar yang stabil, menyusun pola dengan benar, mengunci tepi, dan melakukan pemadatan akhir agar bidang paving bekerja sebagaimana mestinya.",
-      "Karena kondisi setiap lokasi berbeda, estimasi pekerjaan tidak hanya melihat luas area dalam meter persegi. Tim perlu mempertimbangkan akses proyek, kondisi tanah eksisting, elevasi dan kemiringan, kebutuhan lapisan dasar, ketebalan paving, mutu beton, pola pemasangan, kanstein atau pengunci tepi, serta penggunaan area setelah pekerjaan selesai.",
+      "Kaha Block melayani sebagai vendor paving block sekaligus penyedia jasa pasang untuk proyek rumah tinggal, carport, halaman, jalan lingkungan, area parkir, ruko, pergudangan, kawasan industri, fasilitas umum, dan pekerjaan perkerasan lainnya di Jabodetabek. Layanan dapat berupa pengadaan material, jasa pemasangan saja, maupun paket material + pemasangan sesuai kebutuhan proyek. Produksi material dilakukan di fasilitas Kaha Block di Cisauk, Kabupaten Tangerang, sehingga koordinasi antara spesifikasi material, pengiriman, dan pekerjaan pemasangan dapat disusun dalam satu alur proyek yang lebih jelas.",
+      "Istilah yang digunakan pelanggan berbeda-beda: jasa pasang paving block, jasa pasang konblok, tukang paving, borongan paving, kontraktor paving block, aplikator paving block, pemasangan conblock, atau material + pasang. Seluruh istilah tersebut mengarah pada kebutuhan yang sama: memilih material yang sesuai, menyiapkan dasar yang stabil, mengatur elevasi dan aliran air, menyusun pola dengan benar, mengunci tepi dengan kanstein bila diperlukan, lalu melakukan pemadatan akhir agar bidang paving bekerja sesuai fungsi area.",
+      "Karena kondisi setiap lokasi berbeda, estimasi pekerjaan tidak hanya melihat luas area dalam meter persegi. Tim perlu mempertimbangkan akses proyek, kondisi tanah eksisting, elevasi dan kemiringan, kebutuhan pembongkaran atau penimbunan, ketebalan lapisan dasar, jenis bedding, ketebalan paving, mutu beton, pola pemasangan, pengunci tepi, kebutuhan drainase, serta beban kendaraan setelah pekerjaan selesai. Pendekatan ini penting agar perbandingan penawaran tidak hanya berdasarkan angka per meter persegi, tetapi juga berdasarkan ruang lingkup teknis yang benar-benar dikerjakan.",
+      "Untuk kebutuhan jasa paving di Jakarta, Tangerang, Bekasi, Depok, dan Bogor, Kaha Block menyesuaikan rekomendasi berdasarkan fungsi area. Carport dan halaman rumah memiliki kebutuhan berbeda dengan jalan lingkungan, area parkir ruko, pergudangan, atau kawasan industri. Pilihan paving 6 cm, 8 cm, atau 10 cm serta mutu K-250, K-300, atau K-400 tidak dipaksakan sama untuk semua proyek; penentuan spesifikasi mengikuti kebutuhan penggunaan, kondisi dasar, dan ketersediaan produk.",
+      "Dari sisi pengalaman dan identitas usaha, Kaha Block berada di bawah PT Kaha Sukses Mandiri dan beroperasi sejak 2015. Fasilitas produksi berada di Cisauk, Kabupaten Tangerang, dengan area sekitar 9.080 m² dan menggunakan mesin full otomatis hidrolik. Fakta operasional ini menjadi dasar informasi teknis yang ditampilkan di halaman layanan, bukan klaim umum tanpa sumber internal. Pengguna dapat membandingkan pilihan produk, area layanan, proses pemasangan, dan kanal kontak resmi sebelum meminta penawaran.",
     ],
     intentTitle: "Vendor & Jenis Layanan Jasa Paving Block yang Bisa Dipilih",
     intentIntro:
@@ -35,7 +37,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       {
         title: "Jasa Pasang Paving Block",
         desc:
-          "Pekerjaan penyusunan paving block pada area yang sudah siap atau setelah kebutuhan persiapan lahan disepakati. Cocok untuk pelanggan yang sudah memiliki material maupun yang mengambil material dari Kaha Block.",
+          "Pekerjaan penyusunan paving block pada area yang sudah siap atau setelah kebutuhan persiapan lahan disepakati. Ruang lingkup dapat mencakup pengukuran, penentuan elevasi, bedding, penyusunan, pemotongan tepi, pengisian joint, dan pemadatan akhir. Cocok untuk pelanggan yang sudah memiliki material maupun yang mengambil material langsung dari Kaha Block.",
       },
       {
         title: "Borongan Paving Block Material + Pasang",
@@ -50,7 +52,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       {
         title: "Kontraktor & Aplikator Paving Block",
         desc:
-          "Untuk pekerjaan yang membutuhkan koordinasi pengadaan, pengukuran area, penentuan spesifikasi, urutan kerja, penguncian tepi, pemadatan, serta penyelesaian area secara lebih terstruktur.",
+          "Untuk pekerjaan yang membutuhkan koordinasi pengadaan, pengukuran area, penentuan spesifikasi, urutan kerja, penguncian tepi, pemadatan, serta penyelesaian area secara lebih terstruktur. Intent pencarian seperti kontraktor paving block biasanya membutuhkan satu penanggung jawab yang dapat menghubungkan kebutuhan material dengan pekerjaan lapangan dan penawaran proyek.",
       },
       {
         title: "Jasa Pasang Kanstein / Pengunci Tepi",
@@ -120,7 +122,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       {
         title: "Lokasi Proyek & Ruang Lingkup",
         desc:
-          "Lokasi Jakarta, Tangerang, Bekasi, Depok, atau Bogor serta pilihan material saja, jasa saja, atau paket material + pasang menentukan bentuk penawaran akhir.",
+          "Lokasi Jakarta, Tangerang, Bekasi, Depok, atau Bogor memengaruhi akses armada, mobilisasi tim, jadwal kerja, dan koordinasi penurunan material. Pilihan material saja, jasa saja, atau paket material + pasang juga menentukan bentuk penawaran akhir. Untuk menghindari estimasi yang terlalu umum, lokasi proyek sebaiknya disertai luas area, fungsi lahan, kondisi eksisting, dan kebutuhan waktu pelaksanaan.",
       },
     ],
   },

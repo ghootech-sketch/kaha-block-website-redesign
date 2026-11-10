@@ -555,25 +555,25 @@ export const REGIONAL_PAGES_DATA: Record<
       eyebrow: "PRODUSEN & SUPPLIER PAVING BLOCK",
       h1: "Supplier Paving Block Jakarta & Jasa Pemasangan",
       heroDesc:
-        "Kaha Block melayani supplier/jual paving block dan conblock untuk Jakarta langsung dari fasilitas pabrik Cisauk, Kabupaten Tangerang, sekaligus jasa pemasangan untuk Jakarta Selatan, Timur, Barat, Utara, dan Pusat.",
+        "Kaha Block melayani supplier dan jual paving block/conblock untuk Jakarta langsung dari fasilitas produksi di Cisauk, Kabupaten Tangerang, sekaligus jasa pasang paving block dan pekerjaan kontraktor untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Layanan ditujukan untuk rumah tinggal, carport, perumahan, ruko, kantor, area parkir, pergudangan, fasilitas umum, serta kebutuhan proyek yang memerlukan pengadaan material dan pemasangan dalam satu koordinasi.",
       factoryContextNotice:
-        "Pengiriman material ke wilayah Jakarta dilakukan langsung dari pabrik Kaha Block di Cisauk, Kabupaten Tangerang, dengan fasilitas gratis pengiriman dan termasuk penurunan barang.",
+        "Pengiriman material ke wilayah Jakarta dilakukan langsung dari fasilitas Kaha Block di Cisauk, Kabupaten Tangerang. Kaha Block beroperasi sejak 2015, memiliki area produksi sekitar 9.080 m², dan menggunakan mesin full otomatis hidrolik. Untuk wilayah Jabodetabek, pengiriman material tersedia dengan fasilitas gratis pengiriman dan termasuk penurunan barang sesuai kebijakan operasional yang berlaku.",
       keyBenefits: [
         {
           title: "Pengadaan Langsung Pabrik",
-          desc: "Mendapatkan harga kompetitif langsung dari produsen tanpa rantai perantara berlebih.",
+          desc: "Pengadaan material dilakukan langsung dari Kaha Block sebagai produsen, sehingga spesifikasi produk, jumlah kebutuhan, pilihan tebal, mutu beton, jadwal produksi, dan pengiriman dapat dibahas melalui satu kanal. Pendekatan direct factory membantu proyek membandingkan kebutuhan berdasarkan spesifikasi dan volume, bukan hanya berdasarkan harga satuan.",
         },
         {
           title: "Pilihan Mutu K-250 hingga K-400",
-          desc: "Pilihan spesifikasi kuat tekan beton sesuai peruntukan halaman perumahan hingga area komersial berbeban tinggi.",
+          desc: "Pilihan mutu K-250, K-300, dan K-400 tersedia untuk disesuaikan dengan fungsi area dan produk. Pemilihan tidak disamaratakan: halaman rumah, carport, jalan lingkungan, parkiran, serta area operasional komersial mempunyai kebutuhan beban dan kondisi dasar yang berbeda, sehingga ketebalan dan mutu perlu dipilih sesuai penggunaan.",
         },
         {
           title: "Gratis Pengiriman & Penurunan Barang",
-          desc: "Armada truk Kaha Block mengantar material tepat waktu ke lokasi proyek di Jakarta lengkap dengan penurunan barang.",
+          desc: "Pengiriman ke proyek di Jakarta dikoordinasikan dari Cisauk dengan fasilitas gratis pengiriman dan penurunan barang untuk wilayah Jabodetabek. Jadwal aktual mengikuti kesiapan material, volume pesanan, akses truk, dan kesepakatan penawaran, sehingga lokasi serta kondisi akses proyek sebaiknya diinformasikan sejak awal.",
         },
         {
           title: "Layanan Pasang Berpengalaman",
-          desc: "Tersedia tim profesional pemasangan paving block untuk hasil akhir yang presisi, rata, dan rapi.",
+          desc: "Tersedia tim pemasangan untuk pekerjaan jasa pasang konblok, jasa paving, borongan material + pasang, serta kontraktor paving block. Pekerjaan lapangan mempertimbangkan kondisi dasar, elevasi, aliran air, bedding, pola susun, pemotongan, pengunci tepi, pengisian joint, dan pemadatan akhir sesuai ruang lingkup proyek.",
         },
       ],
       subregionsTitle: "Cakupan Wilayah Layanan DKI Jakarta",
@@ -583,57 +583,59 @@ export const REGIONAL_PAGES_DATA: Record<
         {
           name: "Jakarta Selatan",
           useCase:
-            "Kebutuhan perkerasan halaman rumah tinggal, perkantoran komersial, area cafe & resto, serta pelataran parkir properti.",
+            "Melayani kebutuhan paving block Jakarta Selatan untuk halaman rumah tinggal, carport, perkantoran, area komersial, kafe/resto, sekolah, fasilitas umum, dan pelataran parkir. Untuk area dengan banyak akses bangunan dan drainase eksisting, perencanaan elevasi serta arah aliran air menjadi bagian penting sebelum pemasangan.",
         },
         {
           name: "Jakarta Timur",
           useCase:
-            "Pengadaan jalan akses perumahan, area pemukiman warga, pelataran ruko, serta kawasan pergudangan dan logistik.",
+            "Melayani paving block Jakarta Timur untuk jalan akses perumahan, area pemukiman, pelataran ruko, halaman fasilitas, pergudangan, dan logistik. Kebutuhan proyek dapat berupa material saja, jasa pasang saja, atau paket material + pemasangan dengan spesifikasi yang disesuaikan terhadap fungsi area dan intensitas kendaraan.",
         },
         {
           name: "Jakarta Barat",
           useCase:
-            "Perkerasan pelataran pertokoan komersial, komplek hunian, fasilitas sekolah, dan garasi kendaraan.",
+            "Melayani paving block Jakarta Barat untuk pertokoan, komplek hunian, sekolah, halaman usaha, garasi kendaraan, dan area parkir. Kondisi lahan, banyaknya potongan tepi, akses bongkar material, serta kebutuhan kanstein perlu diperhitungkan agar penawaran proyek menggambarkan pekerjaan aktual di lapangan.",
         },
         {
           name: "Jakarta Utara",
           useCase:
-            "Kebutuhan paving block presisi mutu K-300 / K-400 untuk area operasional, pergudangan, serta pelataran fasilitas publik.",
+            "Melayani paving block Jakarta Utara untuk area operasional, pergudangan, fasilitas logistik, halaman bangunan, serta pelataran fasilitas publik. Untuk penggunaan dengan beban lebih tinggi, pemilihan tebal, mutu beton, kesiapan lapisan dasar, dan metode pemadatan harus dibahas sebagai satu sistem, bukan hanya memilih paving dari angka mutu.",
         },
         {
           name: "Jakarta Pusat",
           useCase:
-            "Pekerjaan pedestrian, pelataran gedung perkantoran, instansi, serta lanskap area komersial perkotaan.",
+            "Melayani paving block Jakarta Pusat untuk pedestrian, pelataran gedung, perkantoran, instansi, fasilitas pendidikan, halaman komersial, serta lanskap perkotaan. Karena akses kerja dapat terbatas, informasi jam kerja, titik bongkar material, lebar akses, luas area, dan kondisi eksisting membantu penyusunan jadwal dan metode pemasangan yang lebih realistis.",
         },
       ],
       useCaseSectionTitle: "Aplikasi Paving Block untuk Proyek Jakarta",
       contractorSectionTitle: "Kontraktor Paving Block untuk Jakarta",
       contractorSectionDesc:
-        "Kaha Block melayani pengadaan paving block sekaligus pekerjaan kontraktor pemasangan paving block untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Tim kami berpengalaman dalam menangani lokasi padat kota dan area komersial.",
+        "Kaha Block melayani pengadaan paving block sekaligus pekerjaan kontraktor dan jasa pemasangan paving block untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Ruang lingkup dapat berupa supply material, jasa pasang, borongan material + pasang, pekerjaan kanstein, serta koordinasi persiapan bidang sesuai kondisi proyek. Sebelum penawaran, informasi yang paling membantu adalah lokasi, luas m², fungsi area, kondisi tanah atau perkerasan lama, akses kendaraan, target waktu, dan pilihan produk bila sudah ditentukan. Dengan data tersebut, tim dapat membedakan kebutuhan rumah tinggal, jalan lingkungan, parkir, ruko, gudang, atau area komersial sehingga rekomendasi tidak bersifat generik.",
       useCases: [
         {
           title: "Perumahan & Properti Residensial",
-          desc: "Pemasangan paving block model Truepave (Bata), Hexagonal, atau Ubin untuk garasi dan jalan warga agar rapi dan menyerap air hujan.",
+          desc: "Untuk rumah, carport, garasi, halaman, dan jalan warga, pilihan model seperti Truepave/Bata, Hexagonal, Ubin, atau produk lain dapat disesuaikan dengan pola dan kebutuhan fungsi. Pekerjaan yang baik tidak berhenti pada susunan permukaan; kesiapan tanah dasar, kemiringan, pertemuan dengan saluran, kunci tepi, serta pemadatan akhir ikut menentukan kestabilan bidang.",
         },
         {
           title: "Kawasan Komersial & Parkir Perkantoran",
-          desc: "Solusi pelataran perkantoran dan ruko yang membutuhkan estetika warna serta ketahanan beban lalu lintas kendaraan konsumen.",
+          desc: "Area perkantoran, ruko, sekolah, restoran, dan parkir komersial memerlukan kombinasi kerapian tampilan, sirkulasi kendaraan, drainase, serta pemilihan spesifikasi sesuai intensitas penggunaan. Kaha Block dapat memasok material sekaligus mengoordinasikan jasa pemasangan, sehingga spesifikasi paving, kebutuhan kanstein, volume, dan jadwal pengiriman berada dalam satu penawaran proyek.",
         },
         {
           title: "Pergudangan & Fasilitas Logistik",
-          desc: "Paving tebal 8 cm mutu K-400 untuk kebutuhan area pergudangan, operasional, dan kendaraan berat.",
+          desc: "Pergudangan, fasilitas logistik, dan area operasional membutuhkan evaluasi beban serta kondisi lapisan dasar lebih detail. Paving tebal 8 cm mutu K-400 dapat menjadi salah satu opsi untuk penggunaan tertentu, tetapi keputusan akhir tetap perlu menyesuaikan desain, kondisi subgrade, frekuensi kendaraan, pola lalu lintas, dan ruang lingkup pemadatan yang diperlukan.",
         },
       ],
       deliveryNotice:
-        "Pengiriman ke Jakarta mendapat fasilitas Gratis Pengiriman dan Penurunan Barang oleh pengiriman Kaha Block.",
+        "Pengiriman material ke Jakarta dilayani dari Cisauk dan untuk wilayah Jabodetabek tersedia fasilitas gratis pengiriman serta penurunan barang. Jadwal pengiriman disepakati berdasarkan kesiapan stok/produksi, volume, akses truk ke lokasi, dan urutan pengiriman. Informasikan titik proyek secara jelas agar kebutuhan logistik dapat dihitung sejak tahap penawaran.",
       installationNotice:
-        "Dapatkan opsi paket pengadaan material sekaligus jasa pemasangan oleh tim terampil Kaha Block.",
+        "Tersedia pilihan supply material saja, jasa pemasangan saja, maupun paket material + pasang. Untuk jasa pasang paving block Jakarta, tim akan meminta data dasar seperti luas area, fungsi lahan, kondisi eksisting, akses, dan target pekerjaan. Data tersebut dipakai untuk menyusun ruang lingkup, bukan untuk menjanjikan satu harga rata bagi semua kondisi proyek.",
       trustFactsTitle: "Identitas Pabrik & Layanan Kaha Block",
       trustFacts: [
         { label: "Lokasi Pabrik Direct", value: "Cisauk, Kabupaten Tangerang" },
         { label: "Pengalaman Beroperasi", value: "Sejak Tahun 2015" },
         { label: "Luas Area Produksi", value: "9.080 m² Mesin Full Otomatis" },
         { label: "Pengiriman Jakarta", value: "Gratis Ongkir & Penurunan Barang" },
+        { label: "Identitas Usaha", value: "PT Kaha Sukses Mandiri • Kaha Block" },
+        { label: "Pilihan Mutu", value: "K-250 • K-300 • K-400" },
       ],
       faqs: [
         {
@@ -642,11 +644,27 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           q: "Apakah Kaha Block melayani jual dan pemasangan paving block di Jakarta?",
-          a: "Ya, kami melayani jual material paving block presisi (K-250, K-300, K-400) dan pekerjaan kontraktor pemasangan paving block untuk wilayah Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat.",
+          a: "Ya. Kaha Block melayani jual/supply material paving block serta jasa pemasangan untuk Jakarta Selatan, Jakarta Timur, Jakarta Barat, Jakarta Utara, dan Jakarta Pusat. Pilihan layanan dapat berupa material saja, jasa pasang saja, atau paket material + pemasangan. Spesifikasi K-250, K-300, dan K-400 tersedia pada pilihan produk tertentu dan disesuaikan dengan kebutuhan area.",
+        },
+        {
+          q: "Apakah tersedia jasa pasang konblok atau jasa paving Jakarta tanpa membeli material?",
+          a: "Kebutuhan jasa pasang saja dapat dibahas sesuai kondisi proyek. Sampaikan lokasi, luas area, kondisi dasar, material yang sudah tersedia, dan target pekerjaan. Tim akan mengecek apakah ruang lingkup dapat dikerjakan sebagai jasa pasang saja atau lebih tepat menggunakan paket material + pemasangan.",
+        },
+        {
+          q: "Apa bedanya jasa pasang paving block dan kontraktor paving block?",
+          a: "Jasa pasang biasanya berfokus pada pekerjaan lapangan pemasangan. Kebutuhan kontraktor paving block dapat mencakup koordinasi yang lebih luas seperti pengadaan material, pengukuran, penentuan spesifikasi, pekerjaan kanstein/pengunci tepi, persiapan bidang yang disepakati, pengiriman, pemasangan, dan penyelesaian area. Ruang lingkup final tetap mengikuti kondisi proyek dan penawaran tertulis.",
+        },
+        {
+          q: "Data apa yang perlu dikirim untuk meminta estimasi jasa paving Jakarta?",
+          a: "Kirim lokasi proyek, luas perkiraan dalam m², fungsi area, foto kondisi eksisting bila ada, akses kendaraan, kebutuhan material atau jasa, pilihan model paving bila sudah ada, serta target waktu. Informasi ini membantu tim menyusun estimasi yang lebih relevan daripada menggunakan satu angka harga per m² untuk semua kondisi.",
+        },
+        {
+          q: "Apakah Kaha Block melayani paving block Jakarta Timur, Selatan, Barat, Utara, dan Pusat?",
+          a: "Ya. Halaman ini mencakup seluruh lima kota administrasi DKI Jakarta. Pengiriman material dan jasa pemasangan tersedia untuk proyek residensial, komersial, parkir, jalan lingkungan, pergudangan, fasilitas umum, dan kebutuhan lain yang sesuai dengan ruang lingkup layanan Kaha Block.",
         },
         {
           q: "Bagaimana cara mengetahui harga paving block Jakarta dan paket pemasangan dari Kaha Block?",
-          a: "Sebagai supplier paving block Jakarta dan produsen langsung, kami melayani jual paving block Jakarta dengan harga pabrik kompetitif serta jasa pemasangan paving block Jakarta oleh tim profesional. Hubungi WhatsApp resmi Kaha Block untuk mendapatkan estimasi harga paving block Jakarta per m² dan paket pemasangan tanpa biaya ongkos kirim ke seluruh Jakarta.",
+          a: "Sebagai supplier paving block yang melayani Jakarta langsung dari fasilitas produksi Cisauk, Kaha Block menyediakan material dan opsi jasa pemasangan. Harga material maupun biaya pekerjaan dipengaruhi tipe produk, tebal, mutu, volume, kondisi lahan, akses, dan ruang lingkup. Hubungi WhatsApp resmi Kaha Block untuk meminta estimasi tertulis berdasarkan data proyek; untuk wilayah Jabodetabek tersedia fasilitas gratis pengiriman dan penurunan barang.",
         },
         {
           q: "Apakah lokasi pabrik Kaha Block berada di Jakarta?",
@@ -654,11 +672,11 @@ export const REGIONAL_PAGES_DATA: Record<
         },
         {
           q: "Apakah pengiriman paving block ke lokasi proyek di Jakarta gratis?",
-          a: "Ya. Pengiriman material ke seluruh wilayah DKI Jakarta tidak dikenakan biaya pengiriman (Gratis Ongkir) dan sudah termasuk penurunan barang.",
+          a: "Untuk wilayah Jabodetabek, Kaha Block menyediakan fasilitas gratis pengiriman dan penurunan barang. Pelaksanaannya tetap mengikuti volume pesanan, kesiapan material, akses lokasi, serta jadwal yang disepakati dalam penawaran. Informasikan alamat/titik proyek dan kondisi akses truk sejak awal agar tim dapat mengatur pengiriman dengan benar.",
         },
         {
           q: "Apakah Kaha Block menyediakan jasa pemasangan di Jakarta?",
-          a: "Ya. Selain pengadaan material, kami memiliki tim pasang berpengalaman yang siap mengerjakan perkerasan lahan di lokasi proyek Anda di Jakarta.",
+          a: "Ya. Selain pengadaan material, Kaha Block menyediakan jasa pemasangan untuk proyek di Jakarta. Pekerjaan dapat mencakup penyusunan, pemotongan tepi, pengisian joint, pemadatan akhir, dan pekerjaan pendukung sesuai ruang lingkup. Kebutuhan persiapan tanah dasar, bedding, drainase, atau kanstein dibahas berdasarkan kondisi lapangan dan penawaran.",
         },
         {
           q: "Berapa lama estimasi pengiriman dari pabrik Cisauk ke Jakarta?",
