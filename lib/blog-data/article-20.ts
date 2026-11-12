@@ -7,7 +7,7 @@ export const article20Id: BlogPost = {
   excerpt:
     "Panduan memilih jasa pasang paving block, jasa pasang konblok, borongan material + pasang, faktor biaya per m², dan checklist sebelum meminta penawaran proyek.",
   category: "Panduan Proyek",
-  categorySlug: "project-guide",
+  categorySlug: "installation",
   publishedAt: "2026-11-12",
   updatedAt: "2026-11-12",
   readingTime: "8 menit baca",
@@ -223,7 +223,7 @@ export const article20En: BlogPost = {
   excerpt:
     "A practical guide to paving block installation, labor-only versus material + installation packages, cost factors per m², scope of work, and project preparation.",
   category: "Project Guide",
-  categorySlug: "project-guide",
+  categorySlug: "installation",
   publishedAt: "2026-11-12",
   updatedAt: "2026-11-12",
   readingTime: "8 min read",
