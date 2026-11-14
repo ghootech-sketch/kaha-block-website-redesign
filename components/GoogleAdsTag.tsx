@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import Script from "next/script";
 
-const GOOGLE_ADS_ID = "AW-18454428608";
-const WHATSAPP_CONVERSION_SEND_TO = "AW-18454428608/I2dmCOzwrokdEMD34N9E";
+const GOOGLE_TAG_MANAGER_ID = "GTM-522R4GLC";
 const GOOGLE_ANALYTICS_ID = "G-MWEEEMHL64";
 const ALLOWED_HOSTNAMES = ["kahablock.com", "www.kahablock.com"];
 
@@ -62,31 +61,42 @@ export default function GoogleAdsTag() {
       lastTrackedHref = rawHref;
 
       try {
+        const linkText =
+          anchor.textContent?.replace(/\s+/g, " ").trim().slice(0, 120) || "WhatsApp";
+        const whatsappPhone =
+          whatsappUrl?.pathname.replace(/\D/g, "") ||
+          rawHref.replace(/^https?:\/\/wa\.me\//, "").split("?")[0].replace(/\D/g, "");
+
+        const eventPayload = {
+          page_path: window.location.pathname,
+          link_url: rawHref,
+          link_text: linkText,
+          cta_id: anchor.id || "unlabeled_whatsapp_link",
+          whatsapp_phone: whatsappPhone,
+        };
+
         const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
         if (typeof gtag === "function") {
-          const linkText =
-            anchor.textContent?.replace(/\s+/g, " ").trim().slice(0, 120) || "WhatsApp";
-          const whatsappPhone =
-            whatsappUrl?.pathname.replace(/\D/g, "") ||
-            rawHref.replace(/^https?:\/\/wa\.me\//, "").split("?")[0].replace(/\D/g, "");
-
-          // GA4 diagnostic event: this measures a click toward WhatsApp, not a sent message.
+          // Keep GA4 measurement unchanged.
           gtag("event", "whatsapp_click", {
             send_to: GOOGLE_ANALYTICS_ID,
-            page_path: window.location.pathname,
-            link_url: rawHref,
-            link_text: linkText,
-            cta_id: anchor.id || "unlabeled_whatsapp_link",
-            whatsapp_phone: whatsappPhone,
+            ...eventPayload,
           });
+        }
 
-          // Google Ads conversion remains a click-to-WhatsApp action.
-          gtag("event", "conversion", {
-            send_to: WHATSAPP_CONVERSION_SEND_TO,
+        // Send the same custom event to the new Kaha Block Google tag/GTM container.
+        // The Google Ads conversion action can be attached to this event in the new account.
+        const dataLayer = (
+          window as unknown as { dataLayer?: Array<Record<string, unknown>> }
+        ).dataLayer;
+        if (Array.isArray(dataLayer)) {
+          dataLayer.push({
+            event: "whatsapp_click",
+            ...eventPayload,
           });
         }
       } catch {
-        // Do not block navigation if gtag is unavailable
+        // Do not block navigation if Google measurement is unavailable.
       }
     };
 
@@ -103,22 +113,21 @@ export default function GoogleAdsTag() {
   return (
     <>
       <Script
-        id="google-ads-gtag-src"
+        id="google-tag-manager-src"
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+        src={`https://www.googletagmanager.com/gtm.js?id=${GOOGLE_TAG_MANAGER_ID}`}
       />
       <Script
-        id="google-ads-gtag-inline"
+        id="google-measurement-inline"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             window.gtag = window.gtag || gtag;
-            if (!window.__google_ads_tag_initialized) {
-              window.__google_ads_tag_initialized = true;
+            if (!window.__kaha_google_tag_initialized) {
+              window.__kaha_google_tag_initialized = true;
               gtag('js', new Date());
-              gtag('config', '${GOOGLE_ADS_ID}');
 
               function initGA4() {
                 if (window.__ga4_tag_initialized) return;
