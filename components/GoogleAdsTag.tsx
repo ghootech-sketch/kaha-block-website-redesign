@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Script from "next/script";
 
 const GOOGLE_TAG_MANAGER_ID = "GTM-522R4GLC";
+const GOOGLE_ADS_ID = "AW-18574524822";
+const WHATSAPP_CONVERSION_SEND_TO =
+  "AW-18574524822/x2qSCNn1p7gdEJaDg51F";
 const GOOGLE_ANALYTICS_ID = "G-MWEEEMHL64";
 const ALLOWED_HOSTNAMES = ["kahablock.com", "www.kahablock.com"];
 
@@ -44,9 +47,12 @@ export default function GoogleAdsTag() {
       try {
         whatsappUrl = new URL(anchor.href, window.location.href);
         isWaLink =
-          whatsappUrl.hostname === "wa.me" || whatsappUrl.hostname.endsWith(".wa.me");
+          whatsappUrl.hostname === "wa.me" ||
+          whatsappUrl.hostname.endsWith(".wa.me");
       } catch {
-        isWaLink = rawHref.startsWith("https://wa.me/") || rawHref.startsWith("http://wa.me/");
+        isWaLink =
+          rawHref.startsWith("https://wa.me/") ||
+          rawHref.startsWith("http://wa.me/");
       }
 
       if (!isWaLink) return;
@@ -62,10 +68,14 @@ export default function GoogleAdsTag() {
 
       try {
         const linkText =
-          anchor.textContent?.replace(/\s+/g, " ").trim().slice(0, 120) || "WhatsApp";
+          anchor.textContent?.replace(/\s+/g, " ").trim().slice(0, 120) ||
+          "WhatsApp";
         const whatsappPhone =
           whatsappUrl?.pathname.replace(/\D/g, "") ||
-          rawHref.replace(/^https?:\/\/wa\.me\//, "").split("?")[0].replace(/\D/g, "");
+          rawHref
+            .replace(/^https?:\/\/wa\.me\//, "")
+            .split("?")[0]
+            .replace(/\D/g, "");
 
         const eventPayload = {
           page_path: window.location.pathname,
@@ -75,20 +85,32 @@ export default function GoogleAdsTag() {
           whatsapp_phone: whatsappPhone,
         };
 
-        const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+        const gtag = (
+          window as unknown as { gtag?: (...args: unknown[]) => void }
+        ).gtag;
+
         if (typeof gtag === "function") {
-          // Keep GA4 measurement unchanged.
+          // Keep the existing GA4 WhatsApp event unchanged.
           gtag("event", "whatsapp_click", {
             send_to: GOOGLE_ANALYTICS_ID,
             ...eventPayload,
           });
+
+          // New Kaha Block Google Ads conversion: WhatsApp click.
+          gtag("event", "conversion", {
+            send_to: WHATSAPP_CONVERSION_SEND_TO,
+            value: 1.0,
+            currency: "IDR",
+          });
         }
 
-        // Send the same custom event to the new Kaha Block Google tag/GTM container.
-        // The Google Ads conversion action can be attached to this event in the new account.
+        // Keep a named dataLayer event available for GTM/debugging.
         const dataLayer = (
-          window as unknown as { dataLayer?: Array<Record<string, unknown>> }
+          window as unknown as {
+            dataLayer?: Array<Record<string, unknown>>;
+          }
         ).dataLayer;
+
         if (Array.isArray(dataLayer)) {
           dataLayer.push({
             event: "whatsapp_click",
@@ -96,13 +118,15 @@ export default function GoogleAdsTag() {
           });
         }
       } catch {
-        // Do not block navigation if Google measurement is unavailable.
+        // Never block WhatsApp navigation if Google measurement is unavailable.
       }
     };
 
     document.addEventListener("click", handleWhatsAppClick, { capture: true });
     return () => {
-      document.removeEventListener("click", handleWhatsAppClick, { capture: true });
+      document.removeEventListener("click", handleWhatsAppClick, {
+        capture: true,
+      });
     };
   }, []);
 
@@ -125,9 +149,13 @@ export default function GoogleAdsTag() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             window.gtag = window.gtag || gtag;
+
             if (!window.__kaha_google_tag_initialized) {
               window.__kaha_google_tag_initialized = true;
               gtag('js', new Date());
+
+              // New Kaha Block Google Ads destination.
+              gtag('config', '${GOOGLE_ADS_ID}');
 
               function initGA4() {
                 if (window.__ga4_tag_initialized) return;
