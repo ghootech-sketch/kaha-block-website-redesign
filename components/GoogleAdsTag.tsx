@@ -6,7 +6,7 @@ import Script from "next/script";
 const GOOGLE_TAG_MANAGER_ID = "GTM-522R4GLC";
 const GOOGLE_ADS_ID = "AW-18574524822";
 const WHATSAPP_CONVERSION_SEND_TO =
-  "AW-18574524822/x2qSCNn1p7gdEJaDg51F";
+  "AW-18574524822/x2qSCNn1p7gdEJaDg5lF";
 const GOOGLE_ANALYTICS_ID = "G-MWEEEMHL64";
 const ALLOWED_HOSTNAMES = ["kahablock.com", "www.kahablock.com"];
 
