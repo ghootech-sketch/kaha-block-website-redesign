@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import SalesHeroActions from "@/components/SalesHeroActions";
+import LandingProof from "@/components/LandingProof";
 import ScrollReveal from "@/components/ScrollReveal";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { isValidLocale, Locale } from "@/lib/dictionary";
@@ -66,7 +68,10 @@ export default async function HargaPavingBlockPage({
     <>
       <JsonLd page="hargaPaving" lang={currentLang} />
 
-      <PageHero eyebrow={data.eyebrow} title={data.h1} description={data.heroDesc} />
+      <PageHero variant="sales" eyebrow={data.eyebrow} title={data.h1} description={isEn ? "Choose material supply or material + installation. Ask for a quotation that fits your area and location." : "Material saja atau sekaligus pemasangan. Minta penawaran sesuai kebutuhan dan lokasi Anda."}>
+        <SalesHeroActions lang={currentLang} topic="pricing" />
+      </PageHero>
+      <LandingProof lang={currentLang} />
 
       <main className="bg-surface">
         <section className="bg-white border-b border-stone-200/50 py-14 sm:py-18 lg:py-22">

@@ -6,6 +6,7 @@ interface PageHeroProps {
   title: string | React.ReactNode;
   description?: string | React.ReactNode;
   children?: React.ReactNode;
+  variant?: "default" | "sales";
   // Retained for API compatibility but ignored to enforce Homepage visual consistency
   backgroundImage?: string;
   mobileBackgroundImage?: string;
@@ -16,6 +17,7 @@ export default function PageHero({
   title,
   description,
   children,
+  variant = "default",
 }: PageHeroProps) {
   const common = { alt: "", fill: true, priority: true, className: "object-cover object-center" };
   const {
@@ -46,7 +48,7 @@ export default function PageHero({
 
       <section
         data-navbar-hero="true"
-        className="relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"
+        className={variant === "sales" ? "relative isolate overflow-hidden bg-dark min-h-[560px] lg:min-h-[620px] flex flex-col justify-center pt-28 sm:pt-32 pb-10 sm:pb-12" : "relative isolate overflow-hidden bg-dark min-h-[580px] sm:min-h-[620px] lg:min-h-[100svh] lg:h-auto flex flex-col justify-center pt-20 sm:pt-24 lg:pt-26 xl:pt-28 pb-6 sm:pb-8 lg:pb-6"}
       >
         {/* Background Images */}
         <div className="absolute inset-0 -z-30 pointer-events-none select-none">
@@ -66,7 +68,7 @@ export default function PageHero({
             />
           </picture>
           {/* Exact Homepage Overlay */}
-          <div className="absolute inset-0 bg-black/35 pointer-events-none" />
+          <div className={variant === "sales" ? "absolute inset-0 bg-black/65 pointer-events-none" : "absolute inset-0 bg-black/35 pointer-events-none"} />
         </div>
 
         {/* Content Container */}
@@ -81,7 +83,7 @@ export default function PageHero({
             </div>
           )}
           
-          <h1 className="text-4xl sm:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight font-heading leading-[1.12] sm:leading-[0.92] lg:leading-[0.94] uppercase mb-4 lg:mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] text-white">
+          <h1 className={variant === "sales" ? "text-[30px] sm:text-[42px] lg:text-[50px] font-black tracking-tight font-heading leading-[1.12] mb-4 text-white" : "text-4xl sm:text-5xl lg:text-[58px] xl:text-[68px] 2xl:text-[76px] font-black tracking-tight font-heading leading-[1.12] sm:leading-[0.92] lg:leading-[0.94] uppercase mb-4 lg:mb-5 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] text-white"}>
             {title}
           </h1>
           
