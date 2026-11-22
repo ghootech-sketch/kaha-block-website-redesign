@@ -19,12 +19,12 @@ export default function PageHero({
   children,
   variant = "default",
 }: PageHeroProps) {
-  const common = { alt: "", fill: true, priority: true, className: "object-cover object-center" };
+  const common = { unoptimized: variant === "sales", alt: "", fill: true, priority: true, className: "object-cover object-center" };
   const {
     props: { srcSet: desktopSrcSet },
   } = getImageProps({ ...common, src: "/images/hero/hero-main.webp" });
   const { props: mobileProps } = getImageProps({ ...common, src: "/images/hero/hero-mobile.webp" });
-  const mobileFallbackSrc = "/_next/image?url=%2Fimages%2Fhero%2Fhero-mobile.webp&w=750&q=75";
+  const mobileFallbackSrc = variant === "sales" ? "/images/hero/hero-mobile.webp" : "/_next/image?url=%2Fimages%2Fhero%2Fhero-mobile.webp&w=750&q=75";
 
   return (
     <>
@@ -33,6 +33,7 @@ export default function PageHero({
         rel="preload"
         as="image"
         media="(max-width: 767px)"
+        href={variant === "sales" ? "/images/hero/hero-mobile.webp" : undefined}
         imageSrcSet={mobileProps.srcSet}
         imageSizes="100vw"
         fetchPriority="high"
@@ -41,6 +42,7 @@ export default function PageHero({
         rel="preload"
         as="image"
         media="(min-width: 768px)"
+        href={variant === "sales" ? "/images/hero/hero-main.webp" : undefined}
         imageSrcSet={desktopSrcSet}
         imageSizes="100vw"
         fetchPriority="high"
@@ -53,7 +55,7 @@ export default function PageHero({
         {/* Background Images */}
         <div className="absolute inset-0 -z-30 pointer-events-none select-none">
           <picture>
-            <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet} />
+            <source media="(min-width: 768px)" sizes="100vw" srcSet={desktopSrcSet || "/images/hero/hero-main.webp"} />
             <img
               alt={mobileProps.alt}
               aria-hidden="true"
