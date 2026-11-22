@@ -168,6 +168,7 @@ export default async function Products({
                     className="relative aspect-[3/2] w-full bg-gray-100 overflow-hidden block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <Image
+                      unoptimized
                       src={product.image}
                       alt={`${dict.imageAltPrefix} ${product.name}`}
                       fill
