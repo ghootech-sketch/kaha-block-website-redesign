@@ -18,6 +18,7 @@ const defaultConsultationMessageEn = appendWebsiteSourceMarker(
 export const BUSINESS_FACTS = {
   brandName: "Kaha Block",
   legalName: "PT Kaha Sukses Mandiri",
+  owner: { name: "Richard Putasoit", role: "Owner Kaha Block" },
   foundingYear: 2015,
   foundingDate: "2015",
   domain: SITE_URL,

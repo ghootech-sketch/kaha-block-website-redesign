@@ -149,6 +149,10 @@ export default async function About({
                   {dict.overview.heading}
                 </h2>
                 
+                <div id="brand-owner" className="border-l-2 border-accent pl-4 py-2">
+                  <h3 className="font-semibold text-slate-900">{BUSINESS_FACTS.owner.name}</h3>
+                  <p>{BUSINESS_FACTS.owner.role}</p>
+                </div>
                 <p>{dict.overview.p1}</p>
                 <p>{dict.overview.p2}</p>
                 <p>{dict.overview.p3}</p>

@@ -8,14 +8,14 @@ export const article3Id: BlogPost = {
   category: "Spesifikasi & Mutu",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-27",
+  updatedAt: "2026-11-22",
   readingTime: "9 menit baca",
   image: "/images/production/kaha-block-produksi-02.webp",
   imageAlt: "Proses hidrolik produksi paving block di pabrik Kaha Block",
   seoTitle: "Mengenal Mutu Beton K-250, K-300, dan K-400 Paving Block",
   seoDescription: "Pahami mutu beton K-250, K-300, dan K-400 pada paving block, produksi dengan mesin hidrolik otomatis, serta standar kegunaannya untuk jalan dan perumahan.",
   intro: [
-    "Jawaban Langsung: Mutu beton K-250, K-300, dan K-400 pada paving block menunjukkan kuat tekan karakteristik benda uji kubus sebesar 250 kg/cm², 300 kg/cm², dan 400 kg/cm² pada umur 28 hari. Mutu ini dihasilkan melalui metode beton semi-kering (zero-slump) dengan mesin full otomatis hidrolik bertekanan tinggi, menghasilkan kepadatan matriks beton yang rapat, daya serap air rendah terkontrol, dan ketahanan abrasi terhadap roda kendaraan.",
+    "Jawaban langsung: K-250, K-300, dan K-400 adalah penamaan mutu kuat tekan yang digunakan dalam penawaran paving block. Untuk memastikan kesesuaiannya, baca metode uji, bentuk benda uji, umur pengujian, dan hasil laboratorium produk. Angka mutu saja tidak menggantikan evaluasi ketebalan, pondasi, beban, penyerapan air, dan ketahanan aus.",
     "Dalam spesifikasi teknis proyek konstruksi jalan dan perumahan di Indonesia, istilah mutu beton dengan notasi huruf 'K' (Karakteristik) seperti K-250, K-300, atau K-400 adalah standar yang paling sering dicantumkan dalam dokumen Rencana Kerja dan Syarat-syarat (RKS).",
     "Meskipun istilah ini sangat akrab di telinga praktisi teknik sipil dan kontraktor berpengalaman, banyak pemilik properti, konsultan perencana arsitektur, maupun pengembang pemula yang masih membutuhkan penjelasan terperinci: apa sebenarnya arti matematis mutu K-250, K-300, dan K-400, bagaimana mutu ini dicapai dalam proses pabrikasi paving block semi-kering, dan mengapa rentang mutu ini menjadi standar untuk perkerasan lalu lintas kendaraan?",
     "Melalui artikel ini, PT Kaha Sukses Mandiri (Kaha Block) mengupas tuntas seluk-beluk mutu beton pada paving block, mulai dari konsep dasar kuat tekan karakteristik, parameter penentu kepadatan matriks beton di pabrik, prosedur pengujian kuat tekan, hingga aplikasinya pada berbagai skenario perkerasan di lapangan.",
@@ -127,7 +127,8 @@ export const article3Id: BlogPost = {
       id: "standar-dan-pengujian-mutu",
       heading: "7. Standar Mutu & Pengujian Kuat Tekan",
       paragraphs: [
-        "Spesifikasi umum paving block dan metode pengujian kuat tekan dibahas dalam sejumlah standar teknis yang relevan, antara lain:",
+        "Spesifikasi paving block harus dinilai berdasarkan standar produk dan metode uji yang sesuai. Penjelasan kubus beton di atas merupakan konteks notasi K, bukan pernyataan bahwa seluruh paving diuji sebagai kubus beton 15 cm.",
+        "SNI paving block, pengujian beton silinder, dan spesifikasi ASTM berikut memiliki lingkup berbeda dan tidak dapat dipertukarkan begitu saja. Penyebutan standar adalah rujukan pembahasan, bukan klaim sertifikasi produk Kaha Block. Untuk pengadaan, minta hasil uji yang menyebut identitas sampel, tanggal, laboratorium, metode, serta parameter yang diuji.",
       ],
       list: {
         title: "Rujukan Standar Mutu & Uji Laboratorium:",
@@ -189,14 +190,14 @@ export const article3En: BlogPost = {
   category: "Specifications & Grades",
   categorySlug: "spec",
   publishedAt: "2026-08-31",
-  updatedAt: "2026-09-27",
+  updatedAt: "2026-11-22",
   readingTime: "9 min read",
   image: "/images/production/kaha-block-produksi-02.webp",
   imageAlt: "Hydraulic paving block production process at the Kaha Block factory",
   seoTitle: "K-250, K-300, and K-400 Concrete Paving Block Strength",
   seoDescription: "Learn what K-250, K-300, and K-400 concrete ratings mean for paving blocks, how hydraulic machines achieve optimal density, and their application in road projects.",
   intro: [
-    "Direct Answer: K-250, K-300, and K-400 concrete strength ratings denote characteristic compressive strengths of 250 kg/cm², 300 kg/cm², and 400 kg/cm² tested on 15 cm cube specimens at 28 days. Manufactured via zero-slump semi-dry mixes under high-tonnage automated hydraulic vibro-compaction, these grades ensure high matrix density, controlled water absorption, and dependable tire abrasion resistance.",
+    "Direct answer: K-250, K-300, and K-400 are compressive-strength grade designations used in paving-block quotations. Confirm the test method, specimen shape, test age, and product laboratory results. A grade label alone does not replace assessment of thickness, foundation, loading, water absorption, and abrasion resistance.",
     "In Indonesian civil engineering and municipal construction specifications, concrete compressive strength designated with the prefix 'K' (Karakteristik)—such as K-250, K-300, or K-400—serves as the benchmark in project tender documents.",
     "While civil engineers and seasoned paving contractors are intimately familiar with these metrics, property owners, landscape architects, and project managers often seek clarity: what do characteristic strength numbers signify, how is this density achieved in zero-slump semi-dry manufacturing, and why is high compressive strength essential for vehicular pavements?",
     "In this comprehensive analysis, PT Kaha Sukses Mandiri (Kaha Block) explores the structural mechanics of high-strength concrete pavers, detailing mix design ratios, automated hydraulic pressing, compression testing, and on-site engineering applications.",
@@ -299,7 +300,8 @@ export const article3En: BlogPost = {
       id: "technical-standards-and-testing",
       heading: "7. Compressive Testing Standards & Technical Norms",
       paragraphs: [
-        "General paving-block specifications and compressive-strength testing methods are covered by recognized technical standards such as:",
+        "Assess paving blocks using the applicable product standard and test method. The cube discussion above explains K notation and does not assert that every paving unit is tested as a 15 cm concrete cube.",
+        "The paving-block standard, concrete-cylinder test, and ASTM specification below have different scopes and are not interchangeable. These references do not claim Kaha Block product certification. For procurement, request test results identifying the sample, date, laboratory, method, and tested parameters.",
       ],
       list: {
         title: "Key Laboratory & Testing Norms:",

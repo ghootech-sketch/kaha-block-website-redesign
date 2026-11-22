@@ -57,7 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
    */
   const CORE_ROUTE_LAST_MODIFIED: Record<string, string> = {
     "": "2026-10-31T00:00:00.000Z",
-    "/about": "2026-10-18T00:00:00.000Z",
+    "/about": "2026-11-22T00:00:00.000Z",
+    "/projects": "2026-11-22T00:00:00.000Z",
     "/products": "2026-10-31T00:00:00.000Z",
     "/projects/production": "2026-10-01T17:18:11.000Z",
     "/jasa-pemasangan-paving-block": "2026-10-31T00:00:00.000Z",

@@ -173,27 +173,28 @@ function GroupedReveal({
       case "up":
         return isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "down":
         return isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 -translate-y-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "left":
         return isVisible
           ? "opacity-100 translate-x-0"
-          : "opacity-0 translate-x-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "right":
         return isVisible
           ? "opacity-100 translate-x-0"
-          : "opacity-0 -translate-x-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "none":
-        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-[0.98]";
+        return isVisible ? "opacity-100 scale-100" : "opacity-100 translate-x-0 translate-y-0";
     }
   };
 
   return (
     <Component
       id={id}
+      data-reveal-active={isVisible && !immediate ? "true" : undefined}
       style={{
         transitionDelay: `${computedDelay}s`,
         transitionDuration: `${duration}s`,
@@ -257,27 +258,28 @@ function StandaloneReveal({
       case "up":
         return isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "down":
         return isVisible
           ? "opacity-100 translate-y-0"
-          : "opacity-0 -translate-y-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "left":
         return isVisible
           ? "opacity-100 translate-x-0"
-          : "opacity-0 translate-x-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "right":
         return isVisible
           ? "opacity-100 translate-x-0"
-          : "opacity-0 -translate-x-6";
+          : "opacity-100 translate-x-0 translate-y-0";
       case "none":
-        return isVisible ? "opacity-100 scale-100" : "opacity-0 scale-[0.98]";
+        return isVisible ? "opacity-100 scale-100" : "opacity-100 translate-x-0 translate-y-0";
     }
   };
 
   return (
     <Component
       id={id}
+      data-reveal-active={isVisible && !immediate ? "true" : undefined}
       ref={domRef}
       style={{
         transitionDelay: `${computedDelay}s`,
