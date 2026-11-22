@@ -32,6 +32,7 @@ interface GenerateGraphParams {
   post?: BlogPost;
   product?: ProductData;
   videoItem?: VideoItem;
+  faqs?: Array<{ q: string; a: string }>;
 }
 
 export function generateStructuredDataGraph({
@@ -40,6 +41,7 @@ export function generateStructuredDataGraph({
   post,
   product,
   videoItem,
+  faqs,
 }: GenerateGraphParams) {
   const isEn = lang === "en";
   const baseUrl = BUSINESS_FACTS.domain;
@@ -360,6 +362,16 @@ export function generateStructuredDataGraph({
 
   const graph: Array<Record<string, unknown>> = [organizationEntity, websiteEntity, webPageEntity];
   if (breadcrumbEntity) graph.push(breadcrumbEntity);
+  if (page === "about") {
+    graph.push({
+      "@type": "Person",
+      "@id": `${baseUrl}/#brand-owner`,
+      name: BUSINESS_FACTS.owner.name,
+      jobTitle: BUSINESS_FACTS.owner.role,
+      url: `${baseUrl}/${lang}/about#brand-owner`,
+      worksFor: { "@id": `${baseUrl}/#organization` },
+    });
+  }
 
   if (page === "home") {
     graph.push({ "@type": "ImageObject", "@id": `${canonicalUrl}#primaryimage`, contentUrl: `${baseUrl}/images/hero/hero-main.webp`, url: `${baseUrl}/images/hero/hero-main.webp`, caption: isEn ? "Kaha Block Paving Plant & Products" : "Pabrik & Produk Paving Block Kaha Block" });
@@ -548,7 +560,7 @@ export function generateStructuredDataGraph({
     });
   }
 
-  const serviceFaqs =
+  const serviceFaqs = faqs ?? (
     page === "hargaPaving"
       ? PRICE_PAGE_DATA[lang].faqs
       : page === "jasaPemasangan"
@@ -557,7 +569,7 @@ export function generateStructuredDataGraph({
       ? AREA_HUB_DATA[lang].faqs
       : regionalSlug
       ? REGIONAL_PAGES_DATA[regionalSlug][lang].faqs
-      : [];
+      : []);
 
   if (serviceFaqs.length > 0) {
     graph.push({

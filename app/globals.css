@@ -94,3 +94,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/* Reveal motion is optional; server-rendered content remains visible without JS. */
+@keyframes kaha-reveal-motion {
+  from { transform: translateY(12px); }
+  to { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal-active="true"] {
+    animation: kaha-reveal-motion 0.45s ease-out;
+  }
+}

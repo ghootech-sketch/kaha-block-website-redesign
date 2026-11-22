@@ -11,6 +11,7 @@ interface JsonLdProps {
   post?: BlogPost;
   product?: ProductData;
   videoItem?: VideoItem;
+  faqs?: Array<{ q: string; a: string }>;
 }
 
 type StructuredDataNode = Record<string, unknown>;
@@ -21,6 +22,7 @@ export default function JsonLd({
   post,
   product,
   videoItem,
+  faqs,
 }: JsonLdProps) {
   const structuredData = generateStructuredDataGraph({
     page,
@@ -28,6 +30,7 @@ export default function JsonLd({
     post,
     product,
     videoItem,
+    faqs,
   }) as StructuredDataNode;
 
   const context =

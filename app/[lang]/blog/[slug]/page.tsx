@@ -229,6 +229,9 @@ export default async function BlogPostPage({
           />
         </div>
 
+        <p className="mb-6 text-sm text-slate-600">
+          {isEn ? "Brand owner" : "Owner brand"}: <Link href={`/${currentLang}/about#brand-owner`} className="underline">{BUSINESS_FACTS.owner.name}</Link> · {BUSINESS_FACTS.owner.role}
+        </p>
         {/* Content Creation Process & Editorial Disclosure */}
         <aside
           aria-label="Editorial note"

@@ -125,7 +125,7 @@ export default function RegionalPageTemplate({
 
   return (
     <>
-      <JsonLd page={schemaPage} lang={lang} />
+      <JsonLd page={schemaPage} lang={lang} faqs={faqsToRender} />
 
       <PageHero
         eyebrow={data.eyebrow}

@@ -4,6 +4,7 @@ import { constructPageMetadata } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import Gallery from "@/components/Gallery";
+import ProjectCaseStudies from "@/components/ProjectCaseStudies";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import Link from "next/link";
@@ -97,6 +98,8 @@ export default async function Projects({
           />
         </div>
       </section>
+
+      <ProjectCaseStudies lang={currentLang} />
 
       {/* =========================================================================
           3. DOCUMENTATION SCOPE SECTION (Surface Background)
