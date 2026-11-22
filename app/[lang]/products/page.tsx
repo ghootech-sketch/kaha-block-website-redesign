@@ -8,6 +8,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import SalesHeroActions from "@/components/SalesHeroActions";
+import LandingProof from "@/components/LandingProof";
 import Link from "next/link";
 import { Phone, ChevronDown, MessageSquare, ArrowDown, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -42,6 +44,7 @@ export default async function Products({
       <JsonLd page="products" lang={currentLang} />
 
       <PageHero
+        variant="sales"
         eyebrow={dict.eyebrow}
         title={dict.title}
         description={
@@ -52,8 +55,10 @@ export default async function Products({
           </>
         }
 
-      />
-
+      >
+        <SalesHeroActions lang={currentLang} topic="products" />
+      </PageHero>
+      <LandingProof lang={currentLang} />
 
       <section className="bg-dark text-white border-b border-stone-800 py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,13 +78,10 @@ export default async function Products({
                   : "Material starts from " + BUSINESS_FACTS.pricing.materialStartingPriceDisplay.en + "*. Compare quotations using the same model, thickness, grade and work scope."}
               </p>
             </div>
-            <Link
-              href={"/" + currentLang + "/harga-paving-block"}
-              className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-primary px-6 py-3 font-bold text-white hover:bg-primary-hover transition-colors shrink-0"
-            >
-              {currentLang === "id" ? "Lihat Panduan Harga" : "View Pricing Guide"}
-              <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
-            </Link>
+            <div className="flex flex-col gap-3 shrink-0">
+              <a href={getWhatsAppUrl("primary", "products", currentLang)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-primary px-6 py-3 font-bold text-white hover:bg-primary-hover focus-visible:ring-2 focus-visible:ring-white">{currentLang === "id" ? "Tanyakan Harga & Stok Produk" : "Ask About Product Price & Stock"}</a>
+              <Link href={`/${currentLang}/harga-paving-block`} className="text-sm text-white underline text-center">{currentLang === "id" ? "Baca panduan harga" : "Read the pricing guide"}</Link>
+            </div>
           </div>
         </div>
       </section>

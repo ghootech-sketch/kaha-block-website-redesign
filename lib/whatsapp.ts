@@ -57,7 +57,7 @@ export function getWhatsAppUrl(
   if (isEn) {
     if (topic === "quick-quote") {
       message = "Hello Kaha Block, I would like to check paving block price and stock.\n\nProject location:\nEstimated area size:\nRequirements: materials only / materials + installation\nPaving type (if known):";
-    } else if (topic === "pricing" || topic === "pricing-starting") {
+    } else if (topic === "pricing" || topic === "pricing-starting" || topic === "price-page" || topic === "price-page-final") {
       message = "Hello Kaha Block, I would like to check paving block pricing.\n\nProject location:\nEstimated area size:\nPaving type (if known):\nRequirements: materials only / materials + installation";
     } else if (topic === "project-estimate") {
       message = "Hello Kaha Block, I would like to request a paving block project estimate.\n\nProject location:\nEstimated area size:\nPaving type (if known):\nRequirements: materials only / materials + installation";
@@ -91,7 +91,7 @@ export function getWhatsAppUrl(
   } else {
     if (topic === "quick-quote") {
       message = "Halo Kaha Block, saya ingin cek harga paving block sesuai luas & lokasi proyek.\n\nLokasi proyek:\nPerkiraan luas area:\nKebutuhan: material saja / material + pemasangan\nJenis paving (jika sudah tahu):";
-    } else if (topic === "pricing" || topic === "pricing-starting") {
+    } else if (topic === "pricing" || topic === "pricing-starting" || topic === "price-page" || topic === "price-page-final") {
       message = "Halo Kaha Block, saya melihat harga di website dan ingin cek harga sesuai luas & lokasi proyek.\n\nLokasi proyek:\nPerkiraan luas area:\nJenis paving (jika sudah tahu):\nKebutuhan: material saja / material + pemasangan";
     } else if (topic === "project-estimate") {
       message = "Halo Kaha Block, saya ingin minta estimasi biaya proyek paving block.\n\nLokasi proyek:\nPerkiraan luas area:\nJenis paving (jika sudah tahu):\nKebutuhan: material saja / material + pemasangan";

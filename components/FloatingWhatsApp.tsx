@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { Locale } from "@/lib/dictionary";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -8,6 +9,8 @@ interface FloatingWhatsAppProps {
 }
 
 export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
+  const pathname = usePathname();
+  const isLanding = /^\/(id|en)\/(products|harga-paving-block)\/?$/.test(pathname);
   const whatsappUrl = getWhatsAppUrl("primary", "quick-quote", lang);
   const ariaLabel =
     lang === "en"
@@ -16,9 +19,11 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
   const label = lang === "en" ? "Check Price & Stock" : "Cek Harga & Stok";
 
   return (
+    <>
+    {isLanding && <div aria-hidden="true" className="h-24 md:h-0" />}
     <aside
       aria-label="Floating WhatsApp"
-      className="fixed z-40 right-4 sm:right-6 bottom-4 sm:bottom-6 bottom-[calc(1rem+env(safe-area-inset-bottom))] sm:bottom-[calc(1.5rem+env(safe-area-inset-bottom))] pointer-events-auto"
+      className={isLanding ? "fixed z-40 left-3 right-3 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] md:left-auto md:right-6 md:bottom-6 pointer-events-auto" : "fixed z-40 right-4 sm:right-6 bottom-[calc(1rem+env(safe-area-inset-bottom))] sm:bottom-[calc(1.5rem+env(safe-area-inset-bottom))] pointer-events-auto"}
     >
       <a
         id="floating-whatsapp-btn"
@@ -26,13 +31,13 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={ariaLabel}
-        className="group relative flex items-center justify-center bg-[#25D366] hover:bg-[#20ba59] active:bg-[#1da850] text-white rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-[58px] sm:h-[64px] min-w-[58px] sm:min-w-[64px] px-3.5 sm:px-4 hover:pl-5 focus-visible:pl-5"
+        className={`group relative flex items-center justify-center ${isLanding ? "gap-2 bg-[#166534] hover:bg-[#14532d] active:bg-[#14532d] !px-5" : "bg-[#25D366] hover:bg-[#20ba59] active:bg-[#1da850]"} text-white rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 h-[58px] sm:h-[64px] min-w-[58px] sm:min-w-[64px] px-3.5 sm:px-4 hover:pl-5 focus-visible:pl-5`}
       >
         <span
-          className="hidden md:inline-block overflow-hidden whitespace-nowrap text-sm font-semibold max-w-0 opacity-0 transition-all duration-300 ease-out group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-2.5 group-focus-visible:max-w-xs group-focus-visible:opacity-100 group-focus-visible:mr-2.5"
+          className={isLanding ? "text-sm font-bold" : "hidden md:inline-block overflow-hidden whitespace-nowrap text-sm font-semibold max-w-0 opacity-0 transition-all duration-300 ease-out group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-2.5 group-focus-visible:max-w-xs group-focus-visible:opacity-100 group-focus-visible:mr-2.5"}
           aria-hidden="true"
         >
-          {label}
+          {isLanding ? (lang === "en" ? "Check Price on WhatsApp" : "Cek Harga via WhatsApp") : label}
         </span>
         <svg
           className="w-8 h-8 sm:w-9 sm:h-9 fill-current flex-shrink-0"
@@ -43,5 +48,6 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
         </svg>
       </a>
     </aside>
+    </>
   );
 }
