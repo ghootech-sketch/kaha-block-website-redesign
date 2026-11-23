@@ -160,7 +160,7 @@ export const PRODUCTS_DATA_ID: Record<ProductSlug, ProductData> = {
     eyebrow: "PAVING BLOCK GEOMETRIS",
     headline: "Paving Block Hexagonal (Segi Enam) Tebal 8 cm untuk Area Dekoratif & Pedestrian",
     intro:
-      "Paving block Hexa (segi enam) memiliki ketebalan 8 cm dengan karakter geometris saling mengunci. Model ini diaplikasikan untuk area dekoratif dan jalur pedestrian yang mengutamakan tampilan estetika pola segi enam.",
+      "Paving block Hexa (segi enam) memiliki ketebalan 8 cm dengan karakter geometris saling mengunci. Model ini diaplikasikan untuk area dekoratif dan jalur pedestrian yang mengutamakan tampilan estetika pola segi enam. Untuk meminta harga paving block segi 6, sampaikan pilihan warna, perkiraan luas, serta lokasi pengiriman. Penawaran Hexa 8 cm disesuaikan dengan volume dan kebutuhan produk; harga material dibedakan dari biaya pemasangan.",
     image: "/images/products/kaha-block-hexa-8cm.webp",
     imageAlt: "Dokumentasi produk Paving Block Hexagonal Segi Enam Kaha Block",
     quickSpecs: [

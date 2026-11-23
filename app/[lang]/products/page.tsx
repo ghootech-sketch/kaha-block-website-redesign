@@ -38,10 +38,15 @@ export default async function Products({
   const currentLang = lang as Locale;
   const dict = dictionaries[currentLang].products;
   const products = getAllProducts(currentLang);
+  const productFaqs = [...dict.faq.items];
+  if (currentLang === "id") productFaqs.unshift({
+    q: "Bagaimana memilih tempat jual paving block terdekat?",
+    a: "Untuk mencari paving block terdekat, periksa lokasi produksi, area pengiriman, spesifikasi produk, dan stok. Kaha Block berproduksi di Cisauk, Kabupaten Tangerang, serta melayani Jabodetabek dengan gratis pengiriman dan penurunan. Kirim lokasi dan kebutuhan Anda untuk cek pilihan produk serta harga.",
+  });
 
   return (
     <>
-      <JsonLd page="products" lang={currentLang} />
+      <JsonLd page="products" lang={currentLang} faqs={productFaqs} />
 
       <PageHero
         variant="sales"
@@ -511,7 +516,7 @@ export default async function Products({
             </ScrollReveal>
 
             <div className="space-y-4">
-              {dict.faq.items.map((item, idx) => (
+              {productFaqs.map((item, idx) => (
                 <ScrollReveal key={idx} delay={idx * 0.03}>
                   <details className="group border border-stone-200/40 bg-white p-5 sm:p-6 transition-all duration-200 hover:border-accent/40">
                     <summary className="font-medium text-base sm:text-lg text-slate-900 cursor-pointer list-none flex items-center justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded select-none hover:text-primary">

@@ -59,15 +59,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "": "2026-10-31T00:00:00.000Z",
     "/about": "2026-11-22T00:00:00.000Z",
     "/projects": "2026-11-22T00:00:00.000Z",
-    "/products": "2026-11-22T00:00:00.000Z",
+    "/products": "2026-11-23T00:00:00.000Z",
     "/projects/production": "2026-10-01T17:18:11.000Z",
-    "/jasa-pemasangan-paving-block": "2026-10-31T00:00:00.000Z",
-    "/harga-paving-block": "2026-11-22T00:00:00.000Z",
+    "/jasa-pemasangan-paving-block": "2026-11-23T00:00:00.000Z",
+    "/harga-paving-block": "2026-11-23T00:00:00.000Z",
     "/area-layanan/jakarta": "2026-10-31T00:00:00.000Z",
-    "/area-layanan/tangerang": "2026-10-31T00:00:00.000Z",
-    "/area-layanan/bekasi": "2026-10-31T00:00:00.000Z",
-    "/area-layanan/depok": "2026-10-31T00:00:00.000Z",
-    "/area-layanan/bogor": "2026-10-31T00:00:00.000Z",
+    "/area-layanan/tangerang": "2026-11-23T00:00:00.000Z",
+    "/area-layanan/bekasi": "2026-11-23T00:00:00.000Z",
+    "/area-layanan/depok": "2026-11-23T00:00:00.000Z",
+    "/area-layanan/bogor": "2026-11-23T00:00:00.000Z",
   };
 
   // Shared product page template timestamp (commit 838afe61 - shared product detail page evidence update)
@@ -75,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Only these individual product pages received metadata/content changes on 2026-10-18.
   const PRODUCT_PAGE_LAST_MODIFIED: Record<string, string> = {
     "truepave": "2026-10-18T00:00:00.000Z",
+    "paving-hexagonal": "2026-11-23T00:00:00.000Z",
     "topi-uskup": "2026-10-18T00:00:00.000Z",
   };
 
