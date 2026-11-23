@@ -28,6 +28,8 @@ export default function Navbar({
   nav: NavbarDictionary;
 }) {
   const pathname = usePathname();
+  // Product detail pages start on a light background instead of a dark hero.
+  const hasLightHeader = pathname.startsWith(`/${lang}/products/`);
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(false);
@@ -123,7 +125,7 @@ export default function Navbar({
       ref={navRef}
       aria-label={lang === "en" ? "Main Navigation" : "Navigasi Utama"}
       className={`fixed top-0 left-0 right-0 z-50 font-sans transition-all duration-300 ${
-        isScrolled
+        isScrolled || hasLightHeader
           ? "bg-black/90 backdrop-blur-none border-b border-white/10 shadow-md"
           : "bg-transparent backdrop-blur-none border-b border-white/[0.05] shadow-none"
       }`}
