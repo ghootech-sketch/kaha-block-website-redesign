@@ -1,3 +1,5 @@
+import "./search-intent-check.mjs";
+
 /**
  * Production SEO Regression Smoke Check
  *
