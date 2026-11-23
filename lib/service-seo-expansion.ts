@@ -72,7 +72,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       {
         title: "Driveway Paving, Carport & Halaman",
         desc:
-          "Untuk area rumah tinggal, fokus pekerjaan biasanya pada elevasi, aliran air, kerapian pola, akses kendaraan, dan pertemuan paving dengan bangunan atau saluran.",
+          "Driveway paving adalah penggunaan paving untuk jalur masuk kendaraan menuju rumah atau carport. Pemilihan produk, lapisan dasar, elevasi, dan aliran air disesuaikan dengan kondisi lahan serta beban kendaraan.",
       },
       {
         title: "Jalan Lingkungan & Perumahan",
