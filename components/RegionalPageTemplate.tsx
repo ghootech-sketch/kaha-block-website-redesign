@@ -123,13 +123,6 @@ export default function RegionalPageTemplate({
     }
   }
 
-  if (lang === "id" && slug === "bekasi") {
-    faqsToRender.push({
-      q: "Apakah ada pabrik paving block Bekasi milik Kaha Block?",
-      a: "Pabrik Kaha Block berada di Cisauk, Kabupaten Tangerang, bukan di Bekasi. Kami melayani suplai material dan jasa pemasangan untuk Kota Bekasi, Kabupaten Bekasi, dan Cikarang. Kirim lokasi proyek untuk membahas kebutuhan dan pengiriman.",
-    });
-  }
-
   return (
     <>
       <JsonLd page={schemaPage} lang={lang} faqs={faqsToRender} />

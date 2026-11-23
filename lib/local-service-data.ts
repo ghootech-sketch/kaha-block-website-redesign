@@ -1086,7 +1086,7 @@ export const REGIONAL_PAGES_DATA: Record<
           a: "Sebagai supplier paving block Bekasi dan produsen langsung, Kaha Block melayani jual paving block Bekasi dengan harga pabrik kompetitif serta paket jasa pemasangan paving block Bekasi oleh tim profesional. Hubungi WhatsApp resmi kami untuk memperoleh estimasi harga paving block Bekasi per m² lengkap dengan fasilitas gratis ongkir dan penurunan barang.",
         },
         {
-          q: "Apakah Kaha Block memiliki fasilitas pabrik fisik di Bekasi?",
+          q: "Apakah ada pabrik paving block Bekasi milik Kaha Block?",
           a: "Fasilitas pabrik utama Kaha Block berlokasi di Cisauk, Kabupaten Tangerang. Namun kami melayani pengadaan material dan jasa pemasangan untuk Kota dan Kabupaten Bekasi.",
         },
         {
