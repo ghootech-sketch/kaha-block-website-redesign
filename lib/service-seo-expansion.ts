@@ -25,7 +25,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
     introTitle: "Vendor Paving Block, Jasa Pasang, Borongan & Kontraktor Jabodetabek",
     introParagraphs: [
       "Kaha Block melayani sebagai vendor paving block sekaligus penyedia jasa pasang untuk proyek rumah tinggal, carport, halaman, jalan lingkungan, area parkir, ruko, pergudangan, kawasan industri, fasilitas umum, dan pekerjaan perkerasan lainnya di Jabodetabek. Layanan dapat berupa pengadaan material, jasa pemasangan saja, maupun paket material + pemasangan sesuai kebutuhan proyek. Produksi material dilakukan di fasilitas Kaha Block di Cisauk, Kabupaten Tangerang, sehingga koordinasi antara spesifikasi material, pengiriman, dan pekerjaan pemasangan dapat disusun dalam satu alur proyek yang lebih jelas.",
-      "Istilah yang digunakan pelanggan berbeda-beda: jasa pasang paving block, jasa pasang konblok, tukang paving, borongan paving, kontraktor paving block, aplikator paving block, pemasangan conblock, atau material + pasang. Seluruh istilah tersebut mengarah pada kebutuhan yang sama: memilih material yang sesuai, menyiapkan dasar yang stabil, mengatur elevasi dan aliran air, menyusun pola dengan benar, mengunci tepi dengan kanstein bila diperlukan, lalu melakukan pemadatan akhir agar bidang paving bekerja sesuai fungsi area.",
+      "Sebelum memesan jasa pasang paving block, tentukan apakah Anda membutuhkan tenaga pemasangan saja, material saja, atau paket material + pemasangan. Pembagian tanggung jawab atas persiapan tanah, lapisan dasar, pengunci tepi, dan finishing perlu disepakati agar penawaran dapat dibandingkan dengan jelas.",
       "Karena kondisi setiap lokasi berbeda, estimasi pekerjaan tidak hanya melihat luas area dalam meter persegi. Tim perlu mempertimbangkan akses proyek, kondisi tanah eksisting, elevasi dan kemiringan, kebutuhan pembongkaran atau penimbunan, ketebalan lapisan dasar, jenis bedding, ketebalan paving, mutu beton, pola pemasangan, pengunci tepi, kebutuhan drainase, serta beban kendaraan setelah pekerjaan selesai. Pendekatan ini penting agar perbandingan penawaran tidak hanya berdasarkan angka per meter persegi, tetapi juga berdasarkan ruang lingkup teknis yang benar-benar dikerjakan.",
       "Untuk kebutuhan jasa paving di Jakarta, Tangerang, Bekasi, Depok, dan Bogor, Kaha Block menyesuaikan rekomendasi berdasarkan fungsi area. Carport dan halaman rumah memiliki kebutuhan berbeda dengan jalan lingkungan, area parkir ruko, pergudangan, atau kawasan industri. Pilihan paving 6 cm, 8 cm, atau 10 cm serta mutu K-250, K-300, atau K-400 tidak dipaksakan sama untuk semua proyek; penentuan spesifikasi mengikuti kebutuhan penggunaan, kondisi dasar, dan ketersediaan produk.",
       "Dari sisi pengalaman dan identitas usaha, Kaha Block berada di bawah PT Kaha Sukses Mandiri dan beroperasi sejak 2015. Fasilitas produksi berada di Cisauk, Kabupaten Tangerang, dengan area sekitar 9.080 m² dan menggunakan mesin full otomatis hidrolik. Fakta operasional ini menjadi dasar informasi teknis yang ditampilkan di halaman layanan, bukan klaim umum tanpa sumber internal. Pengguna dapat membandingkan pilihan produk, area layanan, proses pemasangan, dan kanal kontak resmi sebelum meminta penawaran.",
@@ -70,9 +70,9 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       "Spesifikasi pemasangan tidak selalu sama untuk setiap area. Fungsi lahan dan rencana beban menjadi dasar dalam memilih ketebalan, mutu, pola, dan pekerjaan dasar.",
     projectCards: [
       {
-        title: "Carport, Halaman Rumah & Teras Luar",
+        title: "Driveway Paving, Carport & Halaman",
         desc:
-          "Untuk area rumah tinggal, fokus pekerjaan biasanya pada elevasi, aliran air, kerapian pola, akses kendaraan, dan pertemuan paving dengan bangunan atau saluran.",
+          "Driveway paving adalah penggunaan paving untuk jalur masuk kendaraan menuju rumah atau carport. Pemilihan produk, lapisan dasar, elevasi, dan aliran air disesuaikan dengan kondisi lahan serta beban kendaraan.",
       },
       {
         title: "Jalan Lingkungan & Perumahan",
@@ -112,7 +112,7 @@ export const INSTALLATION_SEO_EXPANSION: Record<Locale, ServiceSeoExpansion> = {
       {
         title: "Lapisan Dasar & Bedding",
         desc:
-          "Kebutuhan sub-base, pasir/abu batu untuk leveling, ketebalan hamparan, dan pemadatan ditentukan oleh kondisi area dan rencana penggunaan.",
+          "Untuk kebutuhan abu batu paving sebagai bagian pekerjaan pemasangan, jenis material, gradasi, ketebalan hamparan, dan pemadatannya dibahas berdasarkan kondisi area serta spesifikasi proyek. Bagian ini membahas lingkup pemasangan, bukan penawaran jual abu batu terpisah.",
       },
       {
         title: "Kanstein, Pola & Finishing",
@@ -249,9 +249,8 @@ export const REGIONAL_SEO_EXPANSION: Record<
     id: {
       introTitle: "Pabrik, Vendor, Supplier & Jasa Pasang Paving Block Tangerang",
       introParagraphs: [
-        "Tangerang merupakan wilayah terdekat dengan fasilitas produksi utama Kaha Block di Cisauk, Kabupaten Tangerang. Karena itu halaman Tangerang diarahkan untuk kebutuhan pabrik, vendor paving block Tangerang, supplier/pemasok, pengadaan conblock/konblok, harga langsung pabrik, serta jasa pasang untuk Kabupaten Tangerang, Kota Tangerang, dan Tangerang Selatan.",
-        "Kebutuhan proyek dapat berupa pembelian material saja, pengadaan volume proyek, atau paket pekerjaan material + pemasangan. Produk dipilih berdasarkan model, ketebalan, mutu, warna, fungsi area, dan rencana beban. Untuk pemasangan, kondisi tanah, elevasi, drainase, base, kanstein, pola, dan pemadatan perlu dihitung secara terpisah dari harga material.",
-        "Pelanggan yang mencari pabrik paving block terdekat, produsen paving block Tangerang, toko atau tempat jual paving block, jasa pasang paving block Tangerang, maupun kontraktor paving block pada dasarnya membutuhkan jalur yang sama: memastikan lokasi proyek, luas area, spesifikasi material, ketersediaan, pengiriman, dan ruang lingkup pekerjaan.",
+        "Mencari pabrik paving block terdekat untuk proyek Tangerang Raya? Kaha Block memproduksi paving di Cisauk, Kabupaten Tangerang, dan melayani Kabupaten Tangerang, Kota Tangerang, serta Tangerang Selatan. Kirim lokasi proyek untuk membahas akses pengiriman dan kebutuhan material.",
+        "Pilih material saja atau material + pemasangan sesuai kebutuhan. Penawaran mempertimbangkan model, ketebalan, mutu, warna, volume, dan fungsi area. Untuk pemasangan, periksa kondisi tanah, elevasi, drainase, lapisan dasar, kanstein, dan pemadatan.",
       ],
       intentTitle: "Layanan Paving Block Tangerang dari Pabrik Cisauk",
       intentIntro: "Posisi pabrik di Cisauk menjadi basis pengadaan untuk proyek Tangerang Raya, sementara kebutuhan pemasangan disesuaikan per lokasi.",
@@ -323,9 +322,8 @@ export const REGIONAL_SEO_EXPANSION: Record<
     id: {
       introTitle: "Vendor, Supplier & Jasa Pasang Paving Block Bekasi dan Cikarang",
       introParagraphs: [
-        "Kaha Block melayani sebagai vendor dan supplier paving block/conblock untuk Kota Bekasi dan Kabupaten Bekasi, termasuk kebutuhan proyek di Cikarang. Material berasal dari fasilitas produksi Cisauk, sedangkan penawaran proyek, pengiriman, dan pemasangan menyesuaikan alamat, luas/volume, akses, dan ruang lingkup pekerjaan.",
-        "Bekasi dan Cikarang memiliki banyak kebutuhan perkerasan untuk perumahan, kawasan industri, pergudangan, ruko, parkir, jalan lingkungan, dan fasilitas usaha. Karena itu pencarian supplier paving block Bekasi, jual paving block Bekasi, paving block Cikarang, jasa pasang paving block Bekasi, dan kontraktor paving block perlu diarahkan pada spesifikasi dan penggunaan yang tepat, bukan sekadar harga terendah.",
-        "Untuk material saja, pelanggan dapat menentukan model, ketebalan, mutu, warna, dan volume. Untuk pekerjaan pemasangan, perhitungan ditambah kondisi lahan, base, leveling, kanstein, pola, pemadatan, serta pekerjaan pendukung yang diperlukan.",
+        "Kaha Block memasok paving block untuk Kota Bekasi dan Kabupaten Bekasi, termasuk Cikarang. Pabrik berada di Cisauk, Kabupaten Tangerang; layanan ke Bekasi mencakup pengadaan material dan opsi pemasangan sesuai lokasi serta kebutuhan proyek.",
+        "Untuk rumah, ruko, parkir, pergudangan, dan kawasan industri, sesuaikan produk dengan fungsi area dan rencana beban. Gratis pengiriman dan penurunan berlaku untuk Jabodetabek; sampaikan titik proyek dan akses kendaraan saat meminta penawaran.",
       ],
       intentTitle: "Pengadaan & Jasa Paving Block Bekasi / Cikarang",
       intentIntro: "Layanan dibagi berdasarkan pengadaan material, pekerjaan pasang, dan paket borongan agar kebutuhan proyek lebih jelas.",
@@ -397,9 +395,8 @@ export const REGIONAL_SEO_EXPANSION: Record<
     id: {
       introTitle: "Vendor, Supplier & Jasa Pasang Paving Block Depok",
       introParagraphs: [
-        "Kaha Block melayani sebagai vendor dan supplier paving block/conblock untuk Kota Depok dari fasilitas produksi Cisauk, Kabupaten Tangerang. Halaman ini menargetkan kebutuhan pengadaan proyek, jual material, jasa pasang, kontraktor paving, harga per m², serta paket material + pemasangan.",
-        "Kebutuhan Depok banyak berasal dari rumah tinggal, carport, halaman, cluster perumahan, jalan lingkungan, ruko, area parkir, fasilitas publik, dan akses kawasan. Masing-masing fungsi membutuhkan pemilihan produk, ketebalan, mutu, kondisi dasar, dan pola pemasangan yang sesuai.",
-        "Untuk memperoleh estimasi yang relevan, sampaikan lokasi proyek, luas area, kondisi lahan, fungsi area, serta apakah kebutuhan hanya material atau sekaligus pemasangan. Data ini lebih berguna daripada membandingkan angka harga tanpa spesifikasi yang sama.",
+        "Untuk kebutuhan conblock Depok, Kaha Block melayani pembelian material dan paket material + pemasangan dari pabrik Cisauk, Kabupaten Tangerang. Pilih bentuk, ketebalan, mutu, serta warna berdasarkan fungsi area dan kebutuhan proyek.",
+        "Pengadaan dapat digunakan untuk carport, halaman, jalan lingkungan, ruko, parkir, dan fasilitas kawasan. Kirim titik proyek, perkiraan luas, serta foto kondisi lahan bila memerlukan pemasangan agar tim dapat membahas kebutuhan awal.",
       ],
       intentTitle: "Layanan Supplier & Jasa Paving Block Depok",
       intentIntro: "Pengadaan dan pemasangan dapat disusun terpisah atau dalam satu paket sesuai kondisi proyek.",
@@ -471,9 +468,8 @@ export const REGIONAL_SEO_EXPANSION: Record<
     id: {
       introTitle: "Vendor, Supplier & Jasa Pasang Paving Block Bogor",
       introParagraphs: [
-        "Kaha Block melayani sebagai vendor dan supplier paving block/conblock untuk Kota Bogor dan Kabupaten Bogor dari fasilitas produksi PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang. Halaman ini menggabungkan kebutuhan pengadaan proyek, jual material, jasa pasang, kontraktor paving, serta harga per m².",
-        "Wilayah Bogor memiliki kebutuhan beragam untuk rumah, villa, perumahan, jalan lingkungan, akses kawasan, area parkir, ruko, fasilitas wisata, dan proyek komersial. Kondisi kontur dan drainase pada sebagian lokasi membuat evaluasi elevasi, kemiringan, kondisi tanah dasar, serta penguncian sisi menjadi penting sebelum pemasangan.",
-        "Pelanggan dapat membeli material saja atau meminta paket material + pemasangan. Untuk perhitungan, sampaikan lokasi, luas area, fungsi lahan, kondisi eksisting, model yang diinginkan bila sudah ada, dan kebutuhan mutu/ketebalan bila telah ditentukan oleh proyek.",
+        "Kaha Block melayani kebutuhan paving block Bogor untuk Kota Bogor dan Kabupaten Bogor. Material berasal dari pabrik Cisauk, Kabupaten Tangerang, dengan opsi pengadaan saja atau material + pemasangan sesuai kebutuhan.",
+        "Untuk rumah, villa, jalan lingkungan, parkir, dan area usaha, periksa kondisi tanah, elevasi, aliran air, serta akses pengiriman. Sertakan lokasi dan foto area agar penawaran memperhitungkan kebutuhan lapangan, bukan hanya luasnya.",
       ],
       intentTitle: "Layanan Supplier & Kontraktor Paving Block Bogor",
       intentIntro: "Setiap kebutuhan diarahkan ke jalur pengadaan atau pemasangan yang sesuai agar spesifikasi dan penawarannya jelas.",

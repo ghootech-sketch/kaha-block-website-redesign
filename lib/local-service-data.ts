@@ -211,6 +211,8 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
       { label: "Pengiriman Jabodetabek", value: "Gratis Pengiriman & Penurunan Barang" },
     ],
     faqs: [
+      {"q": "Bagaimana mencari jasa pasang paving block terdekat untuk lokasi saya?", "a": "Kaha Block melayani pemasangan di Jabodetabek dengan basis pabrik di Cisauk, Kabupaten Tangerang. Kirim titik lokasi, foto kondisi lahan, dan perkiraan luas. Tim dapat membahas kebutuhan persiapan, material, akses, dan lingkup pemasangan berdasarkan lokasi aktual."},
+      {"q": "Apa saja yang termasuk borongan pasang paving per meter?", "a": "Pastikan satuan pekerjaan adalah m² dan rincian borongan tertulis. Penawaran dapat mencakup tenaga pasang saja atau material + pemasangan, dengan persiapan lahan, lapisan dasar, kanstein, pemadatan, dan pekerjaan pendukung sesuai kesepakatan. Harga pasang paving block per m2 perlu dibandingkan pada lingkup yang sama."},
       {
         q: "Apakah Kaha Block melayani pengadaan material sekaligus pemasangan?",
         a: "Ya. Kami menyediakan opsi pembelian material saja maupun paket terintegrasi (material + pengiriman + jasa pemasangan oleh tim profesional).",
@@ -1084,7 +1086,7 @@ export const REGIONAL_PAGES_DATA: Record<
           a: "Sebagai supplier paving block Bekasi dan produsen langsung, Kaha Block melayani jual paving block Bekasi dengan harga pabrik kompetitif serta paket jasa pemasangan paving block Bekasi oleh tim profesional. Hubungi WhatsApp resmi kami untuk memperoleh estimasi harga paving block Bekasi per m² lengkap dengan fasilitas gratis ongkir dan penurunan barang.",
         },
         {
-          q: "Apakah Kaha Block memiliki fasilitas pabrik fisik di Bekasi?",
+          q: "Apakah ada pabrik paving block Bekasi milik Kaha Block?",
           a: "Fasilitas pabrik utama Kaha Block berlokasi di Cisauk, Kabupaten Tangerang. Namun kami melayani pengadaan material dan jasa pemasangan untuk Kota dan Kabupaten Bekasi.",
         },
         {
