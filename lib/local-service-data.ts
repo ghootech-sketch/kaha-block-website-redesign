@@ -86,7 +86,7 @@ export const INSTALLATION_DATA: Record<Locale, InstallationPageContent> = {
     eyebrow: "LAYANAN KONTRAKTOR & KEMITRAAN",
     h1: "Jasa Pasang & Kontraktor Paving Block Jabodetabek",
     heroDesc:
-      "PT Kaha Sukses Mandiri (Kaha Block) melayani jasa pasang, borongan pemasangan, aplikator/kontraktor paving block sekaligus pengadaan material untuk carport, halaman rumah, perumahan, area komersial, pergudangan, kawasan industri, parkir, dan jalan lingkungan di seluruh Jabodetabek.",
+      "Sedang mencari jasa pasang paving block di Tangerang? Kaha Block melayani survei, penawaran, dan pemasangan dari basis pabrik di Cisauk untuk Tangerang Raya dan proyek Jabodetabek. Pilih tenaga pasang saja atau paket material langsung dari pabrik + pemasangan; estimasi biaya disusun dari luas area, kondisi lahan, akses proyek, dan spesifikasi paving.",
     advantagesTitle: "Keunggulan Layanan Pemasangan Terintegrasi",
     advantagesIntro:
       "Memilih layanan terintegrasi langsung dari produsen memastikan kualitas material dan presisi pemasangan berada dalam satu standar mutu.",
