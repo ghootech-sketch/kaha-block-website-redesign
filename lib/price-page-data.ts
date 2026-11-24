@@ -32,12 +32,12 @@ export const PRICE_PAGE_DATA: Record<Locale, PricePageContent> = {
     eyebrow: "HARGA LANGSUNG PABRIK • JABODETABEK",
     h1: "Harga Paving Block per m², Satuan & Jasa Pasang",
     heroDesc:
-      "Material paving block mulai " +
+      "Harga paving block per meter dihitung per meter persegi (m²), bukan meter panjang. Material mulai " +
       BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id +
-      "*. Panduan harga per m² / meter persegi, per biji/satuan, mutu K-250/K-300/K-400, ketebalan 6/8/10 cm, serta biaya jasa pasang untuk proyek Jabodetabek.",
+      "*. Gunakan panduan ini untuk membandingkan harga per m², per biji/satuan, mutu K-250/K-300/K-400, ketebalan 6/8/10 cm, serta biaya pemasangan di Jabodetabek.",
     unitTitle: "Cara Membaca Harga Paving Block",
     unitIntro:
-      "Saat meminta harga konblok per meter, pastikan satuannya meter persegi (m²), bukan meter panjang. Bandingkan model, ketebalan, mutu, volume, serta cakupan material dan pemasangan yang sama.",
+      "Jika mencari harga paving block per meter, pastikan penawaran dihitung per meter persegi (m²), bukan meter panjang. Agar perbandingan adil, samakan model, ketebalan, mutu beton, volume, biaya pengiriman, dan cakupan jasa pemasangan.",
     unitCards: [
       {
         title: "Harga paving block per meter",
@@ -88,11 +88,11 @@ export const PRICE_PAGE_DATA: Record<Locale, PricePageContent> = {
       {"q": "Berapa harga paving block 8 cm per m2?", "a": "Harga paving tebal 8 cm bergantung pada model, mutu beton, warna, volume, dan lokasi pengiriman. Harga mulai Rp90.000/m² adalah acuan material umum, bukan tarif pasti untuk semua produk 8 cm. Kirim tipe dan luas kebutuhan untuk meminta penawaran yang sesuai."},
       {"q": "Bagaimana mengetahui harga paving block K300 per m2?", "a": "Untuk membandingkan harga paving block K 300, pastikan model, ketebalan, warna, dan jumlah pesanan sama. K-300 adalah pilihan mutu sesuai produk; nilainya perlu dibaca bersama spesifikasi lainnya. Konfirmasikan kebutuhan material saja atau sekaligus pemasangan agar ruang lingkup penawaran jelas."},
       {
-        q: "Berapa harga paving block per meter persegi?",
+        q: "Berapa harga paving block per meter?",
         a:
-          "Harga material paving block tersedia mulai " +
+          "Harga paving block per meter umumnya dinyatakan per meter persegi (m²). Harga material Kaha Block mulai " +
           BUSINESS_FACTS.pricing.materialStartingPriceDisplay.id +
-          "*. Harga akhir bergantung pada model, ketebalan, mutu beton, volume pemesanan, dan lokasi proyek. Istilah per meter pada penawaran paving perlu dikonfirmasi sebagai meter persegi (m²), bukan meter panjang.",
+          "* sebagai acuan material umum; nilai akhir bergantung pada model, ketebalan, mutu beton, volume, dan lokasi proyek. Pastikan penawaran tidak mencampur satuan m² dengan meter panjang atau biaya pemasangan.",
       },
       {
         q: "Apakah harga paving block per biji atau satuan tersedia?",
