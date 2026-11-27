@@ -91,6 +91,18 @@ export default async function ProductionGalleryPage({
         description={dict.heroDesc}
       />
 
+      <section className="bg-white border-b border-stone-200/40 py-8 sm:py-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">{currentLang === "en" ? "Order paving blocks directly from our Cisauk factory" : "Cari pabrik conblock terdekat? Pesan langsung dari pabrik Cisauk"}</h2>
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">{currentLang === "en" ? "Our factory is at Jl. Cibadak No.7, Suradita, Cisauk, Tangerang Regency. Send your delivery location, required model and area or quantity to confirm production availability and logistics before ordering." : "Pabrik Kaha Block berada di Jl. Cibadak No.7, Suradita, Cisauk, Kabupaten Tangerang. Untuk pembelian langsung dari pabrik, kirim alamat proyek, model paving dan luas atau volume kebutuhan. Tim kami dapat mengonfirmasi ketersediaan produksi, akses pengiriman dan penawaran sebelum pemesanan."}</p>
+          <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
+            <a href="https://maps.google.com/maps?cid=18157894041875342625" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{currentLang === "en" ? "Factory on Google Maps" : "Lokasi pabrik Kaha Block di Google Maps"}</a>
+            <Link href={"/" + currentLang + "/harga-paving-block"} className="text-primary hover:underline">{currentLang === "en" ? "Material pricing" : "Harga paving block langsung pabrik"}</Link>
+            <Link href={"/" + currentLang + "/jasa-pemasangan-paving-block"} className="text-primary hover:underline">{currentLang === "en" ? "Installation services" : "Jasa pasang paving block"}</Link>
+          </div>
+        </div>
+      </section>
+
       {/* =========================================================================
           2. PRODUCTION FACT & CAPABILITY STRIP
          ========================================================================= */}

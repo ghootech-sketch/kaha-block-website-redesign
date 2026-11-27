@@ -61,6 +61,18 @@ export default async function JasaPemasanganPage({
         description={data.heroDesc}
       />
 
+      <section className="bg-white border-b border-stone-200/40 py-8 sm:py-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">{isEn ? "Installation-only or material and installation?" : "Jasa pasang konblok: tenaga pasang atau borongan material?"}</h2>
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">{isEn ? "If you already have pavers, share the site area, ground condition and access. For supply and installation, also include the paver model, thickness and grade. The agreed scope determines preparation, edge restraints and finishing costs." : "Jika material conblock sudah tersedia, kirim luas area, foto kondisi tanah dan akses lokasi untuk estimasi tenaga pasang. Jika membutuhkan borongan material sekaligus pemasangan, tambahkan pilihan model, ketebalan dan mutu paving. Rincian pekerjaan dasar, kanstin dan finishing dikonfirmasi sebelum penawaran."}</p>
+          <div className="mt-4 flex flex-wrap gap-4 text-sm font-semibold">
+            <Link href={"/" + currentLang + "/harga-paving-block"} className="text-primary hover:underline">{isEn ? "Material price guide" : "Harga paving block per m²"}</Link>
+            <Link href={"/" + currentLang + "/projects"} className="text-primary hover:underline">{isEn ? "Installation project documentation" : "Dokumentasi proyek pemasangan"}</Link>
+            <a href={getWhatsAppUrl("primary", "installation", currentLang)} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{isEn ? "Request an installation quote" : "Minta estimasi jasa pasang"}</a>
+          </div>
+        </div>
+      </section>
+
       {/* Overview & Key Advantages Grid */}
       <section className="bg-surface border-b border-stone-200/40 py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

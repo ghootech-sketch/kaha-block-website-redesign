@@ -81,9 +81,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   hargaPaving: {
     path: "/harga-paving-block",
     id: {
-      title: "Harga Paving Block per m², Satuan & Jasa Pasang 2026 | KAHA BLOCK",
+      title: "Harga Paving Block per Meter (m²) 2026 | Mulai Rp90.000 | KAHA BLOCK",
       description:
-        "Cek harga paving block per m²/satuan, K-250/K-300/K-400, tebal 6/8/10 cm, penawaran vendor proyek dan estimasi jasa pasang Jabodetabek.",
+        "Harga material paving block mulai Rp90.000/m². Cek contoh hitungan kebutuhan, tipe conblock, tebal dan mutu beton. Jasa pasang dihitung terpisah.",
     },
     en: {
       title: "Paving Block Price per m², Unit & Installation 2026 | KAHA BLOCK",
@@ -109,7 +109,7 @@ const PAGE_META: Record<string, PageMetaConfig> = {
     id: {
       title: "Pabrik Paving Block di Cisauk Tangerang | KAHA BLOCK",
       description:
-        "Fasilitas pabrik 9.080 m² PT Kaha Sukses Mandiri di Cisauk, Kabupaten Tangerang. Produksi paving block mesin otomatis hidrolik melayani wilayah Jabodetabek.",
+        "Pabrik paving block dan conblock di Cisauk, Tangerang. Lihat lokasi pabrik, proses produksi hidrolik, katalog material dan cara meminta penawaran Jabodetabek.",
     },
     en: {
       title: "Paving Block Factory in Cisauk Tangerang | KAHA BLOCK",
@@ -146,9 +146,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   jasaPemasangan: {
     path: "/jasa-pemasangan-paving-block",
     id: {
-      title: "Jasa Pasang & Kontraktor Paving Block Jabodetabek | KAHA BLOCK",
+      title: "Jasa Pasang Paving Block & Konblok Jabodetabek | KAHA BLOCK",
       description:
-        "Vendor paving block, jasa pasang, borongan dan kontraktor untuk Jakarta, Tangerang, Bekasi, Depok dan Bogor. Material + pemasangan sesuai kebutuhan proyek.",
+        "Jasa pasang konblok, borongan material dan pemasangan oleh kontraktor paving block. Minta estimasi berdasarkan luas, kondisi lahan dan lokasi proyek.",
     },
     en: {
       title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",

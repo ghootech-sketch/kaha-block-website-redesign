@@ -69,7 +69,7 @@ export default async function HargaPavingBlockPage({
     <>
       <JsonLd page="hargaPaving" lang={currentLang} />
 
-      <PageHero variant="sales" eyebrow={data.eyebrow} title={data.h1} description={isEn ? "Choose material supply or material + installation. Ask for a quotation that fits your area and location." : "Material saja atau sekaligus pemasangan. Minta penawaran sesuai kebutuhan dan lokasi Anda."}>
+      <PageHero variant="sales" eyebrow={data.eyebrow} title={data.h1} description={data.heroDesc}>
         <SalesHeroActions lang={currentLang} topic="pricing" />
       </PageHero>
       <LandingProof lang={currentLang} />
@@ -121,6 +121,15 @@ export default async function HargaPavingBlockPage({
                 {isEn ? "Check My Project Price" : "Cek Harga Proyek Saya"}
               </a>
             </ScrollReveal>
+            <div className="mt-6 bg-surface border border-slate-200 rounded-2xl p-6 sm:p-7">
+              <h2 className="text-xl font-bold font-heading text-slate-900">{isEn ? "Example material cost for 50 m²" : "Contoh hitung harga paving block per meter persegi (50 m²)"}</h2>
+              <p className="mt-3 text-slate-600 leading-relaxed">
+                {isEn ? "Illustration: 50 m² × " : "Ilustrasi material: 50 m² × "}
+                {BUSINESS_FACTS.pricing.materialStartingPriceDisplay[currentLang]} = Rp{new Intl.NumberFormat(isEn ? "en-US" : "id-ID").format(50 * BUSINESS_FACTS.pricing.materialStartingPricePerM2)}.
+                {" "}{isEn ? "This is an illustrative starting estimate, not a binding quote or the price of every model. Installation, base preparation and additional material are not included." : "Ini hanya ilustrasi berdasarkan harga mulai, bukan penawaran pasti untuk semua model. Jasa pasang, persiapan lahan dan kebutuhan material tambahan belum termasuk."}
+              </p>
+              <p className="mt-3 text-sm text-slate-600">{isEn ? "Compare installation scope before ordering." : "Untuk biaya borongan, pisahkan harga material, pekerjaan dasar, pemasangan dan kanstein dalam penawaran."}{" "}<Link href={"/" + currentLang + "/jasa-pemasangan-paving-block"} className="text-primary font-semibold hover:underline">{isEn ? "View installation services" : "Lihat jasa pasang dan estimasi pekerjaan"}</Link>.</p>
+            </div>
           </div>
         </section>
 

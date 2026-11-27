@@ -133,7 +133,7 @@ export function generateStructuredDataGraph({
         availableLanguage: ["id", "en"],
       },
     ],
-    sameAs: [BUSINESS_FACTS.social.instagram, BUSINESS_FACTS.social.facebook],
+    sameAs: [BUSINESS_FACTS.social.instagram, BUSINESS_FACTS.social.facebook, "https://maps.google.com/maps?cid=18157894041875342625"],
   };
 
   // 2. WebSite Entity
