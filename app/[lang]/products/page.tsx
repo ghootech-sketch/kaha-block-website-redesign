@@ -1,3 +1,4 @@
+import ColorLandingLink from "@/components/ColorLandingLink";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
@@ -64,6 +65,7 @@ export default async function Products({
         <SalesHeroActions lang={currentLang} topic="products" />
       </PageHero>
       <LandingProof lang={currentLang} />
+      <ColorLandingLink lang={currentLang} />
 
       <section className="bg-dark text-white border-b border-stone-800 py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

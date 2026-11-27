@@ -1,3 +1,4 @@
+import ColorLandingLink from "@/components/ColorLandingLink";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -72,6 +73,7 @@ export default async function HargaPavingBlockPage({
         <SalesHeroActions lang={currentLang} topic="pricing" />
       </PageHero>
       <LandingProof lang={currentLang} />
+      <ColorLandingLink lang={currentLang} />
 
       <main className="bg-surface">
         <section className="bg-white border-b border-stone-200/50 py-14 sm:py-18 lg:py-22">
@@ -164,6 +166,11 @@ export default async function HargaPavingBlockPage({
               <Package className="w-7 h-7 text-accent mb-4" aria-hidden="true" />
               <h2 className="text-2xl font-bold font-heading text-slate-900">{data.specTitle}</h2>
               <p className="mt-3 text-slate-600 leading-relaxed">{data.specDesc}</p>
+              <div className="mt-4 rounded-xl bg-surface p-4 text-sm text-slate-700 space-y-2">
+                <p><strong>{isEn ? "6 cm and 8 cm:" : "Paving 6 cm dan 8 cm:"}</strong> {isEn ? "Truepave and Half/Tahu offer both thicknesses; Hexa and Ubin are 8 cm. Truepave also has a 10 cm option." : "Truepave dan Half/Tahu memiliki pilihan kedua ketebalan; Hexa dan Ubin 8 cm. Truepave juga memiliki pilihan 10 cm."}</p>
+                <p><strong>{isEn ? "K-300 quotation:" : "Harga paving block K300 per m²:"}</strong> {isEn ? "Confirm model, thickness, color, required area and delivery location; grade availability depends on product." : "Kirim model, tebal, warna, luas dan lokasi. Ketersediaan mutu sesuai model perlu dikonfirmasi; tidak ada satu tarif pasti K300 untuk semua produk."}</p>
+                <a id="price-spec-quote-whatsapp" href={getWhatsAppUrl("primary","pricing",currentLang)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center min-h-11 text-primary font-bold hover:underline">{isEn ? "Ask for a specification-based quote" : "Cek harga sesuai spesifikasi via WhatsApp"} →</a>
+              </div>
               <div className="mt-6 flex flex-wrap gap-2">
                 {productLinks.map((item) => (
                   <Link

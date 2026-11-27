@@ -79,7 +79,7 @@ export default function GoogleAdsTag() {
 
         const eventPayload = {
           page_path: window.location.pathname,
-          link_url: rawHref,
+          link_url: whatsappUrl ? whatsappUrl.origin + whatsappUrl.pathname : rawHref.split("?")[0],
           link_text: linkText,
           cta_id: anchor.id || "unlabeled_whatsapp_link",
           whatsapp_phone: whatsappPhone,

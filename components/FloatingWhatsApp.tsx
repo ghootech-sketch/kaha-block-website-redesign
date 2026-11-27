@@ -10,8 +10,9 @@ interface FloatingWhatsAppProps {
 
 export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
   const pathname = usePathname();
-  const isLanding = /^\/(id|en)\/(products|harga-paving-block)\/?$/.test(pathname);
-  const whatsappUrl = getWhatsAppUrl("primary", "quick-quote", lang);
+  const isLanding = /^\/(id|en)\/(products|harga-paving-block|paving-block-warna)\/?$/.test(pathname);
+  const isColors = /\/paving-block-warna\/?$/.test(pathname);
+  const whatsappUrl = getWhatsAppUrl("primary", isColors ? "colors" : "quick-quote", lang);
   const ariaLabel =
     lang === "en"
       ? "Chat with Kaha Block on WhatsApp"
@@ -37,7 +38,7 @@ export default function FloatingWhatsApp({ lang }: FloatingWhatsAppProps) {
           className={isLanding ? "text-sm font-bold" : "hidden md:inline-block overflow-hidden whitespace-nowrap text-sm font-semibold max-w-0 opacity-0 transition-all duration-300 ease-out group-hover:max-w-xs group-hover:opacity-100 group-hover:mr-2.5 group-focus-visible:max-w-xs group-focus-visible:opacity-100 group-focus-visible:mr-2.5"}
           aria-hidden="true"
         >
-          {isLanding ? (lang === "en" ? "Check Price on WhatsApp" : "Cek Harga via WhatsApp") : label}
+          {isColors ? (lang === "en" ? "Check Color & Price" : "Cek Warna & Harga via WA") : isLanding ? (lang === "en" ? "Check Price on WhatsApp" : "Cek Harga via WhatsApp") : label}
         </span>
         <svg
           className="w-8 h-8 sm:w-9 sm:h-9 fill-current flex-shrink-0"

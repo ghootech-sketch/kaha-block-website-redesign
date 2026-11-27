@@ -1,3 +1,4 @@
+import ColorLandingLink from "@/components/ColorLandingLink";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { dictionaries, isValidLocale, Locale } from "@/lib/dictionary";
@@ -591,6 +592,8 @@ export default async function Home({
             </RevealGroup>
           </div>
         </section>
+
+        <ColorLandingLink lang={currentLang} />
 
         {/* =========================================================================
             SECTION 3.2: PRICING & PROJECT ESTIMATION CONVERSION BLOCK

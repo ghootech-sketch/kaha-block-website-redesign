@@ -16,6 +16,7 @@ interface PageMetaConfig {
     | "/blog"
     | "/jasa-pemasangan-paving-block"
     | "/harga-paving-block"
+    | "/paving-block-warna"
     | "/area-layanan"
     | "/area-layanan/jakarta"
     | "/area-layanan/tangerang"
@@ -71,6 +72,11 @@ const PAGE_META: Record<string, PageMetaConfig> = {
       description:
         "Paving block material prices start from Rp90,000/m²*. Direct factory supply from Cisauk with K-250, K-300, K-400 grades and free delivery only within Greater Jakarta.",
     },
+  },
+  pavingColors: {
+    path: "/paving-block-warna",
+    id: { title: "Paving Block Warna Merah, Hitam, Kuning | Kaha Block", description: "Pilihan paving block warna abu-abu, merah, hitam dan kuning sesuai model Truepave, Half, Hexa dan Ubin. Cek stok, harga dan kebutuhan proyek via WhatsApp Kaha Block." },
+    en: { title: "Colored Paving Blocks | Red, Black, Yellow & Grey | Kaha Block", description: "Compare available paving colors by model and request a factory quote from Kaha Block in Cisauk, serving Greater Jakarta." },
   },
   hargaPaving: {
     path: "/harga-paving-block",
@@ -241,6 +247,7 @@ export function constructPageMetadata(
     | "blog"
     | "jasaPemasangan"
     | "hargaPaving"
+    | "pavingColors"
     | "areaLayanan"
     | "areaJakarta"
     | "areaTangerang"
