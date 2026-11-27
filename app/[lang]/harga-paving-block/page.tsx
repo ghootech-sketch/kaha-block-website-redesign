@@ -17,6 +17,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import SalesHeroActions from "@/components/SalesHeroActions";
 import LandingProof from "@/components/LandingProof";
+import QualityValueStrip from "@/components/QualityValueStrip";
 import ScrollReveal from "@/components/ScrollReveal";
 import { BUSINESS_FACTS } from "@/lib/business-facts";
 import { isValidLocale, Locale } from "@/lib/dictionary";
@@ -121,6 +122,9 @@ export default async function HargaPavingBlockPage({
                 {isEn ? "Check My Project Price" : "Cek Harga Proyek Saya"}
               </a>
             </ScrollReveal>
+            <div className="mt-4">
+              <QualityValueStrip lang={currentLang} />
+            </div>
             <div className="mt-6 bg-surface border border-slate-200 rounded-2xl p-6 sm:p-7">
               <h2 className="text-xl font-bold font-heading text-slate-900">{isEn ? "Example material cost for 50 m²" : "Contoh hitung harga paving block per meter persegi (50 m²)"}</h2>
               <p className="mt-3 text-slate-600 leading-relaxed">

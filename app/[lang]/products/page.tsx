@@ -11,6 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
 import SalesHeroActions from "@/components/SalesHeroActions";
 import LandingProof from "@/components/LandingProof";
+import QualityValueStrip from "@/components/QualityValueStrip";
 import Link from "next/link";
 import { Phone, ChevronDown, MessageSquare, ArrowDown, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
@@ -92,6 +93,12 @@ export default async function Products({
           </div>
         </div>
       </section>
+
+      <div className="bg-white px-4 pt-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <QualityValueStrip lang={currentLang} />
+        </div>
+      </div>
 
       {/* =========================================================================
           1. PRODUCT NAVIGATOR (White Canvas)

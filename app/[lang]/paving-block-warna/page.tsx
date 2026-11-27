@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MessageCircle, ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import LandingProof from "@/components/LandingProof";
+import QualityValueStrip from "@/components/QualityValueStrip";
 import PavingColorQuote from "@/components/PavingColorQuote";
 import { isValidLocale, type Locale } from "@/lib/dictionary";
 import { constructPageMetadata } from "@/lib/metadata";
@@ -32,6 +33,11 @@ export default async function PavingColorsPage({params}: {params: Promise<{lang:
       </div>
       <p className="mt-3 text-sm text-white/90">{BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading[locale]}</p>
     </PageHero>
+    <div className="bg-white px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <QualityValueStrip lang={locale} />
+      </div>
+    </div>
     <section className="bg-surface">
       <PavingColorQuote lang={locale} products={products} />
     </section>
