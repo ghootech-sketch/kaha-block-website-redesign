@@ -61,8 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about": "2026-11-22T00:00:00.000Z",
     "/projects": "2026-11-22T00:00:00.000Z",
     "/products": "2026-11-27T00:00:00.000Z",
-    "/projects/production": "2026-10-01T17:18:11.000Z",
-    "/jasa-pemasangan-paving-block": "2026-11-23T00:00:00.000Z",
+    "/projects/production": "2026-11-27T00:00:00.000Z",
+    "/jasa-pemasangan-paving-block": "2026-11-27T00:00:00.000Z",
     "/harga-paving-block": "2026-11-27T00:00:00.000Z",
     "/paving-block-warna": "2026-11-27T00:00:00.000Z",
     "/area-layanan/jakarta": "2026-10-31T00:00:00.000Z",
@@ -73,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   // Shared product page template timestamp (commit 838afe61 - shared product detail page evidence update)
-  const SHARED_PRODUCT_PAGE_LASTMOD = new Date("2026-10-01T17:18:11.000Z");
+  const SHARED_PRODUCT_PAGE_LASTMOD = new Date("2026-11-27T00:00:00.000Z");
   // Only these individual product pages received metadata/content changes on 2026-10-18.
   const PRODUCT_PAGE_LAST_MODIFIED: Record<string, string> = {
     "truepave": "2026-10-18T00:00:00.000Z",
@@ -117,7 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       sitemapEntries.push({
         url: `${SITE_URL}/${locale}/products/${slug}`,
         lastModified: PRODUCT_PAGE_LAST_MODIFIED[slug]
-          ? new Date(PRODUCT_PAGE_LAST_MODIFIED[slug])
+          ? new Date(Math.max(new Date(PRODUCT_PAGE_LAST_MODIFIED[slug]).getTime(), SHARED_PRODUCT_PAGE_LASTMOD.getTime()))
           : SHARED_PRODUCT_PAGE_LASTMOD,
         changeFrequency: "monthly",
         priority: 0.8,
@@ -132,11 +132,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Significant article-template links added in the 2026-11-27 commercial SEO update.
+  const COMMERCIAL_LINK_UPDATE = new Date("2026-11-27T00:00:00.000Z");
+  const COMMERCIAL_LINK_ARTICLES = new Set([
+    "mutu-beton-k250-k300-k400-paving-block",
+    "topi-uskup-pengunci-paving-block-jalan-lingkungan",
+    "harga-paving-block-conblock-kabupaten-tangerang-2026",
+    "harga-paving-block-conblock-jabodetabek-2026",
+  ]);
+  const articleLastModified = (article: { slug: string; updatedAt: string }) => {
+    const date = new Date(article.updatedAt + "T00:00:00.000Z");
+    return COMMERCIAL_LINK_ARTICLES.has(article.slug) && date < COMMERCIAL_LINK_UPDATE
+      ? COMMERCIAL_LINK_UPDATE
+      : date;
+  };
+
   // 3. Indonesian Blog Articles
   allArticlesId.forEach((article) => {
     sitemapEntries.push({
       url: `${SITE_URL}/id/blog/${article.slug}`,
-      lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
+      lastModified: articleLastModified(article),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {
@@ -153,7 +168,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   allArticlesEn.forEach((article) => {
     sitemapEntries.push({
       url: `${SITE_URL}/en/blog/${article.slug}`,
-      lastModified: new Date(`${article.updatedAt}T00:00:00.000Z`),
+      lastModified: articleLastModified(article),
       changeFrequency: "monthly",
       priority: 0.7,
       alternates: {

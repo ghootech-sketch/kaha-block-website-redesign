@@ -224,6 +224,20 @@ async function run() {
     assert(false, `Products page request succeeded: ${err.message}`);
   }
 
+  // Quote-only detail pages retain page, breadcrumb and image data, not invalid Product snippets.
+  console.log("\n[F2] Testing quote-only product detail schema");
+  for (const path of ["/id/products/paving-hexagonal", "/en/products/truepave"]) {
+    try {
+      const { res, text } = await fetchText(path);
+      const blocks = extractJsonLdScripts(text).join(" ");
+      assert(res.status === 200, path + " returns HTTP 200");
+      assert(!/"@type"\s*:\s*"Product"/i.test(blocks), path + " has no unsupported Product rich-result markup");
+      assert(blocks.includes('"BreadcrumbList"') && blocks.includes('"ImageObject"'), path + " retains breadcrumbs and image schema");
+    } catch (err) {
+      assert(false, path + " request succeeded: " + err.message);
+    }
+  }
+
   // =========================================================================
   // G. PRODUCTION DOMAIN INTEGRITY
   // =========================================================================

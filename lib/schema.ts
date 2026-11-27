@@ -473,18 +473,16 @@ export function generateStructuredDataGraph({
 
   if (page === "productDetail" && product) {
     graph.push({
-      "@type": "Product",
+      // Quote-only catalogue: product-level price and reviews are not published.
+      // Keep a descriptive entity without requesting unsupported Product rich results.
+      "@type": "Thing",
       "@id": `${canonicalUrl}#product`,
       url: canonicalUrl,
       name: product.name,
       ...(product.alternateName ? { alternateName: product.alternateName } : {}),
       description: product.intro,
       image: [`${baseUrl}${product.image}`],
-      category: product.badge,
-      brand: { "@type": "Brand", name: BUSINESS_FACTS.brandName },
-      manufacturer: { "@id": `${baseUrl}/#organization` },
       mainEntityOfPage: { "@id": `${canonicalUrl}#webpage` },
-      additionalProperty: product.specs.map((spec) => ({ "@type": "PropertyValue", name: spec.label, value: spec.value })),
     });
   }
 
