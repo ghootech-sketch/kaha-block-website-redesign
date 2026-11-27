@@ -88,6 +88,26 @@ export const BUSINESS_FACTS = {
     whatsappSecondaryUrlEn: `https://wa.me/6281318948968?text=${encodeURIComponent(defaultConsultationMessageEn)}`,
   },
 
+  // Purchase terms supplied by the business representative, 2026-11-27.
+  purchaseTerms: {
+    minimumOrder: {
+      id: "Minimum pemesanan fleksibel, dapat didiskusikan sesuai kebutuhan.",
+      en: "Minimum order quantities can be discussed according to your requirements.",
+    },
+    deliveryTiming: {
+      id: "Pengiriman bisa di hari yang sama atau keesokan hari, menyesuaikan stok, lokasi dan jadwal.",
+      en: "Same-day or next-day delivery may be available, subject to stock, location and scheduling.",
+    },
+    payment: {
+      id: "DP atau tunai saat barang diterima, sesuai kesepakatan.",
+      en: "Down payment or cash on delivery, subject to agreement.",
+    },
+    testedQuality: {
+      id: "Mutu beton telah diuji. Hasil uji mutu tersedia atas permintaan.",
+      en: "Concrete quality has been tested. Test results are available on request.",
+    },
+  },
+
   // Operational & Production Metrics (Verified First-Party Data)
   operations: {
     facilityAreaM2: 9080,
