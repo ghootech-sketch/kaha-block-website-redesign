@@ -266,13 +266,13 @@ export default async function BlogPostPage({
           </div>
         </aside>
 
-        {["mutu-beton-k250-k300-k400-paving-block", "topi-uskup-pengunci-paving-block-jalan-lingkungan", "harga-paving-block-conblock-kabupaten-tangerang-2026", "harga-paving-block-conblock-jabodetabek-2026"].includes(post.slug) && (
+        {["mutu-beton-k250-k300-k400-paving-block", "topi-uskup-pengunci-paving-block-jalan-lingkungan", "harga-paving-block-conblock-kabupaten-tangerang-2026", "harga-paving-block-conblock-jabodetabek-2026", "jasa-pasang-paving-block-biaya-borongan-checklist-proyek", "persiapan-sebelum-pemasangan-paving-block"].includes(post.slug) && (
           <aside className="mb-8 rounded-xl border border-slate-200 bg-white p-5">
             <p className="font-semibold text-slate-900">{isEn ? "Planning to buy or install paving blocks?" : "Butuh material atau pemasangan paving block?"}</p>
             <p className="mt-2 text-sm text-slate-600">{isEn ? "Compare material pricing, installation scope and factory supply." : "Setelah memilih spesifikasi, cek harga material, ruang lingkup jasa pasang dan lokasi pabrik sebelum meminta penawaran."}</p>
             <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
               <Link href={"/" + currentLang + "/harga-paving-block"} className="text-primary hover:underline">{isEn ? "Paving block prices per m²" : "Harga paving block per meter"}</Link>
-              <Link href={"/" + currentLang + "/jasa-pemasangan-paving-block"} className="text-primary hover:underline">{isEn ? "Installation services" : "Jasa pemasangan paving block"}</Link>
+              <Link href={"/" + currentLang + "/jasa-pemasangan-paving-block"} className="text-primary hover:underline">{isEn ? "Installation services" : "Jasa pasang paving block"}</Link>
               <Link href={"/" + currentLang + "/projects/production"} className="text-primary hover:underline">{isEn ? "Factory location and production" : "Pabrik paving block Tangerang"}</Link>
             </div>
           </aside>

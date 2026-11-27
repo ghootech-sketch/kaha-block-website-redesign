@@ -9,6 +9,8 @@ import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import Image from "next/image";
+import InstallationQuote from "@/components/InstallationQuote";
 import {
   ChevronDown,
   Layers,
@@ -56,10 +58,21 @@ export default async function JasaPemasanganPage({
       <JsonLd page="jasaPemasangan" lang={currentLang} />
 
       <PageHero
-        eyebrow={data.eyebrow}
-        title={data.h1}
-        description={data.heroDesc}
-      />
+        variant="sales"
+        eyebrow={isEn ? "FACTORY-DIRECT INSTALLATION CONTRACTOR" : "KONTRAKTOR LANGSUNG PABRIK"}
+        title={isEn ? data.h1 : "Jasa Pasang Paving Block Profesional di Jabodetabek"}
+        description={isEn ? "Installation-only or material and installation for homes, driveways, parking areas, neighbourhood roads and industrial projects. Request a site-specific quotation." : "Jasa pasang paving block untuk halaman, carport, jalan lingkungan, parkiran dan proyek industri. Pilih tenaga pasang saja atau material sekaligus pemasangan langsung dari Kaha Block."}
+      >
+        <div className="flex flex-wrap gap-3">
+          <a href="#estimasi-pemasangan" className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-[#166534] hover:bg-[#14532d] px-6 py-3 font-bold text-white focus-visible:ring-2 focus-visible:ring-white">
+            {isEn ? "Request an installation estimate" : "Minta Estimasi Biaya Pemasangan"}
+          </a>
+          <a href="#bukti-pemasangan" className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/60 px-6 py-3 font-semibold text-white hover:bg-white/10">
+            {isEn ? "View installation documentation" : "Lihat Dokumentasi Pemasangan"}
+          </a>
+        </div>
+        <p className="mt-3 text-sm text-slate-200">{BUSINESS_FACTS.operations.deliveryPolicy.freeDeliveryAndOffloading[currentLang]}</p>
+      </PageHero>
 
       <section className="bg-white border-b border-stone-200/40 py-8 sm:py-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,6 +83,31 @@ export default async function JasaPemasanganPage({
             <Link href={"/" + currentLang + "/projects"} className="text-primary hover:underline">{isEn ? "Installation project documentation" : "Dokumentasi proyek pemasangan"}</Link>
             <a href={getWhatsAppUrl("primary", "installation", currentLang)} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{isEn ? "Request an installation quote" : "Minta estimasi jasa pasang"}</a>
           </div>
+        </div>
+      </section>
+
+      <section id="estimasi-pemasangan" className="scroll-mt-28 bg-surface border-b border-stone-200/40 py-10 sm:py-14">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <InstallationQuote lang={currentLang} />
+        </div>
+      </section>
+
+      <section id="bukti-pemasangan" className="scroll-mt-28 bg-white border-b border-stone-200/40 py-10 sm:py-14">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-bold font-heading text-slate-900">{isEn ? "Paving installation documentation" : "Dokumentasi Jasa Pasang Paving Block"}</h2>
+          <p className="mt-2 text-sm text-slate-600">{isEn ? "Original field documentation showing different work stages, not a single project." : "Foto dokumentasi lapangan Kaha Block dari tahapan pekerjaan yang berbeda, bukan rangkaian satu proyek."}</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+            {[
+              { image: "/images/projects/kaha-block-dokumentasi-24.webp", label: isEn ? "Site preparation before installation" : "Persiapan lahan sebelum pemasangan" },
+              { image: "/images/projects/kaha-block-dokumentasi-03.webp", label: isEn ? "Completed paving application" : "Hasil aplikasi paving di lapangan" },
+            ].map((item) => (
+              <figure key={item.image} className="overflow-hidden rounded-xl border border-stone-200 bg-surface">
+                <div className="relative aspect-[4/3]"><Image src={item.image} alt={item.label} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" /></div>
+                <figcaption className="p-3 text-sm font-semibold text-slate-800">{item.label}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <Link href={"/" + currentLang + "/projects"} className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{isEn ? "See more project documentation" : "Lihat dokumentasi proyek lainnya"} <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>
       </section>
 

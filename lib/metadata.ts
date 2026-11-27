@@ -146,9 +146,9 @@ const PAGE_META: Record<string, PageMetaConfig> = {
   jasaPemasangan: {
     path: "/jasa-pemasangan-paving-block",
     id: {
-      title: "Jasa Pasang Paving Block & Konblok Jabodetabek | KAHA BLOCK",
+      title: "Jasa Pasang Paving Block Jabodetabek | KAHA BLOCK",
       description:
-        "Jasa pasang konblok, borongan material dan pemasangan oleh kontraktor paving block. Minta estimasi berdasarkan luas, kondisi lahan dan lokasi proyek.",
+        "Jasa pasang paving block dan konblok di Jabodetabek. Pilih tenaga pasang atau borongan material + pemasangan. Lihat dokumentasi dan minta estimasi proyek.",
     },
     en: {
       title: "Paving Block Installation Contractor Jabodetabek | KAHA BLOCK",
