@@ -171,7 +171,10 @@ export default function Footer({ lang }: { lang: Locale }) {
         </div>
 
         <div className="border-t border-gray-700 mt-10 sm:mt-12 pt-6 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left text-xs sm:text-sm text-gray-400 font-sans">
-          <p>&copy; {currentYear} {dict.footer.rights}</p>
+          <div className="text-center md:text-left">
+            <p>&copy; {currentYear} {dict.footer.rights}</p>
+            <p className="mt-1 text-xs font-normal normal-case tracking-normal text-gray-400">{lang === "en" ? "Website managed by" : "Website dikelola oleh"}{" "}<a href="https://www.ghotech.web.id/id" rel="nofollow" className="inline-flex min-h-6 items-center rounded underline underline-offset-2 hover:text-white focus-visible:outline focus-visible:outline-2">GHO TECH</a></p>
+          </div>
           {dict.footer.serviceArea && (
             <p className="text-gray-400 text-xs max-w-xl text-center md:text-right">
               {dict.footer.serviceArea}
