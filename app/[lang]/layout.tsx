@@ -12,6 +12,8 @@ const FloatingWhatsApp = dynamic(() => import("@/components/FloatingWhatsApp"), 
 });
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAdsTag from "@/components/GoogleAdsTag";
+import Script from "next/script";
+import { googleMeasurementBootstrap } from "@/lib/google-measurement-bootstrap";
 
 export const metadata: Metadata = {
   icons: {
@@ -76,6 +78,7 @@ export default async function LangLayout({
         <Footer lang={currentLang} />
         <FloatingWhatsApp lang={currentLang} />
         <Analytics />
+        <Script id="kaha-measurement-bootstrap" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: googleMeasurementBootstrap }} />
         <GoogleAdsTag />
       </body>
     </html>
